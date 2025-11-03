@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_fwdflat.dir/link.d CMakeFiles/test_fwdflat.dir/test_fwdflat.c.o -o ../../test_fwdflat  ../../libpocketsphinx.a -lm

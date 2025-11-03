@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/deletehash.dir/link.d CMakeFiles/deletehash.dir/deletehash.c.o -o ../../../deletehash  ../../../libpocketsphinx.a -lm

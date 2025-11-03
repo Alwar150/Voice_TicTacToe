@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_fsg_read.dir/link.d CMakeFiles/test_fsg_read.dir/test_fsg_read.c.o -o ../../../test_fsg_read  ../../../libpocketsphinx.a -lm

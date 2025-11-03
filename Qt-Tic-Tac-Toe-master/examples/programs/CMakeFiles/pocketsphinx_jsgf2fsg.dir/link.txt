@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/pocketsphinx_jsgf2fsg.dir/link.d CMakeFiles/pocketsphinx_jsgf2fsg.dir/pocketsphinx_jsgf2fsg.c.o -o ../pocketsphinx_jsgf2fsg  ../libpocketsphinx.a -lm

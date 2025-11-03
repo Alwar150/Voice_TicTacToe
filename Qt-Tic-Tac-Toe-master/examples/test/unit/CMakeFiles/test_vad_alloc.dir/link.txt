@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_vad_alloc.dir/link.d CMakeFiles/test_vad_alloc.dir/test_vad_alloc.c.o -o ../../test_vad_alloc  ../../libpocketsphinx.a -lm

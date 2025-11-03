@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_keyphrase.dir/link.d CMakeFiles/test_keyphrase.dir/test_keyphrase.c.o -o ../../test_keyphrase  ../../libpocketsphinx.a -lm

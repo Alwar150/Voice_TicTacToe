@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_feat_live.dir/link.d CMakeFiles/test_feat_live.dir/test_feat_live.c.o -o ../../../test_feat_live  ../../../libpocketsphinx.a -lm

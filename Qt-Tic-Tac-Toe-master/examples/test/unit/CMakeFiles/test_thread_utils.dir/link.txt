@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../libtest_thread_utils.a CMakeFiles/test_thread_utils.dir/test_thread_utils.c.o
+/usr/bin/ranlib ../../libtest_thread_utils.a

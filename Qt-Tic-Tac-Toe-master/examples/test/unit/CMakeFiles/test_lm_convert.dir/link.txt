@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_lm_convert.dir/link.d CMakeFiles/test_lm_convert.dir/test_lm_convert.c.o -o ../../test_lm_convert  ../../libpocketsphinx.a -lm

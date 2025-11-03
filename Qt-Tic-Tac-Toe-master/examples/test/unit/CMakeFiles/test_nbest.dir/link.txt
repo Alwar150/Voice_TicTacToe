@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_nbest.dir/link.d CMakeFiles/test_nbest.dir/test_nbest.c.o -o ../../test_nbest  ../../libpocketsphinx.a -lm

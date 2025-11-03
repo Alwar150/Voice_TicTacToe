@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_log_int8.dir/link.d CMakeFiles/test_log_int8.dir/test_log_int8.c.o -o ../../test_log_int8  ../../libpocketsphinx.a -lm

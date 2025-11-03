@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_hash_iter.dir/link.d CMakeFiles/test_hash_iter.dir/test_hash_iter.c.o -o ../../../test_hash_iter  ../../../libpocketsphinx.a -lm

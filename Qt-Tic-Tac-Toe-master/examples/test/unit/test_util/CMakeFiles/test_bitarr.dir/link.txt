@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_bitarr.dir/link.d CMakeFiles/test_bitarr.dir/test_bitarr.c.o -o ../../../test_bitarr  ../../../libpocketsphinx.a -lm

@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_endpointer.dir/link.d CMakeFiles/test_endpointer.dir/test_endpointer.c.o -o ../../test_endpointer  ../../libpocketsphinx.a -lm

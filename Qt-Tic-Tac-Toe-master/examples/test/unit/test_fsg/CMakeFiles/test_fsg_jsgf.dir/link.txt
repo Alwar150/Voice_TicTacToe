@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_fsg_jsgf.dir/link.d CMakeFiles/test_fsg_jsgf.dir/test_fsg_jsgf.c.o -o ../../../test_fsg_jsgf  ../../../libpocketsphinx.a -lm

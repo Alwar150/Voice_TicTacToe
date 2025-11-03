@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/pocketsphinx_pitch.dir/link.d CMakeFiles/pocketsphinx_pitch.dir/pocketsphinx_pitch.c.o -o ../pocketsphinx_pitch  ../libpocketsphinx.a -lm

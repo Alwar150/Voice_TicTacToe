@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_genrand_thread_tls.dir/link.d CMakeFiles/test_genrand_thread_tls.dir/test_genrand_thread_tls.c.o -o ../../test_genrand_thread_tls  ../../libpocketsphinx.a ../../libtest_thread_utils.a -lm

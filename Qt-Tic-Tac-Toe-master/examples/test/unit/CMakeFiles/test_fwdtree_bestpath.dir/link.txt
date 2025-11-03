@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_fwdtree_bestpath.dir/link.d CMakeFiles/test_fwdtree_bestpath.dir/test_fwdtree_bestpath.c.o -o ../../test_fwdtree_bestpath  ../../libpocketsphinx.a -lm

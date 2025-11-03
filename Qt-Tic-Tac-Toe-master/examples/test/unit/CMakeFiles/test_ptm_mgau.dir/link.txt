@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_ptm_mgau.dir/link.d CMakeFiles/test_ptm_mgau.dir/test_ptm_mgau.c.o -o ../../test_ptm_mgau  ../../libpocketsphinx.a -lm

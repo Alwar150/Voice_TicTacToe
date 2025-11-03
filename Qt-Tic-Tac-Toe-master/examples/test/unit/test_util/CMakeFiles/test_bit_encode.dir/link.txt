@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_bit_encode.dir/link.d CMakeFiles/test_bit_encode.dir/test_bit_encode.c.o -o ../../../test_bit_encode  ../../../libpocketsphinx.a -lm

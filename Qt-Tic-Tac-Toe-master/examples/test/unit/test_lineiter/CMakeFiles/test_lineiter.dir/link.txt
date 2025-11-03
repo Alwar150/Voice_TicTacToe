@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_lineiter.dir/link.d CMakeFiles/test_lineiter.dir/test_lineiter.c.o -o ../../../test_lineiter  ../../../libpocketsphinx.a -lm

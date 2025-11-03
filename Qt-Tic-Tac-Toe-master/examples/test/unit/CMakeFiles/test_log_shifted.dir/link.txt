@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_log_shifted.dir/link.d CMakeFiles/test_log_shifted.dir/test_log_shifted.c.o -o ../../test_log_shifted  ../../libpocketsphinx.a -lm

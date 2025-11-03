@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_atof.dir/link.d CMakeFiles/test_atof.dir/test_atof.c.o -o ../../../test_atof  ../../../libpocketsphinx.a -lm

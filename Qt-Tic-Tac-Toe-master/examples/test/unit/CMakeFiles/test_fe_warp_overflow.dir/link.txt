@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_fe_warp_overflow.dir/link.d CMakeFiles/test_fe_warp_overflow.dir/test_fe_warp_overflow.c.o -o ../../test_fe_warp_overflow  ../../libpocketsphinx.a -lm

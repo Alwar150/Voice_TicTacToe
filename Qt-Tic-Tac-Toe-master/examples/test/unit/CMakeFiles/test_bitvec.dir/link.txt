@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_bitvec.dir/link.d CMakeFiles/test_bitvec.dir/test_bitvec.c.o -o ../../test_bitvec  ../../libpocketsphinx.a -lm

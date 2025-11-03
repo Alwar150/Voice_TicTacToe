@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/chgCase.dir/link.d CMakeFiles/chgCase.dir/chgCase.c.o -o ../../../chgCase  ../../../libpocketsphinx.a -lm

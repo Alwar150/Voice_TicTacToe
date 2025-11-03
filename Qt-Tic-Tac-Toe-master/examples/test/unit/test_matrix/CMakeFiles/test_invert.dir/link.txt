@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_invert.dir/link.d CMakeFiles/test_invert.dir/test_invert.c.o -o ../../../test_invert  ../../../libpocketsphinx.a -lm

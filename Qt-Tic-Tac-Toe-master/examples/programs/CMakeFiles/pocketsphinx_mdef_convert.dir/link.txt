@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/pocketsphinx_mdef_convert.dir/link.d CMakeFiles/pocketsphinx_mdef_convert.dir/pocketsphinx_mdef_convert.c.o -o ../pocketsphinx_mdef_convert  ../libpocketsphinx.a -lm

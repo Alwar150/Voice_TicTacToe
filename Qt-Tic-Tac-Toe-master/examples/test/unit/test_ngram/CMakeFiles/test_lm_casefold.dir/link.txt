@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_lm_casefold.dir/link.d CMakeFiles/test_lm_casefold.dir/test_lm_casefold.c.o -o ../../../test_lm_casefold  ../../../libpocketsphinx.a -lm

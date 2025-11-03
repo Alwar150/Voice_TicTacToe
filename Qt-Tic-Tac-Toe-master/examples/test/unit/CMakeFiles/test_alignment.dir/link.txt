@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_alignment.dir/link.d CMakeFiles/test_alignment.dir/test_alignment.c.o -o ../../test_alignment  ../../libpocketsphinx.a -lm

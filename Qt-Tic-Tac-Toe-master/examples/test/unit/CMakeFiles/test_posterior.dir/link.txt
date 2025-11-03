@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_posterior.dir/link.d CMakeFiles/test_posterior.dir/test_posterior.c.o -o ../../test_posterior  ../../libpocketsphinx.a -lm

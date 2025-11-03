@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_fsg_accept.dir/link.d CMakeFiles/test_fsg_accept.dir/test_fsg_accept.c.o -o ../../../test_fsg_accept  ../../../libpocketsphinx.a -lm

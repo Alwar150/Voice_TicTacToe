@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_vad.dir/link.d CMakeFiles/test_vad.dir/test_vad.c.o -o ../../test_vad  ../../libpocketsphinx.a -lm

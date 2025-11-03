@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/live.dir/link.d CMakeFiles/live.dir/live.c.o -o ../live  ../libpocketsphinx.a -lm

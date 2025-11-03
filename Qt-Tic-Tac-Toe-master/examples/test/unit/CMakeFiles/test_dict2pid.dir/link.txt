@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_dict2pid.dir/link.d CMakeFiles/test_dict2pid.dir/test_dict2pid.c.o -o ../../test_dict2pid  ../../libpocketsphinx.a -lm

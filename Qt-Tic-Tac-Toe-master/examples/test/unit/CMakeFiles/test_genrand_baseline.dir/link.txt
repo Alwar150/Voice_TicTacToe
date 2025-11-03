@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_genrand_baseline.dir/link.d CMakeFiles/test_genrand_baseline.dir/test_genrand_baseline.c.o -o ../../test_genrand_baseline  ../../libpocketsphinx.a -lm

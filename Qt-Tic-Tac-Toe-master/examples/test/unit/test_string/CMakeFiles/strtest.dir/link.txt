@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/strtest.dir/link.d CMakeFiles/strtest.dir/strtest.c.o -o ../../../strtest  ../../../libpocketsphinx.a -lm

@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/live_portaudio.dir/link.d CMakeFiles/live_portaudio.dir/live_portaudio.c.o -o ../live_portaudio  ../libpocketsphinx.a -lportaudio -lasound -lm -lpthread -lm

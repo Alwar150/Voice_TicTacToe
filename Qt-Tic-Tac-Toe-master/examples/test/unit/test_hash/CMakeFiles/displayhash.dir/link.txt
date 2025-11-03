@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/displayhash.dir/link.d CMakeFiles/displayhash.dir/displayhash.c.o -o ../../../displayhash  ../../../libpocketsphinx.a -lm

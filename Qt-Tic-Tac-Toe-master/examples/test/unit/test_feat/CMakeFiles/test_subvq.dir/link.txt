@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_subvq.dir/link.d CMakeFiles/test_subvq.dir/test_subvq.c.o -o ../../../test_subvq  ../../../libpocketsphinx.a -lm

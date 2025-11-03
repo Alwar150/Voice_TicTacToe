@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_thread_utils_self.dir/link.d CMakeFiles/test_thread_utils_self.dir/test_thread_utils_self.c.o -o ../../test_thread_utils_self  ../../libpocketsphinx.a ../../libtest_thread_utils.a -lm

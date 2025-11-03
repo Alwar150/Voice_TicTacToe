@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_word_align.dir/link.d CMakeFiles/test_word_align.dir/test_word_align.c.o -o ../../test_word_align  ../../libpocketsphinx.a -lm

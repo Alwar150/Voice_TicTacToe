@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_acmod_grow.dir/link.d CMakeFiles/test_acmod_grow.dir/test_acmod_grow.c.o -o ../../test_acmod_grow  ../../libpocketsphinx.a -lm

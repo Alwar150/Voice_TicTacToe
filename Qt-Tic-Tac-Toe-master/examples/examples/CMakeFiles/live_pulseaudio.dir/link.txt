@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/live_pulseaudio.dir/link.d CMakeFiles/live_pulseaudio.dir/live_pulseaudio.c.o -o ../live_pulseaudio  ../libpocketsphinx.a -lpulse-simple -lpulse -lm

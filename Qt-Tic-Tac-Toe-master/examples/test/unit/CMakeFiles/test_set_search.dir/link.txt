@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_set_search.dir/link.d CMakeFiles/test_set_search.dir/test_set_search.c.o -o ../../test_set_search  ../../libpocketsphinx.a -lm

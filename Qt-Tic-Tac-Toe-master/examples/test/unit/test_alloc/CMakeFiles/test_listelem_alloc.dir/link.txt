@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_listelem_alloc.dir/link.d CMakeFiles/test_listelem_alloc.dir/test_listelem_alloc.c.o -o ../../../test_listelem_alloc  ../../../libpocketsphinx.a -lm

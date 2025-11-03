@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_lattice.dir/link.d CMakeFiles/test_lattice.dir/test_lattice.c.o -o ../../test_lattice  ../../libpocketsphinx.a -lm

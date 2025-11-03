@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/pocketsphinx_lm_eval.dir/link.d CMakeFiles/pocketsphinx_lm_eval.dir/pocketsphinx_lm_eval.c.o -o ../pocketsphinx_lm_eval  ../libpocketsphinx.a -lm

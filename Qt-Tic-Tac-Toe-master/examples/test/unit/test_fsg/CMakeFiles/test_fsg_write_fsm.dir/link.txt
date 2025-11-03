@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_fsg_write_fsm.dir/link.d CMakeFiles/test_fsg_write_fsm.dir/test_fsg_write_fsm.c.o -o ../../../test_fsg_write_fsm  ../../../libpocketsphinx.a -lm

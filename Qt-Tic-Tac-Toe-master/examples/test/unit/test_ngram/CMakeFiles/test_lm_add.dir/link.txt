@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_lm_add.dir/link.d CMakeFiles/test_lm_add.dir/test_lm_add.c.o -o ../../../test_lm_add  ../../../libpocketsphinx.a -lm

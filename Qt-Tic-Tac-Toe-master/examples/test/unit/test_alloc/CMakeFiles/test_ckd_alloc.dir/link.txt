@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/test_ckd_alloc.dir/link.d CMakeFiles/test_ckd_alloc.dir/test_ckd_alloc.c.o -o ../../../test_ckd_alloc  ../../../libpocketsphinx.a -lm
