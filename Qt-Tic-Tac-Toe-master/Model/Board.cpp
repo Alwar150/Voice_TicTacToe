@@ -15,6 +15,11 @@ Board::Board(Board &b)
 
 }
 
+Board::Board(const Board& b)
+    : board_(b.board_),boardSize_(b.boardSize_){
+
+}
+
 Board::Board(Board &&b)
     : board_(std::move(b.board_)),
       boardSize_(std::move(b.boardSize_))

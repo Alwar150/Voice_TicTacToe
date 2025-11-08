@@ -5,7 +5,7 @@
  * Author: David Huggins-Daines <dhdaines@gmail.com>
  */
 /**
- * @example live_portaudio.c
+ * @example live_portaudio_custom.c
  * @brief Speech recognition with live audio input and endpointing.
  *
  * This file shows how to use PocketSphinx with microphone input using

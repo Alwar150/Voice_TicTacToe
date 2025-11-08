@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui widgets concurrent
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,7 +29,8 @@ INCLUDEPATH += \
     Model \
     View \
     Controller \
-    Forms
+    Forms \
+    include/
 
 SOURCES += \
     main.cpp \
@@ -53,6 +54,7 @@ FORMS += \
     Forms/TicTacToeGame.ui \
     Forms/titlescreen.ui
 
+
 RC_ICONS = images/icon.ico
 
 # Default rules for deployment.
@@ -62,3 +64,21 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resources.qrc
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/lib/ -lpocketsphinx
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/lib/ -lpocketsphinx
+else:unix: LIBS += -L$$PWD/lib/ -lpocketsphinx \
+-L/usr/lib/ -lportaudio \
+
+
+INCLUDEPATH += $$PWD/include
+DEPENDPATH += $$PWD/include
+
+unix:!macx: LIBS += -L/usr/local/lib/ -lsox \
+
+INCLUDEPATH += /usr/local/include \
+    /usr/include
+DEPENDPATH += /usr/local/include \
+    /usr/include
+
+unix:!macx: PRE_TARGETDEPS += /usr/local/lib/libsox.a

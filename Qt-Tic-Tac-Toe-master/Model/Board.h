@@ -39,6 +39,8 @@ public:
      * @param b: The board to be copied.
      */
     Board(Board& b);
+
+    Board(const Board& b);
     /**
      * @brief Board move constructor.
      * @param b: The board to be moved.

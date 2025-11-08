@@ -92,23 +92,24 @@ short MiniMaxAgent::score(const BoardState state) const
     return TIE_SCORE;
 }
 
-int MiniMaxAgent::play(Board &board)
+int MiniMaxAgent::play(const Board &board)
 {
+    Board copy_ = board;
     // No play if the board is at a final state.
-    if (BoardState::NoWinner != board.evaluateBoard())
+    if (BoardState::NoWinner != copy_.evaluateBoard())
         return defaults::INVALID_CELL;
 
     // Start of the minimax algorith and choose the best score of all available cells.
     int bestScore = INT_MIN;
     QPair<size_t, size_t> bestEntry;
-    for (size_t row = 0; row < board.size(); ++row) {
-        for (size_t col = 0; col < board.size(); ++col) {
-            if (BoardMarks::Empty == board.at(row, col)) {
+    for (size_t row = 0; row < copy_.size(); ++row) {
+        for (size_t col = 0; col < copy_.size(); ++col) {
+            if (BoardMarks::Empty == copy_.at(row, col)) {
                 // Try the move
-                board.setPlayerInput(row, col, AImark_);
+                copy_.setPlayerInput(row, col, AImark_);
 
                 // Update the best score and the best cell location.
-                int moveScore = minMove(board, depth_ - 1, SHRT_MIN, SHRT_MAX);
+                int moveScore = minMove(copy_, depth_ - 1, SHRT_MIN, SHRT_MAX);
                 if (moveScore > bestScore) {
                     bestScore = moveScore;
                     bestEntry.first = row;
@@ -116,13 +117,13 @@ int MiniMaxAgent::play(Board &board)
                 }
 
                 // Reset the move done
-                board.resetCell(row, col);
+                copy_.resetCell(row, col);
             }
         }
     }
 
     // Set the AI choice on the board.
-    board.setPlayerInput(bestEntry.first, bestEntry.second, AImark_);
+    copy_.setPlayerInput(bestEntry.first, bestEntry.second, AImark_);
     // Return the 1D index of the cell to delegate any other updates needed.
-    return static_cast<int>(bestEntry.first * board.size() + bestEntry.second);
+    return static_cast<int>(bestEntry.first * copy_.size() + bestEntry.second);
 }

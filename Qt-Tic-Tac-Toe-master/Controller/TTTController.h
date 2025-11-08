@@ -7,6 +7,9 @@
 #include <QObject>
 #include <memory>
 #include <vector>
+#include <portaudio.h>
+#include <pocketsphinx.h>
+#include <signal.h>
 
 using std::unique_ptr;
 using std::vector;
@@ -71,6 +74,10 @@ protected: // Methods
      */
     virtual void AIAgentPlay();
     /**
+     * @brief HumanPlay calls the Speech Recognition Engine for decoding input into Cell.
+     */
+    virtual void HumanPlay();
+    /**
      * @brief switchPlayer switches the current player mark (X to O and O to X).
      */
     virtual void switchPlayer();
@@ -86,13 +93,42 @@ public:
      * @brief startGame executes this QDialog to show the GUI and start the gameplay.
      */
     virtual void startGame();
+    int parseSpeechToCell(const QString &text)
+    {
+        QStringList keywords = text.split(' ', Qt::SkipEmptyParts);
+        if (keywords.size() < 2) return defaults::INVALID_CELL;
 
+        QString k1 = keywords[0];
+        QString k2 = keywords[1];
+
+        if (k1 == "arriba") {
+            if (k2 == "izquierda") return 0;
+            if (k2 == "arriba") return 1;
+            if (k2 == "derecha") return 2;
+        } else if (k1 == "centro") {
+            if (k2 == "izquierda") return 3;
+            if (k2 == "centro") return 4;
+            if (k2 == "derecha") return 5;
+            if (k2 == "arriba") return 1;
+            if (k2 == "abajo") return 7;
+        } else if (k1 == "abajo") {
+            if (k2 == "izquierda") return 6;
+            if (k2 == "centro") return 7;
+            if (k2 == "derecha") return 8;
+        }
+        return defaults::INVALID_CELL;
+    }
+    QWidget* getView() { return &view_; }
 signals:
     /**
      * @brief turnFinished is emitted when the human player is finished with the cell input,
      * and the internal game state is supposed to be updated.
      */
-    void turnFinished();
+    void AIFinished();
+
+    void humanFinished();
+    void speechRecognized(QString);
+
 
 public slots:
     /**
@@ -100,6 +136,9 @@ public slots:
      * @param cell: the clicked cell that the player chooses.
      */
     virtual void updateGame(Cell &cell);
+private slots:
+    void onSpeechRecognized(const QString &text);
+
 };
 
 #endif // TTTCONTROLLER_H

@@ -17,7 +17,7 @@ public:
      * @param board: a reference to the board model.
      * @return the chosen cell index (in a 1D array) that the AI played.
      */
-    virtual int play(Board &board) = 0;
+    virtual int play(const Board &board) = 0;
     /**
      * @brief reset function that will reset the state of any search algorithm.
      */

@@ -60,9 +60,17 @@ void TitleScreen::updateMiniMaxDepth(int depth)
 void TitleScreen::startGame()
 {
     this->hide();
-    TTTController ttt(options_);
-    ttt.startGame();
-    this->show();
+
+    // Crear dinámicamente el controlador para que no se destruya al salir de la función
+    auto *ttt = new TTTController(options_, this);
+
+    ttt->startGame();
+
+    // Conectar para que, cuando la vista se cierre, el título reaparezca
+    QObject::connect(ttt->getView(), &QWidget::destroyed, this, [this, ttt]() {
+        this->show();
+        ttt->deleteLater();  // Limpieza segura del controlador
+    });
 }
 
 void TitleScreen::closeEvent(QCloseEvent *event)

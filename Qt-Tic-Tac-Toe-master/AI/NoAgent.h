@@ -25,7 +25,7 @@ public:
      * @param board: a reference to the board model.
      * @return an invalid cell location to not trigger any kind of updates.
      */
-    int play(Board& board) override {
+    int play(const Board& board) override {
         Q_UNUSED(board);
         return defaults::INVALID_CELL;
     }

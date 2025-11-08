@@ -31,7 +31,7 @@ public:
      * @param board: a reference to the board model.
      * @return the chosen cell index (in a 1D array) that the AI played.
      */
-    int play(Board &board) override;
+    int play(const Board &board) override;
 
 private:
     /**
