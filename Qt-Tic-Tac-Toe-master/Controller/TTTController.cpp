@@ -190,3 +190,21 @@ void TTTController::onSpeechRecognized(const QString &text)
         HumanPlay();
     }
 }
+
+void TTTController::setupNetwork() {
+    socket_ = new QTcpSocket(this);
+    socket_->connectToHost("192.168.1.50", 5000); // IP de RobotStudio o servidor
+    connect(socket_, &QTcpSocket::connected, []() {
+        qDebug() << "Conectado al servidor.";
+    });
+    connect(socket_, &QTcpSocket::errorOccurred, [](QAbstractSocket::SocketError err) {
+        qWarning() << "Error TCP:" << err;
+    });
+}
+
+void TTTController::sendMove(int row, int col, char player) {
+    if (socket_ && socket_->isOpen()) {
+        QString msg = QString("MOVE %1 %2 %3\n").arg(row).arg(col).arg(player);
+        socket_->write(msg.toUtf8());
+    }
+}

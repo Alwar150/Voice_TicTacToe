@@ -1,5 +1,6 @@
 #include "TitleScreen.h"
 #include "TTTController.h"
+#include "NetworkManager.h"
 
 TitleScreen::TitleScreen(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::TitleScreen)

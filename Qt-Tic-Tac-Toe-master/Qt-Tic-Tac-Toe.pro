@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets concurrent
+QT       += core gui widgets concurrent network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -30,9 +30,11 @@ INCLUDEPATH += \
     View \
     Controller \
     Forms \
+    Network \
     include/
 
 SOURCES += \
+    Network/NetworkManager.cpp \
     main.cpp \
     AI/MiniMaxAgent.cpp \
     Model/Board.cpp \
@@ -45,6 +47,7 @@ HEADERS += \
     AI/NoAgent.h \
     AI/MiniMaxAgent.h \
     Model/Board.h \
+    NetworkManager.h \
     View/TicTacToeGame.h \
     View/TitleScreen.h \
     Controller/TTTController.h \

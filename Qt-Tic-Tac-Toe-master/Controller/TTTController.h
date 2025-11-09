@@ -4,6 +4,7 @@
 #include "Board.h"
 #include "TTTCommonTypes.h"
 #include "TicTacToeGame.h"
+#include "NetworkManger.h"
 #include <QObject>
 #include <memory>
 #include <vector>
@@ -62,6 +63,10 @@ private: // Methods
      * then if AI is supposed to start a game it will play first.
      */
     void reset();
+
+    QTcpSocket *socket_;
+    void setupNetwork();
+    void sendMove(int row, int col, char player);
 
 protected: // Methods
     /**
