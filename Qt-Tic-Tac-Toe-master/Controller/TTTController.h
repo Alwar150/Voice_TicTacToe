@@ -4,7 +4,8 @@
 #include "Board.h"
 #include "TTTCommonTypes.h"
 #include "TicTacToeGame.h"
-#include "NetworkManger.h"
+#include "NetworkManager.h"
+#include <QTcpSocket>
 #include <QObject>
 #include <memory>
 #include <vector>
