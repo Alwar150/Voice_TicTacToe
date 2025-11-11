@@ -68,9 +68,6 @@ void TTTController::updateGameState(Cell &cell)
     BoardState boardState = board_.evaluateBoard();
     if (BoardState::NoWinner != boardState)
         view_.declareGameState(boardState);
-
-    // Switch the players.
-    switchPlayer();
 }
 
 void TTTController::reset()
@@ -152,26 +149,6 @@ void TTTController::updateGame(Cell &cell)
         qDebug() << "PrevPlayer:" << (prevPlayer == BoardMarks::X ? "X" : "O")
                  << ", currentPlayer:" << (currentPlayer_ == BoardMarks::X ? "X" : "O");
         sendMove(cell.row,cell.col,currentPlayer_ == BoardMarks::X ? 'X' : 'O');
-        if (options_.AIstarts && prevPlayer == BoardMarks::X) {
-            qDebug() << "Emit AIFinished";
-            emit AIFinished();
-            return;
-        }
-        else if (!options_.AIstarts && prevPlayer == BoardMarks::X) {
-            qDebug() << "Emit humanFinished";
-            emit humanFinished();
-            return;
-        }
-        else if (options_.AIstarts && prevPlayer == BoardMarks::O) {
-            qDebug() << "Emit humanFinished";
-            emit humanFinished();
-            return;
-        }
-        else {
-            qDebug() << "Emit AIFinished";
-            emit AIFinished();
-            return;
-        }
     }
 
 }
@@ -194,14 +171,64 @@ void TTTController::onSpeechRecognized(const QString &text)
 
 void TTTController::setupNetwork() {
     socket_ = new QTcpSocket(this);
-    socket_->connectToHost("192.168.1. 135", 5000); // IP de RobotStudio o servidor
+
     connect(socket_, &QTcpSocket::connected, []() {
-        qDebug() << "Conectado al servidor.";
+        qDebug() << "[NET] Conectado al servidor.";
     });
+
     connect(socket_, &QTcpSocket::errorOccurred, [](QAbstractSocket::SocketError err) {
-        qWarning() << "Error TCP:" << err;
+        qWarning() << "[NET] Error TCP:" << err;
     });
+
+    connect(socket_, &QTcpSocket::readyRead, this, &TTTController::onSocketReadyRead);
+
+    socket_->connectToHost("192.168.1.135", 5000); // IP del servidor
 }
+
+void TTTController::onSocketReadyRead() {
+    QByteArray data = socket_->readAll();
+    QString msg = QString::fromUtf8(data).trimmed();
+    qDebug() << "[NET] Recibido:" << msg;
+
+    if (msg == "DONE") {
+        qDebug() << "[GAME] Movimiento completado por el robot.";
+        BoardMarks prevPlayer = currentPlayer_;
+        switchPlayer();
+        if (options_.AIstarts) {
+            if(prevPlayer == BoardMarks::X){
+            // AIPlayed
+                qDebug() << "Emit AIFinished";
+                emit AIFinished();
+                return;
+            }
+            else if(prevPlayer == BoardMarks::O){
+            //HumanPlayed
+                qDebug() << "Emit humanFinished";
+                emit humanFinished();
+                return;
+            }
+
+        }
+        else if (!options_.AIstarts){
+            if(prevPlayer == BoardMarks::X){
+            //HumanPlayed
+                qDebug() << "Emit humanFinished";
+                emit humanFinished();
+                return;
+            }
+            else if(prevPlayer == BoardMarks::O){
+            //AIPlayed
+                qDebug() << "Emit AIFinished";
+                emit AIFinished();
+                return;
+            }
+            qDebug() << "Emit AIFinished";
+            emit AIFinished();
+            return;
+        }
+    }
+}
+
 
 void TTTController::sendMove(int row, int col, char player) {
     if (socket_ && socket_->isOpen()) {
@@ -209,3 +236,4 @@ void TTTController::sendMove(int row, int col, char player) {
         socket_->write(msg.toUtf8());
     }
 }
+

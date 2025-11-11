@@ -144,7 +144,7 @@ public slots:
     virtual void updateGame(Cell &cell);
 private slots:
     void onSpeechRecognized(const QString &text);
-
+    void onSocketReadyRead();
 };
 
 #endif // TTTCONTROLLER_H
