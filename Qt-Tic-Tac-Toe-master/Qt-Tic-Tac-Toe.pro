@@ -47,7 +47,7 @@ HEADERS += \
     AI/NoAgent.h \
     AI/MiniMaxAgent.h \
     Model/Board.h \
-    NetworkManager.h \
+    Network/NetworkManager.h \
     View/TicTacToeGame.h \
     View/TitleScreen.h \
     Controller/TTTController.h \

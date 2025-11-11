@@ -51,6 +51,7 @@ void TTTController::setConnections()
             this, &TTTController::HumanPlay, Qt::QueuedConnection);
     connect(this, &TTTController::speechRecognized,
             this, &TTTController::onSpeechRecognized);
+    setupNetwork();
 
 }
 
@@ -150,7 +151,7 @@ void TTTController::updateGame(Cell &cell)
 
         qDebug() << "PrevPlayer:" << (prevPlayer == BoardMarks::X ? "X" : "O")
                  << ", currentPlayer:" << (currentPlayer_ == BoardMarks::X ? "X" : "O");
-
+        sendMove(cell.row,cell.col,currentPlayer_ == BoardMarks::X ? 'X' : 'O');
         if (options_.AIstarts && prevPlayer == BoardMarks::X) {
             qDebug() << "Emit AIFinished";
             emit AIFinished();
@@ -193,7 +194,7 @@ void TTTController::onSpeechRecognized(const QString &text)
 
 void TTTController::setupNetwork() {
     socket_ = new QTcpSocket(this);
-    socket_->connectToHost("192.168.1.50", 5000); // IP de RobotStudio o servidor
+    socket_->connectToHost("192.168.1. 135", 5000); // IP de RobotStudio o servidor
     connect(socket_, &QTcpSocket::connected, []() {
         qDebug() << "Conectado al servidor.";
     });
