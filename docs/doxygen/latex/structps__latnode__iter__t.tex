@@ -1,0 +1,106 @@
+\doxysection{ps\+\_\+latnode\+\_\+iter\+\_\+t Struct Reference}
+\hypertarget{structps__latnode__iter__t}{}\label{structps__latnode__iter__t}\index{ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}}
+
+
+Iterator over DAG nodes.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/lattice.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__latnode__iter__t}{ps\+\_\+latnode\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__latnode__iter__t_a6b62626b9613fe78a1b74a9b8e969c33}{ps\+\_\+latnode\+\_\+iter\+\_\+next}} (\mbox{\hyperlink{structps__latnode__iter__t}{ps\+\_\+latnode\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__latnode__iter__t_ae9a6464b83d37bfa2ce570206eff6aad}{ps\+\_\+latnode\+\_\+iter\+\_\+free}} (\mbox{\hyperlink{structps__latnode__iter__t}{ps\+\_\+latnode\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__latnode__iter__t_a36ccc88328881079f3fe511c993072b0}{ps\+\_\+latnode\+\_\+iter\+\_\+node}} (\mbox{\hyperlink{structps__latnode__iter__t}{ps\+\_\+latnode\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__latnode__iter__t_a42bd0fbfe8b0cab1a9a7e799a3fc30a2}{ps\+\_\+latnode\+\_\+times}} (\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}node, \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}out\+\_\+fef, \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}out\+\_\+lef)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterator over DAG nodes. 
+
+\label{doc-func-members}
+\Hypertarget{structps__latnode__iter__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__latnode__iter__t_ae9a6464b83d37bfa2ce570206eff6aad}\index{ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}!ps\_latnode\_iter\_free@{ps\_latnode\_iter\_free}}
+\index{ps\_latnode\_iter\_free@{ps\_latnode\_iter\_free}!ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_iter\_free()}{ps\_latnode\_iter\_free()}}
+{\footnotesize\ttfamily \label{structps__latnode__iter__t_ae9a6464b83d37bfa2ce570206eff6aad} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+latnode\+\_\+iter\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__latnode__iter__t}{ps\+\_\+latnode\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Stop iterating over nodes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em itor} & Node iterator. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__latnode__iter__t_a6b62626b9613fe78a1b74a9b8e969c33}\index{ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}!ps\_latnode\_iter\_next@{ps\_latnode\_iter\_next}}
+\index{ps\_latnode\_iter\_next@{ps\_latnode\_iter\_next}!ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_iter\_next()}{ps\_latnode\_iter\_next()}}
+{\footnotesize\ttfamily \label{structps__latnode__iter__t_a6b62626b9613fe78a1b74a9b8e969c33} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__latnode__iter__t}{ps\+\_\+latnode\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+latnode\+\_\+iter\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__latnode__iter__t}{ps\+\_\+latnode\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Move to next node in iteration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em itor} & Node iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated node iterator, or NULL if finished 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__latnode__iter__t_a36ccc88328881079f3fe511c993072b0}\index{ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}!ps\_latnode\_iter\_node@{ps\_latnode\_iter\_node}}
+\index{ps\_latnode\_iter\_node@{ps\_latnode\_iter\_node}!ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_iter\_node()}{ps\_latnode\_iter\_node()}}
+{\footnotesize\ttfamily \label{structps__latnode__iter__t_a36ccc88328881079f3fe511c993072b0} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+latnode\+\_\+iter\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__latnode__iter__t}{ps\+\_\+latnode\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Get node from iterator. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__latnode__iter__t_a42bd0fbfe8b0cab1a9a7e799a3fc30a2}\index{ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}!ps\_latnode\_times@{ps\_latnode\_times}}
+\index{ps\_latnode\_times@{ps\_latnode\_times}!ps\_latnode\_iter\_t@{ps\_latnode\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_times()}{ps\_latnode\_times()}}
+{\footnotesize\ttfamily \label{structps__latnode__iter__t_a42bd0fbfe8b0cab1a9a7e799a3fc30a2} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+latnode\+\_\+times (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{\mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+fef}{, }\item[{\mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+lef}{}\end{DoxyParamCaption})}
+
+Get start and end time range for a node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Node inquired about. \\
+\hline
+{\em out\+\_\+fef} & Output\+: End frame of first exit from this node. \\
+\hline
+{\em out\+\_\+lef} & Output\+: End frame of last exit from this node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Start frame for all edges exiting this node. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{lattice_8h}{lattice.\+h}}\end{DoxyCompactItemize}

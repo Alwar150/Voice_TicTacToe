@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="search_8h" kind="file" language="C++">
+    <compoundname>search.h</compoundname>
+    <includes refid="model_8h" local="no">pocketsphinx/model.h</includes>
+    <includes refid="alignment_8h" local="no">pocketsphinx/alignment.h</includes>
+    <includedby refid="pocketsphinx_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>pocketsphinx/alignment.h</label>
+        <link refid="alignment_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="6">
+        <label>pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pocketsphinx/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pocketsphinx/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h</label>
+        <link refid="search_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pocketsphinx/sphinx_config.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="17">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.cpp</label>
+        <link refid="_human_player_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h</label>
+        <link refid="_human_player_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.cpp</label>
+        <link refid="_mini_max_agent_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.h</label>
+        <link refid="_mini_max_agent_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h</label>
+        <link refid="_no_agent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp</label>
+        <link refid="_board_8cpp"/>
+      </node>
+      <node id="18">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp</label>
+        <link refid="_speech_manager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h</label>
+        <link refid="_speech_manager_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/main.cpp</label>
+        <link refid="_tic_tac_toe_test_2main_8cpp"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_board.h</label>
+        <link refid="tst__board_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_minimaxagent.h</label>
+        <link refid="tst__minimaxagent_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp</label>
+        <link refid="_tic_tac_toe_game_8cpp"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h</label>
+        <link refid="_title_screen_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h</label>
+        <link refid="search_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="search_8h_1ae3fe90e6eb1fa74e30783e20468280c1" prot="public" static="no">
+        <type>struct ps_search_iter_s</type>
+        <definition>typedef struct ps_search_iter_s ps_search_iter_t</definition>
+        <argsstring></argsstring>
+        <name>ps_search_iter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="94" column="31" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Search modules. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>User can configure several &quot;search&quot; objects with different grammars and language models and switch them in runtime to provide interactive experience for the user.</para>
+<para>There are different possible search modes:</para>
+<para><itemizedlist>
+<listitem>
+<para>keyphrase - efficiently looks for keyphrase and ignores other speech. allows to configure detection threshold. </para>
+</listitem>
+<listitem>
+<para>grammar - recognizes speech according to JSGF grammar. Unlike keyphrase grammar search doesn&apos;t ignore words which are not in grammar but tries to recognize them. </para>
+</listitem>
+<listitem>
+<para>ngram/lm - recognizes natural speech with a language model. </para>
+</listitem>
+<listitem>
+<para>allphone - recognizes phonemes with a phonetic language model. </para>
+</listitem>
+<listitem>
+<para>align - creates time alignments for a fixed word sequence. </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>Each search module has a name and can be referenced by name. These names are application-specific. The function ps_activate_search() activates a search module previously added by a name. Only one search module can be activated at time.</para>
+<para>To add the search module one needs to point to the grammar/language model describing the search. The location of the grammar is specific to the application.</para>
+<para>The exact design of a searches depends on your application. For example, you might want to listen for activation keyphrase first and once keyphrase is recognized switch to ngram search to recognize actual command. Once you have recognized the command, you can switch to grammar search to recognize the confirmation and then switch back to keyphrase listening mode to wait for another command.</para>
+<para>If only a simple recognition is required it is sufficient to add a single search or just configure the required mode with configuration options.</para>
+<para>Because Doxygen is Bad Software, the actual function definitions can only exist in <ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref>. Sorry about that. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c-basic-offset:4;<sp/>indent-tabs-mode:<sp/>nil<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Alpha<sp/>Cephei<sp/>Inc..<sp/><sp/>All<sp/>rights</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>distribution.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>ALPHA<sp/>CEPHEI<sp/>INC.<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESSED<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>CARNEGIE<sp/>MELLON<sp/>UNIVERSITY</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>NOR<sp/>ITS<sp/>EMPLOYEES<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__PS_SEARCH_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__PS_SEARCH_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="model_8h" kindref="compound">pocketsphinx/model.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="alignment_8h" kindref="compound">pocketsphinx/alignment.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="search_8h_1ae3fe90e6eb1fa74e30783e20468280c1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ps_search_iter_s<sp/><ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Forward-declare<sp/>this<sp/>because<sp/>header<sp/>files<sp/>are<sp/>an<sp/>atrocity.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ps_decoder_s<sp/><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="110" refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref><sp/></highlight></codeline>
+<codeline lineno="119" refid="structps__decoder__t_1a1a589bf2956a5905368e9288979743b8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structps__decoder__t_1a1a589bf2956a5905368e9288979743b8" kindref="member">ps_current_search</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="133" refid="structps__decoder__t_1aca66da675491dfbcd51f66a2cead19c9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1aca66da675491dfbcd51f66a2cead19c9" kindref="member">ps_remove_search</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="142" refid="structps__decoder__t_1a3c85d53bfd56dc83226cc7f3bbcdcef6" refkind="member"><highlight class="normal"><ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref><sp/>*<ref refid="structps__decoder__t_1a3c85d53bfd56dc83226cc7f3bbcdcef6" kindref="member">ps_search_iter</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="153" refid="structps__search__iter__t_1ac8ae8c4c4f792d0c12eef3426abe4a93" refkind="member"><highlight class="normal"><ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref><sp/>*<ref refid="structps__search__iter__t_1ac8ae8c4c4f792d0c12eef3426abe4a93" kindref="member">ps_search_iter_next</ref>(<ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="162" refid="structps__search__iter__t_1a86d9b5968b9fe317a6335345fb9a2dd0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structps__search__iter__t_1a86d9b5968b9fe317a6335345fb9a2dd0" kindref="member">ps_search_iter_val</ref>(<ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="171" refid="structps__search__iter__t_1a41e404de59cbd7bfc32f2da3ec7e6137" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structps__search__iter__t_1a41e404de59cbd7bfc32f2da3ec7e6137" kindref="member">ps_search_iter_free</ref>(<ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structps__search__iter__t_1a86d9b5968b9fe317a6335345fb9a2dd0" kindref="member">ps_search_iter_val</ref>(<ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref><sp/></highlight></codeline>
+<codeline lineno="195" refid="structps__decoder__t_1ab11d511d180c9aea9779f545d4d22809" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structps__decoder__t_1ab11d511d180c9aea9779f545d4d22809" kindref="member">ps_get_lm</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="207" refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" kindref="member">ps_add_lm</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*lm);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="218" refid="structps__decoder__t_1a268455d472a947079dc9ece74f6a6fab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a268455d472a947079dc9ece74f6a6fab" kindref="member">ps_add_lm_file</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="229" refid="structps__decoder__t_1a70c94d4192c66e9f203eb72f92ee532c" refkind="member"><highlight class="normal"><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*<ref refid="structps__decoder__t_1a70c94d4192c66e9f203eb72f92ee532c" kindref="member">ps_get_fsg</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="241" refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" kindref="member">ps_add_fsg</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="252" refid="structps__decoder__t_1a27cb38750271a285addc3d9c5f15c8ab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a27cb38750271a285addc3d9c5f15c8ab" kindref="member">ps_add_jsgf_file</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="263" refid="structps__decoder__t_1ad975de5e4114ee1d534ceffdacb18394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1ad975de5e4114ee1d534ceffdacb18394" kindref="member">ps_add_jsgf_string</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*jsgf_string);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref><sp/></highlight></codeline>
+<codeline lineno="274" refid="structps__decoder__t_1a7000861f6aa97e98f8a7c95d3e3ba157" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structps__decoder__t_1a7000861f6aa97e98f8a7c95d3e3ba157" kindref="member">ps_get_kws</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref><sp/></highlight></codeline>
+<codeline lineno="286" refid="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b" kindref="member">ps_add_kws</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*keyfile);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref><sp/></highlight></codeline>
+<codeline lineno="298" refid="structps__decoder__t_1a87aced38ba183da00ebd04c002af01d5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a87aced38ba183da00ebd04c002af01d5" kindref="member">ps_add_keyphrase</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*keyphrase);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="310" refid="structps__decoder__t_1a8ae78fa993cad9e1da24b052b80fff78" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a8ae78fa993cad9e1da24b052b80fff78" kindref="member">ps_add_allphone</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*lm);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="321" refid="structps__decoder__t_1a6e324573a9de664cfa0a37a5cd7a6fc8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a6e324573a9de664cfa0a37a5cd7a6fc8" kindref="member">ps_add_allphone_file</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="346" refid="structps__decoder__t_1a911c4849d7ffaf2960177c34968c1b0d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a911c4849d7ffaf2960177c34968c1b0d" kindref="member">ps_set_align_text</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*words);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="375" refid="structps__decoder__t_1a82092689e27601f7bc9227cd904b0266" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__decoder__t_1a82092689e27601f7bc9227cd904b0266" kindref="member">ps_set_alignment</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps,<sp/><ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref><sp/>*al);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="391" refid="structps__decoder__t_1a34112271b4b2a3cb6616e072a36f693d" refkind="member"><highlight class="normal"><ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref><sp/>*<ref refid="structps__decoder__t_1a34112271b4b2a3cb6616e072a36f693d" kindref="member">ps_get_alignment</ref>(<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*ps);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__PS_SEARCH_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h"/>
+  </compounddef>
+</doxygen>

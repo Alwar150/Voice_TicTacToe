@@ -1,0 +1,147 @@
+\doxysection{ps\+\_\+latnode\+\_\+t Struct Reference}
+\hypertarget{structps__latnode__t}{}\label{structps__latnode__t}\index{ps\_latnode\_t@{ps\_latnode\_t}}
+
+
+Node in a word lattice.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/lattice.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__latnode__t_ab814f0cb275ebf52084dd99d97d3b3f2}{ps\+\_\+latnode\+\_\+word}} (\mbox{\hyperlink{structps__lattice__t}{ps\+\_\+lattice\+\_\+t}} \texorpdfstring{$\ast$}{*}dag, \mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}node)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__latnode__t_aff875c8ce337b06966328e16f7b8e037}{ps\+\_\+latnode\+\_\+baseword}} (\mbox{\hyperlink{structps__lattice__t}{ps\+\_\+lattice\+\_\+t}} \texorpdfstring{$\ast$}{*}dag, \mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}node)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__latlink__iter__t}{ps\+\_\+latlink\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__latnode__t_aa040d46f234f443d43a70a749e1ee65a}{ps\+\_\+latnode\+\_\+exits}} (\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}node)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__latlink__iter__t}{ps\+\_\+latlink\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__latnode__t_ac8cfa1412f450f3895fd316bb179e20b}{ps\+\_\+latnode\+\_\+entries}} (\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}node)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \mbox{\hyperlink{structps__latnode__t_a68253946c2405d7f9090de7530f33b9d}{ps\+\_\+latnode\+\_\+prob}} (\mbox{\hyperlink{structps__lattice__t}{ps\+\_\+lattice\+\_\+t}} \texorpdfstring{$\ast$}{*}dag, \mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}node, \mbox{\hyperlink{structps__latlink__t}{ps\+\_\+latlink\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+link)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Node in a word lattice. 
+
+A node corresponds to a number of hypothesized instances of a word which all share the same starting point. 
+
+\label{doc-func-members}
+\Hypertarget{structps__latnode__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__latnode__t_aff875c8ce337b06966328e16f7b8e037}\index{ps\_latnode\_t@{ps\_latnode\_t}!ps\_latnode\_baseword@{ps\_latnode\_baseword}}
+\index{ps\_latnode\_baseword@{ps\_latnode\_baseword}!ps\_latnode\_t@{ps\_latnode\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_baseword()}{ps\_latnode\_baseword()}}
+{\footnotesize\ttfamily \label{structps__latnode__t_aff875c8ce337b06966328e16f7b8e037} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const  \texorpdfstring{$\ast$}{*} ps\+\_\+latnode\+\_\+baseword (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__lattice__t}{ps\+\_\+lattice\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{dag}{, }\item[{\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})}
+
+Get base word string for this node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dag} & Lattice to which node belongs. \\
+\hline
+{\em node} & Node inquired about. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Base word string for this node. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__latnode__t_ac8cfa1412f450f3895fd316bb179e20b}\index{ps\_latnode\_t@{ps\_latnode\_t}!ps\_latnode\_entries@{ps\_latnode\_entries}}
+\index{ps\_latnode\_entries@{ps\_latnode\_entries}!ps\_latnode\_t@{ps\_latnode\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_entries()}{ps\_latnode\_entries()}}
+{\footnotesize\ttfamily \label{structps__latnode__t_ac8cfa1412f450f3895fd316bb179e20b} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__latlink__iter__t}{ps\+\_\+latlink\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+latnode\+\_\+entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})}
+
+Iterate over entries to this node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Node inquired about. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator over entry links to this node. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__latnode__t_aa040d46f234f443d43a70a749e1ee65a}\index{ps\_latnode\_t@{ps\_latnode\_t}!ps\_latnode\_exits@{ps\_latnode\_exits}}
+\index{ps\_latnode\_exits@{ps\_latnode\_exits}!ps\_latnode\_t@{ps\_latnode\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_exits()}{ps\_latnode\_exits()}}
+{\footnotesize\ttfamily \label{structps__latnode__t_aa040d46f234f443d43a70a749e1ee65a} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__latlink__iter__t}{ps\+\_\+latlink\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+latnode\+\_\+exits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})}
+
+Iterate over exits from this node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Node inquired about. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator over exit links from this node. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__latnode__t_a68253946c2405d7f9090de7530f33b9d}\index{ps\_latnode\_t@{ps\_latnode\_t}!ps\_latnode\_prob@{ps\_latnode\_prob}}
+\index{ps\_latnode\_prob@{ps\_latnode\_prob}!ps\_latnode\_t@{ps\_latnode\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_prob()}{ps\_latnode\_prob()}}
+{\footnotesize\ttfamily \label{structps__latnode__t_a68253946c2405d7f9090de7530f33b9d} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} ps\+\_\+latnode\+\_\+prob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__lattice__t}{ps\+\_\+lattice\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{dag}{, }\item[{\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{node}{, }\item[{\mbox{\hyperlink{structps__latlink__t}{ps\+\_\+latlink\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{out\+\_\+link}{}\end{DoxyParamCaption})}
+
+Get best posterior probability and associated acoustic score from a lattice node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dag} & Lattice to which node belongs. \\
+\hline
+{\em node} & Node inquired about. \\
+\hline
+{\em out\+\_\+link} & Output\+: exit link with highest posterior probability \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Posterior probability of the best link exiting this node. Log is expressed in the log-\/base used in the decoder. To convert to linear floating-\/point, use logmath\+\_\+exp(ps\+\_\+lattice\+\_\+get\+\_\+logmath(), pprob). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__latnode__t_ab814f0cb275ebf52084dd99d97d3b3f2}\index{ps\_latnode\_t@{ps\_latnode\_t}!ps\_latnode\_word@{ps\_latnode\_word}}
+\index{ps\_latnode\_word@{ps\_latnode\_word}!ps\_latnode\_t@{ps\_latnode\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_latnode\_word()}{ps\_latnode\_word()}}
+{\footnotesize\ttfamily \label{structps__latnode__t_ab814f0cb275ebf52084dd99d97d3b3f2} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const  \texorpdfstring{$\ast$}{*} ps\+\_\+latnode\+\_\+word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__lattice__t}{ps\+\_\+lattice\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{dag}{, }\item[{\mbox{\hyperlink{structps__latnode__t}{ps\+\_\+latnode\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})}
+
+Get word string for this node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dag} & Lattice to which node belongs. \\
+\hline
+{\em node} & Node inquired about. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Word string for this node (possibly a pronunciation variant). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{lattice_8h}{lattice.\+h}}\end{DoxyCompactItemize}

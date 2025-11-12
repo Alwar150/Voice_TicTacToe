@@ -1,6 +1,5 @@
 #ifndef MINIMAXAGENT_H
 #define MINIMAXAGENT_H
-#include "TTTCommonTypes.h"
 #include "AIAgent.h"
 
 /**
@@ -17,6 +16,7 @@
  */
 
 class MiniMaxAgent final : public AIAgent
+Q_OBJECT
 {
 public:
     /**
@@ -25,13 +25,13 @@ public:
      * @param AImark: The mark (X or O) of the AI.
      * @param playerMark: The mark (X or O) of the human player.
      */
-    MiniMaxAgent(unsigned short depth, BoardMarks AImark, BoardMarks playerMark);
+    MiniMaxAgent(QObject* parent = nullptr, BoardMarks AImark,const Board& board,unsigned short depth);
     /**
      * @brief Start the minimax algorithm to choose a cell to play based on a given board.
      * @param board: a reference to the board model.
      * @return the chosen cell index (in a 1D array) that the AI played.
      */
-    int play(const Board &board) override;
+    int play() override;
 
 private:
     /**
@@ -39,14 +39,12 @@ private:
      */
     const unsigned short depth_;
     /**
-     * @brief The mark (X or O) of the AI.
+     * @brief playerMark_ returns the mark of the human player.
+     * @return the mark of the human player.
      */
-    const BoardMarks AImark_;
-    /**
-     * @brief The mark (X or O) of the human player.
-     */
-    const BoardMarks playerMark_;
-
+    inline BoardMarks playerMark_() const {
+        return (BoardMarks::X == mark_) ? BoardMarks::O : BoardMarks::X;
+    }
     /**
      * @brief AI_WIN_SCORE defines the score of the final board when the AI wins.
      */

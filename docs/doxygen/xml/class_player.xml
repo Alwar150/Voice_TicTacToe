@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_player" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Player</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <derivedcompoundref refid="class_a_i_agent" prot="public" virt="non-virtual">AIAgent</derivedcompoundref>
+    <includes refid="_player_8h" local="no">Player.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_player_1a088227ab53747cc4955b0a3859b69a84" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="class_board" kindref="compound">Board</ref> *</type>
+        <definition>const Board* Player::board_</definition>
+        <argsstring></argsstring>
+        <name>board_</name>
+        <qualifiedname>Player::board_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" line="23" column="17" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1ae8c600761eeb36ef938927dd87a87011" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+        <definition>const BoardMarks Player::mark_</definition>
+        <argsstring></argsstring>
+        <name>mark_</name>
+        <qualifiedname>Player::mark_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" line="24" column="22" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_player_1a8c885f35774ed96d466e67194b74de95" compoundref="_player_8h" startline="13" endline="15">Player</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_1a8c885f35774ed96d466e67194b74de95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Player::Player</definition>
+        <argsstring>(QObject *parent_=nullptr, BoardMarks playerMark, const Board &amp;borad_ref)</argsstring>
+        <name>Player</name>
+        <qualifiedname>Player::Player</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent_</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>playerMark</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_board" kindref="compound">Board</ref> &amp;</type>
+          <declname>borad_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" line="13" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" bodystart="13" bodyend="15"/>
+        <references refid="class_player_1ae8c600761eeb36ef938927dd87a87011" compoundref="_player_8h" startline="24">mark_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a8981c201ffb2270c0b6dbd467b627376" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Player::~Player</definition>
+        <argsstring>()</argsstring>
+        <name>~Player</name>
+        <qualifiedname>Player::~Player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" line="16" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1af85db5d05b014bf19d873038c56dc7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Player::play</definition>
+        <argsstring>()=0</argsstring>
+        <name>play</name>
+        <qualifiedname>Player::play</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" line="17" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_player_1af9436bec15f91ee87fb86907b720be52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::playerFinished</definition>
+        <argsstring>(const int &amp;cell)</argsstring>
+        <name>playerFinished</name>
+        <qualifiedname>Player::playerFinished</qualifiedname>
+        <param>
+          <type>const int &amp;</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" line="19" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_player" kindref="compound">Player</ref> class is an abstract base class for different types of players in the Tic Tac Toe game, such as human players and AI players. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>AIAgent</label>
+        <link refid="class_a_i_agent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>NoAgent</label>
+        <link refid="class_no_agent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Board</label>
+        <link refid="class_board"/>
+      </node>
+      <node id="1">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" line="10" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h" bodystart="11" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_player_1a088227ab53747cc4955b0a3859b69a84" prot="protected" virt="non-virtual"><scope>Player</scope><name>board_</name></member>
+      <member refid="class_player_1ae8c600761eeb36ef938927dd87a87011" prot="protected" virt="non-virtual"><scope>Player</scope><name>mark_</name></member>
+      <member refid="class_player_1af85db5d05b014bf19d873038c56dc7ed" prot="public" virt="pure-virtual"><scope>Player</scope><name>play</name></member>
+      <member refid="class_player_1a8c885f35774ed96d466e67194b74de95" prot="public" virt="non-virtual"><scope>Player</scope><name>Player</name></member>
+      <member refid="class_player_1af9436bec15f91ee87fb86907b720be52" prot="public" virt="non-virtual"><scope>Player</scope><name>playerFinished</name></member>
+      <member refid="class_player_1a8981c201ffb2270c0b6dbd467b627376" prot="public" virt="virtual"><scope>Player</scope><name>~Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

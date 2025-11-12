@@ -1,0 +1,200 @@
+\doxysection{C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx.h File Reference}
+\hypertarget{pocketsphinx_8h}{}\label{pocketsphinx_8h}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/sphinx\+\_\+config.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/prim\+\_\+type.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/logmath.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/err.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/vad.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/endpointer.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/model.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/search.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/export.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/lattice.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/alignment.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/mllr.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structps__arg__s}{ps\+\_\+arg\+\_\+s}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fc}{ps\+\_\+type\+\_\+e}} \mbox{\hyperlink{pocketsphinx_8h_abe6ad8a2efc87195489fe107e13045d6}{ps\+\_\+type\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Types of configuration parameters. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structps__arg__s}{ps\+\_\+arg\+\_\+s}} \mbox{\hyperlink{pocketsphinx_8h_a81d227431a84d7ed8666ed5b18f8df40}{ps\+\_\+arg\+\_\+t}}
+\item 
+typedef struct cmd\+\_\+ln\+\_\+s \mbox{\hyperlink{pocketsphinx_8h_a689111af4bbe76465dda7c7b90874d69}{ps\+\_\+config\+\_\+t}}
+\item 
+typedef struct ps\+\_\+decoder\+\_\+s \mbox{\hyperlink{pocketsphinx_8h_ac6ba825b5a9e1c9003b257221eb6e055}{ps\+\_\+decoder\+\_\+t}}
+\item 
+typedef struct ps\+\_\+astar\+\_\+s \mbox{\hyperlink{pocketsphinx_8h_a73090e41024a1f07f5552b83ac7e0993}{ps\+\_\+nbest\+\_\+t}}
+\item 
+typedef struct ps\+\_\+seg\+\_\+s \mbox{\hyperlink{pocketsphinx_8h_a64d3ac229ef945017112bab4c2a5ec94}{ps\+\_\+seg\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fc}{ps\+\_\+type\+\_\+e}} \{ \newline
+\mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca8e88779f9d2fd6770f5a2c49fd11a971}{ARG\+\_\+\+REQUIRED}} = (1\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}0)
+, \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca2d28318744db1f7cf025a976930c5e3c}{ARG\+\_\+\+INTEGER}} = (1\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}1)
+, \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca23160d667d625556269e8a20faf1cbb9}{ARG\+\_\+\+FLOATING}} = (1\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}2)
+, \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca1e0904ee5e3baf2aa4070ab0718a3afa}{ARG\+\_\+\+STRING}} = (1\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}3)
+, \newline
+\mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca6810665d7057c3a8f72951a0b3592c40}{ARG\+\_\+\+BOOLEAN}} = (1\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}4)
+, \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca8e7de3b18381bc6ce493bed4ef40b2d6}{REQARG\+\_\+\+INTEGER}} = (ARG\+\_\+\+INTEGER \texorpdfstring{$\vert$}{|} ARG\+\_\+\+REQUIRED)
+, \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca452ccca63dbe20a82a6342d7f71a5d04}{REQARG\+\_\+\+FLOATING}} = (ARG\+\_\+\+FLOATING \texorpdfstring{$\vert$}{|} ARG\+\_\+\+REQUIRED)
+, \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fcae496350f721356060dfa374d78432e48}{REQARG\+\_\+\+STRING}} = (ARG\+\_\+\+STRING \texorpdfstring{$\vert$}{|} ARG\+\_\+\+REQUIRED)
+, \newline
+\mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca07f510ed8ee818c553091c728f005979}{REQARG\+\_\+\+BOOLEAN}} = (ARG\+\_\+\+BOOLEAN \texorpdfstring{$\vert$}{|} ARG\+\_\+\+REQUIRED)
+ \}
+\begin{DoxyCompactList}\small\item\em Types of configuration parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__arg__t}{ps\+\_\+arg\+\_\+t}} const \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{pocketsphinx_8h_a7cf24c25da3ffc81139d9919b9fe340d}{ps\+\_\+args}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main header file for the Pocket\+Sphinx decoder.
+
+This is the only header file you should need to include in order to write code using Pocket\+Sphinx. The documentation for its various functions and structures is actually located on the pages for those structures, and because Doxygen does not seem smart enough to put links in the "{}\+Typedefs"{} list above, here they are for your convenience\+:
+
+
+\begin{DoxyItemize}
+\item \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t}
+\item \doxylink{structps__arg__t}{ps\+\_\+arg\+\_\+t}
+\item \doxylink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}
+\item \doxylink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}
+\item \doxylink{structps__seg__t}{ps\+\_\+seg\+\_\+t}
+\end{DoxyItemize}
+
+There are also a few other structures you should be aware of, which can be useful in writing speech applications\+:
+
+
+\begin{DoxyItemize}
+\item \doxylink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}
+\item \doxylink{structps__vad__t}{ps\+\_\+vad\+\_\+t}
+\item \doxylink{structjsgf__t}{jsgf\+\_\+t}
+\item \doxylink{structngram__model__t}{ngram\+\_\+model\+\_\+t}
+\end{DoxyItemize}
+
+Finally, to learn about switching language models and grammars, see \texorpdfstring{$<$}{<}\doxylink{search_8h}{pocketsphinx/search.\+h}\texorpdfstring{$>$}{>} 
+
+\label{doc-typedef-members}
+\Hypertarget{pocketsphinx_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{pocketsphinx_8h_a81d227431a84d7ed8666ed5b18f8df40}\index{pocketsphinx.h@{pocketsphinx.h}!ps\_arg\_t@{ps\_arg\_t}}
+\index{ps\_arg\_t@{ps\_arg\_t}!pocketsphinx.h@{pocketsphinx.h}}
+\doxysubsubsection{\texorpdfstring{ps\_arg\_t}{ps\_arg\_t}}
+{\footnotesize\ttfamily \label{pocketsphinx_8h_a81d227431a84d7ed8666ed5b18f8df40} 
+typedef struct \mbox{\hyperlink{structps__arg__s}{ps\+\_\+arg\+\_\+s}} ps\+\_\+arg\+\_\+t}
+
+\Hypertarget{pocketsphinx_8h_a689111af4bbe76465dda7c7b90874d69}\index{pocketsphinx.h@{pocketsphinx.h}!ps\_config\_t@{ps\_config\_t}}
+\index{ps\_config\_t@{ps\_config\_t}!pocketsphinx.h@{pocketsphinx.h}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_t}{ps\_config\_t}}
+{\footnotesize\ttfamily \label{pocketsphinx_8h_a689111af4bbe76465dda7c7b90874d69} 
+typedef struct cmd\+\_\+ln\+\_\+s ps\+\_\+config\+\_\+t}
+
+\Hypertarget{pocketsphinx_8h_ac6ba825b5a9e1c9003b257221eb6e055}\index{pocketsphinx.h@{pocketsphinx.h}!ps\_decoder\_t@{ps\_decoder\_t}}
+\index{ps\_decoder\_t@{ps\_decoder\_t}!pocketsphinx.h@{pocketsphinx.h}}
+\doxysubsubsection{\texorpdfstring{ps\_decoder\_t}{ps\_decoder\_t}}
+{\footnotesize\ttfamily \label{pocketsphinx_8h_ac6ba825b5a9e1c9003b257221eb6e055} 
+typedef struct ps\+\_\+decoder\+\_\+s ps\+\_\+decoder\+\_\+t}
+
+\Hypertarget{pocketsphinx_8h_a73090e41024a1f07f5552b83ac7e0993}\index{pocketsphinx.h@{pocketsphinx.h}!ps\_nbest\_t@{ps\_nbest\_t}}
+\index{ps\_nbest\_t@{ps\_nbest\_t}!pocketsphinx.h@{pocketsphinx.h}}
+\doxysubsubsection{\texorpdfstring{ps\_nbest\_t}{ps\_nbest\_t}}
+{\footnotesize\ttfamily \label{pocketsphinx_8h_a73090e41024a1f07f5552b83ac7e0993} 
+typedef struct ps\+\_\+astar\+\_\+s ps\+\_\+nbest\+\_\+t}
+
+\Hypertarget{pocketsphinx_8h_a64d3ac229ef945017112bab4c2a5ec94}\index{pocketsphinx.h@{pocketsphinx.h}!ps\_seg\_t@{ps\_seg\_t}}
+\index{ps\_seg\_t@{ps\_seg\_t}!pocketsphinx.h@{pocketsphinx.h}}
+\doxysubsubsection{\texorpdfstring{ps\_seg\_t}{ps\_seg\_t}}
+{\footnotesize\ttfamily \label{pocketsphinx_8h_a64d3ac229ef945017112bab4c2a5ec94} 
+typedef struct ps\+\_\+seg\+\_\+s ps\+\_\+seg\+\_\+t}
+
+\Hypertarget{pocketsphinx_8h_abe6ad8a2efc87195489fe107e13045d6}\index{pocketsphinx.h@{pocketsphinx.h}!ps\_type\_t@{ps\_type\_t}}
+\index{ps\_type\_t@{ps\_type\_t}!pocketsphinx.h@{pocketsphinx.h}}
+\doxysubsubsection{\texorpdfstring{ps\_type\_t}{ps\_type\_t}}
+{\footnotesize\ttfamily \label{pocketsphinx_8h_abe6ad8a2efc87195489fe107e13045d6} 
+typedef enum \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fc}{ps\+\_\+type\+\_\+e}} \mbox{\hyperlink{pocketsphinx_8h_abe6ad8a2efc87195489fe107e13045d6}{ps\+\_\+type\+\_\+t}}}
+
+
+
+Types of configuration parameters. 
+
+
+
+\label{doc-enum-members}
+\Hypertarget{pocketsphinx_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fc}\index{pocketsphinx.h@{pocketsphinx.h}!ps\_type\_e@{ps\_type\_e}}
+\index{ps\_type\_e@{ps\_type\_e}!pocketsphinx.h@{pocketsphinx.h}}
+\doxysubsubsection{\texorpdfstring{ps\_type\_e}{ps\_type\_e}}
+{\footnotesize\ttfamily \label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fc} 
+enum \mbox{\hyperlink{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fc}{ps\+\_\+type\+\_\+e}}}
+
+
+
+Types of configuration parameters. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_REQUIRED@{ARG\_REQUIRED}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!ARG\_REQUIRED@{ARG\_REQUIRED}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca8e88779f9d2fd6770f5a2c49fd11a971}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca8e88779f9d2fd6770f5a2c49fd11a971} 
+ARG\+\_\+\+REQUIRED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_INTEGER@{ARG\_INTEGER}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!ARG\_INTEGER@{ARG\_INTEGER}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca2d28318744db1f7cf025a976930c5e3c}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca2d28318744db1f7cf025a976930c5e3c} 
+ARG\+\_\+\+INTEGER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_FLOATING@{ARG\_FLOATING}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!ARG\_FLOATING@{ARG\_FLOATING}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca23160d667d625556269e8a20faf1cbb9}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca23160d667d625556269e8a20faf1cbb9} 
+ARG\+\_\+\+FLOATING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_STRING@{ARG\_STRING}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!ARG\_STRING@{ARG\_STRING}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca1e0904ee5e3baf2aa4070ab0718a3afa}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca1e0904ee5e3baf2aa4070ab0718a3afa} 
+ARG\+\_\+\+STRING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ARG\_BOOLEAN@{ARG\_BOOLEAN}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!ARG\_BOOLEAN@{ARG\_BOOLEAN}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca6810665d7057c3a8f72951a0b3592c40}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca6810665d7057c3a8f72951a0b3592c40} 
+ARG\+\_\+\+BOOLEAN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQARG\_INTEGER@{REQARG\_INTEGER}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!REQARG\_INTEGER@{REQARG\_INTEGER}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca8e7de3b18381bc6ce493bed4ef40b2d6}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca8e7de3b18381bc6ce493bed4ef40b2d6} 
+REQARG\+\_\+\+INTEGER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQARG\_FLOATING@{REQARG\_FLOATING}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!REQARG\_FLOATING@{REQARG\_FLOATING}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca452ccca63dbe20a82a6342d7f71a5d04}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca452ccca63dbe20a82a6342d7f71a5d04} 
+REQARG\+\_\+\+FLOATING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQARG\_STRING@{REQARG\_STRING}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!REQARG\_STRING@{REQARG\_STRING}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fcae496350f721356060dfa374d78432e48}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fcae496350f721356060dfa374d78432e48} 
+REQARG\+\_\+\+STRING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REQARG\_BOOLEAN@{REQARG\_BOOLEAN}!pocketsphinx.h@{pocketsphinx.h}}\index{pocketsphinx.h@{pocketsphinx.h}!REQARG\_BOOLEAN@{REQARG\_BOOLEAN}}}\Hypertarget{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca07f510ed8ee818c553091c728f005979}\label{pocketsphinx_8h_a46e29965a820dcffd41e0cdef15bc6fca07f510ed8ee818c553091c728f005979} 
+REQARG\+\_\+\+BOOLEAN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-func-members}
+\Hypertarget{pocketsphinx_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{pocketsphinx_8h_a7cf24c25da3ffc81139d9919b9fe340d}\index{pocketsphinx.h@{pocketsphinx.h}!ps\_args@{ps\_args}}
+\index{ps\_args@{ps\_args}!pocketsphinx.h@{pocketsphinx.h}}
+\doxysubsubsection{\texorpdfstring{ps\_args()}{ps\_args()}}
+{\footnotesize\ttfamily \label{pocketsphinx_8h_a7cf24c25da3ffc81139d9919b9fe340d} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__arg__t}{ps\+\_\+arg\+\_\+t}} const  \texorpdfstring{$\ast$}{*} ps\+\_\+args (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Returns the argument definitions used in ps\+\_\+config\+\_\+init().
+
+This is here to avoid exporting global data, which is problematic on Win32 and Symbian (and possibly other platforms).
+
+\doxylink{structps__config__t}{ps\+\_\+config\+\_\+t} 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+

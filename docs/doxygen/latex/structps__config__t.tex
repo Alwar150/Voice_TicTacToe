@@ -1,0 +1,492 @@
+\doxysection{ps\+\_\+config\+\_\+t Struct Reference}
+\hypertarget{structps__config__t}{}\label{structps__config__t}\index{ps\_config\_t@{ps\_config\_t}}
+
+
+configuration object.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_a65588a7f05e8796f722fb7bd7355e57c}{ps\+\_\+config\+\_\+init}} (const \mbox{\hyperlink{structps__arg__t}{ps\+\_\+arg\+\_\+t}} \texorpdfstring{$\ast$}{*}defn)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_a6640499a04c68a27b2bf3db85555eb0f}{ps\+\_\+config\+\_\+retain}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__config__t_a58efc9357b6871c0575be7ea59f326b0}{ps\+\_\+config\+\_\+free}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\item 
+int \mbox{\hyperlink{structps__config__t_a8c6a4572efab5c171e14ba5b1e7ac9d1}{ps\+\_\+config\+\_\+validate}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_a30596bd85860ccb7bb6dea3dc9a35e71}{ps\+\_\+config\+\_\+parse\+\_\+json}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}json)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_af62a637d2863595a46b617a20abb1b69}{ps\+\_\+config\+\_\+serialize\+\_\+json}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{pocketsphinx_8h_abe6ad8a2efc87195489fe107e13045d6}{ps\+\_\+type\+\_\+t}} \mbox{\hyperlink{structps__config__t_a957ca92e4393991b08e0273c29a08315}{ps\+\_\+config\+\_\+typeof}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, char const \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_acc80d6fce5453e58b4abd6d806e5a36a}{ps\+\_\+config\+\_\+get}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_a6be12b4ac8bbdd01b0d4a23cf2ed1718}{ps\+\_\+config\+\_\+set}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name, const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*}val, \mbox{\hyperlink{pocketsphinx_8h_abe6ad8a2efc87195489fe107e13045d6}{ps\+\_\+type\+\_\+t}} t)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} long \mbox{\hyperlink{structps__config__t_aec8132830a14ceb9a1d2c53bbf1c6284}{ps\+\_\+config\+\_\+int}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__config__t_aa9412a3e395deb907fee7d4d307cab66}{ps\+\_\+config\+\_\+bool}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} double \mbox{\hyperlink{structps__config__t_abf6ac1c6030616293f8e50e1b6a565af}{ps\+\_\+config\+\_\+float}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_aafbfbe19ce5d48e88bac0e5ed99c10e6}{ps\+\_\+config\+\_\+str}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_a99ac9564d02ced91e819da50f0766478}{ps\+\_\+config\+\_\+set\+\_\+int}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name, long val)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_a67f6d45291c37c3f3e97031f65f19e53}{ps\+\_\+config\+\_\+set\+\_\+bool}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name, int val)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_a2479d90c3ba0ac0de6bd0143b3b10cb9}{ps\+\_\+config\+\_\+set\+\_\+float}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name, double val)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_aa0ad5a8fb7c16530050272ed7d59640b}{ps\+\_\+config\+\_\+set\+\_\+str}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}val)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__config__t_a30154c47339a448445f1ca52f63ebdd8}{ps\+\_\+config\+\_\+soundfile}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, FILE \texorpdfstring{$\ast$}{*}fh, const char \texorpdfstring{$\ast$}{*}file)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__config__t_a47e3ac3cb5d90ef4442662b19acd6cf0}{ps\+\_\+config\+\_\+wavfile}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, FILE \texorpdfstring{$\ast$}{*}infh, const char \texorpdfstring{$\ast$}{*}file)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__config__t_a99c3fb8f6b8bb5e29869d2f4efd593f1}{ps\+\_\+config\+\_\+nistfile}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config, FILE \texorpdfstring{$\ast$}{*}infh, const char \texorpdfstring{$\ast$}{*}file)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__config__t_ab33df51031c41cdb73794845c33a2d88}{ps\+\_\+default\+\_\+search\+\_\+args}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__config__t_ac022a88c8bd55f78398a55ffb3a6597c}{ps\+\_\+expand\+\_\+model\+\_\+config}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_a69b05a7582ee80ff206fb1e4d709bc4c}{ps\+\_\+init}} (\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Related Symbols}
+(Note that these are not member symbols.) \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__config__t_aa9adc40d1099e6df4e3ba38e45bac100}{ps\+\_\+default\+\_\+modeldir}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+configuration object. 
+
+\label{doc-func-members}
+\Hypertarget{structps__config__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__config__t_aa9412a3e395deb907fee7d4d307cab66}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_bool@{ps\_config\_bool}}
+\index{ps\_config\_bool@{ps\_config\_bool}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_bool()}{ps\_config\_bool()}}
+{\footnotesize\ttfamily \label{structps__config__t_aa9412a3e395deb907fee7d4d307cab66} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+config\+\_\+bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Get a boolean-\/valued parameter.
+
+If the parameter does not have an integer or boolean type, this will print an error and return 0. The return value is either 0 or 1 (if the parameter has an integer type, any non-\/zero value will return 1). 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_abf6ac1c6030616293f8e50e1b6a565af}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_float@{ps\_config\_float}}
+\index{ps\_config\_float@{ps\_config\_float}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_float()}{ps\_config\_float()}}
+{\footnotesize\ttfamily \label{structps__config__t_abf6ac1c6030616293f8e50e1b6a565af} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} double ps\+\_\+config\+\_\+float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Get a floating-\/point parameter.
+
+If the parameter does not have a floating-\/point type, this will print an error and return 0. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a58efc9357b6871c0575be7ea59f326b0}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_free@{ps\_config\_free}}
+\index{ps\_config\_free@{ps\_config\_free}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_free()}{ps\_config\_free()}}
+{\footnotesize\ttfamily \label{structps__config__t_a58efc9357b6871c0575be7ea59f326b0} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+config\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Release a configuration object. \Hypertarget{structps__config__t_acc80d6fce5453e58b4abd6d806e5a36a}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_get@{ps\_config\_get}}
+\index{ps\_config\_get@{ps\_config\_get}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_get()}{ps\_config\_get()}}
+{\footnotesize\ttfamily \label{structps__config__t_acc80d6fce5453e58b4abd6d806e5a36a} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Access the value of a configuration parameter.
+
+To actually do something with the value, you will need to know its type, which can be obtained with \doxylink{structps__config__t_a957ca92e4393991b08e0273c29a08315}{ps\+\_\+config\+\_\+typeof()}. This function is thus mainly useful for dynamic language bindings, and you should use \doxylink{structps__config__t_aec8132830a14ceb9a1d2c53bbf1c6284}{ps\+\_\+config\+\_\+int()}, \doxylink{structps__config__t_abf6ac1c6030616293f8e50e1b6a565af}{ps\+\_\+config\+\_\+float()}, or \doxylink{structps__config__t_aafbfbe19ce5d48e88bac0e5ed99c10e6}{ps\+\_\+config\+\_\+str()} instead.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & Configuration object. \\
+\hline
+{\em name} & Name of the parameter to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the parameter\textquotesingle{}s value, or NULL if the parameter does not exist. Note that a string parameter can also have NULL as a value, in which case the {\ttfamily ptr} field in the return value is NULL. This pointer (and any pointers inside it) is owned by the \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a65588a7f05e8796f722fb7bd7355e57c}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_init@{ps\_config\_init}}
+\index{ps\_config\_init@{ps\_config\_init}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_init()}{ps\_config\_init()}}
+{\footnotesize\ttfamily \label{structps__config__t_a65588a7f05e8796f722fb7bd7355e57c} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structps__arg__t}{ps\+\_\+arg\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{defn}{}\end{DoxyParamCaption})}
+
+Create a configuration with default values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em defn} & Array of \doxylink{structps__arg__t}{ps\+\_\+arg\+\_\+t} defining and describing parameters, terminated by an \doxylink{structps__arg__t}{ps\+\_\+arg\+\_\+t} with {\ttfamily name == \doxylink{prim__type_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}. You should usually just pass NULL here, which will result in the standard set of parameters being used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Newly created configuration or NULL on failure (should not happen, but check it anyway). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_aec8132830a14ceb9a1d2c53bbf1c6284}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_int@{ps\_config\_int}}
+\index{ps\_config\_int@{ps\_config\_int}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_int()}{ps\_config\_int()}}
+{\footnotesize\ttfamily \label{structps__config__t_aec8132830a14ceb9a1d2c53bbf1c6284} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} long ps\+\_\+config\+\_\+int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Get an integer-\/valued parameter.
+
+If the parameter does not have an integer or boolean type, this will print an error and return 0. So don\textquotesingle{}t do that. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a99c3fb8f6b8bb5e29869d2f4efd593f1}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_nistfile@{ps\_config\_nistfile}}
+\index{ps\_config\_nistfile@{ps\_config\_nistfile}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_nistfile()}{ps\_config\_nistfile()}}
+{\footnotesize\ttfamily \label{structps__config__t_a99c3fb8f6b8bb5e29869d2f4efd593f1} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+config\+\_\+nistfile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{infh}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+Read a NIST header and set configuration parameters.
+
+This works like \doxylink{structps__config__t_a30154c47339a448445f1ca52f63ebdd8}{ps\+\_\+config\+\_\+soundfile()} but assumes that you already know it\textquotesingle{}s a NIST file.
+
+Unlike \doxylink{structps__config__t_a30154c47339a448445f1ca52f63ebdd8}{ps\+\_\+config\+\_\+soundfile()}, the file does {\itshape not} have to be seekable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & Configuration to update from file. \\
+\hline
+{\em infh} & Previously opened file handle. \\
+\hline
+{\em file} & Name of open file handle for logging (optional, can be NULL) \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a30596bd85860ccb7bb6dea3dc9a35e71}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_parse\_json@{ps\_config\_parse\_json}}
+\index{ps\_config\_parse\_json@{ps\_config\_parse\_json}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_parse\_json()}{ps\_config\_parse\_json()}}
+{\footnotesize\ttfamily \label{structps__config__t_a30596bd85860ccb7bb6dea3dc9a35e71} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+parse\+\_\+json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{json}{}\end{DoxyParamCaption})}
+
+Create or update a configuration by parsing slightly extended JSON.
+
+This function parses a JSON object in non-\/strict mode to produce a \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t}. Configuration parameters are given {\itshape without} a leading dash, and do not need to be quoted, nor does the object need to be enclosed in curly braces, nor are commas necessary between key/value pairs. Basically, it\textquotesingle{}s degenerate YAML. So, for example, this is accepted\+: \begin{DoxyVerb}hmm: fr-fr
+samprate: 8000
+keyphrase: "hello world"
+\end{DoxyVerb}
+
+
+Of course, valid JSON is also accepted, but who wants to use that.
+
+Well, mostly. Unicode escape sequences (e.\+g. {\ttfamily "{}\textbackslash{}u0020"{}}) are {\itshape not} supported at the moment, so please don\textquotesingle{}t use them.
+
+\begin{DoxyItemize}
+\item config Previously existing \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t} to update, or NULL to create a new one. \item json JSON serialized object as null-\/terminated UTF-\/8, containing configuration parameters. \begin{DoxyReturn}{Returns}
+Newly created configuration or NULL on failure (such as invalid or missing parameters). 
+\end{DoxyReturn}
+\end{DoxyItemize}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a6640499a04c68a27b2bf3db85555eb0f}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_retain@{ps\_config\_retain}}
+\index{ps\_config\_retain@{ps\_config\_retain}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_retain()}{ps\_config\_retain()}}
+{\footnotesize\ttfamily \label{structps__config__t_a6640499a04c68a27b2bf3db85555eb0f} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+retain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Retain a pointer to a configuration object. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_af62a637d2863595a46b617a20abb1b69}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_serialize\_json@{ps\_config\_serialize\_json}}
+\index{ps\_config\_serialize\_json@{ps\_config\_serialize\_json}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_serialize\_json()}{ps\_config\_serialize\_json()}}
+{\footnotesize\ttfamily \label{structps__config__t_af62a637d2863595a46b617a20abb1b69} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+serialize\+\_\+json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Construct JSON from a configuration object.
+
+Unlike \doxylink{structps__config__t_a30596bd85860ccb7bb6dea3dc9a35e71}{ps\+\_\+config\+\_\+parse\+\_\+json()}, this actually produces valid JSON ;-\/)
+
+\begin{DoxyItemize}
+\item config Configuration object \begin{DoxyReturn}{Returns}
+Newly created null-\/terminated JSON string. The \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t} retains ownership of this pointer, which is only valid until the next call to \doxylink{structps__config__t_af62a637d2863595a46b617a20abb1b69}{ps\+\_\+config\+\_\+serialize\+\_\+json()}. You must copy it if you wish to retain it. 
+\end{DoxyReturn}
+\end{DoxyItemize}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a6be12b4ac8bbdd01b0d4a23cf2ed1718}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_set@{ps\_config\_set}}
+\index{ps\_config\_set@{ps\_config\_set}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_set()}{ps\_config\_set()}}
+{\footnotesize\ttfamily \label{structps__config__t_a6be12b4ac8bbdd01b0d4a23cf2ed1718} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{val}{, }\item[{\mbox{\hyperlink{pocketsphinx_8h_abe6ad8a2efc87195489fe107e13045d6}{ps\+\_\+type\+\_\+t}}}]{t}{}\end{DoxyParamCaption})}
+
+Set or unset the value of a configuration parameter.
+
+This will coerce the value to the proper type, so you can, for example, pass it a string with ARG\+\_\+\+STRING as the type when adding options from the command-\/line. Note that the return pointer will {\itshape not} be the same as the one passed in the value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & Configuration object. \\
+\hline
+{\em name} & Name of the parameter to set. Must exist. \\
+\hline
+{\em val} & Pointer to the value (strings will be copied) inside an \doxylink{unionanytype__t}{anytype\+\_\+t} union. On 64-\/bit little-\/endian platforms, you {\itshape can} cast a pointer to int, long, double, or char\texorpdfstring{$\ast$}{*} here, but that doesn\textquotesingle{}t necessarily mean that you {\itshape should}. As a convenience, you can pass NULL here to reset a parameter to its default value. \\
+\hline
+{\em t} & Type of the value in {\ttfamily val}, will be coerced to the type of the actual parameter if necessary. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the parameter\textquotesingle{}s value, or NULL on failure (unknown parameter, usually). This pointer (and any pointers inside it) is owned by the \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a67f6d45291c37c3f3e97031f65f19e53}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_set\_bool@{ps\_config\_set\_bool}}
+\index{ps\_config\_set\_bool@{ps\_config\_set\_bool}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_set\_bool()}{ps\_config\_set\_bool()}}
+{\footnotesize\ttfamily \label{structps__config__t_a67f6d45291c37c3f3e97031f65f19e53} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+set\+\_\+bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{int}]{val}{}\end{DoxyParamCaption})}
+
+Set a boolean-\/valued parameter.
+
+If the parameter does not have an integer or boolean type, this will convert {\ttfamily val} appropriately. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a2479d90c3ba0ac0de6bd0143b3b10cb9}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_set\_float@{ps\_config\_set\_float}}
+\index{ps\_config\_set\_float@{ps\_config\_set\_float}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_set\_float()}{ps\_config\_set\_float()}}
+{\footnotesize\ttfamily \label{structps__config__t_a2479d90c3ba0ac0de6bd0143b3b10cb9} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+set\+\_\+float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{double}]{val}{}\end{DoxyParamCaption})}
+
+Set a floating-\/point parameter.
+
+If the parameter does not have a floating-\/point type, this will convert {\ttfamily val} appropriately. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a99ac9564d02ced91e819da50f0766478}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_set\_int@{ps\_config\_set\_int}}
+\index{ps\_config\_set\_int@{ps\_config\_set\_int}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_set\_int()}{ps\_config\_set\_int()}}
+{\footnotesize\ttfamily \label{structps__config__t_a99ac9564d02ced91e819da50f0766478} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+set\+\_\+int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{long}]{val}{}\end{DoxyParamCaption})}
+
+Set an integer-\/valued parameter.
+
+If the parameter does not have an integer or boolean type, this will convert {\ttfamily val} appropriately. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_aa0ad5a8fb7c16530050272ed7d59640b}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_set\_str@{ps\_config\_set\_str}}
+\index{ps\_config\_set\_str@{ps\_config\_set\_str}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_set\_str()}{ps\_config\_set\_str()}}
+{\footnotesize\ttfamily \label{structps__config__t_aa0ad5a8fb7c16530050272ed7d59640b} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{unionanytype__t}{anytype\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+set\+\_\+str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{val}{}\end{DoxyParamCaption})}
+
+Set a string-\/valued parameter.
+
+If the parameter does not have a string type, this will convert {\ttfamily val} appropriately. For boolean parameters, any string matching {\ttfamily /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}yt1\mbox{]}/} will be true, while any string matching {\ttfamily /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}nf0\mbox{]}/} will be false. NULL is also false.
+
+This function is used for configuration from JSON, you may want to use it for your own configuration files too. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a30154c47339a448445f1ca52f63ebdd8}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_soundfile@{ps\_config\_soundfile}}
+\index{ps\_config\_soundfile@{ps\_config\_soundfile}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_soundfile()}{ps\_config\_soundfile()}}
+{\footnotesize\ttfamily \label{structps__config__t_a30154c47339a448445f1ca52f63ebdd8} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+config\+\_\+soundfile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{fh}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+Set configuration parameters (actually just sample rate) from a sound file.
+
+If the file is unreadable, unsupported or incompatible with the existing feature extraction parameters, this will print an error message and fail (return -\/1).
+
+If it is of an unknown type, it will be treated as raw data. So beware! Currently we only support WAV and NIST Sphere files. We attempt to recognize Ogg, MP3 (but not really, because it is very difficult to do reliably), and FLAC, but do not support them. For everything else, there\textquotesingle{}s SoX (tm).
+
+Currently, the file must be seekable, so you can\textquotesingle{}t use this on standard input, for instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & Configuration to update from file. \\
+\hline
+{\em fh} & Previously opened file handle. \\
+\hline
+{\em file} & Name of open file handle for logging (optional, can be NULL) \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_aafbfbe19ce5d48e88bac0e5ed99c10e6}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_str@{ps\_config\_str}}
+\index{ps\_config\_str@{ps\_config\_str}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_str()}{ps\_config\_str()}}
+{\footnotesize\ttfamily \label{structps__config__t_aafbfbe19ce5d48e88bac0e5ed99c10e6} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} ps\+\_\+config\+\_\+str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Get a string parameter.
+
+If the parameter does not have a string type, this will print an error and return NULL. Notably, it will {\itshape NOT} format an integer or float for you, because that would involve allocating memory. So don\textquotesingle{}t do that. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a957ca92e4393991b08e0273c29a08315}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_typeof@{ps\_config\_typeof}}
+\index{ps\_config\_typeof@{ps\_config\_typeof}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_typeof()}{ps\_config\_typeof()}}
+{\footnotesize\ttfamily \label{structps__config__t_a957ca92e4393991b08e0273c29a08315} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{pocketsphinx_8h_abe6ad8a2efc87195489fe107e13045d6}{ps\+\_\+type\+\_\+t}} ps\+\_\+config\+\_\+typeof (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Access the type of a configuration parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & Configuration object. \\
+\hline
+{\em name} & Name of the parameter to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the type of the parameter (as a combination of the ARG\+\_\+\texorpdfstring{$\ast$}{*} bits), or 0 if no such parameter exists. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a8c6a4572efab5c171e14ba5b1e7ac9d1}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_validate@{ps\_config\_validate}}
+\index{ps\_config\_validate@{ps\_config\_validate}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_validate()}{ps\_config\_validate()}}
+{\footnotesize\ttfamily \label{structps__config__t_a8c6a4572efab5c171e14ba5b1e7ac9d1} 
+int ps\+\_\+config\+\_\+validate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Validate configuration.
+
+Currently this just checks that you haven\textquotesingle{}t specified multiple types of grammars or language models at the same time.
+
+\begin{DoxyReturn}{Returns}
+0 for success, \texorpdfstring{$<$}{<}0 for failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a47e3ac3cb5d90ef4442662b19acd6cf0}\index{ps\_config\_t@{ps\_config\_t}!ps\_config\_wavfile@{ps\_config\_wavfile}}
+\index{ps\_config\_wavfile@{ps\_config\_wavfile}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_config\_wavfile()}{ps\_config\_wavfile()}}
+{\footnotesize\ttfamily \label{structps__config__t_a47e3ac3cb5d90ef4442662b19acd6cf0} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+config\+\_\+wavfile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{infh}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+Read a WAV header and set configuration parameters.
+
+This works like \doxylink{structps__config__t_a30154c47339a448445f1ca52f63ebdd8}{ps\+\_\+config\+\_\+soundfile()} but assumes that you already know it\textquotesingle{}s a WAV file.
+
+Unlike \doxylink{structps__config__t_a30154c47339a448445f1ca52f63ebdd8}{ps\+\_\+config\+\_\+soundfile()}, the file does {\itshape not} have to be seekable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & Configuration to update from file. \\
+\hline
+{\em infh} & Previously opened file handle. \\
+\hline
+{\em file} & Name of open file handle for logging (optional, can be NULL) \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_ab33df51031c41cdb73794845c33a2d88}\index{ps\_config\_t@{ps\_config\_t}!ps\_default\_search\_args@{ps\_default\_search\_args}}
+\index{ps\_default\_search\_args@{ps\_default\_search\_args}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_default\_search\_args()}{ps\_default\_search\_args()}}
+{\footnotesize\ttfamily \label{structps__config__t_ab33df51031c41cdb73794845c33a2d88} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+default\+\_\+search\+\_\+args (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Sets default acoustic and language model if they are not set explicitly.
+
+This function fills in the configuration with the default acoustic and language models and dictionary, if (and this is a badly implemented heuristic) they do not seem to be already filled in. It is preferable for you to call this {\itshape before} doing any other configuration to avoid confusion.
+
+The default models are looked for in the directory returned by \doxylink{structps__config__t_aa9adc40d1099e6df4e3ba38e45bac100}{ps\+\_\+default\+\_\+modeldir()}, or, if the {\ttfamily POCKETSPHINX\+\_\+\+PATH} environment variable is set, this function will look there instead.
+
+If no global model directory was defined at compilation time (this is useful for relocatable installs such as the Python module) and {\ttfamily POCKETSPHINX\+\_\+\+PATH} is not set, this will simply do nothing. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_ac022a88c8bd55f78398a55ffb3a6597c}\index{ps\_config\_t@{ps\_config\_t}!ps\_expand\_model\_config@{ps\_expand\_model\_config}}
+\index{ps\_expand\_model\_config@{ps\_expand\_model\_config}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_expand\_model\_config()}{ps\_expand\_model\_config()}}
+{\footnotesize\ttfamily \label{structps__config__t_ac022a88c8bd55f78398a55ffb3a6597c} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+expand\+\_\+model\+\_\+config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Sets default file paths and parameters based on configuration. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__config__t_a69b05a7582ee80ff206fb1e4d709bc4c}\index{ps\_config\_t@{ps\_config\_t}!ps\_init@{ps\_init}}
+\index{ps\_init@{ps\_init}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_init()}{ps\_init()}}
+{\footnotesize\ttfamily \label{structps__config__t_a69b05a7582ee80ff206fb1e4d709bc4c} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Initialize the decoder from a configuration object.
+
+\begin{DoxyNote}{Note}
+The decoder retains ownership of the pointer {\ttfamily config}, so if you are not going to use it elsewhere, you can free it. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em config} & a configuration object. If NULL, the decoder will be allocated but not initialized. You can proceed to initialize it with ps\+\_\+reinit(). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+\label{doc-related-members}
+\Hypertarget{structps__config__t_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{structps__config__t_aa9adc40d1099e6df4e3ba38e45bac100}\index{ps\_config\_t@{ps\_config\_t}!ps\_default\_modeldir@{ps\_default\_modeldir}}
+\index{ps\_default\_modeldir@{ps\_default\_modeldir}!ps\_config\_t@{ps\_config\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_default\_modeldir()}{ps\_default\_modeldir()}}
+{\footnotesize\ttfamily \label{structps__config__t_aa9adc40d1099e6df4e3ba38e45bac100} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} ps\+\_\+default\+\_\+modeldir (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Gets the system default model directory, if any exists.
+
+\begin{DoxyReturn}{Returns}
+system model directory defined at compile time, or NULL if not defined (usually in a relocatable installation such as a Python module). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/\mbox{\hyperlink{pocketsphinx_8h}{pocketsphinx.\+h}}\end{DoxyCompactItemize}

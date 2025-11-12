@@ -1,0 +1,1936 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__decoder__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_decoder_t</compoundname>
+    <includes refid="pocketsphinx_8h" local="no">pocketsphinx.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__decoder__t_1a7a335c6650fa98985b5687fde408ef0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_reinit</definition>
+        <argsstring>(ps_decoder_t *ps, ps_config_t *config)</argsstring>
+        <name>ps_reinit</name>
+        <qualifiedname>ps_decoder_t::ps_reinit</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__config__t" kindref="compound">ps_config_t</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reinitialize the decoder with updated configuration.</para>
+<para>This function allows you to switch the acoustic model, dictionary, or other configuration without creating an entirely new decoding object.</para>
+<para><simplesect kind="note"><para>Since the acoustic model will be reloaded, changes made to feature extraction parameters may be overridden if a <computeroutput>feat.params</computeroutput> file is present. </para>
+</simplesect>
+<simplesect kind="note"><para>Any searches created with ps_set_search() or words added to the dictionary with <ref refid="structps__decoder__t_1a5f3c4fcdbef34915c4e785ac9a1c6005" kindref="member">ps_add_word()</ref> will also be lost. To avoid this you can use <ref refid="structps__decoder__t_1ad950da65e86a4611c93e3ad765ad22e6" kindref="member">ps_reinit_feat()</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>The decoder retains ownership of the pointer <computeroutput>config</computeroutput>, so you should free it when no longer used.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional new configuration to use. If this is NULL, the previous configuration will be reloaded, with any changes applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, &lt;0 for failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="524" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="524" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ad950da65e86a4611c93e3ad765ad22e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_reinit_feat</definition>
+        <argsstring>(ps_decoder_t *ps, ps_config_t *config)</argsstring>
+        <name>ps_reinit_feat</name>
+        <qualifiedname>ps_decoder_t::ps_reinit_feat</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__config__t" kindref="compound">ps_config_t</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reinitialize only the feature computation with updated configuration.</para>
+<para>This function allows you to switch the feature computation parameters without otherwise affecting the decoder configuration. For example, if you change the sample rate or the frame rate, and do not want to reconfigure the rest of the decoder.</para>
+<para>Note that if you have set a custom cepstral mean with <ref refid="structps__decoder__t_1ae74f202f105207d5c499280ab187081f" kindref="member">ps_set_cmn()</ref>, it will be overridden.</para>
+<para><simplesect kind="note"><para>The decoder retains ownership of the pointer <computeroutput>config</computeroutput>, so you should free it when no longer used.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional new configuration to use. If this is NULL, the previous configuration will be reloaded, with any changes to feature computation applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, &lt;0 for failure (usually an invalid parameter) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="548" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="548" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a95778ded410ce81acf0c7bfdb069ba7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> const char *</type>
+        <definition>POCKETSPHINX_EXPORT const char * ps_get_cmn</definition>
+        <argsstring>(ps_decoder_t *ps, int update)</argsstring>
+        <name>ps_get_cmn</name>
+        <qualifiedname>ps_decoder_t::ps_get_cmn</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>update</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current cepstral mean as a string.</para>
+<para>This is the string representation of the current cepstral mean, which represents the acoustic channel conditions in live recognition. This can be used to initialize the decoder with the <computeroutput>cmninit</computeroutput> option, e.g.: <verbatim>config = ps_config_parse_json(NULL, &quot;cmninit: 42,-1,0&quot;);
+</verbatim></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Update the cepstral mean using data processed so far. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String representation of cepstral mean, as <computeroutput>ps_config_get_int(config, "ceplen")</computeroutput> comma-separated numbers. This pointer is owned by the decoder and only valid until the next call to <ref refid="structps__decoder__t_1a95778ded410ce81acf0c7bfdb069ba7d" kindref="member">ps_get_cmn()</ref>, <ref refid="structps__decoder__t_1ae74f202f105207d5c499280ab187081f" kindref="member">ps_set_cmn()</ref> or <ref refid="structps__decoder__t_1ab9339de730713b68cbd68a7f36dc8730" kindref="member">ps_end_utt()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="570" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="570" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ae74f202f105207d5c499280ab187081f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_set_cmn</definition>
+        <argsstring>(ps_decoder_t *ps, const char *cmn)</argsstring>
+        <name>ps_set_cmn</name>
+        <qualifiedname>ps_decoder_t::ps_set_cmn</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>cmn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current cepstral mean from a string.</para>
+<para>This does the same thing as setting <computeroutput>cmninit</computeroutput> with ps_config_set_string() and running <computeroutput><ref refid="structps__decoder__t_1ad950da65e86a4611c93e3ad765ad22e6" kindref="member">ps_reinit_feat()</ref></computeroutput> but is more efficient, and can also be done in the middle of an utterance if you like.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String representation of cepstral mean, as up to <computeroutput>ps_config_get_int(config, "ceplen")</computeroutput> -separated numbers (any missing values will be zero-filled). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success of -1 for invalid input. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="588" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="588" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ab6ba623b66f39ef5e322cb13b831b1b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_decoder_t * ps_retain</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_retain</name>
+        <qualifiedname>ps_decoder_t::ps_retain</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retain a pointer to the decoder.</para>
+<para>This increments the reference count on the decoder, allowing it to be shared between multiple parent objects. In general you will not need to use this function, ever. It is mainly here for the convenience of scripting language bindings.</para>
+<para><simplesect kind="return"><para>pointer to retained decoder. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="613" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="613" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ad8fd9b79ae9f87703af3f4755b3ab567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_free</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_free</name>
+        <qualifiedname>ps_decoder_t::ps_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finalize the decoder.</para>
+<para>This releases all resources associated with the decoder.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder to be freed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New reference count (0 if freed). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="625" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="625" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a90559e2f98ee1f8439350eacc8c68f83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__config__t" kindref="compound">ps_config_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_config_t * ps_get_config</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_get_config</name>
+        <qualifiedname>ps_decoder_t::ps_get_config</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the configuration object for this decoder.</para>
+<para><simplesect kind="return"><para>The configuration object for this decoder. The decoder owns this pointer, so you should not attempt to free it manually. Use ps_config_retain() if you wish to reuse it elsewhere. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="637" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="637" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a318ec5e87309b590a775ba1e91297b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT logmath_t * ps_get_logmath</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_get_logmath</name>
+        <qualifiedname>ps_decoder_t::ps_get_logmath</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the log-math computation object for this decoder.</para>
+<para><simplesect kind="return"><para>The log-math object for this decoder. The decoder owns this pointer, so you should not attempt to free it manually. Use logmath_retain() if you wish to reuse it elsewhere. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="649" column="11" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="649" declcolumn="11"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1abcf13734aad31adce2cb8c7b8612ca98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__mllr__t" kindref="compound">ps_mllr_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_mllr_t * ps_update_mllr</definition>
+        <argsstring>(ps_decoder_t *ps, ps_mllr_t *mllr)</argsstring>
+        <name>ps_update_mllr</name>
+        <qualifiedname>ps_decoder_t::ps_update_mllr</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__mllr__t" kindref="compound">ps_mllr_t</ref> *</type>
+          <declname>mllr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adapt current acoustic model using a linear transform.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mllr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new transform to use, or NULL to update the existing transform. The decoder retains ownership of this pointer, so you may free it if you no longer need it. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The updated transform object for this decoder, or NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="663" column="11" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="663" declcolumn="11"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a824f46e51681d931b7e2706a86c3d86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_load_dict</definition>
+        <argsstring>(ps_decoder_t *ps, char const *dictfile, char const *fdictfile, char const *format)</argsstring>
+        <name>ps_load_dict</name>
+        <qualifiedname>ps_decoder_t::ps_load_dict</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>dictfile</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>fdictfile</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reload the pronunciation dictionary from a file.</para>
+<para>This function replaces the current pronunciation dictionary with the one stored in <computeroutput>dictfile</computeroutput>. This also causes the active search module(s) to be reinitialized, in the same manner as calling <ref refid="structps__decoder__t_1a5f3c4fcdbef34915c4e785ac9a1c6005" kindref="member">ps_add_word()</ref> with update=TRUE.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dictfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to dictionary file to load. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fdictfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to filler dictionary to load, or NULL to keep the existing filler dictionary. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format of the dictionary file, or NULL to determine automatically (currently unused,should be NULL) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="681" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="681" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a5e278377cc57d921591ce95b980760d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_save_dict</definition>
+        <argsstring>(ps_decoder_t *ps, char const *dictfile, char const *format)</argsstring>
+        <name>ps_save_dict</name>
+        <qualifiedname>ps_decoder_t::ps_save_dict</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>dictfile</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dump the current pronunciation dictionary to a file.</para>
+<para>This function dumps the current pronunciation dictionary to a text file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dictfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to file where dictionary will be written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format of the dictionary file, or NULL for the default (text) format (currently unused, should be NULL) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="695" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="695" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a5f3c4fcdbef34915c4e785ac9a1c6005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_word</definition>
+        <argsstring>(ps_decoder_t *ps, char const *word, char const *phones, int update)</argsstring>
+        <name>ps_add_word</name>
+        <qualifiedname>ps_decoder_t::ps_add_word</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>word</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>phones</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>update</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a word to the pronunciation dictionary.</para>
+<para>This function adds a word to the pronunciation dictionary and the current language model (but, obviously, not to the current FSG if FSG mode is enabled). If the word is already present in one or the other, it does whatever is necessary to ensure that the word can be recognized.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Word string to add. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>phones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whitespace-separated list of phoneme strings describing pronunciation of <computeroutput>word</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If TRUE, update the search module (whichever one is currently active) to recognize the newly added word. If adding multiple words, it is more efficient to pass FALSE here in all but the last word. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The internal ID (&gt;= 0) of the newly added word, or &lt;0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="718" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="718" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ab2ca0a5e9ed39baa81ccc703bb20a7ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> char *</type>
+        <definition>POCKETSPHINX_EXPORT char * ps_lookup_word</definition>
+        <argsstring>(ps_decoder_t *ps, const char *word)</argsstring>
+        <name>ps_lookup_word</name>
+        <qualifiedname>ps_decoder_t::ps_lookup_word</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>word</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Look up a word in the dictionary and return phone transcription for it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pocketsphinx decoder </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>word</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Word to look for</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whitespace-spearated phone string describing the pronunciation of the <computeroutput>word</computeroutput> or NULL if word is not present in the dictionary. The string is allocated and must be freed by the user. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="736" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="736" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a43b378f9c42bcb19fdff0ebe71c25adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> long</type>
+        <definition>POCKETSPHINX_EXPORT long ps_decode_raw</definition>
+        <argsstring>(ps_decoder_t *ps, FILE *rawfh, long maxsamps)</argsstring>
+        <name>ps_decode_raw</name>
+        <qualifiedname>ps_decoder_t::ps_decode_raw</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>rawfh</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>maxsamps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode a raw audio stream.</para>
+<para>No headers are recognized in this files. The configuration parameters <computeroutput>-samprate</computeroutput> and <computeroutput>-input_endian</computeroutput> are used to determine the sampling rate and endianness of the stream, respectively. Audio is always assumed to be 16-bit signed PCM.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rawfh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Previously opened file stream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxsamps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of samples to read from rawfh, or -1 to read until end-of-file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of samples of audio. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="755" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="755" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a466d1d718873e7b1cf0881e4f552a4a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_decode_senscr</definition>
+        <argsstring>(ps_decoder_t *ps, FILE *senfh)</argsstring>
+        <name>ps_decode_senscr</name>
+        <qualifiedname>ps_decoder_t::ps_decode_senscr</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>senfh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode a senone score dump file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>senfh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Previously opened file handle positioned at start of file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of frames read. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="767" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="767" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a89be3b2a8f83291a225db0bcd9ee65b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_start_stream</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_start_stream</name>
+        <qualifiedname>ps_decoder_t::ps_start_stream</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start processing of the stream of speech.</para>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is retained for compatibility, but its only effect is to reset the noise removal statistics, which are otherwise retained across utterances. You do not need to call it.</para>
+</xrefdescription></xrefsect></para>
+<para><simplesect kind="return"><para>0 for success, &lt;0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="780" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="780" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1adcbb8aeb9ebf3f73e935d3b3c8832ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_get_in_speech</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_get_in_speech</name>
+        <qualifiedname>ps_decoder_t::ps_get_in_speech</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check in-speech status of decoder.</para>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>This function is retained for compatibility but should not be considered a reliable voice activity detector. It will always return 1 between calls to <ref refid="structps__decoder__t_1ade3909b1c12c1b70afe284639e70cbff" kindref="member">ps_start_utt()</ref> and <ref refid="structps__decoder__t_1ab9339de730713b68cbd68a7f36dc8730" kindref="member">ps_end_utt()</ref>. You probably want <ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref>, but for single frames of data you can also use <ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref>.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if last buffer contained speech, 0 - otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="796" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="796" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ade3909b1c12c1b70afe284639e70cbff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_start_utt</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_start_utt</name>
+        <qualifiedname>ps_decoder_t::ps_start_utt</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start utterance processing.</para>
+<para>This function should be called before any utterance data is passed to the decoder. It marks the start of a new utterance and reinitializes internal data structures.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder to be started. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, &lt;0 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="810" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="810" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a572ad08651b4caae820d178a12c8f95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_process_raw</definition>
+        <argsstring>(ps_decoder_t *ps, int16 const *data, size_t n_samples, int no_search, int full_utt)</argsstring>
+        <name>ps_process_raw</name>
+        <qualifiedname>ps_decoder_t::ps_process_raw</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref> const *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n_samples</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>no_search</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>full_utt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode raw audio data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Audio data, as 16-bit linear PCM. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_samples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of samples (not bytes) in <computeroutput>data</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>no_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, perform feature extraction but don&apos;t do any recognition yet. This may be necessary if your processor has trouble doing recognition in real-time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full_utt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, this block of data is a full utterance worth of data. This may allow the recognizer to produce more accurate results. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of frames of data searched, or &lt;0 for error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="829" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="829" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a8b1311a8127f9c4daf24e7034673f50f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_process_cep</definition>
+        <argsstring>(ps_decoder_t *ps, float32 **data, int n_frames, int no_search, int full_utt)</argsstring>
+        <name>ps_process_cep</name>
+        <qualifiedname>ps_decoder_t::ps_process_cep</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref> **</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_frames</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>no_search</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>full_utt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode acoustic feature data.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Acoustic feature data, a 2-dimensional array of 32-bit floating-point values. Note that this is not a standard 2-dimesional C array but rather an array of pointers to floats, each of which is one vector (or frame) of <computeroutput>ps_config_get_int("ceplen")</computeroutput> values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_frames</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of vectors in <computeroutput>data</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>no_search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, perform feature extraction but don&apos;t do any recognition yet. This may be necessary if your processor has trouble doing recognition in real-time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full_utt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-zero, this block of data is a full utterance worth of data. This may allow the recognizer to produce more accurate results. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of frames of data searched, or &lt;0 for error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="856" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="856" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1abb3527e41c2f4cd64dccbdbd5f812d1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_get_n_frames</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_get_n_frames</name>
+        <qualifiedname>ps_decoder_t::ps_get_n_frames</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of frames of data searched.</para>
+<para>Note that there is a delay between this and the number of frames of audio which have been input to the system. This is due to the fact that acoustic features are computed using a sliding window of audio, and dynamic features are computed over a sliding window of acoustic features.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of frames of speech data which have been recognized so far. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="877" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="877" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ab9339de730713b68cbd68a7f36dc8730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_end_utt</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_end_utt</name>
+        <qualifiedname>ps_decoder_t::ps_end_utt</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End utterance processing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, &lt;0 on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="887" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="887" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a35be2a1924f93c23b033e08ab0e85c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> char const *</type>
+        <definition>POCKETSPHINX_EXPORT char const  * ps_get_hyp</definition>
+        <argsstring>(ps_decoder_t *ps, int32 *out_best_score)</argsstring>
+        <name>ps_get_hyp</name>
+        <qualifiedname>ps_decoder_t::ps_get_hyp</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> *</type>
+          <declname>out_best_score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get hypothesis string and path score.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_best_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: path score corresponding to returned string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String containing best hypothesis at this point in decoding. NULL if no hypothesis is available. This string is owned by the decoder and only valid for the current hypothesis, so you should copy it if you need to hold onto it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="901" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="901" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ac8ac154482457740173caa1c0d699c49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+        <definition>POCKETSPHINX_EXPORT int32 ps_get_prob</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_get_prob</name>
+        <qualifiedname>ps_decoder_t::ps_get_prob</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get posterior probability.</para>
+<para><simplesect kind="note"><para>Unless the -bestpath option is enabled, this function will always return zero (corresponding to a posterior probability of 1.0). Even if -bestpath is enabled, it will also return zero when called on a partial result. Ongoing research into effective confidence annotation for partial hypotheses may result in these restrictions being lifted in future versions.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Posterior probability of the best hypothesis. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="918" column="7" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="918" declcolumn="7"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1af8f325d9d183e8930e48a518b13f085a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_lattice_t * ps_get_lattice</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_get_lattice</name>
+        <qualifiedname>ps_decoder_t::ps_get_lattice</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get word lattice.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Word lattice object containing all hypotheses so far. NULL if no hypotheses are available. This pointer is owned by the decoder and you should not attempt to free it manually. It is only valid until the next utterance, unless you use ps_lattice_retain() to retain it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="932" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="932" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ab0353879769209971677296b937b9aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__seg__t" kindref="compound">ps_seg_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_seg_t * ps_seg_iter</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_seg_iter</name>
+        <qualifiedname>ps_decoder_t::ps_seg_iter</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an iterator over the word segmentation for the best hypothesis.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Iterator over the best hypothesis at this point in decoding. NULL if no hypothesis is available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="943" column="10" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="943" declcolumn="10"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ab9c09bbe581a5ad2cdb42530c6ab009e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__nbest__t" kindref="compound">ps_nbest_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_nbest_t * ps_nbest</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_nbest</name>
+        <qualifiedname>ps_decoder_t::ps_nbest</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an iterator over the best hypotheses. The function may also return a NULL which means that there is no hypothesis available for this utterance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Iterator over N-best hypotheses or NULL if no hypothesis is available </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1025" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1025" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1aac7070c934a2d03d0d5b34e19614360f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ps_get_utt_time</definition>
+        <argsstring>(ps_decoder_t *ps, double *out_nspeech, double *out_ncpu, double *out_nwall)</argsstring>
+        <name>ps_get_utt_time</name>
+        <qualifiedname>ps_decoder_t::ps_get_utt_time</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>out_nspeech</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>out_ncpu</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>out_nwall</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get performance information for the current utterance.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_nspeech</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Number of seconds of speech. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_ncpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Number of seconds of CPU time used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_nwall</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Number of seconds of wall time used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1079" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1079" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a61fb92154c5c731cf4a24e0976263da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ps_get_all_time</definition>
+        <argsstring>(ps_decoder_t *ps, double *out_nspeech, double *out_ncpu, double *out_nwall)</argsstring>
+        <name>ps_get_all_time</name>
+        <qualifiedname>ps_decoder_t::ps_get_all_time</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>out_nspeech</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>out_ncpu</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>out_nwall</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get overall performance information.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_nspeech</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Number of seconds of speech. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_ncpu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Number of seconds of CPU time used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_nwall</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Number of seconds of wall time used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1092" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1092" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_activate_search</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name)</argsstring>
+        <name>ps_activate_search</name>
+        <qualifiedname>ps_decoder_t::ps_activate_search</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actives search with the provided name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of search module to activate. This must have been previously added by either <ref refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" kindref="member">ps_add_fsg()</ref>, <ref refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" kindref="member">ps_add_lm()</ref>, or <ref refid="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b" kindref="member">ps_add_kws()</ref>. If NULL, it will re-activate the default search, which is useful when running second-pass alignment, for instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, -1 on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="110" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="110" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a1a589bf2956a5905368e9288979743b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> const char *</type>
+        <definition>POCKETSPHINX_EXPORT const char * ps_current_search</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_current_search</name>
+        <qualifiedname>ps_decoder_t::ps_current_search</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns name of current search in decoder</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="119" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="119" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1aca66da675491dfbcd51f66a2cead19c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_remove_search</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name)</argsstring>
+        <name>ps_remove_search</name>
+        <qualifiedname>ps_decoder_t::ps_remove_search</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a search module and releases its resources.</para>
+<para>Removes a search module previously added with using <ref refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" kindref="member">ps_add_fsg()</ref>, <ref refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" kindref="member">ps_add_lm()</ref>, <ref refid="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b" kindref="member">ps_add_kws()</ref>, etc.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" kindref="member">ps_add_fsg</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" kindref="member">ps_add_lm</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b" kindref="member">ps_add_kws</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="133" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="133" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a3c85d53bfd56dc83226cc7f3bbcdcef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_search_iter_t * ps_search_iter</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_search_iter</name>
+        <qualifiedname>ps_decoder_t::ps_search_iter</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns iterator over current searches</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="142" column="18" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="142" declcolumn="18"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ab11d511d180c9aea9779f545d4d22809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ngram_model_t * ps_get_lm</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name)</argsstring>
+        <name>ps_get_lm</name>
+        <qualifiedname>ps_decoder_t::ps_get_lm</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the language model or lmset object associated with a search.</para>
+<para><itemizedlist>
+<listitem><para>name Name of language model search, or NULL for current search. <simplesect kind="return"><para>The language model (possibly set of language models) object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use ngram_model_retain() if you wish to reuse it elsewhere. </para>
+</simplesect>
+</para>
+</listitem>
+</itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="195" column="15" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="195" declcolumn="15"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_lm</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, ngram_model_t *lm)</argsstring>
+        <name>ps_add_lm</name>
+        <qualifiedname>ps_decoder_t::ps_add_lm</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref> *</type>
+          <declname>lm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new search based on N-gram language model.</para>
+<para>Associates N-gram search with the provided name. The search can be activated using <ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="207" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="207" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a268455d472a947079dc9ece74f6a6fab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_lm_file</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, const char *path)</argsstring>
+        <name>ps_add_lm_file</name>
+        <qualifiedname>ps_decoder_t::ps_add_lm_file</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new search based on N-gram language model.</para>
+<para>Convenient method to load N-gram model and create a search.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" kindref="member">ps_add_lm</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="218" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="218" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a70c94d4192c66e9f203eb72f92ee532c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT fsg_model_t * ps_get_fsg</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name)</argsstring>
+        <name>ps_get_fsg</name>
+        <qualifiedname>ps_decoder_t::ps_get_fsg</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the finite-state grammar set object associated with a search.</para>
+<para><itemizedlist>
+<listitem><para>name Name of FSG search, or NULL for current search. <simplesect kind="return"><para>The current FSG set object for this decoder, or NULL if <computeroutput>name</computeroutput> does not correspond to an FSG search. </para>
+</simplesect>
+</para>
+</listitem>
+</itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="229" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="229" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_fsg</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, fsg_model_t *fsg)</argsstring>
+        <name>ps_add_fsg</name>
+        <qualifiedname>ps_decoder_t::ps_add_fsg</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref> *</type>
+          <declname>fsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new search based on finite state grammar.</para>
+<para>Associates FSG search with the provided name. The search can be activated using <ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="241" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="241" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a27cb38750271a285addc3d9c5f15c8ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_jsgf_file</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, const char *path)</argsstring>
+        <name>ps_add_jsgf_file</name>
+        <qualifiedname>ps_decoder_t::ps_add_jsgf_file</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new search using JSGF model.</para>
+<para>Convenient method to load JSGF model and create a search.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" kindref="member">ps_add_fsg</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="252" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="252" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1ad975de5e4114ee1d534ceffdacb18394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_jsgf_string</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, const char *jsgf_string)</argsstring>
+        <name>ps_add_jsgf_string</name>
+        <qualifiedname>ps_decoder_t::ps_add_jsgf_string</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>jsgf_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new search using JSGF model.</para>
+<para>Convenience method to parse JSGF model from string and create a search.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" kindref="member">ps_add_fsg</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="263" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="263" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a7000861f6aa97e98f8a7c95d3e3ba157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> const char *</type>
+        <definition>POCKETSPHINX_EXPORT const char * ps_get_kws</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name)</argsstring>
+        <name>ps_get_kws</name>
+        <qualifiedname>ps_decoder_t::ps_get_kws</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the keyphrase associated with a KWS search</para>
+<para><itemizedlist>
+<listitem><para>name Name of KWS search, or NULL for current search. <simplesect kind="return"><para>The current keyphrase to spot, or NULL if <computeroutput>name</computeroutput> does not correspond to a KWS search </para>
+</simplesect>
+</para>
+</listitem>
+</itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="274" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="274" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_kws</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, const char *keyfile)</argsstring>
+        <name>ps_add_kws</name>
+        <qualifiedname>ps_decoder_t::ps_add_kws</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>keyfile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds keyphrases from a file to spotting</para>
+<para>Associates KWS search with the provided name. The search can be activated using <ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="286" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="286" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a87aced38ba183da00ebd04c002af01d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_keyphrase</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, const char *keyphrase)</argsstring>
+        <name>ps_add_keyphrase</name>
+        <qualifiedname>ps_decoder_t::ps_add_keyphrase</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>keyphrase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new keyphrase to spot</para>
+<para>Associates KWS search with the provided name. The search can be activated using <ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="298" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="298" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a8ae78fa993cad9e1da24b052b80fff78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_allphone</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, ngram_model_t *lm)</argsstring>
+        <name>ps_add_allphone</name>
+        <qualifiedname>ps_decoder_t::ps_add_allphone</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref> *</type>
+          <declname>lm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new search based on phone N-gram language model.</para>
+<para>Associates N-gram search with the provided name. The search can be activated using <ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kindref="member">ps_activate_search</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="310" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="310" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a6e324573a9de664cfa0a37a5cd7a6fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_add_allphone_file</definition>
+        <argsstring>(ps_decoder_t *ps, const char *name, const char *path)</argsstring>
+        <name>ps_add_allphone_file</name>
+        <qualifiedname>ps_decoder_t::ps_add_allphone_file</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds new search based on phone N-gram language model.</para>
+<para>Convenient method to load N-gram model and create a search.</para>
+<para><simplesect kind="see"><para><ref refid="structps__decoder__t_1a8ae78fa993cad9e1da24b052b80fff78" kindref="member">ps_add_allphone</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="321" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="321" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a911c4849d7ffaf2960177c34968c1b0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_set_align_text</definition>
+        <argsstring>(ps_decoder_t *ps, const char *words)</argsstring>
+        <name>ps_set_align_text</name>
+        <qualifiedname>ps_decoder_t::ps_set_align_text</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>words</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up decoder to force-align a word sequence.</para>
+<para>Unlike the <computeroutput>ps_add_*</computeroutput> functions, this activates the search module immediately, since force-alignment is nearly always a single shot. Currently &quot;under the hood&quot; this is an FSG search but you shouldn&apos;t depend on that. The search module activated is <emphasis>not</emphasis> the default search, so you can return to that one by calling ps_activate_search with <computeroutput><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref></computeroutput>.</para>
+<para>Decoding proceeds as normal, though only this word sequence will be recognized, with silences and alternate pronunciations inserted. Word alignments are available with <ref refid="structps__decoder__t_1ab0353879769209971677296b937b9aae" kindref="member">ps_seg_iter()</ref>. To obtain phoneme or state segmentations, you must subsequently call <ref refid="structps__decoder__t_1a82092689e27601f7bc9227cd904b0266" kindref="member">ps_set_alignment()</ref> and re-run decoding. It&apos;s tough son, but it&apos;s life.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>words</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing whitespace-separated words for alignment. These words are assumed to exist in the current dictionary. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="346" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="346" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a82092689e27601f7bc9227cd904b0266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_set_alignment</definition>
+        <argsstring>(ps_decoder_t *ps, ps_alignment_t *al)</argsstring>
+        <name>ps_set_alignment</name>
+        <qualifiedname>ps_decoder_t::ps_set_alignment</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> *</type>
+          <declname>al</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set up decoder to run phone and state-level alignment.</para>
+<para>Unlike the <computeroutput>ps_add_*</computeroutput> functions, this activates the search module immediately, since force-alignment is nearly always a single shot.</para>
+<para>To align, run or re-run decoding as usual, then call <ref refid="structps__decoder__t_1a34112271b4b2a3cb6616e072a36f693d" kindref="member">ps_get_alignment()</ref> to get the resulting alignment. Note that if you call this function <emphasis>before</emphasis> rerunning decoding, you can obtain the phone and state sequence, but the durations will be invalid (phones and states will inherit the parent word&apos;s duration).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>al</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Usually NULL, which means to construct an alignment from the current search hypothesis (this does not work with allphone or keyword spotting). You can also pass a <ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> here if you have one. The search will retain but not copy it, so after running decoding it will be updated with new durations. You can set starts and durations for words or phones (not states) to constrain the alignment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, -1 for error (if there is no search hypothesis, or it cannot be aligned due to missing word IDs) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="375" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="375" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__decoder__t_1a34112271b4b2a3cb6616e072a36f693d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_alignment_t * ps_get_alignment</definition>
+        <argsstring>(ps_decoder_t *ps)</argsstring>
+        <name>ps_get_alignment</name>
+        <qualifiedname>ps_decoder_t::ps_get_alignment</qualifiedname>
+        <param>
+          <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the alignment associated with the current search module.</para>
+<para>As noted above, if decoding has not been run, this will contain invalid durations, but that may still be useful if you just want to know the state sequence.</para>
+<para><simplesect kind="return"><para>Current alignment, or NULL if none. This pointer is owned by the decoder, so you must call ps_alignment_retain() on it if you wish to keep it outside the lifetime of the decoder. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="391" column="16" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="391" declcolumn="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Speech recognizer object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="133" column="1"/>
+    <listofallmembers>
+      <member refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_activate_search</name></member>
+      <member refid="structps__decoder__t_1a8ae78fa993cad9e1da24b052b80fff78" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_allphone</name></member>
+      <member refid="structps__decoder__t_1a6e324573a9de664cfa0a37a5cd7a6fc8" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_allphone_file</name></member>
+      <member refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_fsg</name></member>
+      <member refid="structps__decoder__t_1a27cb38750271a285addc3d9c5f15c8ab" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_jsgf_file</name></member>
+      <member refid="structps__decoder__t_1ad975de5e4114ee1d534ceffdacb18394" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_jsgf_string</name></member>
+      <member refid="structps__decoder__t_1a87aced38ba183da00ebd04c002af01d5" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_keyphrase</name></member>
+      <member refid="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_kws</name></member>
+      <member refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_lm</name></member>
+      <member refid="structps__decoder__t_1a268455d472a947079dc9ece74f6a6fab" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_lm_file</name></member>
+      <member refid="structps__decoder__t_1a5f3c4fcdbef34915c4e785ac9a1c6005" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_add_word</name></member>
+      <member refid="structps__decoder__t_1a1a589bf2956a5905368e9288979743b8" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_current_search</name></member>
+      <member refid="structps__decoder__t_1a43b378f9c42bcb19fdff0ebe71c25adb" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_decode_raw</name></member>
+      <member refid="structps__decoder__t_1a466d1d718873e7b1cf0881e4f552a4a2" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_decode_senscr</name></member>
+      <member refid="structps__decoder__t_1ab9339de730713b68cbd68a7f36dc8730" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_end_utt</name></member>
+      <member refid="structps__decoder__t_1ad8fd9b79ae9f87703af3f4755b3ab567" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_free</name></member>
+      <member refid="structps__decoder__t_1a34112271b4b2a3cb6616e072a36f693d" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_alignment</name></member>
+      <member refid="structps__decoder__t_1a61fb92154c5c731cf4a24e0976263da0" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_all_time</name></member>
+      <member refid="structps__decoder__t_1a95778ded410ce81acf0c7bfdb069ba7d" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_cmn</name></member>
+      <member refid="structps__decoder__t_1a90559e2f98ee1f8439350eacc8c68f83" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_config</name></member>
+      <member refid="structps__decoder__t_1a70c94d4192c66e9f203eb72f92ee532c" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_fsg</name></member>
+      <member refid="structps__decoder__t_1a35be2a1924f93c23b033e08ab0e85c28" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_hyp</name></member>
+      <member refid="structps__decoder__t_1adcbb8aeb9ebf3f73e935d3b3c8832ea0" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_in_speech</name></member>
+      <member refid="structps__decoder__t_1a7000861f6aa97e98f8a7c95d3e3ba157" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_kws</name></member>
+      <member refid="structps__decoder__t_1af8f325d9d183e8930e48a518b13f085a" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_lattice</name></member>
+      <member refid="structps__decoder__t_1ab11d511d180c9aea9779f545d4d22809" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_lm</name></member>
+      <member refid="structps__decoder__t_1a318ec5e87309b590a775ba1e91297b85" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_logmath</name></member>
+      <member refid="structps__decoder__t_1abb3527e41c2f4cd64dccbdbd5f812d1d" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_n_frames</name></member>
+      <member refid="structps__decoder__t_1ac8ac154482457740173caa1c0d699c49" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_prob</name></member>
+      <member refid="structps__decoder__t_1aac7070c934a2d03d0d5b34e19614360f" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_get_utt_time</name></member>
+      <member refid="structps__decoder__t_1a824f46e51681d931b7e2706a86c3d86f" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_load_dict</name></member>
+      <member refid="structps__decoder__t_1ab2ca0a5e9ed39baa81ccc703bb20a7ab" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_lookup_word</name></member>
+      <member refid="structps__decoder__t_1ab9c09bbe581a5ad2cdb42530c6ab009e" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_nbest</name></member>
+      <member refid="structps__decoder__t_1a8b1311a8127f9c4daf24e7034673f50f" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_process_cep</name></member>
+      <member refid="structps__decoder__t_1a572ad08651b4caae820d178a12c8f95f" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_process_raw</name></member>
+      <member refid="structps__decoder__t_1a7a335c6650fa98985b5687fde408ef0a" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_reinit</name></member>
+      <member refid="structps__decoder__t_1ad950da65e86a4611c93e3ad765ad22e6" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_reinit_feat</name></member>
+      <member refid="structps__decoder__t_1aca66da675491dfbcd51f66a2cead19c9" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_remove_search</name></member>
+      <member refid="structps__decoder__t_1ab6ba623b66f39ef5e322cb13b831b1b1" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_retain</name></member>
+      <member refid="structps__decoder__t_1a5e278377cc57d921591ce95b980760d5" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_save_dict</name></member>
+      <member refid="structps__decoder__t_1a3c85d53bfd56dc83226cc7f3bbcdcef6" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_search_iter</name></member>
+      <member refid="structps__decoder__t_1ab0353879769209971677296b937b9aae" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_seg_iter</name></member>
+      <member refid="structps__decoder__t_1a911c4849d7ffaf2960177c34968c1b0d" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_set_align_text</name></member>
+      <member refid="structps__decoder__t_1a82092689e27601f7bc9227cd904b0266" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_set_alignment</name></member>
+      <member refid="structps__decoder__t_1ae74f202f105207d5c499280ab187081f" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_set_cmn</name></member>
+      <member refid="structps__decoder__t_1a89be3b2a8f83291a225db0bcd9ee65b2" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_start_stream</name></member>
+      <member refid="structps__decoder__t_1ade3909b1c12c1b70afe284639e70cbff" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_start_utt</name></member>
+      <member refid="structps__decoder__t_1abcf13734aad31adce2cb8c7b8612ca98" prot="public" virt="non-virtual"><scope>ps_decoder_t</scope><name>ps_update_mllr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

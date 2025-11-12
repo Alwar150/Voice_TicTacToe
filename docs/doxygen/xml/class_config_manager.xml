@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_config_manager" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>ConfigManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="_config_manager_8h" local="no">ConfigManager.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_config_manager_1a9d30f8b6a03a88758b1a27dae2c02458" prot="private" static="no" mutable="no">
+        <type>QSettings *</type>
+        <definition>QSettings* ConfigManager::settings_</definition>
+        <argsstring></argsstring>
+        <name>settings_</name>
+        <qualifiedname>ConfigManager::settings_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="64" column="15" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="class_config_manager_1a2fc430f2f48d29787b668e048947a5d3" compoundref="_config_manager_8cpp" startline="67" endline="75">getBool</referencedby>
+        <referencedby refid="class_config_manager_1a8fcb73283ae43f36e70ae09990edb315" compoundref="_config_manager_8cpp" startline="57" endline="65">getInt</referencedby>
+        <referencedby refid="class_config_manager_1ab0a26220dad8b8b9c29e00ac3e06a455" compoundref="_config_manager_8cpp" startline="46" endline="55">getValue</referencedby>
+        <referencedby refid="class_config_manager_1a61e0d30507438bdb93773586fd17dcd2" compoundref="_config_manager_8cpp" startline="16" endline="44">load</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_config_manager_1ab72b9c36d8c92066d54eabae525da210" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_config_manager" kindref="compound">ConfigManager</ref> &amp;</type>
+        <definition>ConfigManager &amp; ConfigManager::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>ConfigManager::instance</qualifiedname>
+        <briefdescription>
+<para>Obtiene la instancia única del <ref refid="class_config_manager" kindref="compound">ConfigManager</ref> (Singleton). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Referencia al único <ref refid="class_config_manager" kindref="compound">ConfigManager</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="27" column="26" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.cpp" bodystart="3" bodyend="7"/>
+        <references refid="class_config_manager_1a41931ff9b32816a676885e4c78c3ab83" compoundref="_config_manager_8cpp" startline="9" endline="14">ConfigManager</references>
+        <references refid="class_config_manager_1ab72b9c36d8c92066d54eabae525da210" compoundref="_config_manager_8cpp" startline="3" endline="7">instance</references>
+        <referencedby refid="class_speech_manager_1a94d6a6d8b5aa00b913e751c2620a9e52" compoundref="_speech_manager_8cpp" startline="22" endline="33">SpeechManager::configure</referencedby>
+        <referencedby refid="class_config_manager_1ab72b9c36d8c92066d54eabae525da210" compoundref="_config_manager_8cpp" startline="3" endline="7">instance</referencedby>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="6" endline="18">main</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_config_manager_1a61e0d30507438bdb93773586fd17dcd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigManager::load</definition>
+        <argsstring>(const QString &amp;filePath=QString())</argsstring>
+        <name>load</name>
+        <qualifiedname>ConfigManager::load</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+          <defval>QString()</defval>
+        </param>
+        <briefdescription>
+<para>Carga el archivo de configuración desde la ruta indicada. Si no se especifica ruta, buscará config.ini en el directorio actual. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ruta al archivo .ini </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="35" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.cpp" bodystart="16" bodyend="44"/>
+        <references refid="class_config_manager_1a9d30f8b6a03a88758b1a27dae2c02458" compoundref="_config_manager_8h" startline="64">settings_</references>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="6" endline="18">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_config_manager_1ab0a26220dad8b8b9c29e00ac3e06a455" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString ConfigManager::getValue</definition>
+        <argsstring>(const QString &amp;key, const QString &amp;defaultValue=QString()) const</argsstring>
+        <name>getValue</name>
+        <qualifiedname>ConfigManager::getValue</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>QString()</defval>
+        </param>
+        <briefdescription>
+<para>Devuelve un valor del archivo INI como QString. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clave (por ejemplo, &quot;network/ip&quot;) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor por defecto si no se encuentra la clave </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Valor asociado </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="44" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.cpp" bodystart="46" bodyend="55"/>
+        <references refid="class_config_manager_1a9d30f8b6a03a88758b1a27dae2c02458" compoundref="_config_manager_8h" startline="64">settings_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_config_manager_1a8fcb73283ae43f36e70ae09990edb315" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ConfigManager::getInt</definition>
+        <argsstring>(const QString &amp;key, int defaultValue=0) const</argsstring>
+        <name>getInt</name>
+        <qualifiedname>ConfigManager::getInt</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defaultValue</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Devuelve un valor como entero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="49" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.cpp" bodystart="57" bodyend="65"/>
+        <references refid="class_config_manager_1a9d30f8b6a03a88758b1a27dae2c02458" compoundref="_config_manager_8h" startline="64">settings_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_config_manager_1a2fc430f2f48d29787b668e048947a5d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ConfigManager::getBool</definition>
+        <argsstring>(const QString &amp;key, bool defaultValue=false) const</argsstring>
+        <name>getBool</name>
+        <qualifiedname>ConfigManager::getBool</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>defaultValue</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Devuelve un valor como booleano. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="54" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.cpp" bodystart="67" bodyend="75"/>
+        <references refid="class_config_manager_1a9d30f8b6a03a88758b1a27dae2c02458" compoundref="_config_manager_8h" startline="64">settings_</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_config_manager_1a41931ff9b32816a676885e4c78c3ab83" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigManager::ConfigManager</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>ConfigManager</name>
+        <qualifiedname>ConfigManager::ConfigManager</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="57" column="14" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.cpp" bodystart="9" bodyend="14"/>
+        <referencedby refid="class_config_manager_1a106691c1efb4ec9d6f0688419e455906">ConfigManager</referencedby>
+        <referencedby refid="class_config_manager_1ab72b9c36d8c92066d54eabae525da210" compoundref="_config_manager_8cpp" startline="3" endline="7">instance</referencedby>
+        <referencedby refid="class_config_manager_1a0fd5bb24753934f9ec6430ab3bea7fd9">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_config_manager_1af27fe922a8151eed5b1dc926ddf045b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigManager::~ConfigManager</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~ConfigManager</name>
+        <qualifiedname>ConfigManager::~ConfigManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="58" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_config_manager_1a106691c1efb4ec9d6f0688419e455906" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigManager::ConfigManager</definition>
+        <argsstring>(const ConfigManager &amp;)=delete</argsstring>
+        <name>ConfigManager</name>
+        <qualifiedname>ConfigManager::ConfigManager</qualifiedname>
+        <param>
+          <type>const <ref refid="class_config_manager" kindref="compound">ConfigManager</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="61" column="5"/>
+        <references refid="class_config_manager_1a41931ff9b32816a676885e4c78c3ab83" compoundref="_config_manager_8cpp" startline="9" endline="14">ConfigManager</references>
+      </memberdef>
+      <memberdef kind="function" id="class_config_manager_1a0fd5bb24753934f9ec6430ab3bea7fd9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_config_manager" kindref="compound">ConfigManager</ref> &amp;</type>
+        <definition>ConfigManager &amp; ConfigManager::operator=</definition>
+        <argsstring>(const ConfigManager &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ConfigManager::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_config_manager" kindref="compound">ConfigManager</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="62" column="19"/>
+        <references refid="class_config_manager_1a41931ff9b32816a676885e4c78c3ab83" compoundref="_config_manager_8cpp" startline="9" endline="14">ConfigManager</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_config_manager" kindref="compound">ConfigManager</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Gestiona la configuración de la aplicación desde un archivo config.ini. Aplica el patrón Singleton para asegurar que solo existe una instancia accesible globalmente. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ConfigManager</label>
+        <link refid="class_config_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ConfigManager</label>
+        <link refid="class_config_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" line="17" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config/ConfigManager.h" bodystart="18" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_config_manager_1a41931ff9b32816a676885e4c78c3ab83" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>ConfigManager</name></member>
+      <member refid="class_config_manager_1a106691c1efb4ec9d6f0688419e455906" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>ConfigManager</name></member>
+      <member refid="class_config_manager_1a2fc430f2f48d29787b668e048947a5d3" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>getBool</name></member>
+      <member refid="class_config_manager_1a8fcb73283ae43f36e70ae09990edb315" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>getInt</name></member>
+      <member refid="class_config_manager_1ab0a26220dad8b8b9c29e00ac3e06a455" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>getValue</name></member>
+      <member refid="class_config_manager_1ab72b9c36d8c92066d54eabae525da210" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>instance</name></member>
+      <member refid="class_config_manager_1a61e0d30507438bdb93773586fd17dcd2" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>load</name></member>
+      <member refid="class_config_manager_1a0fd5bb24753934f9ec6430ab3bea7fd9" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>operator=</name></member>
+      <member refid="class_config_manager_1a9d30f8b6a03a88758b1a27dae2c02458" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>settings_</name></member>
+      <member refid="class_config_manager_1af27fe922a8151eed5b1dc926ddf045b1" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>~ConfigManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

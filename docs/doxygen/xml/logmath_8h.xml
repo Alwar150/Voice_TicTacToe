@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="logmath_8h" kind="file" language="C++">
+    <compoundname>logmath.h</compoundname>
+    <includes refid="export_8h" local="no">pocketsphinx/export.h</includes>
+    <includes refid="prim__type_8h" local="no">pocketsphinx/prim_type.h</includes>
+    <includedby refid="test__macros_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h</includedby>
+    <includedby refid="pocketsphinx_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</includedby>
+    <includedby refid="model_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pocketsphinx/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pocketsphinx/sphinx_config.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.cpp</label>
+        <link refid="_human_player_8cpp"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h</label>
+        <link refid="_human_player_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.cpp</label>
+        <link refid="_mini_max_agent_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.h</label>
+        <link refid="_mini_max_agent_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h</label>
+        <link refid="_no_agent_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp</label>
+        <link refid="_board_8cpp"/>
+      </node>
+      <node id="19">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp</label>
+        <link refid="_speech_manager_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h</label>
+        <link refid="_speech_manager_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/main.cpp</label>
+        <link refid="_tic_tac_toe_test_2main_8cpp"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_board.h</label>
+        <link refid="tst__board_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_minimaxagent.h</label>
+        <link refid="tst__minimaxagent_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp</label>
+        <link refid="_tic_tac_toe_game_8cpp"/>
+      </node>
+      <node id="22">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+      <node id="25">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h</label>
+        <link refid="_title_screen_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h</label>
+        <link refid="test__macros_8h"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h</label>
+        <link refid="lattice_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h</label>
+        <link refid="search_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structlogadd__s" prot="public">logadd_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="logmath_8h_1ae5c5ce106e9f8f1e763d419de53317a8" prot="public" static="no">
+        <name>LOGMATH_TABLE</name>
+        <param><defname>lm</defname></param>
+        <initializer>((<ref refid="structlogadd__t" kindref="compound">logadd_t</ref> *)lm)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtain the log-add table from a <ref refid="structlogmath__t" kindref="compound">logmath_t</ref> * </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="116" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="logmath_8h_1a8c04c94e2c6364f6cf3b649eb4ce5bfd" prot="public" static="no">
+        <type>struct <ref refid="structlogadd__s" kindref="compound">logadd_s</ref></type>
+        <definition>typedef struct logadd_s logadd_t</definition>
+        <argsstring></argsstring>
+        <name>logadd_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="95" column="23" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="logmath_8h_1ae613aa7db1dd40ff56a80a7dadb22cc8" prot="public" static="no">
+        <type>struct logmath_s</type>
+        <definition>typedef struct logmath_s logmath_t</definition>
+        <argsstring></argsstring>
+        <name>logmath_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="111" column="24" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Fast integer logarithmic addition operations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Because doxygen is Bad Software, the actual documentation can only exist in <ref refid="structlogmath__t" kindref="compound">logmath_t</ref>. Sorry about that.</para>
+<para>In evaluating HMM models, probability values are often kept in log domain, to avoid overflow. To enable these logprob values to be held in <ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> variables without significant loss of precision, a logbase of (1+epsilon) (where epsilon &lt; 0.01 or so) is used. This module maintains this logbase (B).</para>
+<para>However, maintaining probabilities in log domain creates a problem when adding two probability values. This problem can be solved by table lookup. Note that:</para>
+<para><itemizedlist>
+<listitem><para><formula id="0">$ b^z = b^x + b^y $</formula></para>
+</listitem><listitem><para><formula id="1">$ b^z = b^x(1 + b^{y-x})     = b^y(1 + e^{x-y}) $</formula></para>
+</listitem><listitem><para><formula id="2">$ z   = x + log_b(1 + b^{y-x}) = y + log_b(1 + b^{x-y}) $</formula></para>
+</listitem></itemizedlist>
+</para>
+<para>So:</para>
+<para><itemizedlist>
+<listitem><para>when <formula id="3">$ y &gt; x, z = y + logadd\_table[-(x-y)] $</formula></para>
+</listitem><listitem><para>when <formula id="4">$ x &gt; y, z = x + logadd\_table[-(y-x)] $</formula></para>
+</listitem><listitem><para>where <formula id="5">$ logadd\_table[n] = log_b(1 + b^{-n}) $</formula></para>
+</listitem></itemizedlist>
+</para>
+<para>The first entry in <emphasis>logadd_table</emphasis> is simply <formula id="6">$ log_b(2.0) $</formula>, for the case where <formula id="7">$ y = x $</formula> and thus <formula id="8">$ z = log_b(2x) = log_b(2) + x $</formula>. The last entry is zero, where <formula id="9">$ log_b(x+y) = x = y $</formula> due to loss of precision.</para>
+<para>Since this table can be quite large particularly for small logbases, an option is provided to compress it by dropping the least significant bits of the table. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c-basic-offset:<sp/>4;<sp/>indent-tabs-mode:<sp/>nil<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2007<sp/>Carnegie<sp/>Mellon<sp/>University.<sp/><sp/>All<sp/>rights</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>distribution.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>This<sp/>work<sp/>was<sp/>supported<sp/>in<sp/>part<sp/>by<sp/>funding<sp/>from<sp/>the<sp/>Defense<sp/>Advanced<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Research<sp/>Projects<sp/>Agency<sp/>and<sp/>the<sp/>National<sp/>Science<sp/>Foundation<sp/>of<sp/>the<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>United<sp/>States<sp/>of<sp/>America,<sp/>and<sp/>the<sp/>CMU<sp/>Sphinx<sp/>Speech<sp/>Consortium.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>CARNEGIE<sp/>MELLON<sp/>UNIVERSITY<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESSED<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>CARNEGIE<sp/>MELLON<sp/>UNIVERSITY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>NOR<sp/>ITS<sp/>EMPLOYEES<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__LOGMATH_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LOGMATH_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="export_8h" kindref="compound">pocketsphinx/export.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="prim__type_8h" kindref="compound">pocketsphinx/prim_type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fool<sp/>Emacs.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="logmath_8h_1a8c04c94e2c6364f6cf3b649eb4ce5bfd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlogadd__s" kindref="compound">logadd_s</ref><sp/><ref refid="structlogadd__t" kindref="compound">logadd_t</ref>;</highlight></codeline>
+<codeline lineno="96" refid="structlogadd__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlogadd__s" kindref="compound">logadd_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="98" refid="structlogadd__s_1a27793577d513d85cd73c2daffc140695" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structlogadd__s_1a27793577d513d85cd73c2daffc140695" kindref="member">table</ref>;</highlight></codeline>
+<codeline lineno="100" refid="structlogadd__s_1a484c53a05b46d863d0456af679cee5d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/><ref refid="structlogadd__s_1a484c53a05b46d863d0456af679cee5d8" kindref="member">table_size</ref>;</highlight></codeline>
+<codeline lineno="102" refid="structlogadd__s_1a8e35a353d751d957270baf5192007c3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/><ref refid="structlogadd__s_1a8e35a353d751d957270baf5192007c3e" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="104" refid="structlogadd__s_1a4000a49e71ed2c09da4f34cb5ccaed4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a1b956fe1df85f3c132b21edb4e116458" kindref="member">int8</ref><sp/><ref refid="structlogadd__s_1a4000a49e71ed2c09da4f34cb5ccaed4b" kindref="member">shift</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="logmath_8h_1ae613aa7db1dd40ff56a80a7dadb22cc8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">logmath_s<sp/><ref refid="structlogmath__t" kindref="compound">logmath_t</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="logmath_8h_1ae5c5ce106e9f8f1e763d419de53317a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGMATH_TABLE(lm)<sp/>((logadd_t<sp/>*)lm)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="127" refid="structlogmath__t_1a67fa75e38e518666547d676b1723be86" refkind="member"><highlight class="normal"><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*<ref refid="structlogmath__t_1a67fa75e38e518666547d676b1723be86" kindref="member">logmath_init</ref>(<ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/>base,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>shift,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>use_table);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="134" refid="structlogmath__t_1ad5f25906919e112859a51dec5aa96752" refkind="member"><highlight class="normal"><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*<ref refid="structlogmath__t_1ad5f25906919e112859a51dec5aa96752" kindref="member">logmath_read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="141" refid="structlogmath__t_1a02bcbb922fcbb4983cc003da84f5da6d" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structlogmath__t_1a02bcbb922fcbb4983cc003da84f5da6d" kindref="member">logmath_write</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="148" refid="structlogmath__t_1ae921cd21e0c7c28a5801f5063ddb8228" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structlogmath__t_1ae921cd21e0c7c28a5801f5063ddb8228" kindref="member">logmath_get_table_shape</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>*out_size,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>*out_width,<sp/><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>*out_shift);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="156" refid="structlogmath__t_1a6e619faaacbd3eea427e22b223353754" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/><ref refid="structlogmath__t_1a6e619faaacbd3eea427e22b223353754" kindref="member">logmath_get_base</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="163" refid="structlogmath__t_1aa7188fd7b15e28688d86a368e31df2e0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1aa7188fd7b15e28688d86a368e31df2e0" kindref="member">logmath_get_zero</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="170" refid="structlogmath__t_1ae484ab0132dc7324ee9927b660ac77d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1ae484ab0132dc7324ee9927b660ac77d8" kindref="member">logmath_get_width</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="177" refid="structlogmath__t_1af12b536b7cd046d8c02f98b647e290cd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1af12b536b7cd046d8c02f98b647e290cd" kindref="member">logmath_get_shift</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="186" refid="structlogmath__t_1afaa475efd12231945f531fca362d82d9" refkind="member"><highlight class="normal"><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*<ref refid="structlogmath__t_1afaa475efd12231945f531fca362d82d9" kindref="member">logmath_retain</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="195" refid="structlogmath__t_1a178bfdd5bb8c9f8c84e9e5c00cc343a4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1a178bfdd5bb8c9f8c84e9e5c00cc343a4" kindref="member">logmath_free</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="202" refid="structlogmath__t_1ab706b56ac49ab2dfa945d2d32758ab55" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1ab706b56ac49ab2dfa945d2d32758ab55" kindref="member">logmath_add_exact</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logb_p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logb_q);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="209" refid="structlogmath__t_1a49c7b087532d7cf136167ad6cf61e4b3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1a49c7b087532d7cf136167ad6cf61e4b3" kindref="member">logmath_add</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logb_p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logb_q);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="216" refid="structlogmath__t_1a9e3c7cbe0d9b3ba74b7e6965cacd6d5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1a9e3c7cbe0d9b3ba74b7e6965cacd6d5a" kindref="member">logmath_log</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/>p);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="223" refid="structlogmath__t_1a439a78b7c6f5821a750574ececc20fae" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/><ref refid="structlogmath__t_1a439a78b7c6f5821a750574ececc20fae" kindref="member">logmath_exp</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logb_p);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="230" refid="structlogmath__t_1a66303cb0b91f43452ea500f53ef7eaa5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1a66303cb0b91f43452ea500f53ef7eaa5" kindref="member">logmath_ln_to_log</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/>log_p);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="237" refid="structlogmath__t_1abaff7c0ba0976c7cf8f232d8340b7b2f" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/><ref refid="structlogmath__t_1abaff7c0ba0976c7cf8f232d8340b7b2f" kindref="member">logmath_log_to_ln</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logb_p);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="244" refid="structlogmath__t_1abb7027d633f0cabb372504e189e7b4b0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1abb7027d633f0cabb372504e189e7b4b0" kindref="member">logmath_log10_to_log</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/>log_p);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="251" refid="structlogmath__t_1a9cc2394054dc95d9e94720d036f28a41" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structlogmath__t_1a9cc2394054dc95d9e94720d036f28a41" kindref="member">logmath_log10_to_log_float</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/>log_p);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="258" refid="structlogmath__t_1ac8fe69a67fcca378b1e5a32428899a23" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/><ref refid="structlogmath__t_1ac8fe69a67fcca378b1e5a32428899a23" kindref="member">logmath_log_to_log10</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logb_p);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="265" refid="structlogmath__t_1a4e596e6d01e92280e0caa24a48727afb" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref><sp/><ref refid="structlogmath__t_1a4e596e6d01e92280e0caa24a48727afb" kindref="member">logmath_log_float_to_log10</ref>(<ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>log_p);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/><sp/>__LOGMATH_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h"/>
+  </compounddef>
+</doxygen>

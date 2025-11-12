@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structngram__model__set__iter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ngram_model_set_iter_t</compoundname>
+    <includes refid="model_8h" local="no">pocketsphinx/model.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structngram__model__set__iter__t_1a0b5d514788a89e94a9294444345644fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ngram_model_set_iter_t * ngram_model_set_iter_next</definition>
+        <argsstring>(ngram_model_set_iter_t *itor)</argsstring>
+        <name>ngram_model_set_iter_next</name>
+        <qualifiedname>ngram_model_set_iter_t::ngram_model_set_iter_next</qualifiedname>
+        <param>
+          <type><ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move to the next language model in a set.</para>
+<para><simplesect kind="return"><para>iterator pointing to the next language model, or NULL if no models remain. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="908" column="24" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="908" declcolumn="24"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structngram__model__set__iter__t_1aaf476373eb2e9c3d6c7efac3a4b1a1b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ngram_model_set_iter_free</definition>
+        <argsstring>(ngram_model_set_iter_t *itor)</argsstring>
+        <name>ngram_model_set_iter_free</name>
+        <qualifiedname>ngram_model_set_iter_t::ngram_model_set_iter_free</qualifiedname>
+        <param>
+          <type><ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finish iteration over a language model set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="915" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="915" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structngram__model__set__iter__t_1a969431cd3b760dd3aff5be7bc80eb520" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ngram_model_t * ngram_model_set_iter_model</definition>
+        <argsstring>(ngram_model_set_iter_t *itor, char const **lmname)</argsstring>
+        <name>ngram_model_set_iter_model</name>
+        <qualifiedname>ngram_model_set_iter_t::ngram_model_set_iter_model</qualifiedname>
+        <param>
+          <type><ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <param>
+          <type>char const **</type>
+          <declname>lmname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get language model and associated name from an iterator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the iterator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lmname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: string name associated with this language model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Language model pointed to by this iterator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="926" column="15" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="926" declcolumn="15"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Iterator over language models in a set. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="887" column="1"/>
+    <listofallmembers>
+      <member refid="structngram__model__set__iter__t_1aaf476373eb2e9c3d6c7efac3a4b1a1b2" prot="public" virt="non-virtual"><scope>ngram_model_set_iter_t</scope><name>ngram_model_set_iter_free</name></member>
+      <member refid="structngram__model__set__iter__t_1a969431cd3b760dd3aff5be7bc80eb520" prot="public" virt="non-virtual"><scope>ngram_model_set_iter_t</scope><name>ngram_model_set_iter_model</name></member>
+      <member refid="structngram__model__set__iter__t_1a0b5d514788a89e94a9294444345644fa" prot="public" virt="non-virtual"><scope>ngram_model_set_iter_t</scope><name>ngram_model_set_iter_next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

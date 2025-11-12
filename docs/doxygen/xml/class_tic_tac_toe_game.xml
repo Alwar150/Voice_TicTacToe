@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_tic_tac_toe_game" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>TicTacToeGame</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <includes refid="_tic_tac_toe_game_8h" local="no">TicTacToeGame.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tic_tac_toe_game_1ab64b2821a1025135891b4610b8454031" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Ui::TicTacToeGame &gt;</type>
+        <definition>std::unique_ptr&lt;Ui::TicTacToeGame&gt; TicTacToeGame::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>TicTacToeGame::ui</qualifiedname>
+        <briefdescription>
+<para>ui is a reference to the ui object of the tic tac toe game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="60" column="21" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_tic_tac_toe_game_1a9dd8af6820a6a994aeaf8ba6bee6fc89" compoundref="_tic_tac_toe_game_8cpp" startline="21" endline="44">buildCellButtons</referencedby>
+        <referencedby refid="class_tic_tac_toe_game_1a1c9c0235d321bee6cbe121a14c946434" compoundref="_tic_tac_toe_game_8cpp" startline="14" endline="19">setConnections</referencedby>
+        <referencedby refid="class_tic_tac_toe_game_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="_tic_tac_toe_game_8cpp" startline="5" endline="12">TicTacToeGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tic_tac_toe_game_1acab186bab68d7cf8a2c6f4ce87e6de13" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TicTacToeGame::TicTacToeGame</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>TicTacToeGame</name>
+        <qualifiedname>TicTacToeGame::TicTacToeGame</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="class_tic_tac_toe_game" kindref="compound">TicTacToeGame</ref> constructs a view of a game. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a QWidget type parent that owns this instance of the controller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="30" column="14" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="5" bodyend="12"/>
+        <references refid="class_tic_tac_toe_game_1a1c9c0235d321bee6cbe121a14c946434" compoundref="_tic_tac_toe_game_8cpp" startline="14" endline="19">setConnections</references>
+        <references refid="class_tic_tac_toe_game_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="_tic_tac_toe_game_8cpp" startline="5" endline="12">TicTacToeGame</references>
+        <references refid="class_tic_tac_toe_game_1ab64b2821a1025135891b4610b8454031" compoundref="_tic_tac_toe_game_8h" startline="60">ui</references>
+        <referencedby refid="class_tic_tac_toe_game_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="_tic_tac_toe_game_8cpp" startline="5" endline="12">TicTacToeGame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tic_tac_toe_game_1a6df8896115fc708fa4dd12bc6c04e34a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::updateCell</definition>
+        <argsstring>(Cell &amp;cell, BoardMarks currentPlayer)</argsstring>
+        <name>updateCell</name>
+        <qualifiedname>TicTacToeGame::updateCell</qualifiedname>
+        <param>
+          <type><ref refid="struct_cell" kindref="compound">Cell</ref> &amp;</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>currentPlayer</declname>
+        </param>
+        <briefdescription>
+<para>updateCell sets the Text of the cell to the current player&apos;s mark. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a refernece to the clicked cell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current player&apos;s mark (X or O). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="36" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="83" bodyend="88"/>
+        <references refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" compoundref="_t_t_t_common_types_8h" startline="27">Cell::cellBtn</references>
+        <references refid="class_tic_tac_toe_game_1ac18fe593bff035ce81a7f5e97727870a" compoundref="_tic_tac_toe_game_8cpp" startline="58" endline="81">getPlayerStyleSheet</references>
+        <references refid="class_tic_tac_toe_game_1a0b8fee976515895d15eb59c282b057d1" compoundref="_tic_tac_toe_game_8cpp" startline="46" endline="56">getPlayerText</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tic_tac_toe_game_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::declareGameState</definition>
+        <argsstring>(BoardState boardState)</argsstring>
+        <name>declareGameState</name>
+        <qualifiedname>TicTacToeGame::declareGameState</qualifiedname>
+        <param>
+          <type><ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref></type>
+          <declname>boardState</declname>
+        </param>
+        <briefdescription>
+<para>declareGameState outputs the board&apos;s state to a QMessageBox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boardState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current board state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="41" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="104" bodyend="110"/>
+        <references refid="class_tic_tac_toe_game_1af4349fa57bc46d6e3030ff2482ea57c9" compoundref="_tic_tac_toe_game_8cpp" startline="90" endline="102">getBoardFinalStateText</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tic_tac_toe_game_1a9dd8af6820a6a994aeaf8ba6bee6fc89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="struct_cell" kindref="compound">Cell</ref> &gt;</type>
+        <definition>vector&lt; Cell &gt; TicTacToeGame::buildCellButtons</definition>
+        <argsstring>(size_t boardSize)</argsstring>
+        <name>buildCellButtons</name>
+        <qualifiedname>TicTacToeGame::buildCellButtons</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>boardSize</declname>
+        </param>
+        <briefdescription>
+<para>buildCellButtons builds the GUI cells as push buttons. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boardSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows or columns of a board. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a collection of cells containing push button references and their corresponding row and column. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="48" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="21" bodyend="44"/>
+        <references refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" compoundref="_t_t_t_common_types_8h" startline="15">defaults::GUI_CELL_COLUMN_SPAN</references>
+        <references refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" compoundref="_t_t_t_common_types_8h" startline="14">defaults::GUI_CELL_ROW_SPAN</references>
+        <references refid="class_tic_tac_toe_game_1ab64b2821a1025135891b4610b8454031" compoundref="_tic_tac_toe_game_8h" startline="60">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tic_tac_toe_game_1a8a891d7dcf57178c79f325a92751f44c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::reset</definition>
+        <argsstring>(vector&lt; Cell &gt; &amp;cells)</argsstring>
+        <name>reset</name>
+        <qualifiedname>TicTacToeGame::reset</qualifiedname>
+        <param>
+          <type>vector&lt; <ref refid="struct_cell" kindref="compound">Cell</ref> &gt; &amp;</type>
+          <declname>cells</declname>
+        </param>
+        <briefdescription>
+<para>reset clears out the text of all push button cells. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a collection of cells containing push button references and their corresponding row and column. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="54" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="112" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_tic_tac_toe_game_1a1c9c0235d321bee6cbe121a14c946434" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::setConnections</definition>
+        <argsstring>()</argsstring>
+        <name>setConnections</name>
+        <qualifiedname>TicTacToeGame::setConnections</qualifiedname>
+        <briefdescription>
+<para>setConnections handles setting the connection to emit if cells have cliked, and the navigational back button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="65" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="14" bodyend="19"/>
+        <references refid="class_tic_tac_toe_game_1ab64b2821a1025135891b4610b8454031" compoundref="_tic_tac_toe_game_8h" startline="60">ui</references>
+        <referencedby refid="class_tic_tac_toe_game_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="_tic_tac_toe_game_8cpp" startline="5" endline="12">TicTacToeGame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tic_tac_toe_game_1a0b8fee976515895d15eb59c282b057d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString TicTacToeGame::getPlayerText</definition>
+        <argsstring>(BoardMarks currentPlayer)</argsstring>
+        <name>getPlayerText</name>
+        <qualifiedname>TicTacToeGame::getPlayerText</qualifiedname>
+        <param>
+          <type><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>currentPlayer</declname>
+        </param>
+        <briefdescription>
+<para>getPlayerText converts a board mark to a QString. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current player&apos;s mark (X or O). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a QString of the player&apos;s mark. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="71" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="46" bodyend="56"/>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" compoundref="_t_t_t_common_types_8h" startline="147">O</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+        <referencedby refid="class_tic_tac_toe_game_1a6df8896115fc708fa4dd12bc6c04e34a" compoundref="_tic_tac_toe_game_8cpp" startline="83" endline="88">updateCell</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tic_tac_toe_game_1ac18fe593bff035ce81a7f5e97727870a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString TicTacToeGame::getPlayerStyleSheet</definition>
+        <argsstring>(BoardMarks currentPlayer)</argsstring>
+        <name>getPlayerStyleSheet</name>
+        <qualifiedname>TicTacToeGame::getPlayerStyleSheet</qualifiedname>
+        <param>
+          <type><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>currentPlayer</declname>
+        </param>
+        <briefdescription>
+<para>getPlayerStyleSheet gets a stylesheet associated with each player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current player&apos;s mark (X or O). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a QString stylesheet of the player given in the input. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="77" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="58" bodyend="81"/>
+        <references refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" compoundref="_t_t_t_common_types_8h" startline="18">defaults::DEFAULT_COLOR</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" compoundref="_t_t_t_common_types_8h" startline="147">O</references>
+        <references refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" compoundref="_t_t_t_common_types_8h" startline="17">defaults::O_COLOR</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+        <references refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" compoundref="_t_t_t_common_types_8h" startline="16">defaults::X_COLOR</references>
+        <referencedby refid="class_tic_tac_toe_game_1a6df8896115fc708fa4dd12bc6c04e34a" compoundref="_tic_tac_toe_game_8cpp" startline="83" endline="88">updateCell</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tic_tac_toe_game_1af4349fa57bc46d6e3030ff2482ea57c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString TicTacToeGame::getBoardFinalStateText</definition>
+        <argsstring>(BoardState boardState)</argsstring>
+        <name>getBoardFinalStateText</name>
+        <qualifiedname>TicTacToeGame::getBoardFinalStateText</qualifiedname>
+        <param>
+          <type><ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref></type>
+          <declname>boardState</declname>
+        </param>
+        <briefdescription>
+<para>getBoardFinalStateText converts a state to a decleration text, that will be used when declaring the final state of a game. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boardState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current board state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>QString decleration text, that will be used when declaring the final state of a game. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="85" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp" bodystart="90" bodyend="102"/>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" compoundref="_t_t_t_common_types_8h" startline="152">OWins</references>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" compoundref="_t_t_t_common_types_8h" startline="152">Tie</references>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" compoundref="_t_t_t_common_types_8h" startline="152">XWins</references>
+        <referencedby refid="class_tic_tac_toe_game_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" compoundref="_tic_tac_toe_game_8cpp" startline="104" endline="110">declareGameState</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_tic_tac_toe_game_1ad0072c616d4d9284ca69245a635b8303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::newGame</definition>
+        <argsstring>()</argsstring>
+        <name>newGame</name>
+        <qualifiedname>TicTacToeGame::newGame</qualifiedname>
+        <briefdescription>
+<para>newGame is emitted when the New Game button is clicked and some reset logic must be executed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="92" column="10"/>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">TTTController::setConnections</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_tic_tac_toe_game" kindref="compound">TicTacToeGame</ref> class is responsible for the GUI of a game, it is responsible for building the cells of a board, which can be of variable size, and a navigation button to take the user back to the title screen, and a button for resetting the game and playing a new one. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+      <node id="1">
+        <label>TicTacToeGame</label>
+        <link refid="class_tic_tac_toe_game"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+      <node id="1">
+        <label>TicTacToeGame</label>
+        <link refid="class_tic_tac_toe_game"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" line="21" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h" bodystart="22" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_tic_tac_toe_game_1a9dd8af6820a6a994aeaf8ba6bee6fc89" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>buildCellButtons</name></member>
+      <member refid="class_tic_tac_toe_game_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>declareGameState</name></member>
+      <member refid="class_tic_tac_toe_game_1af4349fa57bc46d6e3030ff2482ea57c9" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>getBoardFinalStateText</name></member>
+      <member refid="class_tic_tac_toe_game_1ac18fe593bff035ce81a7f5e97727870a" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>getPlayerStyleSheet</name></member>
+      <member refid="class_tic_tac_toe_game_1a0b8fee976515895d15eb59c282b057d1" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>getPlayerText</name></member>
+      <member refid="class_tic_tac_toe_game_1ad0072c616d4d9284ca69245a635b8303" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>newGame</name></member>
+      <member refid="class_tic_tac_toe_game_1a8a891d7dcf57178c79f325a92751f44c" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>reset</name></member>
+      <member refid="class_tic_tac_toe_game_1a1c9c0235d321bee6cbe121a14c946434" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>setConnections</name></member>
+      <member refid="class_tic_tac_toe_game_1acab186bab68d7cf8a2c6f4ce87e6de13" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>TicTacToeGame</name></member>
+      <member refid="class_tic_tac_toe_game_1ab64b2821a1025135891b4610b8454031" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>ui</name></member>
+      <member refid="class_tic_tac_toe_game_1a6df8896115fc708fa4dd12bc6c04e34a" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>updateCell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

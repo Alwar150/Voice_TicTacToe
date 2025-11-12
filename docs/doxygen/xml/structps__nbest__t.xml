@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__nbest__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_nbest_t</compoundname>
+    <includes refid="pocketsphinx_8h" local="no">pocketsphinx.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__nbest__t_1ae72b70b5c5560f3864d15f1c2ac7d393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__nbest__t" kindref="compound">ps_nbest_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_nbest_t * ps_nbest_next</definition>
+        <argsstring>(ps_nbest_t *nbest)</argsstring>
+        <name>ps_nbest_next</name>
+        <qualifiedname>ps_nbest_t::ps_nbest_next</qualifiedname>
+        <param>
+          <type><ref refid="structps__nbest__t" kindref="compound">ps_nbest_t</ref> *</type>
+          <declname>nbest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move an N-best list iterator forward.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nbest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N-best iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Updated N-best iterator, or NULL if no more hypotheses are available (iterator is freed ni this case). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1036" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1036" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__nbest__t_1af6aeed1a376d89f966277e7165a30555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> char const *</type>
+        <definition>POCKETSPHINX_EXPORT char const  * ps_nbest_hyp</definition>
+        <argsstring>(ps_nbest_t *nbest, int32 *out_score)</argsstring>
+        <name>ps_nbest_hyp</name>
+        <qualifiedname>ps_nbest_t::ps_nbest_hyp</qualifiedname>
+        <param>
+          <type><ref refid="structps__nbest__t" kindref="compound">ps_nbest_t</ref> *</type>
+          <declname>nbest</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> *</type>
+          <declname>out_score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the hypothesis string from an N-best list iterator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nbest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N-best iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Path score for this hypothesis. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String containing next best hypothesis. Note that this pointer is only valid for the current iteration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1048" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1048" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__nbest__t_1a63ca4168dd84b279b5a3a0cc405362ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__seg__t" kindref="compound">ps_seg_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_seg_t * ps_nbest_seg</definition>
+        <argsstring>(ps_nbest_t *nbest)</argsstring>
+        <name>ps_nbest_seg</name>
+        <qualifiedname>ps_nbest_t::ps_nbest_seg</qualifiedname>
+        <param>
+          <type><ref refid="structps__nbest__t" kindref="compound">ps_nbest_t</ref> *</type>
+          <declname>nbest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the word segmentation from an N-best list iterator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nbest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N-best iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Iterator over the next best hypothesis. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1058" column="10" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1058" declcolumn="10"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__nbest__t_1a83379b2da95eebdf5070d29196a9b067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ps_nbest_free</definition>
+        <argsstring>(ps_nbest_t *nbest)</argsstring>
+        <name>ps_nbest_free</name>
+        <qualifiedname>ps_nbest_t::ps_nbest_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__nbest__t" kindref="compound">ps_nbest_t</ref> *</type>
+          <declname>nbest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finish N-best search early, releasing resources.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nbest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>N-best iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1067" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1067" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>N-best hypothesis iterator object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="139" column="1"/>
+    <listofallmembers>
+      <member refid="structps__nbest__t_1a83379b2da95eebdf5070d29196a9b067" prot="public" virt="non-virtual"><scope>ps_nbest_t</scope><name>ps_nbest_free</name></member>
+      <member refid="structps__nbest__t_1af6aeed1a376d89f966277e7165a30555" prot="public" virt="non-virtual"><scope>ps_nbest_t</scope><name>ps_nbest_hyp</name></member>
+      <member refid="structps__nbest__t_1ae72b70b5c5560f3864d15f1c2ac7d393" prot="public" virt="non-virtual"><scope>ps_nbest_t</scope><name>ps_nbest_next</name></member>
+      <member refid="structps__nbest__t_1a63ca4168dd84b279b5a3a0cc405362ea" prot="public" virt="non-virtual"><scope>ps_nbest_t</scope><name>ps_nbest_seg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

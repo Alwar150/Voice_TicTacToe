@@ -1,0 +1,21 @@
+\doxysection{export.\+h}
+\hypertarget{export_8h_source}{}\label{export_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/export.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/export.h}}
+\mbox{\hyperlink{export_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_POCKETSPHINX\_EXPORT\_H\_\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_POCKETSPHINX\_EXPORT\_H\_\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{/*\ Win32\ DLL\ gunk\ */}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#if\ defined(\_WIN32)\ \&\&\ defined(SPHINX\_DLL)}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#if\ defined(POCKETSPHINX\_EXPORTS)\ }\textcolor{comment}{/*\ DLL\ itself\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ POCKETSPHINX\_EXPORT\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ POCKETSPHINX\_EXPORT\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{/*\ No\ DLL\ things*/}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ POCKETSPHINX\_EXPORT}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_POCKETSPHINX\_EXPORT\_H\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

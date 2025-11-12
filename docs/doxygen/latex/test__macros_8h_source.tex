@@ -1,0 +1,28 @@
+\doxysection{test\+\_\+macros.\+h}
+\hypertarget{test__macros_8h_source}{}\label{test__macros_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/examples/test/unit/test\_macros.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/examples/test/unit/test\_macros.h}}
+\mbox{\hyperlink{test__macros_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{logmath_8h}{pocketsphinx/logmath.h}}>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ EPSILON\ 0.01}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ TEST\_ASSERT(x)\ if\ (!(x))\ \{\ fprintf(stderr,\ "{}FAIL:\ \%s\(\backslash\)n"{},\ \#x);\ exit(1);\ \}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ TEST\_EQUAL(a,b)\ TEST\_ASSERT((a)\ ==\ (b))}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ TEST\_EQUAL\_FLOAT(a,b)\ TEST\_ASSERT(fabs((a)\ -\/\ (b))\ <\ EPSILON)}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifdef\ FIXED\_POINT}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ TEST\_EQUAL\_MFCC(a,b)\ TEST\_EQUAL(a,b)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ TEST\_EQUAL\_MFCC(a,b)\ TEST\_ASSERT(fabs((a)\ -\/\ (b))\ <\ EPSILON)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ TEST\_EQUAL\_STRING(a,b)\ TEST\_ASSERT(0\ ==\ strcmp((a),\ (b)))}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ LOG\_EPSILON\ 200}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ TEST\_EQUAL\_LOG(a,b)\ TEST\_ASSERT(abs((a)\ -\/\ (b))\ <\ LOG\_EPSILON)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ MODELDIR\ "{}/home/ratty/Downloads/pocketsphinx-\/main/model"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ DATADIR\ "{}/home/ratty/Downloads/pocketsphinx-\/main/test/data"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ TESTDATADIR\ "{}/home/ratty/Downloads/pocketsphinx-\/main/test/regression"{}}}
+
+\end{DoxyCode}

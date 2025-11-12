@@ -1,0 +1,1110 @@
+\doxysection{ps\+\_\+decoder\+\_\+t Struct Reference}
+\hypertarget{structps__decoder__t}{}\label{structps__decoder__t}\index{ps\_decoder\_t@{ps\_decoder\_t}}
+
+
+Speech recognizer object.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a7a335c6650fa98985b5687fde408ef0a}{ps\+\_\+reinit}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_ad950da65e86a4611c93e3ad765ad22e6}{ps\+\_\+reinit\+\_\+feat}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}config)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a95778ded410ce81acf0c7bfdb069ba7d}{ps\+\_\+get\+\_\+cmn}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, int update)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_ae74f202f105207d5c499280ab187081f}{ps\+\_\+set\+\_\+cmn}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}cmn)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_ab6ba623b66f39ef5e322cb13b831b1b1}{ps\+\_\+retain}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_ad8fd9b79ae9f87703af3f4755b3ab567}{ps\+\_\+free}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a90559e2f98ee1f8439350eacc8c68f83}{ps\+\_\+get\+\_\+config}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a318ec5e87309b590a775ba1e91297b85}{ps\+\_\+get\+\_\+logmath}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__mllr__t}{ps\+\_\+mllr\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_abcf13734aad31adce2cb8c7b8612ca98}{ps\+\_\+update\+\_\+mllr}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, \mbox{\hyperlink{structps__mllr__t}{ps\+\_\+mllr\+\_\+t}} \texorpdfstring{$\ast$}{*}mllr)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a824f46e51681d931b7e2706a86c3d86f}{ps\+\_\+load\+\_\+dict}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, char const \texorpdfstring{$\ast$}{*}dictfile, char const \texorpdfstring{$\ast$}{*}fdictfile, char const \texorpdfstring{$\ast$}{*}format)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a5e278377cc57d921591ce95b980760d5}{ps\+\_\+save\+\_\+dict}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, char const \texorpdfstring{$\ast$}{*}dictfile, char const \texorpdfstring{$\ast$}{*}format)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a5f3c4fcdbef34915c4e785ac9a1c6005}{ps\+\_\+add\+\_\+word}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, char const \texorpdfstring{$\ast$}{*}word, char const \texorpdfstring{$\ast$}{*}phones, int update)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_ab2ca0a5e9ed39baa81ccc703bb20a7ab}{ps\+\_\+lookup\+\_\+word}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}word)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} long \mbox{\hyperlink{structps__decoder__t_a43b378f9c42bcb19fdff0ebe71c25adb}{ps\+\_\+decode\+\_\+raw}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, FILE \texorpdfstring{$\ast$}{*}rawfh, long maxsamps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a466d1d718873e7b1cf0881e4f552a4a2}{ps\+\_\+decode\+\_\+senscr}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, FILE \texorpdfstring{$\ast$}{*}senfh)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a89be3b2a8f83291a225db0bcd9ee65b2}{ps\+\_\+start\+\_\+stream}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_adcbb8aeb9ebf3f73e935d3b3c8832ea0}{ps\+\_\+get\+\_\+in\+\_\+speech}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_ade3909b1c12c1b70afe284639e70cbff}{ps\+\_\+start\+\_\+utt}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a572ad08651b4caae820d178a12c8f95f}{ps\+\_\+process\+\_\+raw}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} const \texorpdfstring{$\ast$}{*}data, size\+\_\+t n\+\_\+samples, int no\+\_\+search, int full\+\_\+utt)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a8b1311a8127f9c4daf24e7034673f50f}{ps\+\_\+process\+\_\+cep}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}data, int n\+\_\+frames, int no\+\_\+search, int full\+\_\+utt)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_abb3527e41c2f4cd64dccbdbd5f812d1d}{ps\+\_\+get\+\_\+n\+\_\+frames}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_ab9339de730713b68cbd68a7f36dc8730}{ps\+\_\+end\+\_\+utt}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a35be2a1924f93c23b033e08ab0e85c28}{ps\+\_\+get\+\_\+hyp}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}out\+\_\+best\+\_\+score)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \mbox{\hyperlink{structps__decoder__t_ac8ac154482457740173caa1c0d699c49}{ps\+\_\+get\+\_\+prob}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__lattice__t}{ps\+\_\+lattice\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_af8f325d9d183e8930e48a518b13f085a}{ps\+\_\+get\+\_\+lattice}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_ab0353879769209971677296b937b9aae}{ps\+\_\+seg\+\_\+iter}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_ab9c09bbe581a5ad2cdb42530c6ab009e}{ps\+\_\+nbest}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__decoder__t_aac7070c934a2d03d0d5b34e19614360f}{ps\+\_\+get\+\_\+utt\+\_\+time}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, double \texorpdfstring{$\ast$}{*}out\+\_\+nspeech, double \texorpdfstring{$\ast$}{*}out\+\_\+ncpu, double \texorpdfstring{$\ast$}{*}out\+\_\+nwall)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__decoder__t_a61fb92154c5c731cf4a24e0976263da0}{ps\+\_\+get\+\_\+all\+\_\+time}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, double \texorpdfstring{$\ast$}{*}out\+\_\+nspeech, double \texorpdfstring{$\ast$}{*}out\+\_\+ncpu, double \texorpdfstring{$\ast$}{*}out\+\_\+nwall)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a1a589bf2956a5905368e9288979743b8}{ps\+\_\+current\+\_\+search}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_aca66da675491dfbcd51f66a2cead19c9}{ps\+\_\+remove\+\_\+search}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a3c85d53bfd56dc83226cc7f3bbcdcef6}{ps\+\_\+search\+\_\+iter}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__model__t}{ngram\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_ab11d511d180c9aea9779f545d4d22809}{ps\+\_\+get\+\_\+lm}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_af94c4cc983fee1c22cd9042c35f6b4ba}{ps\+\_\+add\+\_\+lm}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, \mbox{\hyperlink{structngram__model__t}{ngram\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*}lm)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a268455d472a947079dc9ece74f6a6fab}{ps\+\_\+add\+\_\+lm\+\_\+file}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}path)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structfsg__model__t}{fsg\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a70c94d4192c66e9f203eb72f92ee532c}{ps\+\_\+get\+\_\+fsg}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5}{ps\+\_\+add\+\_\+fsg}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, \mbox{\hyperlink{structfsg__model__t}{fsg\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*}fsg)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a27cb38750271a285addc3d9c5f15c8ab}{ps\+\_\+add\+\_\+jsgf\+\_\+file}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}path)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_ad975de5e4114ee1d534ceffdacb18394}{ps\+\_\+add\+\_\+jsgf\+\_\+string}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}jsgf\+\_\+string)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a7000861f6aa97e98f8a7c95d3e3ba157}{ps\+\_\+get\+\_\+kws}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_adb32316b526c8ac3cbd4d9b5a2b8122b}{ps\+\_\+add\+\_\+kws}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}keyfile)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a87aced38ba183da00ebd04c002af01d5}{ps\+\_\+add\+\_\+keyphrase}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}keyphrase)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a8ae78fa993cad9e1da24b052b80fff78}{ps\+\_\+add\+\_\+allphone}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, \mbox{\hyperlink{structngram__model__t}{ngram\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*}lm)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a6e324573a9de664cfa0a37a5cd7a6fc8}{ps\+\_\+add\+\_\+allphone\+\_\+file}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}path)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a911c4849d7ffaf2960177c34968c1b0d}{ps\+\_\+set\+\_\+align\+\_\+text}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, const char \texorpdfstring{$\ast$}{*}words)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__decoder__t_a82092689e27601f7bc9227cd904b0266}{ps\+\_\+set\+\_\+alignment}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps, \mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}al)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__decoder__t_a34112271b4b2a3cb6616e072a36f693d}{ps\+\_\+get\+\_\+alignment}} (\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}ps)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Speech recognizer object. 
+
+\label{doc-func-members}
+\Hypertarget{structps__decoder__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_activate\_search@{ps\_activate\_search}}
+\index{ps\_activate\_search@{ps\_activate\_search}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_activate\_search()}{ps\_activate\_search()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a602108d3b7b35927477243b1978b8d89} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+activate\+\_\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Actives search with the provided name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of search module to activate. This must have been previously added by either \doxylink{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5}{ps\+\_\+add\+\_\+fsg()}, \doxylink{structps__decoder__t_af94c4cc983fee1c22cd9042c35f6b4ba}{ps\+\_\+add\+\_\+lm()}, or \doxylink{structps__decoder__t_adb32316b526c8ac3cbd4d9b5a2b8122b}{ps\+\_\+add\+\_\+kws()}. If NULL, it will re-\/activate the default search, which is useful when running second-\/pass alignment, for instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, -\/1 on failure 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a8ae78fa993cad9e1da24b052b80fff78}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_allphone@{ps\_add\_allphone}}
+\index{ps\_add\_allphone@{ps\_add\_allphone}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_allphone()}{ps\_add\_allphone()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a8ae78fa993cad9e1da24b052b80fff78} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+allphone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{\mbox{\hyperlink{structngram__model__t}{ngram\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lm}{}\end{DoxyParamCaption})}
+
+Adds new search based on phone N-\/gram language model.
+
+Associates N-\/gram search with the provided name. The search can be activated using \doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search()}.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search}. 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a6e324573a9de664cfa0a37a5cd7a6fc8}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_allphone\_file@{ps\_add\_allphone\_file}}
+\index{ps\_add\_allphone\_file@{ps\_add\_allphone\_file}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_allphone\_file()}{ps\_add\_allphone\_file()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a6e324573a9de664cfa0a37a5cd7a6fc8} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+allphone\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{path}{}\end{DoxyParamCaption})}
+
+Adds new search based on phone N-\/gram language model.
+
+Convenient method to load N-\/gram model and create a search.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a8ae78fa993cad9e1da24b052b80fff78}{ps\+\_\+add\+\_\+allphone} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_fsg@{ps\_add\_fsg}}
+\index{ps\_add\_fsg@{ps\_add\_fsg}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_fsg()}{ps\_add\_fsg()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+fsg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{\mbox{\hyperlink{structfsg__model__t}{fsg\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{fsg}{}\end{DoxyParamCaption})}
+
+Adds new search based on finite state grammar.
+
+Associates FSG search with the provided name. The search can be activated using \doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search()}.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a27cb38750271a285addc3d9c5f15c8ab}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_jsgf\_file@{ps\_add\_jsgf\_file}}
+\index{ps\_add\_jsgf\_file@{ps\_add\_jsgf\_file}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_jsgf\_file()}{ps\_add\_jsgf\_file()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a27cb38750271a285addc3d9c5f15c8ab} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+jsgf\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{path}{}\end{DoxyParamCaption})}
+
+Adds new search using JSGF model.
+
+Convenient method to load JSGF model and create a search.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5}{ps\+\_\+add\+\_\+fsg} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ad975de5e4114ee1d534ceffdacb18394}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_jsgf\_string@{ps\_add\_jsgf\_string}}
+\index{ps\_add\_jsgf\_string@{ps\_add\_jsgf\_string}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_jsgf\_string()}{ps\_add\_jsgf\_string()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ad975de5e4114ee1d534ceffdacb18394} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+jsgf\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{jsgf\+\_\+string}{}\end{DoxyParamCaption})}
+
+Adds new search using JSGF model.
+
+Convenience method to parse JSGF model from string and create a search.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5}{ps\+\_\+add\+\_\+fsg} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a87aced38ba183da00ebd04c002af01d5}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_keyphrase@{ps\_add\_keyphrase}}
+\index{ps\_add\_keyphrase@{ps\_add\_keyphrase}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_keyphrase()}{ps\_add\_keyphrase()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a87aced38ba183da00ebd04c002af01d5} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+keyphrase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{keyphrase}{}\end{DoxyParamCaption})}
+
+Adds new keyphrase to spot
+
+Associates KWS search with the provided name. The search can be activated using \doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search()}.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_adb32316b526c8ac3cbd4d9b5a2b8122b}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_kws@{ps\_add\_kws}}
+\index{ps\_add\_kws@{ps\_add\_kws}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_kws()}{ps\_add\_kws()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_adb32316b526c8ac3cbd4d9b5a2b8122b} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+kws (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{keyfile}{}\end{DoxyParamCaption})}
+
+Adds keyphrases from a file to spotting
+
+Associates KWS search with the provided name. The search can be activated using \doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search()}.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_af94c4cc983fee1c22cd9042c35f6b4ba}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_lm@{ps\_add\_lm}}
+\index{ps\_add\_lm@{ps\_add\_lm}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_lm()}{ps\_add\_lm()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_af94c4cc983fee1c22cd9042c35f6b4ba} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+lm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{\mbox{\hyperlink{structngram__model__t}{ngram\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lm}{}\end{DoxyParamCaption})}
+
+Adds new search based on N-\/gram language model.
+
+Associates N-\/gram search with the provided name. The search can be activated using \doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search()}.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search}. 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a268455d472a947079dc9ece74f6a6fab}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_lm\_file@{ps\_add\_lm\_file}}
+\index{ps\_add\_lm\_file@{ps\_add\_lm\_file}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_lm\_file()}{ps\_add\_lm\_file()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a268455d472a947079dc9ece74f6a6fab} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+lm\+\_\+file (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{path}{}\end{DoxyParamCaption})}
+
+Adds new search based on N-\/gram language model.
+
+Convenient method to load N-\/gram model and create a search.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_af94c4cc983fee1c22cd9042c35f6b4ba}{ps\+\_\+add\+\_\+lm} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a5f3c4fcdbef34915c4e785ac9a1c6005}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_add\_word@{ps\_add\_word}}
+\index{ps\_add\_word@{ps\_add\_word}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_add\_word()}{ps\_add\_word()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a5f3c4fcdbef34915c4e785ac9a1c6005} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+add\+\_\+word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{word}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{phones}{, }\item[{int}]{update}{}\end{DoxyParamCaption})}
+
+Add a word to the pronunciation dictionary.
+
+This function adds a word to the pronunciation dictionary and the current language model (but, obviously, not to the current FSG if FSG mode is enabled). If the word is already present in one or the other, it does whatever is necessary to ensure that the word can be recognized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & Word string to add. \\
+\hline
+{\em phones} & Whitespace-\/separated list of phoneme strings describing pronunciation of {\ttfamily word}. \\
+\hline
+{\em update} & If TRUE, update the search module (whichever one is currently active) to recognize the newly added word. If adding multiple words, it is more efficient to pass FALSE here in all but the last word. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The internal ID (\texorpdfstring{$>$}{>}= 0) of the newly added word, or \texorpdfstring{$<$}{<}0 on failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a1a589bf2956a5905368e9288979743b8}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_current\_search@{ps\_current\_search}}
+\index{ps\_current\_search@{ps\_current\_search}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_current\_search()}{ps\_current\_search()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a1a589bf2956a5905368e9288979743b8} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} ps\+\_\+current\+\_\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Returns name of current search in decoder
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a43b378f9c42bcb19fdff0ebe71c25adb}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_decode\_raw@{ps\_decode\_raw}}
+\index{ps\_decode\_raw@{ps\_decode\_raw}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_decode\_raw()}{ps\_decode\_raw()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a43b378f9c42bcb19fdff0ebe71c25adb} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} long ps\+\_\+decode\+\_\+raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{rawfh}{, }\item[{long}]{maxsamps}{}\end{DoxyParamCaption})}
+
+Decode a raw audio stream.
+
+No headers are recognized in this files. The configuration parameters {\ttfamily -\/samprate} and {\ttfamily -\/input\+\_\+endian} are used to determine the sampling rate and endianness of the stream, respectively. Audio is always assumed to be 16-\/bit signed PCM.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+{\em rawfh} & Previously opened file stream. \\
+\hline
+{\em maxsamps} & Maximum number of samples to read from rawfh, or -\/1 to read until end-\/of-\/file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of samples of audio. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a466d1d718873e7b1cf0881e4f552a4a2}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_decode\_senscr@{ps\_decode\_senscr}}
+\index{ps\_decode\_senscr@{ps\_decode\_senscr}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_decode\_senscr()}{ps\_decode\_senscr()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a466d1d718873e7b1cf0881e4f552a4a2} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+decode\+\_\+senscr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{senfh}{}\end{DoxyParamCaption})}
+
+Decode a senone score dump file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder \\
+\hline
+{\em senfh} & Previously opened file handle positioned at start of file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of frames read. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ab9339de730713b68cbd68a7f36dc8730}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_end\_utt@{ps\_end\_utt}}
+\index{ps\_end\_utt@{ps\_end\_utt}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_end\_utt()}{ps\_end\_utt()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ab9339de730713b68cbd68a7f36dc8730} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+end\+\_\+utt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+End utterance processing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, \texorpdfstring{$<$}{<}0 on error 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ad8fd9b79ae9f87703af3f4755b3ab567}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_free@{ps\_free}}
+\index{ps\_free@{ps\_free}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_free()}{ps\_free()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ad8fd9b79ae9f87703af3f4755b3ab567} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Finalize the decoder.
+
+This releases all resources associated with the decoder.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder to be freed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New reference count (0 if freed). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a34112271b4b2a3cb6616e072a36f693d}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_alignment@{ps\_get\_alignment}}
+\index{ps\_get\_alignment@{ps\_get\_alignment}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_alignment()}{ps\_get\_alignment()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a34112271b4b2a3cb6616e072a36f693d} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+alignment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Get the alignment associated with the current search module.
+
+As noted above, if decoding has not been run, this will contain invalid durations, but that may still be useful if you just want to know the state sequence.
+
+\begin{DoxyReturn}{Returns}
+Current alignment, or NULL if none. This pointer is owned by the decoder, so you must call ps\+\_\+alignment\+\_\+retain() on it if you wish to keep it outside the lifetime of the decoder. 
+\end{DoxyReturn}
+\Hypertarget{structps__decoder__t_a61fb92154c5c731cf4a24e0976263da0}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_all\_time@{ps\_get\_all\_time}}
+\index{ps\_get\_all\_time@{ps\_get\_all\_time}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_all\_time()}{ps\_get\_all\_time()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a61fb92154c5c731cf4a24e0976263da0} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+get\+\_\+all\+\_\+time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{out\+\_\+nspeech}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{out\+\_\+ncpu}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{out\+\_\+nwall}{}\end{DoxyParamCaption})}
+
+Get overall performance information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+{\em out\+\_\+nspeech} & Output\+: Number of seconds of speech. \\
+\hline
+{\em out\+\_\+ncpu} & Output\+: Number of seconds of CPU time used. \\
+\hline
+{\em out\+\_\+nwall} & Output\+: Number of seconds of wall time used. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{structps__decoder__t_a95778ded410ce81acf0c7bfdb069ba7d}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_cmn@{ps\_get\_cmn}}
+\index{ps\_get\_cmn@{ps\_get\_cmn}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_cmn()}{ps\_get\_cmn()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a95778ded410ce81acf0c7bfdb069ba7d} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+cmn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{int}]{update}{}\end{DoxyParamCaption})}
+
+Get the current cepstral mean as a string.
+
+This is the string representation of the current cepstral mean, which represents the acoustic channel conditions in live recognition. This can be used to initialize the decoder with the {\ttfamily cmninit} option, e.\+g.\+: \begin{DoxyVerb}config = ps_config_parse_json(NULL, "cmninit: 42,-1,0");
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder \\
+\hline
+{\em update} & Update the cepstral mean using data processed so far. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String representation of cepstral mean, as {\ttfamily ps\+\_\+config\+\_\+get\+\_\+int(config, "{}ceplen"{})} comma-\/separated numbers. This pointer is owned by the decoder and only valid until the next call to \doxylink{structps__decoder__t_a95778ded410ce81acf0c7bfdb069ba7d}{ps\+\_\+get\+\_\+cmn()}, \doxylink{structps__decoder__t_ae74f202f105207d5c499280ab187081f}{ps\+\_\+set\+\_\+cmn()} or \doxylink{structps__decoder__t_ab9339de730713b68cbd68a7f36dc8730}{ps\+\_\+end\+\_\+utt()}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a90559e2f98ee1f8439350eacc8c68f83}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_config@{ps\_get\_config}}
+\index{ps\_get\_config@{ps\_get\_config}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_config()}{ps\_get\_config()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a90559e2f98ee1f8439350eacc8c68f83} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Get the configuration object for this decoder.
+
+\begin{DoxyReturn}{Returns}
+The configuration object for this decoder. The decoder owns this pointer, so you should not attempt to free it manually. Use ps\+\_\+config\+\_\+retain() if you wish to reuse it elsewhere. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a70c94d4192c66e9f203eb72f92ee532c}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_fsg@{ps\_get\_fsg}}
+\index{ps\_get\_fsg@{ps\_get\_fsg}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_fsg()}{ps\_get\_fsg()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a70c94d4192c66e9f203eb72f92ee532c} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structfsg__model__t}{fsg\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+fsg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Get the finite-\/state grammar set object associated with a search.
+
+\begin{DoxyItemize}
+\item name Name of FSG search, or NULL for current search. \begin{DoxyReturn}{Returns}
+The current FSG set object for this decoder, or NULL if {\ttfamily name} does not correspond to an FSG search. 
+\end{DoxyReturn}
+\end{DoxyItemize}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a35be2a1924f93c23b033e08ab0e85c28}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_hyp@{ps\_get\_hyp}}
+\index{ps\_get\_hyp@{ps\_get\_hyp}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_hyp()}{ps\_get\_hyp()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a35be2a1924f93c23b033e08ab0e85c28} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const  \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+hyp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{\mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+best\+\_\+score}{}\end{DoxyParamCaption})}
+
+Get hypothesis string and path score.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+{\em out\+\_\+best\+\_\+score} & Output\+: path score corresponding to returned string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String containing best hypothesis at this point in decoding. NULL if no hypothesis is available. This string is owned by the decoder and only valid for the current hypothesis, so you should copy it if you need to hold onto it. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_adcbb8aeb9ebf3f73e935d3b3c8832ea0}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_in\_speech@{ps\_get\_in\_speech}}
+\index{ps\_get\_in\_speech@{ps\_get\_in\_speech}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_in\_speech()}{ps\_get\_in\_speech()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_adcbb8aeb9ebf3f73e935d3b3c8832ea0} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+get\+\_\+in\+\_\+speech (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Check in-\/speech status of decoder.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]This function is retained for compatibility but should not be considered a reliable voice activity detector. It will always return 1 between calls to \doxylink{structps__decoder__t_ade3909b1c12c1b70afe284639e70cbff}{ps\+\_\+start\+\_\+utt()} and \doxylink{structps__decoder__t_ab9339de730713b68cbd68a7f36dc8730}{ps\+\_\+end\+\_\+utt()}. You probably want \doxylink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}, but for single frames of data you can also use \doxylink{structps__vad__t}{ps\+\_\+vad\+\_\+t}.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if last buffer contained speech, 0 -\/ otherwise 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a7000861f6aa97e98f8a7c95d3e3ba157}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_kws@{ps\_get\_kws}}
+\index{ps\_get\_kws@{ps\_get\_kws}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_kws()}{ps\_get\_kws()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a7000861f6aa97e98f8a7c95d3e3ba157} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+kws (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Get the keyphrase associated with a KWS search
+
+\begin{DoxyItemize}
+\item name Name of KWS search, or NULL for current search. \begin{DoxyReturn}{Returns}
+The current keyphrase to spot, or NULL if {\ttfamily name} does not correspond to a KWS search 
+\end{DoxyReturn}
+\end{DoxyItemize}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_af8f325d9d183e8930e48a518b13f085a}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_lattice@{ps\_get\_lattice}}
+\index{ps\_get\_lattice@{ps\_get\_lattice}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_lattice()}{ps\_get\_lattice()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_af8f325d9d183e8930e48a518b13f085a} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__lattice__t}{ps\+\_\+lattice\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+lattice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Get word lattice.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Word lattice object containing all hypotheses so far. NULL if no hypotheses are available. This pointer is owned by the decoder and you should not attempt to free it manually. It is only valid until the next utterance, unless you use ps\+\_\+lattice\+\_\+retain() to retain it. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ab11d511d180c9aea9779f545d4d22809}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_lm@{ps\_get\_lm}}
+\index{ps\_get\_lm@{ps\_get\_lm}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_lm()}{ps\_get\_lm()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ab11d511d180c9aea9779f545d4d22809} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__model__t}{ngram\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+lm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Get the language model or lmset object associated with a search.
+
+\begin{DoxyItemize}
+\item name Name of language model search, or NULL for current search. \begin{DoxyReturn}{Returns}
+The language model (possibly set of language models) object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use ngram\+\_\+model\+\_\+retain() if you wish to reuse it elsewhere. 
+\end{DoxyReturn}
+\end{DoxyItemize}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a318ec5e87309b590a775ba1e91297b85}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_logmath@{ps\_get\_logmath}}
+\index{ps\_get\_logmath@{ps\_get\_logmath}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_logmath()}{ps\_get\_logmath()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a318ec5e87309b590a775ba1e91297b85} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+get\+\_\+logmath (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Get the log-\/math computation object for this decoder.
+
+\begin{DoxyReturn}{Returns}
+The log-\/math object for this decoder. The decoder owns this pointer, so you should not attempt to free it manually. Use logmath\+\_\+retain() if you wish to reuse it elsewhere. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_abb3527e41c2f4cd64dccbdbd5f812d1d}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_n\_frames@{ps\_get\_n\_frames}}
+\index{ps\_get\_n\_frames@{ps\_get\_n\_frames}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_n\_frames()}{ps\_get\_n\_frames()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_abb3527e41c2f4cd64dccbdbd5f812d1d} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+get\+\_\+n\+\_\+frames (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Get the number of frames of data searched.
+
+Note that there is a delay between this and the number of frames of audio which have been input to the system. This is due to the fact that acoustic features are computed using a sliding window of audio, and dynamic features are computed over a sliding window of acoustic features.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of frames of speech data which have been recognized so far. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ac8ac154482457740173caa1c0d699c49}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_prob@{ps\_get\_prob}}
+\index{ps\_get\_prob@{ps\_get\_prob}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_prob()}{ps\_get\_prob()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ac8ac154482457740173caa1c0d699c49} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} ps\+\_\+get\+\_\+prob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Get posterior probability.
+
+\begin{DoxyNote}{Note}
+Unless the -\/bestpath option is enabled, this function will always return zero (corresponding to a posterior probability of 1.\+0). Even if -\/bestpath is enabled, it will also return zero when called on a partial result. Ongoing research into effective confidence annotation for partial hypotheses may result in these restrictions being lifted in future versions.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Posterior probability of the best hypothesis. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_aac7070c934a2d03d0d5b34e19614360f}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_get\_utt\_time@{ps\_get\_utt\_time}}
+\index{ps\_get\_utt\_time@{ps\_get\_utt\_time}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_get\_utt\_time()}{ps\_get\_utt\_time()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_aac7070c934a2d03d0d5b34e19614360f} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+get\+\_\+utt\+\_\+time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{out\+\_\+nspeech}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{out\+\_\+ncpu}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{out\+\_\+nwall}{}\end{DoxyParamCaption})}
+
+Get performance information for the current utterance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+{\em out\+\_\+nspeech} & Output\+: Number of seconds of speech. \\
+\hline
+{\em out\+\_\+ncpu} & Output\+: Number of seconds of CPU time used. \\
+\hline
+{\em out\+\_\+nwall} & Output\+: Number of seconds of wall time used. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a824f46e51681d931b7e2706a86c3d86f}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_load\_dict@{ps\_load\_dict}}
+\index{ps\_load\_dict@{ps\_load\_dict}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_load\_dict()}{ps\_load\_dict()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a824f46e51681d931b7e2706a86c3d86f} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+load\+\_\+dict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{dictfile}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{fdictfile}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{format}{}\end{DoxyParamCaption})}
+
+Reload the pronunciation dictionary from a file.
+
+This function replaces the current pronunciation dictionary with the one stored in {\ttfamily dictfile}. This also causes the active search module(s) to be reinitialized, in the same manner as calling \doxylink{structps__decoder__t_a5f3c4fcdbef34915c4e785ac9a1c6005}{ps\+\_\+add\+\_\+word()} with update=TRUE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictfile} & Path to dictionary file to load. \\
+\hline
+{\em fdictfile} & Path to filler dictionary to load, or NULL to keep the existing filler dictionary. \\
+\hline
+{\em format} & Format of the dictionary file, or NULL to determine automatically (currently unused,should be NULL) \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ab2ca0a5e9ed39baa81ccc703bb20a7ab}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_lookup\_word@{ps\_lookup\_word}}
+\index{ps\_lookup\_word@{ps\_lookup\_word}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_lookup\_word()}{ps\_lookup\_word()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ab2ca0a5e9ed39baa81ccc703bb20a7ab} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char \texorpdfstring{$\ast$}{*} ps\+\_\+lookup\+\_\+word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{word}{}\end{DoxyParamCaption})}
+
+Look up a word in the dictionary and return phone transcription for it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Pocketsphinx decoder \\
+\hline
+{\em word} & Word to look for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whitespace-\/spearated phone string describing the pronunciation of the {\ttfamily word} or NULL if word is not present in the dictionary. The string is allocated and must be freed by the user. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ab9c09bbe581a5ad2cdb42530c6ab009e}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_nbest@{ps\_nbest}}
+\index{ps\_nbest@{ps\_nbest}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_nbest()}{ps\_nbest()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ab9c09bbe581a5ad2cdb42530c6ab009e} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+nbest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Get an iterator over the best hypotheses. The function may also return a NULL which means that there is no hypothesis available for this utterance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator over N-\/best hypotheses or NULL if no hypothesis is available 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a8b1311a8127f9c4daf24e7034673f50f}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_process\_cep@{ps\_process\_cep}}
+\index{ps\_process\_cep@{ps\_process\_cep}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_process\_cep()}{ps\_process\_cep()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a8b1311a8127f9c4daf24e7034673f50f} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+process\+\_\+cep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{\mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int}]{n\+\_\+frames}{, }\item[{int}]{no\+\_\+search}{, }\item[{int}]{full\+\_\+utt}{}\end{DoxyParamCaption})}
+
+Decode acoustic feature data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+{\em data} & Acoustic feature data, a 2-\/dimensional array of 32-\/bit floating-\/point values. Note that this is not a standard 2-\/dimesional C array but rather an array of pointers to floats, each of which is one vector (or frame) of {\ttfamily ps\+\_\+config\+\_\+get\+\_\+int("{}ceplen"{})} values. \\
+\hline
+{\em n\+\_\+frames} & Number of vectors in {\ttfamily data}. \\
+\hline
+{\em no\+\_\+search} & If non-\/zero, perform feature extraction but don\textquotesingle{}t do any recognition yet. This may be necessary if your processor has trouble doing recognition in real-\/time. \\
+\hline
+{\em full\+\_\+utt} & If non-\/zero, this block of data is a full utterance worth of data. This may allow the recognizer to produce more accurate results. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of frames of data searched, or \texorpdfstring{$<$}{<}0 for error. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a572ad08651b4caae820d178a12c8f95f}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_process\_raw@{ps\_process\_raw}}
+\index{ps\_process\_raw@{ps\_process\_raw}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_process\_raw()}{ps\_process\_raw()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a572ad08651b4caae820d178a12c8f95f} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+process\+\_\+raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{\mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} const \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{size\+\_\+t}]{n\+\_\+samples}{, }\item[{int}]{no\+\_\+search}{, }\item[{int}]{full\+\_\+utt}{}\end{DoxyParamCaption})}
+
+Decode raw audio data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+{\em data} & Audio data, as 16-\/bit linear PCM. \\
+\hline
+{\em n\+\_\+samples} & Number of samples (not bytes) in {\ttfamily data}. \\
+\hline
+{\em no\+\_\+search} & If non-\/zero, perform feature extraction but don\textquotesingle{}t do any recognition yet. This may be necessary if your processor has trouble doing recognition in real-\/time. \\
+\hline
+{\em full\+\_\+utt} & If non-\/zero, this block of data is a full utterance worth of data. This may allow the recognizer to produce more accurate results. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of frames of data searched, or \texorpdfstring{$<$}{<}0 for error. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a7a335c6650fa98985b5687fde408ef0a}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_reinit@{ps\_reinit}}
+\index{ps\_reinit@{ps\_reinit}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_reinit()}{ps\_reinit()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a7a335c6650fa98985b5687fde408ef0a} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+reinit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Reinitialize the decoder with updated configuration.
+
+This function allows you to switch the acoustic model, dictionary, or other configuration without creating an entirely new decoding object.
+
+\begin{DoxyNote}{Note}
+Since the acoustic model will be reloaded, changes made to feature extraction parameters may be overridden if a {\ttfamily feat.\+params} file is present. 
+
+Any searches created with ps\+\_\+set\+\_\+search() or words added to the dictionary with \doxylink{structps__decoder__t_a5f3c4fcdbef34915c4e785ac9a1c6005}{ps\+\_\+add\+\_\+word()} will also be lost. To avoid this you can use \doxylink{structps__decoder__t_ad950da65e86a4611c93e3ad765ad22e6}{ps\+\_\+reinit\+\_\+feat()}. 
+
+The decoder retains ownership of the pointer {\ttfamily config}, so you should free it when no longer used.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+{\em config} & An optional new configuration to use. If this is NULL, the previous configuration will be reloaded, with any changes applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, \texorpdfstring{$<$}{<}0 for failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ad950da65e86a4611c93e3ad765ad22e6}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_reinit\_feat@{ps\_reinit\_feat}}
+\index{ps\_reinit\_feat@{ps\_reinit\_feat}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_reinit\_feat()}{ps\_reinit\_feat()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ad950da65e86a4611c93e3ad765ad22e6} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+reinit\+\_\+feat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})}
+
+Reinitialize only the feature computation with updated configuration.
+
+This function allows you to switch the feature computation parameters without otherwise affecting the decoder configuration. For example, if you change the sample rate or the frame rate, and do not want to reconfigure the rest of the decoder.
+
+Note that if you have set a custom cepstral mean with \doxylink{structps__decoder__t_ae74f202f105207d5c499280ab187081f}{ps\+\_\+set\+\_\+cmn()}, it will be overridden.
+
+\begin{DoxyNote}{Note}
+The decoder retains ownership of the pointer {\ttfamily config}, so you should free it when no longer used.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+{\em config} & An optional new configuration to use. If this is NULL, the previous configuration will be reloaded, with any changes to feature computation applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, \texorpdfstring{$<$}{<}0 for failure (usually an invalid parameter) 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_aca66da675491dfbcd51f66a2cead19c9}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_remove\_search@{ps\_remove\_search}}
+\index{ps\_remove\_search@{ps\_remove\_search}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_remove\_search()}{ps\_remove\_search()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_aca66da675491dfbcd51f66a2cead19c9} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+remove\+\_\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Removes a search module and releases its resources.
+
+Removes a search module previously added with using \doxylink{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5}{ps\+\_\+add\+\_\+fsg()}, \doxylink{structps__decoder__t_af94c4cc983fee1c22cd9042c35f6b4ba}{ps\+\_\+add\+\_\+lm()}, \doxylink{structps__decoder__t_adb32316b526c8ac3cbd4d9b5a2b8122b}{ps\+\_\+add\+\_\+kws()}, etc.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5}{ps\+\_\+add\+\_\+fsg} 
+
+\doxylink{structps__decoder__t_af94c4cc983fee1c22cd9042c35f6b4ba}{ps\+\_\+add\+\_\+lm} 
+
+\doxylink{structps__decoder__t_adb32316b526c8ac3cbd4d9b5a2b8122b}{ps\+\_\+add\+\_\+kws} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ab6ba623b66f39ef5e322cb13b831b1b1}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_retain@{ps\_retain}}
+\index{ps\_retain@{ps\_retain}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_retain()}{ps\_retain()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ab6ba623b66f39ef5e322cb13b831b1b1} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+retain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Retain a pointer to the decoder.
+
+This increments the reference count on the decoder, allowing it to be shared between multiple parent objects. In general you will not need to use this function, ever. It is mainly here for the convenience of scripting language bindings.
+
+\begin{DoxyReturn}{Returns}
+pointer to retained decoder. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a5e278377cc57d921591ce95b980760d5}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_save\_dict@{ps\_save\_dict}}
+\index{ps\_save\_dict@{ps\_save\_dict}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_save\_dict()}{ps\_save\_dict()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a5e278377cc57d921591ce95b980760d5} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+save\+\_\+dict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{dictfile}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{format}{}\end{DoxyParamCaption})}
+
+Dump the current pronunciation dictionary to a file.
+
+This function dumps the current pronunciation dictionary to a text file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictfile} & Path to file where dictionary will be written. \\
+\hline
+{\em format} & Format of the dictionary file, or NULL for the default (text) format (currently unused, should be NULL) \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a3c85d53bfd56dc83226cc7f3bbcdcef6}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_search\_iter@{ps\_search\_iter}}
+\index{ps\_search\_iter@{ps\_search\_iter}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_search\_iter()}{ps\_search\_iter()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a3c85d53bfd56dc83226cc7f3bbcdcef6} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+search\+\_\+iter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Returns iterator over current searches
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\+\_\+activate\+\_\+search} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ab0353879769209971677296b937b9aae}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_seg\_iter@{ps\_seg\_iter}}
+\index{ps\_seg\_iter@{ps\_seg\_iter}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_seg\_iter()}{ps\_seg\_iter()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ab0353879769209971677296b937b9aae} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+seg\+\_\+iter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Get an iterator over the word segmentation for the best hypothesis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator over the best hypothesis at this point in decoding. NULL if no hypothesis is available. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a911c4849d7ffaf2960177c34968c1b0d}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_set\_align\_text@{ps\_set\_align\_text}}
+\index{ps\_set\_align\_text@{ps\_set\_align\_text}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_set\_align\_text()}{ps\_set\_align\_text()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a911c4849d7ffaf2960177c34968c1b0d} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+set\+\_\+align\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{words}{}\end{DoxyParamCaption})}
+
+Set up decoder to force-\/align a word sequence.
+
+Unlike the {\ttfamily ps\+\_\+add\+\_\+\texorpdfstring{$\ast$}{*}} functions, this activates the search module immediately, since force-\/alignment is nearly always a single shot. Currently "{}under the hood"{} this is an FSG search but you shouldn\textquotesingle{}t depend on that. The search module activated is {\itshape not} the default search, so you can return to that one by calling ps\+\_\+activate\+\_\+search with {\ttfamily \doxylink{prim__type_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}.
+
+Decoding proceeds as normal, though only this word sequence will be recognized, with silences and alternate pronunciations inserted. Word alignments are available with \doxylink{structps__decoder__t_ab0353879769209971677296b937b9aae}{ps\+\_\+seg\+\_\+iter()}. To obtain phoneme or state segmentations, you must subsequently call \doxylink{structps__decoder__t_a82092689e27601f7bc9227cd904b0266}{ps\+\_\+set\+\_\+alignment()} and re-\/run decoding. It\textquotesingle{}s tough son, but it\textquotesingle{}s life.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder \\
+\hline
+{\em words} & String containing whitespace-\/separated words for alignment. These words are assumed to exist in the current dictionary. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a82092689e27601f7bc9227cd904b0266}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_set\_alignment@{ps\_set\_alignment}}
+\index{ps\_set\_alignment@{ps\_set\_alignment}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_set\_alignment()}{ps\_set\_alignment()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a82092689e27601f7bc9227cd904b0266} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+set\+\_\+alignment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{al}{}\end{DoxyParamCaption})}
+
+Set up decoder to run phone and state-\/level alignment.
+
+Unlike the {\ttfamily ps\+\_\+add\+\_\+\texorpdfstring{$\ast$}{*}} functions, this activates the search module immediately, since force-\/alignment is nearly always a single shot.
+
+To align, run or re-\/run decoding as usual, then call \doxylink{structps__decoder__t_a34112271b4b2a3cb6616e072a36f693d}{ps\+\_\+get\+\_\+alignment()} to get the resulting alignment. Note that if you call this function {\itshape before} rerunning decoding, you can obtain the phone and state sequence, but the durations will be invalid (phones and states will inherit the parent word\textquotesingle{}s duration).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder object. \\
+\hline
+{\em al} & Usually NULL, which means to construct an alignment from the current search hypothesis (this does not work with allphone or keyword spotting). You can also pass a \doxylink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t} here if you have one. The search will retain but not copy it, so after running decoding it will be updated with new durations. You can set starts and durations for words or phones (not states) to constrain the alignment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, -\/1 for error (if there is no search hypothesis, or it cannot be aligned due to missing word IDs) 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ae74f202f105207d5c499280ab187081f}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_set\_cmn@{ps\_set\_cmn}}
+\index{ps\_set\_cmn@{ps\_set\_cmn}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_set\_cmn()}{ps\_set\_cmn()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ae74f202f105207d5c499280ab187081f} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+set\+\_\+cmn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{cmn}{}\end{DoxyParamCaption})}
+
+Set the current cepstral mean from a string.
+
+This does the same thing as setting {\ttfamily cmninit} with ps\+\_\+config\+\_\+set\+\_\+string() and running {\ttfamily \doxylink{structps__decoder__t_ad950da65e86a4611c93e3ad765ad22e6}{ps\+\_\+reinit\+\_\+feat()}} but is more efficient, and can also be done in the middle of an utterance if you like.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder \\
+\hline
+{\em cmn} & String representation of cepstral mean, as up to {\ttfamily ps\+\_\+config\+\_\+get\+\_\+int(config, "{}ceplen"{})} -\/separated numbers (any missing values will be zero-\/filled). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success of -\/1 for invalid input. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_a89be3b2a8f83291a225db0bcd9ee65b2}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_start\_stream@{ps\_start\_stream}}
+\index{ps\_start\_stream@{ps\_start\_stream}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_start\_stream()}{ps\_start\_stream()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_a89be3b2a8f83291a225db0bcd9ee65b2} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+start\+\_\+stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Start processing of the stream of speech.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]This function is retained for compatibility, but its only effect is to reset the noise removal statistics, which are otherwise retained across utterances. You do not need to call it.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+0 for success, \texorpdfstring{$<$}{<}0 on error. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_ade3909b1c12c1b70afe284639e70cbff}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_start\_utt@{ps\_start\_utt}}
+\index{ps\_start\_utt@{ps\_start\_utt}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_start\_utt()}{ps\_start\_utt()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_ade3909b1c12c1b70afe284639e70cbff} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+start\+\_\+utt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{}\end{DoxyParamCaption})}
+
+Start utterance processing.
+
+This function should be called before any utterance data is passed to the decoder. It marks the start of a new utterance and reinitializes internal data structures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & Decoder to be started. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, \texorpdfstring{$<$}{<}0 on error. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__decoder__t_abcf13734aad31adce2cb8c7b8612ca98}\index{ps\_decoder\_t@{ps\_decoder\_t}!ps\_update\_mllr@{ps\_update\_mllr}}
+\index{ps\_update\_mllr@{ps\_update\_mllr}!ps\_decoder\_t@{ps\_decoder\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_update\_mllr()}{ps\_update\_mllr()}}
+{\footnotesize\ttfamily \label{structps__decoder__t_abcf13734aad31adce2cb8c7b8612ca98} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__mllr__t}{ps\+\_\+mllr\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+update\+\_\+mllr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ps}{, }\item[{\mbox{\hyperlink{structps__mllr__t}{ps\+\_\+mllr\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{mllr}{}\end{DoxyParamCaption})}
+
+Adapt current acoustic model using a linear transform.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mllr} & The new transform to use, or NULL to update the existing transform. The decoder retains ownership of this pointer, so you may free it if you no longer need it. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated transform object for this decoder, or NULL on failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/\mbox{\hyperlink{pocketsphinx_8h}{pocketsphinx.\+h}}\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{search_8h}{search.\+h}}\end{DoxyCompactItemize}

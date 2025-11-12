@@ -1,0 +1,138 @@
+\doxysection{ps\+\_\+seg\+\_\+t Struct Reference}
+\hypertarget{structps__seg__t}{}\label{structps__seg__t}\index{ps\_seg\_t@{ps\_seg\_t}}
+
+
+Segmentation iterator object.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__seg__t_a0686bf425a8cf145bca3b149b6368223}{ps\+\_\+seg\+\_\+next}} (\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}seg)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__seg__t_a27db3d5a3f9363a3e1ac8bae33030c87}{ps\+\_\+seg\+\_\+word}} (\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}seg)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__seg__t_a045a044726b816678965514f2ee7d8c7}{ps\+\_\+seg\+\_\+frames}} (\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}seg, int \texorpdfstring{$\ast$}{*}out\+\_\+sf, int \texorpdfstring{$\ast$}{*}out\+\_\+ef)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \mbox{\hyperlink{structps__seg__t_adfd45d93c3fc9de6b7be89d5417f6abb}{ps\+\_\+seg\+\_\+prob}} (\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}seg, \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}out\+\_\+ascr, \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}out\+\_\+lscr, \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}out\+\_\+lback)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__seg__t_ac02cea69794b0fbd17e6a4c5265b2255}{ps\+\_\+seg\+\_\+free}} (\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}seg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Segmentation iterator object. 
+
+\label{doc-func-members}
+\Hypertarget{structps__seg__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__seg__t_a045a044726b816678965514f2ee7d8c7}\index{ps\_seg\_t@{ps\_seg\_t}!ps\_seg\_frames@{ps\_seg\_frames}}
+\index{ps\_seg\_frames@{ps\_seg\_frames}!ps\_seg\_t@{ps\_seg\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_seg\_frames()}{ps\_seg\_frames()}}
+{\footnotesize\ttfamily \label{structps__seg__t_a045a044726b816678965514f2ee7d8c7} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+seg\+\_\+frames (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{seg}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{out\+\_\+sf}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{out\+\_\+ef}{}\end{DoxyParamCaption})}
+
+Get inclusive start and end frames from a segmentation iterator.
+
+\begin{DoxyNote}{Note}
+These frame numbers are inclusive, i.\+e. the end frame refers to the last frame in which the given word or other segment was active. Therefore, the actual duration is \texorpdfstring{$\ast$}{*}out\+\_\+ef -\/ \texorpdfstring{$\ast$}{*}out\+\_\+sf + 1.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em seg} & Segment iterator. \\
+\hline
+{\em out\+\_\+sf} & Output\+: First frame index in segment. \\
+\hline
+{\em out\+\_\+ef} & Output\+: Last frame index in segment. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__seg__t_ac02cea69794b0fbd17e6a4c5265b2255}\index{ps\_seg\_t@{ps\_seg\_t}!ps\_seg\_free@{ps\_seg\_free}}
+\index{ps\_seg\_free@{ps\_seg\_free}!ps\_seg\_t@{ps\_seg\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_seg\_free()}{ps\_seg\_free()}}
+{\footnotesize\ttfamily \label{structps__seg__t_ac02cea69794b0fbd17e6a4c5265b2255} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+seg\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{seg}{}\end{DoxyParamCaption})}
+
+Finish iterating over a word segmentation early, freeing resources. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__seg__t_a0686bf425a8cf145bca3b149b6368223}\index{ps\_seg\_t@{ps\_seg\_t}!ps\_seg\_next@{ps\_seg\_next}}
+\index{ps\_seg\_next@{ps\_seg\_next}!ps\_seg\_t@{ps\_seg\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_seg\_next()}{ps\_seg\_next()}}
+{\footnotesize\ttfamily \label{structps__seg__t_a0686bf425a8cf145bca3b149b6368223} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+seg\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{seg}{}\end{DoxyParamCaption})}
+
+Get the next segment in a word segmentation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em seg} & Segment iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated iterator with the next segment. NULL at end of utterance (the iterator will be freed in this case). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__seg__t_adfd45d93c3fc9de6b7be89d5417f6abb}\index{ps\_seg\_t@{ps\_seg\_t}!ps\_seg\_prob@{ps\_seg\_prob}}
+\index{ps\_seg\_prob@{ps\_seg\_prob}!ps\_seg\_t@{ps\_seg\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_seg\_prob()}{ps\_seg\_prob()}}
+{\footnotesize\ttfamily \label{structps__seg__t_adfd45d93c3fc9de6b7be89d5417f6abb} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} ps\+\_\+seg\+\_\+prob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{seg}{, }\item[{\mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+ascr}{, }\item[{\mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+lscr}{, }\item[{\mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+lback}{}\end{DoxyParamCaption})}
+
+Get language, acoustic, and posterior probabilities from a segmentation iterator.
+
+\begin{DoxyNote}{Note}
+Unless the -\/bestpath option is enabled, this function will always return zero (corresponding to a posterior probability of 1.\+0). Even if -\/bestpath is enabled, it will also return zero when called on a partial result. Ongoing research into effective confidence annotation for partial hypotheses may result in these restrictions being lifted in future versions.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em out\+\_\+ascr} & Output\+: acoustic model score for this segment. \\
+\hline
+{\em out\+\_\+lscr} & Output\+: language model score for this segment. \\
+\hline
+{\em out\+\_\+lback} & Output\+: language model backoff mode for this segment (i.\+e. the number of words used in calculating lscr). This field is, of course, only meaningful for N-\/\+Gram models. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Log posterior probability of current segment. Log is expressed in the log-\/base used in the decoder. To convert to linear floating-\/point, use logmath\+\_\+exp(ps\+\_\+get\+\_\+logmath(),         pprob). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__seg__t_a27db3d5a3f9363a3e1ac8bae33030c87}\index{ps\_seg\_t@{ps\_seg\_t}!ps\_seg\_word@{ps\_seg\_word}}
+\index{ps\_seg\_word@{ps\_seg\_word}!ps\_seg\_t@{ps\_seg\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_seg\_word()}{ps\_seg\_word()}}
+{\footnotesize\ttfamily \label{structps__seg__t_a27db3d5a3f9363a3e1ac8bae33030c87} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const  \texorpdfstring{$\ast$}{*} ps\+\_\+seg\+\_\+word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{seg}{}\end{DoxyParamCaption})}
+
+Get word string from a segmentation iterator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em seg} & Segment iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Read-\/only string giving string name of this segment. This is only valid until the next call to \doxylink{structps__seg__t_a0686bf425a8cf145bca3b149b6368223}{ps\+\_\+seg\+\_\+next()}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/\mbox{\hyperlink{pocketsphinx_8h}{pocketsphinx.\+h}}\end{DoxyCompactItemize}

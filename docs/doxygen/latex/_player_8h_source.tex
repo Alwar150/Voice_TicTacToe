@@ -1,0 +1,30 @@
+\doxysection{Player.\+h}
+\hypertarget{_player_8h_source}{}\label{_player_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/AI/Player.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/AI/Player.h}}
+\mbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLAYER\_H\ \ \ \ }}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_board_8h}{Board.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_t_t_common_types_8h}{TTTCommonTypes.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player_a8c885f35774ed96d466e67194b74de95}{Player}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00011\ \{\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_player_a8c885f35774ed96d466e67194b74de95}{Player}}(QObject\ *parent\_\ =\ \textcolor{keyword}{nullptr},\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ playerMark,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_board}{Board}}\&\ borad\_ref)\ :\ }
+\DoxyCodeLine{00014\ \ \ \ \ parent(parent\_),}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_player_ae8c600761eeb36ef938927dd87a87011}{mark\_}}(playerMark)\ \{\}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_player_a8981c201ffb2270c0b6dbd467b627376}{\string~Player}}()\ \{\}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_af85db5d05b014bf19d873038c56dc7ed}{play}}()\ =\ 0;}
+\DoxyCodeLine{00018\ \ \ \ \ signals:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_af9436bec15f91ee87fb86907b720be52}{playerFinished}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ cell);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_board}{Board}}*\ \mbox{\hyperlink{class_player_a088227ab53747cc4955b0a3859b69a84}{board\_}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ \mbox{\hyperlink{class_player_ae8c600761eeb36ef938927dd87a87011}{mark\_}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLAYER\_H}}
+
+\end{DoxyCode}

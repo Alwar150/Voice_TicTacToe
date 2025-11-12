@@ -1,0 +1,841 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="model_8h" kind="file" language="C++">
+    <compoundname>model.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes refid="prim__type_8h" local="no">pocketsphinx/prim_type.h</includes>
+    <includes refid="logmath_8h" local="no">pocketsphinx/logmath.h</includes>
+    <includes refid="export_8h" local="no">pocketsphinx/export.h</includes>
+    <includedby refid="pocketsphinx_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</includedby>
+    <includedby refid="lattice_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h</includedby>
+    <includedby refid="search_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="5">
+        <label>pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pocketsphinx/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pocketsphinx/sphinx_config.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="17">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.cpp</label>
+        <link refid="_human_player_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h</label>
+        <link refid="_human_player_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.cpp</label>
+        <link refid="_mini_max_agent_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.h</label>
+        <link refid="_mini_max_agent_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h</label>
+        <link refid="_no_agent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp</label>
+        <link refid="_board_8cpp"/>
+      </node>
+      <node id="18">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp</label>
+        <link refid="_speech_manager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h</label>
+        <link refid="_speech_manager_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/main.cpp</label>
+        <link refid="_tic_tac_toe_test_2main_8cpp"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_board.h</label>
+        <link refid="tst__board_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_minimaxagent.h</label>
+        <link refid="tst__minimaxagent_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp</label>
+        <link refid="_tic_tac_toe_game_8cpp"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h</label>
+        <link refid="_title_screen_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h</label>
+        <link refid="lattice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h</label>
+        <link refid="search_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="model_8h_1a3d4b3dddd0ff67e13d30c9bf053d01ab" prot="public" static="no">
+        <name>NGRAM_INVALID_WID</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Impossible word ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="359" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ngram_file_type_e</name>
+        <enumvalue id="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a2cf596c8b0c63a3a0ba1fe33326cc796" prot="public">
+          <name>NGRAM_INVALID</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Not a valid file type. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a441701bf8ae0a2b79716feb31b5f257a" prot="public">
+          <name>NGRAM_AUTO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Determine file type automatically. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a77ef2341d826b3cc8b836e3af1efba99" prot="public">
+          <name>NGRAM_ARPA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ARPABO text format (the standard). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a748d515b444b38b037f3cc90a6bfded4" prot="public">
+          <name>NGRAM_BIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sphinx .DMP format. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>File types for N-Gram files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="model_8h" kindref="compound">pocketsphinx/model.h</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="352" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="352" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="enum" id="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ngram_case_e</name>
+        <enumvalue id="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771a05b5ea035cb1035af6012f612206dba6" prot="public">
+          <name>NGRAM_UPPER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Upper case </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771acd2c3b5a6b95f580cb230c4cdda22be0" prot="public">
+          <name>NGRAM_LOWER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Lower case </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Constants for case folding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="model_8h" kindref="compound">pocketsphinx/model.h</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="447" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="447" bodyend="450"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="model_8h_1aee85cf9f007eac61cebba97d6aaccaea" prot="public" static="no">
+        <type>struct jsgf_s</type>
+        <definition>typedef struct jsgf_s jsgf_t</definition>
+        <argsstring></argsstring>
+        <name>jsgf_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="63" column="21" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1a3bb0c86e5f9ba2c29b1fa91e1583bf00" prot="public" static="no">
+        <type>struct jsgf_rule_s</type>
+        <definition>typedef struct jsgf_rule_s jsgf_rule_t</definition>
+        <argsstring></argsstring>
+        <name>jsgf_rule_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="69" column="26" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1a1e036a34f60f268365b54a5e800e733d" prot="public" static="no">
+        <type>struct fsg_model_s</type>
+        <definition>typedef struct fsg_model_s fsg_model_t</definition>
+        <argsstring></argsstring>
+        <name>fsg_model_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="80" column="26" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1afaaf0c00e20056d97efcd97e4cae4ea7" prot="public" static="no">
+        <type>struct ngram_model_s</type>
+        <definition>typedef struct ngram_model_s ngram_model_t</definition>
+        <argsstring></argsstring>
+        <name>ngram_model_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="86" column="28" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1abb6e79bdc8b51b8efbecfdb032cc7d86" prot="public" static="no">
+        <type>struct hash_iter_s</type>
+        <definition>typedef struct hash_iter_s jsgf_rule_iter_t</definition>
+        <argsstring></argsstring>
+        <name>jsgf_rule_iter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="156" column="26" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1ae36b2f037b2ea751dff23f082379c264" prot="public" static="no">
+        <type>struct ngram_class_s</type>
+        <definition>typedef struct ngram_class_s ngram_class_t</definition>
+        <argsstring></argsstring>
+        <name>ngram_class_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="346" column="28" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1ac3bc97ce5f4139db88d4360b19497f97" prot="public" static="no">
+        <type>enum <ref refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74" kindref="member">ngram_file_type_e</ref></type>
+        <definition>typedef enum ngram_file_type_e ngram_file_type_t</definition>
+        <argsstring></argsstring>
+        <name>ngram_file_type_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="357" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1afbe3bcb7dd0de6bc550cc7d4e75de403" prot="public" static="no">
+        <type>enum <ref refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771" kindref="member">ngram_case_e</ref></type>
+        <definition>typedef enum ngram_case_e ngram_case_t</definition>
+        <argsstring></argsstring>
+        <name>ngram_case_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="450" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1ac7de090a02fa12a8bba84abb4d5236aa" prot="public" static="no">
+        <type>struct ngram_iter_s</type>
+        <definition>typedef struct ngram_iter_s ngram_iter_t</definition>
+        <argsstring></argsstring>
+        <name>ngram_iter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="676" column="27" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="model_8h_1afffd75c5bde8dd84107449468be48547" prot="public" static="no">
+        <type>struct ngram_model_set_iter_s</type>
+        <definition>typedef struct ngram_model_set_iter_s ngram_model_set_iter_t</definition>
+        <argsstring></argsstring>
+        <name>ngram_model_set_iter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="890" column="37" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" bodystart="890" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Public API for language models. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Because doxygen is Bad Software, the actual documentation can only exist in <ref refid="structjsgf__t" kindref="compound">jsgf_t</ref>, <ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref>, and <ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref>. Sorry about that. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c-basic-offset:4;<sp/>indent-tabs-mode:<sp/>nil<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>1999-2022<sp/>Carnegie<sp/>Mellon<sp/>University.<sp/><sp/>All<sp/>rights</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>distribution.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/>ANY<sp/>EXPRESSED<sp/>OR<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHOR<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__PS_MODEL_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__PS_MODEL_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="prim__type_8h" kindref="compound">pocketsphinx/prim_type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="logmath_8h" kindref="compound">pocketsphinx/logmath.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="export_8h" kindref="compound">pocketsphinx/export.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Forward<sp/>declaration<sp/>to<sp/>avoid<sp/>include<sp/>loops<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">cmd_ln_s<sp/><ref refid="structps__config__t" kindref="compound">ps_config_t</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="model_8h_1aee85cf9f007eac61cebba97d6aaccaea" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">jsgf_s<sp/><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="model_8h_1a3bb0c86e5f9ba2c29b1fa91e1583bf00" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">jsgf_rule_s<sp/><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="model_8h_1a1e036a34f60f268365b54a5e800e733d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">fsg_model_s<sp/><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="model_8h_1afaaf0c00e20056d97efcd97e4cae4ea7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ngram_model_s<sp/><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="97" refid="structjsgf__t_1a5988aae174c3ea4a8458c68dd737272e" refkind="member"><highlight class="normal"><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*<ref refid="structjsgf__t_1a5988aae174c3ea4a8458c68dd737272e" kindref="member">jsgf_parse_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*parent);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="108" refid="structjsgf__t_1a2c261446ef7e5eb84b4c0cd7ea403a4c" refkind="member"><highlight class="normal"><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*<ref refid="structjsgf__t_1a2c261446ef7e5eb84b4c0cd7ea403a4c" kindref="member">jsgf_parse_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*parent);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="115" refid="structjsgf__t_1a81f8acb8b49c1ef7cb695321f5c9b7f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structjsgf__t_1a81f8acb8b49c1ef7cb695321f5c9b7f5" kindref="member">jsgf_grammar_name</ref>(<ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*jsgf);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="122" refid="structjsgf__t_1ad33f663dddfec516122f2ee0d5c58b89" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structjsgf__t_1ad33f663dddfec516122f2ee0d5c58b89" kindref="member">jsgf_grammar_free</ref>(<ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*jsgf);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="129" refid="structjsgf__t_1ab0bf791d1ae06bf952d30401377767c8" refkind="member"><highlight class="normal"><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref><sp/>*<ref refid="structjsgf__t_1ab0bf791d1ae06bf952d30401377767c8" kindref="member">jsgf_get_rule</ref>(<ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*grammar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="136" refid="structjsgf__t_1ac4c63ff31f11effef78a867cc61c9937" refkind="member"><highlight class="normal"><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref><sp/>*<ref refid="structjsgf__t_1ac4c63ff31f11effef78a867cc61c9937" kindref="member">jsgf_get_public_rule</ref>(<ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*grammar);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="143" refid="structjsgf__rule__t_1ae28ad8446aa8d384fe82cbbb1910cfe1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structjsgf__rule__t_1ae28ad8446aa8d384fe82cbbb1910cfe1" kindref="member">jsgf_rule_name</ref>(<ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref><sp/>*rule);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="150" refid="structjsgf__rule__t_1ab2abfa878f7efbbc04d562ddb9ce6200" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structjsgf__rule__t_1ab2abfa878f7efbbc04d562ddb9ce6200" kindref="member">jsgf_rule_public</ref>(<ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref><sp/>*rule);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="model_8h_1abb6e79bdc8b51b8efbecfdb032cc7d86" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">hash_iter_s<sp/><ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="163" refid="structjsgf__t_1ab78d604e387eb282d66e1017bf2ef718" refkind="member"><highlight class="normal"><ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref><sp/>*<ref refid="structjsgf__t_1ab78d604e387eb282d66e1017bf2ef718" kindref="member">jsgf_rule_iter</ref>(<ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*grammar);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="170" refid="structjsgf__rule__iter__t_1a1cd6f2f32b5d8760e4e40147b134da6c" refkind="member"><highlight class="normal"><ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref><sp/>*<ref refid="structjsgf__rule__iter__t_1a1cd6f2f32b5d8760e4e40147b134da6c" kindref="member">jsgf_rule_iter_next</ref>(<ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="177" refid="structjsgf__rule__iter__t_1abe051dab5b1c6357aae9115d1d704fe5" refkind="member"><highlight class="normal"><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref><sp/>*<ref refid="structjsgf__rule__iter__t_1abe051dab5b1c6357aae9115d1d704fe5" kindref="member">jsgf_rule_iter_rule</ref>(<ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="184" refid="structjsgf__rule__iter__t_1ac1b4559a440db063eb21e9d4ade59621" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structjsgf__rule__iter__t_1ac1b4559a440db063eb21e9d4ade59621" kindref="member">jsgf_rule_iter_free</ref>(<ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="191" refid="structjsgf__t_1a3351602453d463a51eb6e9fa832dc956" refkind="member"><highlight class="normal"><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*<ref refid="structjsgf__t_1a3351602453d463a51eb6e9fa832dc956" kindref="member">jsgf_build_fsg</ref>(<ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*grammar,<sp/><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref><sp/>*rule,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>lw);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="201" refid="structfsg__model__t_1ad86d12c175458f89eadafcbb1cffcfa0" refkind="member"><highlight class="normal"><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*<ref refid="structfsg__model__t_1ad86d12c175458f89eadafcbb1cffcfa0" kindref="member">jsgf_read_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*<sp/>lmath,<sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>lw);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="210" refid="structfsg__model__t_1a605c88e824bb9fe9ad20a0aa76f93deb" refkind="member"><highlight class="normal"><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*<ref refid="structfsg__model__t_1a605c88e824bb9fe9ad20a0aa76f93deb" kindref="member">jsgf_read_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*<sp/>lmath,<sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>lw);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="220" refid="structjsgf__t_1ab31ecf0ecdde813d744f7830f29e58db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structjsgf__t_1ab31ecf0ecdde813d744f7830f29e58db" kindref="member">jsgf_write_fsg</ref>(<ref refid="structjsgf__t" kindref="compound">jsgf_t</ref><sp/>*grammar,<sp/><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref><sp/>*rule,<sp/>FILE<sp/>*outfh);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="229" refid="structfsg__model__t_1ae660cd51180526f7f3050fa7413592b6" refkind="member"><highlight class="normal"><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*<ref refid="structfsg__model__t_1ae660cd51180526f7f3050fa7413592b6" kindref="member">fsg_model_retain</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="238" refid="structfsg__model__t_1a1ef2610a66f069de1a150083bd34a540" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfsg__model__t_1a1ef2610a66f069de1a150083bd34a540" kindref="member">fsg_model_free</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="281" refid="structfsg__model__t_1a392a842691581158195e2a3cd5d03a6e" refkind="member"><highlight class="normal"><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*<ref refid="structfsg__model__t_1a392a842691581158195e2a3cd5d03a6e" kindref="member">fsg_model_readfile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>lw);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="288" refid="structfsg__model__t_1a6f69628ed178ff0bf6f10fd0e24b0158" refkind="member"><highlight class="normal"><ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*<ref refid="structfsg__model__t_1a6f69628ed178ff0bf6f10fd0e24b0158" kindref="member">fsg_model_read</ref>(FILE<sp/>*fp,<sp/><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath,<sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>lw);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="298" refid="structfsg__model__t_1a6ddaf82f2f00dbf11c8faf28f2d4d71a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfsg__model__t_1a6ddaf82f2f00dbf11c8faf28f2d4d71a" kindref="member">fsg_model_accept</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*words);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="305" refid="structfsg__model__t_1a22a8bc6a9385527a8c0cb1bc39afe7b2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfsg__model__t_1a22a8bc6a9385527a8c0cb1bc39afe7b2" kindref="member">fsg_model_write</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg,<sp/>FILE<sp/>*fp);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="312" refid="structfsg__model__t_1aae7c2ed126099be78ab9e6d451a5d324" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfsg__model__t_1aae7c2ed126099be78ab9e6d451a5d324" kindref="member">fsg_model_writefile</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*file);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="319" refid="structfsg__model__t_1a64ed5023c8a741daf7a339003b087007" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfsg__model__t_1a64ed5023c8a741daf7a339003b087007" kindref="member">fsg_model_write_fsm</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg,<sp/>FILE<sp/>*fp);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="326" refid="structfsg__model__t_1a6c6d82f65a090b66176ba26386d6e6f8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfsg__model__t_1a6c6d82f65a090b66176ba26386d6e6f8" kindref="member">fsg_model_writefile_fsm</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*file);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="333" refid="structfsg__model__t_1ab980ba7d0ca500ec42f77e3ad956a546" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfsg__model__t_1ab980ba7d0ca500ec42f77e3ad956a546" kindref="member">fsg_model_write_symtab</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg,<sp/>FILE<sp/>*file);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="340" refid="structfsg__model__t_1a2f075e2fd97cdc5e77ffdbe5e68f5359" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structfsg__model__t_1a2f075e2fd97cdc5e77ffdbe5e68f5359" kindref="member">fsg_model_writefile_symtab</ref>(<ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref><sp/>*fsg,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*file);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="model_8h_1ae36b2f037b2ea751dff23f082379c264" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ngram_class_s<sp/><ref refid="structngram__class__t" kindref="compound">ngram_class_t</ref>;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352" refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74" kindref="member">ngram_file_type_e</ref><sp/>{</highlight></codeline>
+<codeline lineno="353" refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a2cf596c8b0c63a3a0ba1fe33326cc796" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a2cf596c8b0c63a3a0ba1fe33326cc796" kindref="member">NGRAM_INVALID</ref><sp/>=<sp/>-1,<sp/></highlight></codeline>
+<codeline lineno="354" refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a441701bf8ae0a2b79716feb31b5f257a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a441701bf8ae0a2b79716feb31b5f257a" kindref="member">NGRAM_AUTO</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="355" refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a77ef2341d826b3cc8b836e3af1efba99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a77ef2341d826b3cc8b836e3af1efba99" kindref="member">NGRAM_ARPA</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="356" refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a748d515b444b38b037f3cc90a6bfded4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a748d515b444b38b037f3cc90a6bfded4" kindref="member">NGRAM_BIN</ref><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="357" refid="model_8h_1ac3bc97ce5f4139db88d4360b19497f97" refkind="member"><highlight class="normal">}<sp/><ref refid="model_8h_1ac3bc97ce5f4139db88d4360b19497f97" kindref="member">ngram_file_type_t</ref>;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="model_8h_1a3d4b3dddd0ff67e13d30c9bf053d01ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NGRAM_INVALID_WID<sp/>-1<sp/></highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="382" refid="structngram__model__t_1aeafdc8c1ed78badad4eec401f2be0d52" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1aeafdc8c1ed78badad4eec401f2be0d52" kindref="member">ngram_model_read</ref>(<ref refid="structps__config__t" kindref="compound">ps_config_t</ref><sp/>*config,</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name,</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="model_8h_1ac3bc97ce5f4139db88d4360b19497f97" kindref="member">ngram_file_type_t</ref><sp/>file_type,</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="394" refid="structngram__model__t_1ac13ceae0ee6a4e6c681fce688dc8c0d9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structngram__model__t_1ac13ceae0ee6a4e6c681fce688dc8c0d9" kindref="member">ngram_model_write</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name,</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="model_8h_1ac3bc97ce5f4139db88d4360b19497f97" kindref="member">ngram_file_type_t</ref><sp/>format);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="404" refid="structngram__model__t_1aa393c18a1d74101aa0838777d6206aa4" refkind="member"><highlight class="normal"><ref refid="model_8h_1ac3bc97ce5f4139db88d4360b19497f97" kindref="member">ngram_file_type_t</ref><sp/><ref refid="structngram__model__t_1aa393c18a1d74101aa0838777d6206aa4" kindref="member">ngram_file_name_to_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="413" refid="structngram__model__t_1a25e936a2d8018b62a310b1f2dceca893" refkind="member"><highlight class="normal"><ref refid="model_8h_1ac3bc97ce5f4139db88d4360b19497f97" kindref="member">ngram_file_type_t</ref><sp/><ref refid="structngram__model__t_1a25e936a2d8018b62a310b1f2dceca893" kindref="member">ngram_str_to_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str_name);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="423" refid="structngram__model__t_1a707725f9978ab51b42b256a22a0bc893" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structngram__model__t_1a707725f9978ab51b42b256a22a0bc893" kindref="member">ngram_type_to_str</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="432" refid="structngram__model__t_1a8a0b271f1941efd8e8bd3890361e2278" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1a8a0b271f1941efd8e8bd3890361e2278" kindref="member">ngram_model_retain</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model);</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="441" refid="structngram__model__t_1a8c2b839ff306dd4f49cb6129d7bd6be2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structngram__model__t_1a8c2b839ff306dd4f49cb6129d7bd6be2" kindref="member">ngram_model_free</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447" refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771" kindref="member">ngram_case_e</ref><sp/>{</highlight></codeline>
+<codeline lineno="448" refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771a05b5ea035cb1035af6012f612206dba6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771a05b5ea035cb1035af6012f612206dba6" kindref="member">NGRAM_UPPER</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="449" refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771acd2c3b5a6b95f580cb230c4cdda22be0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771acd2c3b5a6b95f580cb230c4cdda22be0" kindref="member">NGRAM_LOWER</ref><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="450" refid="model_8h_1afbe3bcb7dd0de6bc550cc7d4e75de403" refkind="member"><highlight class="normal">}<sp/><ref refid="model_8h_1afbe3bcb7dd0de6bc550cc7d4e75de403" kindref="member">ngram_case_t</ref>;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="461" refid="structngram__model__t_1a52158fdb753671b7fd02308cb1472927" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structngram__model__t_1a52158fdb753671b7fd02308cb1472927" kindref="member">ngram_model_casefold</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kase);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="477" refid="structngram__model__t_1abde63dcb3313606881368c3b6f9aa239" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structngram__model__t_1abde63dcb3313606881368c3b6f9aa239" kindref="member">ngram_model_apply_weights</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>lw,<sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>wip);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="489" refid="structngram__model__t_1a0257b1cf0fb42820b0d3589ecf7e3fa7" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/><ref refid="structngram__model__t_1a0257b1cf0fb42820b0d3589ecf7e3fa7" kindref="member">ngram_model_get_weights</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*out_log_wip);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="526" refid="structngram__model__t_1a570f30bedb4c10ebbc1313e4bdbd33b8" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a570f30bedb4c10ebbc1313e4bdbd33b8" kindref="member">ngram_score</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*word,<sp/>...);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="534" refid="structngram__model__t_1a698d9fbc74d3e0aa555e9195d1c3405b" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a698d9fbc74d3e0aa555e9195d1c3405b" kindref="member">ngram_tg_score</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>w3,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>w2,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>w1,</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*n_used);</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="544" refid="structngram__model__t_1aa12e8b5771775ed7b9aabc9eec915293" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1aa12e8b5771775ed7b9aabc9eec915293" kindref="member">ngram_bg_score</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>w2,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>w1,</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*n_used);</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="554" refid="structngram__model__t_1a05a3334a525628d40b3b5230602cb836" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a05a3334a525628d40b3b5230602cb836" kindref="member">ngram_ng_score</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>wid,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*history,</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>n_hist,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*n_used);</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="569" refid="structngram__model__t_1a23c66f2666439f6408c616d0923b6510" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a23c66f2666439f6408c616d0923b6510" kindref="member">ngram_probv</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*word,<sp/>...);</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="583" refid="structngram__model__t_1a8df8728f2694b9beb840db4ff1bdea9a" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a8df8728f2694b9beb840db4ff1bdea9a" kindref="member">ngram_prob</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*words,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>n);</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="594" refid="structngram__model__t_1aee36470f55476b5780f8e460d2e12971" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1aee36470f55476b5780f8e460d2e12971" kindref="member">ngram_ng_prob</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>wid,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*history,</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>n_hist,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*n_used);</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="610" refid="structngram__model__t_1afee8cd8b84530cb2f9261d6a0a7e4df7" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1afee8cd8b84530cb2f9261d6a0a7e4df7" kindref="member">ngram_score_to_prob</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>score);</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="618" refid="structngram__model__t_1a64b4a9be184174ff12093595e4c2138f" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a64b4a9be184174ff12093595e4c2138f" kindref="member">ngram_wid</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*word);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="626" refid="structngram__model__t_1af22005a8c3c282a5c3dae7074f0d754a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structngram__model__t_1af22005a8c3c282a5c3dae7074f0d754a" kindref="member">ngram_word</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>wid);</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="643" refid="structngram__model__t_1a70334434c7a99094c29faa1ce7bd26e5" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a70334434c7a99094c29faa1ce7bd26e5" kindref="member">ngram_unknown_wid</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model);</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="651" refid="structngram__model__t_1abdbf72c83f8bd56468c13e2b45d578d8" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1abdbf72c83f8bd56468c13e2b45d578d8" kindref="member">ngram_zero</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model);</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="659" refid="structngram__model__t_1a670cd1630fd4920c0c6db89c1eb7ee51" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a670cd1630fd4920c0c6db89c1eb7ee51" kindref="member">ngram_model_get_size</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model);</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="667" refid="structngram__model__t_1a5c0c579caa4f3a1652bb2a0d62b5e9b6" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structngram__model__t_1a5c0c579caa4f3a1652bb2a0d62b5e9b6" kindref="member">ngram_model_get_counts</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model);</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight></codeline>
+<codeline lineno="676" refid="model_8h_1ac7de090a02fa12a8bba84abb4d5236aa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ngram_iter_s<sp/><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref>;</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="688" refid="structngram__model__t_1a3514a603036a7b9adc210e6b7980f02c" refkind="member"><highlight class="normal"><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*<ref refid="structngram__model__t_1a3514a603036a7b9adc210e6b7980f02c" kindref="member">ngram_model_mgrams</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="696" refid="structngram__model__t_1ab276f12c7f17b5f0505ed2317fe0de2a" refkind="member"><highlight class="normal"><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*<ref refid="structngram__model__t_1ab276f12c7f17b5f0505ed2317fe0de2a" kindref="member">ngram_iter</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*word,<sp/>...);</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="704" refid="structngram__model__t_1aacc908372b71dd2ab7a3eef0d3bda08c" refkind="member"><highlight class="normal"><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*<ref refid="structngram__model__t_1aacc908372b71dd2ab7a3eef0d3bda08c" kindref="member">ngram_ng_iter</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>wid,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*history,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>n_hist);</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="716" refid="structngram__iter__t_1a3d7fe2b1fa4b1d0fe98222f82eb0063c" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structngram__iter__t_1a3d7fe2b1fa4b1d0fe98222f82eb0063c" kindref="member">ngram_iter_get</ref>(<ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*itor,</highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*out_score,</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>*out_bowt);</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="727" refid="structngram__iter__t_1a95f095adb2dc9ac85393cbb2b2feb9f3" refkind="member"><highlight class="normal"><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*<ref refid="structngram__iter__t_1a95f095adb2dc9ac85393cbb2b2feb9f3" kindref="member">ngram_iter_successors</ref>(<ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"></highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="734" refid="structngram__iter__t_1ac9d66c8e7f546f56dbe7ab2aa4a46174" refkind="member"><highlight class="normal"><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*<ref refid="structngram__iter__t_1ac9d66c8e7f546f56dbe7ab2aa4a46174" kindref="member">ngram_iter_next</ref>(<ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"></highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="741" refid="structngram__iter__t_1ac23506fc4549b2226ef32723f6b73c4f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structngram__iter__t_1ac23506fc4549b2226ef32723f6b73c4f" kindref="member">ngram_iter_free</ref>(<ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"></highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="757" refid="structngram__model__t_1a1c9dfbd63b9274cb29e70331b14e85d1" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a1c9dfbd63b9274cb29e70331b14e85d1" kindref="member">ngram_model_add_word</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,</highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*word,<sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>weight);</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="775" refid="structngram__model__t_1a751eb92b17f5a9399da6b7e2492e75d3" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a751eb92b17f5a9399da6b7e2492e75d3" kindref="member">ngram_model_read_classdef</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"></highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="788" refid="structngram__model__t_1aa95e6aa73ec5dd9ed3fad5aa1e717a9e" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1aa95e6aa73ec5dd9ed3fad5aa1e717a9e" kindref="member">ngram_model_add_class</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*classname,</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>classweight,</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**words,</highlight></codeline>
+<codeline lineno="792"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>*weights,</highlight></codeline>
+<codeline lineno="793"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>n_words);</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"></highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="806" refid="structngram__model__t_1a29c673743c81c4633dc790aa75048695" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a29c673743c81c4633dc790aa75048695" kindref="member">ngram_model_add_class_word</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*classname,</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*word,</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>weight);</highlight></codeline>
+<codeline lineno="810"><highlight class="normal"></highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="837" refid="structngram__model__t_1a9205a3b0d63d57b5f100c062f2202e46" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1a9205a3b0d63d57b5f100c062f2202e46" kindref="member">ngram_model_set_init</ref>(<ref refid="structps__config__t" kindref="compound">ps_config_t</ref><sp/>*config,</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>**models,</highlight></codeline>
+<codeline lineno="839"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**names,</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>*weights,</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>n_models);</highlight></codeline>
+<codeline lineno="842"><highlight class="normal"></highlight></codeline>
+<codeline lineno="874"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="875" refid="structngram__model__t_1a53ac5c6475a5e3c72250ee2c527bc74f" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1a53ac5c6475a5e3c72250ee2c527bc74f" kindref="member">ngram_model_set_read</ref>(<ref refid="structps__config__t" kindref="compound">ps_config_t</ref><sp/>*config,</highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lmctlfile,</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlogmath__t" kindref="compound">logmath_t</ref><sp/>*lmath);</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="884" refid="structngram__model__t_1a8c43adf4ab5570cfb101dfaaaacc3171" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a8c43adf4ab5570cfb101dfaaaacc3171" kindref="member">ngram_model_set_count</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set);</highlight></codeline>
+<codeline lineno="885"><highlight class="normal"></highlight></codeline>
+<codeline lineno="890" refid="model_8h_1afffd75c5bde8dd84107449468be48547" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ngram_model_set_iter_s<sp/><ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref>;</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"></highlight></codeline>
+<codeline lineno="898"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="899" refid="structngram__model__t_1a69f503c63b727b1d47fdb5ca138f784b" refkind="member"><highlight class="normal"><ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref><sp/>*<ref refid="structngram__model__t_1a69f503c63b727b1d47fdb5ca138f784b" kindref="member">ngram_model_set_iter</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set);</highlight></codeline>
+<codeline lineno="900"><highlight class="normal"></highlight></codeline>
+<codeline lineno="907"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="908" refid="structngram__model__set__iter__t_1a0b5d514788a89e94a9294444345644fa" refkind="member"><highlight class="normal"><ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref><sp/>*<ref refid="structngram__model__set__iter__t_1a0b5d514788a89e94a9294444345644fa" kindref="member">ngram_model_set_iter_next</ref>(<ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="909"><highlight class="normal"></highlight></codeline>
+<codeline lineno="914"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="915" refid="structngram__model__set__iter__t_1aaf476373eb2e9c3d6c7efac3a4b1a1b2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structngram__model__set__iter__t_1aaf476373eb2e9c3d6c7efac3a4b1a1b2" kindref="member">ngram_model_set_iter_free</ref>(<ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref><sp/>*itor);</highlight></codeline>
+<codeline lineno="916"><highlight class="normal"></highlight></codeline>
+<codeline lineno="925"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="926" refid="structngram__model__set__iter__t_1a969431cd3b760dd3aff5be7bc80eb520" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__set__iter__t_1a969431cd3b760dd3aff5be7bc80eb520" kindref="member">ngram_model_set_iter_model</ref>(<ref refid="structngram__model__set__iter__t" kindref="compound">ngram_model_set_iter_t</ref><sp/>*itor,</highlight></codeline>
+<codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>**lmname);</highlight></codeline>
+<codeline lineno="928"><highlight class="normal"></highlight></codeline>
+<codeline lineno="936"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="937" refid="structngram__model__t_1a595d4dd1a5645cc9793d70b07d36b99d" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1a595d4dd1a5645cc9793d70b07d36b99d" kindref="member">ngram_model_set_select</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set,</highlight></codeline>
+<codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="939"><highlight class="normal"></highlight></codeline>
+<codeline lineno="947"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="948" refid="structngram__model__t_1a1d0c5a114c9ab7337008712f7b5ba48c" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1a1d0c5a114c9ab7337008712f7b5ba48c" kindref="member">ngram_model_set_lookup</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set,</highlight></codeline>
+<codeline lineno="949"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="950"><highlight class="normal"></highlight></codeline>
+<codeline lineno="955"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="956" refid="structngram__model__t_1a1d5b87cea3d87fac3da33a1429cb86f3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structngram__model__t_1a1d5b87cea3d87fac3da33a1429cb86f3" kindref="member">ngram_model_set_current</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set);</highlight></codeline>
+<codeline lineno="957"><highlight class="normal"></highlight></codeline>
+<codeline lineno="967"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="968" refid="structngram__model__t_1a3f3c6d4b5cee2ed64f0c4ba4b5f2c1a4" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1a3f3c6d4b5cee2ed64f0c4ba4b5f2c1a4" kindref="member">ngram_model_set_interp</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set,</highlight></codeline>
+<codeline lineno="969"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**names,</highlight></codeline>
+<codeline lineno="970"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>*weights);</highlight></codeline>
+<codeline lineno="971"><highlight class="normal"></highlight></codeline>
+<codeline lineno="985"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="986" refid="structngram__model__t_1a1d663526e16a5d0d9f5aef2129cd1073" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1a1d663526e16a5d0d9f5aef2129cd1073" kindref="member">ngram_model_set_add</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set,</highlight></codeline>
+<codeline lineno="987"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*model,</highlight></codeline>
+<codeline lineno="988"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,</highlight></codeline>
+<codeline lineno="989"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref><sp/>weight,</highlight></codeline>
+<codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reuse_widmap);</highlight></codeline>
+<codeline lineno="991"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="1002" refid="structngram__model__t_1a5a6ecb8351cbe2cf3d60ca1ac465d701" refkind="member"><highlight class="normal"><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*<ref refid="structngram__model__t_1a5a6ecb8351cbe2cf3d60ca1ac465d701" kindref="member">ngram_model_set_remove</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set,</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,</highlight></codeline>
+<codeline lineno="1004"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reuse_widmap);</highlight></codeline>
+<codeline lineno="1005"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1010"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="1011" refid="structngram__model__t_1ac0434afb29daf257ff9d37ae09fe3024" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structngram__model__t_1ac0434afb29daf257ff9d37ae09fe3024" kindref="member">ngram_model_set_map_words</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set,</highlight></codeline>
+<codeline lineno="1012"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**words,</highlight></codeline>
+<codeline lineno="1013"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>n_words);</highlight></codeline>
+<codeline lineno="1014"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1023"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="1024" refid="structngram__model__t_1a9c78bb0ab03a57ecbf6dbc9ef5953cc2" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1a9c78bb0ab03a57ecbf6dbc9ef5953cc2" kindref="member">ngram_model_set_current_wid</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set,</highlight></codeline>
+<codeline lineno="1025"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>set_wid);</highlight></codeline>
+<codeline lineno="1026"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1037"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="1038" refid="structngram__model__t_1aa6fadb5970bdad9eeb69532cb54214eb" refkind="member"><highlight class="normal"><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/><ref refid="structngram__model__t_1aa6fadb5970bdad9eeb69532cb54214eb" kindref="member">ngram_model_set_known_wid</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*set,<sp/><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref><sp/>set_wid);</highlight></codeline>
+<codeline lineno="1039"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1044"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="1045" refid="structngram__model__t_1a071b30df2cd1ac5f7c2061fde34b67a4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structngram__model__t_1a071b30df2cd1ac5f7c2061fde34b67a4" kindref="member">ngram_model_flush</ref>(<ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref><sp/>*lm);</highlight></codeline>
+<codeline lineno="1046"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1047"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1048"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1049"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1050"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1051"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__PS_MODEL_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h"/>
+  </compounddef>
+</doxygen>

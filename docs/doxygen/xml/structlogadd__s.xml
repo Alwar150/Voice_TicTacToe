@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlogadd__s" kind="struct" language="C++" prot="public">
+    <compoundname>logadd_s</compoundname>
+    <includes refid="logmath_8h" local="no">logmath.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlogadd__s_1a27793577d513d85cd73c2daffc140695" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* logadd_s::table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <qualifiedname>logadd_s::table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Table, in unsigned integers of (width) bytes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="98" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlogadd__s_1a484c53a05b46d863d0456af679cee5d8" prot="public" static="no" mutable="no">
+        <type><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+        <definition>uint32 logadd_s::table_size</definition>
+        <argsstring></argsstring>
+        <name>table_size</name>
+        <qualifiedname>logadd_s::table_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of elements in (table). This is never smaller than 256 (important!) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="100" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlogadd__s_1a8e35a353d751d957270baf5192007c3e" prot="public" static="no" mutable="no">
+        <type><ref refid="prim__type_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref></type>
+        <definition>uint8 logadd_s::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>logadd_s::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Width of elements of (table). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="102" column="11" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlogadd__s_1a4000a49e71ed2c09da4f34cb5ccaed4b" prot="public" static="no" mutable="no">
+        <type><ref refid="prim__type_8h_1a1b956fe1df85f3c132b21edb4e116458" kindref="member">int8</ref></type>
+        <definition>int8 logadd_s::shift</definition>
+        <argsstring></argsstring>
+        <name>shift</name>
+        <qualifiedname>logadd_s::shift</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Right shift applied to elements in (table). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="104" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="96" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" bodystart="96" bodyend="105"/>
+    <listofallmembers>
+      <member refid="structlogadd__s_1a4000a49e71ed2c09da4f34cb5ccaed4b" prot="public" virt="non-virtual"><scope>logadd_s</scope><name>shift</name></member>
+      <member refid="structlogadd__s_1a27793577d513d85cd73c2daffc140695" prot="public" virt="non-virtual"><scope>logadd_s</scope><name>table</name></member>
+      <member refid="structlogadd__s_1a484c53a05b46d863d0456af679cee5d8" prot="public" virt="non-virtual"><scope>logadd_s</scope><name>table_size</name></member>
+      <member refid="structlogadd__s_1a8e35a353d751d957270baf5192007c3e" prot="public" virt="non-virtual"><scope>logadd_s</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

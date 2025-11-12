@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__endpointer__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_endpointer_t</compoundname>
+    <includes refid="endpointer_8h" local="no">pocketsphinx/endpointer.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__endpointer__t_1a52206006da981da07bd016f7b3dd9b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_endpointer_t * ps_endpointer_init</definition>
+        <argsstring>(double window, double ratio, ps_vad_mode_t mode, int sample_rate, double frame_length)</argsstring>
+        <name>ps_endpointer_init</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_init</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ratio</declname>
+        </param>
+        <param>
+          <type><ref refid="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" kindref="member">ps_vad_mode_t</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frame_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize endpointing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>window</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seconds of audio to use in speech start/end decision, or 0 to use the default (PS_ENDPOINTER_DEFAULT_WINDOW). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ratio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ratio of frames needed to trigger start/end decision, or 0 for the default (PS_ENDPOINTER_DEFAULT_RATIO). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&quot;Aggressiveness&quot; of voice activity detection. Stricter values (see <ref refid="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" kindref="member">ps_vad_mode_t</ref>) are less likely to misclassify non-speech as speech. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sampling rate of input, or 0 for default (which can be obtained with ps_vad_sample_rate()). Only 8000, 16000, 32000, 48000 are directly supported, others will use the closest supported rate (within reason). Note that this means that the actual frame length may not be exactly the one requested, so you must always use the one returned by <ref refid="endpointer_8h_1aaa16760235cea4c0a06db70c907bc576" kindref="member">ps_endpointer_frame_size()</ref> (in samples) or <ref refid="endpointer_8h_1a65e580fb57829e172863093b8d8bfdf7" kindref="member">ps_endpointer_frame_length()</ref> (in seconds). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested frame length in seconds, or 0.0 for the default. Only 0.01, 0.02, 0.03 currently supported. <bold>Actual frame length may be different, you must always use <ref refid="endpointer_8h_1a65e580fb57829e172863093b8d8bfdf7" kindref="member">ps_endpointer_frame_length()</ref> to obtain it.</bold> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Endpointer object or NULL on failure (invalid parameter for instance). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="112" column="17" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="112" declcolumn="17"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1a95eb7899d6e092ccbd0a73392c23e5c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_endpointer_t * ps_endpointer_retain</definition>
+        <argsstring>(ps_endpointer_t *ep)</argsstring>
+        <name>ps_endpointer_retain</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_retain</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retain a pointer to endpointer</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Endpointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Endpointer with incremented reference count. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="125" column="17" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="125" declcolumn="17"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1ad1c967ebc8f3975d40c8002428cdde32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_endpointer_free</definition>
+        <argsstring>(ps_endpointer_t *ep)</argsstring>
+        <name>ps_endpointer_free</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release a pointer to endpointer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Endpointer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New reference count (0 if freed). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="135" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="135" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1a2bce53f42a5010f9fbb43a953a16b34a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_vad_t * ps_endpointer_vad</definition>
+        <argsstring>(ps_endpointer_t *ep)</argsstring>
+        <name>ps_endpointer_vad</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_vad</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the voice activity detector used by the endpointer.</para>
+<para><simplesect kind="return"><para>VAD object. The endpointer retains ownership of this object, so you must use ps_vad_retain() if you wish to use it outside of the lifetime of the endpointer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="146" column="10" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="146" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1a67c0e37e1bd947ade4006b8a28049869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> const <ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT const int16 * ps_endpointer_process</definition>
+        <argsstring>(ps_endpointer_t *ep, const int16 *frame)</argsstring>
+        <name>ps_endpointer_process</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_process</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <param>
+          <type>const <ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Process a frame of audio, returning a frame if in a speech region.</para>
+<para>Note that the endpointer is <emphasis>not</emphasis> thread-safe. You must call all endpointer functions from the same thread.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Endpointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame of data, must contain <ref refid="endpointer_8h_1aaa16760235cea4c0a06db70c907bc576" kindref="member">ps_endpointer_frame_size()</ref> samples. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL if no speech available, or pointer to a frame of <ref refid="endpointer_8h_1aaa16760235cea4c0a06db70c907bc576" kindref="member">ps_endpointer_frame_size()</ref> samples (no more and no less). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="179" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="179" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1a666c55812e40204dddd7ef672c797264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> const <ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT const int16 * ps_endpointer_end_stream</definition>
+        <argsstring>(ps_endpointer_t *ep, const int16 *frame, size_t nsamp, size_t *out_nsamp)</argsstring>
+        <name>ps_endpointer_end_stream</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_end_stream</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <param>
+          <type>const <ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nsamp</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>out_nsamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Process remaining samples at end of stream.</para>
+<para>Note that the endpointer is <emphasis>not</emphasis> thread-safe. You must call all endpointer functions from the same thread.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Endpointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame of data, must contain <ref refid="endpointer_8h_1aaa16760235cea4c0a06db70c907bc576" kindref="member">ps_endpointer_frame_size()</ref> samples or less. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nsamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of samples in frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_nsamp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output, number of samples available. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to available samples, or NULL if none available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="197" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="197" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1adac16cf29e75f65ec68957daaaa2d467" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_endpointer_in_speech</definition>
+        <argsstring>(ps_endpointer_t *ep)</argsstring>
+        <name>ps_endpointer_in_speech</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_in_speech</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current state (speech/not-speech) of the endpointer.</para>
+<para>This function can be used to detect speech/non-speech transitions. If it returns 0, and a subsequent call to <ref refid="structps__endpointer__t_1a67c0e37e1bd947ade4006b8a28049869" kindref="member">ps_endpointer_process()</ref> returns non-NULL, this indicates a transition to speech. Conversely, if <ref refid="structps__endpointer__t_1a67c0e37e1bd947ade4006b8a28049869" kindref="member">ps_endpointer_process()</ref> returns non-NULL and a subsequent call to this function returns 0, this indicates a transition to non-speech.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Endpointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>non-zero if in a speech segment after processing the last frame of data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="218" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="218" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1a808204c820723b3cd4c16d38c66980c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> double</type>
+        <definition>POCKETSPHINX_EXPORT double ps_endpointer_speech_start</definition>
+        <argsstring>(ps_endpointer_t *ep)</argsstring>
+        <name>ps_endpointer_speech_start</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_speech_start</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the start time of the last speech segment. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="225" column="8" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="225" declcolumn="8"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1abc71fe3155fa1a9536c58c3c69fe8dea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> double</type>
+        <definition>POCKETSPHINX_EXPORT double ps_endpointer_speech_end</definition>
+        <argsstring>(ps_endpointer_t *ep)</argsstring>
+        <name>ps_endpointer_speech_end</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_speech_end</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the end time of the last speech segment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="232" column="8" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="232" declcolumn="8"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1a5d6ba30b00e6e8f849800b0fa352bf9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_endpointer_set_timestamp_func</definition>
+        <argsstring>(ps_endpointer_t *ep, ps_endpointer_timestamp_cb_t cb, void *user_data)</argsstring>
+        <name>ps_endpointer_set_timestamp_func</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_set_timestamp_func</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <param>
+          <type><ref refid="endpointer_8h_1ac01ff24b5365d201fb0ed51bf7e830c2" kindref="member">ps_endpointer_timestamp_cb_t</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a callback function to provide external timestamps.</para>
+<para>By default, the endpointer uses audio sample counts to calculate timestamps. This can cause drift between audio time and system time when the audio clock is not synchronized with the system clock.</para>
+<para>This function allows you to provide an external timestamp source (e.g., system time, monotonic clock) to avoid this drift.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Endpointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function that returns current time in seconds, or NULL to revert to audio-based timestamps. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User data to pass to the callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, -1 for error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="252" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="252" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__endpointer__t_1afa8a03e9be7cda8d8bad1978e3c25add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> double</type>
+        <definition>POCKETSPHINX_EXPORT double ps_endpointer_timestamp</definition>
+        <argsstring>(ps_endpointer_t *ep)</argsstring>
+        <name>ps_endpointer_timestamp</name>
+        <qualifiedname>ps_endpointer_t::ps_endpointer_timestamp</qualifiedname>
+        <param>
+          <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current timestamp from the endpointer.</para>
+<para>This returns the current timestamp used by the endpointer, which may be based on audio samples or an external timestamp source if one has been set with <ref refid="structps__endpointer__t_1a5d6ba30b00e6e8f849800b0fa352bf9c" kindref="member">ps_endpointer_set_timestamp_func()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Endpointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Current timestamp in seconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="268" column="8" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" declline="268" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Simple voice activity detection based endpointing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h" line="57" column="1"/>
+    <listofallmembers>
+      <member refid="structps__endpointer__t_1a666c55812e40204dddd7ef672c797264" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_end_stream</name></member>
+      <member refid="structps__endpointer__t_1ad1c967ebc8f3975d40c8002428cdde32" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_free</name></member>
+      <member refid="structps__endpointer__t_1adac16cf29e75f65ec68957daaaa2d467" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_in_speech</name></member>
+      <member refid="structps__endpointer__t_1a52206006da981da07bd016f7b3dd9b18" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_init</name></member>
+      <member refid="structps__endpointer__t_1a67c0e37e1bd947ade4006b8a28049869" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_process</name></member>
+      <member refid="structps__endpointer__t_1a95eb7899d6e092ccbd0a73392c23e5c4" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_retain</name></member>
+      <member refid="structps__endpointer__t_1a5d6ba30b00e6e8f849800b0fa352bf9c" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_set_timestamp_func</name></member>
+      <member refid="structps__endpointer__t_1abc71fe3155fa1a9536c58c3c69fe8dea" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_speech_end</name></member>
+      <member refid="structps__endpointer__t_1a808204c820723b3cd4c16d38c66980c6" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_speech_start</name></member>
+      <member refid="structps__endpointer__t_1afa8a03e9be7cda8d8bad1978e3c25add" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_timestamp</name></member>
+      <member refid="structps__endpointer__t_1a2bce53f42a5010f9fbb43a953a16b34a" prot="public" virt="non-virtual"><scope>ps_endpointer_t</scope><name>ps_endpointer_vad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

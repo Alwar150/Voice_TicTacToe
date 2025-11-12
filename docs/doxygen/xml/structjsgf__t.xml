@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structjsgf__t" kind="struct" language="C++" prot="public">
+    <compoundname>jsgf_t</compoundname>
+    <includes refid="model_8h" local="no">pocketsphinx/model.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structjsgf__t_1a5988aae174c3ea4a8458c68dd737272e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT jsgf_t * jsgf_parse_file</definition>
+        <argsstring>(const char *filename, jsgf_t *parent)</argsstring>
+        <name>jsgf_parse_file</name>
+        <qualifiedname>jsgf_t::jsgf_parse_file</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a JSGF grammar from a file.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the file to parse. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional parent grammar for this one (NULL, usually). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new JSGF grammar object, or NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="97" column="8" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="97" declcolumn="8"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__t_1a2c261446ef7e5eb84b4c0cd7ea403a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT jsgf_t * jsgf_parse_string</definition>
+        <argsstring>(const char *string, jsgf_t *parent)</argsstring>
+        <name>jsgf_parse_string</name>
+        <qualifiedname>jsgf_t::jsgf_parse_string</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse a JSGF grammar from a string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0-terminated string with grammar. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional parent grammar for this one (NULL, usually). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new JSGF grammar object, or NULL on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="108" column="8" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="108" declcolumn="8"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__t_1a81f8acb8b49c1ef7cb695321f5c9b7f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> char const *</type>
+        <definition>POCKETSPHINX_EXPORT char const  * jsgf_grammar_name</definition>
+        <argsstring>(jsgf_t *jsgf)</argsstring>
+        <name>jsgf_grammar_name</name>
+        <qualifiedname>jsgf_t::jsgf_grammar_name</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>jsgf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the grammar name from the file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="115" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="115" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__t_1ad33f663dddfec516122f2ee0d5c58b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void jsgf_grammar_free</definition>
+        <argsstring>(jsgf_t *jsgf)</argsstring>
+        <name>jsgf_grammar_free</name>
+        <qualifiedname>jsgf_t::jsgf_grammar_free</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>jsgf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a JSGF grammar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="122" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="122" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__t_1ab0bf791d1ae06bf952d30401377767c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT jsgf_rule_t * jsgf_get_rule</definition>
+        <argsstring>(jsgf_t *grammar, const char *name)</argsstring>
+        <name>jsgf_get_rule</name>
+        <qualifiedname>jsgf_t::jsgf_get_rule</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>grammar</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a rule by name from a grammar. Name should not contain brackets. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="129" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="129" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__t_1ac4c63ff31f11effef78a867cc61c9937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT jsgf_rule_t * jsgf_get_public_rule</definition>
+        <argsstring>(jsgf_t *grammar)</argsstring>
+        <name>jsgf_get_public_rule</name>
+        <qualifiedname>jsgf_t::jsgf_get_public_rule</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>grammar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the first public rule of the grammar </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="136" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="136" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__t_1ab78d604e387eb282d66e1017bf2ef718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT jsgf_rule_iter_t * jsgf_rule_iter</definition>
+        <argsstring>(jsgf_t *grammar)</argsstring>
+        <name>jsgf_rule_iter</name>
+        <qualifiedname>jsgf_t::jsgf_rule_iter</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>grammar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an iterator over all rules in a grammar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="163" column="18" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="163" declcolumn="18"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__t_1a3351602453d463a51eb6e9fa832dc956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structfsg__model__t" kindref="compound">fsg_model_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT fsg_model_t * jsgf_build_fsg</definition>
+        <argsstring>(jsgf_t *grammar, jsgf_rule_t *rule, logmath_t *lmath, float32 lw)</argsstring>
+        <name>jsgf_build_fsg</name>
+        <qualifiedname>jsgf_t::jsgf_build_fsg</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>grammar</declname>
+        </param>
+        <param>
+          <type><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref> *</type>
+          <declname>rule</declname>
+        </param>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref></type>
+          <declname>lw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Build a Sphinx FSG object from a JSGF rule. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="191" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="191" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__t_1ab31ecf0ecdde813d744f7830f29e58db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int jsgf_write_fsg</definition>
+        <argsstring>(jsgf_t *grammar, jsgf_rule_t *rule, FILE *outfh)</argsstring>
+        <name>jsgf_write_fsg</name>
+        <qualifiedname>jsgf_t::jsgf_write_fsg</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__t" kindref="compound">jsgf_t</ref> *</type>
+          <declname>grammar</declname>
+        </param>
+        <param>
+          <type><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref> *</type>
+          <declname>rule</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>outfh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert a JSGF rule to Sphinx FSG text form.</para>
+<para>This does a direct conversion without doing transitive closure on null transitions and so forth. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="220" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="220" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>JSGF parser. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="60" column="1"/>
+    <listofallmembers>
+      <member refid="structjsgf__t_1a3351602453d463a51eb6e9fa832dc956" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_build_fsg</name></member>
+      <member refid="structjsgf__t_1ac4c63ff31f11effef78a867cc61c9937" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_get_public_rule</name></member>
+      <member refid="structjsgf__t_1ab0bf791d1ae06bf952d30401377767c8" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_get_rule</name></member>
+      <member refid="structjsgf__t_1ad33f663dddfec516122f2ee0d5c58b89" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_grammar_free</name></member>
+      <member refid="structjsgf__t_1a81f8acb8b49c1ef7cb695321f5c9b7f5" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_grammar_name</name></member>
+      <member refid="structjsgf__t_1a5988aae174c3ea4a8458c68dd737272e" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_parse_file</name></member>
+      <member refid="structjsgf__t_1a2c261446ef7e5eb84b4c0cd7ea403a4c" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_parse_string</name></member>
+      <member refid="structjsgf__t_1ab78d604e387eb282d66e1017bf2ef718" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_rule_iter</name></member>
+      <member refid="structjsgf__t_1ab31ecf0ecdde813d744f7830f29e58db" prot="public" virt="non-virtual"><scope>jsgf_t</scope><name>jsgf_write_fsg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

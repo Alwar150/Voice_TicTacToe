@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__seg__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_seg_t</compoundname>
+    <includes refid="pocketsphinx_8h" local="no">pocketsphinx.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__seg__t_1a0686bf425a8cf145bca3b149b6368223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__seg__t" kindref="compound">ps_seg_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_seg_t * ps_seg_next</definition>
+        <argsstring>(ps_seg_t *seg)</argsstring>
+        <name>ps_seg_next</name>
+        <qualifiedname>ps_seg_t::ps_seg_next</qualifiedname>
+        <param>
+          <type><ref refid="structps__seg__t" kindref="compound">ps_seg_t</ref> *</type>
+          <declname>seg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next segment in a word segmentation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segment iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Updated iterator with the next segment. NULL at end of utterance (the iterator will be freed in this case). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="954" column="10" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="954" declcolumn="10"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__seg__t_1a27db3d5a3f9363a3e1ac8bae33030c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> char const *</type>
+        <definition>POCKETSPHINX_EXPORT char const  * ps_seg_word</definition>
+        <argsstring>(ps_seg_t *seg)</argsstring>
+        <name>ps_seg_word</name>
+        <qualifiedname>ps_seg_t::ps_seg_word</qualifiedname>
+        <param>
+          <type><ref refid="structps__seg__t" kindref="compound">ps_seg_t</ref> *</type>
+          <declname>seg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get word string from a segmentation iterator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segment iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Read-only string giving string name of this segment. This is only valid until the next call to <ref refid="structps__seg__t_1a0686bf425a8cf145bca3b149b6368223" kindref="member">ps_seg_next()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="965" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="965" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__seg__t_1a045a044726b816678965514f2ee7d8c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ps_seg_frames</definition>
+        <argsstring>(ps_seg_t *seg, int *out_sf, int *out_ef)</argsstring>
+        <name>ps_seg_frames</name>
+        <qualifiedname>ps_seg_t::ps_seg_frames</qualifiedname>
+        <param>
+          <type><ref refid="structps__seg__t" kindref="compound">ps_seg_t</ref> *</type>
+          <declname>seg</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>out_sf</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>out_ef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get inclusive start and end frames from a segmentation iterator.</para>
+<para><simplesect kind="note"><para>These frame numbers are inclusive, i.e. the end frame refers to the last frame in which the given word or other segment was active. Therefore, the actual duration is *out_ef - *out_sf + 1.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segment iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_sf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: First frame index in segment. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_ef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Last frame index in segment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="980" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="980" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__seg__t_1adfd45d93c3fc9de6b7be89d5417f6abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+        <definition>POCKETSPHINX_EXPORT int32 ps_seg_prob</definition>
+        <argsstring>(ps_seg_t *seg, int32 *out_ascr, int32 *out_lscr, int32 *out_lback)</argsstring>
+        <name>ps_seg_prob</name>
+        <qualifiedname>ps_seg_t::ps_seg_prob</qualifiedname>
+        <param>
+          <type><ref refid="structps__seg__t" kindref="compound">ps_seg_t</ref> *</type>
+          <declname>seg</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> *</type>
+          <declname>out_ascr</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> *</type>
+          <declname>out_lscr</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> *</type>
+          <declname>out_lback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get language, acoustic, and posterior probabilities from a segmentation iterator.</para>
+<para><simplesect kind="note"><para>Unless the -bestpath option is enabled, this function will always return zero (corresponding to a posterior probability of 1.0). Even if -bestpath is enabled, it will also return zero when called on a partial result. Ongoing research into effective confidence annotation for partial hypotheses may result in these restrictions being lifted in future versions.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out_ascr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: acoustic model score for this segment. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_lscr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: language model score for this segment. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_lback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: language model backoff mode for this segment (i.e. the number of words used in calculating lscr). This field is, of course, only meaningful for N-Gram models. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Log posterior probability of current segment. Log is expressed in the log-base used in the decoder. To convert to linear floating-point, use logmath_exp(ps_get_logmath(),
+        pprob). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1006" column="7" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1006" declcolumn="7"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__seg__t_1ac02cea69794b0fbd17e6a4c5265b2255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ps_seg_free</definition>
+        <argsstring>(ps_seg_t *seg)</argsstring>
+        <name>ps_seg_free</name>
+        <qualifiedname>ps_seg_t::ps_seg_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__seg__t" kindref="compound">ps_seg_t</ref> *</type>
+          <declname>seg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finish iterating over a word segmentation early, freeing resources. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="1013" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" declline="1013" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Segmentation iterator object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="145" column="1"/>
+    <listofallmembers>
+      <member refid="structps__seg__t_1a045a044726b816678965514f2ee7d8c7" prot="public" virt="non-virtual"><scope>ps_seg_t</scope><name>ps_seg_frames</name></member>
+      <member refid="structps__seg__t_1ac02cea69794b0fbd17e6a4c5265b2255" prot="public" virt="non-virtual"><scope>ps_seg_t</scope><name>ps_seg_free</name></member>
+      <member refid="structps__seg__t_1a0686bf425a8cf145bca3b149b6368223" prot="public" virt="non-virtual"><scope>ps_seg_t</scope><name>ps_seg_next</name></member>
+      <member refid="structps__seg__t_1adfd45d93c3fc9de6b7be89d5417f6abb" prot="public" virt="non-virtual"><scope>ps_seg_t</scope><name>ps_seg_prob</name></member>
+      <member refid="structps__seg__t_1a27db3d5a3f9363a3e1ac8bae33030c87" prot="public" virt="non-virtual"><scope>ps_seg_t</scope><name>ps_seg_word</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

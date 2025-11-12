@@ -1,0 +1,217 @@
+\doxysection{Config\+Manager Class Reference}
+\hypertarget{class_config_manager}{}\label{class_config_manager}\index{ConfigManager@{ConfigManager}}
+
+
+The \doxylink{class_config_manager}{Config\+Manager} class.  
+
+
+
+
+{\ttfamily \#include $<$Config\+Manager.\+h$>$}
+
+Inheritance diagram for Config\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_config_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_config_manager_a61e0d30507438bdb93773586fd17dcd2}{load}} (const QString \&file\+Path=QString())
+\begin{DoxyCompactList}\small\item\em Carga el archivo de configuración desde la ruta indicada. Si no se especifica ruta, buscará config.\+ini en el directorio actual. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_config_manager_ab0a26220dad8b8b9c29e00ac3e06a455}{get\+Value}} (const QString \&key, const QString \&default\+Value=QString()) const
+\begin{DoxyCompactList}\small\item\em Devuelve un valor del archivo INI como QString. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_config_manager_a8fcb73283ae43f36e70ae09990edb315}{get\+Int}} (const QString \&key, int default\+Value=0) const
+\begin{DoxyCompactList}\small\item\em Devuelve un valor como entero. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_config_manager_a2fc430f2f48d29787b668e048947a5d3}{get\+Bool}} (const QString \&key, bool default\+Value=false) const
+\begin{DoxyCompactList}\small\item\em Devuelve un valor como booleano. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_config_manager}{Config\+Manager}} \& \mbox{\hyperlink{class_config_manager_ab72b9c36d8c92066d54eabae525da210}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la instancia única del \doxylink{class_config_manager}{Config\+Manager} (Singleton). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{Config\+Manager}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\mbox{\hyperlink{class_config_manager_af27fe922a8151eed5b1dc926ddf045b1}{\texorpdfstring{$\sim$}{\string~}\+Config\+Manager}} () override=default
+\item 
+\mbox{\hyperlink{class_config_manager_a106691c1efb4ec9d6f0688419e455906}{Config\+Manager}} (const \mbox{\hyperlink{class_config_manager}{Config\+Manager}} \&)=delete
+\item 
+\mbox{\hyperlink{class_config_manager}{Config\+Manager}} \& \mbox{\hyperlink{class_config_manager_a0fd5bb24753934f9ec6430ab3bea7fd9}{operator=}} (const \mbox{\hyperlink{class_config_manager}{Config\+Manager}} \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QSettings \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_config_manager_a9d30f8b6a03a88758b1a27dae2c02458}{settings\+\_\+}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_config_manager}{Config\+Manager} class. 
+
+Gestiona la configuración de la aplicación desde un archivo config.\+ini. Aplica el patrón Singleton para asegurar que solo existe una instancia accesible globalmente. 
+
+\label{doc-constructors}
+\Hypertarget{class_config_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}\index{ConfigManager@{ConfigManager}!ConfigManager@{ConfigManager}}
+\index{ConfigManager@{ConfigManager}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{ConfigManager()}{ConfigManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_config_manager_a41931ff9b32816a676885e4c78c3ab83} 
+Config\+Manager\+::\+Config\+Manager (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_config_manager_a106691c1efb4ec9d6f0688419e455906}{Config\+Manager()}}, \mbox{\hyperlink{class_config_manager_ab72b9c36d8c92066d54eabae525da210}{instance()}}, and \mbox{\hyperlink{class_config_manager_a0fd5bb24753934f9ec6430ab3bea7fd9}{operator=()}}.
+
+\Hypertarget{class_config_manager_af27fe922a8151eed5b1dc926ddf045b1}\index{ConfigManager@{ConfigManager}!````~ConfigManager@{\texorpdfstring{$\sim$}{\string~}ConfigManager}}
+\index{````~ConfigManager@{\texorpdfstring{$\sim$}{\string~}ConfigManager}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ConfigManager()}{\string~ConfigManager()}}
+{\footnotesize\ttfamily \label{class_config_manager_af27fe922a8151eed5b1dc926ddf045b1} 
+Config\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Config\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [default]}}
+
+\Hypertarget{class_config_manager_a106691c1efb4ec9d6f0688419e455906}\index{ConfigManager@{ConfigManager}!ConfigManager@{ConfigManager}}
+\index{ConfigManager@{ConfigManager}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{ConfigManager()}{ConfigManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_config_manager_a106691c1efb4ec9d6f0688419e455906} 
+Config\+Manager\+::\+Config\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_config_manager}{Config\+Manager}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+References \mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{Config\+Manager()}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_config_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_config_manager_a2fc430f2f48d29787b668e048947a5d3}\index{ConfigManager@{ConfigManager}!getBool@{getBool}}
+\index{getBool@{getBool}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{getBool()}{getBool()}}
+{\footnotesize\ttfamily \label{class_config_manager_a2fc430f2f48d29787b668e048947a5d3} 
+bool Config\+Manager\+::get\+Bool (\begin{DoxyParamCaption}\item[{const QString \&}]{key}{, }\item[{bool}]{default\+Value}{ = {\ttfamily false}}\end{DoxyParamCaption}) const}
+
+
+
+Devuelve un valor como booleano. 
+
+
+
+References \mbox{\hyperlink{class_config_manager_a9d30f8b6a03a88758b1a27dae2c02458}{settings\+\_\+}}.
+
+\Hypertarget{class_config_manager_a8fcb73283ae43f36e70ae09990edb315}\index{ConfigManager@{ConfigManager}!getInt@{getInt}}
+\index{getInt@{getInt}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}}
+{\footnotesize\ttfamily \label{class_config_manager_a8fcb73283ae43f36e70ae09990edb315} 
+int Config\+Manager\+::get\+Int (\begin{DoxyParamCaption}\item[{const QString \&}]{key}{, }\item[{int}]{default\+Value}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const}
+
+
+
+Devuelve un valor como entero. 
+
+
+
+References \mbox{\hyperlink{class_config_manager_a9d30f8b6a03a88758b1a27dae2c02458}{settings\+\_\+}}.
+
+\Hypertarget{class_config_manager_ab0a26220dad8b8b9c29e00ac3e06a455}\index{ConfigManager@{ConfigManager}!getValue@{getValue}}
+\index{getValue@{getValue}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_config_manager_ab0a26220dad8b8b9c29e00ac3e06a455} 
+QString Config\+Manager\+::get\+Value (\begin{DoxyParamCaption}\item[{const QString \&}]{key}{, }\item[{const QString \&}]{default\+Value}{ = {\ttfamily QString()}}\end{DoxyParamCaption}) const}
+
+
+
+Devuelve un valor del archivo INI como QString. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Clave (por ejemplo, "{}network/ip"{}) \\
+\hline
+{\em default\+Value} & Valor por defecto si no se encuentra la clave \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor asociado 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_config_manager_a9d30f8b6a03a88758b1a27dae2c02458}{settings\+\_\+}}.
+
+\Hypertarget{class_config_manager_ab72b9c36d8c92066d54eabae525da210}\index{ConfigManager@{ConfigManager}!instance@{instance}}
+\index{instance@{instance}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \label{class_config_manager_ab72b9c36d8c92066d54eabae525da210} 
+\mbox{\hyperlink{class_config_manager}{Config\+Manager}} \& Config\+Manager\+::instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtiene la instancia única del \doxylink{class_config_manager}{Config\+Manager} (Singleton). 
+
+\begin{DoxyReturn}{Returns}
+Referencia al único \doxylink{class_config_manager}{Config\+Manager}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{Config\+Manager()}}, and \mbox{\hyperlink{class_config_manager_ab72b9c36d8c92066d54eabae525da210}{instance()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a94d6a6d8b5aa00b913e751c2620a9e52}{Speech\+Manager\+::configure()}}, \mbox{\hyperlink{class_config_manager_ab72b9c36d8c92066d54eabae525da210}{instance()}}, and \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()}}.
+
+\Hypertarget{class_config_manager_a61e0d30507438bdb93773586fd17dcd2}\index{ConfigManager@{ConfigManager}!load@{load}}
+\index{load@{load}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_config_manager_a61e0d30507438bdb93773586fd17dcd2} 
+void Config\+Manager\+::load (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path}{ = {\ttfamily QString()}}\end{DoxyParamCaption})}
+
+
+
+Carga el archivo de configuración desde la ruta indicada. Si no se especifica ruta, buscará config.\+ini en el directorio actual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & Ruta al archivo .ini \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_config_manager_a9d30f8b6a03a88758b1a27dae2c02458}{settings\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()}}.
+
+\Hypertarget{class_config_manager_a0fd5bb24753934f9ec6430ab3bea7fd9}\index{ConfigManager@{ConfigManager}!operator=@{operator=}}
+\index{operator=@{operator=}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_config_manager_a0fd5bb24753934f9ec6430ab3bea7fd9} 
+\mbox{\hyperlink{class_config_manager}{Config\+Manager}} \& Config\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_config_manager}{Config\+Manager}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+References \mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{Config\+Manager()}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_config_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_manager_a9d30f8b6a03a88758b1a27dae2c02458}\index{ConfigManager@{ConfigManager}!settings\_@{settings\_}}
+\index{settings\_@{settings\_}!ConfigManager@{ConfigManager}}
+\doxysubsubsection{\texorpdfstring{settings\_}{settings\_}}
+{\footnotesize\ttfamily \label{class_config_manager_a9d30f8b6a03a88758b1a27dae2c02458} 
+QSettings\texorpdfstring{$\ast$}{*} Config\+Manager\+::settings\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_config_manager_a2fc430f2f48d29787b668e048947a5d3}{get\+Bool()}}, \mbox{\hyperlink{class_config_manager_a8fcb73283ae43f36e70ae09990edb315}{get\+Int()}}, \mbox{\hyperlink{class_config_manager_ab0a26220dad8b8b9c29e00ac3e06a455}{get\+Value()}}, and \mbox{\hyperlink{class_config_manager_a61e0d30507438bdb93773586fd17dcd2}{load()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+Config/\mbox{\hyperlink{_config_manager_8h}{Config\+Manager.\+h}}\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+Config/\mbox{\hyperlink{_config_manager_8cpp}{Config\+Manager.\+cpp}}\end{DoxyCompactItemize}

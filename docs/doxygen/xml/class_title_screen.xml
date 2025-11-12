@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_title_screen" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>TitleScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="_title_screen_8h" local="no">TitleScreen.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Ui::TitleScreen &gt;</type>
+        <definition>std::unique_ptr&lt;Ui::TitleScreen&gt; TitleScreen::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>TitleScreen::ui</qualifiedname>
+        <briefdescription>
+<para>ui is a reference to the ui object of the tic tac toe game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="29" column="21" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" compoundref="_title_screen_8cpp" startline="12" endline="21">setConnections</referencedby>
+        <referencedby refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" compoundref="_title_screen_8cpp" startline="5" endline="10">TitleScreen</referencedby>
+        <referencedby refid="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" compoundref="_title_screen_8cpp" startline="23" endline="27">updateBoardSize</referencedby>
+        <referencedby refid="class_title_screen_1a60d1e875593a02a6ee01508235680a47" compoundref="_title_screen_8cpp" startline="55" endline="59">updateMiniMaxDepth</referencedby>
+        <referencedby refid="class_title_screen_1af028098c1b235b3da76941c83776de20" compoundref="_title_screen_8cpp" startline="29" endline="36">updateSinglePlayer</referencedby>
+        <referencedby refid="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" compoundref="_title_screen_8cpp" startline="38" endline="45">updateTwoPlayers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_t_t_t_options" kindref="compound">TTTOptions</ref></type>
+        <definition>TTTOptions TitleScreen::options_</definition>
+        <argsstring></argsstring>
+        <name>options_</name>
+        <qualifiedname>TitleScreen::options_</qualifiedname>
+        <briefdescription>
+<para>options are the values and flags that control a tic tac toe game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="37" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_title_screen_1ac55c2f2485f58d3b7b389e7414a358d6" compoundref="_title_screen_8cpp" startline="61" endline="75">startGame</referencedby>
+        <referencedby refid="class_title_screen_1a2cb34f420ea007de5bec91a91b6f2abe" compoundref="_title_screen_8cpp" startline="47" endline="53">updateAIstartsGame</referencedby>
+        <referencedby refid="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" compoundref="_title_screen_8cpp" startline="23" endline="27">updateBoardSize</referencedby>
+        <referencedby refid="class_title_screen_1a60d1e875593a02a6ee01508235680a47" compoundref="_title_screen_8cpp" startline="55" endline="59">updateMiniMaxDepth</referencedby>
+        <referencedby refid="class_title_screen_1af028098c1b235b3da76941c83776de20" compoundref="_title_screen_8cpp" startline="29" endline="36">updateSinglePlayer</referencedby>
+        <referencedby refid="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" compoundref="_title_screen_8cpp" startline="38" endline="45">updateTwoPlayers</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TitleScreen::TitleScreen</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>TitleScreen</name>
+        <qualifiedname>TitleScreen::TitleScreen</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="class_title_screen" kindref="compound">TitleScreen</ref> constructs the view of the title screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a QWidget type parent that owns this instance of the controller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="23" column="14" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="5" bodyend="10"/>
+        <references refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" compoundref="_title_screen_8cpp" startline="12" endline="21">setConnections</references>
+        <references refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" compoundref="_title_screen_8cpp" startline="5" endline="10">TitleScreen</references>
+        <references refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" compoundref="_title_screen_8h" startline="29">ui</references>
+        <referencedby refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" compoundref="_title_screen_8cpp" startline="5" endline="10">TitleScreen</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::setConnections</definition>
+        <argsstring>()</argsstring>
+        <name>setConnections</name>
+        <qualifiedname>TitleScreen::setConnections</qualifiedname>
+        <briefdescription>
+<para>setConnections sets connections to gather game options from the GUI elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="33" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="12" bodyend="21"/>
+        <references refid="class_title_screen_1ac55c2f2485f58d3b7b389e7414a358d6" compoundref="_title_screen_8cpp" startline="61" endline="75">startGame</references>
+        <references refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" compoundref="_title_screen_8h" startline="29">ui</references>
+        <references refid="class_title_screen_1a2cb34f420ea007de5bec91a91b6f2abe" compoundref="_title_screen_8cpp" startline="47" endline="53">updateAIstartsGame</references>
+        <references refid="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" compoundref="_title_screen_8cpp" startline="23" endline="27">updateBoardSize</references>
+        <references refid="class_title_screen_1a60d1e875593a02a6ee01508235680a47" compoundref="_title_screen_8cpp" startline="55" endline="59">updateMiniMaxDepth</references>
+        <references refid="class_title_screen_1af028098c1b235b3da76941c83776de20" compoundref="_title_screen_8cpp" startline="29" endline="36">updateSinglePlayer</references>
+        <references refid="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" compoundref="_title_screen_8cpp" startline="38" endline="45">updateTwoPlayers</references>
+        <referencedby refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" compoundref="_title_screen_8cpp" startline="5" endline="10">TitleScreen</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_title_screen_1a06e835ca83c6ead23fa0f24833ec76b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::closeEvent</definition>
+        <argsstring>(QCloseEvent *event) override</argsstring>
+        <name>closeEvent</name>
+        <qualifiedname>TitleScreen::closeEvent</qualifiedname>
+        <param>
+          <type>QCloseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>closeEvent manually handles the closing event defined in the base class QWidget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the closing event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="42" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="77" bodyend="81"/>
+        <references refid="class_title_screen_1a8d6e439797b80238c95602359ba029bd">exited</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::updateBoardSize</definition>
+        <argsstring>(int size)</argsstring>
+        <name>updateBoardSize</name>
+        <qualifiedname>TitleScreen::updateBoardSize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>updateBoardSize updates the board size in the current options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of rows or columns in the board. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="49" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="23" bodyend="27"/>
+        <references refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" compoundref="_title_screen_8h" startline="37">options_</references>
+        <references refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" compoundref="_title_screen_8h" startline="29">ui</references>
+        <referencedby refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" compoundref="_title_screen_8cpp" startline="12" endline="21">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_title_screen_1af028098c1b235b3da76941c83776de20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::updateSinglePlayer</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>updateSinglePlayer</name>
+        <qualifiedname>TitleScreen::updateSinglePlayer</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+<para>updateSinglePlayer updates the AI existence flag to true as there is one player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>checked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wether the radio button is checked or not. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="54" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="29" bodyend="36"/>
+        <references refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" compoundref="_title_screen_8h" startline="37">options_</references>
+        <references refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" compoundref="_title_screen_8h" startline="29">ui</references>
+        <referencedby refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" compoundref="_title_screen_8cpp" startline="12" endline="21">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::updateTwoPlayers</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>updateTwoPlayers</name>
+        <qualifiedname>TitleScreen::updateTwoPlayers</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+<para>updateTwoPlayers updates the AI existence flag to false as there are two player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>checked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wether the radio button is checked or not. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="59" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="38" bodyend="45"/>
+        <references refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" compoundref="_title_screen_8h" startline="37">options_</references>
+        <references refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" compoundref="_title_screen_8h" startline="29">ui</references>
+        <referencedby refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" compoundref="_title_screen_8cpp" startline="12" endline="21">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_title_screen_1a2cb34f420ea007de5bec91a91b6f2abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::updateAIstartsGame</definition>
+        <argsstring>(bool checked)</argsstring>
+        <name>updateAIstartsGame</name>
+        <qualifiedname>TitleScreen::updateAIstartsGame</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>checked</declname>
+        </param>
+        <briefdescription>
+<para>updateAIstartsGame sets the AI starting the first play or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>checked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wether the checkbox is checked or not. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="64" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="47" bodyend="53"/>
+        <references refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" compoundref="_title_screen_8h" startline="37">options_</references>
+        <referencedby refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" compoundref="_title_screen_8cpp" startline="12" endline="21">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_title_screen_1a60d1e875593a02a6ee01508235680a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::updateMiniMaxDepth</definition>
+        <argsstring>(int depth)</argsstring>
+        <name>updateMiniMaxDepth</name>
+        <qualifiedname>TitleScreen::updateMiniMaxDepth</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+<para>updateMiniMaxDepth sets the value of the depth cutoff for the minimax algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the depth cutoff for the minimax algorithm. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="69" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="55" bodyend="59"/>
+        <references refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" compoundref="_title_screen_8h" startline="37">options_</references>
+        <references refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" compoundref="_title_screen_8h" startline="29">ui</references>
+        <referencedby refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" compoundref="_title_screen_8cpp" startline="12" endline="21">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_title_screen_1ac55c2f2485f58d3b7b389e7414a358d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::startGame</definition>
+        <argsstring>()</argsstring>
+        <name>startGame</name>
+        <qualifiedname>TitleScreen::startGame</qualifiedname>
+        <briefdescription>
+<para>startGame hides the title screen and creates a Tic tac toe controller to start a game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="73" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp" bodystart="61" bodyend="75"/>
+        <references refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" compoundref="_title_screen_8h" startline="37">options_</references>
+        <referencedby refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" compoundref="_title_screen_8cpp" startline="12" endline="21">setConnections</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_title_screen_1a8d6e439797b80238c95602359ba029bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TitleScreen::exited</definition>
+        <argsstring>()</argsstring>
+        <name>exited</name>
+        <qualifiedname>TitleScreen::exited</qualifiedname>
+        <briefdescription>
+<para>exited is emitted to manually handle the close functionality. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="80" column="10"/>
+        <referencedby refid="class_title_screen_1a06e835ca83c6ead23fa0f24833ec76b9" compoundref="_title_screen_8cpp" startline="77" endline="81">closeEvent</referencedby>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="6" endline="18">main</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_title_screen" kindref="compound">TitleScreen</ref> class is responsible for the GUI of the title screen, its main functionality is to gather game options set by the user, then starting a game by creating a Tic Tac Toe controller with the user options. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>TitleScreen</label>
+        <link refid="class_title_screen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="3">
+        <label>TTTOptions</label>
+        <link refid="struct_t_t_t_options"/>
+      </node>
+      <node id="1">
+        <label>TitleScreen</label>
+        <link refid="class_title_screen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>options_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" line="14" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h" bodystart="15" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_title_screen_1a06e835ca83c6ead23fa0f24833ec76b9" prot="private" virt="non-virtual"><scope>TitleScreen</scope><name>closeEvent</name></member>
+      <member refid="class_title_screen_1a8d6e439797b80238c95602359ba029bd" prot="public" virt="non-virtual"><scope>TitleScreen</scope><name>exited</name></member>
+      <member refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" prot="private" virt="non-virtual"><scope>TitleScreen</scope><name>options_</name></member>
+      <member refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" prot="private" virt="non-virtual"><scope>TitleScreen</scope><name>setConnections</name></member>
+      <member refid="class_title_screen_1ac55c2f2485f58d3b7b389e7414a358d6" prot="public" virt="non-virtual"><scope>TitleScreen</scope><name>startGame</name></member>
+      <member refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" prot="public" virt="non-virtual"><scope>TitleScreen</scope><name>TitleScreen</name></member>
+      <member refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" prot="private" virt="non-virtual"><scope>TitleScreen</scope><name>ui</name></member>
+      <member refid="class_title_screen_1a2cb34f420ea007de5bec91a91b6f2abe" prot="public" virt="non-virtual"><scope>TitleScreen</scope><name>updateAIstartsGame</name></member>
+      <member refid="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" prot="public" virt="non-virtual"><scope>TitleScreen</scope><name>updateBoardSize</name></member>
+      <member refid="class_title_screen_1a60d1e875593a02a6ee01508235680a47" prot="public" virt="non-virtual"><scope>TitleScreen</scope><name>updateMiniMaxDepth</name></member>
+      <member refid="class_title_screen_1af028098c1b235b3da76941c83776de20" prot="public" virt="non-virtual"><scope>TitleScreen</scope><name>updateSinglePlayer</name></member>
+      <member refid="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" prot="public" virt="non-virtual"><scope>TitleScreen</scope><name>updateTwoPlayers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

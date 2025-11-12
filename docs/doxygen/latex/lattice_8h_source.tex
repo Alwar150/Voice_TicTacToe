@@ -1,0 +1,189 @@
+\doxysection{lattice.\+h}
+\hypertarget{lattice_8h_source}{}\label{lattice_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/lattice.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/lattice.h}}
+\mbox{\hyperlink{lattice_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/\ c-\/basic-\/offset:\ 4;\ indent-\/tabs-\/mode:\ nil\ -\/*-\/\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ ====================================================================}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2008\ Carnegie\ Mellon\ University.\ \ All\ rights}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ reserved.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Redistribution\ and\ use\ in\ source\ and\ binary\ forms,\ with\ or\ without}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ modification,\ are\ permitted\ provided\ that\ the\ following\ conditions}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ are\ met:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ 1.\ Redistributions\ of\ source\ code\ must\ retain\ the\ above\ copyright}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer.\ }}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ 2.\ Redistributions\ in\ binary\ form\ must\ reproduce\ the\ above\ copyright}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer\ in}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ \ \ the\ documentation\ and/or\ other\ materials\ provided\ with\ the}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ \ \ distribution.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ This\ work\ was\ supported\ in\ part\ by\ funding\ from\ the\ Defense\ Advanced\ }}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ Research\ Projects\ Agency\ and\ the\ National\ Science\ Foundation\ of\ the\ }}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ United\ States\ of\ America,\ and\ the\ CMU\ Sphinx\ Speech\ Consortium.}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ PROVIDED\ BY\ CARNEGIE\ MELLON\ UNIVERSITY\ \`{}\`{}AS\ IS''\ AND\ }}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ ANY\ EXPRESSED\ OR\ IMPLIED\ WARRANTIES,\ INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ }}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY\ AND\ FITNESS\ FOR\ A\ PARTICULAR}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ PURPOSE\ ARE\ DISCLAIMED.\ \ IN\ NO\ EVENT\ SHALL\ CARNEGIE\ MELLON\ UNIVERSITY}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ NOR\ ITS\ EMPLOYEES\ BE\ LIABLE\ FOR\ ANY\ DIRECT,\ INDIRECT,\ INCIDENTAL,}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ SPECIAL,\ EXEMPLARY,\ OR\ CONSEQUENTIAL\ DAMAGES\ (INCLUDING,\ BUT\ NOT\ }}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ LIMITED\ TO,\ PROCUREMENT\ OF\ SUBSTITUTE\ GOODS\ OR\ SERVICES;\ LOSS\ OF\ USE,\ }}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ DATA,\ OR\ PROFITS;\ OR\ BUSINESS\ INTERRUPTION)\ HOWEVER\ CAUSED\ AND\ ON\ ANY\ }}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ THEORY\ OF\ LIABILITY,\ WHETHER\ IN\ CONTRACT,\ STRICT\ LIABILITY,\ OR\ TORT\ }}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ (INCLUDING\ NEGLIGENCE\ OR\ OTHERWISE)\ ARISING\ IN\ ANY\ WAY\ OUT\ OF\ THE\ USE\ }}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ OF\ THIS\ SOFTWARE,\ EVEN\ IF\ ADVISED\ OF\ THE\ POSSIBILITY\ OF\ SUCH\ DAMAGE.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ ====================================================================}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#ifndef\ \_\_PS\_LATTICE\_H\_\_}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ \_\_PS\_LATTICE\_H\_\_}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prim__type_8h}{pocketsphinx/prim\_type.h}}>}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{model_8h}{pocketsphinx/model.h}}>}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{export_8h}{pocketsphinx/export.h}}>}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00054\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#if\ 0}}
+\DoxyCodeLine{00057\ \}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_lattice\_s\ \mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_latnode\_s\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_latnode\_s\ \mbox{\hyperlink{structps__latnode__iter__t}{ps\_latnode\_iter\_t}};\ \textcolor{comment}{/*\ pay\ no\ attention\ to\ the\ man\ behind\ the\ curtain\ */}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_latlink\_s\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }latlink\_list\_s\ \mbox{\hyperlink{structps__latlink__iter__t}{ps\_latlink\_iter\_t}};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{comment}{/*\ Forward\ declaration\ needed\ to\ avoid\ circular\ includes\ */}}
+\DoxyCodeLine{00097\ \textcolor{keyword}{struct\ }ps\_decoder\_s;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00107\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00108\ \mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *\mbox{\hyperlink{structps__lattice__t_a6edc5631b7d5ab3f54747293f9bef3e3}{ps\_lattice\_read}}(\textcolor{keyword}{struct}\ ps\_decoder\_s\ *ps,}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *file);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00121\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00122\ \mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *\mbox{\hyperlink{structps__lattice__t_ad7c9aba902d61bb81bab1df2c437c305}{ps\_lattice\_retain}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00130\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00131\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__lattice__t_a3f90e846bde47cd1acdff165b92f5c22}{ps\_lattice\_free}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00139\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__lattice__t_a3f2e2b88d0aa80346cc64d2b7934b863}{ps\_lattice\_write}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *filename);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00148\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00149\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__lattice__t_aefd25c0f49a0d70f999187a26fa2ff06}{ps\_lattice\_write\_htk}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *filename);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00160\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00161\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *\mbox{\hyperlink{structps__lattice__t_a2ec403afeb085ce901a4a2b2a0830991}{ps\_lattice\_get\_logmath}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00174\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00175\ \mbox{\hyperlink{structps__latnode__iter__t}{ps\_latnode\_iter\_t}}\ *\mbox{\hyperlink{structps__lattice__t_aefc403a8d205927a02d9436417e0caa5}{ps\_latnode\_iter}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag);}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00183\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00184\ \mbox{\hyperlink{structps__latnode__iter__t}{ps\_latnode\_iter\_t}}\ *\mbox{\hyperlink{structps__latnode__iter__t_a6b62626b9613fe78a1b74a9b8e969c33}{ps\_latnode\_iter\_next}}(\mbox{\hyperlink{structps__latnode__iter__t}{ps\_latnode\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00191\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00192\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structps__latnode__iter__t_ae9a6464b83d37bfa2ce570206eff6aad}{ps\_latnode\_iter\_free}}(\mbox{\hyperlink{structps__latnode__iter__t}{ps\_latnode\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00198\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00199\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *\mbox{\hyperlink{structps__latnode__iter__t_a36ccc88328881079f3fe511c993072b0}{ps\_latnode\_iter\_node}}(\mbox{\hyperlink{structps__latnode__iter__t}{ps\_latnode\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00210\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00211\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__latnode__iter__t_a42bd0fbfe8b0cab1a9a7e799a3fc30a2}{ps\_latnode\_times}}(\mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *node,\ \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}}\ *out\_fef,\ \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}}\ *out\_lef);}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00221\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00222\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structps__latnode__t_ab814f0cb275ebf52084dd99d97d3b3f2}{ps\_latnode\_word}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *node);}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00232\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00233\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structps__latnode__t_aff875c8ce337b06966328e16f7b8e037}{ps\_latnode\_baseword}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *node);}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00242\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00243\ \mbox{\hyperlink{structps__latlink__iter__t}{ps\_latlink\_iter\_t}}\ *\mbox{\hyperlink{structps__latnode__t_aa040d46f234f443d43a70a749e1ee65a}{ps\_latnode\_exits}}(\mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *node);}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00252\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00253\ \mbox{\hyperlink{structps__latlink__iter__t}{ps\_latlink\_iter\_t}}\ *\mbox{\hyperlink{structps__latnode__t_ac8cfa1412f450f3895fd316bb179e20b}{ps\_latnode\_entries}}(\mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *node);}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00267\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00268\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structps__latnode__t_a68253946c2405d7f9090de7530f33b9d}{ps\_latnode\_prob}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *node,}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ **out\_link);}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00278\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00279\ \mbox{\hyperlink{structps__latlink__iter__t}{ps\_latlink\_iter\_t}}\ *\mbox{\hyperlink{structps__latlink__iter__t_a355b571d5eb906b7f58f41e168af46ba}{ps\_latlink\_iter\_next}}(\mbox{\hyperlink{structps__latlink__iter__t}{ps\_latlink\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00286\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00287\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structps__latlink__iter__t_aa19aaa4a38a922ff28fe071f69b8272d}{ps\_latlink\_iter\_free}}(\mbox{\hyperlink{structps__latlink__iter__t}{ps\_latlink\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00293\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00294\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *\mbox{\hyperlink{structps__latlink__iter__t_a71a92726c7e3bac137efbae29e4c5c8a}{ps\_latlink\_iter\_link}}(\mbox{\hyperlink{structps__latlink__iter__t}{ps\_latlink\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00307\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00308\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__latlink__t_aef48bb18865b449e69316ed5959eae9f}{ps\_latlink\_times}}(\mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *link,\ \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}}\ *out\_sf);}
+\DoxyCodeLine{00309\ }
+\DoxyCodeLine{00318\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00319\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *\mbox{\hyperlink{structps__latlink__t_aef7c4a325a805e5914fcc24124c0d7bb}{ps\_latlink\_nodes}}(\mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *link,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ **out\_src);}
+\DoxyCodeLine{00320\ }
+\DoxyCodeLine{00329\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00330\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structps__latlink__t_a9fb8666c37b6c39363169c9755c84ce8}{ps\_latlink\_word}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *link);}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00340\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00341\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structps__latlink__t_aa8711fa5446ebbac4755300ea83d6f1e}{ps\_latlink\_baseword}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *link);}
+\DoxyCodeLine{00342\ }
+\DoxyCodeLine{00350\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00351\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *\mbox{\hyperlink{structps__latlink__t_a256bf4ecd5074ded5f63806baca67bbe}{ps\_latlink\_pred}}(\mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *link);}
+\DoxyCodeLine{00352\ }
+\DoxyCodeLine{00364\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00365\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structps__latlink__t_aa393fbcf215acc8116e18aac2847cc59}{ps\_latlink\_prob}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *link,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *out\_ascr);}
+\DoxyCodeLine{00366\ }
+\DoxyCodeLine{00373\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00374\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structps__lattice__t_a4aaae70904361b23a78cdcb632c298c4}{ps\_lattice\_link}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *from,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *to,}
+\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ score,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ ef);}
+\DoxyCodeLine{00376\ }
+\DoxyCodeLine{00393\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00394\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *\mbox{\hyperlink{structps__lattice__t_a0b6d58c7646f20a078aa0f7d5029e67f}{ps\_lattice\_traverse\_edges}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *start,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *end);}
+\DoxyCodeLine{00395\ }
+\DoxyCodeLine{00404\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00405\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *\mbox{\hyperlink{structps__lattice__t_ae7a2a8d13f30836c34246cc6e8108115}{ps\_lattice\_traverse\_next}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *end);}
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00418\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00419\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *\mbox{\hyperlink{structps__lattice__t_a5b41fb328ee88d7f8de274b217c97451}{ps\_lattice\_reverse\_edges}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *start,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *end);}
+\DoxyCodeLine{00420\ }
+\DoxyCodeLine{00429\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00430\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *\mbox{\hyperlink{structps__lattice__t_ad85dcdee93cc3eb067051202d9563a9e}{ps\_lattice\_reverse\_next}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structps__latnode__t}{ps\_latnode\_t}}\ *start);}
+\DoxyCodeLine{00431\ }
+\DoxyCodeLine{00441\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00442\ \mbox{\hyperlink{structps__latlink__t}{ps\_latlink\_t}}\ *\mbox{\hyperlink{structps__lattice__t_afc5aee64d40f8b9349f2125ed0096396}{ps\_lattice\_bestpath}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *lmset,}
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ lwf,\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ ascale);}
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00453\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00454\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structps__lattice__t_a8c5c6ef260ab006099ab34d09b5b1d06}{ps\_lattice\_posterior}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *lmset,}
+\DoxyCodeLine{00455\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ ascale);}
+\DoxyCodeLine{00456\ }
+\DoxyCodeLine{00469\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00470\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structps__lattice__t_a30d83a5fd158d2acaa5107be7a09ed09}{ps\_lattice\_posterior\_prune}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ beam);}
+\DoxyCodeLine{00471\ }
+\DoxyCodeLine{00472\ \textcolor{preprocessor}{\#ifdef\ NOT\_IMPLEMENTED\_YET}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00479\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00480\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ ps\_lattice\_ngram\_expand(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag,\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *lm);}
+\DoxyCodeLine{00481\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00482\ }
+\DoxyCodeLine{00490\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00491\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__lattice__t_a44a196a35a8aeb044251c6c152034c90}{ps\_lattice\_n\_frames}}(\mbox{\hyperlink{structps__lattice__t}{ps\_lattice\_t}}\ *dag);}
+\DoxyCodeLine{00492\ }
+\DoxyCodeLine{00493\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00494\ \}}
+\DoxyCodeLine{00495\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00496\ }
+\DoxyCodeLine{00497\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_PS\_LATTICE\_H\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

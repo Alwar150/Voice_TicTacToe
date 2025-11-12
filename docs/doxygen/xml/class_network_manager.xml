@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_network_manager" kind="class" language="C++" prot="public">
+    <compoundname>NetworkManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="_network_manager_8h" local="no">NetworkManager.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" prot="private" static="no" mutable="no">
+        <type>QTcpSocket *</type>
+        <definition>QTcpSocket* NetworkManager::socket_</definition>
+        <argsstring></argsstring>
+        <name>socket_</name>
+        <qualifiedname>NetworkManager::socket_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="31" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_network_manager_1ae5e79e2a2a383d9b63169b38444152cc" compoundref="_network_manager_8cpp" startline="13" endline="17">connectToServer</referencedby>
+        <referencedby refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="_network_manager_8cpp" startline="4" endline="11">NetworkManager</referencedby>
+        <referencedby refid="class_network_manager_1a102d12758db0f241cff62e14c1e12baa" compoundref="_network_manager_8cpp" startline="42" endline="46">onError</referencedby>
+        <referencedby refid="class_network_manager_1a2459cd9d2ab2defef9af5d6b902cc8f5" compoundref="_network_manager_8cpp" startline="48" endline="54">onSocketReadyRead</referencedby>
+        <referencedby refid="class_network_manager_1a1733d9420c11080527bb32edaa1bae14" compoundref="_network_manager_8cpp" startline="19" endline="28">sendMessage</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NetworkManager::NetworkManager</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>NetworkManager</name>
+        <qualifiedname>NetworkManager::NetworkManager</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="13" column="14" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp" bodystart="4" bodyend="11"/>
+        <references refid="class_network_manager_1a58117c282e533ceff2ebab1a6d459699" compoundref="_network_manager_8cpp" startline="30" endline="34">onConnected</references>
+        <references refid="class_network_manager_1a0028518c2761defad4d923b42493463b" compoundref="_network_manager_8cpp" startline="36" endline="40">onDisconnected</references>
+        <references refid="class_network_manager_1a102d12758db0f241cff62e14c1e12baa" compoundref="_network_manager_8cpp" startline="42" endline="46">onError</references>
+        <references refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" compoundref="_t_t_t_controller_8cpp" startline="188" endline="230">TTTController::onSocketReadyRead</references>
+        <references refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="_network_manager_8h" startline="31">socket_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_1ae5e79e2a2a383d9b63169b38444152cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::connectToServer</definition>
+        <argsstring>(const QString &amp;ip, quint16 port)</argsstring>
+        <name>connectToServer</name>
+        <qualifiedname>NetworkManager::connectToServer</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>quint16</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="15" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp" bodystart="13" bodyend="17"/>
+        <references refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="_network_manager_8h" startline="31">socket_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_network_manager_1a1733d9420c11080527bb32edaa1bae14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::sendMessage</definition>
+        <argsstring>(const QString &amp;message)</argsstring>
+        <name>sendMessage</name>
+        <qualifiedname>NetworkManager::sendMessage</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="16" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp" bodystart="19" bodyend="28"/>
+        <references refid="class_network_manager_1a03c54af7cc88df99a5c4dd916002554c">errorOccurred</references>
+        <references refid="class_network_manager_1a8c9f27ead277af0afc322b551a40acb7">messageSent</references>
+        <references refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="_network_manager_8h" startline="31">socket_</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_network_manager_1aa2d7233230f2d609c31d9fd064c2f461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::connected</definition>
+        <argsstring>()</argsstring>
+        <name>connected</name>
+        <qualifiedname>NetworkManager::connected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="19" column="10"/>
+        <referencedby refid="class_network_manager_1a58117c282e533ceff2ebab1a6d459699" compoundref="_network_manager_8cpp" startline="30" endline="34">onConnected</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="class_network_manager_1a3c9d18963e77a155faf338b86927e2e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::disconnected</definition>
+        <argsstring>()</argsstring>
+        <name>disconnected</name>
+        <qualifiedname>NetworkManager::disconnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="20" column="10"/>
+        <referencedby refid="class_network_manager_1a0028518c2761defad4d923b42493463b" compoundref="_network_manager_8cpp" startline="36" endline="40">onDisconnected</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="class_network_manager_1a03c54af7cc88df99a5c4dd916002554c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::errorOccurred</definition>
+        <argsstring>(const QString &amp;error)</argsstring>
+        <name>errorOccurred</name>
+        <qualifiedname>NetworkManager::errorOccurred</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="21" column="10"/>
+        <referencedby refid="class_network_manager_1a102d12758db0f241cff62e14c1e12baa" compoundref="_network_manager_8cpp" startline="42" endline="46">onError</referencedby>
+        <referencedby refid="class_network_manager_1a1733d9420c11080527bb32edaa1bae14" compoundref="_network_manager_8cpp" startline="19" endline="28">sendMessage</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="class_network_manager_1a8c9f27ead277af0afc322b551a40acb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::messageSent</definition>
+        <argsstring>(const QString &amp;message)</argsstring>
+        <name>messageSent</name>
+        <qualifiedname>NetworkManager::messageSent</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="22" column="10"/>
+        <referencedby refid="class_network_manager_1a1733d9420c11080527bb32edaa1bae14" compoundref="_network_manager_8cpp" startline="19" endline="28">sendMessage</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_network_manager_1a58117c282e533ceff2ebab1a6d459699" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::onConnected</definition>
+        <argsstring>()</argsstring>
+        <name>onConnected</name>
+        <qualifiedname>NetworkManager::onConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="25" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp" bodystart="30" bodyend="34"/>
+        <references refid="class_network_manager_1aa2d7233230f2d609c31d9fd064c2f461">connected</references>
+        <referencedby refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="_network_manager_8cpp" startline="4" endline="11">NetworkManager</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_network_manager_1a0028518c2761defad4d923b42493463b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::onDisconnected</definition>
+        <argsstring>()</argsstring>
+        <name>onDisconnected</name>
+        <qualifiedname>NetworkManager::onDisconnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="26" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp" bodystart="36" bodyend="40"/>
+        <references refid="class_network_manager_1a3c9d18963e77a155faf338b86927e2e5">disconnected</references>
+        <referencedby refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="_network_manager_8cpp" startline="4" endline="11">NetworkManager</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_network_manager_1a102d12758db0f241cff62e14c1e12baa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::onError</definition>
+        <argsstring>(QAbstractSocket::SocketError socketError)</argsstring>
+        <name>onError</name>
+        <qualifiedname>NetworkManager::onError</qualifiedname>
+        <param>
+          <type>QAbstractSocket::SocketError</type>
+          <declname>socketError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="27" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp" bodystart="42" bodyend="46"/>
+        <references refid="class_network_manager_1a03c54af7cc88df99a5c4dd916002554c">errorOccurred</references>
+        <references refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="_network_manager_8h" startline="31">socket_</references>
+        <referencedby refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="_network_manager_8cpp" startline="4" endline="11">NetworkManager</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_network_manager_1a2459cd9d2ab2defef9af5d6b902cc8f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::onSocketReadyRead</definition>
+        <argsstring>()</argsstring>
+        <name>onSocketReadyRead</name>
+        <qualifiedname>NetworkManager::onSocketReadyRead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="28" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp" bodystart="48" bodyend="54"/>
+        <references refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="_network_manager_8h" startline="31">socket_</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>NetworkManager</label>
+        <link refid="class_network_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>NetworkManager</label>
+        <link refid="class_network_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" line="8" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h" bodystart="9" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_network_manager_1aa2d7233230f2d609c31d9fd064c2f461" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>connected</name></member>
+      <member refid="class_network_manager_1ae5e79e2a2a383d9b63169b38444152cc" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>connectToServer</name></member>
+      <member refid="class_network_manager_1a3c9d18963e77a155faf338b86927e2e5" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>disconnected</name></member>
+      <member refid="class_network_manager_1a03c54af7cc88df99a5c4dd916002554c" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>errorOccurred</name></member>
+      <member refid="class_network_manager_1a8c9f27ead277af0afc322b551a40acb7" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>messageSent</name></member>
+      <member refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>NetworkManager</name></member>
+      <member refid="class_network_manager_1a58117c282e533ceff2ebab1a6d459699" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>onConnected</name></member>
+      <member refid="class_network_manager_1a0028518c2761defad4d923b42493463b" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>onDisconnected</name></member>
+      <member refid="class_network_manager_1a102d12758db0f241cff62e14c1e12baa" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>onError</name></member>
+      <member refid="class_network_manager_1a2459cd9d2ab2defef9af5d6b902cc8f5" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>onSocketReadyRead</name></member>
+      <member refid="class_network_manager_1a1733d9420c11080527bb32edaa1bae14" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>sendMessage</name></member>
+      <member refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>socket_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

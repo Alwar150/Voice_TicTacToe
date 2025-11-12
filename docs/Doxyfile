@@ -1,0 +1,42 @@
+REFERENCES_RELATION = YES
+REFERENCED_BY_RELATION = YES
+
+# ===========================================================================
+# DOXYFILE CONFIGURACIÓN PARA VOICE_TICTACTOE
+# ===========================================================================
+
+# --- Información del proyecto ---
+PROJECT_NAME           = "Voice TicTacToe"
+PROJECT_BRIEF          = "Juego de tres en raya controlado por voz (Qt + IA)"
+
+# --- Entradas ---
+# Carpeta donde está tu código fuente
+INPUT                  = ../Qt-Tic-Tac-Toe-master
+FILE_PATTERNS          = *.cpp *.h
+RECURSIVE              = YES
+
+# --- Salida ---
+OUTPUT_DIRECTORY       = ./doxygen
+GENERATE_HTML          = NO
+GENERATE_XML           = YES
+XML_OUTPUT             = xml
+XML_PROGRAMLISTING     = YES
+
+# --- Extracción de documentación ---
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# --- Etiquetas personalizadas para DevLog ---
+ALIASES                += "devitem="\\par devitem^^\\n""
+ALIASES                += "rationale="\\par rationale^^\\n""
+ALIASES                += "status="\\par status^^\\n""
+ALIASES                += "related="\\par related^^\\n""
+ALIASES                += "owner="\\par owner^^\\n""
+
+# --- Manejo de advertencias ---
+QUIET                  = NO
+WARN_IF_UNDOCUMENTED   = NO
+
+# --- Opcional: excluir binarios o temporales ---
+EXCLUDE_PATTERNS       = */build/* */cmake-build* */out/*

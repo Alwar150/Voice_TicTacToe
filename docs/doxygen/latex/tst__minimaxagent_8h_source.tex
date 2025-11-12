@@ -1,0 +1,276 @@
+\doxysection{tst\+\_\+minimaxagent.\+h}
+\hypertarget{tst__minimaxagent_8h_source}{}\label{tst__minimaxagent_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/TicTacToeTest/tst\_minimaxagent.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/TicTacToeTest/tst\_minimaxagent.h}}
+\mbox{\hyperlink{tst__minimaxagent_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TST\_MINIMAXAGENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TST\_MINIMAXAGENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TST\_MINIMAXAGENT\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <gmock/gmock-\/matchers.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_board_8h}{Board.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mini_max_agent_8h}{MiniMaxAgent.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }testing;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \mbox{\hyperlink{tst__minimaxagent_8h_af7058d3c7505db3452d4c7025fe11d82}{TEST}}(MiniMaxAgentTest,\ PlayerStartAIWin)}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_board}{Board}}\ board(3);}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_mini_max_agent}{MiniMaxAgent}}\ ai(9,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}},\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00018\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00019\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00022\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00023\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00026\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00027\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ O}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ X\ -\/}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ \ \ *\ O\ O\ -\/\ */}}
+\DoxyCodeLine{00032\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00033\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97}{BoardState::OWins}},\ board.\mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluateBoard}}());}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ board.\mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00038\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00039\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00042\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00043\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00046\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00047\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ O}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ O\ X}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ X\ O\ */}}
+\DoxyCodeLine{00052\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00053\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97}{BoardState::OWins}},\ board.\mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluateBoard}}());}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ board.\mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00059\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00060\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00063\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00064\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00067\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00068\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ O}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ O\ -\/}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ \ \ \ \ *\ X\ X\ O\ */}}
+\DoxyCodeLine{00073\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00074\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97}{BoardState::OWins}},\ board.\mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluateBoard}}());}
+\DoxyCodeLine{00075\ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \mbox{\hyperlink{tst__minimaxagent_8h_af7058d3c7505db3452d4c7025fe11d82}{TEST}}(MiniMaxAgentTest,\ AIStartAIWin)}
+\DoxyCodeLine{00078\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_board}{Board}}\ board(3);}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{class_mini_max_agent}{MiniMaxAgent}}\ ai(9,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}},\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00083\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00084\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00087\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00088\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00091\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00092\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ O}}
+\DoxyCodeLine{00095\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ X\ -\/}}
+\DoxyCodeLine{00096\ \textcolor{comment}{\ \ \ \ \ *\ O\ O\ -\/\ */}}
+\DoxyCodeLine{00097\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00098\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed}{BoardState::XWins}},\ board.\mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluateBoard}}());}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ board.\mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00103\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00104\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00107\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00108\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00111\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00112\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ O}}
+\DoxyCodeLine{00115\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ O\ -\/}}
+\DoxyCodeLine{00116\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ X\ O\ */}}
+\DoxyCodeLine{00117\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00118\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed}{BoardState::XWins}},\ board.\mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluateBoard}}());}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ board.\mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00124\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00125\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00128\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00129\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00132\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00133\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ O}}
+\DoxyCodeLine{00136\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ O\ O}}
+\DoxyCodeLine{00137\ \textcolor{comment}{\ \ \ \ \ *\ X\ X\ O\ */}}
+\DoxyCodeLine{00138\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00139\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed}{BoardState::XWins}},\ board.\mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluateBoard}}());}
+\DoxyCodeLine{00140\ \}}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \mbox{\hyperlink{tst__minimaxagent_8h_af7058d3c7505db3452d4c7025fe11d82}{TEST}}(MiniMaxAgentTest,\ PlayerStartAIBlock)}
+\DoxyCodeLine{00143\ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \mbox{\hyperlink{class_board}{Board}}\ board(3);}
+\DoxyCodeLine{00145\ \ \ \ \ \mbox{\hyperlink{class_mini_max_agent}{MiniMaxAgent}}\ ai(9,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}},\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00148\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00149\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00152\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00153\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00156\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00157\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ O}}
+\DoxyCodeLine{00160\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ X\ -\/}}
+\DoxyCodeLine{00161\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ O\ -\/\ */}}
+\DoxyCodeLine{00162\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00163\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}},\ board.\mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}}(2,\ 2));}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ board.\mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00168\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00169\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00172\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00173\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00176\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00177\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ -\/}}
+\DoxyCodeLine{00180\ \textcolor{comment}{\ \ \ \ \ *\ O\ O\ X}}
+\DoxyCodeLine{00181\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ X\ O\ */}}
+\DoxyCodeLine{00182\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00183\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}},\ board.\mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}}(0,\ 2));}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ board.\mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00189\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00190\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00193\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00194\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00197\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00198\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{comment}{/*\ X\ -\/\ -\/}}
+\DoxyCodeLine{00201\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ O\ -\/}}
+\DoxyCodeLine{00202\ \textcolor{comment}{\ \ \ \ \ *\ X\ -\/\ O\ */}}
+\DoxyCodeLine{00203\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00204\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}},\ board.\mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}}(1,\ 0));}
+\DoxyCodeLine{00205\ \}}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ \mbox{\hyperlink{tst__minimaxagent_8h_af7058d3c7505db3452d4c7025fe11d82}{TEST}}(MiniMaxAgentTest,\ AIStartAIBlock)}
+\DoxyCodeLine{00208\ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \mbox{\hyperlink{class_board}{Board}}\ board(3);}
+\DoxyCodeLine{00210\ \ \ \ \ \mbox{\hyperlink{class_mini_max_agent}{MiniMaxAgent}}\ ai(9,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}},\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00213\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00214\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00217\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00218\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00221\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00222\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{comment}{/*\ X\ X\ O}}
+\DoxyCodeLine{00225\ \textcolor{comment}{\ \ \ \ \ *\ X\ -\/\ -\/}}
+\DoxyCodeLine{00226\ \textcolor{comment}{\ \ \ \ \ *\ O\ O\ -\/\ */}}
+\DoxyCodeLine{00227\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00228\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}},\ board.\mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}}(1,\ 1));}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \ \ \ \ board.\mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00233\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00234\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00237\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00238\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00240\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00241\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00242\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{comment}{/*\ -\/\ X\ O}}
+\DoxyCodeLine{00245\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ -\/\ -\/}}
+\DoxyCodeLine{00246\ \textcolor{comment}{\ \ \ \ \ *\ X\ -\/\ O\ */}}
+\DoxyCodeLine{00247\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00248\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}},\ board.\mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}}(1,\ 2));}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \ \ \ \ board.\mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00254\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00255\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(0,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00258\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00259\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(1,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}});}
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00261\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 0,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00262\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 1,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}});}
+\DoxyCodeLine{00263\ \ \ \ \ board.\mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(2,\ 2,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}});}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \ \ \ \ \textcolor{comment}{/*\ X\ -\/\ -\/}}
+\DoxyCodeLine{00266\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ O\ O}}
+\DoxyCodeLine{00267\ \textcolor{comment}{\ \ \ \ \ *\ -\/\ X\ -\/\ */}}
+\DoxyCodeLine{00268\ \ \ \ \ ai.\mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}}(board);}
+\DoxyCodeLine{00269\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}},\ board.\mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}}(1,\ 0));}
+\DoxyCodeLine{00270\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_human_player" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>HumanPlayer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Player Q_OBJECT</basecompoundref>
+    <includes refid="_human_player_8h" local="no">HumanPlayer.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_human_player_1a274fc9efd09115ccfa0cfac882e49dce" prot="private" static="no" mutable="no">
+        <type><ref refid="class_speech_manager" kindref="compound">SpeechManager</ref> *</type>
+        <definition>SpeechManager* HumanPlayer::stt_</definition>
+        <argsstring></argsstring>
+        <name>stt_</name>
+        <qualifiedname>HumanPlayer::stt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="23" column="19" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_human_player_1a75e961bdb6f8c7e0fff5f7b01cfc038b" prot="private" static="no" mutable="no">
+        <type>QThread *</type>
+        <definition>QThread* HumanPlayer::sttThread_</definition>
+        <argsstring></argsstring>
+        <name>sttThread_</name>
+        <qualifiedname>HumanPlayer::sttThread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="24" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_human_player_1aa44723a6fb43eb95f764a43d6a7f4d1a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HumanPlayer::HumanPlayer</definition>
+        <argsstring>(QObject &amp;parent=nullptr, const Board &amp;board_ref, BoardMarks playerMark=BoardMarks::Empty) virtual ~HumanPlayer()</argsstring>
+        <name>HumanPlayer</name>
+        <qualifiedname>HumanPlayer::HumanPlayer</qualifiedname>
+        <param>
+          <type>QObject &amp;</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_board" kindref="compound">Board</ref> &amp;</type>
+          <declname>board_ref</declname>
+        </param>
+        <param>
+          <type><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>playerMark</declname>
+          <defval><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">BoardMarks::Empty</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="11" column="14" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" bodystart="11" bodyend="12"/>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" compoundref="_t_t_t_common_types_8h" startline="147">Empty</references>
+        <references refid="class_human_player_1aa44723a6fb43eb95f764a43d6a7f4d1a" compoundref="_human_player_8h" startline="11" endline="12">HumanPlayer</references>
+        <referencedby refid="class_human_player_1aa44723a6fb43eb95f764a43d6a7f4d1a" compoundref="_human_player_8h" startline="11" endline="12">HumanPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_human_player_1ad005d15e0c30f35fd870b25dbde208c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::play</definition>
+        <argsstring>() override</argsstring>
+        <name>play</name>
+        <qualifiedname>HumanPlayer::play</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="13" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_human_player_1a22dec6c1020171eae458f479c6334792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::startListening</definition>
+        <argsstring>()</argsstring>
+        <name>startListening</name>
+        <qualifiedname>HumanPlayer::startListening</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="15" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="class_human_player_1a45a91368ca76a18df8f838297810f4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::stopListening</definition>
+        <argsstring>()</argsstring>
+        <name>stopListening</name>
+        <qualifiedname>HumanPlayer::stopListening</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="16" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_human_player_1ae3be4ef0c7e7d6aaeb150c9ded077683" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::onSpeechRecognized</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>onSpeechRecognized</name>
+        <qualifiedname>HumanPlayer::onSpeechRecognized</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="18" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_human_player_1af30c714ea5f45a8acac300ccc672c87c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int HumanPlayer::parseSpeechCommand</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>parseSpeechCommand</name>
+        <qualifiedname>HumanPlayer::parseSpeechCommand</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="21" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_human_player_1ab915a74ea5785cad0294dc5502acf8cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HumanPlayer::validateCommand</definition>
+        <argsstring>(const QString &amp;command)</argsstring>
+        <name>validateCommand</name>
+        <qualifiedname>HumanPlayer::validateCommand</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="22" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>HumanPlayer</label>
+        <link refid="class_human_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player
+    Q_OBJECT</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>HumanPlayer</label>
+        <link refid="class_human_player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>stt_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player
+    Q_OBJECT</label>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>SpeechManager</label>
+        <link refid="class_speech_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>decoder_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>config_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ep_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ps_config_t</label>
+        <link refid="structps__config__t"/>
+      </node>
+      <node id="5">
+        <label>ps_decoder_t</label>
+        <link refid="structps__decoder__t"/>
+      </node>
+      <node id="7">
+        <label>ps_endpointer_t</label>
+        <link refid="structps__endpointer__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" line="7" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h" bodystart="9" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_human_player_1aa44723a6fb43eb95f764a43d6a7f4d1a" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>HumanPlayer</name></member>
+      <member refid="class_human_player_1ae3be4ef0c7e7d6aaeb150c9ded077683" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>onSpeechRecognized</name></member>
+      <member refid="class_human_player_1af30c714ea5f45a8acac300ccc672c87c" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>parseSpeechCommand</name></member>
+      <member refid="class_human_player_1ad005d15e0c30f35fd870b25dbde208c9" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>play</name></member>
+      <member refid="class_human_player_1a22dec6c1020171eae458f479c6334792" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>startListening</name></member>
+      <member refid="class_human_player_1a45a91368ca76a18df8f838297810f4f6" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>stopListening</name></member>
+      <member refid="class_human_player_1a274fc9efd09115ccfa0cfac882e49dce" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>stt_</name></member>
+      <member refid="class_human_player_1a75e961bdb6f8c7e0fff5f7b01cfc038b" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>sttThread_</name></member>
+      <member refid="class_human_player_1ab915a74ea5785cad0294dc5502acf8cd" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>validateCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,841 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+  <compound refid="class_a_i_agent" kind="class"><name>AIAgent</name>
+    <member refid="class_a_i_agent_1a9c5f515eb3df94792ba02da8ac899cf5" kind="function"><name>AIAgent</name></member>
+    <member refid="class_a_i_agent_1a5614d02341e652bd2df4f3b2fb4d44c3" kind="function"><name>~AIAgent</name></member>
+    <member refid="class_a_i_agent_1ac137ab96f5f7c53e74d4c9c7342021eb" kind="function"><name>play</name></member>
+    <member refid="class_a_i_agent_1ae694da05657ba286840b533523d9c64f" kind="function"><name>reset</name></member>
+  </compound>
+  <compound refid="unionanytype__s" kind="union"><name>anytype_s</name>
+    <member refid="unionanytype__s_1ad06e5319b02ebff60fd00113baad6cf6" kind="variable"><name>ptr</name></member>
+    <member refid="unionanytype__s_1a34ab20b326601115a718ed1ada34640f" kind="variable"><name>i</name></member>
+    <member refid="unionanytype__s_1a702ec3b3f98e1364ce475cd5c0d3b619" kind="variable"><name>ui</name></member>
+    <member refid="unionanytype__s_1aa819b7996e6d9530340be88e0d218590" kind="variable"><name>fl</name></member>
+  </compound>
+  <compound refid="unionanytype__t" kind="union"><name>anytype_t</name>
+  </compound>
+  <compound refid="class_board" kind="class"><name>Board</name>
+    <member refid="class_board_1adfd225a07d805a10bf34c7592218eb70" kind="variable"><name>board_</name></member>
+    <member refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" kind="variable"><name>boardSize_</name></member>
+    <member refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" kind="function"><name>Board</name></member>
+    <member refid="class_board_1acba2cffa38302b3bed1f43d681eefb28" kind="function"><name>Board</name></member>
+    <member refid="class_board_1ac77f209904bb37545295c17649a9dc17" kind="function"><name>Board</name></member>
+    <member refid="class_board_1a644749e247a38adc51e2a42d87fd4e48" kind="function"><name>Board</name></member>
+    <member refid="class_board_1ae4ccc3271e479d7f9284b9567dc4c2a6" kind="function"><name>operator=</name></member>
+    <member refid="class_board_1af73f45730119a1fd8f6670f53f959e68" kind="function"><name>~Board</name></member>
+    <member refid="class_board_1a1b7486c5df3db7e5a1c8ed097492527f" kind="function"><name>evaluateBoard</name></member>
+    <member refid="class_board_1a109cbc4dc8c6c76d05caba0345eedc17" kind="function"><name>setPlayerInput</name></member>
+    <member refid="class_board_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" kind="function"><name>at</name></member>
+    <member refid="class_board_1aaef819a8d1a10c35d9f802195802236e" kind="function"><name>reset</name></member>
+    <member refid="class_board_1addcaa486e1293eebcb323fb936353f43" kind="function"><name>resetCell</name></member>
+    <member refid="class_board_1ad82bf1ecd8b4e65f8c5fd6133e831138" kind="function"><name>size</name></member>
+  </compound>
+  <compound refid="struct_cell" kind="struct"><name>Cell</name>
+    <member refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" kind="variable"><name>cellBtn</name></member>
+    <member refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" kind="variable"><name>row</name></member>
+    <member refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" kind="variable"><name>col</name></member>
+    <member refid="struct_cell_1a5ad411cd7ac4344405a343573684dc14" kind="function"><name>Cell</name></member>
+  </compound>
+  <compound refid="class_config_manager" kind="class"><name>ConfigManager</name>
+    <member refid="class_config_manager_1a9d30f8b6a03a88758b1a27dae2c02458" kind="variable"><name>settings_</name></member>
+    <member refid="class_config_manager_1ab72b9c36d8c92066d54eabae525da210" kind="function"><name>instance</name></member>
+    <member refid="class_config_manager_1a61e0d30507438bdb93773586fd17dcd2" kind="function"><name>load</name></member>
+    <member refid="class_config_manager_1ab0a26220dad8b8b9c29e00ac3e06a455" kind="function"><name>getValue</name></member>
+    <member refid="class_config_manager_1a8fcb73283ae43f36e70ae09990edb315" kind="function"><name>getInt</name></member>
+    <member refid="class_config_manager_1a2fc430f2f48d29787b668e048947a5d3" kind="function"><name>getBool</name></member>
+    <member refid="class_config_manager_1a41931ff9b32816a676885e4c78c3ab83" kind="function"><name>ConfigManager</name></member>
+    <member refid="class_config_manager_1af27fe922a8151eed5b1dc926ddf045b1" kind="function"><name>~ConfigManager</name></member>
+    <member refid="class_config_manager_1a106691c1efb4ec9d6f0688419e455906" kind="function"><name>ConfigManager</name></member>
+    <member refid="class_config_manager_1a0fd5bb24753934f9ec6430ab3bea7fd9" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="structfsg__model__t" kind="struct"><name>fsg_model_t</name>
+    <member refid="structfsg__model__t_1ad86d12c175458f89eadafcbb1cffcfa0" kind="function"><name>jsgf_read_file</name></member>
+    <member refid="structfsg__model__t_1a605c88e824bb9fe9ad20a0aa76f93deb" kind="function"><name>jsgf_read_string</name></member>
+    <member refid="structfsg__model__t_1ae660cd51180526f7f3050fa7413592b6" kind="function"><name>fsg_model_retain</name></member>
+    <member refid="structfsg__model__t_1a1ef2610a66f069de1a150083bd34a540" kind="function"><name>fsg_model_free</name></member>
+    <member refid="structfsg__model__t_1a392a842691581158195e2a3cd5d03a6e" kind="function"><name>fsg_model_readfile</name></member>
+    <member refid="structfsg__model__t_1a6f69628ed178ff0bf6f10fd0e24b0158" kind="function"><name>fsg_model_read</name></member>
+    <member refid="structfsg__model__t_1a6ddaf82f2f00dbf11c8faf28f2d4d71a" kind="function"><name>fsg_model_accept</name></member>
+    <member refid="structfsg__model__t_1a22a8bc6a9385527a8c0cb1bc39afe7b2" kind="function"><name>fsg_model_write</name></member>
+    <member refid="structfsg__model__t_1aae7c2ed126099be78ab9e6d451a5d324" kind="function"><name>fsg_model_writefile</name></member>
+    <member refid="structfsg__model__t_1a64ed5023c8a741daf7a339003b087007" kind="function"><name>fsg_model_write_fsm</name></member>
+    <member refid="structfsg__model__t_1a6c6d82f65a090b66176ba26386d6e6f8" kind="function"><name>fsg_model_writefile_fsm</name></member>
+    <member refid="structfsg__model__t_1ab980ba7d0ca500ec42f77e3ad956a546" kind="function"><name>fsg_model_write_symtab</name></member>
+    <member refid="structfsg__model__t_1a2f075e2fd97cdc5e77ffdbe5e68f5359" kind="function"><name>fsg_model_writefile_symtab</name></member>
+  </compound>
+  <compound refid="class_human_player" kind="class"><name>HumanPlayer</name>
+    <member refid="class_human_player_1a274fc9efd09115ccfa0cfac882e49dce" kind="variable"><name>stt_</name></member>
+    <member refid="class_human_player_1a75e961bdb6f8c7e0fff5f7b01cfc038b" kind="variable"><name>sttThread_</name></member>
+    <member refid="class_human_player_1aa44723a6fb43eb95f764a43d6a7f4d1a" kind="function"><name>HumanPlayer</name></member>
+    <member refid="class_human_player_1ad005d15e0c30f35fd870b25dbde208c9" kind="function"><name>play</name></member>
+    <member refid="class_human_player_1a22dec6c1020171eae458f479c6334792" kind="signal"><name>startListening</name></member>
+    <member refid="class_human_player_1a45a91368ca76a18df8f838297810f4f6" kind="signal"><name>stopListening</name></member>
+    <member refid="class_human_player_1ae3be4ef0c7e7d6aaeb150c9ded077683" kind="slot"><name>onSpeechRecognized</name></member>
+    <member refid="class_human_player_1af30c714ea5f45a8acac300ccc672c87c" kind="function"><name>parseSpeechCommand</name></member>
+    <member refid="class_human_player_1ab915a74ea5785cad0294dc5502acf8cd" kind="function"><name>validateCommand</name></member>
+  </compound>
+  <compound refid="structjsgf__rule__iter__t" kind="struct"><name>jsgf_rule_iter_t</name>
+    <member refid="structjsgf__rule__iter__t_1a1cd6f2f32b5d8760e4e40147b134da6c" kind="function"><name>jsgf_rule_iter_next</name></member>
+    <member refid="structjsgf__rule__iter__t_1abe051dab5b1c6357aae9115d1d704fe5" kind="function"><name>jsgf_rule_iter_rule</name></member>
+    <member refid="structjsgf__rule__iter__t_1ac1b4559a440db063eb21e9d4ade59621" kind="function"><name>jsgf_rule_iter_free</name></member>
+  </compound>
+  <compound refid="structjsgf__rule__t" kind="struct"><name>jsgf_rule_t</name>
+    <member refid="structjsgf__rule__t_1ae28ad8446aa8d384fe82cbbb1910cfe1" kind="function"><name>jsgf_rule_name</name></member>
+    <member refid="structjsgf__rule__t_1ab2abfa878f7efbbc04d562ddb9ce6200" kind="function"><name>jsgf_rule_public</name></member>
+  </compound>
+  <compound refid="structjsgf__t" kind="struct"><name>jsgf_t</name>
+    <member refid="structjsgf__t_1a5988aae174c3ea4a8458c68dd737272e" kind="function"><name>jsgf_parse_file</name></member>
+    <member refid="structjsgf__t_1a2c261446ef7e5eb84b4c0cd7ea403a4c" kind="function"><name>jsgf_parse_string</name></member>
+    <member refid="structjsgf__t_1a81f8acb8b49c1ef7cb695321f5c9b7f5" kind="function"><name>jsgf_grammar_name</name></member>
+    <member refid="structjsgf__t_1ad33f663dddfec516122f2ee0d5c58b89" kind="function"><name>jsgf_grammar_free</name></member>
+    <member refid="structjsgf__t_1ab0bf791d1ae06bf952d30401377767c8" kind="function"><name>jsgf_get_rule</name></member>
+    <member refid="structjsgf__t_1ac4c63ff31f11effef78a867cc61c9937" kind="function"><name>jsgf_get_public_rule</name></member>
+    <member refid="structjsgf__t_1ab78d604e387eb282d66e1017bf2ef718" kind="function"><name>jsgf_rule_iter</name></member>
+    <member refid="structjsgf__t_1a3351602453d463a51eb6e9fa832dc956" kind="function"><name>jsgf_build_fsg</name></member>
+    <member refid="structjsgf__t_1ab31ecf0ecdde813d744f7830f29e58db" kind="function"><name>jsgf_write_fsg</name></member>
+  </compound>
+  <compound refid="structlogadd__s" kind="struct"><name>logadd_s</name>
+    <member refid="structlogadd__s_1a27793577d513d85cd73c2daffc140695" kind="variable"><name>table</name></member>
+    <member refid="structlogadd__s_1a484c53a05b46d863d0456af679cee5d8" kind="variable"><name>table_size</name></member>
+    <member refid="structlogadd__s_1a8e35a353d751d957270baf5192007c3e" kind="variable"><name>width</name></member>
+    <member refid="structlogadd__s_1a4000a49e71ed2c09da4f34cb5ccaed4b" kind="variable"><name>shift</name></member>
+  </compound>
+  <compound refid="structlogadd__t" kind="struct"><name>logadd_t</name>
+  </compound>
+  <compound refid="structlogmath__t" kind="struct"><name>logmath_t</name>
+    <member refid="structlogmath__t_1a67fa75e38e518666547d676b1723be86" kind="function"><name>logmath_init</name></member>
+    <member refid="structlogmath__t_1ad5f25906919e112859a51dec5aa96752" kind="function"><name>logmath_read</name></member>
+    <member refid="structlogmath__t_1a02bcbb922fcbb4983cc003da84f5da6d" kind="function"><name>logmath_write</name></member>
+    <member refid="structlogmath__t_1ae921cd21e0c7c28a5801f5063ddb8228" kind="function"><name>logmath_get_table_shape</name></member>
+    <member refid="structlogmath__t_1a6e619faaacbd3eea427e22b223353754" kind="function"><name>logmath_get_base</name></member>
+    <member refid="structlogmath__t_1aa7188fd7b15e28688d86a368e31df2e0" kind="function"><name>logmath_get_zero</name></member>
+    <member refid="structlogmath__t_1ae484ab0132dc7324ee9927b660ac77d8" kind="function"><name>logmath_get_width</name></member>
+    <member refid="structlogmath__t_1af12b536b7cd046d8c02f98b647e290cd" kind="function"><name>logmath_get_shift</name></member>
+    <member refid="structlogmath__t_1afaa475efd12231945f531fca362d82d9" kind="function"><name>logmath_retain</name></member>
+    <member refid="structlogmath__t_1a178bfdd5bb8c9f8c84e9e5c00cc343a4" kind="function"><name>logmath_free</name></member>
+    <member refid="structlogmath__t_1ab706b56ac49ab2dfa945d2d32758ab55" kind="function"><name>logmath_add_exact</name></member>
+    <member refid="structlogmath__t_1a49c7b087532d7cf136167ad6cf61e4b3" kind="function"><name>logmath_add</name></member>
+    <member refid="structlogmath__t_1a9e3c7cbe0d9b3ba74b7e6965cacd6d5a" kind="function"><name>logmath_log</name></member>
+    <member refid="structlogmath__t_1a439a78b7c6f5821a750574ececc20fae" kind="function"><name>logmath_exp</name></member>
+    <member refid="structlogmath__t_1a66303cb0b91f43452ea500f53ef7eaa5" kind="function"><name>logmath_ln_to_log</name></member>
+    <member refid="structlogmath__t_1abaff7c0ba0976c7cf8f232d8340b7b2f" kind="function"><name>logmath_log_to_ln</name></member>
+    <member refid="structlogmath__t_1abb7027d633f0cabb372504e189e7b4b0" kind="function"><name>logmath_log10_to_log</name></member>
+    <member refid="structlogmath__t_1a9cc2394054dc95d9e94720d036f28a41" kind="function"><name>logmath_log10_to_log_float</name></member>
+    <member refid="structlogmath__t_1ac8fe69a67fcca378b1e5a32428899a23" kind="function"><name>logmath_log_to_log10</name></member>
+    <member refid="structlogmath__t_1a4e596e6d01e92280e0caa24a48727afb" kind="function"><name>logmath_log_float_to_log10</name></member>
+  </compound>
+  <compound refid="class_mini_max_agent" kind="class"><name>MiniMaxAgent</name>
+    <member refid="class_mini_max_agent_1aa1920de5421331a5a88dd55c727ec6fc" kind="variable"><name>depth_</name></member>
+    <member refid="class_mini_max_agent_1a846ab21da7047d2f95b92d355d43c6d3" kind="variable"><name>AImark_</name></member>
+    <member refid="class_mini_max_agent_1a985f5527d35de87b23d9f271faf91c75" kind="variable"><name>playerMark_</name></member>
+    <member refid="class_mini_max_agent_1a1e7fa70e257c4423ab555e04cb7eaa0a" kind="variable"><name>AI_WIN_SCORE</name></member>
+    <member refid="class_mini_max_agent_1a2cbab0bdd892f994f7e3e13d0f4be53d" kind="variable"><name>PLAYER_WIN_SCORE</name></member>
+    <member refid="class_mini_max_agent_1a9ae263accc262d5f9eac741125229f13" kind="variable"><name>TIE_SCORE</name></member>
+    <member refid="class_mini_max_agent_1afb157bc316a81cc03d4096f8febef386" kind="function"><name>MiniMaxAgent</name></member>
+    <member refid="class_mini_max_agent_1a8d0a338b90f9a44c44ccbbad873009a9" kind="function"><name>play</name></member>
+    <member refid="class_mini_max_agent_1a9d99e71c93f92fc3bda35809fa031fd8" kind="function"><name>maxMove</name></member>
+    <member refid="class_mini_max_agent_1a0385ea9e47150171b03dbdfc5b349136" kind="function"><name>minMove</name></member>
+    <member refid="class_mini_max_agent_1a1472ae706782c168d8e1965bac90097b" kind="function"><name>score</name></member>
+  </compound>
+  <compound refid="class_network_manager" kind="class"><name>NetworkManager</name>
+    <member refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" kind="variable"><name>socket_</name></member>
+    <member refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" kind="function"><name>NetworkManager</name></member>
+    <member refid="class_network_manager_1ae5e79e2a2a383d9b63169b38444152cc" kind="function"><name>connectToServer</name></member>
+    <member refid="class_network_manager_1a1733d9420c11080527bb32edaa1bae14" kind="function"><name>sendMessage</name></member>
+    <member refid="class_network_manager_1aa2d7233230f2d609c31d9fd064c2f461" kind="signal"><name>connected</name></member>
+    <member refid="class_network_manager_1a3c9d18963e77a155faf338b86927e2e5" kind="signal"><name>disconnected</name></member>
+    <member refid="class_network_manager_1a03c54af7cc88df99a5c4dd916002554c" kind="signal"><name>errorOccurred</name></member>
+    <member refid="class_network_manager_1a8c9f27ead277af0afc322b551a40acb7" kind="signal"><name>messageSent</name></member>
+    <member refid="class_network_manager_1a58117c282e533ceff2ebab1a6d459699" kind="slot"><name>onConnected</name></member>
+    <member refid="class_network_manager_1a0028518c2761defad4d923b42493463b" kind="slot"><name>onDisconnected</name></member>
+    <member refid="class_network_manager_1a102d12758db0f241cff62e14c1e12baa" kind="slot"><name>onError</name></member>
+    <member refid="class_network_manager_1a2459cd9d2ab2defef9af5d6b902cc8f5" kind="slot"><name>onSocketReadyRead</name></member>
+  </compound>
+  <compound refid="structngram__class__t" kind="struct"><name>ngram_class_t</name>
+  </compound>
+  <compound refid="structngram__iter__t" kind="struct"><name>ngram_iter_t</name>
+    <member refid="structngram__iter__t_1a3d7fe2b1fa4b1d0fe98222f82eb0063c" kind="function"><name>ngram_iter_get</name></member>
+    <member refid="structngram__iter__t_1a95f095adb2dc9ac85393cbb2b2feb9f3" kind="function"><name>ngram_iter_successors</name></member>
+    <member refid="structngram__iter__t_1ac9d66c8e7f546f56dbe7ab2aa4a46174" kind="function"><name>ngram_iter_next</name></member>
+    <member refid="structngram__iter__t_1ac23506fc4549b2226ef32723f6b73c4f" kind="function"><name>ngram_iter_free</name></member>
+  </compound>
+  <compound refid="structngram__model__set__iter__t" kind="struct"><name>ngram_model_set_iter_t</name>
+    <member refid="structngram__model__set__iter__t_1a0b5d514788a89e94a9294444345644fa" kind="function"><name>ngram_model_set_iter_next</name></member>
+    <member refid="structngram__model__set__iter__t_1aaf476373eb2e9c3d6c7efac3a4b1a1b2" kind="function"><name>ngram_model_set_iter_free</name></member>
+    <member refid="structngram__model__set__iter__t_1a969431cd3b760dd3aff5be7bc80eb520" kind="function"><name>ngram_model_set_iter_model</name></member>
+  </compound>
+  <compound refid="structngram__model__t" kind="struct"><name>ngram_model_t</name>
+    <member refid="structngram__model__t_1aeafdc8c1ed78badad4eec401f2be0d52" kind="function"><name>ngram_model_read</name></member>
+    <member refid="structngram__model__t_1ac13ceae0ee6a4e6c681fce688dc8c0d9" kind="function"><name>ngram_model_write</name></member>
+    <member refid="structngram__model__t_1aa393c18a1d74101aa0838777d6206aa4" kind="function"><name>ngram_file_name_to_type</name></member>
+    <member refid="structngram__model__t_1a25e936a2d8018b62a310b1f2dceca893" kind="function"><name>ngram_str_to_type</name></member>
+    <member refid="structngram__model__t_1a707725f9978ab51b42b256a22a0bc893" kind="function"><name>ngram_type_to_str</name></member>
+    <member refid="structngram__model__t_1a8a0b271f1941efd8e8bd3890361e2278" kind="function"><name>ngram_model_retain</name></member>
+    <member refid="structngram__model__t_1a8c2b839ff306dd4f49cb6129d7bd6be2" kind="function"><name>ngram_model_free</name></member>
+    <member refid="structngram__model__t_1a52158fdb753671b7fd02308cb1472927" kind="function"><name>ngram_model_casefold</name></member>
+    <member refid="structngram__model__t_1abde63dcb3313606881368c3b6f9aa239" kind="function"><name>ngram_model_apply_weights</name></member>
+    <member refid="structngram__model__t_1a0257b1cf0fb42820b0d3589ecf7e3fa7" kind="function"><name>ngram_model_get_weights</name></member>
+    <member refid="structngram__model__t_1a570f30bedb4c10ebbc1313e4bdbd33b8" kind="function"><name>ngram_score</name></member>
+    <member refid="structngram__model__t_1a698d9fbc74d3e0aa555e9195d1c3405b" kind="function"><name>ngram_tg_score</name></member>
+    <member refid="structngram__model__t_1aa12e8b5771775ed7b9aabc9eec915293" kind="function"><name>ngram_bg_score</name></member>
+    <member refid="structngram__model__t_1a05a3334a525628d40b3b5230602cb836" kind="function"><name>ngram_ng_score</name></member>
+    <member refid="structngram__model__t_1a23c66f2666439f6408c616d0923b6510" kind="function"><name>ngram_probv</name></member>
+    <member refid="structngram__model__t_1a8df8728f2694b9beb840db4ff1bdea9a" kind="function"><name>ngram_prob</name></member>
+    <member refid="structngram__model__t_1aee36470f55476b5780f8e460d2e12971" kind="function"><name>ngram_ng_prob</name></member>
+    <member refid="structngram__model__t_1afee8cd8b84530cb2f9261d6a0a7e4df7" kind="function"><name>ngram_score_to_prob</name></member>
+    <member refid="structngram__model__t_1a64b4a9be184174ff12093595e4c2138f" kind="function"><name>ngram_wid</name></member>
+    <member refid="structngram__model__t_1af22005a8c3c282a5c3dae7074f0d754a" kind="function"><name>ngram_word</name></member>
+    <member refid="structngram__model__t_1a70334434c7a99094c29faa1ce7bd26e5" kind="function"><name>ngram_unknown_wid</name></member>
+    <member refid="structngram__model__t_1abdbf72c83f8bd56468c13e2b45d578d8" kind="function"><name>ngram_zero</name></member>
+    <member refid="structngram__model__t_1a670cd1630fd4920c0c6db89c1eb7ee51" kind="function"><name>ngram_model_get_size</name></member>
+    <member refid="structngram__model__t_1a5c0c579caa4f3a1652bb2a0d62b5e9b6" kind="function"><name>ngram_model_get_counts</name></member>
+    <member refid="structngram__model__t_1a3514a603036a7b9adc210e6b7980f02c" kind="function"><name>ngram_model_mgrams</name></member>
+    <member refid="structngram__model__t_1ab276f12c7f17b5f0505ed2317fe0de2a" kind="function"><name>ngram_iter</name></member>
+    <member refid="structngram__model__t_1aacc908372b71dd2ab7a3eef0d3bda08c" kind="function"><name>ngram_ng_iter</name></member>
+    <member refid="structngram__model__t_1a1c9dfbd63b9274cb29e70331b14e85d1" kind="function"><name>ngram_model_add_word</name></member>
+    <member refid="structngram__model__t_1a751eb92b17f5a9399da6b7e2492e75d3" kind="function"><name>ngram_model_read_classdef</name></member>
+    <member refid="structngram__model__t_1aa95e6aa73ec5dd9ed3fad5aa1e717a9e" kind="function"><name>ngram_model_add_class</name></member>
+    <member refid="structngram__model__t_1a29c673743c81c4633dc790aa75048695" kind="function"><name>ngram_model_add_class_word</name></member>
+    <member refid="structngram__model__t_1a9205a3b0d63d57b5f100c062f2202e46" kind="function"><name>ngram_model_set_init</name></member>
+    <member refid="structngram__model__t_1a53ac5c6475a5e3c72250ee2c527bc74f" kind="function"><name>ngram_model_set_read</name></member>
+    <member refid="structngram__model__t_1a8c43adf4ab5570cfb101dfaaaacc3171" kind="function"><name>ngram_model_set_count</name></member>
+    <member refid="structngram__model__t_1a69f503c63b727b1d47fdb5ca138f784b" kind="function"><name>ngram_model_set_iter</name></member>
+    <member refid="structngram__model__t_1a595d4dd1a5645cc9793d70b07d36b99d" kind="function"><name>ngram_model_set_select</name></member>
+    <member refid="structngram__model__t_1a1d0c5a114c9ab7337008712f7b5ba48c" kind="function"><name>ngram_model_set_lookup</name></member>
+    <member refid="structngram__model__t_1a1d5b87cea3d87fac3da33a1429cb86f3" kind="function"><name>ngram_model_set_current</name></member>
+    <member refid="structngram__model__t_1a3f3c6d4b5cee2ed64f0c4ba4b5f2c1a4" kind="function"><name>ngram_model_set_interp</name></member>
+    <member refid="structngram__model__t_1a1d663526e16a5d0d9f5aef2129cd1073" kind="function"><name>ngram_model_set_add</name></member>
+    <member refid="structngram__model__t_1a5a6ecb8351cbe2cf3d60ca1ac465d701" kind="function"><name>ngram_model_set_remove</name></member>
+    <member refid="structngram__model__t_1ac0434afb29daf257ff9d37ae09fe3024" kind="function"><name>ngram_model_set_map_words</name></member>
+    <member refid="structngram__model__t_1a9c78bb0ab03a57ecbf6dbc9ef5953cc2" kind="function"><name>ngram_model_set_current_wid</name></member>
+    <member refid="structngram__model__t_1aa6fadb5970bdad9eeb69532cb54214eb" kind="function"><name>ngram_model_set_known_wid</name></member>
+    <member refid="structngram__model__t_1a071b30df2cd1ac5f7c2061fde34b67a4" kind="function"><name>ngram_model_flush</name></member>
+  </compound>
+  <compound refid="class_no_agent" kind="class"><name>NoAgent</name>
+    <member refid="class_no_agent_1a7561314430d43346239d9a2dcc66e501" kind="function"><name>NoAgent</name></member>
+    <member refid="class_no_agent_1a9adad4582932d6a36914660842a20a96" kind="function"><name>~NoAgent</name></member>
+    <member refid="class_no_agent_1a4c20d7b44b9b7061ae60893e577a3575" kind="function"><name>play</name></member>
+  </compound>
+  <compound refid="class_player" kind="class"><name>Player</name>
+    <member refid="class_player_1a088227ab53747cc4955b0a3859b69a84" kind="variable"><name>board_</name></member>
+    <member refid="class_player_1ae8c600761eeb36ef938927dd87a87011" kind="variable"><name>mark_</name></member>
+    <member refid="class_player_1a8c885f35774ed96d466e67194b74de95" kind="function"><name>Player</name></member>
+    <member refid="class_player_1a8981c201ffb2270c0b6dbd467b627376" kind="function"><name>~Player</name></member>
+    <member refid="class_player_1af85db5d05b014bf19d873038c56dc7ed" kind="function"><name>play</name></member>
+    <member refid="class_player_1af9436bec15f91ee87fb86907b720be52" kind="signal"><name>playerFinished</name></member>
+  </compound>
+  <compound refid="structps__alignment__iter__t" kind="struct"><name>ps_alignment_iter_t</name>
+    <member refid="structps__alignment__iter__t_1a47da598c1af7c96722ace460fae384a9" kind="function"><name>ps_alignment_iter_name</name></member>
+    <member refid="structps__alignment__iter__t_1a5810641dfea5220b6b17674cd28046f9" kind="function"><name>ps_alignment_iter_seg</name></member>
+    <member refid="structps__alignment__iter__t_1a86c1a5d3a522405c038b3f0917ec7e42" kind="function"><name>ps_alignment_iter_next</name></member>
+    <member refid="structps__alignment__iter__t_1acc617cc49965b92ed2974ee93355c828" kind="function"><name>ps_alignment_iter_children</name></member>
+    <member refid="structps__alignment__iter__t_1a395971ce8af5acd6d26c9d6ec43a7bca" kind="function"><name>ps_alignment_iter_free</name></member>
+  </compound>
+  <compound refid="structps__alignment__t" kind="struct"><name>ps_alignment_t</name>
+    <member refid="structps__alignment__t_1a08bf2cf59a1e8e837e26f6e571c02c95" kind="function"><name>ps_alignment_retain</name></member>
+    <member refid="structps__alignment__t_1ad3397b6ae46535516b71a5cc5a049bf1" kind="function"><name>ps_alignment_free</name></member>
+    <member refid="structps__alignment__t_1a55bd9be876b2ee4f9be894561f7cfb41" kind="function"><name>ps_alignment_words</name></member>
+    <member refid="structps__alignment__t_1a5d2fa99d658585157ce4629d1ae5882e" kind="function"><name>ps_alignment_phones</name></member>
+    <member refid="structps__alignment__t_1ad8d74903490fadb9fbddcef2955593c8" kind="function"><name>ps_alignment_states</name></member>
+  </compound>
+  <compound refid="structps__arg__s" kind="struct"><name>ps_arg_s</name>
+    <member refid="structps__arg__s_1ad6445eb93c75f7f3c3dd7d5e1f2ad9f4" kind="variable"><name>name</name></member>
+    <member refid="structps__arg__s_1ab8782fedc6874de7bd94ef72fb082844" kind="variable"><name>type</name></member>
+    <member refid="structps__arg__s_1ae4b363c984de270be2983114160e1afe" kind="variable"><name>deflt</name></member>
+    <member refid="structps__arg__s_1abe8839e8c74b69526a032ca5e6b9c488" kind="variable"><name>doc</name></member>
+  </compound>
+  <compound refid="structps__arg__t" kind="struct"><name>ps_arg_t</name>
+  </compound>
+  <compound refid="structps__config__t" kind="struct"><name>ps_config_t</name>
+    <member refid="structps__config__t_1a65588a7f05e8796f722fb7bd7355e57c" kind="function"><name>ps_config_init</name></member>
+    <member refid="structps__config__t_1a6640499a04c68a27b2bf3db85555eb0f" kind="function"><name>ps_config_retain</name></member>
+    <member refid="structps__config__t_1a58efc9357b6871c0575be7ea59f326b0" kind="function"><name>ps_config_free</name></member>
+    <member refid="structps__config__t_1a8c6a4572efab5c171e14ba5b1e7ac9d1" kind="function"><name>ps_config_validate</name></member>
+    <member refid="structps__config__t_1a30596bd85860ccb7bb6dea3dc9a35e71" kind="function"><name>ps_config_parse_json</name></member>
+    <member refid="structps__config__t_1af62a637d2863595a46b617a20abb1b69" kind="function"><name>ps_config_serialize_json</name></member>
+    <member refid="structps__config__t_1a957ca92e4393991b08e0273c29a08315" kind="function"><name>ps_config_typeof</name></member>
+    <member refid="structps__config__t_1acc80d6fce5453e58b4abd6d806e5a36a" kind="function"><name>ps_config_get</name></member>
+    <member refid="structps__config__t_1a6be12b4ac8bbdd01b0d4a23cf2ed1718" kind="function"><name>ps_config_set</name></member>
+    <member refid="structps__config__t_1aec8132830a14ceb9a1d2c53bbf1c6284" kind="function"><name>ps_config_int</name></member>
+    <member refid="structps__config__t_1aa9412a3e395deb907fee7d4d307cab66" kind="function"><name>ps_config_bool</name></member>
+    <member refid="structps__config__t_1abf6ac1c6030616293f8e50e1b6a565af" kind="function"><name>ps_config_float</name></member>
+    <member refid="structps__config__t_1aafbfbe19ce5d48e88bac0e5ed99c10e6" kind="function"><name>ps_config_str</name></member>
+    <member refid="structps__config__t_1a99ac9564d02ced91e819da50f0766478" kind="function"><name>ps_config_set_int</name></member>
+    <member refid="structps__config__t_1a67f6d45291c37c3f3e97031f65f19e53" kind="function"><name>ps_config_set_bool</name></member>
+    <member refid="structps__config__t_1a2479d90c3ba0ac0de6bd0143b3b10cb9" kind="function"><name>ps_config_set_float</name></member>
+    <member refid="structps__config__t_1aa0ad5a8fb7c16530050272ed7d59640b" kind="function"><name>ps_config_set_str</name></member>
+    <member refid="structps__config__t_1a30154c47339a448445f1ca52f63ebdd8" kind="function"><name>ps_config_soundfile</name></member>
+    <member refid="structps__config__t_1a47e3ac3cb5d90ef4442662b19acd6cf0" kind="function"><name>ps_config_wavfile</name></member>
+    <member refid="structps__config__t_1a99c3fb8f6b8bb5e29869d2f4efd593f1" kind="function"><name>ps_config_nistfile</name></member>
+    <member refid="structps__config__t_1ab33df51031c41cdb73794845c33a2d88" kind="function"><name>ps_default_search_args</name></member>
+    <member refid="structps__config__t_1ac022a88c8bd55f78398a55ffb3a6597c" kind="function"><name>ps_expand_model_config</name></member>
+    <member refid="structps__config__t_1a69b05a7582ee80ff206fb1e4d709bc4c" kind="function"><name>ps_init</name></member>
+    <member refid="structps__config__t_1aa9adc40d1099e6df4e3ba38e45bac100" kind="function"><name>ps_default_modeldir</name></member>
+  </compound>
+  <compound refid="structps__decoder__t" kind="struct"><name>ps_decoder_t</name>
+    <member refid="structps__decoder__t_1a7a335c6650fa98985b5687fde408ef0a" kind="function"><name>ps_reinit</name></member>
+    <member refid="structps__decoder__t_1ad950da65e86a4611c93e3ad765ad22e6" kind="function"><name>ps_reinit_feat</name></member>
+    <member refid="structps__decoder__t_1a95778ded410ce81acf0c7bfdb069ba7d" kind="function"><name>ps_get_cmn</name></member>
+    <member refid="structps__decoder__t_1ae74f202f105207d5c499280ab187081f" kind="function"><name>ps_set_cmn</name></member>
+    <member refid="structps__decoder__t_1ab6ba623b66f39ef5e322cb13b831b1b1" kind="function"><name>ps_retain</name></member>
+    <member refid="structps__decoder__t_1ad8fd9b79ae9f87703af3f4755b3ab567" kind="function"><name>ps_free</name></member>
+    <member refid="structps__decoder__t_1a90559e2f98ee1f8439350eacc8c68f83" kind="function"><name>ps_get_config</name></member>
+    <member refid="structps__decoder__t_1a318ec5e87309b590a775ba1e91297b85" kind="function"><name>ps_get_logmath</name></member>
+    <member refid="structps__decoder__t_1abcf13734aad31adce2cb8c7b8612ca98" kind="function"><name>ps_update_mllr</name></member>
+    <member refid="structps__decoder__t_1a824f46e51681d931b7e2706a86c3d86f" kind="function"><name>ps_load_dict</name></member>
+    <member refid="structps__decoder__t_1a5e278377cc57d921591ce95b980760d5" kind="function"><name>ps_save_dict</name></member>
+    <member refid="structps__decoder__t_1a5f3c4fcdbef34915c4e785ac9a1c6005" kind="function"><name>ps_add_word</name></member>
+    <member refid="structps__decoder__t_1ab2ca0a5e9ed39baa81ccc703bb20a7ab" kind="function"><name>ps_lookup_word</name></member>
+    <member refid="structps__decoder__t_1a43b378f9c42bcb19fdff0ebe71c25adb" kind="function"><name>ps_decode_raw</name></member>
+    <member refid="structps__decoder__t_1a466d1d718873e7b1cf0881e4f552a4a2" kind="function"><name>ps_decode_senscr</name></member>
+    <member refid="structps__decoder__t_1a89be3b2a8f83291a225db0bcd9ee65b2" kind="function"><name>ps_start_stream</name></member>
+    <member refid="structps__decoder__t_1adcbb8aeb9ebf3f73e935d3b3c8832ea0" kind="function"><name>ps_get_in_speech</name></member>
+    <member refid="structps__decoder__t_1ade3909b1c12c1b70afe284639e70cbff" kind="function"><name>ps_start_utt</name></member>
+    <member refid="structps__decoder__t_1a572ad08651b4caae820d178a12c8f95f" kind="function"><name>ps_process_raw</name></member>
+    <member refid="structps__decoder__t_1a8b1311a8127f9c4daf24e7034673f50f" kind="function"><name>ps_process_cep</name></member>
+    <member refid="structps__decoder__t_1abb3527e41c2f4cd64dccbdbd5f812d1d" kind="function"><name>ps_get_n_frames</name></member>
+    <member refid="structps__decoder__t_1ab9339de730713b68cbd68a7f36dc8730" kind="function"><name>ps_end_utt</name></member>
+    <member refid="structps__decoder__t_1a35be2a1924f93c23b033e08ab0e85c28" kind="function"><name>ps_get_hyp</name></member>
+    <member refid="structps__decoder__t_1ac8ac154482457740173caa1c0d699c49" kind="function"><name>ps_get_prob</name></member>
+    <member refid="structps__decoder__t_1af8f325d9d183e8930e48a518b13f085a" kind="function"><name>ps_get_lattice</name></member>
+    <member refid="structps__decoder__t_1ab0353879769209971677296b937b9aae" kind="function"><name>ps_seg_iter</name></member>
+    <member refid="structps__decoder__t_1ab9c09bbe581a5ad2cdb42530c6ab009e" kind="function"><name>ps_nbest</name></member>
+    <member refid="structps__decoder__t_1aac7070c934a2d03d0d5b34e19614360f" kind="function"><name>ps_get_utt_time</name></member>
+    <member refid="structps__decoder__t_1a61fb92154c5c731cf4a24e0976263da0" kind="function"><name>ps_get_all_time</name></member>
+    <member refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89" kind="function"><name>ps_activate_search</name></member>
+    <member refid="structps__decoder__t_1a1a589bf2956a5905368e9288979743b8" kind="function"><name>ps_current_search</name></member>
+    <member refid="structps__decoder__t_1aca66da675491dfbcd51f66a2cead19c9" kind="function"><name>ps_remove_search</name></member>
+    <member refid="structps__decoder__t_1a3c85d53bfd56dc83226cc7f3bbcdcef6" kind="function"><name>ps_search_iter</name></member>
+    <member refid="structps__decoder__t_1ab11d511d180c9aea9779f545d4d22809" kind="function"><name>ps_get_lm</name></member>
+    <member refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba" kind="function"><name>ps_add_lm</name></member>
+    <member refid="structps__decoder__t_1a268455d472a947079dc9ece74f6a6fab" kind="function"><name>ps_add_lm_file</name></member>
+    <member refid="structps__decoder__t_1a70c94d4192c66e9f203eb72f92ee532c" kind="function"><name>ps_get_fsg</name></member>
+    <member refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5" kind="function"><name>ps_add_fsg</name></member>
+    <member refid="structps__decoder__t_1a27cb38750271a285addc3d9c5f15c8ab" kind="function"><name>ps_add_jsgf_file</name></member>
+    <member refid="structps__decoder__t_1ad975de5e4114ee1d534ceffdacb18394" kind="function"><name>ps_add_jsgf_string</name></member>
+    <member refid="structps__decoder__t_1a7000861f6aa97e98f8a7c95d3e3ba157" kind="function"><name>ps_get_kws</name></member>
+    <member refid="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b" kind="function"><name>ps_add_kws</name></member>
+    <member refid="structps__decoder__t_1a87aced38ba183da00ebd04c002af01d5" kind="function"><name>ps_add_keyphrase</name></member>
+    <member refid="structps__decoder__t_1a8ae78fa993cad9e1da24b052b80fff78" kind="function"><name>ps_add_allphone</name></member>
+    <member refid="structps__decoder__t_1a6e324573a9de664cfa0a37a5cd7a6fc8" kind="function"><name>ps_add_allphone_file</name></member>
+    <member refid="structps__decoder__t_1a911c4849d7ffaf2960177c34968c1b0d" kind="function"><name>ps_set_align_text</name></member>
+    <member refid="structps__decoder__t_1a82092689e27601f7bc9227cd904b0266" kind="function"><name>ps_set_alignment</name></member>
+    <member refid="structps__decoder__t_1a34112271b4b2a3cb6616e072a36f693d" kind="function"><name>ps_get_alignment</name></member>
+  </compound>
+  <compound refid="structps__endpointer__t" kind="struct"><name>ps_endpointer_t</name>
+    <member refid="structps__endpointer__t_1a52206006da981da07bd016f7b3dd9b18" kind="function"><name>ps_endpointer_init</name></member>
+    <member refid="structps__endpointer__t_1a95eb7899d6e092ccbd0a73392c23e5c4" kind="function"><name>ps_endpointer_retain</name></member>
+    <member refid="structps__endpointer__t_1ad1c967ebc8f3975d40c8002428cdde32" kind="function"><name>ps_endpointer_free</name></member>
+    <member refid="structps__endpointer__t_1a2bce53f42a5010f9fbb43a953a16b34a" kind="function"><name>ps_endpointer_vad</name></member>
+    <member refid="structps__endpointer__t_1a67c0e37e1bd947ade4006b8a28049869" kind="function"><name>ps_endpointer_process</name></member>
+    <member refid="structps__endpointer__t_1a666c55812e40204dddd7ef672c797264" kind="function"><name>ps_endpointer_end_stream</name></member>
+    <member refid="structps__endpointer__t_1adac16cf29e75f65ec68957daaaa2d467" kind="function"><name>ps_endpointer_in_speech</name></member>
+    <member refid="structps__endpointer__t_1a808204c820723b3cd4c16d38c66980c6" kind="function"><name>ps_endpointer_speech_start</name></member>
+    <member refid="structps__endpointer__t_1abc71fe3155fa1a9536c58c3c69fe8dea" kind="function"><name>ps_endpointer_speech_end</name></member>
+    <member refid="structps__endpointer__t_1a5d6ba30b00e6e8f849800b0fa352bf9c" kind="function"><name>ps_endpointer_set_timestamp_func</name></member>
+    <member refid="structps__endpointer__t_1afa8a03e9be7cda8d8bad1978e3c25add" kind="function"><name>ps_endpointer_timestamp</name></member>
+  </compound>
+  <compound refid="structps__latlink__iter__t" kind="struct"><name>ps_latlink_iter_t</name>
+    <member refid="structps__latlink__iter__t_1a355b571d5eb906b7f58f41e168af46ba" kind="function"><name>ps_latlink_iter_next</name></member>
+    <member refid="structps__latlink__iter__t_1aa19aaa4a38a922ff28fe071f69b8272d" kind="function"><name>ps_latlink_iter_free</name></member>
+    <member refid="structps__latlink__iter__t_1a71a92726c7e3bac137efbae29e4c5c8a" kind="function"><name>ps_latlink_iter_link</name></member>
+  </compound>
+  <compound refid="structps__latlink__t" kind="struct"><name>ps_latlink_t</name>
+    <member refid="structps__latlink__t_1aef48bb18865b449e69316ed5959eae9f" kind="function"><name>ps_latlink_times</name></member>
+    <member refid="structps__latlink__t_1aef7c4a325a805e5914fcc24124c0d7bb" kind="function"><name>ps_latlink_nodes</name></member>
+    <member refid="structps__latlink__t_1a9fb8666c37b6c39363169c9755c84ce8" kind="function"><name>ps_latlink_word</name></member>
+    <member refid="structps__latlink__t_1aa8711fa5446ebbac4755300ea83d6f1e" kind="function"><name>ps_latlink_baseword</name></member>
+    <member refid="structps__latlink__t_1a256bf4ecd5074ded5f63806baca67bbe" kind="function"><name>ps_latlink_pred</name></member>
+    <member refid="structps__latlink__t_1aa393fbcf215acc8116e18aac2847cc59" kind="function"><name>ps_latlink_prob</name></member>
+  </compound>
+  <compound refid="structps__latnode__iter__t" kind="struct"><name>ps_latnode_iter_t</name>
+    <member refid="structps__latnode__iter__t_1a6b62626b9613fe78a1b74a9b8e969c33" kind="function"><name>ps_latnode_iter_next</name></member>
+    <member refid="structps__latnode__iter__t_1ae9a6464b83d37bfa2ce570206eff6aad" kind="function"><name>ps_latnode_iter_free</name></member>
+    <member refid="structps__latnode__iter__t_1a36ccc88328881079f3fe511c993072b0" kind="function"><name>ps_latnode_iter_node</name></member>
+    <member refid="structps__latnode__iter__t_1a42bd0fbfe8b0cab1a9a7e799a3fc30a2" kind="function"><name>ps_latnode_times</name></member>
+  </compound>
+  <compound refid="structps__latnode__t" kind="struct"><name>ps_latnode_t</name>
+    <member refid="structps__latnode__t_1ab814f0cb275ebf52084dd99d97d3b3f2" kind="function"><name>ps_latnode_word</name></member>
+    <member refid="structps__latnode__t_1aff875c8ce337b06966328e16f7b8e037" kind="function"><name>ps_latnode_baseword</name></member>
+    <member refid="structps__latnode__t_1aa040d46f234f443d43a70a749e1ee65a" kind="function"><name>ps_latnode_exits</name></member>
+    <member refid="structps__latnode__t_1ac8cfa1412f450f3895fd316bb179e20b" kind="function"><name>ps_latnode_entries</name></member>
+    <member refid="structps__latnode__t_1a68253946c2405d7f9090de7530f33b9d" kind="function"><name>ps_latnode_prob</name></member>
+  </compound>
+  <compound refid="structps__lattice__t" kind="struct"><name>ps_lattice_t</name>
+    <member refid="structps__lattice__t_1a6edc5631b7d5ab3f54747293f9bef3e3" kind="function"><name>ps_lattice_read</name></member>
+    <member refid="structps__lattice__t_1ad7c9aba902d61bb81bab1df2c437c305" kind="function"><name>ps_lattice_retain</name></member>
+    <member refid="structps__lattice__t_1a3f90e846bde47cd1acdff165b92f5c22" kind="function"><name>ps_lattice_free</name></member>
+    <member refid="structps__lattice__t_1a3f2e2b88d0aa80346cc64d2b7934b863" kind="function"><name>ps_lattice_write</name></member>
+    <member refid="structps__lattice__t_1aefd25c0f49a0d70f999187a26fa2ff06" kind="function"><name>ps_lattice_write_htk</name></member>
+    <member refid="structps__lattice__t_1a2ec403afeb085ce901a4a2b2a0830991" kind="function"><name>ps_lattice_get_logmath</name></member>
+    <member refid="structps__lattice__t_1aefc403a8d205927a02d9436417e0caa5" kind="function"><name>ps_latnode_iter</name></member>
+    <member refid="structps__lattice__t_1a4aaae70904361b23a78cdcb632c298c4" kind="function"><name>ps_lattice_link</name></member>
+    <member refid="structps__lattice__t_1a0b6d58c7646f20a078aa0f7d5029e67f" kind="function"><name>ps_lattice_traverse_edges</name></member>
+    <member refid="structps__lattice__t_1ae7a2a8d13f30836c34246cc6e8108115" kind="function"><name>ps_lattice_traverse_next</name></member>
+    <member refid="structps__lattice__t_1a5b41fb328ee88d7f8de274b217c97451" kind="function"><name>ps_lattice_reverse_edges</name></member>
+    <member refid="structps__lattice__t_1ad85dcdee93cc3eb067051202d9563a9e" kind="function"><name>ps_lattice_reverse_next</name></member>
+    <member refid="structps__lattice__t_1afc5aee64d40f8b9349f2125ed0096396" kind="function"><name>ps_lattice_bestpath</name></member>
+    <member refid="structps__lattice__t_1a8c5c6ef260ab006099ab34d09b5b1d06" kind="function"><name>ps_lattice_posterior</name></member>
+    <member refid="structps__lattice__t_1a30d83a5fd158d2acaa5107be7a09ed09" kind="function"><name>ps_lattice_posterior_prune</name></member>
+    <member refid="structps__lattice__t_1a44a196a35a8aeb044251c6c152034c90" kind="function"><name>ps_lattice_n_frames</name></member>
+  </compound>
+  <compound refid="structps__mllr__t" kind="struct"><name>ps_mllr_t</name>
+    <member refid="structps__mllr__t_1a8fcd58d5834aac31266cd253777a2c5e" kind="function"><name>ps_mllr_read</name></member>
+    <member refid="structps__mllr__t_1a915cd853e598d6ab4a4c92276c56b4b2" kind="function"><name>ps_mllr_retain</name></member>
+    <member refid="structps__mllr__t_1ae56a8c52dd7513b1883536f2a729e1d0" kind="function"><name>ps_mllr_free</name></member>
+  </compound>
+  <compound refid="structps__nbest__t" kind="struct"><name>ps_nbest_t</name>
+    <member refid="structps__nbest__t_1ae72b70b5c5560f3864d15f1c2ac7d393" kind="function"><name>ps_nbest_next</name></member>
+    <member refid="structps__nbest__t_1af6aeed1a376d89f966277e7165a30555" kind="function"><name>ps_nbest_hyp</name></member>
+    <member refid="structps__nbest__t_1a63ca4168dd84b279b5a3a0cc405362ea" kind="function"><name>ps_nbest_seg</name></member>
+    <member refid="structps__nbest__t_1a83379b2da95eebdf5070d29196a9b067" kind="function"><name>ps_nbest_free</name></member>
+  </compound>
+  <compound refid="structps__search__iter__t" kind="struct"><name>ps_search_iter_t</name>
+    <member refid="structps__search__iter__t_1ac8ae8c4c4f792d0c12eef3426abe4a93" kind="function"><name>ps_search_iter_next</name></member>
+    <member refid="structps__search__iter__t_1a86d9b5968b9fe317a6335345fb9a2dd0" kind="function"><name>ps_search_iter_val</name></member>
+    <member refid="structps__search__iter__t_1a41e404de59cbd7bfc32f2da3ec7e6137" kind="function"><name>ps_search_iter_free</name></member>
+  </compound>
+  <compound refid="structps__seg__t" kind="struct"><name>ps_seg_t</name>
+    <member refid="structps__seg__t_1a0686bf425a8cf145bca3b149b6368223" kind="function"><name>ps_seg_next</name></member>
+    <member refid="structps__seg__t_1a27db3d5a3f9363a3e1ac8bae33030c87" kind="function"><name>ps_seg_word</name></member>
+    <member refid="structps__seg__t_1a045a044726b816678965514f2ee7d8c7" kind="function"><name>ps_seg_frames</name></member>
+    <member refid="structps__seg__t_1adfd45d93c3fc9de6b7be89d5417f6abb" kind="function"><name>ps_seg_prob</name></member>
+    <member refid="structps__seg__t_1ac02cea69794b0fbd17e6a4c5265b2255" kind="function"><name>ps_seg_free</name></member>
+  </compound>
+  <compound refid="structps__vad__t" kind="struct"><name>ps_vad_t</name>
+    <member refid="structps__vad__t_1a28a9c81b473d91a2fcd0fef37c32a4ac" kind="function"><name>ps_vad_init</name></member>
+    <member refid="structps__vad__t_1aa851b665f47d6f6033c5963e453bc43e" kind="function"><name>ps_vad_retain</name></member>
+    <member refid="structps__vad__t_1add5e5c92c593edbf45edd20624129370" kind="function"><name>ps_vad_free</name></member>
+    <member refid="structps__vad__t_1a69fe34f7717228b0cc8ada126d1d5feb" kind="function"><name>ps_vad_set_input_params</name></member>
+    <member refid="structps__vad__t_1a1c692aeda85aa6122589404ef401e03c" kind="function"><name>ps_vad_sample_rate</name></member>
+    <member refid="structps__vad__t_1ac35931b7e6c879dbda6508f302be4751" kind="function"><name>ps_vad_frame_size</name></member>
+    <member refid="structps__vad__t_1aaf0e13d20d7b8988977ca8e5a9894cb7" kind="function"><name>ps_vad_classify</name></member>
+  </compound>
+  <compound refid="class_speech_manager" kind="class"><name>SpeechManager</name>
+    <member refid="class_speech_manager_1a84982042bef20eb360ec44351fd84757" kind="variable"><name>stream_</name></member>
+    <member refid="class_speech_manager_1a12e44c03e875470507ec74a417fa0156" kind="variable"><name>err_</name></member>
+    <member refid="class_speech_manager_1a5457cda86b4ca0afd9d4ab9655baacf0" kind="variable"><name>decoder_</name></member>
+    <member refid="class_speech_manager_1aed90e5c57c5e43394492fb748ef5dec4" kind="variable"><name>config_</name></member>
+    <member refid="class_speech_manager_1a2d256afb5806a933dfd832fa49d1b148" kind="variable"><name>ep_</name></member>
+    <member refid="class_speech_manager_1a33dd9ba7578619b2f8bfb2be029c4c20" kind="variable"><name>frame_</name></member>
+    <member refid="class_speech_manager_1a5ae23337be3cfd612918b64b2dac7fa8" kind="variable"><name>frame_size_</name></member>
+    <member refid="class_speech_manager_1ad36d507a363bd64922e7cd8c85334bda" kind="variable"><name>hyp_</name></member>
+    <member refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" kind="function"><name>SpeechManager</name></member>
+    <member refid="class_speech_manager_1a473b5a5d90f5486c0306278220d8138c" kind="function"><name>~SpeechManager</name></member>
+    <member refid="class_speech_manager_1a94d6a6d8b5aa00b913e751c2620a9e52" kind="function"><name>configure</name></member>
+    <member refid="class_speech_manager_1a13ab24c0b019530b8c35557091fac078" kind="function"><name>init</name></member>
+    <member refid="class_speech_manager_1af62b1ec680a5e45e289d629d561c8432" kind="function"><name>startListening</name></member>
+    <member refid="class_speech_manager_1abdde7758804b9f537d9d704583e6c8b3" kind="signal"><name>speechRecognized</name></member>
+    <member refid="class_speech_manager_1af020ff04f584cedbd3105f299c1a66b0" kind="signal"><name>speechReadyToProcess</name></member>
+    <member refid="class_speech_manager_1a9e0d24a7b396f00dbb1dee267450d3e9" kind="slot"><name>processRecognitionResult</name></member>
+    <member refid="class_speech_manager_1ad48e68cab4316e371cc56ca75150897d" kind="function"><name>hypIsValid</name></member>
+    <member refid="class_speech_manager_1a13a4749dbb01af8d5faf9e181b11c56e" kind="function"><name>freeHeap</name></member>
+  </compound>
+  <compound refid="struct_speech_to_text" kind="struct"><name>SpeechToText</name>
+    <member refid="struct_speech_to_text_1a4dc84bac03cceb7780ef1b516c05fb2f" kind="variable"><name>stream</name></member>
+    <member refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kind="variable"><name>err</name></member>
+    <member refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" kind="variable"><name>decoder</name></member>
+    <member refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kind="variable"><name>config</name></member>
+    <member refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kind="variable"><name>ep</name></member>
+    <member refid="struct_speech_to_text_1a22d0a745997d39eed5ffdb45c130a7bd" kind="variable"><name>frame</name></member>
+    <member refid="struct_speech_to_text_1ad77b52534299ea8989c0db18c0ec57ae" kind="variable"><name>frame_size</name></member>
+    <member refid="struct_speech_to_text_1a0526f396f204c635ef85738182d8d007" kind="variable"><name>hyp</name></member>
+    <member refid="struct_speech_to_text_1a63077ef44951a4fd6e5f1c0a6808e35a" kind="function"><name>catch_sig</name></member>
+    <member refid="struct_speech_to_text_1aaf4ccc659316eb5c314b504f98003fd5" kind="function"><name>configuration</name></member>
+    <member refid="struct_speech_to_text_1ae5b7a33ea5ba734da4e3caed42a5e185" kind="function"><name>init</name></member>
+    <member refid="struct_speech_to_text_1a12f6ee36ae06eef450adae6f4d6a00c5" kind="function"><name>hypIsValid</name></member>
+    <member refid="struct_speech_to_text_1a243545518fed839c5fa5fe95aadde2a3" kind="function"><name>listen</name></member>
+    <member refid="struct_speech_to_text_1ab10ed7de74d4955ec673ded3a74f9db2" kind="function"><name>free</name></member>
+  </compound>
+  <compound refid="class_tic_tac_toe_game" kind="class"><name>TicTacToeGame</name>
+    <member refid="class_tic_tac_toe_game_1ab64b2821a1025135891b4610b8454031" kind="variable"><name>ui</name></member>
+    <member refid="class_tic_tac_toe_game_1acab186bab68d7cf8a2c6f4ce87e6de13" kind="function"><name>TicTacToeGame</name></member>
+    <member refid="class_tic_tac_toe_game_1a6df8896115fc708fa4dd12bc6c04e34a" kind="function"><name>updateCell</name></member>
+    <member refid="class_tic_tac_toe_game_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" kind="function"><name>declareGameState</name></member>
+    <member refid="class_tic_tac_toe_game_1a9dd8af6820a6a994aeaf8ba6bee6fc89" kind="function"><name>buildCellButtons</name></member>
+    <member refid="class_tic_tac_toe_game_1a8a891d7dcf57178c79f325a92751f44c" kind="function"><name>reset</name></member>
+    <member refid="class_tic_tac_toe_game_1a1c9c0235d321bee6cbe121a14c946434" kind="function"><name>setConnections</name></member>
+    <member refid="class_tic_tac_toe_game_1a0b8fee976515895d15eb59c282b057d1" kind="function"><name>getPlayerText</name></member>
+    <member refid="class_tic_tac_toe_game_1ac18fe593bff035ce81a7f5e97727870a" kind="function"><name>getPlayerStyleSheet</name></member>
+    <member refid="class_tic_tac_toe_game_1af4349fa57bc46d6e3030ff2482ea57c9" kind="function"><name>getBoardFinalStateText</name></member>
+    <member refid="class_tic_tac_toe_game_1ad0072c616d4d9284ca69245a635b8303" kind="signal"><name>newGame</name></member>
+  </compound>
+  <compound refid="class_title_screen" kind="class"><name>TitleScreen</name>
+    <member refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kind="variable"><name>ui</name></member>
+    <member refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kind="variable"><name>options_</name></member>
+    <member refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" kind="function"><name>TitleScreen</name></member>
+    <member refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" kind="function"><name>setConnections</name></member>
+    <member refid="class_title_screen_1a06e835ca83c6ead23fa0f24833ec76b9" kind="function"><name>closeEvent</name></member>
+    <member refid="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" kind="slot"><name>updateBoardSize</name></member>
+    <member refid="class_title_screen_1af028098c1b235b3da76941c83776de20" kind="slot"><name>updateSinglePlayer</name></member>
+    <member refid="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" kind="slot"><name>updateTwoPlayers</name></member>
+    <member refid="class_title_screen_1a2cb34f420ea007de5bec91a91b6f2abe" kind="slot"><name>updateAIstartsGame</name></member>
+    <member refid="class_title_screen_1a60d1e875593a02a6ee01508235680a47" kind="slot"><name>updateMiniMaxDepth</name></member>
+    <member refid="class_title_screen_1ac55c2f2485f58d3b7b389e7414a358d6" kind="slot"><name>startGame</name></member>
+    <member refid="class_title_screen_1a8d6e439797b80238c95602359ba029bd" kind="signal"><name>exited</name></member>
+  </compound>
+  <compound refid="class_t_t_t_controller" kind="class"><name>TTTController</name>
+    <member refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" kind="variable"><name>view_</name></member>
+    <member refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" kind="variable"><name>board_</name></member>
+    <member refid="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" kind="variable"><name>cells_</name></member>
+    <member refid="class_t_t_t_controller_1aade7f92b4b06dbf7e17dc5a3772c0aef" kind="variable"><name>options_</name></member>
+    <member refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" kind="variable"><name>currentPlayer_</name></member>
+    <member refid="class_t_t_t_controller_1a2c3f88a3462b7aad96bf352322c46f3e" kind="variable"><name>agent_</name></member>
+    <member refid="class_t_t_t_controller_1a858247e19d3d31564d8e716f9d81354e" kind="variable"><name>socket_</name></member>
+    <member refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" kind="function"><name>setConnections</name></member>
+    <member refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" kind="function"><name>reset</name></member>
+    <member refid="class_t_t_t_controller_1a57edf31f9b9a6cf7b3d5261715f92b15" kind="function"><name>setupNetwork</name></member>
+    <member refid="class_t_t_t_controller_1acae67d371dfa6272adc7670040c01a23" kind="function"><name>sendMove</name></member>
+    <member refid="class_t_t_t_controller_1a2b17b7aa11412f978e257afb2aebab5b" kind="function"><name>updateGameState</name></member>
+    <member refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" kind="function"><name>AIAgentPlay</name></member>
+    <member refid="class_t_t_t_controller_1ad083b0e4ac90abc1b9b1578a4407ada7" kind="function"><name>HumanPlay</name></member>
+    <member refid="class_t_t_t_controller_1a0d1a0122a2ec371163fb5d9d13c928f5" kind="function"><name>switchPlayer</name></member>
+    <member refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" kind="function"><name>TTTController</name></member>
+    <member refid="class_t_t_t_controller_1a1926fc5ac8a6cac2a75de663157d0023" kind="function"><name>startGame</name></member>
+    <member refid="class_t_t_t_controller_1a0736512a7a5cffa6fefecbe9e4f2a072" kind="function"><name>parseSpeechToCell</name></member>
+    <member refid="class_t_t_t_controller_1a6293931772f0ec9eea531c8a1fb1e050" kind="function"><name>getView</name></member>
+    <member refid="class_t_t_t_controller_1a513f925f29dcfebb4139030f46243cb4" kind="signal"><name>AIFinished</name></member>
+    <member refid="class_t_t_t_controller_1ae1514051a94219f50a5740af4e02e43d" kind="signal"><name>humanFinished</name></member>
+    <member refid="class_t_t_t_controller_1a4b36edfb9a40062357e0038ed00b3b96" kind="signal"><name>speechRecognized</name></member>
+    <member refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" kind="slot"><name>updateGame</name></member>
+    <member refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" kind="slot"><name>onSpeechRecognized</name></member>
+    <member refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" kind="slot"><name>onSocketReadyRead</name></member>
+  </compound>
+  <compound refid="struct_t_t_t_options" kind="struct"><name>TTTOptions</name>
+    <member refid="struct_t_t_t_options_1a018fe6935d21dbcf3db30a4a7b3abed0" kind="variable"><name>boardSize</name></member>
+    <member refid="struct_t_t_t_options_1a086422e4da26dd24bc1166172a9237af" kind="variable"><name>miniMaxDepth</name></member>
+    <member refid="struct_t_t_t_options_1a415a2038b9a5bf87d0a8aa41ce52c8aa" kind="variable"><name>AIopponent</name></member>
+    <member refid="struct_t_t_t_options_1a1d0e61b132d2b32ab27d6e345aac0697" kind="variable"><name>AIstarts</name></member>
+  </compound>
+  <compound refid="namespacedefaults" kind="namespace"><name>defaults</name>
+    <member refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kind="variable"><name>INVALID_CELL</name></member>
+    <member refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" kind="variable"><name>DEFAULT_BOARD_SIZE</name></member>
+    <member refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" kind="variable"><name>DEFAULT_MINIMAX_DEPTH</name></member>
+    <member refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" kind="variable"><name>GUI_CELL_ROW_SPAN</name></member>
+    <member refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" kind="variable"><name>GUI_CELL_COLUMN_SPAN</name></member>
+    <member refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" kind="variable"><name>X_COLOR</name></member>
+    <member refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" kind="variable"><name>O_COLOR</name></member>
+    <member refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" kind="variable"><name>DEFAULT_COLOR</name></member>
+  </compound>
+  <compound refid="namespacetesting" kind="namespace"><name>testing</name>
+  </compound>
+  <compound refid="_a_i_agent_8h" kind="file"><name>AIAgent.h</name>
+  </compound>
+  <compound refid="_human_player_8cpp" kind="file"><name>HumanPlayer.cpp</name>
+  </compound>
+  <compound refid="_human_player_8h" kind="file"><name>HumanPlayer.h</name>
+  </compound>
+  <compound refid="_mini_max_agent_8cpp" kind="file"><name>MiniMaxAgent.cpp</name>
+  </compound>
+  <compound refid="_mini_max_agent_8h" kind="file"><name>MiniMaxAgent.h</name>
+  </compound>
+  <compound refid="_no_agent_8h" kind="file"><name>NoAgent.h</name>
+  </compound>
+  <compound refid="_player_8h" kind="file"><name>Player.h</name>
+  </compound>
+  <compound refid="_config_manager_8cpp" kind="file"><name>ConfigManager.cpp</name>
+  </compound>
+  <compound refid="_config_manager_8h" kind="file"><name>ConfigManager.h</name>
+  </compound>
+  <compound refid="_t_t_t_controller_8cpp" kind="file"><name>TTTController.cpp</name>
+  </compound>
+  <compound refid="_t_t_t_controller_8h" kind="file"><name>TTTController.h</name>
+  </compound>
+  <compound refid="config_8h" kind="file"><name>config.h</name>
+    <member refid="config_8h_1ad79f9fd4d879838fd99528711b86261d" kind="define"><name>DEFAULT_RADIX</name></member>
+    <member refid="config_8h_1a80741c824c30fcd1d2a8787dfa92338a" kind="define"><name>HAVE_LONG_LONG</name></member>
+    <member refid="config_8h_1a42f2de81cc9398f23045b483488d082d" kind="define"><name>HAVE_POPEN</name></member>
+    <member refid="config_8h_1a040bd9182ad5ba7261448993c38565ea" kind="define"><name>HAVE_SNPRINTF</name></member>
+    <member refid="config_8h_1ace156430ba007d19b4348a950d0c692b" kind="define"><name>HAVE_SYS_STAT_H</name></member>
+    <member refid="config_8h_1a69dc70bea5d1f8bd2be9740e974fa666" kind="define"><name>HAVE_SYS_TYPES_H</name></member>
+    <member refid="config_8h_1a219b06937831d0da94d801ab13987639" kind="define"><name>HAVE_UNISTD_H</name></member>
+    <member refid="config_8h_1ab6cd6d1c63c1e26ea2d4537b77148354" kind="define"><name>HAVE_STDINT_H</name></member>
+    <member refid="config_8h_1a22aece5d034fd9040a3d01c3797fdfe7" kind="define"><name>SIZEOF_LONG</name></member>
+    <member refid="config_8h_1acd1ddb89a6f7f17d1c152499173c3eef" kind="define"><name>SIZEOF_LONG_LONG</name></member>
+    <member refid="config_8h_1a1d1d2d7f8d2f95b376954d649ab03233" kind="define"><name>PACKAGE_BUGREPORT</name></member>
+    <member refid="config_8h_1a1c0439e4355794c09b64274849eb0279" kind="define"><name>PACKAGE_NAME</name></member>
+    <member refid="config_8h_1ac73e6f903c16eca7710f92e36e1c6fbf" kind="define"><name>PACKAGE_STRING</name></member>
+    <member refid="config_8h_1af415af6bfede0e8d5453708afe68651c" kind="define"><name>PACKAGE_TARNAME</name></member>
+    <member refid="config_8h_1a5c93853116d5a50307b6744f147840aa" kind="define"><name>PACKAGE_URL</name></member>
+    <member refid="config_8h_1aa326a05d5e30f9e9a4bb0b4469d5d0c0" kind="define"><name>PACKAGE_VERSION</name></member>
+  </compound>
+  <compound refid="examples_2include_2pocketsphinx_2sphinx__config_8h" kind="file"><name>sphinx_config.h</name>
+    <member refid="examples_2include_2pocketsphinx_2sphinx__config_8h_1ad79f9fd4d879838fd99528711b86261d" kind="define"><name>DEFAULT_RADIX</name></member>
+    <member refid="examples_2include_2pocketsphinx_2sphinx__config_8h_1a22aece5d034fd9040a3d01c3797fdfe7" kind="define"><name>SIZEOF_LONG</name></member>
+    <member refid="examples_2include_2pocketsphinx_2sphinx__config_8h_1a80741c824c30fcd1d2a8787dfa92338a" kind="define"><name>HAVE_LONG_LONG</name></member>
+    <member refid="examples_2include_2pocketsphinx_2sphinx__config_8h_1acd1ddb89a6f7f17d1c152499173c3eef" kind="define"><name>SIZEOF_LONG_LONG</name></member>
+  </compound>
+  <compound refid="include_2pocketsphinx_2sphinx__config_8h" kind="file"><name>sphinx_config.h</name>
+    <member refid="include_2pocketsphinx_2sphinx__config_8h_1ad79f9fd4d879838fd99528711b86261d" kind="define"><name>DEFAULT_RADIX</name></member>
+    <member refid="include_2pocketsphinx_2sphinx__config_8h_1a22aece5d034fd9040a3d01c3797fdfe7" kind="define"><name>SIZEOF_LONG</name></member>
+    <member refid="include_2pocketsphinx_2sphinx__config_8h_1a80741c824c30fcd1d2a8787dfa92338a" kind="define"><name>HAVE_LONG_LONG</name></member>
+    <member refid="include_2pocketsphinx_2sphinx__config_8h_1acd1ddb89a6f7f17d1c152499173c3eef" kind="define"><name>SIZEOF_LONG_LONG</name></member>
+  </compound>
+  <compound refid="test__macros_8h" kind="file"><name>test_macros.h</name>
+    <member refid="test__macros_8h_1a002b2f4894492820fe708b1b7e7c5e70" kind="define"><name>EPSILON</name></member>
+    <member refid="test__macros_8h_1a79f6bbe6259a64c13e1e886482e3318f" kind="define"><name>TEST_ASSERT</name></member>
+    <member refid="test__macros_8h_1a28c3e33e75987220375e36d1480e26ec" kind="define"><name>TEST_EQUAL</name></member>
+    <member refid="test__macros_8h_1a1b09bdf6f3e0b8179d60c281979315ad" kind="define"><name>TEST_EQUAL_FLOAT</name></member>
+    <member refid="test__macros_8h_1a0eef56b2d6534c89cf9b61be21c8388d" kind="define"><name>TEST_EQUAL_MFCC</name></member>
+    <member refid="test__macros_8h_1acea402073f80f0575d7d4ab99ee5eaf2" kind="define"><name>TEST_EQUAL_STRING</name></member>
+    <member refid="test__macros_8h_1a565e51ece01c3c4264033e66d4ba1a56" kind="define"><name>LOG_EPSILON</name></member>
+    <member refid="test__macros_8h_1a9f9099681dc34f0ab9dd51af1b2d6f6c" kind="define"><name>TEST_EQUAL_LOG</name></member>
+    <member refid="test__macros_8h_1aef1ae35c9e85cb2c7fd3cf55a471da77" kind="define"><name>MODELDIR</name></member>
+    <member refid="test__macros_8h_1a17897dbbc6ff46c90212d087f60f38c4" kind="define"><name>DATADIR</name></member>
+    <member refid="test__macros_8h_1ac113d790114db55db497a92effbb759c" kind="define"><name>TESTDATADIR</name></member>
+  </compound>
+  <compound refid="pocketsphinx_8h" kind="file"><name>pocketsphinx.h</name>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fc" kind="enum"><name>ps_type_e</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fca8e88779f9d2fd6770f5a2c49fd11a971" kind="enumvalue"><name>ARG_REQUIRED</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fca2d28318744db1f7cf025a976930c5e3c" kind="enumvalue"><name>ARG_INTEGER</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fca23160d667d625556269e8a20faf1cbb9" kind="enumvalue"><name>ARG_FLOATING</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fca1e0904ee5e3baf2aa4070ab0718a3afa" kind="enumvalue"><name>ARG_STRING</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fca6810665d7057c3a8f72951a0b3592c40" kind="enumvalue"><name>ARG_BOOLEAN</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fca8e7de3b18381bc6ce493bed4ef40b2d6" kind="enumvalue"><name>REQARG_INTEGER</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fca452ccca63dbe20a82a6342d7f71a5d04" kind="enumvalue"><name>REQARG_FLOATING</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fcae496350f721356060dfa374d78432e48" kind="enumvalue"><name>REQARG_STRING</name></member>
+    <member refid="pocketsphinx_8h_1a46e29965a820dcffd41e0cdef15bc6fca07f510ed8ee818c553091c728f005979" kind="enumvalue"><name>REQARG_BOOLEAN</name></member>
+    <member refid="pocketsphinx_8h_1abe6ad8a2efc87195489fe107e13045d6" kind="typedef"><name>ps_type_t</name></member>
+    <member refid="pocketsphinx_8h_1a81d227431a84d7ed8666ed5b18f8df40" kind="typedef"><name>ps_arg_t</name></member>
+    <member refid="pocketsphinx_8h_1a689111af4bbe76465dda7c7b90874d69" kind="typedef"><name>ps_config_t</name></member>
+    <member refid="pocketsphinx_8h_1ac6ba825b5a9e1c9003b257221eb6e055" kind="typedef"><name>ps_decoder_t</name></member>
+    <member refid="pocketsphinx_8h_1a73090e41024a1f07f5552b83ac7e0993" kind="typedef"><name>ps_nbest_t</name></member>
+    <member refid="pocketsphinx_8h_1a64d3ac229ef945017112bab4c2a5ec94" kind="typedef"><name>ps_seg_t</name></member>
+    <member refid="pocketsphinx_8h_1a7cf24c25da3ffc81139d9919b9fe340d" kind="function"><name>ps_args</name></member>
+  </compound>
+  <compound refid="alignment_8h" kind="file"><name>alignment.h</name>
+    <member refid="alignment_8h_1aa6ddcfcd7598f1b50582dd5489e63e50" kind="define"><name>PS_ALIGNMENT_NONE</name></member>
+    <member refid="alignment_8h_1a62983def0c01226bda91e6794a7f61f1" kind="typedef"><name>ps_alignment_t</name></member>
+    <member refid="alignment_8h_1afe48426a7d6bd0d7af628c4efc877ad8" kind="typedef"><name>ps_alignment_iter_t</name></member>
+  </compound>
+  <compound refid="endpointer_8h" kind="file"><name>endpointer.h</name>
+    <member refid="endpointer_8h_1a66481b47838efb4704b9483893cd1c8a" kind="define"><name>PS_ENDPOINTER_DEFAULT_WINDOW</name></member>
+    <member refid="endpointer_8h_1a98c9cba29a99e4ef2d08865da20c1d3c" kind="define"><name>PS_ENDPOINTER_DEFAULT_RATIO</name></member>
+    <member refid="endpointer_8h_1aaa16760235cea4c0a06db70c907bc576" kind="define"><name>ps_endpointer_frame_size</name></member>
+    <member refid="endpointer_8h_1a65e580fb57829e172863093b8d8bfdf7" kind="define"><name>ps_endpointer_frame_length</name></member>
+    <member refid="endpointer_8h_1a1b52b6d6bf58004f463ad01697b1076f" kind="define"><name>ps_endpointer_sample_rate</name></member>
+    <member refid="endpointer_8h_1a4f2999eabbcd8a52fe829a1f82a24a01" kind="typedef"><name>ps_endpointer_t</name></member>
+    <member refid="endpointer_8h_1ac01ff24b5365d201fb0ed51bf7e830c2" kind="typedef"><name>ps_endpointer_timestamp_cb_t</name></member>
+  </compound>
+  <compound refid="err_8h" kind="file"><name>err.h</name>
+    <member refid="err_8h_1a0e884a86577f53ae267ba646fe59da0d" kind="define"><name>E_SYSCALL</name></member>
+    <member refid="err_8h_1af785434ca409c25676442575cd2495e6" kind="define"><name>FILELINE</name></member>
+    <member refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kind="define"><name>E_FATAL</name></member>
+    <member refid="err_8h_1acc9aaeb2e0eb21f964913c14403d6795" kind="define"><name>E_FATAL_SYSTEM</name></member>
+    <member refid="err_8h_1add0768056bee50c260c5623b4edd4038" kind="define"><name>E_ERROR_SYSTEM</name></member>
+    <member refid="err_8h_1a87a0a12135a290cf16d06b63fcfa0ccf" kind="define"><name>E_ERROR</name></member>
+    <member refid="err_8h_1aed4c99044fd3e70b7b33a0298a2279b4" kind="define"><name>E_WARN</name></member>
+    <member refid="err_8h_1a92dbeb77b8e1facc7b15abab6ad19b73" kind="define"><name>E_INFO</name></member>
+    <member refid="err_8h_1aaf6601c7c08a803c55f2d55fcd8d5759" kind="define"><name>E_INFOCONT</name></member>
+    <member refid="err_8h_1abe6c68e16406b5f7aee0ec70e1f7d7f1" kind="define"><name>E_INFO_NOFN</name></member>
+    <member refid="err_8h_1af4689a912d0c49e9eb5244659d8702ad" kind="define"><name>E_DEBUG</name></member>
+    <member refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290d" kind="enum"><name>err_e</name></member>
+    <member refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290daadbdbedaf5c8e589e141c3c7ac56b418" kind="enumvalue"><name>ERR_DEBUG</name></member>
+    <member refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c" kind="enumvalue"><name>ERR_INFO</name></member>
+    <member refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263" kind="enumvalue"><name>ERR_WARN</name></member>
+    <member refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022" kind="enumvalue"><name>ERR_ERROR</name></member>
+    <member refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e" kind="enumvalue"><name>ERR_FATAL</name></member>
+    <member refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da51a80ce92f9392669de4e57f0f8f915e" kind="enumvalue"><name>ERR_MAX</name></member>
+    <member refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kind="typedef"><name>err_lvl_t</name></member>
+    <member refid="err_8h_1acd85e2692b5204208b001e6219df9674" kind="typedef"><name>err_cb_f</name></member>
+    <member refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" kind="function"><name>err_msg</name></member>
+    <member refid="err_8h_1ad6a26dc9c533d592a6e98b85941bb200" kind="function"><name>err_msg_system</name></member>
+    <member refid="err_8h_1a85783daf263f1638977c3e07b8f4725b" kind="function"><name>err_logfp_cb</name></member>
+    <member refid="err_8h_1ac011c0d3b793abc19010c2255bce5c88" kind="function"><name>err_set_loglevel</name></member>
+    <member refid="err_8h_1a33774becab4a590524f8edb99f4a826b" kind="function"><name>err_set_loglevel_str</name></member>
+    <member refid="err_8h_1a27fbaecbcb755fd9e5a503566b6ec542" kind="function"><name>err_set_callback</name></member>
+    <member refid="err_8h_1adead72aa5614d8d305ab8710369ea01b" kind="function"><name>err_set_logfp</name></member>
+    <member refid="err_8h_1a037fb194ca22cbbdd9252afa317a4f61" kind="function"><name>err_get_logfp</name></member>
+    <member refid="err_8h_1a2ff33abcf6f29dd25138f0d9846a26cd" kind="function"><name>err_set_logfile</name></member>
+  </compound>
+  <compound refid="export_8h" kind="file"><name>export.h</name>
+    <member refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kind="define"><name>POCKETSPHINX_EXPORT</name></member>
+  </compound>
+  <compound refid="lattice_8h" kind="file"><name>lattice.h</name>
+    <member refid="lattice_8h_1af3c03aa650aafdaea0cbcfabe1a1c1e5" kind="typedef"><name>ps_lattice_t</name></member>
+    <member refid="lattice_8h_1ad570c45dd72ad9ea8d57391fd2cd1c07" kind="typedef"><name>ps_latnode_t</name></member>
+    <member refid="lattice_8h_1afd06dd0a4f63e1b1912c1a53b6a75de6" kind="typedef"><name>ps_latnode_iter_t</name></member>
+    <member refid="lattice_8h_1a58ba3066b0b611f07c7ae57d77f8e776" kind="typedef"><name>ps_latlink_t</name></member>
+    <member refid="lattice_8h_1a3a6312ccf7e1697399822c47a99c4645" kind="typedef"><name>ps_latlink_iter_t</name></member>
+  </compound>
+  <compound refid="logmath_8h" kind="file"><name>logmath.h</name>
+    <member refid="logmath_8h_1ae5c5ce106e9f8f1e763d419de53317a8" kind="define"><name>LOGMATH_TABLE</name></member>
+    <member refid="logmath_8h_1a8c04c94e2c6364f6cf3b649eb4ce5bfd" kind="typedef"><name>logadd_t</name></member>
+    <member refid="logmath_8h_1ae613aa7db1dd40ff56a80a7dadb22cc8" kind="typedef"><name>logmath_t</name></member>
+  </compound>
+  <compound refid="mllr_8h" kind="file"><name>mllr.h</name>
+    <member refid="mllr_8h_1ad4b6bf4c3cb6a671f79f1d709857d5b1" kind="typedef"><name>ps_mllr_t</name></member>
+  </compound>
+  <compound refid="model_8h" kind="file"><name>model.h</name>
+    <member refid="model_8h_1a3d4b3dddd0ff67e13d30c9bf053d01ab" kind="define"><name>NGRAM_INVALID_WID</name></member>
+    <member refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74" kind="enum"><name>ngram_file_type_e</name></member>
+    <member refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a2cf596c8b0c63a3a0ba1fe33326cc796" kind="enumvalue"><name>NGRAM_INVALID</name></member>
+    <member refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a441701bf8ae0a2b79716feb31b5f257a" kind="enumvalue"><name>NGRAM_AUTO</name></member>
+    <member refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a77ef2341d826b3cc8b836e3af1efba99" kind="enumvalue"><name>NGRAM_ARPA</name></member>
+    <member refid="model_8h_1a406c0d64c15a9d1749d07c8ab6e0ae74a748d515b444b38b037f3cc90a6bfded4" kind="enumvalue"><name>NGRAM_BIN</name></member>
+    <member refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771" kind="enum"><name>ngram_case_e</name></member>
+    <member refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771a05b5ea035cb1035af6012f612206dba6" kind="enumvalue"><name>NGRAM_UPPER</name></member>
+    <member refid="model_8h_1aad16a0a1edf29ba8c0df43959c0c4771acd2c3b5a6b95f580cb230c4cdda22be0" kind="enumvalue"><name>NGRAM_LOWER</name></member>
+    <member refid="model_8h_1aee85cf9f007eac61cebba97d6aaccaea" kind="typedef"><name>jsgf_t</name></member>
+    <member refid="model_8h_1a3bb0c86e5f9ba2c29b1fa91e1583bf00" kind="typedef"><name>jsgf_rule_t</name></member>
+    <member refid="model_8h_1a1e036a34f60f268365b54a5e800e733d" kind="typedef"><name>fsg_model_t</name></member>
+    <member refid="model_8h_1afaaf0c00e20056d97efcd97e4cae4ea7" kind="typedef"><name>ngram_model_t</name></member>
+    <member refid="model_8h_1abb6e79bdc8b51b8efbecfdb032cc7d86" kind="typedef"><name>jsgf_rule_iter_t</name></member>
+    <member refid="model_8h_1ae36b2f037b2ea751dff23f082379c264" kind="typedef"><name>ngram_class_t</name></member>
+    <member refid="model_8h_1ac3bc97ce5f4139db88d4360b19497f97" kind="typedef"><name>ngram_file_type_t</name></member>
+    <member refid="model_8h_1afbe3bcb7dd0de6bc550cc7d4e75de403" kind="typedef"><name>ngram_case_t</name></member>
+    <member refid="model_8h_1ac7de090a02fa12a8bba84abb4d5236aa" kind="typedef"><name>ngram_iter_t</name></member>
+    <member refid="model_8h_1afffd75c5bde8dd84107449468be48547" kind="typedef"><name>ngram_model_set_iter_t</name></member>
+  </compound>
+  <compound refid="prim__type_8h" kind="file"><name>prim_type.h</name>
+    <member refid="prim__type_8h_1a64d603953ff96570ac4072daaeaeb36b" kind="define"><name>__BIGSTACKVARIABLE__</name></member>
+    <member refid="prim__type_8h_1aa8cecfc5c5c054d2875c03e77b7be15d" kind="define"><name>TRUE</name></member>
+    <member refid="prim__type_8h_1aa93f0eb578d23995850d61f7d61c55c1" kind="define"><name>FALSE</name></member>
+    <member refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kind="define"><name>NULL</name></member>
+    <member refid="prim__type_8h_1aac62d87844689a18b6f5339a89ed6e7f" kind="define"><name>MAX_INT32</name></member>
+    <member refid="prim__type_8h_1a3905e54374e49708219791e7d59c60fb" kind="define"><name>MAX_INT16</name></member>
+    <member refid="prim__type_8h_1aa092b7d509790c28edc065b23de6e39e" kind="define"><name>MAX_INT8</name></member>
+    <member refid="prim__type_8h_1a29962133c3b9c5c2cf72f7d9299fd4a0" kind="define"><name>MAX_NEG_INT32</name></member>
+    <member refid="prim__type_8h_1a4338527c828e68762d8b40e01f0e0869" kind="define"><name>MAX_NEG_INT16</name></member>
+    <member refid="prim__type_8h_1a76a3e608c93aff0ad98b3b742c51d38f" kind="define"><name>MAX_NEG_INT8</name></member>
+    <member refid="prim__type_8h_1a26248174abf27973b9edfa9b70ba4c93" kind="define"><name>MAX_UINT32</name></member>
+    <member refid="prim__type_8h_1abc023544d8096a8fa1bd1f6f6f90bc41" kind="define"><name>MAX_UINT16</name></member>
+    <member refid="prim__type_8h_1a05682ca8de174141447ff05a2289a27c" kind="define"><name>MAX_UINT8</name></member>
+    <member refid="prim__type_8h_1a763737bb762908f1014777705e1bd5e0" kind="define"><name>MAX_POS_FLOAT32</name></member>
+    <member refid="prim__type_8h_1a6ebe6d883694f66620b6d2dd94dc38e8" kind="define"><name>MIN_POS_FLOAT32</name></member>
+    <member refid="prim__type_8h_1a63f40e6ca19e802259413c04cc56bd28" kind="define"><name>MAX_POS_FLOAT64</name></member>
+    <member refid="prim__type_8h_1a2fc3595771a7d0f944470fd9ba07cfad" kind="define"><name>MIN_POS_FLOAT64</name></member>
+    <member refid="prim__type_8h_1ab806e0c70417e38f2302635bbb78c8c5" kind="define"><name>MAX_IEEE_NORM_POS_FLOAT32</name></member>
+    <member refid="prim__type_8h_1a8b4a04ec8b6561c6f831dfd2434fd505" kind="define"><name>MIN_IEEE_NORM_POS_FLOAT32</name></member>
+    <member refid="prim__type_8h_1a7dcce0312b93eb66d4e662fd035560bf" kind="define"><name>MIN_IEEE_NORM_NEG_FLOAT32</name></member>
+    <member refid="prim__type_8h_1a424bb3e6f9a39ec4d9f0ed965ab92026" kind="define"><name>MAX_IEEE_NORM_POS_FLOAT64</name></member>
+    <member refid="prim__type_8h_1aa8adb129a54c32e19ba7cc9171779687" kind="define"><name>MIN_IEEE_NORM_POS_FLOAT64</name></member>
+    <member refid="prim__type_8h_1ad8550cd6490d48fd6f4949626084fbdb" kind="define"><name>MIN_IEEE_NORM_NEG_FLOAT64</name></member>
+    <member refid="prim__type_8h_1a98d8dffc8bc9036591980531b57e7f19" kind="define"><name>MIN_NEG_FLOAT32</name></member>
+    <member refid="prim__type_8h_1a2e65d00cc854972aae6f58d9cb7d383f" kind="define"><name>MIN_NEG_FLOAT64</name></member>
+    <member refid="prim__type_8h_1abfc21839f45a6def491687f823eaa94d" kind="typedef"><name>anytype_t</name></member>
+    <member refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kind="typedef"><name>int32</name></member>
+    <member refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kind="typedef"><name>int16</name></member>
+    <member refid="prim__type_8h_1a1b956fe1df85f3c132b21edb4e116458" kind="typedef"><name>int8</name></member>
+    <member refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kind="typedef"><name>uint32</name></member>
+    <member refid="prim__type_8h_1a05f6b0ae8f6a6e135b0e290c25fe0e4e" kind="typedef"><name>uint16</name></member>
+    <member refid="prim__type_8h_1adde6aaee8457bee49c2a92621fe22b79" kind="typedef"><name>uint8</name></member>
+    <member refid="prim__type_8h_1aecfc3c54bd29ad5964e1c1c3ccbf89df" kind="typedef"><name>int64</name></member>
+    <member refid="prim__type_8h_1a29940ae63ec06c9998bba873e25407ad" kind="typedef"><name>uint64</name></member>
+    <member refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kind="typedef"><name>float32</name></member>
+    <member refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kind="typedef"><name>float64</name></member>
+  </compound>
+  <compound refid="search_8h" kind="file"><name>search.h</name>
+    <member refid="search_8h_1ae3fe90e6eb1fa74e30783e20468280c1" kind="typedef"><name>ps_search_iter_t</name></member>
+  </compound>
+  <compound refid="vad_8h" kind="file"><name>vad.h</name>
+    <member refid="vad_8h_1a619d5a74e526164718dfee5ed9a48202" kind="define"><name>PS_VAD_DEFAULT_SAMPLE_RATE</name></member>
+    <member refid="vad_8h_1a42e1e50b03fb55c0b0377cf017c70390" kind="define"><name>PS_VAD_DEFAULT_FRAME_LENGTH</name></member>
+    <member refid="vad_8h_1a8605289aba98c9ef20a53d77fd1bcfe4" kind="define"><name>ps_vad_frame_length</name></member>
+    <member refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008a" kind="enum"><name>ps_vad_mode_e</name></member>
+    <member refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc" kind="enumvalue"><name>PS_VAD_LOOSE</name></member>
+    <member refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa89e52dc825838610a3aa4ea0fe03fdc7" kind="enumvalue"><name>PS_VAD_MEDIUM_LOOSE</name></member>
+    <member refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa4048797917df161a4c563d7275ad8d9d" kind="enumvalue"><name>PS_VAD_MEDIUM_STRICT</name></member>
+    <member refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa3a0206f29e4236c2b69943f4f59e41b5" kind="enumvalue"><name>PS_VAD_STRICT</name></member>
+    <member refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52" kind="enum"><name>ps_vad_class_e</name></member>
+    <member refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a91962e1736dea5e5360514d28d91b2ef" kind="enumvalue"><name>PS_VAD_ERROR</name></member>
+    <member refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a1996a23a0326d2ed6ea77907504365bd" kind="enumvalue"><name>PS_VAD_NOT_SPEECH</name></member>
+    <member refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a4e21d4159f6b5aa4f3d055ee4669f5a6" kind="enumvalue"><name>PS_VAD_SPEECH</name></member>
+    <member refid="vad_8h_1a6813ff6e0f9e0f11336dd7cc5d901170" kind="typedef"><name>ps_vad_t</name></member>
+    <member refid="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" kind="typedef"><name>ps_vad_mode_t</name></member>
+    <member refid="vad_8h_1a8ec7428965724fab96f9ca4f7ded5b4d" kind="typedef"><name>ps_vad_class_t</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_tic_tac_toe_test_2main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="_tic_tac_toe_test_2main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_board_8cpp" kind="file"><name>Board.cpp</name>
+  </compound>
+  <compound refid="_board_8h" kind="file"><name>Board.h</name>
+  </compound>
+  <compound refid="_network_manager_8cpp" kind="file"><name>NetworkManager.cpp</name>
+  </compound>
+  <compound refid="_network_manager_8h" kind="file"><name>NetworkManager.h</name>
+  </compound>
+  <compound refid="_speech_manager_8cpp" kind="file"><name>SpeechManager.cpp</name>
+  </compound>
+  <compound refid="_speech_manager_8h" kind="file"><name>SpeechManager.h</name>
+  </compound>
+  <compound refid="tst__board_8h" kind="file"><name>tst_board.h</name>
+    <member refid="tst__board_8h_1afe8d32a4b1841501528198e3c3c317ff" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1a28b2bf2a7ac67d83661b3eaa3b2c118b" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1a19e3b68208955da7395c5d38ffca8ba4" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1a8ca0397d3342d267ba6a7f13b98a2a05" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1ab48b30211c8ddeb6587b53c4ada0bc31" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1a9af799f6e2643a3997d0c094b5971d2b" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1a9a2d51e4d9cf35eba8a63c379734358c" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1a5d13b3bb92d3a06be7fdf1b54961ea52" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1a1ac3aa7aeea81ead4ab8dd66e94dde49" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1a6f8e97e39d716ebe3e1abcc8814441fd" kind="function"><name>TEST</name></member>
+    <member refid="tst__board_8h_1ac555eeb8f6fce63474f024697664db1d" kind="function"><name>TEST</name></member>
+  </compound>
+  <compound refid="tst__minimaxagent_8h" kind="file"><name>tst_minimaxagent.h</name>
+    <member refid="tst__minimaxagent_8h_1af7058d3c7505db3452d4c7025fe11d82" kind="function"><name>TEST</name></member>
+    <member refid="tst__minimaxagent_8h_1adcd416e8815daad735b5333917656196" kind="function"><name>TEST</name></member>
+    <member refid="tst__minimaxagent_8h_1a8fab0dc25c45462fbed06661dc299e71" kind="function"><name>TEST</name></member>
+    <member refid="tst__minimaxagent_8h_1a032eae83898806e040369ea3602d53a7" kind="function"><name>TEST</name></member>
+  </compound>
+  <compound refid="_t_t_t_common_types_8h" kind="file"><name>TTTCommonTypes.h</name>
+    <member refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kind="enum"><name>BoardMarks</name></member>
+    <member refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kind="enumvalue"><name>Empty</name></member>
+    <member refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kind="enumvalue"><name>X</name></member>
+    <member refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kind="enumvalue"><name>O</name></member>
+    <member refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222" kind="enum"><name>BoardState</name></member>
+    <member refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" kind="enumvalue"><name>NoWinner</name></member>
+    <member refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" kind="enumvalue"><name>XWins</name></member>
+    <member refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" kind="enumvalue"><name>OWins</name></member>
+    <member refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" kind="enumvalue"><name>Tie</name></member>
+    <member refid="_t_t_t_common_types_8h_1aab32d563b1d9a745d0f18496bb3f41dc" kind="variable"><name>global_done</name></member>
+  </compound>
+  <compound refid="_tic_tac_toe_game_8cpp" kind="file"><name>TicTacToeGame.cpp</name>
+  </compound>
+  <compound refid="_tic_tac_toe_game_8h" kind="file"><name>TicTacToeGame.h</name>
+  </compound>
+  <compound refid="_title_screen_8cpp" kind="file"><name>TitleScreen.cpp</name>
+  </compound>
+  <compound refid="_title_screen_8h" kind="file"><name>TitleScreen.h</name>
+  </compound>
+  <compound refid="deprecated" kind="page"><name>deprecated</name>
+  </compound>
+  <compound refid="dir_a2e82b4e0ac64657f77f5a9a0cc058cc" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI</name>
+  </compound>
+  <compound refid="dir_37b780ba032610e1ee204646aeeb079a" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config</name>
+  </compound>
+  <compound refid="dir_7c341489219056279403641d0f7c52de" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller</name>
+  </compound>
+  <compound refid="dir_4797d907ae48f413ac06f3cf9d252bdb" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples</name>
+  </compound>
+  <compound refid="dir_c4b02c159c68d033374ec1174bf5a9fa" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/include</name>
+  </compound>
+  <compound refid="dir_19e79deb46b5494920d60f6c1487a32e" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include</name>
+  </compound>
+  <compound refid="dir_e17808f8d4b75895bd903217f726af3a" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model</name>
+  </compound>
+  <compound refid="dir_3e52b4995d7162d5fa6b0f203cfef001" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network</name>
+  </compound>
+  <compound refid="dir_b1bcb6fe7db195b510fca5862302fc64" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/include/pocketsphinx</name>
+  </compound>
+  <compound refid="dir_786643cf2a52b1be22b3320a1d95c5f4" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx</name>
+  </compound>
+  <compound refid="dir_3d9884a2316b15b077c702a4623eb12e" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master</name>
+  </compound>
+  <compound refid="dir_254468ffa5fb37a3652f0c1916dd8eac" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech</name>
+  </compound>
+  <compound refid="dir_e71aadfcc3b5b65c2027ad49da46bd1d" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test</name>
+  </compound>
+  <compound refid="dir_d913f9539fd1cffe48392e1a2787b807" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest</name>
+  </compound>
+  <compound refid="dir_4df65bc69675640176de6c1c3b6ad756" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit</name>
+  </compound>
+  <compound refid="dir_6b24e234736ee76983202a12a7b7e744" kind="dir"><name>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

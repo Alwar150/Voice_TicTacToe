@@ -1,0 +1,611 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__lattice__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_lattice_t</compoundname>
+    <includes refid="lattice_8h" local="no">pocketsphinx/lattice.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__lattice__t_1a6edc5631b7d5ab3f54747293f9bef3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_lattice_t * ps_lattice_read</definition>
+        <argsstring>(struct ps_decoder_s *ps, char const *file)</argsstring>
+        <name>ps_lattice_read</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_read</qualifiedname>
+        <param>
+          <type>struct ps_decoder_s *</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a lattice from a file on disk.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decoder to use for processing this lattice, or NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to lattice file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Newly created lattice, or NULL for failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="108" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="108" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1ad7c9aba902d61bb81bab1df2c437c305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_lattice_t * ps_lattice_retain</definition>
+        <argsstring>(ps_lattice_t *dag)</argsstring>
+        <name>ps_lattice_retain</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_retain</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retain a lattice.</para>
+<para>This function retains ownership of a lattice for the caller, preventing it from being freed automatically. You must call <ref refid="structps__lattice__t_1a3f90e846bde47cd1acdff165b92f5c22" kindref="member">ps_lattice_free()</ref> to free it after having called this function.</para>
+<para><simplesect kind="return"><para>pointer to the retained lattice. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="122" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="122" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a3f90e846bde47cd1acdff165b92f5c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_lattice_free</definition>
+        <argsstring>(ps_lattice_t *dag)</argsstring>
+        <name>ps_lattice_free</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a lattice.</para>
+<para><simplesect kind="return"><para>new reference count (0 if dag was freed) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="131" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="131" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a3f2e2b88d0aa80346cc64d2b7934b863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_lattice_write</definition>
+        <argsstring>(ps_lattice_t *dag, char const *filename)</argsstring>
+        <name>ps_lattice_write</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_write</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write a lattice to disk.</para>
+<para><simplesect kind="return"><para>0 for success, &lt;0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="140" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="140" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1aefd25c0f49a0d70f999187a26fa2ff06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_lattice_write_htk</definition>
+        <argsstring>(ps_lattice_t *dag, char const *filename)</argsstring>
+        <name>ps_lattice_write_htk</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_write_htk</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write a lattice to disk in HTK format</para>
+<para><simplesect kind="return"><para>0 for success, &lt;0 on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="149" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="149" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a2ec403afeb085ce901a4a2b2a0830991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT logmath_t * ps_lattice_get_logmath</definition>
+        <argsstring>(ps_lattice_t *dag)</argsstring>
+        <name>ps_lattice_get_logmath</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_get_logmath</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the log-math computation object for this lattice</para>
+<para><simplesect kind="return"><para>The log-math object for this lattice. The lattice retains ownership of this pointer, so you should not attempt to free it manually. Use logmath_retain() if you wish to reuse it elsewhere. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="161" column="11" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="161" declcolumn="11"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1aefc403a8d205927a02d9436417e0caa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__latnode__iter__t" kindref="compound">ps_latnode_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_latnode_iter_t * ps_latnode_iter</definition>
+        <argsstring>(ps_lattice_t *dag)</argsstring>
+        <name>ps_latnode_iter</name>
+        <qualifiedname>ps_lattice_t::ps_latnode_iter</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start iterating over nodes in the lattice.</para>
+<para><simplesect kind="note"><para>No particular order of traversal is guaranteed, and you should not depend on this.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lattice to iterate over. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Iterator over lattice nodes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="175" column="19" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="175" declcolumn="19"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a4aaae70904361b23a78cdcb632c298c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ps_lattice_link</definition>
+        <argsstring>(ps_lattice_t *dag, ps_latnode_t *from, ps_latnode_t *to, int32 score, int32 ef)</argsstring>
+        <name>ps_lattice_link</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_link</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+          <declname>ef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a directed link between &quot;from&quot; and &quot;to&quot; nodes, but if a link already exists, choose one with the best link_scr. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="374" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="374" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a0b6d58c7646f20a078aa0f7d5029e67f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__latlink__t" kindref="compound">ps_latlink_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_latlink_t * ps_lattice_traverse_edges</definition>
+        <argsstring>(ps_lattice_t *dag, ps_latnode_t *start, ps_latnode_t *end)</argsstring>
+        <name>ps_lattice_traverse_edges</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_traverse_edges</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start a forward traversal of edges in a word graph.</para>
+<para><simplesect kind="note"><para>A keen eye will notice an inconsistency in this API versus other types of iterators in PocketSphinx. The reason for this is that the traversal algorithm is much more efficient when it is able to modify the lattice structure. Therefore, to avoid giving the impression that multiple traversals are possible at once, no separate iterator structure is provided.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lattice to be traversed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start node (source) of traversal. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End node (goal) of traversal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>First link in traversal. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="394" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="394" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1ae7a2a8d13f30836c34246cc6e8108115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__latlink__t" kindref="compound">ps_latlink_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_latlink_t * ps_lattice_traverse_next</definition>
+        <argsstring>(ps_lattice_t *dag, ps_latnode_t *end)</argsstring>
+        <name>ps_lattice_traverse_next</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_traverse_next</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next link in forward traversal.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lattice to be traversed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End node (goal) of traversal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next link in traversal. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="405" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="405" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a5b41fb328ee88d7f8de274b217c97451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__latlink__t" kindref="compound">ps_latlink_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_latlink_t * ps_lattice_reverse_edges</definition>
+        <argsstring>(ps_lattice_t *dag, ps_latnode_t *start, ps_latnode_t *end)</argsstring>
+        <name>ps_lattice_reverse_edges</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_reverse_edges</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start a reverse traversal of edges in a word graph.</para>
+<para><simplesect kind="note"><para>See <ref refid="structps__lattice__t_1a0b6d58c7646f20a078aa0f7d5029e67f" kindref="member">ps_lattice_traverse_edges()</ref> for why this API is the way it is.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lattice to be traversed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start node (goal) of traversal. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End node (source) of traversal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>First link in traversal. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="419" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="419" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1ad85dcdee93cc3eb067051202d9563a9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__latlink__t" kindref="compound">ps_latlink_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_latlink_t * ps_lattice_reverse_next</definition>
+        <argsstring>(ps_lattice_t *dag, ps_latnode_t *start)</argsstring>
+        <name>ps_lattice_reverse_next</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_reverse_next</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next link in reverse traversal.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lattice to be traversed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start node (goal) of traversal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next link in traversal. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="430" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="430" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1afc5aee64d40f8b9349f2125ed0096396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__latlink__t" kindref="compound">ps_latlink_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_latlink_t * ps_lattice_bestpath</definition>
+        <argsstring>(ps_lattice_t *dag, ngram_model_t *lmset, float32 lwf, float32 ascale)</argsstring>
+        <name>ps_lattice_bestpath</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_bestpath</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref> *</type>
+          <declname>lmset</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref></type>
+          <declname>lwf</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref></type>
+          <declname>ascale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Do N-Gram based best-path search on a word graph.</para>
+<para>This function calculates both the best path as well as the forward probability used in confidence estimation.</para>
+<para><simplesect kind="return"><para>Final link in best path, NULL on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="442" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="442" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a8c5c6ef260ab006099ab34d09b5b1d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+        <definition>POCKETSPHINX_EXPORT int32 ps_lattice_posterior</definition>
+        <argsstring>(ps_lattice_t *dag, ngram_model_t *lmset, float32 ascale)</argsstring>
+        <name>ps_lattice_posterior</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_posterior</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type><ref refid="structngram__model__t" kindref="compound">ngram_model_t</ref> *</type>
+          <declname>lmset</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1aacdc525d6f7bddb3ae95d5c311bd06a1" kindref="member">float32</ref></type>
+          <declname>ascale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate link posterior probabilities on a word graph.</para>
+<para>This function assumes that bestpath search has already been done.</para>
+<para><simplesect kind="return"><para>Posterior probability of the utterance as a whole. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="454" column="7" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="454" declcolumn="7"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a30d83a5fd158d2acaa5107be7a09ed09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+        <definition>POCKETSPHINX_EXPORT int32 ps_lattice_posterior_prune</definition>
+        <argsstring>(ps_lattice_t *dag, int32 beam)</argsstring>
+        <name>ps_lattice_posterior_prune</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_posterior_prune</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+          <declname>beam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prune all links (and associated nodes) below a certain posterior probability.</para>
+<para>This function assumes that <ref refid="structps__lattice__t_1a8c5c6ef260ab006099ab34d09b5b1d06" kindref="member">ps_lattice_posterior()</ref> has already been called.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>beam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum posterior probability for links. This is expressed in the log-base used in the decoder. To convert from linear floating-point, use logmath_log(ps_lattice_get_logmath(), prob). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of arcs removed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="470" column="7" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="470" declcolumn="7"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__lattice__t_1a44a196a35a8aeb044251c6c152034c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_lattice_n_frames</definition>
+        <argsstring>(ps_lattice_t *dag)</argsstring>
+        <name>ps_lattice_n_frames</name>
+        <qualifiedname>ps_lattice_t::ps_lattice_n_frames</qualifiedname>
+        <param>
+          <type><ref refid="structps__lattice__t" kindref="compound">ps_lattice_t</ref> *</type>
+          <declname>dag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of frames in the lattice.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lattice in question. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of frames in this lattice. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="491" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="491" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Word graph structure used in bestpath/nbest search. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="61" column="1"/>
+    <listofallmembers>
+      <member refid="structps__lattice__t_1aefc403a8d205927a02d9436417e0caa5" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_latnode_iter</name></member>
+      <member refid="structps__lattice__t_1afc5aee64d40f8b9349f2125ed0096396" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_bestpath</name></member>
+      <member refid="structps__lattice__t_1a3f90e846bde47cd1acdff165b92f5c22" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_free</name></member>
+      <member refid="structps__lattice__t_1a2ec403afeb085ce901a4a2b2a0830991" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_get_logmath</name></member>
+      <member refid="structps__lattice__t_1a4aaae70904361b23a78cdcb632c298c4" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_link</name></member>
+      <member refid="structps__lattice__t_1a44a196a35a8aeb044251c6c152034c90" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_n_frames</name></member>
+      <member refid="structps__lattice__t_1a8c5c6ef260ab006099ab34d09b5b1d06" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_posterior</name></member>
+      <member refid="structps__lattice__t_1a30d83a5fd158d2acaa5107be7a09ed09" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_posterior_prune</name></member>
+      <member refid="structps__lattice__t_1a6edc5631b7d5ab3f54747293f9bef3e3" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_read</name></member>
+      <member refid="structps__lattice__t_1ad7c9aba902d61bb81bab1df2c437c305" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_retain</name></member>
+      <member refid="structps__lattice__t_1a5b41fb328ee88d7f8de274b217c97451" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_reverse_edges</name></member>
+      <member refid="structps__lattice__t_1ad85dcdee93cc3eb067051202d9563a9e" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_reverse_next</name></member>
+      <member refid="structps__lattice__t_1a0b6d58c7646f20a078aa0f7d5029e67f" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_traverse_edges</name></member>
+      <member refid="structps__lattice__t_1ae7a2a8d13f30836c34246cc6e8108115" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_traverse_next</name></member>
+      <member refid="structps__lattice__t_1a3f2e2b88d0aa80346cc64d2b7934b863" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_write</name></member>
+      <member refid="structps__lattice__t_1aefd25c0f49a0d70f999187a26fa2ff06" prot="public" virt="non-virtual"><scope>ps_lattice_t</scope><name>ps_lattice_write_htk</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

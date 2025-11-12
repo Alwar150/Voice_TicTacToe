@@ -1,0 +1,104 @@
+\doxysection{AIAgent Class Reference}
+\hypertarget{class_a_i_agent}{}\label{class_a_i_agent}\index{AIAgent@{AIAgent}}
+
+
+{\ttfamily \#include $<$AIAgent.\+h$>$}
+
+Inheritance diagram for AIAgent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_a_i_agent}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_i_agent_a9c5f515eb3df94792ba02da8ac899cf5}{AIAgent}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_i_agent_a5614d02341e652bd2df4f3b2fb4d44c3}{\texorpdfstring{$\sim$}{\string~}\+AIAgent}} ()
+\item 
+virtual int \mbox{\hyperlink{class_a_i_agent_ac137ab96f5f7c53e74d4c9c7342021eb}{play}} (const \mbox{\hyperlink{class_board}{Board}} \&board)=0
+\begin{DoxyCompactList}\small\item\em Start the algorithm to choose a cell to play based on a given board. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_a_i_agent_ae694da05657ba286840b533523d9c64f}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset function that will reset the state of any search algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a8c885f35774ed96d466e67194b74de95}{Player}} (QObject \texorpdfstring{$\ast$}{*}parent\+\_\+=nullptr, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} player\+Mark, const \mbox{\hyperlink{class_board}{Board}} \&borad\+\_\+ref)
+\item 
+virtual \mbox{\hyperlink{class_player_a8981c201ffb2270c0b6dbd467b627376}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_af85db5d05b014bf19d873038c56dc7ed}{play}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Signals inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_af9436bec15f91ee87fb86907b720be52}{player\+Finished}} (const int \&cell)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_board}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_player_a088227ab53747cc4955b0a3859b69a84}{board\+\_\+}}
+\item 
+const \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \mbox{\hyperlink{class_player_ae8c600761eeb36ef938927dd87a87011}{mark\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_a_i_agent_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_i_agent_a9c5f515eb3df94792ba02da8ac899cf5}\index{AIAgent@{AIAgent}!AIAgent@{AIAgent}}
+\index{AIAgent@{AIAgent}!AIAgent@{AIAgent}}
+\doxysubsubsection{\texorpdfstring{AIAgent()}{AIAgent()}}
+{\footnotesize\ttfamily \label{class_a_i_agent_a9c5f515eb3df94792ba02da8ac899cf5} 
+AIAgent\+::\+AIAgent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_a_i_agent_a5614d02341e652bd2df4f3b2fb4d44c3}\index{AIAgent@{AIAgent}!````~AIAgent@{\texorpdfstring{$\sim$}{\string~}AIAgent}}
+\index{````~AIAgent@{\texorpdfstring{$\sim$}{\string~}AIAgent}!AIAgent@{AIAgent}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AIAgent()}{\string~AIAgent()}}
+{\footnotesize\ttfamily \label{class_a_i_agent_a5614d02341e652bd2df4f3b2fb4d44c3} 
+virtual AIAgent\+::\texorpdfstring{$\sim$}{\string~}\+AIAgent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_a_i_agent_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_i_agent_ac137ab96f5f7c53e74d4c9c7342021eb}\index{AIAgent@{AIAgent}!play@{play}}
+\index{play@{play}!AIAgent@{AIAgent}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_a_i_agent_ac137ab96f5f7c53e74d4c9c7342021eb} 
+virtual int AIAgent\+::play (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{board}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Start the algorithm to choose a cell to play based on a given board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & a reference to the board model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chosen cell index (in a 1D array) that the AI played. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_no_agent_a4c20d7b44b9b7061ae60893e577a3575}{No\+Agent}}.
+
+\Hypertarget{class_a_i_agent_ae694da05657ba286840b533523d9c64f}\index{AIAgent@{AIAgent}!reset@{reset}}
+\index{reset@{reset}!AIAgent@{AIAgent}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_a_i_agent_ae694da05657ba286840b533523d9c64f} 
+virtual void AIAgent\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+reset function that will reset the state of any search algorithm. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+AI/\mbox{\hyperlink{_a_i_agent_8h}{AIAgent.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="unionanytype__t" kind="union" language="C++" prot="public">
+    <compoundname>anytype_t</compoundname>
+    <includes refid="prim__type_8h" local="no">pocketsphinx/prim_type.h</includes>
+    <briefdescription>
+<para>Literally any type! </para>
+    </briefdescription>
+    <detaileddescription>
+<para>(correction: not literally any type, but all the ones we use for configuration) </para>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/prim_type.h" line="105" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

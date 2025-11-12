@@ -1,0 +1,315 @@
+\doxysection{Title\+Screen Class Reference}
+\hypertarget{class_title_screen}{}\label{class_title_screen}\index{TitleScreen@{TitleScreen}}
+
+
+The \doxylink{class_title_screen}{Title\+Screen} class is responsible for the GUI of the title screen, its main functionality is to gather game options set by the user, then starting a game by creating a Tic Tac Toe controller with the user options.  
+
+
+
+
+{\ttfamily \#include $<$Title\+Screen.\+h$>$}
+
+Inheritance diagram for Title\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_title_screen}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_title_screen_aad4454fc738633edbad55ebe00ceec3d}{update\+Board\+Size}} (int size)
+\begin{DoxyCompactList}\small\item\em update\+Board\+Size updates the board size in the current options. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_title_screen_af028098c1b235b3da76941c83776de20}{update\+Single\+Player}} (bool checked)
+\begin{DoxyCompactList}\small\item\em update\+Single\+Player updates the AI existence flag to true as there is one player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_title_screen_a65a292091aba9a84cf518af2d395f2b0}{update\+Two\+Players}} (bool checked)
+\begin{DoxyCompactList}\small\item\em update\+Two\+Players updates the AI existence flag to false as there are two player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_title_screen_a2cb34f420ea007de5bec91a91b6f2abe}{update\+AIstarts\+Game}} (bool checked)
+\begin{DoxyCompactList}\small\item\em update\+AIstarts\+Game sets the AI starting the first play or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_title_screen_a60d1e875593a02a6ee01508235680a47}{update\+Mini\+Max\+Depth}} (int depth)
+\begin{DoxyCompactList}\small\item\em update\+Mini\+Max\+Depth sets the value of the depth cutoff for the minimax algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_title_screen_ac55c2f2485f58d3b7b389e7414a358d6}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em start\+Game hides the title screen and creates a Tic tac toe controller to start a game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_title_screen_a8d6e439797b80238c95602359ba029bd}{exited}} ()
+\begin{DoxyCompactList}\small\item\em exited is emitted to manually handle the close functionality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f}{Title\+Screen}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_title_screen}{Title\+Screen} constructs the view of the title screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em set\+Connections sets connections to gather game options from the GUI elements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_title_screen_a06e835ca83c6ead23fa0f24833ec76b9}{close\+Event}} (QClose\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em close\+Event manually handles the closing event defined in the base class QWidget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ Ui\+::\+Title\+Screen $>$ \mbox{\hyperlink{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}{ui}}
+\begin{DoxyCompactList}\small\item\em ui is a reference to the ui object of the tic tac toe game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}} \mbox{\hyperlink{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}{options\+\_\+}}
+\begin{DoxyCompactList}\small\item\em options are the values and flags that control a tic tac toe game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_title_screen}{Title\+Screen} class is responsible for the GUI of the title screen, its main functionality is to gather game options set by the user, then starting a game by creating a Tic Tac Toe controller with the user options. 
+
+\label{doc-constructors}
+\Hypertarget{class_title_screen_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f}\index{TitleScreen@{TitleScreen}!TitleScreen@{TitleScreen}}
+\index{TitleScreen@{TitleScreen}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{TitleScreen()}{TitleScreen()}}
+{\footnotesize\ttfamily \label{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f} 
+Title\+Screen\+::\+Title\+Screen (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxylink{class_title_screen}{Title\+Screen} constructs the view of the title screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & is a QWidget type parent that owns this instance of the controller. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections()}}, \mbox{\hyperlink{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f}{Title\+Screen()}}, and \mbox{\hyperlink{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}{ui}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f}{Title\+Screen()}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_title_screen_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_title_screen_a06e835ca83c6ead23fa0f24833ec76b9}\index{TitleScreen@{TitleScreen}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{closeEvent()}{closeEvent()}}
+{\footnotesize\ttfamily \label{class_title_screen_a06e835ca83c6ead23fa0f24833ec76b9} 
+void Title\+Screen\+::close\+Event (\begin{DoxyParamCaption}\item[{QClose\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}}
+
+
+
+close\+Event manually handles the closing event defined in the base class QWidget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the closing event. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_title_screen_a8d6e439797b80238c95602359ba029bd}{exited()}}.
+
+\Hypertarget{class_title_screen_a8d6e439797b80238c95602359ba029bd}\index{TitleScreen@{TitleScreen}!exited@{exited}}
+\index{exited@{exited}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{exited}{exited}}
+{\footnotesize\ttfamily \label{class_title_screen_a8d6e439797b80238c95602359ba029bd} 
+void Title\+Screen\+::exited (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+exited is emitted to manually handle the close functionality. 
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_a06e835ca83c6ead23fa0f24833ec76b9}{close\+Event()}}, and \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()}}.
+
+\Hypertarget{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}\index{TitleScreen@{TitleScreen}!setConnections@{setConnections}}
+\index{setConnections@{setConnections}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{setConnections()}{setConnections()}}
+{\footnotesize\ttfamily \label{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5} 
+void Title\+Screen\+::set\+Connections (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+set\+Connections sets connections to gather game options from the GUI elements. 
+
+
+
+References \mbox{\hyperlink{class_title_screen_ac55c2f2485f58d3b7b389e7414a358d6}{start\+Game()}}, \mbox{\hyperlink{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}{ui}}, \mbox{\hyperlink{class_title_screen_a2cb34f420ea007de5bec91a91b6f2abe}{update\+AIstarts\+Game()}}, \mbox{\hyperlink{class_title_screen_aad4454fc738633edbad55ebe00ceec3d}{update\+Board\+Size()}}, \mbox{\hyperlink{class_title_screen_a60d1e875593a02a6ee01508235680a47}{update\+Mini\+Max\+Depth()}}, \mbox{\hyperlink{class_title_screen_af028098c1b235b3da76941c83776de20}{update\+Single\+Player()}}, and \mbox{\hyperlink{class_title_screen_a65a292091aba9a84cf518af2d395f2b0}{update\+Two\+Players()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f}{Title\+Screen()}}.
+
+\Hypertarget{class_title_screen_ac55c2f2485f58d3b7b389e7414a358d6}\index{TitleScreen@{TitleScreen}!startGame@{startGame}}
+\index{startGame@{startGame}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{startGame}{startGame}}
+{\footnotesize\ttfamily \label{class_title_screen_ac55c2f2485f58d3b7b389e7414a358d6} 
+void Title\+Screen\+::start\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+start\+Game hides the title screen and creates a Tic tac toe controller to start a game. 
+
+
+
+References \mbox{\hyperlink{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}{options\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections()}}.
+
+\Hypertarget{class_title_screen_a2cb34f420ea007de5bec91a91b6f2abe}\index{TitleScreen@{TitleScreen}!updateAIstartsGame@{updateAIstartsGame}}
+\index{updateAIstartsGame@{updateAIstartsGame}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{updateAIstartsGame}{updateAIstartsGame}}
+{\footnotesize\ttfamily \label{class_title_screen_a2cb34f420ea007de5bec91a91b6f2abe} 
+void Title\+Screen\+::update\+AIstarts\+Game (\begin{DoxyParamCaption}\item[{bool}]{checked}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+update\+AIstarts\+Game sets the AI starting the first play or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checked} & wether the checkbox is checked or not. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}{options\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections()}}.
+
+\Hypertarget{class_title_screen_aad4454fc738633edbad55ebe00ceec3d}\index{TitleScreen@{TitleScreen}!updateBoardSize@{updateBoardSize}}
+\index{updateBoardSize@{updateBoardSize}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{updateBoardSize}{updateBoardSize}}
+{\footnotesize\ttfamily \label{class_title_screen_aad4454fc738633edbad55ebe00ceec3d} 
+void Title\+Screen\+::update\+Board\+Size (\begin{DoxyParamCaption}\item[{int}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+update\+Board\+Size updates the board size in the current options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the number of rows or columns in the board. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}{options\+\_\+}}, and \mbox{\hyperlink{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}{ui}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections()}}.
+
+\Hypertarget{class_title_screen_a60d1e875593a02a6ee01508235680a47}\index{TitleScreen@{TitleScreen}!updateMiniMaxDepth@{updateMiniMaxDepth}}
+\index{updateMiniMaxDepth@{updateMiniMaxDepth}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{updateMiniMaxDepth}{updateMiniMaxDepth}}
+{\footnotesize\ttfamily \label{class_title_screen_a60d1e875593a02a6ee01508235680a47} 
+void Title\+Screen\+::update\+Mini\+Max\+Depth (\begin{DoxyParamCaption}\item[{int}]{depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+update\+Mini\+Max\+Depth sets the value of the depth cutoff for the minimax algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & the depth cutoff for the minimax algorithm. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}{options\+\_\+}}, and \mbox{\hyperlink{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}{ui}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections()}}.
+
+\Hypertarget{class_title_screen_af028098c1b235b3da76941c83776de20}\index{TitleScreen@{TitleScreen}!updateSinglePlayer@{updateSinglePlayer}}
+\index{updateSinglePlayer@{updateSinglePlayer}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{updateSinglePlayer}{updateSinglePlayer}}
+{\footnotesize\ttfamily \label{class_title_screen_af028098c1b235b3da76941c83776de20} 
+void Title\+Screen\+::update\+Single\+Player (\begin{DoxyParamCaption}\item[{bool}]{checked}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+update\+Single\+Player updates the AI existence flag to true as there is one player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checked} & wether the radio button is checked or not. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}{options\+\_\+}}, and \mbox{\hyperlink{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}{ui}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections()}}.
+
+\Hypertarget{class_title_screen_a65a292091aba9a84cf518af2d395f2b0}\index{TitleScreen@{TitleScreen}!updateTwoPlayers@{updateTwoPlayers}}
+\index{updateTwoPlayers@{updateTwoPlayers}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{updateTwoPlayers}{updateTwoPlayers}}
+{\footnotesize\ttfamily \label{class_title_screen_a65a292091aba9a84cf518af2d395f2b0} 
+void Title\+Screen\+::update\+Two\+Players (\begin{DoxyParamCaption}\item[{bool}]{checked}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+update\+Two\+Players updates the AI existence flag to false as there are two player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checked} & wether the radio button is checked or not. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}{options\+\_\+}}, and \mbox{\hyperlink{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}{ui}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections()}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_title_screen_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}\index{TitleScreen@{TitleScreen}!options\_@{options\_}}
+\index{options\_@{options\_}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{options\_}{options\_}}
+{\footnotesize\ttfamily \label{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb} 
+\mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}} Title\+Screen\+::options\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+options are the values and flags that control a tic tac toe game. 
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_ac55c2f2485f58d3b7b389e7414a358d6}{start\+Game()}}, \mbox{\hyperlink{class_title_screen_a2cb34f420ea007de5bec91a91b6f2abe}{update\+AIstarts\+Game()}}, \mbox{\hyperlink{class_title_screen_aad4454fc738633edbad55ebe00ceec3d}{update\+Board\+Size()}}, \mbox{\hyperlink{class_title_screen_a60d1e875593a02a6ee01508235680a47}{update\+Mini\+Max\+Depth()}}, \mbox{\hyperlink{class_title_screen_af028098c1b235b3da76941c83776de20}{update\+Single\+Player()}}, and \mbox{\hyperlink{class_title_screen_a65a292091aba9a84cf518af2d395f2b0}{update\+Two\+Players()}}.
+
+\Hypertarget{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}\index{TitleScreen@{TitleScreen}!ui@{ui}}
+\index{ui@{ui}!TitleScreen@{TitleScreen}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d} 
+std\+::unique\+\_\+ptr$<$Ui\+::\+Title\+Screen$>$ Title\+Screen\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ui is a reference to the ui object of the tic tac toe game. 
+
+
+
+Referenced by \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{set\+Connections()}}, \mbox{\hyperlink{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f}{Title\+Screen()}}, \mbox{\hyperlink{class_title_screen_aad4454fc738633edbad55ebe00ceec3d}{update\+Board\+Size()}}, \mbox{\hyperlink{class_title_screen_a60d1e875593a02a6ee01508235680a47}{update\+Mini\+Max\+Depth()}}, \mbox{\hyperlink{class_title_screen_af028098c1b235b3da76941c83776de20}{update\+Single\+Player()}}, and \mbox{\hyperlink{class_title_screen_a65a292091aba9a84cf518af2d395f2b0}{update\+Two\+Players()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+View/\mbox{\hyperlink{_title_screen_8h}{Title\+Screen.\+h}}\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+View/\mbox{\hyperlink{_title_screen_8cpp}{Title\+Screen.\+cpp}}\end{DoxyCompactItemize}

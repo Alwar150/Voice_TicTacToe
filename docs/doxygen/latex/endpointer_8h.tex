@@ -1,0 +1,120 @@
+\doxysection{C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/endpointer.h File Reference}
+\hypertarget{endpointer_8h}{}\label{endpointer_8h}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/endpointer.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/endpointer.h}}
+
+
+VAD-\/based endpointer for Pocket\+Sphinx.  
+
+
+{\ttfamily \#include $<$pocketsphinx/prim\+\_\+type.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/export.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/vad.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{endpointer_8h_a66481b47838efb4704b9483893cd1c8a}{PS\+\_\+\+ENDPOINTER\+\_\+\+DEFAULT\+\_\+\+WINDOW}}~0.\+3
+\item 
+\#define \mbox{\hyperlink{endpointer_8h_a98c9cba29a99e4ef2d08865da20c1d3c}{PS\+\_\+\+ENDPOINTER\+\_\+\+DEFAULT\+\_\+\+RATIO}}~0.\+9
+\item 
+\#define \mbox{\hyperlink{endpointer_8h_aaa16760235cea4c0a06db70c907bc576}{ps\+\_\+endpointer\+\_\+frame\+\_\+size}}(ep)
+\item 
+\#define \mbox{\hyperlink{endpointer_8h_a65e580fb57829e172863093b8d8bfdf7}{ps\+\_\+endpointer\+\_\+frame\+\_\+length}}(ep)
+\item 
+\#define \mbox{\hyperlink{endpointer_8h_a1b52b6d6bf58004f463ad01697b1076f}{ps\+\_\+endpointer\+\_\+sample\+\_\+rate}}(ep)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct ps\+\_\+endpointer\+\_\+s \mbox{\hyperlink{endpointer_8h_a4f2999eabbcd8a52fe829a1f82a24a01}{ps\+\_\+endpointer\+\_\+t}}
+\item 
+typedef double(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{endpointer_8h_ac01ff24b5365d201fb0ed51bf7e830c2}{ps\+\_\+endpointer\+\_\+timestamp\+\_\+cb\+\_\+t}}) (void \texorpdfstring{$\ast$}{*}user\+\_\+data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+VAD-\/based endpointer for Pocket\+Sphinx. 
+
+Because doxygen is Bad Software, the actual documentation can only exist in \doxylink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}. Sorry about that. 
+
+\label{doc-define-members}
+\Hypertarget{endpointer_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{endpointer_8h_a98c9cba29a99e4ef2d08865da20c1d3c}\index{endpointer.h@{endpointer.h}!PS\_ENDPOINTER\_DEFAULT\_RATIO@{PS\_ENDPOINTER\_DEFAULT\_RATIO}}
+\index{PS\_ENDPOINTER\_DEFAULT\_RATIO@{PS\_ENDPOINTER\_DEFAULT\_RATIO}!endpointer.h@{endpointer.h}}
+\doxysubsubsection{\texorpdfstring{PS\_ENDPOINTER\_DEFAULT\_RATIO}{PS\_ENDPOINTER\_DEFAULT\_RATIO}}
+{\footnotesize\ttfamily \label{endpointer_8h_a98c9cba29a99e4ef2d08865da20c1d3c} 
+\#define PS\+\_\+\+ENDPOINTER\+\_\+\+DEFAULT\+\_\+\+RATIO~0.\+9}
+
+Default ratio of frames in window to trigger start/end decision. \Hypertarget{endpointer_8h_a66481b47838efb4704b9483893cd1c8a}\index{endpointer.h@{endpointer.h}!PS\_ENDPOINTER\_DEFAULT\_WINDOW@{PS\_ENDPOINTER\_DEFAULT\_WINDOW}}
+\index{PS\_ENDPOINTER\_DEFAULT\_WINDOW@{PS\_ENDPOINTER\_DEFAULT\_WINDOW}!endpointer.h@{endpointer.h}}
+\doxysubsubsection{\texorpdfstring{PS\_ENDPOINTER\_DEFAULT\_WINDOW}{PS\_ENDPOINTER\_DEFAULT\_WINDOW}}
+{\footnotesize\ttfamily \label{endpointer_8h_a66481b47838efb4704b9483893cd1c8a} 
+\#define PS\+\_\+\+ENDPOINTER\+\_\+\+DEFAULT\+\_\+\+WINDOW~0.\+3}
+
+Default window in seconds of audio to use for speech start/end decision. \Hypertarget{endpointer_8h_a65e580fb57829e172863093b8d8bfdf7}\index{endpointer.h@{endpointer.h}!ps\_endpointer\_frame\_length@{ps\_endpointer\_frame\_length}}
+\index{ps\_endpointer\_frame\_length@{ps\_endpointer\_frame\_length}!endpointer.h@{endpointer.h}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_frame\_length}{ps\_endpointer\_frame\_length}}
+{\footnotesize\ttfamily \label{endpointer_8h_a65e580fb57829e172863093b8d8bfdf7} 
+\#define ps\+\_\+endpointer\+\_\+frame\+\_\+length(\begin{DoxyParamCaption}\item[{}]{ep}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{vad_8h_a8605289aba98c9ef20a53d77fd1bcfe4}{ps\_vad\_frame\_length}}(ps\_endpointer\_vad(ep))}
+
+\end{DoxyCode}
+Get the frame length (in seconds) consumed by the endpointer. \Hypertarget{endpointer_8h_aaa16760235cea4c0a06db70c907bc576}\index{endpointer.h@{endpointer.h}!ps\_endpointer\_frame\_size@{ps\_endpointer\_frame\_size}}
+\index{ps\_endpointer\_frame\_size@{ps\_endpointer\_frame\_size}!endpointer.h@{endpointer.h}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_frame\_size}{ps\_endpointer\_frame\_size}}
+{\footnotesize\ttfamily \label{endpointer_8h_aaa16760235cea4c0a06db70c907bc576} 
+\#define ps\+\_\+endpointer\+\_\+frame\+\_\+size(\begin{DoxyParamCaption}\item[{}]{ep}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ps\_vad\_frame\_size(ps\_endpointer\_vad(ep))}
+
+\end{DoxyCode}
+Get the frame size (in samples) consumed by the endpointer.
+
+Multiply this by 2 to get the size of the frame buffer required. 
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a13ab24c0b019530b8c35557091fac078}{Speech\+Manager\+::init()}}, and \mbox{\hyperlink{struct_speech_to_text_ae5b7a33ea5ba734da4e3caed42a5e185}{Speech\+To\+Text\+::init()}}.
+
+\Hypertarget{endpointer_8h_a1b52b6d6bf58004f463ad01697b1076f}\index{endpointer.h@{endpointer.h}!ps\_endpointer\_sample\_rate@{ps\_endpointer\_sample\_rate}}
+\index{ps\_endpointer\_sample\_rate@{ps\_endpointer\_sample\_rate}!endpointer.h@{endpointer.h}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_sample\_rate}{ps\_endpointer\_sample\_rate}}
+{\footnotesize\ttfamily \label{endpointer_8h_a1b52b6d6bf58004f463ad01697b1076f} 
+\#define ps\+\_\+endpointer\+\_\+sample\+\_\+rate(\begin{DoxyParamCaption}\item[{}]{ep}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ps\_vad\_sample\_rate(ps\_endpointer\_vad(ep))}
+
+\end{DoxyCode}
+Get the sample rate required by the endpointer. 
+
+\label{doc-typedef-members}
+\Hypertarget{endpointer_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{endpointer_8h_a4f2999eabbcd8a52fe829a1f82a24a01}\index{endpointer.h@{endpointer.h}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\index{ps\_endpointer\_t@{ps\_endpointer\_t}!endpointer.h@{endpointer.h}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_t}{ps\_endpointer\_t}}
+{\footnotesize\ttfamily \label{endpointer_8h_a4f2999eabbcd8a52fe829a1f82a24a01} 
+typedef struct ps\+\_\+endpointer\+\_\+s ps\+\_\+endpointer\+\_\+t}
+
+\Hypertarget{endpointer_8h_ac01ff24b5365d201fb0ed51bf7e830c2}\index{endpointer.h@{endpointer.h}!ps\_endpointer\_timestamp\_cb\_t@{ps\_endpointer\_timestamp\_cb\_t}}
+\index{ps\_endpointer\_timestamp\_cb\_t@{ps\_endpointer\_timestamp\_cb\_t}!endpointer.h@{endpointer.h}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_timestamp\_cb\_t}{ps\_endpointer\_timestamp\_cb\_t}}
+{\footnotesize\ttfamily \label{endpointer_8h_ac01ff24b5365d201fb0ed51bf7e830c2} 
+typedef double(\texorpdfstring{$\ast$}{*} ps\+\_\+endpointer\+\_\+timestamp\+\_\+cb\+\_\+t) (void \texorpdfstring{$\ast$}{*}user\+\_\+data)}
+
+Callback function type for external timestamp sources.
+
+This callback allows applications to provide their own timestamp source (e.\+g., system time, monotonic clock) to avoid timestamp drift between audio clock and system clock.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+data} & User-\/provided data passed to ps\+\_\+endpointer\+\_\+set\+\_\+timestamp\+\_\+func() \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current timestamp in seconds 
+\end{DoxyReturn}

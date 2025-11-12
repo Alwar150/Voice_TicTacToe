@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="config_8h_1ad79f9fd4d879838fd99528711b86261d" prot="public" static="no">
+        <name>DEFAULT_RADIX</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="4" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a80741c824c30fcd1d2a8787dfa92338a" prot="public" static="no">
+        <name>HAVE_LONG_LONG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="13" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a42f2de81cc9398f23045b483488d082d" prot="public" static="no">
+        <name>HAVE_POPEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="16" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a040bd9182ad5ba7261448993c38565ea" prot="public" static="no">
+        <name>HAVE_SNPRINTF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="19" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ace156430ba007d19b4348a950d0c692b" prot="public" static="no">
+        <name>HAVE_SYS_STAT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="22" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a69dc70bea5d1f8bd2be9740e974fa666" prot="public" static="no">
+        <name>HAVE_SYS_TYPES_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="25" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a219b06937831d0da94d801ab13987639" prot="public" static="no">
+        <name>HAVE_UNISTD_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="28" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ab6cd6d1c63c1e26ea2d4537b77148354" prot="public" static="no">
+        <name>HAVE_STDINT_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="34" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a22aece5d034fd9040a3d01c3797fdfe7" prot="public" static="no">
+        <name>SIZEOF_LONG</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="37" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1acd1ddb89a6f7f17d1c152499173c3eef" prot="public" static="no">
+        <name>SIZEOF_LONG_LONG</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="40" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1d1d2d7f8d2f95b376954d649ab03233" prot="public" static="no">
+        <name>PACKAGE_BUGREPORT</name>
+        <initializer>&quot;dhdaines@gmail.com&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="51" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1c0439e4355794c09b64274849eb0279" prot="public" static="no">
+        <name>PACKAGE_NAME</name>
+        <initializer>&quot;PocketSphinx&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="54" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac73e6f903c16eca7710f92e36e1c6fbf" prot="public" static="no">
+        <name>PACKAGE_STRING</name>
+        <initializer>&quot;PocketSphinx 5.0.4&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="57" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af415af6bfede0e8d5453708afe68651c" prot="public" static="no">
+        <name>PACKAGE_TARNAME</name>
+        <initializer>&quot;pocketsphinx-5.0.4&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="60" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5c93853116d5a50307b6744f147840aa" prot="public" static="no">
+        <name>PACKAGE_URL</name>
+        <initializer>&quot;https://github.com/cmusphinx/pocketsphinx&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="63" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa326a05d5e30f9e9a4bb0b4469d5d0c0" prot="public" static="no">
+        <name>PACKAGE_VERSION</name>
+        <initializer>&quot;5.0.4&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" line="66" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>include/config.h.in.<sp/><sp/>Generated<sp/>from<sp/>configure.ac<sp/>by<sp/>autoheader.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Default<sp/>radix<sp/>point<sp/>for<sp/>fixed-point<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="config_8h_1ad79f9fd4d879838fd99528711b86261d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_RADIX<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>use<sp/>fixed-point<sp/>computation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>FIXED_POINT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>use<sp/>thread-local<sp/>storage<sp/>for<sp/>random<sp/>number<sp/>generator<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>PS_USE_THREAD_LOCAL_RNG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>if<sp/>the<sp/>system<sp/>has<sp/>the<sp/>type<sp/>`long<sp/>long&apos;.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="config_8h_1a80741c824c30fcd1d2a8787dfa92338a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_LONG_LONG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>if<sp/>you<sp/>have<sp/>the<sp/>`popen&apos;<sp/>function.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="config_8h_1a42f2de81cc9398f23045b483488d082d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_POPEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>if<sp/>you<sp/>have<sp/>the<sp/>`snprintf&apos;<sp/>function.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="config_8h_1a040bd9182ad5ba7261448993c38565ea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_SNPRINTF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>if<sp/>you<sp/>have<sp/>the<sp/>&lt;sys/stat.h&gt;<sp/>header<sp/>file.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="config_8h_1ace156430ba007d19b4348a950d0c692b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_SYS_STAT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>if<sp/>you<sp/>have<sp/>the<sp/>&lt;sys/types.h&gt;<sp/>header<sp/>file.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="config_8h_1a69dc70bea5d1f8bd2be9740e974fa666" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_SYS_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>if<sp/>you<sp/>have<sp/>the<sp/>&lt;unistd.h&gt;<sp/>header<sp/>file.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="config_8h_1a219b06937831d0da94d801ab13987639" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_UNISTD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>if<sp/>you<sp/>have<sp/>the<sp/>&lt;inttypes.h&gt;<sp/>header<sp/>file.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>HAVE_INTTYPES_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>if<sp/>you<sp/>have<sp/>the<sp/>&lt;stdint.h&gt;<sp/>header<sp/>file.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="config_8h_1ab6cd6d1c63c1e26ea2d4537b77148354" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_STDINT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>size<sp/>of<sp/>`long&apos;,<sp/>as<sp/>computed<sp/>by<sp/>sizeof.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="config_8h_1a22aece5d034fd9040a3d01c3797fdfe7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIZEOF_LONG<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>size<sp/>of<sp/>`long<sp/>long&apos;,<sp/>as<sp/>computed<sp/>by<sp/>sizeof.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="config_8h_1acd1ddb89a6f7f17d1c152499173c3eef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIZEOF_LONG_LONG<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>WORDS_BIGENDIAN<sp/>if<sp/>your<sp/>processor<sp/>stores<sp/>words<sp/>with<sp/>the<sp/>most</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/>significant<sp/>byte<sp/>first<sp/>(like<sp/>Motorola<sp/>and<sp/>SPARC,<sp/>unlike<sp/>Intel).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>__BIG_ENDIAN__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>WORDS_BIGENDIAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>WORDS_BIGENDIAN<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>address<sp/>where<sp/>bug<sp/>reports<sp/>for<sp/>this<sp/>package<sp/>should<sp/>be<sp/>sent.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="config_8h_1a1d1d2d7f8d2f95b376954d649ab03233" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_BUGREPORT<sp/>&quot;dhdaines@gmail.com&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>full<sp/>name<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="config_8h_1a1c0439e4355794c09b64274849eb0279" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_NAME<sp/>&quot;PocketSphinx&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>full<sp/>name<sp/>and<sp/>version<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="config_8h_1ac73e6f903c16eca7710f92e36e1c6fbf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_STRING<sp/>&quot;PocketSphinx<sp/>5.0.4&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>one<sp/>symbol<sp/>short<sp/>name<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="config_8h_1af415af6bfede0e8d5453708afe68651c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_TARNAME<sp/>&quot;pocketsphinx-5.0.4&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>home<sp/>page<sp/>for<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="config_8h_1a5c93853116d5a50307b6744f147840aa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_URL<sp/>&quot;https://github.com/cmusphinx/pocketsphinx&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>version<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="config_8h_1aa326a05d5e30f9e9a4bb0b4469d5d0c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_VERSION<sp/>&quot;5.0.4&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/config.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_t_t_t_common_types_8h" kind="file" language="C++">
+    <compoundname>TTTCommonTypes.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">portaudio.h</includes>
+    <includes refid="pocketsphinx_8h" local="no">pocketsphinx.h</includes>
+    <includes local="no">signal.h</includes>
+    <includedby refid="_mini_max_agent_8h" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.h</includedby>
+    <includedby refid="_no_agent_8h" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h</includedby>
+    <includedby refid="_player_8h" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h</includedby>
+    <includedby refid="_t_t_t_controller_8h" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</includedby>
+    <includedby refid="_board_8h" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h</includedby>
+    <includedby refid="_tic_tac_toe_game_8h" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h</includedby>
+    <includedby refid="_title_screen_8h" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>pocketsphinx/alignment.h</label>
+        <link refid="alignment_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>pocketsphinx/endpointer.h</label>
+        <link refid="endpointer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pocketsphinx/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="20">
+        <label>pocketsphinx/lattice.h</label>
+        <link refid="lattice_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>pocketsphinx/mllr.h</label>
+        <link refid="mllr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>pocketsphinx/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>pocketsphinx/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>pocketsphinx/search.h</label>
+        <link refid="search_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pocketsphinx/sphinx_config.h</label>
+        <link refid="include_2pocketsphinx_2sphinx__config_8h"/>
+      </node>
+      <node id="15">
+        <label>pocketsphinx/vad.h</label>
+        <link refid="vad_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstddef</label>
+      </node>
+      <node id="14">
+        <label>errno.h</label>
+      </node>
+      <node id="8">
+        <label>pocketsphinx/sphinx_config.h</label>
+      </node>
+      <node id="3">
+        <label>portaudio.h</label>
+      </node>
+      <node id="22">
+        <label>signal.h</label>
+      </node>
+      <node id="12">
+        <label>stdarg.h</label>
+      </node>
+      <node id="5">
+        <label>stdio.h</label>
+      </node>
+      <node id="13">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.cpp</label>
+        <link refid="_human_player_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h</label>
+        <link refid="_human_player_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.cpp</label>
+        <link refid="_mini_max_agent_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.h</label>
+        <link refid="_mini_max_agent_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h</label>
+        <link refid="_no_agent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp</label>
+        <link refid="_board_8cpp"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/main.cpp</label>
+        <link refid="_tic_tac_toe_test_2main_8cpp"/>
+      </node>
+      <node id="16">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_board.h</label>
+        <link refid="tst__board_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_minimaxagent.h</label>
+        <link refid="tst__minimaxagent_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp</label>
+        <link refid="_tic_tac_toe_game_8cpp"/>
+      </node>
+      <node id="17">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h</label>
+        <link refid="_title_screen_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_cell" prot="public">Cell</innerclass>
+    <innerclass refid="struct_t_t_t_options" prot="public">TTTOptions</innerclass>
+    <innerclass refid="struct_speech_to_text" prot="public">SpeechToText</innerclass>
+    <innernamespace refid="namespacedefaults">defaults</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>BoardMarks</name>
+        <enumvalue id="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" prot="public">
+          <name>Empty</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" prot="public">
+          <name>O</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The <ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref> enum defiens the type of mark on the board. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="147" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="enum" id="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>BoardState</name>
+        <enumvalue id="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" prot="public">
+          <name>NoWinner</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" prot="public">
+          <name>XWins</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" prot="public">
+          <name>OWins</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" prot="public">
+          <name>Tie</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The <ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref> enum defines the possible states of a board. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="152" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="152" bodyend="152"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_t_t_t_common_types_8h_1aab32d563b1d9a745d0f18496bb3f41dc" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int global_done</definition>
+        <argsstring></argsstring>
+        <name>global_done</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="20" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="struct_speech_to_text_1a63077ef44951a4fd6e5f1c0a6808e35a" compoundref="_t_t_t_common_types_8h" startline="56" endline="60">SpeechToText::catch_sig</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TTTCOMMONTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TTTCOMMONTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;portaudio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pocketsphinx_8h" kindref="compound">pocketsphinx.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QPushButton;</highlight></codeline>
+<codeline lineno="9" refid="namespacedefaults" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedefaults" kindref="compound">defaults</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">INVALID_CELL</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="12" refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" kindref="member">DEFAULT_BOARD_SIZE</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="13" refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" kindref="member">DEFAULT_MINIMAX_DEPTH</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="14" refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" kindref="member">GUI_CELL_ROW_SPAN</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="15" refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" kindref="member">GUI_CELL_COLUMN_SPAN</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="16" refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" kindref="member">X_COLOR</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#455A64&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17" refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" kindref="member">O_COLOR</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#FF5722&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18" refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" kindref="member">DEFAULT_COLOR</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#FFF&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20" refid="_t_t_t_common_types_8h_1aab32d563b1d9a745d0f18496bb3f41dc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_t_t_t_common_types_8h_1aab32d563b1d9a745d0f18496bb3f41dc" kindref="member">global_done</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25" refid="struct_cell" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_cell_1a5ad411cd7ac4344405a343573684dc14" kindref="member">Cell</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27" refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28" refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" kindref="member">row</ref><sp/>=<sp/><ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref>;</highlight></codeline>
+<codeline lineno="29" refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" kindref="member">col</ref><sp/>=<sp/><ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref>;</highlight></codeline>
+<codeline lineno="30" refid="struct_cell_1a5ad411cd7ac4344405a343573684dc14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_cell_1a5ad411cd7ac4344405a343573684dc14" kindref="member">Cell</ref>(QPushButton<sp/>*<ref refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" kindref="member">row</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" kindref="member">col</ref>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref>(<ref refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref>),<sp/><ref refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" kindref="member">row</ref>(<ref refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" kindref="member">row</ref>),<sp/><ref refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" kindref="member">col</ref>(<ref refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" kindref="member">col</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_t_t_t_options" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_t_t_t_options" kindref="compound">TTTOptions</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39" refid="struct_t_t_t_options_1a018fe6935d21dbcf3db30a4a7b3abed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_t_t_t_options_1a018fe6935d21dbcf3db30a4a7b3abed0" kindref="member">boardSize</ref><sp/>=<sp/><ref refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" kindref="member">defaults::DEFAULT_BOARD_SIZE</ref>;</highlight></codeline>
+<codeline lineno="40" refid="struct_t_t_t_options_1a086422e4da26dd24bc1166172a9237af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="struct_t_t_t_options_1a086422e4da26dd24bc1166172a9237af" kindref="member">miniMaxDepth</ref><sp/>=<sp/><ref refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" kindref="member">defaults::DEFAULT_MINIMAX_DEPTH</ref>;</highlight></codeline>
+<codeline lineno="41" refid="struct_t_t_t_options_1a415a2038b9a5bf87d0a8aa41ce52c8aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_t_t_t_options_1a415a2038b9a5bf87d0a8aa41ce52c8aa" kindref="member">AIopponent</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42" refid="struct_t_t_t_options_1a1d0e61b132d2b32ab27d6e345aac0697" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_t_t_t_options_1a1d0e61b132d2b32ab27d6e345aac0697" kindref="member">AIstarts</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="struct_speech_to_text" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_speech_to_text" kindref="compound">SpeechToText</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47" refid="struct_speech_to_text_1a4dc84bac03cceb7780ef1b516c05fb2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PaStream<sp/>*<ref refid="struct_speech_to_text_1a4dc84bac03cceb7780ef1b516c05fb2f" kindref="member">stream</ref>;</highlight></codeline>
+<codeline lineno="48" refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PaError<sp/><ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref>;</highlight></codeline>
+<codeline lineno="49" refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref><sp/>*<ref refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" kindref="member">decoder</ref>;</highlight></codeline>
+<codeline lineno="50" refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structps__config__t" kindref="compound">ps_config_t</ref><sp/>*<ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref>;</highlight></codeline>
+<codeline lineno="51" refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref><sp/>*<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref>;</highlight></codeline>
+<codeline lineno="52" refid="struct_speech_to_text_1a22d0a745997d39eed5ffdb45c130a7bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<ref refid="struct_speech_to_text_1a22d0a745997d39eed5ffdb45c130a7bd" kindref="member">frame</ref>;</highlight></codeline>
+<codeline lineno="53" refid="struct_speech_to_text_1ad77b52534299ea8989c0db18c0ec57ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_speech_to_text_1ad77b52534299ea8989c0db18c0ec57ae" kindref="member">frame_size</ref>;</highlight></codeline>
+<codeline lineno="54" refid="struct_speech_to_text_1a0526f396f204c635ef85738182d8d007" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_speech_to_text_1a0526f396f204c635ef85738182d8d007" kindref="member">hyp</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct_speech_to_text_1a63077ef44951a4fd6e5f1c0a6808e35a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_speech_to_text_1a63077ef44951a4fd6e5f1c0a6808e35a" kindref="member">catch_sig</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>signum)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)signum;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_t_t_t_common_types_8h_1aab32d563b1d9a745d0f18496bb3f41dc" kindref="member">global_done</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="struct_speech_to_text_1aaf4ccc659316eb5c314b504f98003fd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_speech_to_text_1aaf4ccc659316eb5c314b504f98003fd5" kindref="member">configuration</ref>(){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref><sp/>=<sp/>ps_config_init(<ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_default_search_args(<ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_config_set_str(<ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref>,</highlight><highlight class="stringliteral">&quot;hmm&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;/home/ratty/cmusphinx/share/pocketsphinx/model/custom/custom&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_config_set_str(<ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref>,</highlight><highlight class="stringliteral">&quot;lm&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;/home/ratty/cmusphinx/share/pocketsphinx/model/es-es/es-20k.lm&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_config_set_str(<ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref>,</highlight><highlight class="stringliteral">&quot;dict&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;/home/ratty/cmusphinx/share/pocketsphinx/model/custom/es.dict&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="struct_speech_to_text_1ae5b7a33ea5ba734da4e3caed42a5e185" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_speech_to_text_1ae5b7a33ea5ba734da4e3caed42a5e185" kindref="member">init</ref>(){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref><sp/>=<sp/>Pa_Initialize())<sp/>!=<sp/>paNoError)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kindref="member">E_FATAL</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>initialize<sp/>PortAudio:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pa_GetErrorText(<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref>));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" kindref="member">decoder</ref><sp/>=<sp/>ps_init(<ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref>))<sp/>==<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kindref="member">E_FATAL</ref>(</highlight><highlight class="stringliteral">&quot;PocketSphinx<sp/>decoder<sp/>init<sp/>failed\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref><sp/>=<sp/>ps_endpointer_init(0,<sp/>0.0,<sp/><ref refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc" kindref="member">PS_VAD_LOOSE</ref>,<sp/>0,<sp/>0))<sp/>==<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kindref="member">E_FATAL</ref>(</highlight><highlight class="stringliteral">&quot;PocketSphinx<sp/>endpointer<sp/>init<sp/>failed\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_speech_to_text_1ad77b52534299ea8989c0db18c0ec57ae" kindref="member">frame_size</ref><sp/>=<sp/><ref refid="endpointer_8h_1aaa16760235cea4c0a06db70c907bc576" kindref="member">ps_endpointer_frame_size</ref>(<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a22d0a745997d39eed5ffdb45c130a7bd" kindref="member">frame</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)malloc(<ref refid="struct_speech_to_text_1ad77b52534299ea8989c0db18c0ec57ae" kindref="member">frame_size</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_speech_to_text_1a22d0a745997d39eed5ffdb45c130a7bd" kindref="member">frame</ref>[0])))<sp/>==<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1acc9aaeb2e0eb21f964913c14403d6795" kindref="member">E_FATAL_SYSTEM</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>allocate<sp/>frame&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref><sp/>=<sp/>Pa_OpenDefaultStream(&amp;<ref refid="struct_speech_to_text_1a4dc84bac03cceb7780ef1b516c05fb2f" kindref="member">stream</ref>,<sp/>1,<sp/>0,<sp/>paInt16,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_config_int(<ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref>,<sp/></highlight><highlight class="stringliteral">&quot;samprate&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_speech_to_text_1ad77b52534299ea8989c0db18c0ec57ae" kindref="member">frame_size</ref>,<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>,<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>))<sp/>!=<sp/>paNoError)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kindref="member">E_FATAL</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>open<sp/>PortAudio<sp/>stream:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pa_GetErrorText(<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref>));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref><sp/>=<sp/>Pa_StartStream(<ref refid="struct_speech_to_text_1a4dc84bac03cceb7780ef1b516c05fb2f" kindref="member">stream</ref>))<sp/>!=<sp/>paNoError)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kindref="member">E_FATAL</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>start<sp/>PortAudio<sp/>stream:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pa_GetErrorText(<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref>));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(signal(SIGINT,<sp/><ref refid="struct_speech_to_text_1a63077ef44951a4fd6e5f1c0a6808e35a" kindref="member">catch_sig</ref>)<sp/>==<sp/>SIG_ERR)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1acc9aaeb2e0eb21f964913c14403d6795" kindref="member">E_FATAL_SYSTEM</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>set<sp/>SIGINT<sp/>handler&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92" refid="struct_speech_to_text_1a12f6ee36ae06eef450adae6f4d6a00c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_speech_to_text_1a12f6ee36ae06eef450adae6f4d6a00c5" kindref="member">hypIsValid</ref>(){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="struct_speech_to_text_1a0526f396f204c635ef85738182d8d007" kindref="member">hyp</ref><sp/>!=<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97" refid="struct_speech_to_text_1a243545518fed839c5fa5fe95aadde2a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_speech_to_text_1a243545518fed839c5fa5fe95aadde2a3" kindref="member">listen</ref>(){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_speech_to_text_1a0526f396f204c635ef85738182d8d007" kindref="member">hyp</ref><sp/>=<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="struct_speech_to_text_1a12f6ee36ae06eef450adae6f4d6a00c5" kindref="member">hypIsValid</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref><sp/>*speech;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prev_in_speech<sp/>=<sp/>ps_endpointer_in_speech(<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref><sp/>=<sp/>Pa_ReadStream(<ref refid="struct_speech_to_text_1a4dc84bac03cceb7780ef1b516c05fb2f" kindref="member">stream</ref>,<sp/><ref refid="struct_speech_to_text_1a22d0a745997d39eed5ffdb45c130a7bd" kindref="member">frame</ref>,<sp/><ref refid="struct_speech_to_text_1ad77b52534299ea8989c0db18c0ec57ae" kindref="member">frame_size</ref>))<sp/>!=<sp/>paNoError)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1a87a0a12135a290cf16d06b63fcfa0ccf" kindref="member">E_ERROR</ref>(</highlight><highlight class="stringliteral">&quot;Error<sp/>in<sp/>PortAudio<sp/>read:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pa_GetErrorText(<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref>));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speech<sp/>=<sp/>ps_endpointer_process(<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref>,<sp/><ref refid="struct_speech_to_text_1a22d0a745997d39eed5ffdb45c130a7bd" kindref="member">frame</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(speech<sp/>!=<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!prev_in_speech)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Speech<sp/>start<sp/>at<sp/>%.2f\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_endpointer_speech_start(<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref>));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(stderr);<sp/></highlight><highlight class="comment">/*<sp/>For<sp/>broken<sp/>MSYS2<sp/>terminal<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_start_utt(<ref refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" kindref="member">decoder</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ps_process_raw(<ref refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" kindref="member">decoder</ref>,<sp/>speech,<sp/><ref refid="struct_speech_to_text_1ad77b52534299ea8989c0db18c0ec57ae" kindref="member">frame_size</ref>,<sp/><ref refid="prim__type_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref>,<sp/><ref refid="prim__type_8h_1aa93f0eb578d23995850d61f7d61c55c1" kindref="member">FALSE</ref>)<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kindref="member">E_FATAL</ref>(</highlight><highlight class="stringliteral">&quot;ps_process_raw()<sp/>failed\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ps_endpointer_in_speech(<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Speech<sp/>end<sp/>at<sp/>%.2f\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_endpointer_speech_end(<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref>));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(stderr);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_end_utt(<ref refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" kindref="member">decoder</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a0526f396f204c635ef85738182d8d007" kindref="member">hyp</ref><sp/>=<sp/>ps_get_hyp(<ref refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" kindref="member">decoder</ref>,<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>))<sp/>!=<sp/><ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="struct_speech_to_text_1a0526f396f204c635ef85738182d8d007" kindref="member">hyp</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(stdout);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref><sp/>=<sp/>Pa_StopStream(<ref refid="struct_speech_to_text_1a4dc84bac03cceb7780ef1b516c05fb2f" kindref="member">stream</ref>))<sp/>!=<sp/>paNoError)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kindref="member">E_FATAL</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>stop<sp/>PortAudio<sp/>stream:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pa_GetErrorText(<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref>));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref><sp/>=<sp/>Pa_Terminate())<sp/>!=<sp/>paNoError)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" kindref="member">E_FATAL</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>terminate<sp/>PortAudio:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pa_GetErrorText(<ref refid="struct_speech_to_text_1a97244f9eb1ab4708430310d16d293940" kindref="member">err</ref>));</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="struct_speech_to_text_1ab10ed7de74d4955ec673ded3a74f9db2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_speech_to_text_1ab10ed7de74d4955ec673ded3a74f9db2" kindref="member">free</ref>(){</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_endpointer_free(<ref refid="struct_speech_to_text_1a15776232af8f1015ad182b5afa20850d" kindref="member">ep</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_free(<ref refid="struct_speech_to_text_1af0aacdd61cf0138afdd53dcdaff8e962" kindref="member">decoder</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_config_free(<ref refid="struct_speech_to_text_1a4f86e5fb4bca0065420b56c78ec15338" kindref="member">config</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>{<sp/><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">Empty</ref>,<sp/><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">X</ref>,<sp/><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">O</ref><sp/>};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>{<sp/><ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" kindref="member">NoWinner</ref>,<sp/><ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" kindref="member">XWins</ref>,<sp/><ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" kindref="member">OWins</ref>,<sp/><ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" kindref="member">Tie</ref><sp/>};</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>TTTCOMMONTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h"/>
+  </compounddef>
+</doxygen>

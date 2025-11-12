@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacedefaults" kind="namespace" language="C++">
+    <compoundname>defaults</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>short</type>
+        <definition>short defaults::INVALID_CELL</definition>
+        <argsstring></argsstring>
+        <name>INVALID_CELL</name>
+        <qualifiedname>defaults::INVALID_CELL</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="11" column="17" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">TTTController::AIAgentPlay</referencedby>
+        <referencedby refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" compoundref="_t_t_t_controller_8cpp" startline="156" endline="170">TTTController::onSpeechRecognized</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a0736512a7a5cffa6fefecbe9e4f2a072" compoundref="_t_t_t_controller_8h" startline="102" endline="126">TTTController::parseSpeechToCell</referencedby>
+        <referencedby refid="class_mini_max_agent_1a8d0a338b90f9a44c44ccbbad873009a9" compoundref="_mini_max_agent_8cpp" startline="95" endline="129">MiniMaxAgent::play</referencedby>
+        <referencedby refid="class_no_agent_1a4c20d7b44b9b7061ae60893e577a3575" compoundref="_no_agent_8h" startline="28" endline="31">NoAgent::play</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t defaults::DEFAULT_BOARD_SIZE</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_BOARD_SIZE</name>
+        <qualifiedname>defaults::DEFAULT_BOARD_SIZE</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="12" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short defaults::DEFAULT_MINIMAX_DEPTH</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_MINIMAX_DEPTH</name>
+        <qualifiedname>defaults::DEFAULT_MINIMAX_DEPTH</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="13" column="26" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short defaults::GUI_CELL_ROW_SPAN</definition>
+        <argsstring></argsstring>
+        <name>GUI_CELL_ROW_SPAN</name>
+        <qualifiedname>defaults::GUI_CELL_ROW_SPAN</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="14" column="26" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_tic_tac_toe_game_1a9dd8af6820a6a994aeaf8ba6bee6fc89" compoundref="_tic_tac_toe_game_8cpp" startline="21" endline="44">TicTacToeGame::buildCellButtons</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short defaults::GUI_CELL_COLUMN_SPAN</definition>
+        <argsstring></argsstring>
+        <name>GUI_CELL_COLUMN_SPAN</name>
+        <qualifiedname>defaults::GUI_CELL_COLUMN_SPAN</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="15" column="26" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_tic_tac_toe_game_1a9dd8af6820a6a994aeaf8ba6bee6fc89" compoundref="_tic_tac_toe_game_8cpp" startline="21" endline="44">TicTacToeGame::buildCellButtons</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>char</type>
+        <definition>char defaults::X_COLOR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>X_COLOR</name>
+        <qualifiedname>defaults::X_COLOR</qualifiedname>
+        <initializer>= &quot;#455A64&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="16" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_tic_tac_toe_game_1ac18fe593bff035ce81a7f5e97727870a" compoundref="_tic_tac_toe_game_8cpp" startline="58" endline="81">TicTacToeGame::getPlayerStyleSheet</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>char</type>
+        <definition>char defaults::O_COLOR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>O_COLOR</name>
+        <qualifiedname>defaults::O_COLOR</qualifiedname>
+        <initializer>= &quot;#FF5722&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="17" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_tic_tac_toe_game_1ac18fe593bff035ce81a7f5e97727870a" compoundref="_tic_tac_toe_game_8cpp" startline="58" endline="81">TicTacToeGame::getPlayerStyleSheet</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>char</type>
+        <definition>char defaults::DEFAULT_COLOR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>DEFAULT_COLOR</name>
+        <qualifiedname>defaults::DEFAULT_COLOR</qualifiedname>
+        <initializer>= &quot;#FFF&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="18" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_tic_tac_toe_game_1ac18fe593bff035ce81a7f5e97727870a" compoundref="_tic_tac_toe_game_8cpp" startline="58" endline="81">TicTacToeGame::getPlayerStyleSheet</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="9" column="1"/>
+  </compounddef>
+</doxygen>

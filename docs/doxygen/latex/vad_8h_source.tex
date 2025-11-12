@@ -1,0 +1,96 @@
+\doxysection{vad.\+h}
+\hypertarget{vad_8h_source}{}\label{vad_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/vad.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/vad.h}}
+\mbox{\hyperlink{vad_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/\ c-\/basic-\/offset:4;\ indent-\/tabs-\/mode:\ nil\ -\/*-\/\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ ====================================================================}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2022\ David\ Huggins-\/Daines.\ \ All\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Redistribution\ and\ use\ in\ source\ and\ binary\ forms,\ with\ or\ without}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ modification,\ are\ permitted\ provided\ that\ the\ following\ conditions}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ are\ met:}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ 1.\ Redistributions\ of\ source\ code\ must\ retain\ the\ above\ copyright}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer.\ }}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ 2.\ Redistributions\ in\ binary\ form\ must\ reproduce\ the\ above\ copyright}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer\ in}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ \ \ the\ documentation\ and/or\ other\ materials\ provided\ with\ the}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ \ \ distribution.}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ PROVIDED\ \`{}\`{}AS\ IS''\ AND\ ANY\ EXPRESSED\ OR\ IMPLIED}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ WARRANTIES,\ INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ THE\ IMPLIED\ WARRANTIES}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ OF\ MERCHANTABILITY\ AND\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE\ ARE}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ DISCLAIMED.\ \ IN\ NO\ EVENT\ SHALL\ THE\ AUTHOR\ BE\ LIABLE\ FOR\ ANY\ DIRECT,}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ INDIRECT,\ INCIDENTAL,\ SPECIAL,\ EXEMPLARY,\ OR\ CONSEQUENTIAL\ DAMAGES}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ (INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ PROCUREMENT\ OF\ SUBSTITUTE\ GOODS\ OR}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ SERVICES;\ LOSS\ OF\ USE,\ DATA,\ OR\ PROFITS;\ OR\ BUSINESS\ INTERRUPTION)}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ HOWEVER\ CAUSED\ AND\ ON\ ANY\ THEORY\ OF\ LIABILITY,\ WHETHER\ IN\ CONTRACT,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ STRICT\ LIABILITY,\ OR\ TORT\ (INCLUDING\ NEGLIGENCE\ OR\ OTHERWISE)}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ ARISING\ IN\ ANY\ WAY\ OUT\ OF\ THE\ USE\ OF\ THIS\ SOFTWARE,\ EVEN\ IF\ ADVISED}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ OF\ THE\ POSSIBILITY\ OF\ SUCH\ DAMAGE.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ ====================================================================}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#ifndef\ \_\_PS\_VAD\_H\_\_}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ \_\_PS\_VAD\_H\_\_}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prim__type_8h}{pocketsphinx/prim\_type.h}}>}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{export_8h}{pocketsphinx/export.h}}>}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00046\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#if\ 0}}
+\DoxyCodeLine{00049\ \}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_vad\_s\ \mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008a}{ps\_vad\_mode\_e}}\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc}{PS\_VAD\_LOOSE}}\ =\ 0,}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa89e52dc825838610a3aa4ea0fe03fdc7}{PS\_VAD\_MEDIUM\_LOOSE}}\ =\ 1,}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa4048797917df161a4c563d7275ad8d9d}{PS\_VAD\_MEDIUM\_STRICT}}\ =\ 2,}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa3a0206f29e4236c2b69943f4f59e41b5}{PS\_VAD\_STRICT}}\ =\ 3}
+\DoxyCodeLine{00067\ \}\ \mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\_vad\_mode\_t}};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52}{ps\_vad\_class\_e}}\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a91962e1736dea5e5360514d28d91b2ef}{PS\_VAD\_ERROR}}\ =\ -\/1,}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a1996a23a0326d2ed6ea77907504365bd}{PS\_VAD\_NOT\_SPEECH}}\ =\ 0,}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a4e21d4159f6b5aa4f3d055ee4669f5a6}{PS\_VAD\_SPEECH}}\ =\ 1}
+\DoxyCodeLine{00077\ \}\ \mbox{\hyperlink{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d}{ps\_vad\_class\_t}};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ PS\_VAD\_DEFAULT\_SAMPLE\_RATE\ 16000}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#define\ PS\_VAD\_DEFAULT\_FRAME\_LENGTH\ 0.03}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00105\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00106\ \mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *\mbox{\hyperlink{structps__vad__t_a28a9c81b473d91a2fcd0fef37c32a4ac}{ps\_vad\_init}}(\mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\_vad\_mode\_t}}\ mode,\ \textcolor{keywordtype}{int}\ sample\_rate,\ \textcolor{keywordtype}{double}\ frame\_length);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00115\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00116\ \mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *\mbox{\hyperlink{structps__vad__t_aa851b665f47d6f6033c5963e453bc43e}{ps\_vad\_retain}}(\mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *vad);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00125\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00126\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__vad__t_add5e5c92c593edbf45edd20624129370}{ps\_vad\_free}}(\mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *vad);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00146\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00147\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__vad__t_a69fe34f7717228b0cc8ada126d1d5feb}{ps\_vad\_set\_input\_params}}(\mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *vad,\ \textcolor{keywordtype}{int}\ sample\_rate,\ \textcolor{keywordtype}{double}\ frame\_length);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00156\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00157\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__vad__t_a1c692aeda85aa6122589404ef401e03c}{ps\_vad\_sample\_rate}}(\mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *vad);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00170\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00171\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{structps__vad__t_ac35931b7e6c879dbda6508f302be4751}{ps\_vad\_frame\_size}}(\mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *vad);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#define\ ps\_vad\_frame\_length(vad)\ ((double)ps\_vad\_frame\_size(vad)\ /\ ps\_vad\_sample\_rate(vad))}}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00190\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00191\ \mbox{\hyperlink{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d}{ps\_vad\_class\_t}}\ \mbox{\hyperlink{structps__vad__t_aaf0e13d20d7b8988977ca8e5a9894cb7}{ps\_vad\_classify}}(\mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *vad,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}}\ *frame);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00194\ \}}
+\DoxyCodeLine{00195\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_PS\_VAD\_H\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

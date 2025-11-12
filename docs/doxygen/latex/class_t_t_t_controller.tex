@@ -1,0 +1,494 @@
+\doxysection{TTTController Class Reference}
+\hypertarget{class_t_t_t_controller}{}\label{class_t_t_t_controller}\index{TTTController@{TTTController}}
+
+
+The \doxylink{class_t_t_t_controller}{TTTController} class is the controller for a Tic Tac Toe game, it takes in game options as input, and controls the view (\doxylink{class_tic_tac_toe_game}{Tic\+Tac\+Toe\+Game}) and the model (\doxylink{class_board}{Board}) according to the game logic specified in this class, it is also responsible for calling the AI agent to play its turn if specified by the game options.  
+
+
+
+
+{\ttfamily \#include $<$TTTController.\+h$>$}
+
+Inheritance diagram for TTTController\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_t_t_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}{update\+Game}} (\mbox{\hyperlink{struct_cell}{Cell}} \&cell)
+\begin{DoxyCompactList}\small\item\em update\+Game sets the cell clicked in the model (board). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_t_t_controller_a513f925f29dcfebb4139030f46243cb4}{AIFinished}} ()
+\begin{DoxyCompactList}\small\item\em turn\+Finished is emitted when the human player is finished with the cell input, and the internal game state is supposed to be updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_t_t_controller_ae1514051a94219f50a5740af4e02e43d}{human\+Finished}} ()
+\item 
+void \mbox{\hyperlink{class_t_t_t_controller_a4b36edfb9a40062357e0038ed00b3b96}{speech\+Recognized}} (QString)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController}} (const \mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}} \&options, QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_t_t_t_controller}{TTTController} constructs a game controller. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_t_t_controller_a1926fc5ac8a6cac2a75de663157d0023}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em start\+Game executes this QDialog to show the GUI and start the gameplay. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_t_t_controller_a0736512a7a5cffa6fefecbe9e4f2a072}{parse\+Speech\+To\+Cell}} (const QString \&text)
+\item 
+QWidget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_t_t_t_controller_a6293931772f0ec9eea531c8a1fb1e050}{get\+View}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_t_t_t_controller_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State}} (\mbox{\hyperlink{struct_cell}{Cell}} \&cell)
+\begin{DoxyCompactList}\small\item\em update\+Game\+State updates the view and the model and switches the current player. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgent\+Play}} ()
+\begin{DoxyCompactList}\small\item\em AIAgent\+Play calls the AI agent to play given the current board inputs. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_t_t_controller_ad083b0e4ac90abc1b9b1578a4407ada7}{Human\+Play}} ()
+\begin{DoxyCompactList}\small\item\em Human\+Play calls the Speech Recognition Engine for decoding input into \doxylink{struct_cell}{Cell}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_t_t_controller_a0d1a0122a2ec371163fb5d9d13c928f5}{switch\+Player}} ()
+\begin{DoxyCompactList}\small\item\em switch\+Player switches the current player mark (X to O and O to X). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tic_tac_toe_game}{Tic\+Tac\+Toe\+Game}} \mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}
+\begin{DoxyCompactList}\small\item\em view is the view class of a tic tac toe game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board}{Board}} \mbox{\hyperlink{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}
+\begin{DoxyCompactList}\small\item\em board is the model that represents the underlying layer of a game. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{struct_cell}{Cell}} $>$ \mbox{\hyperlink{class_t_t_t_controller_acc38c6351607ee19a1dfc313b80da9a2}{cells\+\_\+}}
+\begin{DoxyCompactList}\small\item\em cells are the collection of cell buttons built by the view class. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}} \& \mbox{\hyperlink{class_t_t_t_controller_aade7f92b4b06dbf7e17dc5a3772c0aef}{options\+\_\+}}
+\begin{DoxyCompactList}\small\item\em options is the collection of values and flags that controls the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}
+\begin{DoxyCompactList}\small\item\em current\+Player is the player that will play the current turn. \end{DoxyCompactList}\item 
+unique\+\_\+ptr$<$ \mbox{\hyperlink{class_a_i_agent}{AIAgent}} $>$ \mbox{\hyperlink{class_t_t_t_controller_a2c3f88a3462b7aad96bf352322c46f3e}{agent\+\_\+}}
+\begin{DoxyCompactList}\small\item\em agent is the AI agent chosen to play against the human player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb}{on\+Speech\+Recognized}} (const QString \&text)
+\item 
+void \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{on\+Socket\+Ready\+Read}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em set\+Connections will set a connection to all GUI elements to slots defined to handle these events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset}} ()
+\begin{DoxyCompactList}\small\item\em resets all internal components, the view, the model and the AI agent. then if AI is supposed to start a game it will play first. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_t_t_controller_a57edf31f9b9a6cf7b3d5261715f92b15}{setup\+Network}} ()
+\item 
+void \mbox{\hyperlink{class_t_t_t_controller_acae67d371dfa6272adc7670040c01a23}{send\+Move}} (int row, int col, char player)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QTcp\+Socket \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_t_t_t_controller_a858247e19d3d31564d8e716f9d81354e}{socket\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_t_t_t_controller}{TTTController} class is the controller for a Tic Tac Toe game, it takes in game options as input, and controls the view (\doxylink{class_tic_tac_toe_game}{Tic\+Tac\+Toe\+Game}) and the model (\doxylink{class_board}{Board}) according to the game logic specified in this class, it is also responsible for calling the AI agent to play its turn if specified by the game options. 
+
+\label{doc-constructors}
+\Hypertarget{class_t_t_t_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}\index{TTTController@{TTTController}!TTTController@{TTTController}}
+\index{TTTController@{TTTController}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{TTTController()}{TTTController()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828} 
+TTTController\+::\+TTTController (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}} \&}]{options}{, }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxylink{class_t_t_t_controller}{TTTController} constructs a game controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & is the collection of values and flags that controls the game. \\
+\hline
+{\em parent} & is a QObject type parent that owns this instance of the controller. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_a2c3f88a3462b7aad96bf352322c46f3e}{agent\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{struct_t_t_t_options_a018fe6935d21dbcf3db30a4a7b3abed0}{TTTOptions\+::board\+Size}}, \mbox{\hyperlink{class_t_t_t_controller_acc38c6351607ee19a1dfc313b80da9a2}{cells\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, \mbox{\hyperlink{class_t_t_t_controller_aade7f92b4b06dbf7e17dc5a3772c0aef}{options\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, \mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_t_t_t_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}\index{TTTController@{TTTController}!AIAgentPlay@{AIAgentPlay}}
+\index{AIAgentPlay@{AIAgentPlay}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{AIAgentPlay()}{AIAgentPlay()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55} 
+void TTTController\+::\+AIAgent\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+AIAgent\+Play calls the AI agent to play given the current board inputs. 
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_a2c3f88a3462b7aad96bf352322c46f3e}{agent\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_acc38c6351607ee19a1dfc313b80da9a2}{cells\+\_\+}}, \mbox{\hyperlink{struct_cell_a09e2f07cb87b7ae5898be20927cf28d1}{Cell\+::col}}, \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{namespacedefaults_a543ba1bdceef75ed7ebc4160be54bfcb}{defaults\+::\+INVALID\+\_\+\+CELL}}, \mbox{\hyperlink{struct_cell_a85d2a7af6195f5196574790fbc1becfd}{Cell\+::row}}, and \mbox{\hyperlink{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, and \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{class_t_t_t_controller_a513f925f29dcfebb4139030f46243cb4}\index{TTTController@{TTTController}!AIFinished@{AIFinished}}
+\index{AIFinished@{AIFinished}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{AIFinished}{AIFinished}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a513f925f29dcfebb4139030f46243cb4} 
+void TTTController\+::\+AIFinished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+turn\+Finished is emitted when the human player is finished with the cell input, and the internal game state is supposed to be updated. 
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{on\+Socket\+Ready\+Read()}}, and \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{class_t_t_t_controller_a6293931772f0ec9eea531c8a1fb1e050}\index{TTTController@{TTTController}!getView@{getView}}
+\index{getView@{getView}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{getView()}{getView()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a6293931772f0ec9eea531c8a1fb1e050} 
+QWidget \texorpdfstring{$\ast$}{*} TTTController\+::get\+View (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}.
+
+\Hypertarget{class_t_t_t_controller_ae1514051a94219f50a5740af4e02e43d}\index{TTTController@{TTTController}!humanFinished@{humanFinished}}
+\index{humanFinished@{humanFinished}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{humanFinished}{humanFinished}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_ae1514051a94219f50a5740af4e02e43d} 
+void TTTController\+::human\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{on\+Socket\+Ready\+Read()}}, and \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{class_t_t_t_controller_ad083b0e4ac90abc1b9b1578a4407ada7}\index{TTTController@{TTTController}!HumanPlay@{HumanPlay}}
+\index{HumanPlay@{HumanPlay}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{HumanPlay()}{HumanPlay()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_ad083b0e4ac90abc1b9b1578a4407ada7} 
+void TTTController\+::\+Human\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Human\+Play calls the Speech Recognition Engine for decoding input into \doxylink{struct_cell}{Cell}. 
+
+
+
+References \mbox{\hyperlink{struct_speech_to_text_aaf4ccc659316eb5c314b504f98003fd5}{Speech\+To\+Text\+::configuration()}}, \mbox{\hyperlink{struct_speech_to_text_ab10ed7de74d4955ec673ded3a74f9db2}{Speech\+To\+Text\+::free()}}, \mbox{\hyperlink{struct_speech_to_text_a0526f396f204c635ef85738182d8d007}{Speech\+To\+Text\+::hyp}}, \mbox{\hyperlink{struct_speech_to_text_ae5b7a33ea5ba734da4e3caed42a5e185}{Speech\+To\+Text\+::init()}}, \mbox{\hyperlink{struct_speech_to_text_a243545518fed839c5fa5fe95aadde2a3}{Speech\+To\+Text\+::listen()}}, and \mbox{\hyperlink{class_t_t_t_controller_a4b36edfb9a40062357e0038ed00b3b96}{speech\+Recognized()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb}{on\+Speech\+Recognized()}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, and \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}\index{TTTController@{TTTController}!onSocketReadyRead@{onSocketReadyRead}}
+\index{onSocketReadyRead@{onSocketReadyRead}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{onSocketReadyRead}{onSocketReadyRead}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6} 
+void TTTController\+::on\+Socket\+Ready\+Read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_a513f925f29dcfebb4139030f46243cb4}{AIFinished()}}, \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_ae1514051a94219f50a5740af4e02e43d}{human\+Finished()}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, \mbox{\hyperlink{class_t_t_t_controller_aade7f92b4b06dbf7e17dc5a3772c0aef}{options\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_a858247e19d3d31564d8e716f9d81354e}{socket\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_a0d1a0122a2ec371163fb5d9d13c928f5}{switch\+Player()}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_network_manager_a25e5a69c0dba31cc028050c2b6eea855}{Network\+Manager\+::\+Network\+Manager()}}, and \mbox{\hyperlink{class_t_t_t_controller_a57edf31f9b9a6cf7b3d5261715f92b15}{setup\+Network()}}.
+
+\Hypertarget{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb}\index{TTTController@{TTTController}!onSpeechRecognized@{onSpeechRecognized}}
+\index{onSpeechRecognized@{onSpeechRecognized}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{onSpeechRecognized}{onSpeechRecognized}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb} 
+void TTTController\+::on\+Speech\+Recognized (\begin{DoxyParamCaption}\item[{const QString \&}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_acc38c6351607ee19a1dfc313b80da9a2}{cells\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_ad083b0e4ac90abc1b9b1578a4407ada7}{Human\+Play()}}, \mbox{\hyperlink{namespacedefaults_a543ba1bdceef75ed7ebc4160be54bfcb}{defaults\+::\+INVALID\+\_\+\+CELL}}, \mbox{\hyperlink{class_t_t_t_controller_a0736512a7a5cffa6fefecbe9e4f2a072}{parse\+Speech\+To\+Cell()}}, and \mbox{\hyperlink{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{class_t_t_t_controller_a0736512a7a5cffa6fefecbe9e4f2a072}\index{TTTController@{TTTController}!parseSpeechToCell@{parseSpeechToCell}}
+\index{parseSpeechToCell@{parseSpeechToCell}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{parseSpeechToCell()}{parseSpeechToCell()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a0736512a7a5cffa6fefecbe9e4f2a072} 
+int TTTController\+::parse\+Speech\+To\+Cell (\begin{DoxyParamCaption}\item[{const QString \&}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{namespacedefaults_a543ba1bdceef75ed7ebc4160be54bfcb}{defaults\+::\+INVALID\+\_\+\+CELL}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb}{on\+Speech\+Recognized()}}.
+
+\Hypertarget{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}\index{TTTController@{TTTController}!reset@{reset}}
+\index{reset@{reset}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15} 
+void TTTController\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+resets all internal components, the view, the model and the AI agent. then if AI is supposed to start a game it will play first. 
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_a2c3f88a3462b7aad96bf352322c46f3e}{agent\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgent\+Play()}}, \mbox{\hyperlink{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_acc38c6351607ee19a1dfc313b80da9a2}{cells\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_ad083b0e4ac90abc1b9b1578a4407ada7}{Human\+Play()}}, \mbox{\hyperlink{class_t_t_t_controller_aade7f92b4b06dbf7e17dc5a3772c0aef}{options\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, and \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{class_t_t_t_controller_acae67d371dfa6272adc7670040c01a23}\index{TTTController@{TTTController}!sendMove@{sendMove}}
+\index{sendMove@{sendMove}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{sendMove()}{sendMove()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_acae67d371dfa6272adc7670040c01a23} 
+void TTTController\+::send\+Move (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{col}{, }\item[{char}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_a858247e19d3d31564d8e716f9d81354e}{socket\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}.
+
+\Hypertarget{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}\index{TTTController@{TTTController}!setConnections@{setConnections}}
+\index{setConnections@{setConnections}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{setConnections()}{setConnections()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4} 
+void TTTController\+::set\+Connections (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+set\+Connections will set a connection to all GUI elements to slots defined to handle these events. 
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgent\+Play()}}, \mbox{\hyperlink{class_t_t_t_controller_a513f925f29dcfebb4139030f46243cb4}{AIFinished()}}, \mbox{\hyperlink{class_t_t_t_controller_ae1514051a94219f50a5740af4e02e43d}{human\+Finished()}}, \mbox{\hyperlink{class_t_t_t_controller_ad083b0e4ac90abc1b9b1578a4407ada7}{Human\+Play()}}, \mbox{\hyperlink{class_tic_tac_toe_game_ad0072c616d4d9284ca69245a635b8303}{Tic\+Tac\+Toe\+Game\+::new\+Game()}}, \mbox{\hyperlink{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb}{on\+Speech\+Recognized()}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{class_t_t_t_controller_a57edf31f9b9a6cf7b3d5261715f92b15}{setup\+Network()}}, \mbox{\hyperlink{class_t_t_t_controller_a4b36edfb9a40062357e0038ed00b3b96}{speech\+Recognized()}}, and \mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{class_t_t_t_controller_a57edf31f9b9a6cf7b3d5261715f92b15}\index{TTTController@{TTTController}!setupNetwork@{setupNetwork}}
+\index{setupNetwork@{setupNetwork}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{setupNetwork()}{setupNetwork()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a57edf31f9b9a6cf7b3d5261715f92b15} 
+void TTTController\+::setup\+Network (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{on\+Socket\+Ready\+Read()}}, and \mbox{\hyperlink{class_t_t_t_controller_a858247e19d3d31564d8e716f9d81354e}{socket\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{class_t_t_t_controller_a4b36edfb9a40062357e0038ed00b3b96}\index{TTTController@{TTTController}!speechRecognized@{speechRecognized}}
+\index{speechRecognized@{speechRecognized}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{speechRecognized}{speechRecognized}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a4b36edfb9a40062357e0038ed00b3b96} 
+void TTTController\+::speech\+Recognized (\begin{DoxyParamCaption}\item[{QString}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_ad083b0e4ac90abc1b9b1578a4407ada7}{Human\+Play()}}, and \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{class_t_t_t_controller_a1926fc5ac8a6cac2a75de663157d0023}\index{TTTController@{TTTController}!startGame@{startGame}}
+\index{startGame@{startGame}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a1926fc5ac8a6cac2a75de663157d0023} 
+void TTTController\+::start\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+start\+Game executes this QDialog to show the GUI and start the gameplay. 
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}.
+
+\Hypertarget{class_t_t_t_controller_a0d1a0122a2ec371163fb5d9d13c928f5}\index{TTTController@{TTTController}!switchPlayer@{switchPlayer}}
+\index{switchPlayer@{switchPlayer}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{switchPlayer()}{switchPlayer()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a0d1a0122a2ec371163fb5d9d13c928f5} 
+void TTTController\+::switch\+Player (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+switch\+Player switches the current player mark (X to O and O to X). 
+
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{on\+Socket\+Ready\+Read()}}.
+
+\Hypertarget{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}\index{TTTController@{TTTController}!updateGame@{updateGame}}
+\index{updateGame@{updateGame}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{updateGame}{updateGame}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9} 
+void TTTController\+::update\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell}{Cell}} \&}]{cell}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}
+
+
+
+update\+Game sets the cell clicked in the model (board). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & the clicked cell that the player chooses. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{struct_cell_a09e2f07cb87b7ae5898be20927cf28d1}{Cell\+::col}}, \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{struct_cell_a85d2a7af6195f5196574790fbc1becfd}{Cell\+::row}}, \mbox{\hyperlink{class_t_t_t_controller_acae67d371dfa6272adc7670040c01a23}{send\+Move()}}, \mbox{\hyperlink{class_t_t_t_controller_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State()}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgent\+Play()}}, and \mbox{\hyperlink{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb}{on\+Speech\+Recognized()}}.
+
+\Hypertarget{class_t_t_t_controller_a2b17b7aa11412f978e257afb2aebab5b}\index{TTTController@{TTTController}!updateGameState@{updateGameState}}
+\index{updateGameState@{updateGameState}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{updateGameState()}{updateGameState()}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a2b17b7aa11412f978e257afb2aebab5b} 
+void TTTController\+::update\+Game\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cell}{Cell}} \&}]{cell}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+update\+Game\+State updates the view and the model and switches the current player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & the clicked cell that the player chooses. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}, \mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_t_t_t_controller_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_t_t_t_controller_a2c3f88a3462b7aad96bf352322c46f3e}\index{TTTController@{TTTController}!agent\_@{agent\_}}
+\index{agent\_@{agent\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{agent\_}{agent\_}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a2c3f88a3462b7aad96bf352322c46f3e} 
+unique\+\_\+ptr$<$\mbox{\hyperlink{class_a_i_agent}{AIAgent}}$>$ TTTController\+::agent\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+agent is the AI agent chosen to play against the human player. 
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgent\+Play()}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, and \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892}\index{TTTController@{TTTController}!board\_@{board\_}}
+\index{board\_@{board\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{board\_}{board\_}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892} 
+\mbox{\hyperlink{class_board}{Board}} TTTController\+::board\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+board is the model that represents the underlying layer of a game. 
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgent\+Play()}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController()}}, \mbox{\hyperlink{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}, and \mbox{\hyperlink{class_t_t_t_controller_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State()}}.
+
+\Hypertarget{class_t_t_t_controller_acc38c6351607ee19a1dfc313b80da9a2}\index{TTTController@{TTTController}!cells\_@{cells\_}}
+\index{cells\_@{cells\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{cells\_}{cells\_}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_acc38c6351607ee19a1dfc313b80da9a2} 
+vector$<$\mbox{\hyperlink{struct_cell}{Cell}}$>$ TTTController\+::cells\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+cells are the collection of cell buttons built by the view class. 
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgent\+Play()}}, \mbox{\hyperlink{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb}{on\+Speech\+Recognized()}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, and \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}\index{TTTController@{TTTController}!currentPlayer\_@{currentPlayer\_}}
+\index{currentPlayer\_@{currentPlayer\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{currentPlayer\_}{currentPlayer\_}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921} 
+\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} TTTController\+::current\+Player\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+current\+Player is the player that will play the current turn. 
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgent\+Play()}}, \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{on\+Socket\+Ready\+Read()}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{class_t_t_t_controller_a0d1a0122a2ec371163fb5d9d13c928f5}{switch\+Player()}}, \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController()}}, \mbox{\hyperlink{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}, and \mbox{\hyperlink{class_t_t_t_controller_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State()}}.
+
+\Hypertarget{class_t_t_t_controller_aade7f92b4b06dbf7e17dc5a3772c0aef}\index{TTTController@{TTTController}!options\_@{options\_}}
+\index{options\_@{options\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{options\_}{options\_}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_aade7f92b4b06dbf7e17dc5a3772c0aef} 
+const \mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}}\& TTTController\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+options is the collection of values and flags that controls the game. 
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{on\+Socket\+Ready\+Read()}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, and \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{class_t_t_t_controller_a858247e19d3d31564d8e716f9d81354e}\index{TTTController@{TTTController}!socket\_@{socket\_}}
+\index{socket\_@{socket\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{socket\_}{socket\_}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_a858247e19d3d31564d8e716f9d81354e} 
+QTcp\+Socket\texorpdfstring{$\ast$}{*} TTTController\+::socket\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{on\+Socket\+Ready\+Read()}}, \mbox{\hyperlink{class_t_t_t_controller_acae67d371dfa6272adc7670040c01a23}{send\+Move()}}, and \mbox{\hyperlink{class_t_t_t_controller_a57edf31f9b9a6cf7b3d5261715f92b15}{setup\+Network()}}.
+
+\Hypertarget{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}\index{TTTController@{TTTController}!view\_@{view\_}}
+\index{view\_@{view\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{view\_}{view\_}}
+{\footnotesize\ttfamily \label{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba} 
+\mbox{\hyperlink{class_tic_tac_toe_game}{Tic\+Tac\+Toe\+Game}} TTTController\+::view\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+view is the view class of a tic tac toe game. 
+
+
+
+Referenced by \mbox{\hyperlink{class_t_t_t_controller_a6293931772f0ec9eea531c8a1fb1e050}{get\+View()}}, \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, \mbox{\hyperlink{class_t_t_t_controller_a1926fc5ac8a6cac2a75de663157d0023}{start\+Game()}}, \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController()}}, and \mbox{\hyperlink{class_t_t_t_controller_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+Controller/\mbox{\hyperlink{_t_t_t_controller_8h}{TTTController.\+h}}\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+Controller/\mbox{\hyperlink{_t_t_t_controller_8cpp}{TTTController.\+cpp}}\end{DoxyCompactItemize}

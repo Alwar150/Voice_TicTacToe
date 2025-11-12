@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="structps__decoder__t_1adcbb8aeb9ebf3f73e935d3b3c8832ea0" kindref="member">ps_decoder_t::ps_get_in_speech</ref>  (<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *ps)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000002"/>This function is retained for compatibility but should not be considered a reliable voice activity detector. It will always return 1 between calls to <ref refid="structps__decoder__t_1ade3909b1c12c1b70afe284639e70cbff" kindref="member">ps_start_utt()</ref> and <ref refid="structps__decoder__t_1ab9339de730713b68cbd68a7f36dc8730" kindref="member">ps_end_utt()</ref>. You probably want <ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref>, but for single frames of data you can also use <ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref>. </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structps__decoder__t_1a89be3b2a8f83291a225db0bcd9ee65b2" kindref="member">ps_decoder_t::ps_start_stream</ref>  (<ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *ps)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>This function is retained for compatibility, but its only effect is to reset the noise removal statistics, which are otherwise retained across utterances. You do not need to call it.</para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="deprecated"/>
+  </compounddef>
+</doxygen>

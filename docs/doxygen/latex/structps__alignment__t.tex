@@ -1,0 +1,87 @@
+\doxysection{ps\+\_\+alignment\+\_\+t Struct Reference}
+\hypertarget{structps__alignment__t}{}\label{structps__alignment__t}\index{ps\_alignment\_t@{ps\_alignment\_t}}
+
+
+Multi-\/level alignment (words, phones, states) over an utterance.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/alignment.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__alignment__t_a08bf2cf59a1e8e837e26f6e571c02c95}{ps\+\_\+alignment\+\_\+retain}} (\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}al)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__alignment__t_ad3397b6ae46535516b71a5cc5a049bf1}{ps\+\_\+alignment\+\_\+free}} (\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}al)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__alignment__t_a55bd9be876b2ee4f9be894561f7cfb41}{ps\+\_\+alignment\+\_\+words}} (\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}al)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__alignment__t_a5d2fa99d658585157ce4629d1ae5882e}{ps\+\_\+alignment\+\_\+phones}} (\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}al)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__alignment__t_ad8d74903490fadb9fbddcef2955593c8}{ps\+\_\+alignment\+\_\+states}} (\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}al)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Multi-\/level alignment (words, phones, states) over an utterance. 
+
+\label{doc-func-members}
+\Hypertarget{structps__alignment__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__alignment__t_ad3397b6ae46535516b71a5cc5a049bf1}\index{ps\_alignment\_t@{ps\_alignment\_t}!ps\_alignment\_free@{ps\_alignment\_free}}
+\index{ps\_alignment\_free@{ps\_alignment\_free}!ps\_alignment\_t@{ps\_alignment\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_free()}{ps\_alignment\_free()}}
+{\footnotesize\ttfamily \label{structps__alignment__t_ad3397b6ae46535516b71a5cc5a049bf1} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+alignment\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{al}{}\end{DoxyParamCaption})}
+
+Release an alignment 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__alignment__t_a5d2fa99d658585157ce4629d1ae5882e}\index{ps\_alignment\_t@{ps\_alignment\_t}!ps\_alignment\_phones@{ps\_alignment\_phones}}
+\index{ps\_alignment\_phones@{ps\_alignment\_phones}!ps\_alignment\_t@{ps\_alignment\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_phones()}{ps\_alignment\_phones()}}
+{\footnotesize\ttfamily \label{structps__alignment__t_a5d2fa99d658585157ce4629d1ae5882e} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+alignment\+\_\+phones (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{al}{}\end{DoxyParamCaption})}
+
+Iterate over the alignment starting at the first phone. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__alignment__t_a08bf2cf59a1e8e837e26f6e571c02c95}\index{ps\_alignment\_t@{ps\_alignment\_t}!ps\_alignment\_retain@{ps\_alignment\_retain}}
+\index{ps\_alignment\_retain@{ps\_alignment\_retain}!ps\_alignment\_t@{ps\_alignment\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_retain()}{ps\_alignment\_retain()}}
+{\footnotesize\ttfamily \label{structps__alignment__t_a08bf2cf59a1e8e837e26f6e571c02c95} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+alignment\+\_\+retain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{al}{}\end{DoxyParamCaption})}
+
+Retain an alignment 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__alignment__t_ad8d74903490fadb9fbddcef2955593c8}\index{ps\_alignment\_t@{ps\_alignment\_t}!ps\_alignment\_states@{ps\_alignment\_states}}
+\index{ps\_alignment\_states@{ps\_alignment\_states}!ps\_alignment\_t@{ps\_alignment\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_states()}{ps\_alignment\_states()}}
+{\footnotesize\ttfamily \label{structps__alignment__t_ad8d74903490fadb9fbddcef2955593c8} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+alignment\+\_\+states (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{al}{}\end{DoxyParamCaption})}
+
+Iterate over the alignment starting at the first state. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__alignment__t_a55bd9be876b2ee4f9be894561f7cfb41}\index{ps\_alignment\_t@{ps\_alignment\_t}!ps\_alignment\_words@{ps\_alignment\_words}}
+\index{ps\_alignment\_words@{ps\_alignment\_words}!ps\_alignment\_t@{ps\_alignment\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_words()}{ps\_alignment\_words()}}
+{\footnotesize\ttfamily \label{structps__alignment__t_a55bd9be876b2ee4f9be894561f7cfb41} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+alignment\+\_\+words (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__t}{ps\+\_\+alignment\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{al}{}\end{DoxyParamCaption})}
+
+Iterate over the alignment starting at the first word. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{alignment_8h}{alignment.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,268 @@
+\doxysection{ps\+\_\+endpointer\+\_\+t Struct Reference}
+\hypertarget{structps__endpointer__t}{}\label{structps__endpointer__t}\index{ps\_endpointer\_t@{ps\_endpointer\_t}}
+
+
+Simple voice activity detection based endpointing.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/endpointer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__endpointer__t_a52206006da981da07bd016f7b3dd9b18}{ps\+\_\+endpointer\+\_\+init}} (double window, double ratio, \mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\+\_\+vad\+\_\+mode\+\_\+t}} mode, int sample\+\_\+rate, double frame\+\_\+length)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__endpointer__t_a95eb7899d6e092ccbd0a73392c23e5c4}{ps\+\_\+endpointer\+\_\+retain}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__endpointer__t_ad1c967ebc8f3975d40c8002428cdde32}{ps\+\_\+endpointer\+\_\+free}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__endpointer__t_a2bce53f42a5010f9fbb43a953a16b34a}{ps\+\_\+endpointer\+\_\+vad}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__endpointer__t_a67c0e37e1bd947ade4006b8a28049869}{ps\+\_\+endpointer\+\_\+process}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep, const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}frame)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__endpointer__t_a666c55812e40204dddd7ef672c797264}{ps\+\_\+endpointer\+\_\+end\+\_\+stream}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep, const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}frame, size\+\_\+t nsamp, size\+\_\+t \texorpdfstring{$\ast$}{*}out\+\_\+nsamp)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__endpointer__t_adac16cf29e75f65ec68957daaaa2d467}{ps\+\_\+endpointer\+\_\+in\+\_\+speech}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} double \mbox{\hyperlink{structps__endpointer__t_a808204c820723b3cd4c16d38c66980c6}{ps\+\_\+endpointer\+\_\+speech\+\_\+start}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} double \mbox{\hyperlink{structps__endpointer__t_abc71fe3155fa1a9536c58c3c69fe8dea}{ps\+\_\+endpointer\+\_\+speech\+\_\+end}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__endpointer__t_a5d6ba30b00e6e8f849800b0fa352bf9c}{ps\+\_\+endpointer\+\_\+set\+\_\+timestamp\+\_\+func}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep, \mbox{\hyperlink{endpointer_8h_ac01ff24b5365d201fb0ed51bf7e830c2}{ps\+\_\+endpointer\+\_\+timestamp\+\_\+cb\+\_\+t}} cb, void \texorpdfstring{$\ast$}{*}user\+\_\+data)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} double \mbox{\hyperlink{structps__endpointer__t_afa8a03e9be7cda8d8bad1978e3c25add}{ps\+\_\+endpointer\+\_\+timestamp}} (\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}ep)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple voice activity detection based endpointing. 
+
+\label{doc-func-members}
+\Hypertarget{structps__endpointer__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__endpointer__t_a666c55812e40204dddd7ef672c797264}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_end\_stream@{ps\_endpointer\_end\_stream}}
+\index{ps\_endpointer\_end\_stream@{ps\_endpointer\_end\_stream}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_end\_stream()}{ps\_endpointer\_end\_stream()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_a666c55812e40204dddd7ef672c797264} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*} ps\+\_\+endpointer\+\_\+end\+\_\+stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{, }\item[{const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}}]{frame}{, }\item[{size\+\_\+t}]{nsamp}{, }\item[{size\+\_\+t \texorpdfstring{$\ast$}{*}}]{out\+\_\+nsamp}{}\end{DoxyParamCaption})}
+
+Process remaining samples at end of stream.
+
+Note that the endpointer is {\itshape not} thread-\/safe. You must call all endpointer functions from the same thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ep} & Endpointer. \\
+\hline
+{\em frame} & Frame of data, must contain \doxylink{endpointer_8h_aaa16760235cea4c0a06db70c907bc576}{ps\+\_\+endpointer\+\_\+frame\+\_\+size()} samples or less. \\
+\hline
+{\em nsamp} & Number of samples in frame. \\
+\hline
+{\em out\+\_\+nsamp} & Output, number of samples available. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to available samples, or NULL if none available. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_ad1c967ebc8f3975d40c8002428cdde32}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_free@{ps\_endpointer\_free}}
+\index{ps\_endpointer\_free@{ps\_endpointer\_free}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_free()}{ps\_endpointer\_free()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_ad1c967ebc8f3975d40c8002428cdde32} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+endpointer\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{}\end{DoxyParamCaption})}
+
+Release a pointer to endpointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ep} & Endpointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New reference count (0 if freed). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_adac16cf29e75f65ec68957daaaa2d467}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_in\_speech@{ps\_endpointer\_in\_speech}}
+\index{ps\_endpointer\_in\_speech@{ps\_endpointer\_in\_speech}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_in\_speech()}{ps\_endpointer\_in\_speech()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_adac16cf29e75f65ec68957daaaa2d467} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+endpointer\+\_\+in\+\_\+speech (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{}\end{DoxyParamCaption})}
+
+Get the current state (speech/not-\/speech) of the endpointer.
+
+This function can be used to detect speech/non-\/speech transitions. If it returns 0, and a subsequent call to \doxylink{structps__endpointer__t_a67c0e37e1bd947ade4006b8a28049869}{ps\+\_\+endpointer\+\_\+process()} returns non-\/\+NULL, this indicates a transition to speech. Conversely, if \doxylink{structps__endpointer__t_a67c0e37e1bd947ade4006b8a28049869}{ps\+\_\+endpointer\+\_\+process()} returns non-\/\+NULL and a subsequent call to this function returns 0, this indicates a transition to non-\/speech.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ep} & Endpointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+non-\/zero if in a speech segment after processing the last frame of data. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_a52206006da981da07bd016f7b3dd9b18}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_init@{ps\_endpointer\_init}}
+\index{ps\_endpointer\_init@{ps\_endpointer\_init}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_init()}{ps\_endpointer\_init()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_a52206006da981da07bd016f7b3dd9b18} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+endpointer\+\_\+init (\begin{DoxyParamCaption}\item[{double}]{window}{, }\item[{double}]{ratio}{, }\item[{\mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\+\_\+vad\+\_\+mode\+\_\+t}}}]{mode}{, }\item[{int}]{sample\+\_\+rate}{, }\item[{double}]{frame\+\_\+length}{}\end{DoxyParamCaption})}
+
+Initialize endpointing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Seconds of audio to use in speech start/end decision, or 0 to use the default (PS\+\_\+\+ENDPOINTER\+\_\+\+DEFAULT\+\_\+\+WINDOW). \\
+\hline
+{\em ratio} & Ratio of frames needed to trigger start/end decision, or 0 for the default (PS\+\_\+\+ENDPOINTER\+\_\+\+DEFAULT\+\_\+\+RATIO). \\
+\hline
+{\em mode} & "{}\+Aggressiveness"{} of voice activity detection. Stricter values (see \doxylink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\+\_\+vad\+\_\+mode\+\_\+t}) are less likely to misclassify non-\/speech as speech. \\
+\hline
+{\em sample\+\_\+rate} & Sampling rate of input, or 0 for default (which can be obtained with ps\+\_\+vad\+\_\+sample\+\_\+rate()). Only 8000, 16000, 32000, 48000 are directly supported, others will use the closest supported rate (within reason). Note that this means that the actual frame length may not be exactly the one requested, so you must always use the one returned by \doxylink{endpointer_8h_aaa16760235cea4c0a06db70c907bc576}{ps\+\_\+endpointer\+\_\+frame\+\_\+size()} (in samples) or \doxylink{endpointer_8h_a65e580fb57829e172863093b8d8bfdf7}{ps\+\_\+endpointer\+\_\+frame\+\_\+length()} (in seconds). \\
+\hline
+{\em frame\+\_\+length} & Requested frame length in seconds, or 0.\+0 for the default. Only 0.\+01, 0.\+02, 0.\+03 currently supported. {\bfseries{Actual frame length may be different, you must always use \doxylink{endpointer_8h_a65e580fb57829e172863093b8d8bfdf7}{ps\+\_\+endpointer\+\_\+frame\+\_\+length()} to obtain it.}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Endpointer object or NULL on failure (invalid parameter for instance). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_a67c0e37e1bd947ade4006b8a28049869}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_process@{ps\_endpointer\_process}}
+\index{ps\_endpointer\_process@{ps\_endpointer\_process}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_process()}{ps\_endpointer\_process()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_a67c0e37e1bd947ade4006b8a28049869} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*} ps\+\_\+endpointer\+\_\+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{, }\item[{const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}}]{frame}{}\end{DoxyParamCaption})}
+
+Process a frame of audio, returning a frame if in a speech region.
+
+Note that the endpointer is {\itshape not} thread-\/safe. You must call all endpointer functions from the same thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ep} & Endpointer. \\
+\hline
+{\em frame} & Frame of data, must contain \doxylink{endpointer_8h_aaa16760235cea4c0a06db70c907bc576}{ps\+\_\+endpointer\+\_\+frame\+\_\+size()} samples. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL if no speech available, or pointer to a frame of \doxylink{endpointer_8h_aaa16760235cea4c0a06db70c907bc576}{ps\+\_\+endpointer\+\_\+frame\+\_\+size()} samples (no more and no less). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_a95eb7899d6e092ccbd0a73392c23e5c4}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_retain@{ps\_endpointer\_retain}}
+\index{ps\_endpointer\_retain@{ps\_endpointer\_retain}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_retain()}{ps\_endpointer\_retain()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_a95eb7899d6e092ccbd0a73392c23e5c4} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+endpointer\+\_\+retain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{}\end{DoxyParamCaption})}
+
+Retain a pointer to endpointer
+
+
+\begin{DoxyParams}{Parameters}
+{\em ep} & Endpointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Endpointer with incremented reference count. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_a5d6ba30b00e6e8f849800b0fa352bf9c}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_set\_timestamp\_func@{ps\_endpointer\_set\_timestamp\_func}}
+\index{ps\_endpointer\_set\_timestamp\_func@{ps\_endpointer\_set\_timestamp\_func}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_set\_timestamp\_func()}{ps\_endpointer\_set\_timestamp\_func()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_a5d6ba30b00e6e8f849800b0fa352bf9c} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+endpointer\+\_\+set\+\_\+timestamp\+\_\+func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{, }\item[{\mbox{\hyperlink{endpointer_8h_ac01ff24b5365d201fb0ed51bf7e830c2}{ps\+\_\+endpointer\+\_\+timestamp\+\_\+cb\+\_\+t}}}]{cb}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{user\+\_\+data}{}\end{DoxyParamCaption})}
+
+Set a callback function to provide external timestamps.
+
+By default, the endpointer uses audio sample counts to calculate timestamps. This can cause drift between audio time and system time when the audio clock is not synchronized with the system clock.
+
+This function allows you to provide an external timestamp source (e.\+g., system time, monotonic clock) to avoid this drift.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ep} & Endpointer. \\
+\hline
+{\em cb} & Callback function that returns current time in seconds, or NULL to revert to audio-\/based timestamps. \\
+\hline
+{\em user\+\_\+data} & User data to pass to the callback function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, -\/1 for error. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_abc71fe3155fa1a9536c58c3c69fe8dea}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_speech\_end@{ps\_endpointer\_speech\_end}}
+\index{ps\_endpointer\_speech\_end@{ps\_endpointer\_speech\_end}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_speech\_end()}{ps\_endpointer\_speech\_end()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_abc71fe3155fa1a9536c58c3c69fe8dea} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} double ps\+\_\+endpointer\+\_\+speech\+\_\+end (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{}\end{DoxyParamCaption})}
+
+Get the end time of the last speech segment 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_a808204c820723b3cd4c16d38c66980c6}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_speech\_start@{ps\_endpointer\_speech\_start}}
+\index{ps\_endpointer\_speech\_start@{ps\_endpointer\_speech\_start}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_speech\_start()}{ps\_endpointer\_speech\_start()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_a808204c820723b3cd4c16d38c66980c6} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} double ps\+\_\+endpointer\+\_\+speech\+\_\+start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{}\end{DoxyParamCaption})}
+
+Get the start time of the last speech segment. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__endpointer__t_afa8a03e9be7cda8d8bad1978e3c25add}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_timestamp@{ps\_endpointer\_timestamp}}
+\index{ps\_endpointer\_timestamp@{ps\_endpointer\_timestamp}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_timestamp()}{ps\_endpointer\_timestamp()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_afa8a03e9be7cda8d8bad1978e3c25add} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} double ps\+\_\+endpointer\+\_\+timestamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{}\end{DoxyParamCaption})}
+
+Get the current timestamp from the endpointer.
+
+This returns the current timestamp used by the endpointer, which may be based on audio samples or an external timestamp source if one has been set with \doxylink{structps__endpointer__t_a5d6ba30b00e6e8f849800b0fa352bf9c}{ps\+\_\+endpointer\+\_\+set\+\_\+timestamp\+\_\+func()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ep} & Endpointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current timestamp in seconds. 
+\end{DoxyReturn}
+\Hypertarget{structps__endpointer__t_a2bce53f42a5010f9fbb43a953a16b34a}\index{ps\_endpointer\_t@{ps\_endpointer\_t}!ps\_endpointer\_vad@{ps\_endpointer\_vad}}
+\index{ps\_endpointer\_vad@{ps\_endpointer\_vad}!ps\_endpointer\_t@{ps\_endpointer\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_endpointer\_vad()}{ps\_endpointer\_vad()}}
+{\footnotesize\ttfamily \label{structps__endpointer__t_a2bce53f42a5010f9fbb43a953a16b34a} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+endpointer\+\_\+vad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ep}{}\end{DoxyParamCaption})}
+
+Get the voice activity detector used by the endpointer.
+
+\begin{DoxyReturn}{Returns}
+VAD object. The endpointer retains ownership of this object, so you must use ps\+\_\+vad\+\_\+retain() if you wish to use it outside of the lifetime of the endpointer. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{endpointer_8h}{endpointer.\+h}}\end{DoxyCompactItemize}

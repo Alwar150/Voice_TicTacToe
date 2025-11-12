@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_title_screen_8cpp" kind="file" language="C++">
+    <compoundname>TitleScreen.cpp</compoundname>
+    <includes refid="_title_screen_8h" local="yes">TitleScreen.h</includes>
+    <includes refid="_t_t_t_controller_8h" local="yes">TTTController.h</includes>
+    <includes refid="_network_manager_8h" local="yes">NetworkManager.h</includes>
+    <incdepgraph>
+      <node id="29">
+        <label>AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>NetworkManager.h</label>
+        <link refid="_network_manager_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TitleScreen.h</label>
+        <link refid="_title_screen_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>pocketsphinx/alignment.h</label>
+        <link refid="alignment_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>pocketsphinx/endpointer.h</label>
+        <link refid="endpointer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>pocketsphinx/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="22">
+        <label>pocketsphinx/lattice.h</label>
+        <link refid="lattice_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>pocketsphinx/mllr.h</label>
+        <link refid="mllr_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>pocketsphinx/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>pocketsphinx/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>pocketsphinx/search.h</label>
+        <link refid="search_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>pocketsphinx/sphinx_config.h</label>
+        <link refid="include_2pocketsphinx_2sphinx__config_8h"/>
+      </node>
+      <node id="17">
+        <label>pocketsphinx/vad.h</label>
+        <link refid="vad_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>QDialog</label>
+      </node>
+      <node id="26">
+        <label>QMainWindow</label>
+      </node>
+      <node id="31">
+        <label>QObject</label>
+      </node>
+      <node id="39">
+        <label>QTcpSocket</label>
+      </node>
+      <node id="40">
+        <label>QTimer</label>
+      </node>
+      <node id="33">
+        <label>QtGlobal</label>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="16">
+        <label>errno.h</label>
+      </node>
+      <node id="27">
+        <label>memory</label>
+      </node>
+      <node id="10">
+        <label>pocketsphinx/sphinx_config.h</label>
+      </node>
+      <node id="5">
+        <label>portaudio.h</label>
+      </node>
+      <node id="24">
+        <label>signal.h</label>
+      </node>
+      <node id="14">
+        <label>stdarg.h</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="15">
+        <label>stdlib.h</label>
+      </node>
+      <node id="36">
+        <label>ui_TicTacToeGame.h</label>
+      </node>
+      <node id="25">
+        <label>ui_titlescreen.h</label>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_title_screen_8h" kindref="compound">TitleScreen.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_t_t_controller_8h" kindref="compound">TTTController.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_network_manager_8h" kindref="compound">NetworkManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" refkind="member"><highlight class="normal"><ref refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" kindref="member">TitleScreen::TitleScreen</ref>(QWidget<sp/>*parent)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>QMainWindow(parent),<sp/><ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>(new<sp/>Ui::<ref refid="class_title_screen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" kindref="member">TitleScreen</ref>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" kindref="member">setConnections</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_title_screen_1a72a76e4ff3f03dfc11538ae0de2156b5" kindref="member">TitleScreen::setConnections</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;boardSize,<sp/>SIGNAL(valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),<sp/>SLOT(<ref refid="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" kindref="member">updateBoardSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;onePlayer,<sp/>SIGNAL(toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/>SLOT(<ref refid="class_title_screen_1af028098c1b235b3da76941c83776de20" kindref="member">updateSinglePlayer</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;twoPlayers,<sp/>SIGNAL(toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/>SLOT(<ref refid="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" kindref="member">updateTwoPlayers</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;AIStarts,<sp/>SIGNAL(toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/>SLOT(<ref refid="class_title_screen_1a2cb34f420ea007de5bec91a91b6f2abe" kindref="member">updateAIstartsGame</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;miniMaxDepth,<sp/>SIGNAL(valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SLOT(<ref refid="class_title_screen_1a60d1e875593a02a6ee01508235680a47" kindref="member">updateMiniMaxDepth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;startGame,<sp/>SIGNAL(clicked()),<sp/>SLOT(<ref refid="class_title_screen_1ac55c2f2485f58d3b7b389e7414a358d6" kindref="member">startGame</ref>()));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_title_screen_1aad4454fc738633edbad55ebe00ceec3d" kindref="member">TitleScreen::updateBoardSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;boardSizeValue-&gt;setText(QString::number(size));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.boardSize<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(size);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_title_screen_1af028098c1b235b3da76941c83776de20" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_title_screen_1af028098c1b235b3da76941c83776de20" kindref="member">TitleScreen::updateSinglePlayer</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(checked)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;AIStarts-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;miniMaxDepth-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.AIopponent<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_title_screen_1a65a292091aba9a84cf518af2d395f2b0" kindref="member">TitleScreen::updateTwoPlayers</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(checked)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;AIStarts-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;miniMaxDepth-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.AIopponent<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_title_screen_1a2cb34f420ea007de5bec91a91b6f2abe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_title_screen_1a2cb34f420ea007de5bec91a91b6f2abe" kindref="member">TitleScreen::updateAIstartsGame</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(checked)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.AIstarts<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.AIstarts<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_title_screen_1a60d1e875593a02a6ee01508235680a47" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_title_screen_1a60d1e875593a02a6ee01508235680a47" kindref="member">TitleScreen::updateMiniMaxDepth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>depth)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;miniMaxDepthValue-&gt;setText(QString::number(depth));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.miniMaxDepth<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(depth);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_title_screen_1ac55c2f2485f58d3b7b389e7414a358d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_title_screen_1ac55c2f2485f58d3b7b389e7414a358d6" kindref="member">TitleScreen::startGame</ref>()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;hide();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Crear<sp/>dinámicamente<sp/>el<sp/>controlador<sp/>para<sp/>que<sp/>no<sp/>se<sp/>destruya<sp/>al<sp/>salir<sp/>de<sp/>la<sp/>función</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>*ttt<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller" kindref="compound">TTTController</ref>(<ref refid="class_title_screen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>ttt-&gt;startGame();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Conectar<sp/>para<sp/>que,<sp/>cuando<sp/>la<sp/>vista<sp/>se<sp/>cierre,<sp/>el<sp/>título<sp/>reaparezca</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>QObject::connect(ttt-&gt;getView(),<sp/>&amp;QWidget::destroyed,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ttt]()<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;show();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ttt-&gt;deleteLater();<sp/><sp/></highlight><highlight class="comment">//<sp/>Limpieza<sp/>segura<sp/>del<sp/>controlador</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_title_screen_1a06e835ca83c6ead23fa0f24833ec76b9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_title_screen_1a06e835ca83c6ead23fa0f24833ec76b9" kindref="member">TitleScreen::closeEvent</ref>(QCloseEvent<sp/>*event)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>QMainWindow::closeEvent(event);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="class_title_screen_1a8d6e439797b80238c95602359ba029bd" kindref="member">exited</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp"/>
+  </compounddef>
+</doxygen>

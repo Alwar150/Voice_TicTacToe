@@ -1,0 +1,97 @@
+\doxysection{alignment.\+h}
+\hypertarget{alignment_8h_source}{}\label{alignment_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/alignment.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/alignment.h}}
+\mbox{\hyperlink{alignment_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/\ c-\/basic-\/offset:\ 4;\ indent-\/tabs-\/mode:\ nil\ -\/*-\/\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ ====================================================================}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2010\ Carnegie\ Mellon\ University.\ \ All\ rights}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ reserved.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Redistribution\ and\ use\ in\ source\ and\ binary\ forms,\ with\ or\ without}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ modification,\ are\ permitted\ provided\ that\ the\ following\ conditions}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ are\ met:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ 1.\ Redistributions\ of\ source\ code\ must\ retain\ the\ above\ copyright}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer.\ }}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ 2.\ Redistributions\ in\ binary\ form\ must\ reproduce\ the\ above\ copyright}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer\ in}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ \ \ the\ documentation\ and/or\ other\ materials\ provided\ with\ the}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ \ \ distribution.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ This\ work\ was\ supported\ in\ part\ by\ funding\ from\ the\ Defense\ Advanced\ }}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ Research\ Projects\ Agency\ and\ the\ National\ Science\ Foundation\ of\ the\ }}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ United\ States\ of\ America,\ and\ the\ CMU\ Sphinx\ Speech\ Consortium.}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ PROVIDED\ BY\ CARNEGIE\ MELLON\ UNIVERSITY\ \`{}\`{}AS\ IS''\ AND\ }}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ ANY\ EXPRESSED\ OR\ IMPLIED\ WARRANTIES,\ INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ }}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY\ AND\ FITNESS\ FOR\ A\ PARTICULAR}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ PURPOSE\ ARE\ DISCLAIMED.\ \ IN\ NO\ EVENT\ SHALL\ CARNEGIE\ MELLON\ UNIVERSITY}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ NOR\ ITS\ EMPLOYEES\ BE\ LIABLE\ FOR\ ANY\ DIRECT,\ INDIRECT,\ INCIDENTAL,}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ SPECIAL,\ EXEMPLARY,\ OR\ CONSEQUENTIAL\ DAMAGES\ (INCLUDING,\ BUT\ NOT\ }}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ LIMITED\ TO,\ PROCUREMENT\ OF\ SUBSTITUTE\ GOODS\ OR\ SERVICES;\ LOSS\ OF\ USE,\ }}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ DATA,\ OR\ PROFITS;\ OR\ BUSINESS\ INTERRUPTION)\ HOWEVER\ CAUSED\ AND\ ON\ ANY\ }}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ THEORY\ OF\ LIABILITY,\ WHETHER\ IN\ CONTRACT,\ STRICT\ LIABILITY,\ OR\ TORT\ }}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ (INCLUDING\ NEGLIGENCE\ OR\ OTHERWISE)\ ARISING\ IN\ ANY\ WAY\ OUT\ OF\ THE\ USE\ }}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ OF\ THIS\ SOFTWARE,\ EVEN\ IF\ ADVISED\ OF\ THE\ POSSIBILITY\ OF\ SUCH\ DAMAGE.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ ====================================================================}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#ifndef\ \_\_PS\_ALIGNMENT\_H\_\_}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ \_\_PS\_ALIGNMENT\_H\_\_}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prim__type_8h}{pocketsphinx/prim\_type.h}}>}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00052\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#if\ 0}}
+\DoxyCodeLine{00055\ \}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ PS\_ALIGNMENT\_NONE\ -\/1}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_alignment\_s\ \mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_alignment\_iter\_s\ \mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00081\ \mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}}\ *\mbox{\hyperlink{structps__alignment__t_a08bf2cf59a1e8e837e26f6e571c02c95}{ps\_alignment\_retain}}(\mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}}\ *al);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__alignment__t_ad3397b6ae46535516b71a5cc5a049bf1}{ps\_alignment\_free}}(\mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}}\ *al);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00095\ \mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *\mbox{\hyperlink{structps__alignment__t_a55bd9be876b2ee4f9be894561f7cfb41}{ps\_alignment\_words}}(\mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}}\ *al);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00101\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00102\ \mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *\mbox{\hyperlink{structps__alignment__t_a5d2fa99d658585157ce4629d1ae5882e}{ps\_alignment\_phones}}(\mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}}\ *al);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00109\ \mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *\mbox{\hyperlink{structps__alignment__t_ad8d74903490fadb9fbddcef2955593c8}{ps\_alignment\_states}}(\mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}}\ *al);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00119\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00120\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structps__alignment__iter__t_a47da598c1af7c96722ace460fae384a9}{ps\_alignment\_iter\_name}}(\mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00130\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00131\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__alignment__iter__t_a5810641dfea5220b6b17674cd28046f9}{ps\_alignment\_iter\_seg}}(\mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *itor,\ \textcolor{keywordtype}{int}\ *start,\ \textcolor{keywordtype}{int}\ *duration);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00141\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00142\ \mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *\mbox{\hyperlink{structps__alignment__iter__t_a86c1a5d3a522405c038b3f0917ec7e42}{ps\_alignment\_iter\_next}}(\mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00151\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00152\ \mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *\mbox{\hyperlink{structps__alignment__iter__t_acc617cc49965b92ed2974ee93355c828}{ps\_alignment\_iter\_children}}(\mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00160\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__alignment__iter__t_a395971ce8af5acd6d26c9d6ec43a7bca}{ps\_alignment\_iter\_free}}(\mbox{\hyperlink{structps__alignment__iter__t}{ps\_alignment\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00163\ \}\ \textcolor{comment}{/*\ extern\ "{}C"{}\ */}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_PS\_ALIGNMENT\_H\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

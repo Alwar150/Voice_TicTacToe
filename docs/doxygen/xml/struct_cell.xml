@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_cell" kind="struct" language="C++" prot="public">
+    <compoundname>Cell</compoundname>
+    <includes refid="_t_t_t_common_types_8h" local="no">TTTCommonTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Cell::cellBtn</definition>
+        <argsstring></argsstring>
+        <name>cellBtn</name>
+        <qualifiedname>Cell::cellBtn</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="27" column="17" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="struct_cell_1a5ad411cd7ac4344405a343573684dc14" compoundref="_t_t_t_common_types_8h" startline="30" endline="31">Cell</referencedby>
+        <referencedby refid="class_tic_tac_toe_game_1a6df8896115fc708fa4dd12bc6c04e34a" compoundref="_tic_tac_toe_game_8cpp" startline="83" endline="88">TicTacToeGame::updateCell</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cell::row</definition>
+        <argsstring></argsstring>
+        <name>row</name>
+        <qualifiedname>Cell::row</qualifiedname>
+        <initializer>= <ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="28" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">TTTController::AIAgentPlay</referencedby>
+        <referencedby refid="struct_cell_1a5ad411cd7ac4344405a343573684dc14" compoundref="_t_t_t_common_types_8h" startline="30" endline="31">Cell</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" compoundref="_t_t_t_controller_8cpp" startline="140" endline="154">TTTController::updateGame</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cell::col</definition>
+        <argsstring></argsstring>
+        <name>col</name>
+        <qualifiedname>Cell::col</qualifiedname>
+        <initializer>= <ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="29" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">TTTController::AIAgentPlay</referencedby>
+        <referencedby refid="struct_cell_1a5ad411cd7ac4344405a343573684dc14" compoundref="_t_t_t_common_types_8h" startline="30" endline="31">Cell</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" compoundref="_t_t_t_controller_8cpp" startline="140" endline="154">TTTController::updateGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_cell_1a5ad411cd7ac4344405a343573684dc14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cell::Cell</definition>
+        <argsstring>(QPushButton *cellBtn, int row, int col)</argsstring>
+        <name>Cell</name>
+        <qualifiedname>Cell::Cell</qualifiedname>
+        <param>
+          <type>QPushButton *</type>
+          <declname>cellBtn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="30" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="30" bodyend="31"/>
+        <references refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" compoundref="_t_t_t_common_types_8h" startline="27">cellBtn</references>
+        <references refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" compoundref="_t_t_t_common_types_8h" startline="29">col</references>
+        <references refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" compoundref="_t_t_t_common_types_8h" startline="28">row</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="struct_cell" kindref="compound">Cell</ref> struct represents a board cell and all the necessary information needed about the cell. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="25" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="26" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct_cell_1a5ad411cd7ac4344405a343573684dc14" prot="public" virt="non-virtual"><scope>Cell</scope><name>Cell</name></member>
+      <member refid="struct_cell_1a242e6735a746bdd7b0d25311a81f0cb4" prot="public" virt="non-virtual"><scope>Cell</scope><name>cellBtn</name></member>
+      <member refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" prot="public" virt="non-virtual"><scope>Cell</scope><name>col</name></member>
+      <member refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" prot="public" virt="non-virtual"><scope>Cell</scope><name>row</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

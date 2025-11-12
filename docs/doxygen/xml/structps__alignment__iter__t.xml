@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__alignment__iter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_alignment_iter_t</compoundname>
+    <includes refid="alignment_8h" local="no">pocketsphinx/alignment.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__alignment__iter__t_1a47da598c1af7c96722ace460fae384a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> const char *</type>
+        <definition>POCKETSPHINX_EXPORT const char * ps_alignment_iter_name</definition>
+        <argsstring>(ps_alignment_iter_t *itor)</argsstring>
+        <name>ps_alignment_iter_name</name>
+        <qualifiedname>ps_alignment_iter_t::ps_alignment_iter_name</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the human-readable name of the current segment for an alignment.</para>
+<para><simplesect kind="return"><para>Name of this segment as a string (word, phone, or state number). This pointer is owned by the iterator, do not free it yourself. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="120" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="120" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__alignment__iter__t_1a5810641dfea5220b6b17674cd28046f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_alignment_iter_seg</definition>
+        <argsstring>(ps_alignment_iter_t *itor, int *start, int *duration)</argsstring>
+        <name>ps_alignment_iter_seg</name>
+        <qualifiedname>ps_alignment_iter_t::ps_alignment_iter_seg</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the timing and score information for the current segment of an alignment.</para>
+<para><itemizedlist>
+<listitem><para>start Output pointer for start frame </para>
+</listitem>
+<listitem><para>duration Output pointer for duration <simplesect kind="return"><para>Acoustic score for this segment </para>
+</simplesect>
+</para>
+</listitem>
+</itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="131" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="131" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__alignment__iter__t_1a86c1a5d3a522405c038b3f0917ec7e42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_alignment_iter_t * ps_alignment_iter_next</definition>
+        <argsstring>(ps_alignment_iter_t *itor)</argsstring>
+        <name>ps_alignment_iter_next</name>
+        <qualifiedname>ps_alignment_iter_t::ps_alignment_iter_next</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move an alignment iterator forward.</para>
+<para>If the end of the alignment is reached, this will free the iterator and return NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="142" column="21" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="142" declcolumn="21"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__alignment__iter__t_1acc617cc49965b92ed2974ee93355c828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_alignment_iter_t * ps_alignment_iter_children</definition>
+        <argsstring>(ps_alignment_iter_t *itor)</argsstring>
+        <name>ps_alignment_iter_children</name>
+        <qualifiedname>ps_alignment_iter_t::ps_alignment_iter_children</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over the children of the current alignment entry.</para>
+<para>If there are no child nodes, NULL is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="152" column="21" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="152" declcolumn="21"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__alignment__iter__t_1a395971ce8af5acd6d26c9d6ec43a7bca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_alignment_iter_free</definition>
+        <argsstring>(ps_alignment_iter_t *itor)</argsstring>
+        <name>ps_alignment_iter_free</name>
+        <qualifiedname>ps_alignment_iter_t::ps_alignment_iter_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release an iterator before completing all iterations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="160" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="160" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Iterator over entries in an alignment. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="71" column="1"/>
+    <listofallmembers>
+      <member refid="structps__alignment__iter__t_1acc617cc49965b92ed2974ee93355c828" prot="public" virt="non-virtual"><scope>ps_alignment_iter_t</scope><name>ps_alignment_iter_children</name></member>
+      <member refid="structps__alignment__iter__t_1a395971ce8af5acd6d26c9d6ec43a7bca" prot="public" virt="non-virtual"><scope>ps_alignment_iter_t</scope><name>ps_alignment_iter_free</name></member>
+      <member refid="structps__alignment__iter__t_1a47da598c1af7c96722ace460fae384a9" prot="public" virt="non-virtual"><scope>ps_alignment_iter_t</scope><name>ps_alignment_iter_name</name></member>
+      <member refid="structps__alignment__iter__t_1a86c1a5d3a522405c038b3f0917ec7e42" prot="public" virt="non-virtual"><scope>ps_alignment_iter_t</scope><name>ps_alignment_iter_next</name></member>
+      <member refid="structps__alignment__iter__t_1a5810641dfea5220b6b17674cd28046f9" prot="public" virt="non-virtual"><scope>ps_alignment_iter_t</scope><name>ps_alignment_iter_seg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

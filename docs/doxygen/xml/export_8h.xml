@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="export_8h" kind="file" language="C++">
+    <compoundname>export.h</compoundname>
+    <includedby refid="pocketsphinx_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</includedby>
+    <includedby refid="endpointer_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h</includedby>
+    <includedby refid="err_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h</includedby>
+    <includedby refid="lattice_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h</includedby>
+    <includedby refid="logmath_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h</includedby>
+    <includedby refid="mllr_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h</includedby>
+    <includedby refid="model_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h</includedby>
+    <includedby refid="vad_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h</includedby>
+    <invincdepgraph>
+      <node id="17">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.cpp</label>
+        <link refid="_human_player_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h</label>
+        <link refid="_human_player_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.cpp</label>
+        <link refid="_mini_max_agent_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.h</label>
+        <link refid="_mini_max_agent_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h</label>
+        <link refid="_no_agent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp</label>
+        <link refid="_board_8cpp"/>
+      </node>
+      <node id="18">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp</label>
+        <link refid="_speech_manager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h</label>
+        <link refid="_speech_manager_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/main.cpp</label>
+        <link refid="_tic_tac_toe_test_2main_8cpp"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_board.h</label>
+        <link refid="tst__board_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_minimaxagent.h</label>
+        <link refid="tst__minimaxagent_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp</label>
+        <link refid="_tic_tac_toe_game_8cpp"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h</label>
+        <link refid="_title_screen_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h</label>
+        <link refid="test__macros_8h"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h</label>
+        <link refid="endpointer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h</label>
+        <link refid="lattice_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h</label>
+        <link refid="mllr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h</label>
+        <link refid="search_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h</label>
+        <link refid="vad_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" prot="public" static="no">
+        <name>POCKETSPHINX_EXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/export.h" line="12" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/export.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="err_8h_1a037fb194ca22cbbdd9252afa317a4f61">err_get_logfp</referencedby>
+        <referencedby refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae">err_msg</referencedby>
+        <referencedby refid="err_8h_1ad6a26dc9c533d592a6e98b85941bb200">err_msg_system</referencedby>
+        <referencedby refid="err_8h_1a27fbaecbcb755fd9e5a503566b6ec542">err_set_callback</referencedby>
+        <referencedby refid="err_8h_1adead72aa5614d8d305ab8710369ea01b">err_set_logfp</referencedby>
+        <referencedby refid="err_8h_1ac011c0d3b793abc19010c2255bce5c88">err_set_loglevel</referencedby>
+        <referencedby refid="err_8h_1a33774becab4a590524f8edb99f4a826b">err_set_loglevel_str</referencedby>
+        <referencedby refid="structfsg__model__t_1a6ddaf82f2f00dbf11c8faf28f2d4d71a">fsg_model_t::fsg_model_accept</referencedby>
+        <referencedby refid="structfsg__model__t_1a1ef2610a66f069de1a150083bd34a540">fsg_model_t::fsg_model_free</referencedby>
+        <referencedby refid="structfsg__model__t_1a6f69628ed178ff0bf6f10fd0e24b0158">fsg_model_t::fsg_model_read</referencedby>
+        <referencedby refid="structfsg__model__t_1a392a842691581158195e2a3cd5d03a6e">fsg_model_t::fsg_model_readfile</referencedby>
+        <referencedby refid="structfsg__model__t_1ae660cd51180526f7f3050fa7413592b6">fsg_model_t::fsg_model_retain</referencedby>
+        <referencedby refid="structfsg__model__t_1a22a8bc6a9385527a8c0cb1bc39afe7b2">fsg_model_t::fsg_model_write</referencedby>
+        <referencedby refid="structfsg__model__t_1a64ed5023c8a741daf7a339003b087007">fsg_model_t::fsg_model_write_fsm</referencedby>
+        <referencedby refid="structfsg__model__t_1ab980ba7d0ca500ec42f77e3ad956a546">fsg_model_t::fsg_model_write_symtab</referencedby>
+        <referencedby refid="structfsg__model__t_1aae7c2ed126099be78ab9e6d451a5d324">fsg_model_t::fsg_model_writefile</referencedby>
+        <referencedby refid="structfsg__model__t_1a6c6d82f65a090b66176ba26386d6e6f8">fsg_model_t::fsg_model_writefile_fsm</referencedby>
+        <referencedby refid="structjsgf__t_1a3351602453d463a51eb6e9fa832dc956">jsgf_t::jsgf_build_fsg</referencedby>
+        <referencedby refid="structjsgf__t_1ac4c63ff31f11effef78a867cc61c9937">jsgf_t::jsgf_get_public_rule</referencedby>
+        <referencedby refid="structjsgf__t_1ab0bf791d1ae06bf952d30401377767c8">jsgf_t::jsgf_get_rule</referencedby>
+        <referencedby refid="structjsgf__t_1ad33f663dddfec516122f2ee0d5c58b89">jsgf_t::jsgf_grammar_free</referencedby>
+        <referencedby refid="structjsgf__t_1a81f8acb8b49c1ef7cb695321f5c9b7f5">jsgf_t::jsgf_grammar_name</referencedby>
+        <referencedby refid="structjsgf__t_1a5988aae174c3ea4a8458c68dd737272e">jsgf_t::jsgf_parse_file</referencedby>
+        <referencedby refid="structjsgf__t_1a2c261446ef7e5eb84b4c0cd7ea403a4c">jsgf_t::jsgf_parse_string</referencedby>
+        <referencedby refid="structfsg__model__t_1ad86d12c175458f89eadafcbb1cffcfa0">fsg_model_t::jsgf_read_file</referencedby>
+        <referencedby refid="structfsg__model__t_1a605c88e824bb9fe9ad20a0aa76f93deb">fsg_model_t::jsgf_read_string</referencedby>
+        <referencedby refid="structjsgf__t_1ab78d604e387eb282d66e1017bf2ef718">jsgf_t::jsgf_rule_iter</referencedby>
+        <referencedby refid="structjsgf__rule__iter__t_1ac1b4559a440db063eb21e9d4ade59621">jsgf_rule_iter_t::jsgf_rule_iter_free</referencedby>
+        <referencedby refid="structjsgf__rule__iter__t_1a1cd6f2f32b5d8760e4e40147b134da6c">jsgf_rule_iter_t::jsgf_rule_iter_next</referencedby>
+        <referencedby refid="structjsgf__rule__iter__t_1abe051dab5b1c6357aae9115d1d704fe5">jsgf_rule_iter_t::jsgf_rule_iter_rule</referencedby>
+        <referencedby refid="structjsgf__rule__t_1ae28ad8446aa8d384fe82cbbb1910cfe1">jsgf_rule_t::jsgf_rule_name</referencedby>
+        <referencedby refid="structjsgf__t_1ab31ecf0ecdde813d744f7830f29e58db">jsgf_t::jsgf_write_fsg</referencedby>
+        <referencedby refid="structlogmath__t_1a49c7b087532d7cf136167ad6cf61e4b3">logmath_t::logmath_add</referencedby>
+        <referencedby refid="structlogmath__t_1ab706b56ac49ab2dfa945d2d32758ab55">logmath_t::logmath_add_exact</referencedby>
+        <referencedby refid="structlogmath__t_1a439a78b7c6f5821a750574ececc20fae">logmath_t::logmath_exp</referencedby>
+        <referencedby refid="structlogmath__t_1a178bfdd5bb8c9f8c84e9e5c00cc343a4">logmath_t::logmath_free</referencedby>
+        <referencedby refid="structlogmath__t_1a6e619faaacbd3eea427e22b223353754">logmath_t::logmath_get_base</referencedby>
+        <referencedby refid="structlogmath__t_1af12b536b7cd046d8c02f98b647e290cd">logmath_t::logmath_get_shift</referencedby>
+        <referencedby refid="structlogmath__t_1ae921cd21e0c7c28a5801f5063ddb8228">logmath_t::logmath_get_table_shape</referencedby>
+        <referencedby refid="structlogmath__t_1ae484ab0132dc7324ee9927b660ac77d8">logmath_t::logmath_get_width</referencedby>
+        <referencedby refid="structlogmath__t_1aa7188fd7b15e28688d86a368e31df2e0">logmath_t::logmath_get_zero</referencedby>
+        <referencedby refid="structlogmath__t_1a67fa75e38e518666547d676b1723be86">logmath_t::logmath_init</referencedby>
+        <referencedby refid="structlogmath__t_1a66303cb0b91f43452ea500f53ef7eaa5">logmath_t::logmath_ln_to_log</referencedby>
+        <referencedby refid="structlogmath__t_1a9e3c7cbe0d9b3ba74b7e6965cacd6d5a">logmath_t::logmath_log</referencedby>
+        <referencedby refid="structlogmath__t_1abb7027d633f0cabb372504e189e7b4b0">logmath_t::logmath_log10_to_log</referencedby>
+        <referencedby refid="structlogmath__t_1a9cc2394054dc95d9e94720d036f28a41">logmath_t::logmath_log10_to_log_float</referencedby>
+        <referencedby refid="structlogmath__t_1abaff7c0ba0976c7cf8f232d8340b7b2f">logmath_t::logmath_log_to_ln</referencedby>
+        <referencedby refid="structlogmath__t_1ac8fe69a67fcca378b1e5a32428899a23">logmath_t::logmath_log_to_log10</referencedby>
+        <referencedby refid="structlogmath__t_1ad5f25906919e112859a51dec5aa96752">logmath_t::logmath_read</referencedby>
+        <referencedby refid="structlogmath__t_1afaa475efd12231945f531fca362d82d9">logmath_t::logmath_retain</referencedby>
+        <referencedby refid="structlogmath__t_1a02bcbb922fcbb4983cc003da84f5da6d">logmath_t::logmath_write</referencedby>
+        <referencedby refid="structngram__model__t_1aa12e8b5771775ed7b9aabc9eec915293">ngram_model_t::ngram_bg_score</referencedby>
+        <referencedby refid="structngram__model__t_1aa393c18a1d74101aa0838777d6206aa4">ngram_model_t::ngram_file_name_to_type</referencedby>
+        <referencedby refid="structngram__model__t_1ab276f12c7f17b5f0505ed2317fe0de2a">ngram_model_t::ngram_iter</referencedby>
+        <referencedby refid="structngram__iter__t_1ac23506fc4549b2226ef32723f6b73c4f">ngram_iter_t::ngram_iter_free</referencedby>
+        <referencedby refid="structngram__iter__t_1a3d7fe2b1fa4b1d0fe98222f82eb0063c">ngram_iter_t::ngram_iter_get</referencedby>
+        <referencedby refid="structngram__iter__t_1ac9d66c8e7f546f56dbe7ab2aa4a46174">ngram_iter_t::ngram_iter_next</referencedby>
+        <referencedby refid="structngram__iter__t_1a95f095adb2dc9ac85393cbb2b2feb9f3">ngram_iter_t::ngram_iter_successors</referencedby>
+        <referencedby refid="structngram__model__t_1aa95e6aa73ec5dd9ed3fad5aa1e717a9e">ngram_model_t::ngram_model_add_class</referencedby>
+        <referencedby refid="structngram__model__t_1a29c673743c81c4633dc790aa75048695">ngram_model_t::ngram_model_add_class_word</referencedby>
+        <referencedby refid="structngram__model__t_1a1c9dfbd63b9274cb29e70331b14e85d1">ngram_model_t::ngram_model_add_word</referencedby>
+        <referencedby refid="structngram__model__t_1abde63dcb3313606881368c3b6f9aa239">ngram_model_t::ngram_model_apply_weights</referencedby>
+        <referencedby refid="structngram__model__t_1a52158fdb753671b7fd02308cb1472927">ngram_model_t::ngram_model_casefold</referencedby>
+        <referencedby refid="structngram__model__t_1a670cd1630fd4920c0c6db89c1eb7ee51">ngram_model_t::ngram_model_get_size</referencedby>
+        <referencedby refid="structngram__model__t_1a0257b1cf0fb42820b0d3589ecf7e3fa7">ngram_model_t::ngram_model_get_weights</referencedby>
+        <referencedby refid="structngram__model__t_1a3514a603036a7b9adc210e6b7980f02c">ngram_model_t::ngram_model_mgrams</referencedby>
+        <referencedby refid="structngram__model__t_1aeafdc8c1ed78badad4eec401f2be0d52">ngram_model_t::ngram_model_read</referencedby>
+        <referencedby refid="structngram__model__t_1a751eb92b17f5a9399da6b7e2492e75d3">ngram_model_t::ngram_model_read_classdef</referencedby>
+        <referencedby refid="structngram__model__t_1a8a0b271f1941efd8e8bd3890361e2278">ngram_model_t::ngram_model_retain</referencedby>
+        <referencedby refid="structngram__model__t_1a1d663526e16a5d0d9f5aef2129cd1073">ngram_model_t::ngram_model_set_add</referencedby>
+        <referencedby refid="structngram__model__t_1a1d5b87cea3d87fac3da33a1429cb86f3">ngram_model_t::ngram_model_set_current</referencedby>
+        <referencedby refid="structngram__model__t_1a9c78bb0ab03a57ecbf6dbc9ef5953cc2">ngram_model_t::ngram_model_set_current_wid</referencedby>
+        <referencedby refid="structngram__model__t_1a9205a3b0d63d57b5f100c062f2202e46">ngram_model_t::ngram_model_set_init</referencedby>
+        <referencedby refid="structngram__model__t_1a3f3c6d4b5cee2ed64f0c4ba4b5f2c1a4">ngram_model_t::ngram_model_set_interp</referencedby>
+        <referencedby refid="structngram__model__t_1a69f503c63b727b1d47fdb5ca138f784b">ngram_model_t::ngram_model_set_iter</referencedby>
+        <referencedby refid="structngram__model__set__iter__t_1aaf476373eb2e9c3d6c7efac3a4b1a1b2">ngram_model_set_iter_t::ngram_model_set_iter_free</referencedby>
+        <referencedby refid="structngram__model__set__iter__t_1a969431cd3b760dd3aff5be7bc80eb520">ngram_model_set_iter_t::ngram_model_set_iter_model</referencedby>
+        <referencedby refid="structngram__model__set__iter__t_1a0b5d514788a89e94a9294444345644fa">ngram_model_set_iter_t::ngram_model_set_iter_next</referencedby>
+        <referencedby refid="structngram__model__t_1aa6fadb5970bdad9eeb69532cb54214eb">ngram_model_t::ngram_model_set_known_wid</referencedby>
+        <referencedby refid="structngram__model__t_1a1d0c5a114c9ab7337008712f7b5ba48c">ngram_model_t::ngram_model_set_lookup</referencedby>
+        <referencedby refid="structngram__model__t_1ac0434afb29daf257ff9d37ae09fe3024">ngram_model_t::ngram_model_set_map_words</referencedby>
+        <referencedby refid="structngram__model__t_1a53ac5c6475a5e3c72250ee2c527bc74f">ngram_model_t::ngram_model_set_read</referencedby>
+        <referencedby refid="structngram__model__t_1a5a6ecb8351cbe2cf3d60ca1ac465d701">ngram_model_t::ngram_model_set_remove</referencedby>
+        <referencedby refid="structngram__model__t_1a595d4dd1a5645cc9793d70b07d36b99d">ngram_model_t::ngram_model_set_select</referencedby>
+        <referencedby refid="structngram__model__t_1ac13ceae0ee6a4e6c681fce688dc8c0d9">ngram_model_t::ngram_model_write</referencedby>
+        <referencedby refid="structngram__model__t_1aacc908372b71dd2ab7a3eef0d3bda08c">ngram_model_t::ngram_ng_iter</referencedby>
+        <referencedby refid="structngram__model__t_1aee36470f55476b5780f8e460d2e12971">ngram_model_t::ngram_ng_prob</referencedby>
+        <referencedby refid="structngram__model__t_1a05a3334a525628d40b3b5230602cb836">ngram_model_t::ngram_ng_score</referencedby>
+        <referencedby refid="structngram__model__t_1a8df8728f2694b9beb840db4ff1bdea9a">ngram_model_t::ngram_prob</referencedby>
+        <referencedby refid="structngram__model__t_1a23c66f2666439f6408c616d0923b6510">ngram_model_t::ngram_probv</referencedby>
+        <referencedby refid="structngram__model__t_1a570f30bedb4c10ebbc1313e4bdbd33b8">ngram_model_t::ngram_score</referencedby>
+        <referencedby refid="structngram__model__t_1afee8cd8b84530cb2f9261d6a0a7e4df7">ngram_model_t::ngram_score_to_prob</referencedby>
+        <referencedby refid="structngram__model__t_1a25e936a2d8018b62a310b1f2dceca893">ngram_model_t::ngram_str_to_type</referencedby>
+        <referencedby refid="structngram__model__t_1a698d9fbc74d3e0aa555e9195d1c3405b">ngram_model_t::ngram_tg_score</referencedby>
+        <referencedby refid="structngram__model__t_1a707725f9978ab51b42b256a22a0bc893">ngram_model_t::ngram_type_to_str</referencedby>
+        <referencedby refid="structngram__model__t_1a70334434c7a99094c29faa1ce7bd26e5">ngram_model_t::ngram_unknown_wid</referencedby>
+        <referencedby refid="structngram__model__t_1a64b4a9be184174ff12093595e4c2138f">ngram_model_t::ngram_wid</referencedby>
+        <referencedby refid="structngram__model__t_1af22005a8c3c282a5c3dae7074f0d754a">ngram_model_t::ngram_word</referencedby>
+        <referencedby refid="structngram__model__t_1abdbf72c83f8bd56468c13e2b45d578d8">ngram_model_t::ngram_zero</referencedby>
+        <referencedby refid="structps__decoder__t_1a602108d3b7b35927477243b1978b8d89">ps_decoder_t::ps_activate_search</referencedby>
+        <referencedby refid="structps__decoder__t_1a8ae78fa993cad9e1da24b052b80fff78">ps_decoder_t::ps_add_allphone</referencedby>
+        <referencedby refid="structps__decoder__t_1a6e324573a9de664cfa0a37a5cd7a6fc8">ps_decoder_t::ps_add_allphone_file</referencedby>
+        <referencedby refid="structps__decoder__t_1a88b4dcabadab8aceff79d273a71d61d5">ps_decoder_t::ps_add_fsg</referencedby>
+        <referencedby refid="structps__decoder__t_1a27cb38750271a285addc3d9c5f15c8ab">ps_decoder_t::ps_add_jsgf_file</referencedby>
+        <referencedby refid="structps__decoder__t_1ad975de5e4114ee1d534ceffdacb18394">ps_decoder_t::ps_add_jsgf_string</referencedby>
+        <referencedby refid="structps__decoder__t_1a87aced38ba183da00ebd04c002af01d5">ps_decoder_t::ps_add_keyphrase</referencedby>
+        <referencedby refid="structps__decoder__t_1adb32316b526c8ac3cbd4d9b5a2b8122b">ps_decoder_t::ps_add_kws</referencedby>
+        <referencedby refid="structps__decoder__t_1af94c4cc983fee1c22cd9042c35f6b4ba">ps_decoder_t::ps_add_lm</referencedby>
+        <referencedby refid="structps__decoder__t_1a268455d472a947079dc9ece74f6a6fab">ps_decoder_t::ps_add_lm_file</referencedby>
+        <referencedby refid="structps__decoder__t_1a5f3c4fcdbef34915c4e785ac9a1c6005">ps_decoder_t::ps_add_word</referencedby>
+        <referencedby refid="structps__alignment__t_1ad3397b6ae46535516b71a5cc5a049bf1">ps_alignment_t::ps_alignment_free</referencedby>
+        <referencedby refid="structps__alignment__iter__t_1acc617cc49965b92ed2974ee93355c828">ps_alignment_iter_t::ps_alignment_iter_children</referencedby>
+        <referencedby refid="structps__alignment__iter__t_1a47da598c1af7c96722ace460fae384a9">ps_alignment_iter_t::ps_alignment_iter_name</referencedby>
+        <referencedby refid="structps__alignment__iter__t_1a86c1a5d3a522405c038b3f0917ec7e42">ps_alignment_iter_t::ps_alignment_iter_next</referencedby>
+        <referencedby refid="structps__alignment__iter__t_1a5810641dfea5220b6b17674cd28046f9">ps_alignment_iter_t::ps_alignment_iter_seg</referencedby>
+        <referencedby refid="structps__alignment__t_1a5d2fa99d658585157ce4629d1ae5882e">ps_alignment_t::ps_alignment_phones</referencedby>
+        <referencedby refid="structps__alignment__t_1a08bf2cf59a1e8e837e26f6e571c02c95">ps_alignment_t::ps_alignment_retain</referencedby>
+        <referencedby refid="structps__alignment__t_1ad8d74903490fadb9fbddcef2955593c8">ps_alignment_t::ps_alignment_states</referencedby>
+        <referencedby refid="structps__alignment__t_1a55bd9be876b2ee4f9be894561f7cfb41">ps_alignment_t::ps_alignment_words</referencedby>
+        <referencedby refid="pocketsphinx_8h_1a7cf24c25da3ffc81139d9919b9fe340d">ps_args</referencedby>
+        <referencedby refid="structps__config__t_1aa9412a3e395deb907fee7d4d307cab66">ps_config_t::ps_config_bool</referencedby>
+        <referencedby refid="structps__config__t_1abf6ac1c6030616293f8e50e1b6a565af">ps_config_t::ps_config_float</referencedby>
+        <referencedby refid="structps__config__t_1acc80d6fce5453e58b4abd6d806e5a36a">ps_config_t::ps_config_get</referencedby>
+        <referencedby refid="structps__config__t_1a65588a7f05e8796f722fb7bd7355e57c">ps_config_t::ps_config_init</referencedby>
+        <referencedby refid="structps__config__t_1aec8132830a14ceb9a1d2c53bbf1c6284">ps_config_t::ps_config_int</referencedby>
+        <referencedby refid="structps__config__t_1a99c3fb8f6b8bb5e29869d2f4efd593f1">ps_config_t::ps_config_nistfile</referencedby>
+        <referencedby refid="structps__config__t_1a30596bd85860ccb7bb6dea3dc9a35e71">ps_config_t::ps_config_parse_json</referencedby>
+        <referencedby refid="structps__config__t_1a6640499a04c68a27b2bf3db85555eb0f">ps_config_t::ps_config_retain</referencedby>
+        <referencedby refid="structps__config__t_1af62a637d2863595a46b617a20abb1b69">ps_config_t::ps_config_serialize_json</referencedby>
+        <referencedby refid="structps__config__t_1a6be12b4ac8bbdd01b0d4a23cf2ed1718">ps_config_t::ps_config_set</referencedby>
+        <referencedby refid="structps__config__t_1a67f6d45291c37c3f3e97031f65f19e53">ps_config_t::ps_config_set_bool</referencedby>
+        <referencedby refid="structps__config__t_1a2479d90c3ba0ac0de6bd0143b3b10cb9">ps_config_t::ps_config_set_float</referencedby>
+        <referencedby refid="structps__config__t_1a99ac9564d02ced91e819da50f0766478">ps_config_t::ps_config_set_int</referencedby>
+        <referencedby refid="structps__config__t_1aa0ad5a8fb7c16530050272ed7d59640b">ps_config_t::ps_config_set_str</referencedby>
+        <referencedby refid="structps__config__t_1a30154c47339a448445f1ca52f63ebdd8">ps_config_t::ps_config_soundfile</referencedby>
+        <referencedby refid="structps__config__t_1aafbfbe19ce5d48e88bac0e5ed99c10e6">ps_config_t::ps_config_str</referencedby>
+        <referencedby refid="structps__config__t_1a957ca92e4393991b08e0273c29a08315">ps_config_t::ps_config_typeof</referencedby>
+        <referencedby refid="structps__config__t_1a8c6a4572efab5c171e14ba5b1e7ac9d1">ps_config_t::ps_config_validate</referencedby>
+        <referencedby refid="structps__config__t_1a47e3ac3cb5d90ef4442662b19acd6cf0">ps_config_t::ps_config_wavfile</referencedby>
+        <referencedby refid="structps__decoder__t_1a1a589bf2956a5905368e9288979743b8">ps_decoder_t::ps_current_search</referencedby>
+        <referencedby refid="structps__decoder__t_1a43b378f9c42bcb19fdff0ebe71c25adb">ps_decoder_t::ps_decode_raw</referencedby>
+        <referencedby refid="structps__decoder__t_1a466d1d718873e7b1cf0881e4f552a4a2">ps_decoder_t::ps_decode_senscr</referencedby>
+        <referencedby refid="structps__config__t_1aa9adc40d1099e6df4e3ba38e45bac100">ps_config_t::ps_default_modeldir</referencedby>
+        <referencedby refid="structps__config__t_1ab33df51031c41cdb73794845c33a2d88">ps_config_t::ps_default_search_args</referencedby>
+        <referencedby refid="structps__decoder__t_1ab9339de730713b68cbd68a7f36dc8730">ps_decoder_t::ps_end_utt</referencedby>
+        <referencedby refid="structps__endpointer__t_1a666c55812e40204dddd7ef672c797264">ps_endpointer_t::ps_endpointer_end_stream</referencedby>
+        <referencedby refid="structps__endpointer__t_1ad1c967ebc8f3975d40c8002428cdde32">ps_endpointer_t::ps_endpointer_free</referencedby>
+        <referencedby refid="structps__endpointer__t_1adac16cf29e75f65ec68957daaaa2d467">ps_endpointer_t::ps_endpointer_in_speech</referencedby>
+        <referencedby refid="structps__endpointer__t_1a52206006da981da07bd016f7b3dd9b18">ps_endpointer_t::ps_endpointer_init</referencedby>
+        <referencedby refid="structps__endpointer__t_1a67c0e37e1bd947ade4006b8a28049869">ps_endpointer_t::ps_endpointer_process</referencedby>
+        <referencedby refid="structps__endpointer__t_1a95eb7899d6e092ccbd0a73392c23e5c4">ps_endpointer_t::ps_endpointer_retain</referencedby>
+        <referencedby refid="structps__endpointer__t_1a5d6ba30b00e6e8f849800b0fa352bf9c">ps_endpointer_t::ps_endpointer_set_timestamp_func</referencedby>
+        <referencedby refid="structps__endpointer__t_1abc71fe3155fa1a9536c58c3c69fe8dea">ps_endpointer_t::ps_endpointer_speech_end</referencedby>
+        <referencedby refid="structps__endpointer__t_1a808204c820723b3cd4c16d38c66980c6">ps_endpointer_t::ps_endpointer_speech_start</referencedby>
+        <referencedby refid="structps__config__t_1ac022a88c8bd55f78398a55ffb3a6597c">ps_config_t::ps_expand_model_config</referencedby>
+        <referencedby refid="structps__decoder__t_1ad8fd9b79ae9f87703af3f4755b3ab567">ps_decoder_t::ps_free</referencedby>
+        <referencedby refid="structps__decoder__t_1a95778ded410ce81acf0c7bfdb069ba7d">ps_decoder_t::ps_get_cmn</referencedby>
+        <referencedby refid="structps__decoder__t_1a90559e2f98ee1f8439350eacc8c68f83">ps_decoder_t::ps_get_config</referencedby>
+        <referencedby refid="structps__decoder__t_1a70c94d4192c66e9f203eb72f92ee532c">ps_decoder_t::ps_get_fsg</referencedby>
+        <referencedby refid="structps__decoder__t_1a35be2a1924f93c23b033e08ab0e85c28">ps_decoder_t::ps_get_hyp</referencedby>
+        <referencedby refid="structps__decoder__t_1adcbb8aeb9ebf3f73e935d3b3c8832ea0">ps_decoder_t::ps_get_in_speech</referencedby>
+        <referencedby refid="structps__decoder__t_1a7000861f6aa97e98f8a7c95d3e3ba157">ps_decoder_t::ps_get_kws</referencedby>
+        <referencedby refid="structps__decoder__t_1af8f325d9d183e8930e48a518b13f085a">ps_decoder_t::ps_get_lattice</referencedby>
+        <referencedby refid="structps__decoder__t_1ab11d511d180c9aea9779f545d4d22809">ps_decoder_t::ps_get_lm</referencedby>
+        <referencedby refid="structps__decoder__t_1a318ec5e87309b590a775ba1e91297b85">ps_decoder_t::ps_get_logmath</referencedby>
+        <referencedby refid="structps__decoder__t_1abb3527e41c2f4cd64dccbdbd5f812d1d">ps_decoder_t::ps_get_n_frames</referencedby>
+        <referencedby refid="structps__decoder__t_1ac8ac154482457740173caa1c0d699c49">ps_decoder_t::ps_get_prob</referencedby>
+        <referencedby refid="structps__decoder__t_1aac7070c934a2d03d0d5b34e19614360f">ps_decoder_t::ps_get_utt_time</referencedby>
+        <referencedby refid="structps__config__t_1a69b05a7582ee80ff206fb1e4d709bc4c">ps_config_t::ps_init</referencedby>
+        <referencedby refid="structps__latlink__t_1aa8711fa5446ebbac4755300ea83d6f1e">ps_latlink_t::ps_latlink_baseword</referencedby>
+        <referencedby refid="structps__latlink__iter__t_1aa19aaa4a38a922ff28fe071f69b8272d">ps_latlink_iter_t::ps_latlink_iter_free</referencedby>
+        <referencedby refid="structps__latlink__iter__t_1a71a92726c7e3bac137efbae29e4c5c8a">ps_latlink_iter_t::ps_latlink_iter_link</referencedby>
+        <referencedby refid="structps__latlink__iter__t_1a355b571d5eb906b7f58f41e168af46ba">ps_latlink_iter_t::ps_latlink_iter_next</referencedby>
+        <referencedby refid="structps__latlink__t_1aef7c4a325a805e5914fcc24124c0d7bb">ps_latlink_t::ps_latlink_nodes</referencedby>
+        <referencedby refid="structps__latlink__t_1a256bf4ecd5074ded5f63806baca67bbe">ps_latlink_t::ps_latlink_pred</referencedby>
+        <referencedby refid="structps__latlink__t_1aa393fbcf215acc8116e18aac2847cc59">ps_latlink_t::ps_latlink_prob</referencedby>
+        <referencedby refid="structps__latlink__t_1aef48bb18865b449e69316ed5959eae9f">ps_latlink_t::ps_latlink_times</referencedby>
+        <referencedby refid="structps__latlink__t_1a9fb8666c37b6c39363169c9755c84ce8">ps_latlink_t::ps_latlink_word</referencedby>
+        <referencedby refid="structps__latnode__t_1aff875c8ce337b06966328e16f7b8e037">ps_latnode_t::ps_latnode_baseword</referencedby>
+        <referencedby refid="structps__latnode__t_1ac8cfa1412f450f3895fd316bb179e20b">ps_latnode_t::ps_latnode_entries</referencedby>
+        <referencedby refid="structps__latnode__t_1aa040d46f234f443d43a70a749e1ee65a">ps_latnode_t::ps_latnode_exits</referencedby>
+        <referencedby refid="structps__lattice__t_1aefc403a8d205927a02d9436417e0caa5">ps_lattice_t::ps_latnode_iter</referencedby>
+        <referencedby refid="structps__latnode__iter__t_1ae9a6464b83d37bfa2ce570206eff6aad">ps_latnode_iter_t::ps_latnode_iter_free</referencedby>
+        <referencedby refid="structps__latnode__iter__t_1a6b62626b9613fe78a1b74a9b8e969c33">ps_latnode_iter_t::ps_latnode_iter_next</referencedby>
+        <referencedby refid="structps__latnode__iter__t_1a36ccc88328881079f3fe511c993072b0">ps_latnode_iter_t::ps_latnode_iter_node</referencedby>
+        <referencedby refid="structps__latnode__t_1a68253946c2405d7f9090de7530f33b9d">ps_latnode_t::ps_latnode_prob</referencedby>
+        <referencedby refid="structps__latnode__iter__t_1a42bd0fbfe8b0cab1a9a7e799a3fc30a2">ps_latnode_iter_t::ps_latnode_times</referencedby>
+        <referencedby refid="structps__latnode__t_1ab814f0cb275ebf52084dd99d97d3b3f2">ps_latnode_t::ps_latnode_word</referencedby>
+        <referencedby refid="structps__lattice__t_1afc5aee64d40f8b9349f2125ed0096396">ps_lattice_t::ps_lattice_bestpath</referencedby>
+        <referencedby refid="structps__lattice__t_1a3f90e846bde47cd1acdff165b92f5c22">ps_lattice_t::ps_lattice_free</referencedby>
+        <referencedby refid="structps__lattice__t_1a2ec403afeb085ce901a4a2b2a0830991">ps_lattice_t::ps_lattice_get_logmath</referencedby>
+        <referencedby refid="structps__lattice__t_1a4aaae70904361b23a78cdcb632c298c4">ps_lattice_t::ps_lattice_link</referencedby>
+        <referencedby refid="structps__lattice__t_1a8c5c6ef260ab006099ab34d09b5b1d06">ps_lattice_t::ps_lattice_posterior</referencedby>
+        <referencedby refid="structps__lattice__t_1a30d83a5fd158d2acaa5107be7a09ed09">ps_lattice_t::ps_lattice_posterior_prune</referencedby>
+        <referencedby refid="structps__lattice__t_1a6edc5631b7d5ab3f54747293f9bef3e3">ps_lattice_t::ps_lattice_read</referencedby>
+        <referencedby refid="structps__lattice__t_1ad7c9aba902d61bb81bab1df2c437c305">ps_lattice_t::ps_lattice_retain</referencedby>
+        <referencedby refid="structps__lattice__t_1a5b41fb328ee88d7f8de274b217c97451">ps_lattice_t::ps_lattice_reverse_edges</referencedby>
+        <referencedby refid="structps__lattice__t_1ad85dcdee93cc3eb067051202d9563a9e">ps_lattice_t::ps_lattice_reverse_next</referencedby>
+        <referencedby refid="structps__lattice__t_1a0b6d58c7646f20a078aa0f7d5029e67f">ps_lattice_t::ps_lattice_traverse_edges</referencedby>
+        <referencedby refid="structps__lattice__t_1ae7a2a8d13f30836c34246cc6e8108115">ps_lattice_t::ps_lattice_traverse_next</referencedby>
+        <referencedby refid="structps__lattice__t_1a3f2e2b88d0aa80346cc64d2b7934b863">ps_lattice_t::ps_lattice_write</referencedby>
+        <referencedby refid="structps__lattice__t_1aefd25c0f49a0d70f999187a26fa2ff06">ps_lattice_t::ps_lattice_write_htk</referencedby>
+        <referencedby refid="structps__decoder__t_1a824f46e51681d931b7e2706a86c3d86f">ps_decoder_t::ps_load_dict</referencedby>
+        <referencedby refid="structps__decoder__t_1ab2ca0a5e9ed39baa81ccc703bb20a7ab">ps_decoder_t::ps_lookup_word</referencedby>
+        <referencedby refid="structps__mllr__t_1a8fcd58d5834aac31266cd253777a2c5e">ps_mllr_t::ps_mllr_read</referencedby>
+        <referencedby refid="structps__mllr__t_1a915cd853e598d6ab4a4c92276c56b4b2">ps_mllr_t::ps_mllr_retain</referencedby>
+        <referencedby refid="structps__decoder__t_1ab9c09bbe581a5ad2cdb42530c6ab009e">ps_decoder_t::ps_nbest</referencedby>
+        <referencedby refid="structps__nbest__t_1a83379b2da95eebdf5070d29196a9b067">ps_nbest_t::ps_nbest_free</referencedby>
+        <referencedby refid="structps__nbest__t_1af6aeed1a376d89f966277e7165a30555">ps_nbest_t::ps_nbest_hyp</referencedby>
+        <referencedby refid="structps__nbest__t_1ae72b70b5c5560f3864d15f1c2ac7d393">ps_nbest_t::ps_nbest_next</referencedby>
+        <referencedby refid="structps__nbest__t_1a63ca4168dd84b279b5a3a0cc405362ea">ps_nbest_t::ps_nbest_seg</referencedby>
+        <referencedby refid="structps__decoder__t_1a8b1311a8127f9c4daf24e7034673f50f">ps_decoder_t::ps_process_cep</referencedby>
+        <referencedby refid="structps__decoder__t_1a572ad08651b4caae820d178a12c8f95f">ps_decoder_t::ps_process_raw</referencedby>
+        <referencedby refid="structps__decoder__t_1a7a335c6650fa98985b5687fde408ef0a">ps_decoder_t::ps_reinit</referencedby>
+        <referencedby refid="structps__decoder__t_1ad950da65e86a4611c93e3ad765ad22e6">ps_decoder_t::ps_reinit_feat</referencedby>
+        <referencedby refid="structps__decoder__t_1aca66da675491dfbcd51f66a2cead19c9">ps_decoder_t::ps_remove_search</referencedby>
+        <referencedby refid="structps__decoder__t_1ab6ba623b66f39ef5e322cb13b831b1b1">ps_decoder_t::ps_retain</referencedby>
+        <referencedby refid="structps__decoder__t_1a5e278377cc57d921591ce95b980760d5">ps_decoder_t::ps_save_dict</referencedby>
+        <referencedby refid="structps__decoder__t_1a3c85d53bfd56dc83226cc7f3bbcdcef6">ps_decoder_t::ps_search_iter</referencedby>
+        <referencedby refid="structps__search__iter__t_1a41e404de59cbd7bfc32f2da3ec7e6137">ps_search_iter_t::ps_search_iter_free</referencedby>
+        <referencedby refid="structps__search__iter__t_1ac8ae8c4c4f792d0c12eef3426abe4a93">ps_search_iter_t::ps_search_iter_next</referencedby>
+        <referencedby refid="structps__search__iter__t_1a86d9b5968b9fe317a6335345fb9a2dd0">ps_search_iter_t::ps_search_iter_val</referencedby>
+        <referencedby refid="structps__seg__t_1a045a044726b816678965514f2ee7d8c7">ps_seg_t::ps_seg_frames</referencedby>
+        <referencedby refid="structps__seg__t_1ac02cea69794b0fbd17e6a4c5265b2255">ps_seg_t::ps_seg_free</referencedby>
+        <referencedby refid="structps__decoder__t_1ab0353879769209971677296b937b9aae">ps_decoder_t::ps_seg_iter</referencedby>
+        <referencedby refid="structps__seg__t_1a0686bf425a8cf145bca3b149b6368223">ps_seg_t::ps_seg_next</referencedby>
+        <referencedby refid="structps__seg__t_1adfd45d93c3fc9de6b7be89d5417f6abb">ps_seg_t::ps_seg_prob</referencedby>
+        <referencedby refid="structps__seg__t_1a27db3d5a3f9363a3e1ac8bae33030c87">ps_seg_t::ps_seg_word</referencedby>
+        <referencedby refid="structps__decoder__t_1a911c4849d7ffaf2960177c34968c1b0d">ps_decoder_t::ps_set_align_text</referencedby>
+        <referencedby refid="structps__decoder__t_1a82092689e27601f7bc9227cd904b0266">ps_decoder_t::ps_set_alignment</referencedby>
+        <referencedby refid="structps__decoder__t_1ae74f202f105207d5c499280ab187081f">ps_decoder_t::ps_set_cmn</referencedby>
+        <referencedby refid="structps__decoder__t_1a89be3b2a8f83291a225db0bcd9ee65b2">ps_decoder_t::ps_start_stream</referencedby>
+        <referencedby refid="structps__decoder__t_1ade3909b1c12c1b70afe284639e70cbff">ps_decoder_t::ps_start_utt</referencedby>
+        <referencedby refid="structps__decoder__t_1abcf13734aad31adce2cb8c7b8612ca98">ps_decoder_t::ps_update_mllr</referencedby>
+        <referencedby refid="structps__vad__t_1add5e5c92c593edbf45edd20624129370">ps_vad_t::ps_vad_free</referencedby>
+        <referencedby refid="structps__vad__t_1a28a9c81b473d91a2fcd0fef37c32a4ac">ps_vad_t::ps_vad_init</referencedby>
+        <referencedby refid="structps__vad__t_1aa851b665f47d6f6033c5963e453bc43e">ps_vad_t::ps_vad_retain</referencedby>
+        <referencedby refid="structps__vad__t_1a1c692aeda85aa6122589404ef401e03c">ps_vad_t::ps_vad_sample_rate</referencedby>
+        <referencedby refid="structps__vad__t_1a69fe34f7717228b0cc8ada126d1d5feb">ps_vad_t::ps_vad_set_input_params</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__POCKETSPHINX_EXPORT_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__POCKETSPHINX_EXPORT_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Win32<sp/>DLL<sp/>gunk<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>defined(SPHINX_DLL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(POCKETSPHINX_EXPORTS)<sp/></highlight><highlight class="comment">/*<sp/>DLL<sp/>itself<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POCKETSPHINX_EXPORT<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POCKETSPHINX_EXPORT<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>No<sp/>DLL<sp/>things*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POCKETSPHINX_EXPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__POCKETSPHINX_EXPORT_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/export.h"/>
+  </compounddef>
+</doxygen>

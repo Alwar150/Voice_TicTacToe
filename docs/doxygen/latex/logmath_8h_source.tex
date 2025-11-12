@@ -1,0 +1,136 @@
+\doxysection{logmath.\+h}
+\hypertarget{logmath_8h_source}{}\label{logmath_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/logmath.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/logmath.h}}
+\mbox{\hyperlink{logmath_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/\ c-\/basic-\/offset:\ 4;\ indent-\/tabs-\/mode:\ nil\ -\/*-\/\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ ====================================================================}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2007\ Carnegie\ Mellon\ University.\ \ All\ rights}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ reserved.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Redistribution\ and\ use\ in\ source\ and\ binary\ forms,\ with\ or\ without}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ modification,\ are\ permitted\ provided\ that\ the\ following\ conditions}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ are\ met:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ 1.\ Redistributions\ of\ source\ code\ must\ retain\ the\ above\ copyright}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer.\ }}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ 2.\ Redistributions\ in\ binary\ form\ must\ reproduce\ the\ above\ copyright}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer\ in}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ \ \ the\ documentation\ and/or\ other\ materials\ provided\ with\ the}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ \ \ distribution.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ This\ work\ was\ supported\ in\ part\ by\ funding\ from\ the\ Defense\ Advanced\ }}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ Research\ Projects\ Agency\ and\ the\ National\ Science\ Foundation\ of\ the\ }}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ United\ States\ of\ America,\ and\ the\ CMU\ Sphinx\ Speech\ Consortium.}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ PROVIDED\ BY\ CARNEGIE\ MELLON\ UNIVERSITY\ \`{}\`{}AS\ IS''\ AND\ }}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ ANY\ EXPRESSED\ OR\ IMPLIED\ WARRANTIES,\ INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ }}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY\ AND\ FITNESS\ FOR\ A\ PARTICULAR}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ PURPOSE\ ARE\ DISCLAIMED.\ \ IN\ NO\ EVENT\ SHALL\ CARNEGIE\ MELLON\ UNIVERSITY}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ NOR\ ITS\ EMPLOYEES\ BE\ LIABLE\ FOR\ ANY\ DIRECT,\ INDIRECT,\ INCIDENTAL,}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ SPECIAL,\ EXEMPLARY,\ OR\ CONSEQUENTIAL\ DAMAGES\ (INCLUDING,\ BUT\ NOT\ }}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ LIMITED\ TO,\ PROCUREMENT\ OF\ SUBSTITUTE\ GOODS\ OR\ SERVICES;\ LOSS\ OF\ USE,\ }}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ DATA,\ OR\ PROFITS;\ OR\ BUSINESS\ INTERRUPTION)\ HOWEVER\ CAUSED\ AND\ ON\ ANY\ }}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ THEORY\ OF\ LIABILITY,\ WHETHER\ IN\ CONTRACT,\ STRICT\ LIABILITY,\ OR\ TORT\ }}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ (INCLUDING\ NEGLIGENCE\ OR\ OTHERWISE)\ ARISING\ IN\ ANY\ WAY\ OUT\ OF\ THE\ USE\ }}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ OF\ THIS\ SOFTWARE,\ EVEN\ IF\ ADVISED\ OF\ THE\ POSSIBILITY\ OF\ SUCH\ DAMAGE.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ ====================================================================}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#ifndef\ \_\_LOGMATH\_H\_\_}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#define\ \_\_LOGMATH\_H\_\_}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{export_8h}{pocketsphinx/export.h}}>}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prim__type_8h}{pocketsphinx/prim\_type.h}}>}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00082\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#if\ 0}}
+\DoxyCodeLine{00085\ \textcolor{comment}{/*\ Fool\ Emacs.\ */}}
+\DoxyCodeLine{00086\ \}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structlogadd__s}{logadd\_s}}\ \mbox{\hyperlink{structlogadd__t}{logadd\_t}};}
+\DoxyCodeLine{00096\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structlogadd__s}{logadd\_s}}\ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ *\mbox{\hyperlink{structlogadd__s_a27793577d513d85cd73c2daffc140695}{table}};}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}}\ \mbox{\hyperlink{structlogadd__s_a484c53a05b46d863d0456af679cee5d8}{table\_size}};}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{prim__type_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}}\ \mbox{\hyperlink{structlogadd__s_a8e35a353d751d957270baf5192007c3e}{width}};}
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a1b956fe1df85f3c132b21edb4e116458}{int8}}\ \mbox{\hyperlink{structlogadd__s_a4000a49e71ed2c09da4f34cb5ccaed4b}{shift}};}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00111\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }logmath\_s\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#define\ LOGMATH\_TABLE(lm)\ ((logadd\_t\ *)lm)}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00126\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00127\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *\mbox{\hyperlink{structlogmath__t_a67fa75e38e518666547d676b1723be86}{logmath\_init}}(\mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ base,\ \textcolor{keywordtype}{int}\ shift,\ \textcolor{keywordtype}{int}\ use\_table);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00133\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00134\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *\mbox{\hyperlink{structlogmath__t_ad5f25906919e112859a51dec5aa96752}{logmath\_read}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00140\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00141\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structlogmath__t_a02bcbb922fcbb4983cc003da84f5da6d}{logmath\_write}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00147\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00148\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structlogmath__t_ae921cd21e0c7c28a5801f5063ddb8228}{logmath\_get\_table\_shape}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}}\ *out\_size,}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}}\ *out\_width,\ \mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}}\ *out\_shift);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00155\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00156\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ \mbox{\hyperlink{structlogmath__t_a6e619faaacbd3eea427e22b223353754}{logmath\_get\_base}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00162\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00163\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_aa7188fd7b15e28688d86a368e31df2e0}{logmath\_get\_zero}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00169\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00170\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_ae484ab0132dc7324ee9927b660ac77d8}{logmath\_get\_width}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00176\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00177\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_af12b536b7cd046d8c02f98b647e290cd}{logmath\_get\_shift}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00185\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00186\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *\mbox{\hyperlink{structlogmath__t_afaa475efd12231945f531fca362d82d9}{logmath\_retain}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath);}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00194\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00195\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_a178bfdd5bb8c9f8c84e9e5c00cc343a4}{logmath\_free}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath);}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00201\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00202\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_ab706b56ac49ab2dfa945d2d32758ab55}{logmath\_add\_exact}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \textcolor{keywordtype}{int}\ logb\_p,\ \textcolor{keywordtype}{int}\ logb\_q);}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00208\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00209\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_a49c7b087532d7cf136167ad6cf61e4b3}{logmath\_add}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \textcolor{keywordtype}{int}\ logb\_p,\ \textcolor{keywordtype}{int}\ logb\_q);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00215\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00216\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_a9e3c7cbe0d9b3ba74b7e6965cacd6d5a}{logmath\_log}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ p);}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00222\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00223\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ \mbox{\hyperlink{structlogmath__t_a439a78b7c6f5821a750574ececc20fae}{logmath\_exp}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \textcolor{keywordtype}{int}\ logb\_p);}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00229\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00230\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_a66303cb0b91f43452ea500f53ef7eaa5}{logmath\_ln\_to\_log}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ log\_p);}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00236\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00237\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ \mbox{\hyperlink{structlogmath__t_abaff7c0ba0976c7cf8f232d8340b7b2f}{logmath\_log\_to\_ln}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \textcolor{keywordtype}{int}\ logb\_p);}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00243\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00244\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structlogmath__t_abb7027d633f0cabb372504e189e7b4b0}{logmath\_log10\_to\_log}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ log\_p);}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00250\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00251\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structlogmath__t_a9cc2394054dc95d9e94720d036f28a41}{logmath\_log10\_to\_log\_float}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ log\_p);}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00257\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00258\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ \mbox{\hyperlink{structlogmath__t_ac8fe69a67fcca378b1e5a32428899a23}{logmath\_log\_to\_log10}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \textcolor{keywordtype}{int}\ logb\_p);}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00264\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00265\ \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}\ \mbox{\hyperlink{structlogmath__t_a4e596e6d01e92280e0caa24a48727afb}{logmath\_log\_float\_to\_log10}}(\mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \textcolor{keywordtype}{float}\ log\_p);}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00268\ \}}
+\DoxyCodeLine{00269\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \ \_\_LOGMATH\_H\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

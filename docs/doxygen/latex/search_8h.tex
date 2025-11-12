@@ -1,0 +1,51 @@
+\doxysection{C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/search.h File Reference}
+\hypertarget{search_8h}{}\label{search_8h}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/search.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/search.h}}
+
+
+Search modules.  
+
+
+{\ttfamily \#include $<$pocketsphinx/model.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/alignment.\+h$>$}\newline
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct ps\+\_\+search\+\_\+iter\+\_\+s \mbox{\hyperlink{search_8h_ae3fe90e6eb1fa74e30783e20468280c1}{ps\+\_\+search\+\_\+iter\+\_\+t}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Search modules. 
+
+User can configure several "{}search"{} objects with different grammars and language models and switch them in runtime to provide interactive experience for the user.
+
+There are different possible search modes\+:
+
+
+\begin{DoxyItemize}
+\item keyphrase -\/ efficiently looks for keyphrase and ignores other speech. allows to configure detection threshold. 
+\item grammar -\/ recognizes speech according to JSGF grammar. Unlike keyphrase grammar search doesn\textquotesingle{}t ignore words which are not in grammar but tries to recognize them. 
+\item ngram/lm -\/ recognizes natural speech with a language model. 
+\item allphone -\/ recognizes phonemes with a phonetic language model. 
+\item align -\/ creates time alignments for a fixed word sequence. 
+\end{DoxyItemize}
+
+Each search module has a name and can be referenced by name. These names are application-\/specific. The function ps\+\_\+activate\+\_\+search() activates a search module previously added by a name. Only one search module can be activated at time.
+
+To add the search module one needs to point to the grammar/language model describing the search. The location of the grammar is specific to the application.
+
+The exact design of a searches depends on your application. For example, you might want to listen for activation keyphrase first and once keyphrase is recognized switch to ngram search to recognize actual command. Once you have recognized the command, you can switch to grammar search to recognize the confirmation and then switch back to keyphrase listening mode to wait for another command.
+
+If only a simple recognition is required it is sufficient to add a single search or just configure the required mode with configuration options.
+
+Because Doxygen is Bad Software, the actual function definitions can only exist in \doxylink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}. Sorry about that. 
+
+\label{doc-typedef-members}
+\Hypertarget{search_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{search_8h_ae3fe90e6eb1fa74e30783e20468280c1}\index{search.h@{search.h}!ps\_search\_iter\_t@{ps\_search\_iter\_t}}
+\index{ps\_search\_iter\_t@{ps\_search\_iter\_t}!search.h@{search.h}}
+\doxysubsubsection{\texorpdfstring{ps\_search\_iter\_t}{ps\_search\_iter\_t}}
+{\footnotesize\ttfamily \label{search_8h_ae3fe90e6eb1fa74e30783e20468280c1} 
+typedef struct ps\+\_\+search\+\_\+iter\+\_\+s ps\+\_\+search\+\_\+iter\+\_\+t}
+
