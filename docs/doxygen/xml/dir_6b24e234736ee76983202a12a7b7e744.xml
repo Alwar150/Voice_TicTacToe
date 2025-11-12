@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_6b24e234736ee76983202a12a7b7e744" kind="dir">
+    <compoundname>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View</compoundname>
+    <innerfile refid="_tic_tac_toe_game_8cpp">TicTacToeGame.cpp</innerfile>
+    <innerfile refid="_tic_tac_toe_game_8h">TicTacToeGame.h</innerfile>
+    <innerfile refid="_title_screen_8cpp">TitleScreen.cpp</innerfile>
+    <innerfile refid="_title_screen_8h">TitleScreen.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/"/>
+  </compounddef>
+</doxygen>

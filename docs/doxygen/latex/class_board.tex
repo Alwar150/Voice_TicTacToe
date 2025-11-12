@@ -1,0 +1,346 @@
+\doxysection{Board Class Reference}
+\hypertarget{class_board}{}\label{class_board}\index{Board@{Board}}
+
+
+The \doxylink{class_board}{Board} class is responsible for representing the underlying model of the game, it is a 2D matrix representation of the GUI that is machine readable, and can be used when running any sort of algorithms on the board.  
+
+
+
+
+{\ttfamily \#include $<$Board.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}} (size\+\_\+t \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{size}})
+\begin{DoxyCompactList}\small\item\em Constructs a board given a board size. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board_acba2cffa38302b3bed1f43d681eefb28}{Board}} (\mbox{\hyperlink{class_board}{Board}} \&b)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_board}{Board} copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board_ac77f209904bb37545295c17649a9dc17}{Board}} (const \mbox{\hyperlink{class_board}{Board}} \&b)
+\item 
+\mbox{\hyperlink{class_board_a644749e247a38adc51e2a42d87fd4e48}{Board}} (\mbox{\hyperlink{class_board}{Board}} \&\&b)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_board}{Board} move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board}{Board}} \& \mbox{\hyperlink{class_board_ae4ccc3271e479d7f9284b9567dc4c2a6}{operator=}} (\mbox{\hyperlink{class_board}{Board}} b)
+\begin{DoxyCompactList}\small\item\em This assignment operator implements the copy \& swap idiom, so it works as a move and a copy assignment operator. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_board}{Board} destructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}} \mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluate\+Board}} () const
+\begin{DoxyCompactList}\small\item\em evaluate\+Board evaluates whether the state of the current board. the function can evaluate to X wins or O wins or a Tie or No Winner. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{set\+Player\+Input}} (size\+\_\+t row, size\+\_\+t col, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} current\+Player)
+\begin{DoxyCompactList}\small\item\em set\+Player\+Input sets the board with the mark given in the specified location. after boundary checking the input row and column, and if the game hasen\textquotesingle{}t reached a final state. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}} (size\+\_\+t row, size\+\_\+t col) const
+\begin{DoxyCompactList}\small\item\em at is a getter function that returns a cell given a row and a column. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset allows resetting the whole board, marking all the cells as empty. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_board_addcaa486e1293eebcb323fb936353f43}{reset\+Cell}} (size\+\_\+t row, size\+\_\+t col)
+\begin{DoxyCompactList}\small\item\em reset\+Cell allows resetting a given cell to an empty type, without the extra state checks done in the set\+Player\+Input function. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{size}} () const
+\begin{DoxyCompactList}\small\item\em size is a getter functions of the board size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} $>$ $>$ \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}
+\begin{DoxyCompactList}\small\item\em board is a 2D vector that represents a machine readable format to the GUI application. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}
+\begin{DoxyCompactList}\small\item\em board\+Size is the number of rows or columns in the board. a 3x3 board has a board\+Size of 3. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_board}{Board} class is responsible for representing the underlying model of the game, it is a 2D matrix representation of the GUI that is machine readable, and can be used when running any sort of algorithms on the board. 
+
+\label{doc-constructors}
+\Hypertarget{class_board_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_board_aa94a6eebfdf27a7ec5c9011db662da9a} 
+Board\+::\+Board (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a board given a board size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & is the number of rows or columns in the board. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}, and \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{size()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_board_a644749e247a38adc51e2a42d87fd4e48}{Board()}}, \mbox{\hyperlink{class_board_acba2cffa38302b3bed1f43d681eefb28}{Board()}}, \mbox{\hyperlink{class_board_ac77f209904bb37545295c17649a9dc17}{Board()}}, and \mbox{\hyperlink{class_board_ae4ccc3271e479d7f9284b9567dc4c2a6}{operator=()}}.
+
+\Hypertarget{class_board_acba2cffa38302b3bed1f43d681eefb28}\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_board_acba2cffa38302b3bed1f43d681eefb28} 
+Board\+::\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{b}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_board}{Board} copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The board to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board()}}, \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, and \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}.
+
+\Hypertarget{class_board_ac77f209904bb37545295c17649a9dc17}\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_board_ac77f209904bb37545295c17649a9dc17} 
+Board\+::\+Board (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{b}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board()}}, \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, and \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}.
+
+\Hypertarget{class_board_a644749e247a38adc51e2a42d87fd4e48}\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_board_a644749e247a38adc51e2a42d87fd4e48} 
+Board\+::\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&\&}]{b}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_board}{Board} move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The board to be moved. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board()}}, \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, and \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}.
+
+\Hypertarget{class_board_af73f45730119a1fd8f6670f53f959e68}\index{Board@{Board}!````~Board@{\texorpdfstring{$\sim$}{\string~}Board}}
+\index{````~Board@{\texorpdfstring{$\sim$}{\string~}Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Board()}{\string~Board()}}
+{\footnotesize\ttfamily \label{class_board_af73f45730119a1fd8f6670f53f959e68} 
+Board\+::\texorpdfstring{$\sim$}{\string~}\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxylink{class_board}{Board} destructor. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_board_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}\index{Board@{Board}!at@{at}}
+\index{at@{at}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \label{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf} 
+\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} Board\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row}{, }\item[{size\+\_\+t}]{col}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+at is a getter function that returns a cell given a row and a column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & of the cell target. \\
+\hline
+{\em col} & of the cell target. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value mark at the cell. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em out\+\_\+of\+\_\+range} & exception when the row or column is out of bounds. \\
+\hline
+\end{DoxyExceptions}
+
+
+References \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{Mini\+Max\+Agent\+::max\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{Mini\+Max\+Agent\+::min\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{Mini\+Max\+Agent\+::play()}}, \mbox{\hyperlink{tst__board_8h_ac555eeb8f6fce63474f024697664db1d}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a6f8e97e39d716ebe3e1abcc8814441fd}{TEST()}}, \mbox{\hyperlink{tst__board_8h_afe8d32a4b1841501528198e3c3c317ff}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_a032eae83898806e040369ea3602d53a7}{TEST()}}, and \mbox{\hyperlink{tst__minimaxagent_8h_a8fab0dc25c45462fbed06661dc299e71}{TEST()}}.
+
+\Hypertarget{class_board_a1b7486c5df3db7e5a1c8ed097492527f}\index{Board@{Board}!evaluateBoard@{evaluateBoard}}
+\index{evaluateBoard@{evaluateBoard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{evaluateBoard()}{evaluateBoard()}}
+{\footnotesize\ttfamily \label{class_board_a1b7486c5df3db7e5a1c8ed097492527f} 
+\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}} Board\+::evaluate\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+evaluate\+Board evaluates whether the state of the current board. the function can evaluate to X wins or O wins or a Tie or No Winner. 
+
+\begin{DoxyReturn}{Returns}
+the state of the current board. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97}{OWins}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b}{Tie}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed}{XWins}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{Mini\+Max\+Agent\+::max\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{Mini\+Max\+Agent\+::min\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{Mini\+Max\+Agent\+::play()}}, \mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{set\+Player\+Input()}}, \mbox{\hyperlink{tst__board_8h_ab48b30211c8ddeb6587b53c4ada0bc31}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a19e3b68208955da7395c5d38ffca8ba4}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a8ca0397d3342d267ba6a7f13b98a2a05}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a28b2bf2a7ac67d83661b3eaa3b2c118b}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_adcd416e8815daad735b5333917656196}{TEST()}}, and \mbox{\hyperlink{tst__minimaxagent_8h_af7058d3c7505db3452d4c7025fe11d82}{TEST()}}.
+
+\Hypertarget{class_board_ae4ccc3271e479d7f9284b9567dc4c2a6}\index{Board@{Board}!operator=@{operator=}}
+\index{operator=@{operator=}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_board_ae4ccc3271e479d7f9284b9567dc4c2a6} 
+\mbox{\hyperlink{class_board}{Board}} \& Board\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}}}]{b}{}\end{DoxyParamCaption})}
+
+
+
+This assignment operator implements the copy \& swap idiom, so it works as a move and a copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The board to be copied or moved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this object, so this operator can be chained. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board()}}, \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, and \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}.
+
+\Hypertarget{class_board_aaef819a8d1a10c35d9f802195802236e}\index{Board@{Board}!reset@{reset}}
+\index{reset@{reset}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_board_aaef819a8d1a10c35d9f802195802236e} 
+void Board\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+reset allows resetting the whole board, marking all the cells as empty. 
+
+
+
+References \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}.
+
+
+
+Referenced by \mbox{\hyperlink{tst__board_8h_ab48b30211c8ddeb6587b53c4ada0bc31}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a19e3b68208955da7395c5d38ffca8ba4}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a8ca0397d3342d267ba6a7f13b98a2a05}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a28b2bf2a7ac67d83661b3eaa3b2c118b}{TEST()}}, \mbox{\hyperlink{tst__board_8h_afe8d32a4b1841501528198e3c3c317ff}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a1ac3aa7aeea81ead4ab8dd66e94dde49}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_a032eae83898806e040369ea3602d53a7}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_adcd416e8815daad735b5333917656196}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_a8fab0dc25c45462fbed06661dc299e71}{TEST()}}, and \mbox{\hyperlink{tst__minimaxagent_8h_af7058d3c7505db3452d4c7025fe11d82}{TEST()}}.
+
+\Hypertarget{class_board_addcaa486e1293eebcb323fb936353f43}\index{Board@{Board}!resetCell@{resetCell}}
+\index{resetCell@{resetCell}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{resetCell()}{resetCell()}}
+{\footnotesize\ttfamily \label{class_board_addcaa486e1293eebcb323fb936353f43} 
+void Board\+::reset\+Cell (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row}{, }\item[{size\+\_\+t}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+reset\+Cell allows resetting a given cell to an empty type, without the extra state checks done in the set\+Player\+Input function. 
+
+
+
+References \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{Mini\+Max\+Agent\+::max\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{Mini\+Max\+Agent\+::min\+Move()}}, and \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{Mini\+Max\+Agent\+::play()}}.
+
+\Hypertarget{class_board_a109cbc4dc8c6c76d05caba0345eedc17}\index{Board@{Board}!setPlayerInput@{setPlayerInput}}
+\index{setPlayerInput@{setPlayerInput}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{setPlayerInput()}{setPlayerInput()}}
+{\footnotesize\ttfamily \label{class_board_a109cbc4dc8c6c76d05caba0345eedc17} 
+bool Board\+::set\+Player\+Input (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row}{, }\item[{size\+\_\+t}]{col}{, }\item[{\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{current\+Player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set\+Player\+Input sets the board with the mark given in the specified location. after boundary checking the input row and column, and if the game hasen\textquotesingle{}t reached a final state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & of the cell target. \\
+\hline
+{\em col} & of the cell target. \\
+\hline
+{\em current\+Player} & is the mark of the current player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the update was successfull or not based on the boundary check and validity of input given the board state. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em out\+\_\+of\+\_\+range} & exception when the row or column is out of bounds. \\
+\hline
+\end{DoxyExceptions}
+
+
+References \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\+\_\+}}, \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}, \mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluate\+Board()}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{Mini\+Max\+Agent\+::max\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{Mini\+Max\+Agent\+::min\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{Mini\+Max\+Agent\+::play()}}, \mbox{\hyperlink{tst__board_8h_a6f8e97e39d716ebe3e1abcc8814441fd}{TEST()}}, \mbox{\hyperlink{tst__board_8h_ab48b30211c8ddeb6587b53c4ada0bc31}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a19e3b68208955da7395c5d38ffca8ba4}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a8ca0397d3342d267ba6a7f13b98a2a05}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a28b2bf2a7ac67d83661b3eaa3b2c118b}{TEST()}}, \mbox{\hyperlink{tst__board_8h_afe8d32a4b1841501528198e3c3c317ff}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a1ac3aa7aeea81ead4ab8dd66e94dde49}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a9a2d51e4d9cf35eba8a63c379734358c}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a5d13b3bb92d3a06be7fdf1b54961ea52}{TEST()}}, \mbox{\hyperlink{tst__board_8h_a9af799f6e2643a3997d0c094b5971d2b}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_a032eae83898806e040369ea3602d53a7}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_adcd416e8815daad735b5333917656196}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_a8fab0dc25c45462fbed06661dc299e71}{TEST()}}, and \mbox{\hyperlink{tst__minimaxagent_8h_af7058d3c7505db3452d4c7025fe11d82}{TEST()}}.
+
+\Hypertarget{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}\index{Board@{Board}!size@{size}}
+\index{size@{size}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138} 
+size\+\_\+t Board\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+size is a getter functions of the board size. 
+
+\begin{DoxyReturn}{Returns}
+the size of the board i.\+e. numebr of rows or columns. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{board\+Size\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board()}}, \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{Mini\+Max\+Agent\+::max\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{Mini\+Max\+Agent\+::min\+Move()}}, and \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{Mini\+Max\+Agent\+::play()}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_board_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_board_adfd225a07d805a10bf34c7592218eb70}\index{Board@{Board}!board\_@{board\_}}
+\index{board\_@{board\_}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{board\_}{board\_}}
+{\footnotesize\ttfamily \label{class_board_adfd225a07d805a10bf34c7592218eb70} 
+vector$<$vector$<$\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}$>$ $>$ Board\+::board\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+board is a 2D vector that represents a machine readable format to the GUI application. 
+
+
+
+Referenced by \mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at()}}, \mbox{\hyperlink{class_board_a644749e247a38adc51e2a42d87fd4e48}{Board()}}, \mbox{\hyperlink{class_board_acba2cffa38302b3bed1f43d681eefb28}{Board()}}, \mbox{\hyperlink{class_board_ac77f209904bb37545295c17649a9dc17}{Board()}}, \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board()}}, \mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluate\+Board()}}, \mbox{\hyperlink{class_board_ae4ccc3271e479d7f9284b9567dc4c2a6}{operator=()}}, \mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset()}}, \mbox{\hyperlink{class_board_addcaa486e1293eebcb323fb936353f43}{reset\+Cell()}}, and \mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{set\+Player\+Input()}}.
+
+\Hypertarget{class_board_a9be071bf59fbbb74c3eade9a74d8f521}\index{Board@{Board}!boardSize\_@{boardSize\_}}
+\index{boardSize\_@{boardSize\_}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{boardSize\_}{boardSize\_}}
+{\footnotesize\ttfamily \label{class_board_a9be071bf59fbbb74c3eade9a74d8f521} 
+size\+\_\+t Board\+::board\+Size\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+board\+Size is the number of rows or columns in the board. a 3x3 board has a board\+Size of 3. 
+
+
+
+Referenced by \mbox{\hyperlink{class_board_a644749e247a38adc51e2a42d87fd4e48}{Board()}}, \mbox{\hyperlink{class_board_acba2cffa38302b3bed1f43d681eefb28}{Board()}}, \mbox{\hyperlink{class_board_ac77f209904bb37545295c17649a9dc17}{Board()}}, \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board()}}, \mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluate\+Board()}}, \mbox{\hyperlink{class_board_ae4ccc3271e479d7f9284b9567dc4c2a6}{operator=()}}, \mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset()}}, \mbox{\hyperlink{class_board_addcaa486e1293eebcb323fb936353f43}{reset\+Cell()}}, \mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{set\+Player\+Input()}}, and \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{size()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+Model/\mbox{\hyperlink{_board_8h}{Board.\+h}}\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+Model/\mbox{\hyperlink{_board_8cpp}{Board.\+cpp}}\end{DoxyCompactItemize}

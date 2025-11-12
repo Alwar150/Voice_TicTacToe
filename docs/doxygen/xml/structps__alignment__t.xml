@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__alignment__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_alignment_t</compoundname>
+    <includes refid="alignment_8h" local="no">pocketsphinx/alignment.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__alignment__t_1a08bf2cf59a1e8e837e26f6e571c02c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_alignment_t * ps_alignment_retain</definition>
+        <argsstring>(ps_alignment_t *al)</argsstring>
+        <name>ps_alignment_retain</name>
+        <qualifiedname>ps_alignment_t::ps_alignment_retain</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> *</type>
+          <declname>al</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retain an alignment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="81" column="16" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="81" declcolumn="16"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__alignment__t_1ad3397b6ae46535516b71a5cc5a049bf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_alignment_free</definition>
+        <argsstring>(ps_alignment_t *al)</argsstring>
+        <name>ps_alignment_free</name>
+        <qualifiedname>ps_alignment_t::ps_alignment_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> *</type>
+          <declname>al</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release an alignment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="88" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="88" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__alignment__t_1a55bd9be876b2ee4f9be894561f7cfb41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_alignment_iter_t * ps_alignment_words</definition>
+        <argsstring>(ps_alignment_t *al)</argsstring>
+        <name>ps_alignment_words</name>
+        <qualifiedname>ps_alignment_t::ps_alignment_words</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> *</type>
+          <declname>al</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over the alignment starting at the first word. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="95" column="21" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="95" declcolumn="21"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__alignment__t_1a5d2fa99d658585157ce4629d1ae5882e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_alignment_iter_t * ps_alignment_phones</definition>
+        <argsstring>(ps_alignment_t *al)</argsstring>
+        <name>ps_alignment_phones</name>
+        <qualifiedname>ps_alignment_t::ps_alignment_phones</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> *</type>
+          <declname>al</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over the alignment starting at the first phone. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="102" column="21" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="102" declcolumn="21"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__alignment__t_1ad8d74903490fadb9fbddcef2955593c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__alignment__iter__t" kindref="compound">ps_alignment_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_alignment_iter_t * ps_alignment_states</definition>
+        <argsstring>(ps_alignment_t *al)</argsstring>
+        <name>ps_alignment_states</name>
+        <qualifiedname>ps_alignment_t::ps_alignment_states</qualifiedname>
+        <param>
+          <type><ref refid="structps__alignment__t" kindref="compound">ps_alignment_t</ref> *</type>
+          <declname>al</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over the alignment starting at the first state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="109" column="21" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" declline="109" declcolumn="21"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Multi-level alignment (words, phones, states) over an utterance. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/alignment.h" line="65" column="1"/>
+    <listofallmembers>
+      <member refid="structps__alignment__t_1ad3397b6ae46535516b71a5cc5a049bf1" prot="public" virt="non-virtual"><scope>ps_alignment_t</scope><name>ps_alignment_free</name></member>
+      <member refid="structps__alignment__t_1a5d2fa99d658585157ce4629d1ae5882e" prot="public" virt="non-virtual"><scope>ps_alignment_t</scope><name>ps_alignment_phones</name></member>
+      <member refid="structps__alignment__t_1a08bf2cf59a1e8e837e26f6e571c02c95" prot="public" virt="non-virtual"><scope>ps_alignment_t</scope><name>ps_alignment_retain</name></member>
+      <member refid="structps__alignment__t_1ad8d74903490fadb9fbddcef2955593c8" prot="public" virt="non-virtual"><scope>ps_alignment_t</scope><name>ps_alignment_states</name></member>
+      <member refid="structps__alignment__t_1a55bd9be876b2ee4f9be894561f7cfb41" prot="public" virt="non-virtual"><scope>ps_alignment_t</scope><name>ps_alignment_words</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

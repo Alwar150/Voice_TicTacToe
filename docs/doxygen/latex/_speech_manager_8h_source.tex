@@ -1,0 +1,48 @@
+\doxysection{Speech\+Manager.\+h}
+\hypertarget{_speech_manager_8h_source}{}\label{_speech_manager_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/Speech/SpeechManager.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/Speech/SpeechManager.h}}
+\mbox{\hyperlink{_speech_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SPEECHMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SPEECHMANAGER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtConcurrent/QtConcurrentRun>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QFuture>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <portaudio.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{pocketsphinx_8h}{pocketsphinx.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <signal.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_config_manager_8h}{ConfigManager.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{SpeechManager}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{SpeechManager}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_speech_manager_a473b5a5d90f5486c0306278220d8138c}{\string~SpeechManager}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_manager_a94d6a6d8b5aa00b913e751c2620a9e52}{configure}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_manager_a13ab24c0b019530b8c35557091fac078}{init}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_manager_af62b1ec680a5e45e289d629d561c8432}{startListening}}();\ \ }
+\DoxyCodeLine{00024\ signals:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_manager_abdde7758804b9f537d9d704583e6c8b3}{speechRecognized}}(\textcolor{keyword}{const}\ QString\ \&text);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_manager_af020ff04f584cedbd3105f299c1a66b0}{speechReadyToProcess}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *hyp);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_manager_a9e0d24a7b396f00dbb1dee267450d3e9}{processRecognitionResult}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *hyp);}
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ PaStream\ *\mbox{\hyperlink{class_speech_manager_a84982042bef20eb360ec44351fd84757}{stream\_}};}
+\DoxyCodeLine{00032\ \ \ \ \ PaError\ \mbox{\hyperlink{class_speech_manager_a12e44c03e875470507ec74a417fa0156}{err\_}};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *\mbox{\hyperlink{class_speech_manager_a5457cda86b4ca0afd9d4ab9655baacf0}{decoder\_}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structps__config__t}{ps\_config\_t}}\ *\mbox{\hyperlink{class_speech_manager_aed90e5c57c5e43394492fb748ef5dec4}{config\_}};}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *\mbox{\hyperlink{class_speech_manager_a2d256afb5806a933dfd832fa49d1b148}{ep\_}};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{short}\ *\mbox{\hyperlink{class_speech_manager_a33dd9ba7578619b2f8bfb2be029c4c20}{frame\_}};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_speech_manager_a5ae23337be3cfd612918b64b2dac7fa8}{frame\_size\_}};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{class_speech_manager_ad36d507a363bd64922e7cd8c85334bda}{hyp\_}};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_speech_manager_ad48e68cab4316e371cc56ca75150897d}{hypIsValid}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speech_manager_a13a4749dbb01af8d5faf9e181b11c56e}{freeHeap}}();}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SPEECHMANAGER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,80 @@
+\doxysection{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t Struct Reference}
+\hypertarget{structngram__model__set__iter__t}{}\label{structngram__model__set__iter__t}\index{ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}}
+
+
+Iterator over language models in a set.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/model.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__model__set__iter__t}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structngram__model__set__iter__t_a0b5d514788a89e94a9294444345644fa}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+next}} (\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structngram__model__set__iter__t_aaf476373eb2e9c3d6c7efac3a4b1a1b2}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+free}} (\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__model__t}{ngram\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structngram__model__set__iter__t_a969431cd3b760dd3aff5be7bc80eb520}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+model}} (\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor, char const \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lmname)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterator over language models in a set. 
+
+\label{doc-func-members}
+\Hypertarget{structngram__model__set__iter__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structngram__model__set__iter__t_aaf476373eb2e9c3d6c7efac3a4b1a1b2}\index{ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}!ngram\_model\_set\_iter\_free@{ngram\_model\_set\_iter\_free}}
+\index{ngram\_model\_set\_iter\_free@{ngram\_model\_set\_iter\_free}!ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ngram\_model\_set\_iter\_free()}{ngram\_model\_set\_iter\_free()}}
+{\footnotesize\ttfamily \label{structngram__model__set__iter__t_aaf476373eb2e9c3d6c7efac3a4b1a1b2} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Finish iteration over a language model set. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structngram__model__set__iter__t_a969431cd3b760dd3aff5be7bc80eb520}\index{ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}!ngram\_model\_set\_iter\_model@{ngram\_model\_set\_iter\_model}}
+\index{ngram\_model\_set\_iter\_model@{ngram\_model\_set\_iter\_model}!ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ngram\_model\_set\_iter\_model()}{ngram\_model\_set\_iter\_model()}}
+{\footnotesize\ttfamily \label{structngram__model__set__iter__t_a969431cd3b760dd3aff5be7bc80eb520} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__model__t}{ngram\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*} ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{, }\item[{char const \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lmname}{}\end{DoxyParamCaption})}
+
+Get language model and associated name from an iterator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em itor} & the iterator \\
+\hline
+{\em lmname} & Output\+: string name associated with this language model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Language model pointed to by this iterator. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structngram__model__set__iter__t_a0b5d514788a89e94a9294444345644fa}\index{ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}!ngram\_model\_set\_iter\_next@{ngram\_model\_set\_iter\_next}}
+\index{ngram\_model\_set\_iter\_next@{ngram\_model\_set\_iter\_next}!ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ngram\_model\_set\_iter\_next()}{ngram\_model\_set\_iter\_next()}}
+{\footnotesize\ttfamily \label{structngram__model__set__iter__t_a0b5d514788a89e94a9294444345644fa} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__model__set__iter__t}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Move to the next language model in a set.
+
+\begin{DoxyReturn}{Returns}
+iterator pointing to the next language model, or NULL if no models remain. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{model_8h}{model.\+h}}\end{DoxyCompactItemize}

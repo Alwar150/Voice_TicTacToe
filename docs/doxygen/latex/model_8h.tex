@@ -1,0 +1,186 @@
+\doxysection{C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/model.h File Reference}
+\hypertarget{model_8h}{}\label{model_8h}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/model.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/model.h}}
+
+
+Public API for language models.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/prim\+\_\+type.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/logmath.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/export.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{model_8h_a3d4b3dddd0ff67e13d30c9bf053d01ab}{NGRAM\+\_\+\+INVALID\+\_\+\+WID}}~-\/1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct jsgf\+\_\+s \mbox{\hyperlink{model_8h_aee85cf9f007eac61cebba97d6aaccaea}{jsgf\+\_\+t}}
+\item 
+typedef struct jsgf\+\_\+rule\+\_\+s \mbox{\hyperlink{model_8h_a3bb0c86e5f9ba2c29b1fa91e1583bf00}{jsgf\+\_\+rule\+\_\+t}}
+\item 
+typedef struct fsg\+\_\+model\+\_\+s \mbox{\hyperlink{model_8h_a1e036a34f60f268365b54a5e800e733d}{fsg\+\_\+model\+\_\+t}}
+\item 
+typedef struct ngram\+\_\+model\+\_\+s \mbox{\hyperlink{model_8h_afaaf0c00e20056d97efcd97e4cae4ea7}{ngram\+\_\+model\+\_\+t}}
+\item 
+typedef struct hash\+\_\+iter\+\_\+s \mbox{\hyperlink{model_8h_abb6e79bdc8b51b8efbecfdb032cc7d86}{jsgf\+\_\+rule\+\_\+iter\+\_\+t}}
+\item 
+typedef struct ngram\+\_\+class\+\_\+s \mbox{\hyperlink{model_8h_ae36b2f037b2ea751dff23f082379c264}{ngram\+\_\+class\+\_\+t}}
+\item 
+typedef enum \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74}{ngram\+\_\+file\+\_\+type\+\_\+e}} \mbox{\hyperlink{model_8h_ac3bc97ce5f4139db88d4360b19497f97}{ngram\+\_\+file\+\_\+type\+\_\+t}}
+\item 
+typedef enum \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771}{ngram\+\_\+case\+\_\+e}} \mbox{\hyperlink{model_8h_afbe3bcb7dd0de6bc550cc7d4e75de403}{ngram\+\_\+case\+\_\+t}}
+\item 
+typedef struct ngram\+\_\+iter\+\_\+s \mbox{\hyperlink{model_8h_ac7de090a02fa12a8bba84abb4d5236aa}{ngram\+\_\+iter\+\_\+t}}
+\item 
+typedef struct ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+s \mbox{\hyperlink{model_8h_afffd75c5bde8dd84107449468be48547}{ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74}{ngram\+\_\+file\+\_\+type\+\_\+e}} \{ \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a2cf596c8b0c63a3a0ba1fe33326cc796}{NGRAM\+\_\+\+INVALID}} = -\/1
+, \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a441701bf8ae0a2b79716feb31b5f257a}{NGRAM\+\_\+\+AUTO}}
+, \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a77ef2341d826b3cc8b836e3af1efba99}{NGRAM\+\_\+\+ARPA}}
+, \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a748d515b444b38b037f3cc90a6bfded4}{NGRAM\+\_\+\+BIN}}
+ \}
+\begin{DoxyCompactList}\small\item\em File types for N-\/\+Gram files. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771}{ngram\+\_\+case\+\_\+e}} \{ \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771a05b5ea035cb1035af6012f612206dba6}{NGRAM\+\_\+\+UPPER}}
+, \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771acd2c3b5a6b95f580cb230c4cdda22be0}{NGRAM\+\_\+\+LOWER}}
+ \}
+\begin{DoxyCompactList}\small\item\em Constants for case folding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Public API for language models. 
+
+Because doxygen is Bad Software, the actual documentation can only exist in \doxylink{structjsgf__t}{jsgf\+\_\+t}, \doxylink{structfsg__model__t}{fsg\+\_\+model\+\_\+t}, and \doxylink{structngram__model__t}{ngram\+\_\+model\+\_\+t}. Sorry about that. 
+
+\label{doc-define-members}
+\Hypertarget{model_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{model_8h_a3d4b3dddd0ff67e13d30c9bf053d01ab}\index{model.h@{model.h}!NGRAM\_INVALID\_WID@{NGRAM\_INVALID\_WID}}
+\index{NGRAM\_INVALID\_WID@{NGRAM\_INVALID\_WID}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{NGRAM\_INVALID\_WID}{NGRAM\_INVALID\_WID}}
+{\footnotesize\ttfamily \label{model_8h_a3d4b3dddd0ff67e13d30c9bf053d01ab} 
+\#define NGRAM\+\_\+\+INVALID\+\_\+\+WID~-\/1}
+
+Impossible word ID 
+
+\label{doc-typedef-members}
+\Hypertarget{model_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{model_8h_a1e036a34f60f268365b54a5e800e733d}\index{model.h@{model.h}!fsg\_model\_t@{fsg\_model\_t}}
+\index{fsg\_model\_t@{fsg\_model\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{fsg\_model\_t}{fsg\_model\_t}}
+{\footnotesize\ttfamily \label{model_8h_a1e036a34f60f268365b54a5e800e733d} 
+typedef struct fsg\+\_\+model\+\_\+s fsg\+\_\+model\+\_\+t}
+
+\Hypertarget{model_8h_abb6e79bdc8b51b8efbecfdb032cc7d86}\index{model.h@{model.h}!jsgf\_rule\_iter\_t@{jsgf\_rule\_iter\_t}}
+\index{jsgf\_rule\_iter\_t@{jsgf\_rule\_iter\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{jsgf\_rule\_iter\_t}{jsgf\_rule\_iter\_t}}
+{\footnotesize\ttfamily \label{model_8h_abb6e79bdc8b51b8efbecfdb032cc7d86} 
+typedef struct hash\+\_\+iter\+\_\+s jsgf\+\_\+rule\+\_\+iter\+\_\+t}
+
+\Hypertarget{model_8h_a3bb0c86e5f9ba2c29b1fa91e1583bf00}\index{model.h@{model.h}!jsgf\_rule\_t@{jsgf\_rule\_t}}
+\index{jsgf\_rule\_t@{jsgf\_rule\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{jsgf\_rule\_t}{jsgf\_rule\_t}}
+{\footnotesize\ttfamily \label{model_8h_a3bb0c86e5f9ba2c29b1fa91e1583bf00} 
+typedef struct jsgf\+\_\+rule\+\_\+s jsgf\+\_\+rule\+\_\+t}
+
+\Hypertarget{model_8h_aee85cf9f007eac61cebba97d6aaccaea}\index{model.h@{model.h}!jsgf\_t@{jsgf\_t}}
+\index{jsgf\_t@{jsgf\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{jsgf\_t}{jsgf\_t}}
+{\footnotesize\ttfamily \label{model_8h_aee85cf9f007eac61cebba97d6aaccaea} 
+typedef struct jsgf\+\_\+s jsgf\+\_\+t}
+
+\Hypertarget{model_8h_afbe3bcb7dd0de6bc550cc7d4e75de403}\index{model.h@{model.h}!ngram\_case\_t@{ngram\_case\_t}}
+\index{ngram\_case\_t@{ngram\_case\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ngram\_case\_t}{ngram\_case\_t}}
+{\footnotesize\ttfamily \label{model_8h_afbe3bcb7dd0de6bc550cc7d4e75de403} 
+typedef enum \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771}{ngram\+\_\+case\+\_\+e}} \mbox{\hyperlink{model_8h_afbe3bcb7dd0de6bc550cc7d4e75de403}{ngram\+\_\+case\+\_\+t}}}
+
+\Hypertarget{model_8h_ae36b2f037b2ea751dff23f082379c264}\index{model.h@{model.h}!ngram\_class\_t@{ngram\_class\_t}}
+\index{ngram\_class\_t@{ngram\_class\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ngram\_class\_t}{ngram\_class\_t}}
+{\footnotesize\ttfamily \label{model_8h_ae36b2f037b2ea751dff23f082379c264} 
+typedef struct ngram\+\_\+class\+\_\+s ngram\+\_\+class\+\_\+t}
+
+\Hypertarget{model_8h_ac3bc97ce5f4139db88d4360b19497f97}\index{model.h@{model.h}!ngram\_file\_type\_t@{ngram\_file\_type\_t}}
+\index{ngram\_file\_type\_t@{ngram\_file\_type\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ngram\_file\_type\_t}{ngram\_file\_type\_t}}
+{\footnotesize\ttfamily \label{model_8h_ac3bc97ce5f4139db88d4360b19497f97} 
+typedef enum \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74}{ngram\+\_\+file\+\_\+type\+\_\+e}} \mbox{\hyperlink{model_8h_ac3bc97ce5f4139db88d4360b19497f97}{ngram\+\_\+file\+\_\+type\+\_\+t}}}
+
+\Hypertarget{model_8h_ac7de090a02fa12a8bba84abb4d5236aa}\index{model.h@{model.h}!ngram\_iter\_t@{ngram\_iter\_t}}
+\index{ngram\_iter\_t@{ngram\_iter\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ngram\_iter\_t}{ngram\_iter\_t}}
+{\footnotesize\ttfamily \label{model_8h_ac7de090a02fa12a8bba84abb4d5236aa} 
+typedef struct ngram\+\_\+iter\+\_\+s ngram\+\_\+iter\+\_\+t}
+
+\Hypertarget{model_8h_afffd75c5bde8dd84107449468be48547}\index{model.h@{model.h}!ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}}
+\index{ngram\_model\_set\_iter\_t@{ngram\_model\_set\_iter\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ngram\_model\_set\_iter\_t}{ngram\_model\_set\_iter\_t}}
+{\footnotesize\ttfamily \label{model_8h_afffd75c5bde8dd84107449468be48547} 
+typedef struct ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+s ngram\+\_\+model\+\_\+set\+\_\+iter\+\_\+t}
+
+\Hypertarget{model_8h_afaaf0c00e20056d97efcd97e4cae4ea7}\index{model.h@{model.h}!ngram\_model\_t@{ngram\_model\_t}}
+\index{ngram\_model\_t@{ngram\_model\_t}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ngram\_model\_t}{ngram\_model\_t}}
+{\footnotesize\ttfamily \label{model_8h_afaaf0c00e20056d97efcd97e4cae4ea7} 
+typedef struct ngram\+\_\+model\+\_\+s ngram\+\_\+model\+\_\+t}
+
+
+
+\label{doc-enum-members}
+\Hypertarget{model_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{model_8h_aad16a0a1edf29ba8c0df43959c0c4771}\index{model.h@{model.h}!ngram\_case\_e@{ngram\_case\_e}}
+\index{ngram\_case\_e@{ngram\_case\_e}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ngram\_case\_e}{ngram\_case\_e}}
+{\footnotesize\ttfamily \label{model_8h_aad16a0a1edf29ba8c0df43959c0c4771} 
+enum \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771}{ngram\+\_\+case\+\_\+e}}}
+
+
+
+Constants for case folding. 
+
+\doxylink{model_8h}{pocketsphinx/model.\+h} \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NGRAM\_UPPER@{NGRAM\_UPPER}!model.h@{model.h}}\index{model.h@{model.h}!NGRAM\_UPPER@{NGRAM\_UPPER}}}\Hypertarget{model_8h_aad16a0a1edf29ba8c0df43959c0c4771a05b5ea035cb1035af6012f612206dba6}\label{model_8h_aad16a0a1edf29ba8c0df43959c0c4771a05b5ea035cb1035af6012f612206dba6} 
+NGRAM\+\_\+\+UPPER&Upper case \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NGRAM\_LOWER@{NGRAM\_LOWER}!model.h@{model.h}}\index{model.h@{model.h}!NGRAM\_LOWER@{NGRAM\_LOWER}}}\Hypertarget{model_8h_aad16a0a1edf29ba8c0df43959c0c4771acd2c3b5a6b95f580cb230c4cdda22be0}\label{model_8h_aad16a0a1edf29ba8c0df43959c0c4771acd2c3b5a6b95f580cb230c4cdda22be0} 
+NGRAM\+\_\+\+LOWER&Lower case \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74}\index{model.h@{model.h}!ngram\_file\_type\_e@{ngram\_file\_type\_e}}
+\index{ngram\_file\_type\_e@{ngram\_file\_type\_e}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ngram\_file\_type\_e}{ngram\_file\_type\_e}}
+{\footnotesize\ttfamily \label{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74} 
+enum \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74}{ngram\+\_\+file\+\_\+type\+\_\+e}}}
+
+
+
+File types for N-\/\+Gram files. 
+
+\doxylink{model_8h}{pocketsphinx/model.\+h} \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NGRAM\_INVALID@{NGRAM\_INVALID}!model.h@{model.h}}\index{model.h@{model.h}!NGRAM\_INVALID@{NGRAM\_INVALID}}}\Hypertarget{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a2cf596c8b0c63a3a0ba1fe33326cc796}\label{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a2cf596c8b0c63a3a0ba1fe33326cc796} 
+NGRAM\+\_\+\+INVALID&Not a valid file type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NGRAM\_AUTO@{NGRAM\_AUTO}!model.h@{model.h}}\index{model.h@{model.h}!NGRAM\_AUTO@{NGRAM\_AUTO}}}\Hypertarget{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a441701bf8ae0a2b79716feb31b5f257a}\label{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a441701bf8ae0a2b79716feb31b5f257a} 
+NGRAM\+\_\+\+AUTO&Determine file type automatically. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NGRAM\_ARPA@{NGRAM\_ARPA}!model.h@{model.h}}\index{model.h@{model.h}!NGRAM\_ARPA@{NGRAM\_ARPA}}}\Hypertarget{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a77ef2341d826b3cc8b836e3af1efba99}\label{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a77ef2341d826b3cc8b836e3af1efba99} 
+NGRAM\+\_\+\+ARPA&ARPABO text format (the standard). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NGRAM\_BIN@{NGRAM\_BIN}!model.h@{model.h}}\index{model.h@{model.h}!NGRAM\_BIN@{NGRAM\_BIN}}}\Hypertarget{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a748d515b444b38b037f3cc90a6bfded4}\label{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a748d515b444b38b037f3cc90a6bfded4} 
+NGRAM\+\_\+\+BIN&Sphinx .DMP format. \\
+\hline
+
+\end{DoxyEnumFields}

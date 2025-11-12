@@ -1,0 +1,883 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="err_8h" kind="file" language="C++">
+    <compoundname>err.h</compoundname>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes refid="export_8h" local="no">pocketsphinx/export.h</includes>
+    <includedby refid="pocketsphinx_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="5">
+        <label>errno.h</label>
+      </node>
+      <node id="2">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="17">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.cpp</label>
+        <link refid="_human_player_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h</label>
+        <link refid="_human_player_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.cpp</label>
+        <link refid="_mini_max_agent_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.h</label>
+        <link refid="_mini_max_agent_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h</label>
+        <link refid="_no_agent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp</label>
+        <link refid="_board_8cpp"/>
+      </node>
+      <node id="18">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp</label>
+        <link refid="_speech_manager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h</label>
+        <link refid="_speech_manager_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/main.cpp</label>
+        <link refid="_tic_tac_toe_test_2main_8cpp"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_board.h</label>
+        <link refid="tst__board_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_minimaxagent.h</label>
+        <link refid="tst__minimaxagent_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp</label>
+        <link refid="_tic_tac_toe_game_8cpp"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h</label>
+        <link refid="_title_screen_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="err_8h_1a0e884a86577f53ae267ba646fe59da0d" prot="public" static="no">
+        <name>E_SYSCALL</name>
+        <param><defname>stmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>if (stmt) <ref refid="err_8h_1acc9aaeb2e0eb21f964913c14403d6795" kindref="member">E_FATAL_SYSTEM</ref>(__VA_ARGS__);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="73" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1af785434ca409c25676442575cd2495e6" prot="public" static="no">
+        <name>FILELINE</name>
+        <initializer>__FILE__ , __LINE__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="75" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" prot="public" static="no">
+        <name>E_FATAL</name>
+        <param><defname>...</defname></param>
+        <initializer>    do {                                           \
+        <ref refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" kindref="member">err_msg</ref>(<ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e" kindref="member">ERR_FATAL</ref>, <ref refid="err_8h_1af785434ca409c25676442575cd2495e6" kindref="member">FILELINE</ref>, __VA_ARGS__); \
+        exit(EXIT_FAILURE);                        \
+    } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Exit with non-zero status after error message </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="80" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="80" bodyend="84"/>
+        <referencedby refid="class_speech_manager_1a13ab24c0b019530b8c35557091fac078" compoundref="_speech_manager_8cpp" startline="35" endline="56">SpeechManager::init</referencedby>
+        <referencedby refid="struct_speech_to_text_1ae5b7a33ea5ba734da4e3caed42a5e185" compoundref="_t_t_t_common_types_8h" startline="70" endline="91">SpeechToText::init</referencedby>
+        <referencedby refid="struct_speech_to_text_1a243545518fed839c5fa5fe95aadde2a3" compoundref="_t_t_t_common_types_8h" startline="97" endline="135">SpeechToText::listen</referencedby>
+        <referencedby refid="class_speech_manager_1af62b1ec680a5e45e289d629d561c8432" compoundref="_speech_manager_8cpp" startline="58" endline="96">SpeechManager::startListening</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1acc9aaeb2e0eb21f964913c14403d6795" prot="public" static="no">
+        <name>E_FATAL_SYSTEM</name>
+        <param><defname>...</defname></param>
+        <initializer>    do {                                                                     \
+        <ref refid="err_8h_1ad6a26dc9c533d592a6e98b85941bb200" kindref="member">err_msg_system</ref>(<ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e" kindref="member">ERR_FATAL</ref>, <ref refid="err_8h_1af785434ca409c25676442575cd2495e6" kindref="member">FILELINE</ref>, __VA_ARGS__);            \
+        exit(EXIT_FAILURE);                                                  \
+    } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print error text; Call perror(&quot;&quot;); exit(errno); </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="89" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="89" bodyend="93"/>
+        <referencedby refid="class_speech_manager_1a13ab24c0b019530b8c35557091fac078" compoundref="_speech_manager_8cpp" startline="35" endline="56">SpeechManager::init</referencedby>
+        <referencedby refid="struct_speech_to_text_1ae5b7a33ea5ba734da4e3caed42a5e185" compoundref="_t_t_t_common_types_8h" startline="70" endline="91">SpeechToText::init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1add0768056bee50c260c5623b4edd4038" prot="public" static="no">
+        <name>E_ERROR_SYSTEM</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="err_8h_1ad6a26dc9c533d592a6e98b85941bb200" kindref="member">err_msg_system</ref>(<ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022" kindref="member">ERR_ERROR</ref>, <ref refid="err_8h_1af785434ca409c25676442575cd2495e6" kindref="member">FILELINE</ref>, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print error text; Call perror(&quot;&quot;); </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="98" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1a87a0a12135a290cf16d06b63fcfa0ccf" prot="public" static="no">
+        <name>E_ERROR</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" kindref="member">err_msg</ref>(<ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022" kindref="member">ERR_ERROR</ref>, <ref refid="err_8h_1af785434ca409c25676442575cd2495e6" kindref="member">FILELINE</ref>, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print error message to error log </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="103" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="struct_speech_to_text_1a243545518fed839c5fa5fe95aadde2a3" compoundref="_t_t_t_common_types_8h" startline="97" endline="135">SpeechToText::listen</referencedby>
+        <referencedby refid="class_speech_manager_1af62b1ec680a5e45e289d629d561c8432" compoundref="_speech_manager_8cpp" startline="58" endline="96">SpeechManager::startListening</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1aed4c99044fd3e70b7b33a0298a2279b4" prot="public" static="no">
+        <name>E_WARN</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" kindref="member">err_msg</ref>(<ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263" kindref="member">ERR_WARN</ref>, <ref refid="err_8h_1af785434ca409c25676442575cd2495e6" kindref="member">FILELINE</ref>, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print warning message to error log </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="108" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1a92dbeb77b8e1facc7b15abab6ad19b73" prot="public" static="no">
+        <name>E_INFO</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" kindref="member">err_msg</ref>(<ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c" kindref="member">ERR_INFO</ref>, <ref refid="err_8h_1af785434ca409c25676442575cd2495e6" kindref="member">FILELINE</ref>, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print logging information to standard error stream </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="113" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1aaf6601c7c08a803c55f2d55fcd8d5759" prot="public" static="no">
+        <name>E_INFOCONT</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" kindref="member">err_msg</ref>(<ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c" kindref="member">ERR_INFO</ref>, <ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>, 0, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Continue printing the information to standard error stream </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="118" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1abe6c68e16406b5f7aee0ec70e1f7d7f1" prot="public" static="no">
+        <name>E_INFO_NOFN</name>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" kindref="member">err_msg</ref>(<ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c" kindref="member">ERR_INFO</ref>, <ref refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref>, 0, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Print logging information without filename. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="123" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="err_8h_1af4689a912d0c49e9eb5244659d8702ad" prot="public" static="no">
+        <name>E_DEBUG</name>
+        <param><defname>...</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Debug is disabled by default </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="131" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="err_8h_1afb81270102ce9c1b3d15f3f78d89290d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>err_e</name>
+        <enumvalue id="err_8h_1afb81270102ce9c1b3d15f3f78d89290daadbdbedaf5c8e589e141c3c7ac56b418" prot="public">
+          <name>ERR_DEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c" prot="public">
+          <name>ERR_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263" prot="public">
+          <name>ERR_WARN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022" prot="public">
+          <name>ERR_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e" prot="public">
+          <name>ERR_FATAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="err_8h_1afb81270102ce9c1b3d15f3f78d89290da51a80ce92f9392669de4e57f0f8f915e" prot="public">
+          <name>ERR_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="134" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="134" bodyend="141"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="err_8h_1a77b3e477e86186edab4963cbdb1899d5" prot="public" static="no">
+        <type>enum <ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290d" kindref="member">err_e</ref></type>
+        <definition>typedef enum err_e err_lvl_t</definition>
+        <argsstring></argsstring>
+        <name>err_lvl_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="141" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="err_8h_1acd85e2692b5204208b001e6219df9674" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* err_cb_f) (void *user_data, err_lvl_t, const char *,...)</definition>
+        <argsstring>)(void *user_data, err_lvl_t, const char *,...)</argsstring>
+        <name>err_cb_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="152" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void err_msg</definition>
+        <argsstring>(err_lvl_t lvl, const char *path, long ln, const char *fmt,...)</argsstring>
+        <name>err_msg</name>
+        <param>
+          <type><ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref></type>
+          <declname>lvl</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>ln</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="144" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="144" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="err_8h_1ad6a26dc9c533d592a6e98b85941bb200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void err_msg_system</definition>
+        <argsstring>(err_lvl_t lvl, const char *path, long ln, const char *fmt,...)</argsstring>
+        <name>err_msg_system</name>
+        <param>
+          <type><ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref></type>
+          <declname>lvl</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>ln</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="147" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="147" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="err_8h_1a85783daf263f1638977c3e07b8f4725b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void err_logfp_cb</definition>
+        <argsstring>(void *user_data, err_lvl_t level, const char *fmt,...)</argsstring>
+        <name>err_logfp_cb</name>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <param>
+          <type><ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="150" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="150" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="err_8h_1ac011c0d3b793abc19010c2255bce5c88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int err_set_loglevel</definition>
+        <argsstring>(err_lvl_t lvl)</argsstring>
+        <name>err_set_loglevel</name>
+        <param>
+          <type><ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref></type>
+          <declname>lvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set minimum logging level.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lvl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level below which messages will not be logged (note ERR_DEBUG messages are not logged unless compiled in debugging mode) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>previous log level. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="163" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="163" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="err_8h_1a33774becab4a590524f8edb99f4a826b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> const char *</type>
+        <definition>POCKETSPHINX_EXPORT const char * err_set_loglevel_str</definition>
+        <argsstring>(const char *lvl)</argsstring>
+        <name>err_set_loglevel_str</name>
+        <param>
+          <type>const char *</type>
+          <declname>lvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set minimum logging levelfrom a string</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lvl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level below which messages will not be logged (note ERR_DEBUG messages are not logged unless compiled in debugging mode). A string corresponding to the names in enum <ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290d" kindref="member">err_e</ref>, but without the leading &quot;ERR_&quot; prefix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>previous log level string, or NULL for invalid argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="175" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="175" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="err_8h_1a27fbaecbcb755fd9e5a503566b6ec542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void err_set_callback</definition>
+        <argsstring>(err_cb_f callback, void *user_data)</argsstring>
+        <name>err_set_callback</name>
+        <param>
+          <type><ref refid="err_8h_1acd85e2692b5204208b001e6219df9674" kindref="member">err_cb_f</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets function to output error messages. Use it to redirect the logging to your application. By default the handler which dumps messages to stderr is set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback to pass messages too </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to pass to callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="186" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="186" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="err_8h_1adead72aa5614d8d305ab8710369ea01b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void err_set_logfp</definition>
+        <argsstring>(FILE *stream)</argsstring>
+        <name>err_set_logfp</name>
+        <param>
+          <type>FILE *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Direct all logging to a given filehandle if default logfp callback is set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filehandle to send log messages to, or NULL to disable logging. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="194" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="194" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="err_8h_1a037fb194ca22cbbdd9252afa317a4f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> FILE *</type>
+        <definition>POCKETSPHINX_EXPORT FILE * err_get_logfp</definition>
+        <argsstring>(void)</argsstring>
+        <name>err_get_logfp</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current logging filehandle.</para>
+<para><simplesect kind="return"><para>Current logging filehandle, NULL if logging is disabled. Initially it returns stderr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="203" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="203" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="err_8h_1a2ff33abcf6f29dd25138f0d9846a26cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int err_set_logfile</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>err_set_logfile</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append all log messages to a given file.</para>
+<para>Previous logging filehandle is closed (unless it was stdout or stderr).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File path to send log messages to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, &lt;0 for failure (e.g. if file does not exist) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" line="214" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h" declline="214" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Implementation of logging routines. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Logging, warning, debug and error message output functionality is provided in this file. Sphinxbase defines several level of logging messages - INFO, WARNING, ERROR, FATAL. By default output goes to standard error output.</para>
+<para>Logging is implemented through macros. They take same arguments as printf: format string and values. By default source file name and source line are prepended to the message. Log output could be redirected to any file using <ref refid="err_8h_1adead72aa5614d8d305ab8710369ea01b" kindref="member">err_set_logfp()</ref> and <ref refid="err_8h_1a2ff33abcf6f29dd25138f0d9846a26cd" kindref="member">err_set_logfile()</ref> functions. To disable logging in your application, call err_set_logfp(NULL).</para>
+<para>It&apos;s possible to log multiline info messages, to do that you need to start message with E_INFO and output other lines with E_INFOCONT. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c-basic-offset:<sp/>4;<sp/>indent-tabs-mode:<sp/>nil<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>1999-2004<sp/>Carnegie<sp/>Mellon<sp/>University.<sp/><sp/>All<sp/>rights</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>distribution.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>This<sp/>work<sp/>was<sp/>supported<sp/>in<sp/>part<sp/>by<sp/>funding<sp/>from<sp/>the<sp/>Defense<sp/>Advanced</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Research<sp/>Projects<sp/>Agency<sp/>and<sp/>the<sp/>National<sp/>Science<sp/>Foundation<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>United<sp/>States<sp/>of<sp/>America,<sp/>and<sp/>the<sp/>CMU<sp/>Sphinx<sp/>Speech<sp/>Consortium.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>CARNEGIE<sp/>MELLON<sp/>UNIVERSITY<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>ANY<sp/>EXPRESSED<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>CARNEGIE<sp/>MELLON<sp/>UNIVERSITY</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>NOR<sp/>ITS<sp/>EMPLOYEES<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_LIBUTIL_ERR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LIBUTIL_ERR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="export_8h" kindref="compound">pocketsphinx/export.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fool<sp/>Emacs.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="err_8h_1a0e884a86577f53ae267ba646fe59da0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_SYSCALL(stmt,<sp/>...)<sp/><sp/>if<sp/>(stmt)<sp/>E_FATAL_SYSTEM(__VA_ARGS__);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="err_8h_1af785434ca409c25676442575cd2495e6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FILELINE<sp/><sp/>__FILE__<sp/>,<sp/>__LINE__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_FATAL(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err_msg(ERR_FATAL,<sp/>FILELINE,<sp/>__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="err_8h_1acc9aaeb2e0eb21f964913c14403d6795" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_FATAL_SYSTEM(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err_msg_system(ERR_FATAL,<sp/>FILELINE,<sp/>__VA_ARGS__);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="err_8h_1add0768056bee50c260c5623b4edd4038" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_ERROR_SYSTEM(...)<sp/><sp/><sp/><sp/><sp/>err_msg_system(ERR_ERROR,<sp/>FILELINE,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="err_8h_1a87a0a12135a290cf16d06b63fcfa0ccf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_ERROR(...)<sp/><sp/><sp/><sp/><sp/>err_msg(ERR_ERROR,<sp/>FILELINE,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="err_8h_1aed4c99044fd3e70b7b33a0298a2279b4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_WARN(...)<sp/><sp/><sp/><sp/><sp/><sp/>err_msg(ERR_WARN,<sp/>FILELINE,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="err_8h_1a92dbeb77b8e1facc7b15abab6ad19b73" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_INFO(...)<sp/><sp/><sp/><sp/><sp/><sp/>err_msg(ERR_INFO,<sp/>FILELINE,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="err_8h_1aaf6601c7c08a803c55f2d55fcd8d5759" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_INFOCONT(...)<sp/><sp/>err_msg(ERR_INFO,<sp/>NULL,<sp/>0,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="err_8h_1abe6c68e16406b5f7aee0ec70e1f7d7f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_INFO_NOFN(...)<sp/><sp/>err_msg(ERR_INFO,<sp/>NULL,<sp/>0,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SPHINX_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_DEBUG(...)<sp/>err_msg(ERR_DEBUG,<sp/>NULL,<sp/>0,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="err_8h_1af4689a912d0c49e9eb5244659d8702ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_DEBUG(...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290d" kindref="member">err_e</ref><sp/>{</highlight></codeline>
+<codeline lineno="135" refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290daadbdbedaf5c8e589e141c3c7ac56b418" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290daadbdbedaf5c8e589e141c3c7ac56b418" kindref="member">ERR_DEBUG</ref>,</highlight></codeline>
+<codeline lineno="136" refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c" kindref="member">ERR_INFO</ref>,</highlight></codeline>
+<codeline lineno="137" refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263" kindref="member">ERR_WARN</ref>,</highlight></codeline>
+<codeline lineno="138" refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022" kindref="member">ERR_ERROR</ref>,</highlight></codeline>
+<codeline lineno="139" refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e" kindref="member">ERR_FATAL</ref>,</highlight></codeline>
+<codeline lineno="140" refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da51a80ce92f9392669de4e57f0f8f915e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da51a80ce92f9392669de4e57f0f8f915e" kindref="member">ERR_MAX</ref></highlight></codeline>
+<codeline lineno="141" refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" refkind="member"><highlight class="normal">}<sp/><ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="144" refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="err_8h_1a013286d4dd133b9a716953ede1ddb0ae" kindref="member">err_msg</ref>(<ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref><sp/>lvl,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ln,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="147" refid="err_8h_1ad6a26dc9c533d592a6e98b85941bb200" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="err_8h_1ad6a26dc9c533d592a6e98b85941bb200" kindref="member">err_msg_system</ref>(<ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref><sp/>lvl,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ln,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="150" refid="err_8h_1a85783daf263f1638977c3e07b8f4725b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="err_8h_1a85783daf263f1638977c3e07b8f4725b" kindref="member">err_logfp_cb</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data,<sp/><ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref><sp/>level,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="err_8h_1acd85e2692b5204208b001e6219df9674" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="err_8h_1acd85e2692b5204208b001e6219df9674" kindref="member">err_cb_f</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>user_data,<sp/><ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/>...);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="163" refid="err_8h_1ac011c0d3b793abc19010c2255bce5c88" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="err_8h_1ac011c0d3b793abc19010c2255bce5c88" kindref="member">err_set_loglevel</ref>(<ref refid="err_8h_1a77b3e477e86186edab4963cbdb1899d5" kindref="member">err_lvl_t</ref><sp/>lvl);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="175" refid="err_8h_1a33774becab4a590524f8edb99f4a826b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="err_8h_1a33774becab4a590524f8edb99f4a826b" kindref="member">err_set_loglevel_str</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lvl);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="186" refid="err_8h_1a27fbaecbcb755fd9e5a503566b6ec542" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="err_8h_1a27fbaecbcb755fd9e5a503566b6ec542" kindref="member">err_set_callback</ref>(<ref refid="err_8h_1acd85e2692b5204208b001e6219df9674" kindref="member">err_cb_f</ref><sp/>callback,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*user_data);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="194" refid="err_8h_1adead72aa5614d8d305ab8710369ea01b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="err_8h_1adead72aa5614d8d305ab8710369ea01b" kindref="member">err_set_logfp</ref>(FILE<sp/>*stream);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="203" refid="err_8h_1a037fb194ca22cbbdd9252afa317a4f61" refkind="member"><highlight class="normal">FILE<sp/>*<ref refid="err_8h_1a037fb194ca22cbbdd9252afa317a4f61" kindref="member">err_get_logfp</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="214" refid="err_8h_1a2ff33abcf6f29dd25138f0d9846a26cd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="err_8h_1a2ff33abcf6f29dd25138f0d9846a26cd" kindref="member">err_set_logfile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!_ERR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/err.h"/>
+  </compounddef>
+</doxygen>

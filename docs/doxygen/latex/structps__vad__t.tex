@@ -1,0 +1,183 @@
+\doxysection{ps\+\_\+vad\+\_\+t Struct Reference}
+\hypertarget{structps__vad__t}{}\label{structps__vad__t}\index{ps\_vad\_t@{ps\_vad\_t}}
+
+
+Voice activity detector.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/vad.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__vad__t_a28a9c81b473d91a2fcd0fef37c32a4ac}{ps\+\_\+vad\+\_\+init}} (\mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\+\_\+vad\+\_\+mode\+\_\+t}} mode, int sample\+\_\+rate, double frame\+\_\+length)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__vad__t_aa851b665f47d6f6033c5963e453bc43e}{ps\+\_\+vad\+\_\+retain}} (\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}vad)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__vad__t_add5e5c92c593edbf45edd20624129370}{ps\+\_\+vad\+\_\+free}} (\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}vad)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__vad__t_a69fe34f7717228b0cc8ada126d1d5feb}{ps\+\_\+vad\+\_\+set\+\_\+input\+\_\+params}} (\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}vad, int sample\+\_\+rate, double frame\+\_\+length)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__vad__t_a1c692aeda85aa6122589404ef401e03c}{ps\+\_\+vad\+\_\+sample\+\_\+rate}} (\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}vad)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} size\+\_\+t \mbox{\hyperlink{structps__vad__t_ac35931b7e6c879dbda6508f302be4751}{ps\+\_\+vad\+\_\+frame\+\_\+size}} (\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}vad)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d}{ps\+\_\+vad\+\_\+class\+\_\+t}} \mbox{\hyperlink{structps__vad__t_aaf0e13d20d7b8988977ca8e5a9894cb7}{ps\+\_\+vad\+\_\+classify}} (\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}vad, const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}frame)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Voice activity detector. 
+
+\label{doc-func-members}
+\Hypertarget{structps__vad__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__vad__t_aaf0e13d20d7b8988977ca8e5a9894cb7}\index{ps\_vad\_t@{ps\_vad\_t}!ps\_vad\_classify@{ps\_vad\_classify}}
+\index{ps\_vad\_classify@{ps\_vad\_classify}!ps\_vad\_t@{ps\_vad\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_classify()}{ps\_vad\_classify()}}
+{\footnotesize\ttfamily \label{structps__vad__t_aaf0e13d20d7b8988977ca8e5a9894cb7} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d}{ps\+\_\+vad\+\_\+class\+\_\+t}} ps\+\_\+vad\+\_\+classify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vad}{, }\item[{const \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}} \texorpdfstring{$\ast$}{*}}]{frame}{}\end{DoxyParamCaption})}
+
+Classify a frame as speech or not speech.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vad} & Voice activity detector. \\
+\hline
+{\em frame} & Frame of input, {\bfseries{must}} contain the number of samples returned by \doxylink{structps__vad__t_ac35931b7e6c879dbda6508f302be4751}{ps\+\_\+vad\+\_\+frame\+\_\+size()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+PS\+\_\+\+VAD\+\_\+\+SPEECH, PS\+\_\+\+VAD\+\_\+\+NOT\+\_\+\+SPEECH, or PS\+\_\+\+VAD\+\_\+\+ERROR (see \doxylink{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d}{ps\+\_\+vad\+\_\+class\+\_\+t}). 
+\end{DoxyReturn}
+\Hypertarget{structps__vad__t_ac35931b7e6c879dbda6508f302be4751}\index{ps\_vad\_t@{ps\_vad\_t}!ps\_vad\_frame\_size@{ps\_vad\_frame\_size}}
+\index{ps\_vad\_frame\_size@{ps\_vad\_frame\_size}!ps\_vad\_t@{ps\_vad\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_frame\_size()}{ps\_vad\_frame\_size()}}
+{\footnotesize\ttfamily \label{structps__vad__t_ac35931b7e6c879dbda6508f302be4751} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} size\+\_\+t ps\+\_\+vad\+\_\+frame\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vad}{}\end{DoxyParamCaption})}
+
+Get the number of samples expected by voice activity detection.
+
+You {\bfseries{must}} always ensure that the buffers passed to \doxylink{structps__vad__t_aaf0e13d20d7b8988977ca8e5a9894cb7}{ps\+\_\+vad\+\_\+classify()} contain this number of samples (zero-\/pad them if necessary).
+
+
+\begin{DoxyParams}{Parameters}
+{\em vad} & Voice activity detector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Size, in samples, of the frames passed to \doxylink{structps__vad__t_aaf0e13d20d7b8988977ca8e5a9894cb7}{ps\+\_\+vad\+\_\+classify()}. 
+\end{DoxyReturn}
+\Hypertarget{structps__vad__t_add5e5c92c593edbf45edd20624129370}\index{ps\_vad\_t@{ps\_vad\_t}!ps\_vad\_free@{ps\_vad\_free}}
+\index{ps\_vad\_free@{ps\_vad\_free}!ps\_vad\_t@{ps\_vad\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_free()}{ps\_vad\_free()}}
+{\footnotesize\ttfamily \label{structps__vad__t_add5e5c92c593edbf45edd20624129370} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+vad\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vad}{}\end{DoxyParamCaption})}
+
+Release a pointer to voice activity detector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vad} & Voice activity detector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New reference count (0 if freed). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__vad__t_a28a9c81b473d91a2fcd0fef37c32a4ac}\index{ps\_vad\_t@{ps\_vad\_t}!ps\_vad\_init@{ps\_vad\_init}}
+\index{ps\_vad\_init@{ps\_vad\_init}!ps\_vad\_t@{ps\_vad\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_init()}{ps\_vad\_init()}}
+{\footnotesize\ttfamily \label{structps__vad__t_a28a9c81b473d91a2fcd0fef37c32a4ac} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+vad\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\+\_\+vad\+\_\+mode\+\_\+t}}}]{mode}{, }\item[{int}]{sample\+\_\+rate}{, }\item[{double}]{frame\+\_\+length}{}\end{DoxyParamCaption})}
+
+Initialize voice activity detection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & "{}\+Aggressiveness"{} of voice activity detection. Stricter values (see \doxylink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\+\_\+vad\+\_\+mode\+\_\+t}) are less likely to misclassify non-\/speech as speech. \\
+\hline
+{\em sample\+\_\+rate} & Sampling rate of input, or 0 for default (which can be obtained with \doxylink{structps__vad__t_a1c692aeda85aa6122589404ef401e03c}{ps\+\_\+vad\+\_\+sample\+\_\+rate()}). Only 8000, 16000, 32000, 48000 are directly supported. See \doxylink{structps__vad__t_a69fe34f7717228b0cc8ada126d1d5feb}{ps\+\_\+vad\+\_\+set\+\_\+input\+\_\+params()} for more information. \\
+\hline
+{\em frame\+\_\+length} & Frame length in seconds, or 0.\+0 for the default. Only 0.\+01, 0.\+02, 0.\+03 currently supported. {\bfseries{Actual}} value may differ, you must use \doxylink{vad_8h_a8605289aba98c9ef20a53d77fd1bcfe4}{ps\+\_\+vad\+\_\+frame\+\_\+length()} to obtain it. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+VAD object or NULL on failure (invalid parameter for instance). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__vad__t_aa851b665f47d6f6033c5963e453bc43e}\index{ps\_vad\_t@{ps\_vad\_t}!ps\_vad\_retain@{ps\_vad\_retain}}
+\index{ps\_vad\_retain@{ps\_vad\_retain}!ps\_vad\_t@{ps\_vad\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_retain()}{ps\_vad\_retain()}}
+{\footnotesize\ttfamily \label{structps__vad__t_aa851b665f47d6f6033c5963e453bc43e} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+vad\+\_\+retain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vad}{}\end{DoxyParamCaption})}
+
+Retain a pointer to voice activity detector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vad} & Voice activity detector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Voice activity detector with incremented reference count. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__vad__t_a1c692aeda85aa6122589404ef401e03c}\index{ps\_vad\_t@{ps\_vad\_t}!ps\_vad\_sample\_rate@{ps\_vad\_sample\_rate}}
+\index{ps\_vad\_sample\_rate@{ps\_vad\_sample\_rate}!ps\_vad\_t@{ps\_vad\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_sample\_rate()}{ps\_vad\_sample\_rate()}}
+{\footnotesize\ttfamily \label{structps__vad__t_a1c692aeda85aa6122589404ef401e03c} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+vad\+\_\+sample\+\_\+rate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vad}{}\end{DoxyParamCaption})}
+
+Get the sampling rate expected by voice activity detection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vad} & Voice activity detector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expected sampling rate. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__vad__t_a69fe34f7717228b0cc8ada126d1d5feb}\index{ps\_vad\_t@{ps\_vad\_t}!ps\_vad\_set\_input\_params@{ps\_vad\_set\_input\_params}}
+\index{ps\_vad\_set\_input\_params@{ps\_vad\_set\_input\_params}!ps\_vad\_t@{ps\_vad\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_set\_input\_params()}{ps\_vad\_set\_input\_params()}}
+{\footnotesize\ttfamily \label{structps__vad__t_a69fe34f7717228b0cc8ada126d1d5feb} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+vad\+\_\+set\+\_\+input\+\_\+params (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__vad__t}{ps\+\_\+vad\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{vad}{, }\item[{int}]{sample\+\_\+rate}{, }\item[{double}]{frame\+\_\+length}{}\end{DoxyParamCaption})}
+
+Set the input parameters for voice activity detection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample\+\_\+rate} & Sampling rate of input, or 0 for default (which can be obtained with \doxylink{structps__vad__t_a1c692aeda85aa6122589404ef401e03c}{ps\+\_\+vad\+\_\+sample\+\_\+rate()}). Only 8000, 16000, 32000, 48000 are directly supported, others will use the closest supported rate (within reason). Note that this means that the actual frame length may not be exactly the one requested, so you must always use the one returned by \doxylink{structps__vad__t_ac35931b7e6c879dbda6508f302be4751}{ps\+\_\+vad\+\_\+frame\+\_\+size()} (in samples) or \doxylink{vad_8h_a8605289aba98c9ef20a53d77fd1bcfe4}{ps\+\_\+vad\+\_\+frame\+\_\+length()} (in seconds). \\
+\hline
+{\em frame\+\_\+length} & Requested frame length in seconds, or 0.\+0 for the default. Only 0.\+01, 0.\+02, 0.\+03 currently supported. {\bfseries{Actual frame length may be different, you must always use \doxylink{vad_8h_a8605289aba98c9ef20a53d77fd1bcfe4}{ps\+\_\+vad\+\_\+frame\+\_\+length()} to obtain it.}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success or -\/1 on error. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{vad_8h}{vad.\+h}}\end{DoxyCompactItemize}

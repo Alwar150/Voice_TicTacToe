@@ -1,0 +1,372 @@
+\doxysection{model.\+h}
+\hypertarget{model_8h_source}{}\label{model_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/model.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/model.h}}
+\mbox{\hyperlink{model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/\ c-\/basic-\/offset:4;\ indent-\/tabs-\/mode:\ nil\ -\/*-\/\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ ====================================================================}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Copyright\ (c)\ 1999-\/2022\ Carnegie\ Mellon\ University.\ \ All\ rights}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ reserved.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Redistribution\ and\ use\ in\ source\ and\ binary\ forms,\ with\ or\ without}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ modification,\ are\ permitted\ provided\ that\ the\ following\ conditions}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ are\ met:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ 1.\ Redistributions\ of\ source\ code\ must\ retain\ the\ above\ copyright}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer.\ }}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ 2.\ Redistributions\ in\ binary\ form\ must\ reproduce\ the\ above\ copyright}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer\ in}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ \ \ the\ documentation\ and/or\ other\ materials\ provided\ with\ the}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ \ \ distribution.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ PROVIDED\ \`{}\`{}AS\ IS''\ AND\ ANY\ EXPRESSED\ OR\ IMPLIED}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ WARRANTIES,\ INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ THE\ IMPLIED\ WARRANTIES}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ OF\ MERCHANTABILITY\ AND\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE\ ARE}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ DISCLAIMED.\ \ IN\ NO\ EVENT\ SHALL\ THE\ AUTHOR\ BE\ LIABLE\ FOR\ ANY\ DIRECT,}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ INDIRECT,\ INCIDENTAL,\ SPECIAL,\ EXEMPLARY,\ OR\ CONSEQUENTIAL\ DAMAGES}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ (INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ PROCUREMENT\ OF\ SUBSTITUTE\ GOODS\ OR}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ SERVICES;\ LOSS\ OF\ USE,\ DATA,\ OR\ PROFITS;\ OR\ BUSINESS\ INTERRUPTION)}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ HOWEVER\ CAUSED\ AND\ ON\ ANY\ THEORY\ OF\ LIABILITY,\ WHETHER\ IN\ CONTRACT,}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ STRICT\ LIABILITY,\ OR\ TORT\ (INCLUDING\ NEGLIGENCE\ OR\ OTHERWISE)}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ ARISING\ IN\ ANY\ WAY\ OUT\ OF\ THE\ USE\ OF\ THIS\ SOFTWARE,\ EVEN\ IF\ ADVISED}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ OF\ THE\ POSSIBILITY\ OF\ SUCH\ DAMAGE.}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ ====================================================================}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#ifndef\ \_\_PS\_MODEL\_H\_\_}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ \_\_PS\_MODEL\_H\_\_}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prim__type_8h}{pocketsphinx/prim\_type.h}}>}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{logmath_8h}{pocketsphinx/logmath.h}}>}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{export_8h}{pocketsphinx/export.h}}>}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00050\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#if\ 0}}
+\DoxyCodeLine{00053\ \}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{comment}{/*\ Forward\ declaration\ to\ avoid\ include\ loops\ */}}
+\DoxyCodeLine{00057\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }cmd\_ln\_s\ \mbox{\hyperlink{structps__config__t}{ps\_config\_t}};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }jsgf\_s\ \mbox{\hyperlink{structjsgf__t}{jsgf\_t}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }jsgf\_rule\_s\ \mbox{\hyperlink{structjsgf__rule__t}{jsgf\_rule\_t}};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }fsg\_model\_s\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ngram\_model\_s\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00096\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00097\ \mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *\mbox{\hyperlink{structjsgf__t_a5988aae174c3ea4a8458c68dd737272e}{jsgf\_parse\_file}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename,\ \mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *parent);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00107\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00108\ \mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *\mbox{\hyperlink{structjsgf__t_a2c261446ef7e5eb84b4c0cd7ea403a4c}{jsgf\_parse\_string}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string},\ \mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *parent);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structjsgf__t_a81f8acb8b49c1ef7cb695321f5c9b7f5}{jsgf\_grammar\_name}}(\mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *jsgf);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00121\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00122\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structjsgf__t_ad33f663dddfec516122f2ee0d5c58b89}{jsgf\_grammar\_free}}(\mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *jsgf);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00128\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00129\ \mbox{\hyperlink{structjsgf__rule__t}{jsgf\_rule\_t}}\ *\mbox{\hyperlink{structjsgf__t_ab0bf791d1ae06bf952d30401377767c8}{jsgf\_get\_rule}}(\mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *grammar,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00135\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00136\ \mbox{\hyperlink{structjsgf__rule__t}{jsgf\_rule\_t}}\ *\mbox{\hyperlink{structjsgf__t_ac4c63ff31f11effef78a867cc61c9937}{jsgf\_get\_public\_rule}}(\mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *grammar);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00142\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00143\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structjsgf__rule__t_ae28ad8446aa8d384fe82cbbb1910cfe1}{jsgf\_rule\_name}}(\mbox{\hyperlink{structjsgf__rule__t}{jsgf\_rule\_t}}\ *rule);}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00149\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structjsgf__rule__t_ab2abfa878f7efbbc04d562ddb9ce6200}{jsgf\_rule\_public}}(\mbox{\hyperlink{structjsgf__rule__t}{jsgf\_rule\_t}}\ *rule);}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00156\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }hash\_iter\_s\ \mbox{\hyperlink{structjsgf__rule__iter__t}{jsgf\_rule\_iter\_t}};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00162\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00163\ \mbox{\hyperlink{structjsgf__rule__iter__t}{jsgf\_rule\_iter\_t}}\ *\mbox{\hyperlink{structjsgf__t_ab78d604e387eb282d66e1017bf2ef718}{jsgf\_rule\_iter}}(\mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *grammar);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00169\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00170\ \mbox{\hyperlink{structjsgf__rule__iter__t}{jsgf\_rule\_iter\_t}}\ *\mbox{\hyperlink{structjsgf__rule__iter__t_a1cd6f2f32b5d8760e4e40147b134da6c}{jsgf\_rule\_iter\_next}}(\mbox{\hyperlink{structjsgf__rule__iter__t}{jsgf\_rule\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00176\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00177\ \mbox{\hyperlink{structjsgf__rule__t}{jsgf\_rule\_t}}\ *\mbox{\hyperlink{structjsgf__rule__iter__t_abe051dab5b1c6357aae9115d1d704fe5}{jsgf\_rule\_iter\_rule}}(\mbox{\hyperlink{structjsgf__rule__iter__t}{jsgf\_rule\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00183\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00184\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structjsgf__rule__iter__t_ac1b4559a440db063eb21e9d4ade59621}{jsgf\_rule\_iter\_free}}(\mbox{\hyperlink{structjsgf__rule__iter__t}{jsgf\_rule\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00190\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00191\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *\mbox{\hyperlink{structjsgf__t_a3351602453d463a51eb6e9fa832dc956}{jsgf\_build\_fsg}}(\mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *grammar,\ \mbox{\hyperlink{structjsgf__rule__t}{jsgf\_rule\_t}}\ *rule,}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ lw);}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00200\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00201\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *\mbox{\hyperlink{structfsg__model__t_ad86d12c175458f89eadafcbb1cffcfa0}{jsgf\_read\_file}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *file,\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *\ lmath,\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ lw);}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00209\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00210\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *\mbox{\hyperlink{structfsg__model__t_a605c88e824bb9fe9ad20a0aa76f93deb}{jsgf\_read\_string}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string},\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *\ lmath,\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ lw);}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00219\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00220\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structjsgf__t_ab31ecf0ecdde813d744f7830f29e58db}{jsgf\_write\_fsg}}(\mbox{\hyperlink{structjsgf__t}{jsgf\_t}}\ *grammar,\ \mbox{\hyperlink{structjsgf__rule__t}{jsgf\_rule\_t}}\ *rule,\ FILE\ *outfh);}
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00228\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00229\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *\mbox{\hyperlink{structfsg__model__t_ae660cd51180526f7f3050fa7413592b6}{fsg\_model\_retain}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg);}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00237\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00238\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structfsg__model__t_a1ef2610a66f069de1a150083bd34a540}{fsg\_model\_free}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg);}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00280\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00281\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *\mbox{\hyperlink{structfsg__model__t_a392a842691581158195e2a3cd5d03a6e}{fsg\_model\_readfile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *file,\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ lw);}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00287\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00288\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *\mbox{\hyperlink{structfsg__model__t_a6f69628ed178ff0bf6f10fd0e24b0158}{fsg\_model\_read}}(FILE\ *fp,\ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath,\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ lw);}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00297\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00298\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structfsg__model__t_a6ddaf82f2f00dbf11c8faf28f2d4d71a}{fsg\_model\_accept}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *words);}
+\DoxyCodeLine{00299\ }
+\DoxyCodeLine{00304\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00305\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structfsg__model__t_a22a8bc6a9385527a8c0cb1bc39afe7b2}{fsg\_model\_write}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg,\ FILE\ *fp);}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00311\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00312\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structfsg__model__t_aae7c2ed126099be78ab9e6d451a5d324}{fsg\_model\_writefile}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *file);}
+\DoxyCodeLine{00313\ }
+\DoxyCodeLine{00318\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00319\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structfsg__model__t_a64ed5023c8a741daf7a339003b087007}{fsg\_model\_write\_fsm}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg,\ FILE\ *fp);}
+\DoxyCodeLine{00320\ }
+\DoxyCodeLine{00325\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00326\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structfsg__model__t_a6c6d82f65a090b66176ba26386d6e6f8}{fsg\_model\_writefile\_fsm}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *file);}
+\DoxyCodeLine{00327\ }
+\DoxyCodeLine{00332\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00333\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structfsg__model__t_ab980ba7d0ca500ec42f77e3ad956a546}{fsg\_model\_write\_symtab}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg,\ FILE\ *file);}
+\DoxyCodeLine{00334\ }
+\DoxyCodeLine{00339\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00340\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structfsg__model__t_a2f075e2fd97cdc5e77ffdbe5e68f5359}{fsg\_model\_writefile\_symtab}}(\mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *file);}
+\DoxyCodeLine{00341\ }
+\DoxyCodeLine{00346\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ngram\_class\_s\ \mbox{\hyperlink{structngram__class__t}{ngram\_class\_t}};}
+\DoxyCodeLine{00347\ }
+\DoxyCodeLine{00352\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74}{ngram\_file\_type\_e}}\ \{}
+\DoxyCodeLine{00353\ \ \ \ \ \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a2cf596c8b0c63a3a0ba1fe33326cc796}{NGRAM\_INVALID}}\ =\ -\/1,\ }
+\DoxyCodeLine{00354\ \ \ \ \ \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a441701bf8ae0a2b79716feb31b5f257a}{NGRAM\_AUTO}},\ \ }
+\DoxyCodeLine{00355\ \ \ \ \ \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a77ef2341d826b3cc8b836e3af1efba99}{NGRAM\_ARPA}},\ \ }
+\DoxyCodeLine{00356\ \ \ \ \ \mbox{\hyperlink{model_8h_a406c0d64c15a9d1749d07c8ab6e0ae74a748d515b444b38b037f3cc90a6bfded4}{NGRAM\_BIN}}\ \ \ \ }
+\DoxyCodeLine{00357\ \}\ \mbox{\hyperlink{model_8h_ac3bc97ce5f4139db88d4360b19497f97}{ngram\_file\_type\_t}};}
+\DoxyCodeLine{00358\ }
+\DoxyCodeLine{00359\ \textcolor{preprocessor}{\#define\ NGRAM\_INVALID\_WID\ -\/1\ }\textcolor{preprocessor}{}}
+\DoxyCodeLine{00360\ }
+\DoxyCodeLine{00381\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00382\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_aeafdc8c1ed78badad4eec401f2be0d52}{ngram\_model\_read}}(\mbox{\hyperlink{structps__config__t}{ps\_config\_t}}\ *config,}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *file\_name,}
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{model_8h_ac3bc97ce5f4139db88d4360b19497f97}{ngram\_file\_type\_t}}\ file\_type,}
+\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath);}
+\DoxyCodeLine{00386\ }
+\DoxyCodeLine{00393\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00394\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structngram__model__t_ac13ceae0ee6a4e6c681fce688dc8c0d9}{ngram\_model\_write}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *file\_name,}
+\DoxyCodeLine{00395\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{model_8h_ac3bc97ce5f4139db88d4360b19497f97}{ngram\_file\_type\_t}}\ format);}
+\DoxyCodeLine{00396\ }
+\DoxyCodeLine{00403\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00404\ \mbox{\hyperlink{model_8h_ac3bc97ce5f4139db88d4360b19497f97}{ngram\_file\_type\_t}}\ \mbox{\hyperlink{structngram__model__t_aa393c18a1d74101aa0838777d6206aa4}{ngram\_file\_name\_to\_type}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *file\_name);}
+\DoxyCodeLine{00405\ }
+\DoxyCodeLine{00412\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00413\ \mbox{\hyperlink{model_8h_ac3bc97ce5f4139db88d4360b19497f97}{ngram\_file\_type\_t}}\ \mbox{\hyperlink{structngram__model__t_a25e936a2d8018b62a310b1f2dceca893}{ngram\_str\_to\_type}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *str\_name);}
+\DoxyCodeLine{00414\ }
+\DoxyCodeLine{00422\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00423\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structngram__model__t_a707725f9978ab51b42b256a22a0bc893}{ngram\_type\_to\_str}}(\textcolor{keywordtype}{int}\ type);}
+\DoxyCodeLine{00424\ }
+\DoxyCodeLine{00431\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00432\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_a8a0b271f1941efd8e8bd3890361e2278}{ngram\_model\_retain}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model);}
+\DoxyCodeLine{00433\ }
+\DoxyCodeLine{00440\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00441\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structngram__model__t_a8c2b839ff306dd4f49cb6129d7bd6be2}{ngram\_model\_free}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model);}
+\DoxyCodeLine{00442\ }
+\DoxyCodeLine{00447\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771}{ngram\_case\_e}}\ \{}
+\DoxyCodeLine{00448\ \ \ \ \ \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771a05b5ea035cb1035af6012f612206dba6}{NGRAM\_UPPER}},\ \ }
+\DoxyCodeLine{00449\ \ \ \ \ \mbox{\hyperlink{model_8h_aad16a0a1edf29ba8c0df43959c0c4771acd2c3b5a6b95f580cb230c4cdda22be0}{NGRAM\_LOWER}}\ \ \ }
+\DoxyCodeLine{00450\ \}\ \mbox{\hyperlink{model_8h_afbe3bcb7dd0de6bc550cc7d4e75de403}{ngram\_case\_t}};}
+\DoxyCodeLine{00451\ }
+\DoxyCodeLine{00460\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00461\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structngram__model__t_a52158fdb753671b7fd02308cb1472927}{ngram\_model\_casefold}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \textcolor{keywordtype}{int}\ kase);}
+\DoxyCodeLine{00462\ }
+\DoxyCodeLine{00476\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00477\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structngram__model__t_abde63dcb3313606881368c3b6f9aa239}{ngram\_model\_apply\_weights}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,}
+\DoxyCodeLine{00478\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ lw,\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ wip);}
+\DoxyCodeLine{00479\ }
+\DoxyCodeLine{00488\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00489\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ \mbox{\hyperlink{structngram__model__t_a0257b1cf0fb42820b0d3589ecf7e3fa7}{ngram\_model\_get\_weights}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *out\_log\_wip);}
+\DoxyCodeLine{00490\ }
+\DoxyCodeLine{00525\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00526\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a570f30bedb4c10ebbc1313e4bdbd33b8}{ngram\_score}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *word,\ ...);}
+\DoxyCodeLine{00527\ }
+\DoxyCodeLine{00533\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00534\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a698d9fbc74d3e0aa555e9195d1c3405b}{ngram\_tg\_score}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,}
+\DoxyCodeLine{00535\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ w3,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ w2,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ w1,}
+\DoxyCodeLine{00536\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *n\_used);}
+\DoxyCodeLine{00537\ }
+\DoxyCodeLine{00543\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00544\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_aa12e8b5771775ed7b9aabc9eec915293}{ngram\_bg\_score}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,}
+\DoxyCodeLine{00545\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ w2,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ w1,}
+\DoxyCodeLine{00546\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *n\_used);}
+\DoxyCodeLine{00547\ }
+\DoxyCodeLine{00553\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00554\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a05a3334a525628d40b3b5230602cb836}{ngram\_ng\_score}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ wid,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *history,}
+\DoxyCodeLine{00555\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ n\_hist,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *n\_used);}
+\DoxyCodeLine{00556\ }
+\DoxyCodeLine{00568\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00569\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a23c66f2666439f6408c616d0923b6510}{ngram\_probv}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *word,\ ...);}
+\DoxyCodeLine{00570\ }
+\DoxyCodeLine{00582\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00583\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a8df8728f2694b9beb840db4ff1bdea9a}{ngram\_prob}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keyword}{const}\ *words,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ n);}
+\DoxyCodeLine{00584\ }
+\DoxyCodeLine{00593\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00594\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_aee36470f55476b5780f8e460d2e12971}{ngram\_ng\_prob}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ wid,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *history,}
+\DoxyCodeLine{00595\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ n\_hist,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *n\_used);}
+\DoxyCodeLine{00596\ }
+\DoxyCodeLine{00609\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00610\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_afee8cd8b84530cb2f9261d6a0a7e4df7}{ngram\_score\_to\_prob}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ score);}
+\DoxyCodeLine{00611\ }
+\DoxyCodeLine{00617\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00618\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a64b4a9be184174ff12093595e4c2138f}{ngram\_wid}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *word);}
+\DoxyCodeLine{00619\ }
+\DoxyCodeLine{00625\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00626\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structngram__model__t_af22005a8c3c282a5c3dae7074f0d754a}{ngram\_word}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ wid);}
+\DoxyCodeLine{00627\ }
+\DoxyCodeLine{00642\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00643\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a70334434c7a99094c29faa1ce7bd26e5}{ngram\_unknown\_wid}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model);}
+\DoxyCodeLine{00644\ }
+\DoxyCodeLine{00650\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00651\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_abdbf72c83f8bd56468c13e2b45d578d8}{ngram\_zero}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model);}
+\DoxyCodeLine{00652\ }
+\DoxyCodeLine{00658\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00659\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a670cd1630fd4920c0c6db89c1eb7ee51}{ngram\_model\_get\_size}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model);}
+\DoxyCodeLine{00660\ }
+\DoxyCodeLine{00666\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00667\ \mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structngram__model__t_a5c0c579caa4f3a1652bb2a0d62b5e9b6}{ngram\_model\_get\_counts}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model);}
+\DoxyCodeLine{00668\ }
+\DoxyCodeLine{00676\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ngram\_iter\_s\ \mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}};}
+\DoxyCodeLine{00677\ }
+\DoxyCodeLine{00687\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00688\ \mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *\mbox{\hyperlink{structngram__model__t_a3514a603036a7b9adc210e6b7980f02c}{ngram\_model\_mgrams}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \textcolor{keywordtype}{int}\ m);}
+\DoxyCodeLine{00689\ }
+\DoxyCodeLine{00695\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00696\ \mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *\mbox{\hyperlink{structngram__model__t_ab276f12c7f17b5f0505ed2317fe0de2a}{ngram\_iter}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *word,\ ...);}
+\DoxyCodeLine{00697\ }
+\DoxyCodeLine{00703\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00704\ \mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *\mbox{\hyperlink{structngram__model__t_aacc908372b71dd2ab7a3eef0d3bda08c}{ngram\_ng\_iter}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ wid,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *history,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ n\_hist);}
+\DoxyCodeLine{00705\ }
+\DoxyCodeLine{00715\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00716\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \textcolor{keyword}{const}\ *\mbox{\hyperlink{structngram__iter__t_a3d7fe2b1fa4b1d0fe98222f82eb0063c}{ngram\_iter\_get}}(\mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *itor,}
+\DoxyCodeLine{00717\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *out\_score,}
+\DoxyCodeLine{00718\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ *out\_bowt);}
+\DoxyCodeLine{00719\ }
+\DoxyCodeLine{00726\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00727\ \mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *\mbox{\hyperlink{structngram__iter__t_a95f095adb2dc9ac85393cbb2b2feb9f3}{ngram\_iter\_successors}}(\mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00728\ }
+\DoxyCodeLine{00733\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00734\ \mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *\mbox{\hyperlink{structngram__iter__t_ac9d66c8e7f546f56dbe7ab2aa4a46174}{ngram\_iter\_next}}(\mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00735\ }
+\DoxyCodeLine{00740\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00741\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structngram__iter__t_ac23506fc4549b2226ef32723f6b73c4f}{ngram\_iter\_free}}(\mbox{\hyperlink{structngram__iter__t}{ngram\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00742\ }
+\DoxyCodeLine{00756\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00757\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a1c9dfbd63b9274cb29e70331b14e85d1}{ngram\_model\_add\_word}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,}
+\DoxyCodeLine{00758\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *word,\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ weight);}
+\DoxyCodeLine{00759\ }
+\DoxyCodeLine{00774\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00775\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a751eb92b17f5a9399da6b7e2492e75d3}{ngram\_model\_read\_classdef}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,}
+\DoxyCodeLine{00776\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *file\_name);}
+\DoxyCodeLine{00777\ }
+\DoxyCodeLine{00787\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00788\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_aa95e6aa73ec5dd9ed3fad5aa1e717a9e}{ngram\_model\_add\_class}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,}
+\DoxyCodeLine{00789\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *classname,}
+\DoxyCodeLine{00790\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ classweight,}
+\DoxyCodeLine{00791\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ **words,}
+\DoxyCodeLine{00792\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ *weights,}
+\DoxyCodeLine{00793\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ n\_words);}
+\DoxyCodeLine{00794\ }
+\DoxyCodeLine{00805\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00806\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a29c673743c81c4633dc790aa75048695}{ngram\_model\_add\_class\_word}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,}
+\DoxyCodeLine{00807\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *classname,}
+\DoxyCodeLine{00808\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *word,}
+\DoxyCodeLine{00809\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ weight);}
+\DoxyCodeLine{00810\ }
+\DoxyCodeLine{00836\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00837\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_a9205a3b0d63d57b5f100c062f2202e46}{ngram\_model\_set\_init}}(\mbox{\hyperlink{structps__config__t}{ps\_config\_t}}\ *config,}
+\DoxyCodeLine{00838\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ **models,}
+\DoxyCodeLine{00839\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ **names,}
+\DoxyCodeLine{00840\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ *weights,}
+\DoxyCodeLine{00841\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ n\_models);}
+\DoxyCodeLine{00842\ }
+\DoxyCodeLine{00874\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00875\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_a53ac5c6475a5e3c72250ee2c527bc74f}{ngram\_model\_set\_read}}(\mbox{\hyperlink{structps__config__t}{ps\_config\_t}}\ *config,}
+\DoxyCodeLine{00876\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *lmctlfile,}
+\DoxyCodeLine{00877\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structlogmath__t}{logmath\_t}}\ *lmath);}
+\DoxyCodeLine{00878\ }
+\DoxyCodeLine{00883\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00884\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a8c43adf4ab5570cfb101dfaaaacc3171}{ngram\_model\_set\_count}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set);}
+\DoxyCodeLine{00885\ }
+\DoxyCodeLine{00890\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ngram\_model\_set\_iter\_s\ \mbox{\hyperlink{structngram__model__set__iter__t}{ngram\_model\_set\_iter\_t}};}
+\DoxyCodeLine{00891\ }
+\DoxyCodeLine{00898\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00899\ \mbox{\hyperlink{structngram__model__set__iter__t}{ngram\_model\_set\_iter\_t}}\ *\mbox{\hyperlink{structngram__model__t_a69f503c63b727b1d47fdb5ca138f784b}{ngram\_model\_set\_iter}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set);}
+\DoxyCodeLine{00900\ }
+\DoxyCodeLine{00907\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00908\ \mbox{\hyperlink{structngram__model__set__iter__t}{ngram\_model\_set\_iter\_t}}\ *\mbox{\hyperlink{structngram__model__set__iter__t_a0b5d514788a89e94a9294444345644fa}{ngram\_model\_set\_iter\_next}}(\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\_model\_set\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00909\ }
+\DoxyCodeLine{00914\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00915\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structngram__model__set__iter__t_aaf476373eb2e9c3d6c7efac3a4b1a1b2}{ngram\_model\_set\_iter\_free}}(\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\_model\_set\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00916\ }
+\DoxyCodeLine{00925\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00926\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__set__iter__t_a969431cd3b760dd3aff5be7bc80eb520}{ngram\_model\_set\_iter\_model}}(\mbox{\hyperlink{structngram__model__set__iter__t}{ngram\_model\_set\_iter\_t}}\ *itor,}
+\DoxyCodeLine{00927\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ **lmname);}
+\DoxyCodeLine{00928\ }
+\DoxyCodeLine{00936\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00937\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_a595d4dd1a5645cc9793d70b07d36b99d}{ngram\_model\_set\_select}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set,}
+\DoxyCodeLine{00938\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00939\ }
+\DoxyCodeLine{00947\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00948\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_a1d0c5a114c9ab7337008712f7b5ba48c}{ngram\_model\_set\_lookup}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set,}
+\DoxyCodeLine{00949\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00950\ }
+\DoxyCodeLine{00955\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00956\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structngram__model__t_a1d5b87cea3d87fac3da33a1429cb86f3}{ngram\_model\_set\_current}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set);}
+\DoxyCodeLine{00957\ }
+\DoxyCodeLine{00967\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00968\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_a3f3c6d4b5cee2ed64f0c4ba4b5f2c1a4}{ngram\_model\_set\_interp}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set,}
+\DoxyCodeLine{00969\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **names,}
+\DoxyCodeLine{00970\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ *weights);}
+\DoxyCodeLine{00971\ }
+\DoxyCodeLine{00985\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00986\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_a1d663526e16a5d0d9f5aef2129cd1073}{ngram\_model\_set\_add}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set,}
+\DoxyCodeLine{00987\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *model,}
+\DoxyCodeLine{00988\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,}
+\DoxyCodeLine{00989\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}\ weight,}
+\DoxyCodeLine{00990\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ reuse\_widmap);}
+\DoxyCodeLine{00991\ }
+\DoxyCodeLine{01001\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{01002\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structngram__model__t_a5a6ecb8351cbe2cf3d60ca1ac465d701}{ngram\_model\_set\_remove}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set,}
+\DoxyCodeLine{01003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,}
+\DoxyCodeLine{01004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ reuse\_widmap);}
+\DoxyCodeLine{01005\ }
+\DoxyCodeLine{01010\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{01011\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structngram__model__t_ac0434afb29daf257ff9d37ae09fe3024}{ngram\_model\_set\_map\_words}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set,}
+\DoxyCodeLine{01012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ **words,}
+\DoxyCodeLine{01013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ n\_words);}
+\DoxyCodeLine{01014\ }
+\DoxyCodeLine{01023\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{01024\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_a9c78bb0ab03a57ecbf6dbc9ef5953cc2}{ngram\_model\_set\_current\_wid}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set,}
+\DoxyCodeLine{01025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ set\_wid);}
+\DoxyCodeLine{01026\ }
+\DoxyCodeLine{01037\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{01038\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ \mbox{\hyperlink{structngram__model__t_aa6fadb5970bdad9eeb69532cb54214eb}{ngram\_model\_set\_known\_wid}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *set,\ \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}}\ set\_wid);}
+\DoxyCodeLine{01039\ }
+\DoxyCodeLine{01044\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{01045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structngram__model__t_a071b30df2cd1ac5f7c2061fde34b67a4}{ngram\_model\_flush}}(\mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *lm);}
+\DoxyCodeLine{01046\ }
+\DoxyCodeLine{01047\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{01048\ \}}
+\DoxyCodeLine{01049\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{01050\ }
+\DoxyCodeLine{01051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_PS\_MODEL\_H\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

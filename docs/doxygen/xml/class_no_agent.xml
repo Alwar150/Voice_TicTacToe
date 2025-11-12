@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_no_agent" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>NoAgent</compoundname>
+    <basecompoundref refid="class_a_i_agent" prot="public" virt="non-virtual">AIAgent</basecompoundref>
+    <includes refid="_no_agent_8h" local="no">NoAgent.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_no_agent_1a7561314430d43346239d9a2dcc66e501" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NoAgent::NoAgent</definition>
+        <argsstring>()</argsstring>
+        <name>NoAgent</name>
+        <qualifiedname>NoAgent::NoAgent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h" line="21" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_no_agent_1a9adad4582932d6a36914660842a20a96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NoAgent::~NoAgent</definition>
+        <argsstring>() override</argsstring>
+        <name>~NoAgent</name>
+        <qualifiedname>NoAgent::~NoAgent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h" line="22" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_no_agent_1a4c20d7b44b9b7061ae60893e577a3575" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int NoAgent::play</definition>
+        <argsstring>(const Board &amp;board) override</argsstring>
+        <name>play</name>
+        <qualifiedname>NoAgent::play</qualifiedname>
+        <reimplements refid="class_a_i_agent_1ac137ab96f5f7c53e74d4c9c7342021eb">play</reimplements>
+        <param>
+          <type>const <ref refid="class_board" kindref="compound">Board</ref> &amp;</type>
+          <declname>board</declname>
+        </param>
+        <briefdescription>
+<para>play does nothing to simulate a null agent behaviour. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>board</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a reference to the board model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an invalid cell location to not trigger any kind of updates. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h" line="28" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h" bodystart="28" bodyend="31"/>
+        <references refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" compoundref="_t_t_t_common_types_8h" startline="11">defaults::INVALID_CELL</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_no_agent" kindref="compound">NoAgent</ref> class is an empty class that does not play, it specifies the null object behaviour, so it represents the lack of an AI agent, which is useful to avoid using if conditions in code when checking on the existence of an AI agent. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class has no CPP file as it does not have any implementation details. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AIAgent</label>
+        <link refid="class_a_i_agent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NoAgent</label>
+        <link refid="class_no_agent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AIAgent</label>
+        <link refid="class_a_i_agent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Board</label>
+        <link refid="class_board"/>
+      </node>
+      <node id="1">
+        <label>NoAgent</label>
+        <link refid="class_no_agent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h" line="18" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h" bodystart="19" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_a_i_agent_1a9c5f515eb3df94792ba02da8ac899cf5" prot="public" virt="non-virtual"><scope>NoAgent</scope><name>AIAgent</name></member>
+      <member refid="class_player_1a088227ab53747cc4955b0a3859b69a84" prot="protected" virt="non-virtual"><scope>NoAgent</scope><name>board_</name></member>
+      <member refid="class_player_1ae8c600761eeb36ef938927dd87a87011" prot="protected" virt="non-virtual"><scope>NoAgent</scope><name>mark_</name></member>
+      <member refid="class_no_agent_1a7561314430d43346239d9a2dcc66e501" prot="public" virt="non-virtual"><scope>NoAgent</scope><name>NoAgent</name></member>
+      <member refid="class_no_agent_1a4c20d7b44b9b7061ae60893e577a3575" prot="public" virt="virtual"><scope>NoAgent</scope><name>play</name></member>
+      <member refid="class_player_1af85db5d05b014bf19d873038c56dc7ed" prot="public" virt="pure-virtual" ambiguityscope="Player::"><scope>NoAgent</scope><name>play</name></member>
+      <member refid="class_player_1a8c885f35774ed96d466e67194b74de95" prot="public" virt="non-virtual"><scope>NoAgent</scope><name>Player</name></member>
+      <member refid="class_player_1af9436bec15f91ee87fb86907b720be52" prot="public" virt="non-virtual"><scope>NoAgent</scope><name>playerFinished</name></member>
+      <member refid="class_a_i_agent_1ae694da05657ba286840b533523d9c64f" prot="public" virt="virtual"><scope>NoAgent</scope><name>reset</name></member>
+      <member refid="class_a_i_agent_1a5614d02341e652bd2df4f3b2fb4d44c3" prot="public" virt="virtual"><scope>NoAgent</scope><name>~AIAgent</name></member>
+      <member refid="class_no_agent_1a9adad4582932d6a36914660842a20a96" prot="public" virt="non-virtual"><scope>NoAgent</scope><name>~NoAgent</name></member>
+      <member refid="class_player_1a8981c201ffb2270c0b6dbd467b627376" prot="public" virt="virtual"><scope>NoAgent</scope><name>~Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

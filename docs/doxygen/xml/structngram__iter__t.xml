@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structngram__iter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ngram_iter_t</compoundname>
+    <includes refid="model_8h" local="no">pocketsphinx/model.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structngram__iter__t_1a3d7fe2b1fa4b1d0fe98222f82eb0063c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> const *</type>
+        <definition>POCKETSPHINX_EXPORT int32 const  * ngram_iter_get</definition>
+        <argsstring>(ngram_iter_t *itor, int32 *out_score, int32 *out_bowt)</argsstring>
+        <name>ngram_iter_get</name>
+        <qualifiedname>ngram_iter_t::ngram_iter_get</qualifiedname>
+        <param>
+          <type><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> *</type>
+          <declname>out_score</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref> *</type>
+          <declname>out_bowt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get information from the current M-gram in an iterator.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out_score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Score for this M-gram (including any word penalty and language weight). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_bowt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Backoff weight for this M-gram. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>read-only array of word IDs. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="716" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="716" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structngram__iter__t_1a95f095adb2dc9ac85393cbb2b2feb9f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ngram_iter_t * ngram_iter_successors</definition>
+        <argsstring>(ngram_iter_t *itor)</argsstring>
+        <name>ngram_iter_successors</name>
+        <qualifiedname>ngram_iter_t::ngram_iter_successors</qualifiedname>
+        <param>
+          <type><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Iterate over all M-gram successors of an M-1-gram.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator pointing to the M-1-gram to get successors of. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="727" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="727" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structngram__iter__t_1ac9d66c8e7f546f56dbe7ab2aa4a46174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ngram_iter_t * ngram_iter_next</definition>
+        <argsstring>(ngram_iter_t *itor)</argsstring>
+        <name>ngram_iter_next</name>
+        <qualifiedname>ngram_iter_t::ngram_iter_next</qualifiedname>
+        <param>
+          <type><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance an M-gram iterator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="734" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="734" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structngram__iter__t_1ac23506fc4549b2226ef32723f6b73c4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ngram_iter_free</definition>
+        <argsstring>(ngram_iter_t *itor)</argsstring>
+        <name>ngram_iter_free</name>
+        <qualifiedname>ngram_iter_t::ngram_iter_free</qualifiedname>
+        <param>
+          <type><ref refid="structngram__iter__t" kindref="compound">ngram_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate an M-gram iterator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="741" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="741" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>M-gram (yes, <bold>M</bold>-gram) iterator object. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an iterator over the N-Gram successors of a given word or N-1-Gram, that is why it is called &quot;M&quot; and not &quot;N&quot;. </para>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="670" column="1"/>
+    <listofallmembers>
+      <member refid="structngram__iter__t_1ac23506fc4549b2226ef32723f6b73c4f" prot="public" virt="non-virtual"><scope>ngram_iter_t</scope><name>ngram_iter_free</name></member>
+      <member refid="structngram__iter__t_1a3d7fe2b1fa4b1d0fe98222f82eb0063c" prot="public" virt="non-virtual"><scope>ngram_iter_t</scope><name>ngram_iter_get</name></member>
+      <member refid="structngram__iter__t_1ac9d66c8e7f546f56dbe7ab2aa4a46174" prot="public" virt="non-virtual"><scope>ngram_iter_t</scope><name>ngram_iter_next</name></member>
+      <member refid="structngram__iter__t_1a95f095adb2dc9ac85393cbb2b2feb9f3" prot="public" virt="non-virtual"><scope>ngram_iter_t</scope><name>ngram_iter_successors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

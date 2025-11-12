@@ -1,0 +1,682 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_t_t_t_controller" kind="class" language="C++" prot="public">
+    <compoundname>TTTController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="_t_t_t_controller_8h" local="no">TTTController.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_tic_tac_toe_game" kindref="compound">TicTacToeGame</ref></type>
+        <definition>TicTacToeGame TTTController::view_</definition>
+        <argsstring></argsstring>
+        <name>view_</name>
+        <qualifiedname>TTTController::view_</qualifiedname>
+        <briefdescription>
+<para>view is the view class of a tic tac toe game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="34" column="19" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1a6293931772f0ec9eea531c8a1fb1e050" compoundref="_t_t_t_controller_8h" startline="127" endline="127">getView</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a1926fc5ac8a6cac2a75de663157d0023" compoundref="_t_t_t_controller_8cpp" startline="34" endline="38">startGame</referencedby>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a2b17b7aa11412f978e257afb2aebab5b" compoundref="_t_t_t_controller_8cpp" startline="58" endline="71">updateGameState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_board" kindref="compound">Board</ref></type>
+        <definition>Board TTTController::board_</definition>
+        <argsstring></argsstring>
+        <name>board_</name>
+        <qualifiedname>TTTController::board_</qualifiedname>
+        <briefdescription>
+<para>board is the model that represents the underlying layer of a game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="38" column="11" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">AIAgentPlay</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</referencedby>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" compoundref="_t_t_t_controller_8cpp" startline="140" endline="154">updateGame</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a2b17b7aa11412f978e257afb2aebab5b" compoundref="_t_t_t_controller_8cpp" startline="58" endline="71">updateGameState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="struct_cell" kindref="compound">Cell</ref> &gt;</type>
+        <definition>vector&lt;Cell&gt; TTTController::cells_</definition>
+        <argsstring></argsstring>
+        <name>cells_</name>
+        <qualifiedname>TTTController::cells_</qualifiedname>
+        <briefdescription>
+<para>cells are the collection of cell buttons built by the view class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="42" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">AIAgentPlay</referencedby>
+        <referencedby refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" compoundref="_t_t_t_controller_8cpp" startline="156" endline="170">onSpeechRecognized</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</referencedby>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_t_t_controller_1aade7f92b4b06dbf7e17dc5a3772c0aef" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="struct_t_t_t_options" kindref="compound">TTTOptions</ref> &amp;</type>
+        <definition>const TTTOptions&amp; TTTController::options_</definition>
+        <argsstring></argsstring>
+        <name>options_</name>
+        <qualifiedname>TTTController::options_</qualifiedname>
+        <briefdescription>
+<para>options is the collection of values and flags that controls the game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="46" column="22" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" compoundref="_t_t_t_controller_8cpp" startline="188" endline="230">onSocketReadyRead</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</referencedby>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" prot="protected" static="no" mutable="no">
+        <type><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+        <definition>BoardMarks TTTController::currentPlayer_</definition>
+        <argsstring></argsstring>
+        <name>currentPlayer_</name>
+        <qualifiedname>TTTController::currentPlayer_</qualifiedname>
+        <briefdescription>
+<para>currentPlayer is the player that will play the current turn. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="50" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">AIAgentPlay</referencedby>
+        <referencedby refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" compoundref="_t_t_t_controller_8cpp" startline="188" endline="230">onSocketReadyRead</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a0d1a0122a2ec371163fb5d9d13c928f5" compoundref="_t_t_t_controller_8cpp" startline="132" endline="138">switchPlayer</referencedby>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" compoundref="_t_t_t_controller_8cpp" startline="140" endline="154">updateGame</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a2b17b7aa11412f978e257afb2aebab5b" compoundref="_t_t_t_controller_8cpp" startline="58" endline="71">updateGameState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_t_t_controller_1a2c3f88a3462b7aad96bf352322c46f3e" prot="protected" static="no" mutable="no">
+        <type>unique_ptr&lt; <ref refid="class_a_i_agent" kindref="compound">AIAgent</ref> &gt;</type>
+        <definition>unique_ptr&lt;AIAgent&gt; TTTController::agent_</definition>
+        <argsstring></argsstring>
+        <name>agent_</name>
+        <qualifiedname>TTTController::agent_</qualifiedname>
+        <briefdescription>
+<para>agent is the AI agent chosen to play against the human player. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="54" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">AIAgentPlay</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</referencedby>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_t_t_t_controller_1a858247e19d3d31564d8e716f9d81354e" prot="private" static="no" mutable="no">
+        <type>QTcpSocket *</type>
+        <definition>QTcpSocket* TTTController::socket_</definition>
+        <argsstring></argsstring>
+        <name>socket_</name>
+        <qualifiedname>TTTController::socket_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="68" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" compoundref="_t_t_t_controller_8cpp" startline="188" endline="230">onSocketReadyRead</referencedby>
+        <referencedby refid="class_t_t_t_controller_1acae67d371dfa6272adc7670040c01a23" compoundref="_t_t_t_controller_8cpp" startline="233" endline="238">sendMove</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a57edf31f9b9a6cf7b3d5261715f92b15" compoundref="_t_t_t_controller_8cpp" startline="172" endline="186">setupNetwork</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::setConnections</definition>
+        <argsstring>()</argsstring>
+        <name>setConnections</name>
+        <qualifiedname>TTTController::setConnections</qualifiedname>
+        <briefdescription>
+<para>setConnections will set a connection to all GUI elements to slots defined to handle these events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="61" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="40" bodyend="56"/>
+        <references refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">AIAgentPlay</references>
+        <references refid="class_t_t_t_controller_1a513f925f29dcfebb4139030f46243cb4">AIFinished</references>
+        <references refid="class_t_t_t_controller_1ae1514051a94219f50a5740af4e02e43d">humanFinished</references>
+        <references refid="class_t_t_t_controller_1ad083b0e4ac90abc1b9b1578a4407ada7" compoundref="_t_t_t_controller_8cpp" startline="107" endline="130">HumanPlay</references>
+        <references refid="class_tic_tac_toe_game_1ad0072c616d4d9284ca69245a635b8303">TicTacToeGame::newGame</references>
+        <references refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" compoundref="_t_t_t_controller_8cpp" startline="156" endline="170">onSpeechRecognized</references>
+        <references refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</references>
+        <references refid="class_t_t_t_controller_1a57edf31f9b9a6cf7b3d5261715f92b15" compoundref="_t_t_t_controller_8cpp" startline="172" endline="186">setupNetwork</references>
+        <references refid="class_t_t_t_controller_1a4b36edfb9a40062357e0038ed00b3b96">speechRecognized</references>
+        <references refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" compoundref="_t_t_t_controller_8h" startline="34">view_</references>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>TTTController::reset</qualifiedname>
+        <briefdescription>
+<para>resets all internal components, the view, the model and the AI agent. then if AI is supposed to start a game it will play first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="66" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="73" bodyend="90"/>
+        <references refid="class_t_t_t_controller_1a2c3f88a3462b7aad96bf352322c46f3e" compoundref="_t_t_t_controller_8h" startline="54">agent_</references>
+        <references refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">AIAgentPlay</references>
+        <references refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" compoundref="_t_t_t_controller_8h" startline="38">board_</references>
+        <references refid="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" compoundref="_t_t_t_controller_8h" startline="42">cells_</references>
+        <references refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" compoundref="_t_t_t_controller_8h" startline="50">currentPlayer_</references>
+        <references refid="class_t_t_t_controller_1ad083b0e4ac90abc1b9b1578a4407ada7" compoundref="_t_t_t_controller_8cpp" startline="107" endline="130">HumanPlay</references>
+        <references refid="class_t_t_t_controller_1aade7f92b4b06dbf7e17dc5a3772c0aef" compoundref="_t_t_t_controller_8h" startline="46">options_</references>
+        <references refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" compoundref="_t_t_t_controller_8h" startline="34">view_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1a57edf31f9b9a6cf7b3d5261715f92b15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::setupNetwork</definition>
+        <argsstring>()</argsstring>
+        <name>setupNetwork</name>
+        <qualifiedname>TTTController::setupNetwork</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="69" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="172" bodyend="186"/>
+        <references refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" compoundref="_t_t_t_controller_8cpp" startline="188" endline="230">onSocketReadyRead</references>
+        <references refid="class_t_t_t_controller_1a858247e19d3d31564d8e716f9d81354e" compoundref="_t_t_t_controller_8h" startline="68">socket_</references>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1acae67d371dfa6272adc7670040c01a23" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::sendMove</definition>
+        <argsstring>(int row, int col, char player)</argsstring>
+        <name>sendMove</name>
+        <qualifiedname>TTTController::sendMove</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="70" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="233" bodyend="238"/>
+        <references refid="class_t_t_t_controller_1a858247e19d3d31564d8e716f9d81354e" compoundref="_t_t_t_controller_8h" startline="68">socket_</references>
+        <referencedby refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" compoundref="_t_t_t_controller_8cpp" startline="140" endline="154">updateGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_t_t_t_controller_1a2b17b7aa11412f978e257afb2aebab5b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TTTController::updateGameState</definition>
+        <argsstring>(Cell &amp;cell)</argsstring>
+        <name>updateGameState</name>
+        <qualifiedname>TTTController::updateGameState</qualifiedname>
+        <param>
+          <type><ref refid="struct_cell" kindref="compound">Cell</ref> &amp;</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+<para>updateGameState updates the view and the model and switches the current player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the clicked cell that the player chooses. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="77" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="58" bodyend="71"/>
+        <references refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" compoundref="_t_t_t_controller_8h" startline="38">board_</references>
+        <references refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" compoundref="_t_t_t_controller_8h" startline="50">currentPlayer_</references>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" compoundref="_t_t_t_common_types_8h" startline="152">NoWinner</references>
+        <references refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" compoundref="_t_t_t_controller_8h" startline="34">view_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+        <referencedby refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" compoundref="_t_t_t_controller_8cpp" startline="140" endline="154">updateGame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TTTController::AIAgentPlay</definition>
+        <argsstring>()</argsstring>
+        <name>AIAgentPlay</name>
+        <qualifiedname>TTTController::AIAgentPlay</qualifiedname>
+        <briefdescription>
+<para>AIAgentPlay calls the AI agent to play given the current board inputs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="81" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="92" bodyend="105"/>
+        <references refid="class_t_t_t_controller_1a2c3f88a3462b7aad96bf352322c46f3e" compoundref="_t_t_t_controller_8h" startline="54">agent_</references>
+        <references refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" compoundref="_t_t_t_controller_8h" startline="38">board_</references>
+        <references refid="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" compoundref="_t_t_t_controller_8h" startline="42">cells_</references>
+        <references refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" compoundref="_t_t_t_common_types_8h" startline="29">Cell::col</references>
+        <references refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" compoundref="_t_t_t_controller_8h" startline="50">currentPlayer_</references>
+        <references refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" compoundref="_t_t_t_common_types_8h" startline="11">defaults::INVALID_CELL</references>
+        <references refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" compoundref="_t_t_t_common_types_8h" startline="28">Cell::row</references>
+        <references refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" compoundref="_t_t_t_controller_8cpp" startline="140" endline="154">updateGame</references>
+        <referencedby refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1ad083b0e4ac90abc1b9b1578a4407ada7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TTTController::HumanPlay</definition>
+        <argsstring>()</argsstring>
+        <name>HumanPlay</name>
+        <qualifiedname>TTTController::HumanPlay</qualifiedname>
+        <briefdescription>
+<para>HumanPlay calls the Speech Recognition Engine for decoding input into <ref refid="struct_cell" kindref="compound">Cell</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="85" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="107" bodyend="130"/>
+        <references refid="struct_speech_to_text_1aaf4ccc659316eb5c314b504f98003fd5" compoundref="_t_t_t_common_types_8h" startline="62" endline="68">SpeechToText::configuration</references>
+        <references refid="struct_speech_to_text_1ab10ed7de74d4955ec673ded3a74f9db2" compoundref="_t_t_t_common_types_8h" startline="137" endline="141">SpeechToText::free</references>
+        <references refid="struct_speech_to_text_1a0526f396f204c635ef85738182d8d007" compoundref="_t_t_t_common_types_8h" startline="54">SpeechToText::hyp</references>
+        <references refid="struct_speech_to_text_1ae5b7a33ea5ba734da4e3caed42a5e185" compoundref="_t_t_t_common_types_8h" startline="70" endline="91">SpeechToText::init</references>
+        <references refid="struct_speech_to_text_1a243545518fed839c5fa5fe95aadde2a3" compoundref="_t_t_t_common_types_8h" startline="97" endline="135">SpeechToText::listen</references>
+        <references refid="class_t_t_t_controller_1a4b36edfb9a40062357e0038ed00b3b96">speechRecognized</references>
+        <referencedby refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" compoundref="_t_t_t_controller_8cpp" startline="156" endline="170">onSpeechRecognized</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1a0d1a0122a2ec371163fb5d9d13c928f5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TTTController::switchPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>switchPlayer</name>
+        <qualifiedname>TTTController::switchPlayer</qualifiedname>
+        <briefdescription>
+<para>switchPlayer switches the current player mark (X to O and O to X). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="89" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="132" bodyend="138"/>
+        <references refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" compoundref="_t_t_t_controller_8h" startline="50">currentPlayer_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" compoundref="_t_t_t_common_types_8h" startline="147">O</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+        <referencedby refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" compoundref="_t_t_t_controller_8cpp" startline="188" endline="230">onSocketReadyRead</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TTTController::TTTController</definition>
+        <argsstring>(const TTTOptions &amp;options, QObject *parent=nullptr)</argsstring>
+        <name>TTTController</name>
+        <qualifiedname>TTTController::TTTController</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_t_t_t_options" kindref="compound">TTTOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="class_t_t_t_controller" kindref="compound">TTTController</ref> constructs a game controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the collection of values and flags that controls the game. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a QObject type parent that owns this instance of the controller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="97" column="14" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="9" bodyend="32"/>
+        <references refid="class_t_t_t_controller_1a2c3f88a3462b7aad96bf352322c46f3e" compoundref="_t_t_t_controller_8h" startline="54">agent_</references>
+        <references refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" compoundref="_t_t_t_controller_8h" startline="38">board_</references>
+        <references refid="struct_t_t_t_options_1a018fe6935d21dbcf3db30a4a7b3abed0" compoundref="_t_t_t_common_types_8h" startline="39">TTTOptions::boardSize</references>
+        <references refid="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" compoundref="_t_t_t_controller_8h" startline="42">cells_</references>
+        <references refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" compoundref="_t_t_t_controller_8h" startline="50">currentPlayer_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" compoundref="_t_t_t_common_types_8h" startline="147">O</references>
+        <references refid="class_t_t_t_controller_1aade7f92b4b06dbf7e17dc5a3772c0aef" compoundref="_t_t_t_controller_8h" startline="46">options_</references>
+        <references refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="_t_t_t_controller_8cpp" startline="73" endline="90">reset</references>
+        <references refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</references>
+        <references refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" compoundref="_t_t_t_controller_8h" startline="34">view_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1a1926fc5ac8a6cac2a75de663157d0023" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TTTController::startGame</definition>
+        <argsstring>()</argsstring>
+        <name>startGame</name>
+        <qualifiedname>TTTController::startGame</qualifiedname>
+        <briefdescription>
+<para>startGame executes this QDialog to show the GUI and start the gameplay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="101" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="34" bodyend="38"/>
+        <references refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" compoundref="_t_t_t_controller_8h" startline="34">view_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1a0736512a7a5cffa6fefecbe9e4f2a072" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int TTTController::parseSpeechToCell</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>parseSpeechToCell</name>
+        <qualifiedname>TTTController::parseSpeechToCell</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="102" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="102" bodyend="126"/>
+        <references refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" compoundref="_t_t_t_common_types_8h" startline="11">defaults::INVALID_CELL</references>
+        <referencedby refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" compoundref="_t_t_t_controller_8cpp" startline="156" endline="170">onSpeechRecognized</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_t_t_controller_1a6293931772f0ec9eea531c8a1fb1e050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * TTTController::getView</definition>
+        <argsstring>()</argsstring>
+        <name>getView</name>
+        <qualifiedname>TTTController::getView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="127" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="127" bodyend="127"/>
+        <references refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" compoundref="_t_t_t_controller_8h" startline="34">view_</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_t_t_t_controller_1a513f925f29dcfebb4139030f46243cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::AIFinished</definition>
+        <argsstring>()</argsstring>
+        <name>AIFinished</name>
+        <qualifiedname>TTTController::AIFinished</qualifiedname>
+        <briefdescription>
+<para>turnFinished is emitted when the human player is finished with the cell input, and the internal game state is supposed to be updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="133" column="10"/>
+        <referencedby refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" compoundref="_t_t_t_controller_8cpp" startline="188" endline="230">onSocketReadyRead</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="class_t_t_t_controller_1ae1514051a94219f50a5740af4e02e43d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::humanFinished</definition>
+        <argsstring>()</argsstring>
+        <name>humanFinished</name>
+        <qualifiedname>TTTController::humanFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="135" column="10"/>
+        <referencedby refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" compoundref="_t_t_t_controller_8cpp" startline="188" endline="230">onSocketReadyRead</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="class_t_t_t_controller_1a4b36edfb9a40062357e0038ed00b3b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::speechRecognized</definition>
+        <argsstring>(QString)</argsstring>
+        <name>speechRecognized</name>
+        <qualifiedname>TTTController::speechRecognized</qualifiedname>
+        <param>
+          <type>QString</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="136" column="10"/>
+        <referencedby refid="class_t_t_t_controller_1ad083b0e4ac90abc1b9b1578a4407ada7" compoundref="_t_t_t_controller_8cpp" startline="107" endline="130">HumanPlay</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TTTController::updateGame</definition>
+        <argsstring>(Cell &amp;cell)</argsstring>
+        <name>updateGame</name>
+        <qualifiedname>TTTController::updateGame</qualifiedname>
+        <param>
+          <type><ref refid="struct_cell" kindref="compound">Cell</ref> &amp;</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+<para>updateGame sets the cell clicked in the model (board). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the clicked cell that the player chooses. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="144" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="140" bodyend="154"/>
+        <references refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" compoundref="_t_t_t_controller_8h" startline="38">board_</references>
+        <references refid="struct_cell_1a09e2f07cb87b7ae5898be20927cf28d1" compoundref="_t_t_t_common_types_8h" startline="29">Cell::col</references>
+        <references refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" compoundref="_t_t_t_controller_8h" startline="50">currentPlayer_</references>
+        <references refid="struct_cell_1a85d2a7af6195f5196574790fbc1becfd" compoundref="_t_t_t_common_types_8h" startline="28">Cell::row</references>
+        <references refid="class_t_t_t_controller_1acae67d371dfa6272adc7670040c01a23" compoundref="_t_t_t_controller_8cpp" startline="233" endline="238">sendMove</references>
+        <references refid="class_t_t_t_controller_1a2b17b7aa11412f978e257afb2aebab5b" compoundref="_t_t_t_controller_8cpp" startline="58" endline="71">updateGameState</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+        <referencedby refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" compoundref="_t_t_t_controller_8cpp" startline="92" endline="105">AIAgentPlay</referencedby>
+        <referencedby refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" compoundref="_t_t_t_controller_8cpp" startline="156" endline="170">onSpeechRecognized</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::onSpeechRecognized</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>onSpeechRecognized</name>
+        <qualifiedname>TTTController::onSpeechRecognized</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="146" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="156" bodyend="170"/>
+        <references refid="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" compoundref="_t_t_t_controller_8h" startline="42">cells_</references>
+        <references refid="class_t_t_t_controller_1ad083b0e4ac90abc1b9b1578a4407ada7" compoundref="_t_t_t_controller_8cpp" startline="107" endline="130">HumanPlay</references>
+        <references refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" compoundref="_t_t_t_common_types_8h" startline="11">defaults::INVALID_CELL</references>
+        <references refid="class_t_t_t_controller_1a0736512a7a5cffa6fefecbe9e4f2a072" compoundref="_t_t_t_controller_8h" startline="102" endline="126">parseSpeechToCell</references>
+        <references refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" compoundref="_t_t_t_controller_8cpp" startline="140" endline="154">updateGame</references>
+        <referencedby refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="_t_t_t_controller_8cpp" startline="40" endline="56">setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TTTController::onSocketReadyRead</definition>
+        <argsstring>()</argsstring>
+        <name>onSocketReadyRead</name>
+        <qualifiedname>TTTController::onSocketReadyRead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="147" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp" bodystart="188" bodyend="230"/>
+        <references refid="class_t_t_t_controller_1a513f925f29dcfebb4139030f46243cb4">AIFinished</references>
+        <references refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" compoundref="_t_t_t_controller_8h" startline="50">currentPlayer_</references>
+        <references refid="class_t_t_t_controller_1ae1514051a94219f50a5740af4e02e43d">humanFinished</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" compoundref="_t_t_t_common_types_8h" startline="147">O</references>
+        <references refid="class_t_t_t_controller_1aade7f92b4b06dbf7e17dc5a3772c0aef" compoundref="_t_t_t_controller_8h" startline="46">options_</references>
+        <references refid="class_t_t_t_controller_1a858247e19d3d31564d8e716f9d81354e" compoundref="_t_t_t_controller_8h" startline="68">socket_</references>
+        <references refid="class_t_t_t_controller_1a0d1a0122a2ec371163fb5d9d13c928f5" compoundref="_t_t_t_controller_8cpp" startline="132" endline="138">switchPlayer</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+        <referencedby refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="_network_manager_8cpp" startline="4" endline="11">NetworkManager::NetworkManager</referencedby>
+        <referencedby refid="class_t_t_t_controller_1a57edf31f9b9a6cf7b3d5261715f92b15" compoundref="_t_t_t_controller_8cpp" startline="172" endline="186">setupNetwork</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_t_t_t_controller" kindref="compound">TTTController</ref> class is the controller for a Tic Tac Toe game, it takes in game options as input, and controls the view (<ref refid="class_tic_tac_toe_game" kindref="compound">TicTacToeGame</ref>) and the model (<ref refid="class_board" kindref="compound">Board</ref>) according to the game logic specified in this class, it is also responsible for calling the AI agent to play its turn if specified by the game options. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>TTTController</label>
+        <link refid="class_t_t_t_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Board</label>
+        <link refid="class_board"/>
+      </node>
+      <node id="4">
+        <label>QDialog</label>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>TTTController</label>
+        <link refid="class_t_t_t_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>view_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>options_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TTTOptions</label>
+        <link refid="struct_t_t_t_options"/>
+      </node>
+      <node id="3">
+        <label>TicTacToeGame</label>
+        <link refid="class_tic_tac_toe_game"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" line="27" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h" bodystart="28" bodyend="148"/>
+    <listofallmembers>
+      <member refid="class_t_t_t_controller_1a2c3f88a3462b7aad96bf352322c46f3e" prot="protected" virt="non-virtual"><scope>TTTController</scope><name>agent_</name></member>
+      <member refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" prot="protected" virt="virtual"><scope>TTTController</scope><name>AIAgentPlay</name></member>
+      <member refid="class_t_t_t_controller_1a513f925f29dcfebb4139030f46243cb4" prot="public" virt="non-virtual"><scope>TTTController</scope><name>AIFinished</name></member>
+      <member refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" prot="protected" virt="non-virtual"><scope>TTTController</scope><name>board_</name></member>
+      <member refid="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" prot="protected" virt="non-virtual"><scope>TTTController</scope><name>cells_</name></member>
+      <member refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" prot="protected" virt="non-virtual"><scope>TTTController</scope><name>currentPlayer_</name></member>
+      <member refid="class_t_t_t_controller_1a6293931772f0ec9eea531c8a1fb1e050" prot="public" virt="non-virtual"><scope>TTTController</scope><name>getView</name></member>
+      <member refid="class_t_t_t_controller_1ae1514051a94219f50a5740af4e02e43d" prot="public" virt="non-virtual"><scope>TTTController</scope><name>humanFinished</name></member>
+      <member refid="class_t_t_t_controller_1ad083b0e4ac90abc1b9b1578a4407ada7" prot="protected" virt="virtual"><scope>TTTController</scope><name>HumanPlay</name></member>
+      <member refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" prot="private" virt="non-virtual"><scope>TTTController</scope><name>onSocketReadyRead</name></member>
+      <member refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" prot="private" virt="non-virtual"><scope>TTTController</scope><name>onSpeechRecognized</name></member>
+      <member refid="class_t_t_t_controller_1aade7f92b4b06dbf7e17dc5a3772c0aef" prot="protected" virt="non-virtual"><scope>TTTController</scope><name>options_</name></member>
+      <member refid="class_t_t_t_controller_1a0736512a7a5cffa6fefecbe9e4f2a072" prot="public" virt="non-virtual"><scope>TTTController</scope><name>parseSpeechToCell</name></member>
+      <member refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" prot="private" virt="non-virtual"><scope>TTTController</scope><name>reset</name></member>
+      <member refid="class_t_t_t_controller_1acae67d371dfa6272adc7670040c01a23" prot="private" virt="non-virtual"><scope>TTTController</scope><name>sendMove</name></member>
+      <member refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" prot="private" virt="non-virtual"><scope>TTTController</scope><name>setConnections</name></member>
+      <member refid="class_t_t_t_controller_1a57edf31f9b9a6cf7b3d5261715f92b15" prot="private" virt="non-virtual"><scope>TTTController</scope><name>setupNetwork</name></member>
+      <member refid="class_t_t_t_controller_1a858247e19d3d31564d8e716f9d81354e" prot="private" virt="non-virtual"><scope>TTTController</scope><name>socket_</name></member>
+      <member refid="class_t_t_t_controller_1a4b36edfb9a40062357e0038ed00b3b96" prot="public" virt="non-virtual"><scope>TTTController</scope><name>speechRecognized</name></member>
+      <member refid="class_t_t_t_controller_1a1926fc5ac8a6cac2a75de663157d0023" prot="public" virt="virtual"><scope>TTTController</scope><name>startGame</name></member>
+      <member refid="class_t_t_t_controller_1a0d1a0122a2ec371163fb5d9d13c928f5" prot="protected" virt="virtual"><scope>TTTController</scope><name>switchPlayer</name></member>
+      <member refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" prot="public" virt="non-virtual"><scope>TTTController</scope><name>TTTController</name></member>
+      <member refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" prot="public" virt="virtual"><scope>TTTController</scope><name>updateGame</name></member>
+      <member refid="class_t_t_t_controller_1a2b17b7aa11412f978e257afb2aebab5b" prot="protected" virt="virtual"><scope>TTTController</scope><name>updateGameState</name></member>
+      <member refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" prot="protected" virt="non-virtual"><scope>TTTController</scope><name>view_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

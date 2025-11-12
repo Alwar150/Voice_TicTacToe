@@ -1,0 +1,105 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+The \doxylink{class_player}{Player} class is an abstract base class for different types of players in the Tic Tac Toe game, such as human players and AI players.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_af9436bec15f91ee87fb86907b720be52}{player\+Finished}} (const int \&cell)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a8c885f35774ed96d466e67194b74de95}{Player}} (QObject \texorpdfstring{$\ast$}{*}parent\+\_\+=nullptr, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} player\+Mark, const \mbox{\hyperlink{class_board}{Board}} \&borad\+\_\+ref)
+\item 
+virtual \mbox{\hyperlink{class_player_a8981c201ffb2270c0b6dbd467b627376}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_af85db5d05b014bf19d873038c56dc7ed}{play}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_board}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_player_a088227ab53747cc4955b0a3859b69a84}{board\+\_\+}}
+\item 
+const \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \mbox{\hyperlink{class_player_ae8c600761eeb36ef938927dd87a87011}{mark\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_player}{Player} class is an abstract base class for different types of players in the Tic Tac Toe game, such as human players and AI players. 
+
+\label{doc-constructors}
+\Hypertarget{class_player_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_a8c885f35774ed96d466e67194b74de95}\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily \label{class_player_a8c885f35774ed96d466e67194b74de95} 
+Player\+::\+Player (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent\+\_\+}{ = {\ttfamily nullptr}, }\item[{\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{player\+Mark}{, }\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{borad\+\_\+ref}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_player_ae8c600761eeb36ef938927dd87a87011}{mark\+\_\+}}.
+
+\Hypertarget{class_player_a8981c201ffb2270c0b6dbd467b627376}\index{Player@{Player}!````~Player@{\texorpdfstring{$\sim$}{\string~}Player}}
+\index{````~Player@{\texorpdfstring{$\sim$}{\string~}Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Player()}{\string~Player()}}
+{\footnotesize\ttfamily \label{class_player_a8981c201ffb2270c0b6dbd467b627376} 
+virtual Player\+::\texorpdfstring{$\sim$}{\string~}\+Player (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_player_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_af85db5d05b014bf19d873038c56dc7ed}\index{Player@{Player}!play@{play}}
+\index{play@{play}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_player_af85db5d05b014bf19d873038c56dc7ed} 
+virtual void Player\+::play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{class_player_af9436bec15f91ee87fb86907b720be52}\index{Player@{Player}!playerFinished@{playerFinished}}
+\index{playerFinished@{playerFinished}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{playerFinished}{playerFinished}}
+{\footnotesize\ttfamily \label{class_player_af9436bec15f91ee87fb86907b720be52} 
+void Player\+::player\+Finished (\begin{DoxyParamCaption}\item[{const int \&}]{cell}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_player_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_player_a088227ab53747cc4955b0a3859b69a84}\index{Player@{Player}!board\_@{board\_}}
+\index{board\_@{board\_}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{board\_}{board\_}}
+{\footnotesize\ttfamily \label{class_player_a088227ab53747cc4955b0a3859b69a84} 
+const \mbox{\hyperlink{class_board}{Board}}\texorpdfstring{$\ast$}{*} Player\+::board\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_player_ae8c600761eeb36ef938927dd87a87011}\index{Player@{Player}!mark\_@{mark\_}}
+\index{mark\_@{mark\_}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{mark\_}{mark\_}}
+{\footnotesize\ttfamily \label{class_player_ae8c600761eeb36ef938927dd87a87011} 
+const \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} Player\+::mark\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_player_a8c885f35774ed96d466e67194b74de95}{Player()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+AI/\mbox{\hyperlink{_player_8h}{Player.\+h}}\end{DoxyCompactItemize}

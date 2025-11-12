@@ -1,0 +1,42 @@
+\doxysection{Config\+Manager.\+h}
+\hypertarget{_config_manager_8h_source}{}\label{_config_manager_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/Config/ConfigManager.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/Config/ConfigManager.h}}
+\mbox{\hyperlink{_config_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONFIGMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONFIGMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSettings>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDir>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{ConfigManager}}\ final\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{ConfigManager}}\&\ \mbox{\hyperlink{class_config_manager_ab72b9c36d8c92066d54eabae525da210}{instance}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_config_manager_a61e0d30507438bdb93773586fd17dcd2}{load}}(\textcolor{keyword}{const}\ QString\&\ filePath\ =\ QString());}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00044\ \ \ \ \ QString\ \mbox{\hyperlink{class_config_manager_ab0a26220dad8b8b9c29e00ac3e06a455}{getValue}}(\textcolor{keyword}{const}\ QString\&\ key,\ \textcolor{keyword}{const}\ QString\&\ defaultValue\ =\ QString())\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_config_manager_a8fcb73283ae43f36e70ae09990edb315}{getInt}}(\textcolor{keyword}{const}\ QString\&\ key,\ \textcolor{keywordtype}{int}\ defaultValue\ =\ 0)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_config_manager_a2fc430f2f48d29787b668e048947a5d3}{getBool}}(\textcolor{keyword}{const}\ QString\&\ key,\ \textcolor{keywordtype}{bool}\ defaultValue\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{ConfigManager}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_config_manager_af27fe922a8151eed5b1dc926ddf045b1}{\string~ConfigManager}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ Bloquear\ copia\ y\ asignación}}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_config_manager_a106691c1efb4ec9d6f0688419e455906}{ConfigManager}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{ConfigManager}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{ConfigManager}}\&\ \mbox{\hyperlink{class_config_manager_a0fd5bb24753934f9ec6430ab3bea7fd9}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_config_manager_a41931ff9b32816a676885e4c78c3ab83}{ConfigManager}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ QSettings*\ \mbox{\hyperlink{class_config_manager_a9d30f8b6a03a88758b1a27dae2c02458}{settings\_}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONFIGMANAGER\_H}}
+
+\end{DoxyCode}

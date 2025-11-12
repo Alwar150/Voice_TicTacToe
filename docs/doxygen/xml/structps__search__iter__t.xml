@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__search__iter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_search_iter_t</compoundname>
+    <includes refid="search_8h" local="no">pocketsphinx/search.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__search__iter__t_1ac8ae8c4c4f792d0c12eef3426abe4a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_search_iter_t * ps_search_iter_next</definition>
+        <argsstring>(ps_search_iter_t *itor)</argsstring>
+        <name>ps_search_iter_next</name>
+        <qualifiedname>ps_search_iter_t::ps_search_iter_next</qualifiedname>
+        <param>
+          <type><ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates search iterator to point to the next position.</para>
+<para>This function automatically frees the iterator object upon reaching the final entry. <simplesect kind="see"><para>ps_activate_search </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="153" column="18" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="153" declcolumn="18"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__search__iter__t_1a86d9b5968b9fe317a6335345fb9a2dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> const char *</type>
+        <definition>POCKETSPHINX_EXPORT const char * ps_search_iter_val</definition>
+        <argsstring>(ps_search_iter_t *itor)</argsstring>
+        <name>ps_search_iter_val</name>
+        <qualifiedname>ps_search_iter_t::ps_search_iter_val</qualifiedname>
+        <param>
+          <type><ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the name of the search the iterator points to.</para>
+<para><simplesect kind="see"><para>ps_activate_search</para>
+</simplesect>
+Updates search iterator to point to the next position.</para>
+<para>This function automatically frees the iterator object upon reaching the final entry. <simplesect kind="see"><para>ps_activate_search </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="162" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="162" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+        <referencedby refid="structps__search__iter__t_1a41e404de59cbd7bfc32f2da3ec7e6137">ps_search_iter_free</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structps__search__iter__t_1a41e404de59cbd7bfc32f2da3ec7e6137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ps_search_iter_free</definition>
+        <argsstring>(ps_search_iter_t *itor)</argsstring>
+        <name>ps_search_iter_free</name>
+        <qualifiedname>ps_search_iter_t::ps_search_iter_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__search__iter__t" kindref="compound">ps_search_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete an unfinished search iterator</para>
+<para><simplesect kind="see"><para>ps_activate_search </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="171" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" declline="171" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+        <references refid="structps__search__iter__t_1a86d9b5968b9fe317a6335345fb9a2dd0">ps_search_iter_val</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Iterator over search modules. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/search.h" line="91" column="1"/>
+    <listofallmembers>
+      <member refid="structps__search__iter__t_1a41e404de59cbd7bfc32f2da3ec7e6137" prot="public" virt="non-virtual"><scope>ps_search_iter_t</scope><name>ps_search_iter_free</name></member>
+      <member refid="structps__search__iter__t_1ac8ae8c4c4f792d0c12eef3426abe4a93" prot="public" virt="non-virtual"><scope>ps_search_iter_t</scope><name>ps_search_iter_next</name></member>
+      <member refid="structps__search__iter__t_1a86d9b5968b9fe317a6335345fb9a2dd0" prot="public" virt="non-virtual"><scope>ps_search_iter_t</scope><name>ps_search_iter_val</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

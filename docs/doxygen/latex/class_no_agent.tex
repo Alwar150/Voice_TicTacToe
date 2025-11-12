@@ -1,0 +1,115 @@
+\doxysection{No\+Agent Class Reference}
+\hypertarget{class_no_agent}{}\label{class_no_agent}\index{NoAgent@{NoAgent}}
+
+
+The \doxylink{class_no_agent}{No\+Agent} class is an empty class that does not play, it specifies the null object behaviour, so it represents the lack of an AI agent, which is useful to avoid using if conditions in code when checking on the existence of an AI agent.  
+
+
+
+
+{\ttfamily \#include $<$No\+Agent.\+h$>$}
+
+Inheritance diagram for No\+Agent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_no_agent}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_no_agent_a7561314430d43346239d9a2dcc66e501}{No\+Agent}} ()
+\item 
+\mbox{\hyperlink{class_no_agent_a9adad4582932d6a36914660842a20a96}{\texorpdfstring{$\sim$}{\string~}\+No\+Agent}} () override
+\item 
+int \mbox{\hyperlink{class_no_agent_a4c20d7b44b9b7061ae60893e577a3575}{play}} (const \mbox{\hyperlink{class_board}{Board}} \&board) override
+\begin{DoxyCompactList}\small\item\em play does nothing to simulate a null agent behaviour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_i_agent}{AIAgent}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_i_agent_a9c5f515eb3df94792ba02da8ac899cf5}{AIAgent}} ()
+\item 
+virtual \mbox{\hyperlink{class_a_i_agent_a5614d02341e652bd2df4f3b2fb4d44c3}{\texorpdfstring{$\sim$}{\string~}\+AIAgent}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_i_agent_ae694da05657ba286840b533523d9c64f}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset function that will reset the state of any search algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a8c885f35774ed96d466e67194b74de95}{Player}} (QObject \texorpdfstring{$\ast$}{*}parent\+\_\+=nullptr, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} player\+Mark, const \mbox{\hyperlink{class_board}{Board}} \&borad\+\_\+ref)
+\item 
+virtual \mbox{\hyperlink{class_player_a8981c201ffb2270c0b6dbd467b627376}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\item 
+virtual void \mbox{\hyperlink{class_player_af85db5d05b014bf19d873038c56dc7ed}{play}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Signals inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_af9436bec15f91ee87fb86907b720be52}{player\+Finished}} (const int \&cell)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_player}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_board}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_player_a088227ab53747cc4955b0a3859b69a84}{board\+\_\+}}
+\item 
+const \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \mbox{\hyperlink{class_player_ae8c600761eeb36ef938927dd87a87011}{mark\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_no_agent}{No\+Agent} class is an empty class that does not play, it specifies the null object behaviour, so it represents the lack of an AI agent, which is useful to avoid using if conditions in code when checking on the existence of an AI agent. 
+
+This class has no CPP file as it does not have any implementation details. 
+
+\label{doc-constructors}
+\Hypertarget{class_no_agent_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_no_agent_a7561314430d43346239d9a2dcc66e501}\index{NoAgent@{NoAgent}!NoAgent@{NoAgent}}
+\index{NoAgent@{NoAgent}!NoAgent@{NoAgent}}
+\doxysubsubsection{\texorpdfstring{NoAgent()}{NoAgent()}}
+{\footnotesize\ttfamily \label{class_no_agent_a7561314430d43346239d9a2dcc66e501} 
+No\+Agent\+::\+No\+Agent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_no_agent_a9adad4582932d6a36914660842a20a96}\index{NoAgent@{NoAgent}!````~NoAgent@{\texorpdfstring{$\sim$}{\string~}NoAgent}}
+\index{````~NoAgent@{\texorpdfstring{$\sim$}{\string~}NoAgent}!NoAgent@{NoAgent}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}NoAgent()}{\string~NoAgent()}}
+{\footnotesize\ttfamily \label{class_no_agent_a9adad4582932d6a36914660842a20a96} 
+No\+Agent\+::\texorpdfstring{$\sim$}{\string~}\+No\+Agent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_no_agent_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_no_agent_a4c20d7b44b9b7061ae60893e577a3575}\index{NoAgent@{NoAgent}!play@{play}}
+\index{play@{play}!NoAgent@{NoAgent}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_no_agent_a4c20d7b44b9b7061ae60893e577a3575} 
+int No\+Agent\+::play (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{board}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+play does nothing to simulate a null agent behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & a reference to the board model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an invalid cell location to not trigger any kind of updates. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_a_i_agent_ac137ab96f5f7c53e74d4c9c7342021eb}{AIAgent}}.
+
+
+
+References \mbox{\hyperlink{namespacedefaults_a543ba1bdceef75ed7ebc4160be54bfcb}{defaults\+::\+INVALID\+\_\+\+CELL}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+AI/\mbox{\hyperlink{_no_agent_8h}{No\+Agent.\+h}}\end{DoxyCompactItemize}

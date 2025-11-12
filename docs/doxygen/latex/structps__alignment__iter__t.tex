@@ -1,0 +1,99 @@
+\doxysection{ps\+\_\+alignment\+\_\+iter\+\_\+t Struct Reference}
+\hypertarget{structps__alignment__iter__t}{}\label{structps__alignment__iter__t}\index{ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}}
+
+
+Iterator over entries in an alignment.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/alignment.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__alignment__iter__t_a47da598c1af7c96722ace460fae384a9}{ps\+\_\+alignment\+\_\+iter\+\_\+name}} (\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__alignment__iter__t_a5810641dfea5220b6b17674cd28046f9}{ps\+\_\+alignment\+\_\+iter\+\_\+seg}} (\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor, int \texorpdfstring{$\ast$}{*}start, int \texorpdfstring{$\ast$}{*}duration)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__alignment__iter__t_a86c1a5d3a522405c038b3f0917ec7e42}{ps\+\_\+alignment\+\_\+iter\+\_\+next}} (\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__alignment__iter__t_acc617cc49965b92ed2974ee93355c828}{ps\+\_\+alignment\+\_\+iter\+\_\+children}} (\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structps__alignment__iter__t_a395971ce8af5acd6d26c9d6ec43a7bca}{ps\+\_\+alignment\+\_\+iter\+\_\+free}} (\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterator over entries in an alignment. 
+
+\label{doc-func-members}
+\Hypertarget{structps__alignment__iter__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__alignment__iter__t_acc617cc49965b92ed2974ee93355c828}\index{ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}!ps\_alignment\_iter\_children@{ps\_alignment\_iter\_children}}
+\index{ps\_alignment\_iter\_children@{ps\_alignment\_iter\_children}!ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_iter\_children()}{ps\_alignment\_iter\_children()}}
+{\footnotesize\ttfamily \label{structps__alignment__iter__t_acc617cc49965b92ed2974ee93355c828} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+alignment\+\_\+iter\+\_\+children (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Iterate over the children of the current alignment entry.
+
+If there are no child nodes, NULL is returned. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__alignment__iter__t_a395971ce8af5acd6d26c9d6ec43a7bca}\index{ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}!ps\_alignment\_iter\_free@{ps\_alignment\_iter\_free}}
+\index{ps\_alignment\_iter\_free@{ps\_alignment\_iter\_free}!ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_iter\_free()}{ps\_alignment\_iter\_free()}}
+{\footnotesize\ttfamily \label{structps__alignment__iter__t_a395971ce8af5acd6d26c9d6ec43a7bca} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+alignment\+\_\+iter\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Release an iterator before completing all iterations. \Hypertarget{structps__alignment__iter__t_a47da598c1af7c96722ace460fae384a9}\index{ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}!ps\_alignment\_iter\_name@{ps\_alignment\_iter\_name}}
+\index{ps\_alignment\_iter\_name@{ps\_alignment\_iter\_name}!ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_iter\_name()}{ps\_alignment\_iter\_name()}}
+{\footnotesize\ttfamily \label{structps__alignment__iter__t_a47da598c1af7c96722ace460fae384a9} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} ps\+\_\+alignment\+\_\+iter\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Get the human-\/readable name of the current segment for an alignment.
+
+\begin{DoxyReturn}{Returns}
+Name of this segment as a string (word, phone, or state number). This pointer is owned by the iterator, do not free it yourself. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__alignment__iter__t_a86c1a5d3a522405c038b3f0917ec7e42}\index{ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}!ps\_alignment\_iter\_next@{ps\_alignment\_iter\_next}}
+\index{ps\_alignment\_iter\_next@{ps\_alignment\_iter\_next}!ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_iter\_next()}{ps\_alignment\_iter\_next()}}
+{\footnotesize\ttfamily \label{structps__alignment__iter__t_a86c1a5d3a522405c038b3f0917ec7e42} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+alignment\+\_\+iter\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Move an alignment iterator forward.
+
+If the end of the alignment is reached, this will free the iterator and return NULL. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__alignment__iter__t_a5810641dfea5220b6b17674cd28046f9}\index{ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}!ps\_alignment\_iter\_seg@{ps\_alignment\_iter\_seg}}
+\index{ps\_alignment\_iter\_seg@{ps\_alignment\_iter\_seg}!ps\_alignment\_iter\_t@{ps\_alignment\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_alignment\_iter\_seg()}{ps\_alignment\_iter\_seg()}}
+{\footnotesize\ttfamily \label{structps__alignment__iter__t_a5810641dfea5220b6b17674cd28046f9} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int ps\+\_\+alignment\+\_\+iter\+\_\+seg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__alignment__iter__t}{ps\+\_\+alignment\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{start}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{duration}{}\end{DoxyParamCaption})}
+
+Get the timing and score information for the current segment of an alignment.
+
+\begin{DoxyItemize}
+\item start Output pointer for start frame \item duration Output pointer for duration \begin{DoxyReturn}{Returns}
+Acoustic score for this segment 
+\end{DoxyReturn}
+\end{DoxyItemize}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{alignment_8h}{alignment.\+h}}\end{DoxyCompactItemize}

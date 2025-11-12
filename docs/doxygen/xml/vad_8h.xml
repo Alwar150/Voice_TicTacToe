@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="vad_8h" kind="file" language="C++">
+    <compoundname>vad.h</compoundname>
+    <includes refid="prim__type_8h" local="no">pocketsphinx/prim_type.h</includes>
+    <includes refid="export_8h" local="no">pocketsphinx/export.h</includes>
+    <includedby refid="pocketsphinx_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</includedby>
+    <includedby refid="endpointer_8h" local="no">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="2">
+        <label>pocketsphinx/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h</label>
+        <link refid="vad_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pocketsphinx/sphinx_config.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="17">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.cpp</label>
+        <link refid="_human_player_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/HumanPlayer.h</label>
+        <link refid="_human_player_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.cpp</label>
+        <link refid="_mini_max_agent_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/MiniMaxAgent.h</label>
+        <link refid="_mini_max_agent_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/NoAgent.h</label>
+        <link refid="_no_agent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp</label>
+        <link refid="_board_8cpp"/>
+      </node>
+      <node id="18">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp</label>
+        <link refid="_speech_manager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h</label>
+        <link refid="_speech_manager_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/main.cpp</label>
+        <link refid="_tic_tac_toe_test_2main_8cpp"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_board.h</label>
+        <link refid="tst__board_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest/tst_minimaxagent.h</label>
+        <link refid="tst__minimaxagent_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.cpp</label>
+        <link refid="_tic_tac_toe_game_8cpp"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.h</label>
+        <link refid="_title_screen_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/endpointer.h</label>
+        <link refid="endpointer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h</label>
+        <link refid="vad_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="vad_8h_1a619d5a74e526164718dfee5ed9a48202" prot="public" static="no">
+        <name>PS_VAD_DEFAULT_SAMPLE_RATE</name>
+        <initializer>16000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default sampling rate for voice activity detector </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="82" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vad_8h_1a42e1e50b03fb55c0b0377cf017c70390" prot="public" static="no">
+        <name>PS_VAD_DEFAULT_FRAME_LENGTH</name>
+        <initializer>0.03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default frame length for voice activity detector </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="86" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vad_8h_1a8605289aba98c9ef20a53d77fd1bcfe4" prot="public" static="no">
+        <name>ps_vad_frame_length</name>
+        <param><defname>vad</defname></param>
+        <initializer>((double)ps_vad_frame_size(vad) / ps_vad_sample_rate(vad))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the <emphasis>actual</emphasis> length of a frame in seconds.</para>
+<para>This may differ from the value requested in ps_vad_set_input_params(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="178" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="vad_8h_1abbe4d33c65a9eadfc19e34814b67008a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ps_vad_mode_e</name>
+        <enumvalue id="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc" prot="public">
+          <name>PS_VAD_LOOSE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa89e52dc825838610a3aa4ea0fe03fdc7" prot="public">
+          <name>PS_VAD_MEDIUM_LOOSE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa4048797917df161a4c563d7275ad8d9d" prot="public">
+          <name>PS_VAD_MEDIUM_STRICT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa3a0206f29e4236c2b69943f4f59e41b5" prot="public">
+          <name>PS_VAD_STRICT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Voice activity detection &quot;aggressiveness&quot; levels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="vad_8h" kindref="compound">pocketsphinx/vad.h</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="62" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="enum" id="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ps_vad_class_e</name>
+        <enumvalue id="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a91962e1736dea5e5360514d28d91b2ef" prot="public">
+          <name>PS_VAD_ERROR</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a1996a23a0326d2ed6ea77907504365bd" prot="public">
+          <name>PS_VAD_NOT_SPEECH</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a4e21d4159f6b5aa4f3d055ee4669f5a6" prot="public">
+          <name>PS_VAD_SPEECH</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Classification of input frames returned by ps_vad_classify(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="vad_8h" kindref="compound">pocketsphinx/vad.h</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="73" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" bodystart="73" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vad_8h_1a6813ff6e0f9e0f11336dd7cc5d901170" prot="public" static="no">
+        <type>struct ps_vad_s</type>
+        <definition>typedef struct ps_vad_s ps_vad_t</definition>
+        <argsstring></argsstring>
+        <name>ps_vad_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="56" column="23" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" prot="public" static="no">
+        <type>enum <ref refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008a" kindref="member">ps_vad_mode_e</ref></type>
+        <definition>typedef enum ps_vad_mode_e ps_vad_mode_t</definition>
+        <argsstring></argsstring>
+        <name>ps_vad_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="67" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vad_8h_1a8ec7428965724fab96f9ca4f7ded5b4d" prot="public" static="no">
+        <type>enum <ref refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52" kindref="member">ps_vad_class_e</ref></type>
+        <definition>typedef enum ps_vad_class_e ps_vad_class_t</definition>
+        <argsstring></argsstring>
+        <name>ps_vad_class_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="77" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Simple voice activity detection. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Because doxygen is Bad Software, the actual documentation can only exist in <ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref>. Sorry about that. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-<sp/>c-basic-offset:4;<sp/>indent-tabs-mode:<sp/>nil<sp/>-*-<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2022<sp/>David<sp/>Huggins-Daines.<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>distribution.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>``AS<sp/>IS&apos;&apos;<sp/>AND<sp/>ANY<sp/>EXPRESSED<sp/>OR<sp/>IMPLIED</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHOR<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>====================================================================</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__PS_VAD_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__PS_VAD_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="prim__type_8h" kindref="compound">pocketsphinx/prim_type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="export_8h" kindref="compound">pocketsphinx/export.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="vad_8h_1a6813ff6e0f9e0f11336dd7cc5d901170" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ps_vad_s<sp/><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008a" kindref="member">ps_vad_mode_e</ref><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc" kindref="member">PS_VAD_LOOSE</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="64" refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa89e52dc825838610a3aa4ea0fe03fdc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa89e52dc825838610a3aa4ea0fe03fdc7" kindref="member">PS_VAD_MEDIUM_LOOSE</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="65" refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa4048797917df161a4c563d7275ad8d9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa4048797917df161a4c563d7275ad8d9d" kindref="member">PS_VAD_MEDIUM_STRICT</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="66" refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa3a0206f29e4236c2b69943f4f59e41b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa3a0206f29e4236c2b69943f4f59e41b5" kindref="member">PS_VAD_STRICT</ref><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="67" refid="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" refkind="member"><highlight class="normal">}<sp/><ref refid="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" kindref="member">ps_vad_mode_t</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52" kindref="member">ps_vad_class_e</ref><sp/>{</highlight></codeline>
+<codeline lineno="74" refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a91962e1736dea5e5360514d28d91b2ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a91962e1736dea5e5360514d28d91b2ef" kindref="member">PS_VAD_ERROR</ref><sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="75" refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a1996a23a0326d2ed6ea77907504365bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a1996a23a0326d2ed6ea77907504365bd" kindref="member">PS_VAD_NOT_SPEECH</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="76" refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a4e21d4159f6b5aa4f3d055ee4669f5a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vad_8h_1aca4440aaf5b90a96ad30702d6ace5f52a4e21d4159f6b5aa4f3d055ee4669f5a6" kindref="member">PS_VAD_SPEECH</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="77" refid="vad_8h_1a8ec7428965724fab96f9ca4f7ded5b4d" refkind="member"><highlight class="normal">}<sp/><ref refid="vad_8h_1a8ec7428965724fab96f9ca4f7ded5b4d" kindref="member">ps_vad_class_t</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="vad_8h_1a619d5a74e526164718dfee5ed9a48202" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_VAD_DEFAULT_SAMPLE_RATE<sp/>16000</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="vad_8h_1a42e1e50b03fb55c0b0377cf017c70390" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PS_VAD_DEFAULT_FRAME_LENGTH<sp/>0.03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="106" refid="structps__vad__t_1a28a9c81b473d91a2fcd0fef37c32a4ac" refkind="member"><highlight class="normal"><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref><sp/>*<ref refid="structps__vad__t_1a28a9c81b473d91a2fcd0fef37c32a4ac" kindref="member">ps_vad_init</ref>(<ref refid="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" kindref="member">ps_vad_mode_t</ref><sp/>mode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sample_rate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>frame_length);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="116" refid="structps__vad__t_1aa851b665f47d6f6033c5963e453bc43e" refkind="member"><highlight class="normal"><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref><sp/>*<ref refid="structps__vad__t_1aa851b665f47d6f6033c5963e453bc43e" kindref="member">ps_vad_retain</ref>(<ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref><sp/>*vad);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="126" refid="structps__vad__t_1add5e5c92c593edbf45edd20624129370" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__vad__t_1add5e5c92c593edbf45edd20624129370" kindref="member">ps_vad_free</ref>(<ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref><sp/>*vad);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="147" refid="structps__vad__t_1a69fe34f7717228b0cc8ada126d1d5feb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__vad__t_1a69fe34f7717228b0cc8ada126d1d5feb" kindref="member">ps_vad_set_input_params</ref>(<ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref><sp/>*vad,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sample_rate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>frame_length);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="157" refid="structps__vad__t_1a1c692aeda85aa6122589404ef401e03c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structps__vad__t_1a1c692aeda85aa6122589404ef401e03c" kindref="member">ps_vad_sample_rate</ref>(<ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref><sp/>*vad);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="171" refid="structps__vad__t_1ac35931b7e6c879dbda6508f302be4751" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structps__vad__t_1ac35931b7e6c879dbda6508f302be4751" kindref="member">ps_vad_frame_size</ref>(<ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref><sp/>*vad);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="vad_8h_1a8605289aba98c9ef20a53d77fd1bcfe4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ps_vad_frame_length(vad)<sp/>((double)ps_vad_frame_size(vad)<sp/>/<sp/>ps_vad_sample_rate(vad))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref></highlight></codeline>
+<codeline lineno="191" refid="structps__vad__t_1aaf0e13d20d7b8988977ca8e5a9894cb7" refkind="member"><highlight class="normal"><ref refid="vad_8h_1a8ec7428965724fab96f9ca4f7ded5b4d" kindref="member">ps_vad_class_t</ref><sp/><ref refid="structps__vad__t_1aaf0e13d20d7b8988977ca8e5a9894cb7" kindref="member">ps_vad_classify</ref>(<ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref><sp/>*vad,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref><sp/>*frame);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__PS_VAD_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h"/>
+  </compounddef>
+</doxygen>

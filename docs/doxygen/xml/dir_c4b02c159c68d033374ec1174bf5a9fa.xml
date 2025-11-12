@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_c4b02c159c68d033374ec1174bf5a9fa" kind="dir">
+    <compoundname>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/include</compoundname>
+    <innerdir refid="dir_b1bcb6fe7db195b510fca5862302fc64">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/include/pocketsphinx</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/include/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_t_t_t_options" kind="struct" language="C++" prot="public">
+    <compoundname>TTTOptions</compoundname>
+    <includes refid="_t_t_t_common_types_8h" local="no">TTTCommonTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_t_t_options_1a018fe6935d21dbcf3db30a4a7b3abed0" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t TTTOptions::boardSize</definition>
+        <argsstring></argsstring>
+        <name>boardSize</name>
+        <qualifiedname>TTTOptions::boardSize</qualifiedname>
+        <initializer>= <ref refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" kindref="member">defaults::DEFAULT_BOARD_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="39" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" compoundref="_t_t_t_controller_8cpp" startline="9" endline="32">TTTController::TTTController</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_t_t_options_1a086422e4da26dd24bc1166172a9237af" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short TTTOptions::miniMaxDepth</definition>
+        <argsstring></argsstring>
+        <name>miniMaxDepth</name>
+        <qualifiedname>TTTOptions::miniMaxDepth</qualifiedname>
+        <initializer>= <ref refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" kindref="member">defaults::DEFAULT_MINIMAX_DEPTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="40" column="20" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_t_t_options_1a415a2038b9a5bf87d0a8aa41ce52c8aa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TTTOptions::AIopponent</definition>
+        <argsstring></argsstring>
+        <name>AIopponent</name>
+        <qualifiedname>TTTOptions::AIopponent</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="41" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_t_t_options_1a1d0e61b132d2b32ab27d6e345aac0697" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TTTOptions::AIstarts</definition>
+        <argsstring></argsstring>
+        <name>AIstarts</name>
+        <qualifiedname>TTTOptions::AIstarts</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="42" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="struct_t_t_t_options" kindref="compound">TTTOptions</ref> struct defines a tic tac toe game options. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" line="37" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TTTCommonTypes.h" bodystart="38" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct_t_t_t_options_1a415a2038b9a5bf87d0a8aa41ce52c8aa" prot="public" virt="non-virtual"><scope>TTTOptions</scope><name>AIopponent</name></member>
+      <member refid="struct_t_t_t_options_1a1d0e61b132d2b32ab27d6e345aac0697" prot="public" virt="non-virtual"><scope>TTTOptions</scope><name>AIstarts</name></member>
+      <member refid="struct_t_t_t_options_1a018fe6935d21dbcf3db30a4a7b3abed0" prot="public" virt="non-virtual"><scope>TTTOptions</scope><name>boardSize</name></member>
+      <member refid="struct_t_t_t_options_1a086422e4da26dd24bc1166172a9237af" prot="public" virt="non-virtual"><scope>TTTOptions</scope><name>miniMaxDepth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

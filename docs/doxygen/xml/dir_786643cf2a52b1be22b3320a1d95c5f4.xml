@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_786643cf2a52b1be22b3320a1d95c5f4" kind="dir">
+    <compoundname>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx</compoundname>
+    <innerfile refid="alignment_8h">alignment.h</innerfile>
+    <innerfile refid="endpointer_8h">endpointer.h</innerfile>
+    <innerfile refid="err_8h">err.h</innerfile>
+    <innerfile refid="export_8h">export.h</innerfile>
+    <innerfile refid="lattice_8h">lattice.h</innerfile>
+    <innerfile refid="logmath_8h">logmath.h</innerfile>
+    <innerfile refid="mllr_8h">mllr.h</innerfile>
+    <innerfile refid="model_8h">model.h</innerfile>
+    <innerfile refid="prim__type_8h">prim_type.h</innerfile>
+    <innerfile refid="search_8h">search.h</innerfile>
+    <innerfile refid="include_2pocketsphinx_2sphinx__config_8h">sphinx_config.h</innerfile>
+    <innerfile refid="vad_8h">vad.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_board" kind="class" language="C++" prot="public">
+    <compoundname>Board</compoundname>
+    <includes refid="_board_8h" local="no">Board.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_board_1adfd225a07d805a10bf34c7592218eb70" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; <ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref> &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;BoardMarks&gt; &gt; Board::board_</definition>
+        <argsstring></argsstring>
+        <name>board_</name>
+        <qualifiedname>Board::board_</qualifiedname>
+        <briefdescription>
+<para>board is a 2D vector that represents a machine readable format to the GUI application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="24" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_board_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" compoundref="_board_8cpp" startline="94" endline="97">at</referencedby>
+        <referencedby refid="class_board_1a644749e247a38adc51e2a42d87fd4e48" compoundref="_board_8cpp" startline="23" endline="28">Board</referencedby>
+        <referencedby refid="class_board_1acba2cffa38302b3bed1f43d681eefb28" compoundref="_board_8cpp" startline="12" endline="16">Board</referencedby>
+        <referencedby refid="class_board_1ac77f209904bb37545295c17649a9dc17" compoundref="_board_8cpp" startline="18" endline="21">Board</referencedby>
+        <referencedby refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" compoundref="_board_8cpp" startline="8" endline="10">Board</referencedby>
+        <referencedby refid="class_board_1a1b7486c5df3db7e5a1c8ed097492527f" compoundref="_board_8cpp" startline="99" endline="174">evaluateBoard</referencedby>
+        <referencedby refid="class_board_1ae4ccc3271e479d7f9284b9567dc4c2a6" compoundref="_board_8cpp" startline="30" endline="35">operator=</referencedby>
+        <referencedby refid="class_board_1aaef819a8d1a10c35d9f802195802236e" compoundref="_board_8cpp" startline="176" endline="184">reset</referencedby>
+        <referencedby refid="class_board_1addcaa486e1293eebcb323fb936353f43" compoundref="_board_8cpp" startline="80" endline="92">resetCell</referencedby>
+        <referencedby refid="class_board_1a109cbc4dc8c6c76d05caba0345eedc17" compoundref="_board_8cpp" startline="56" endline="78">setPlayerInput</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Board::boardSize_</definition>
+        <argsstring></argsstring>
+        <name>boardSize_</name>
+        <qualifiedname>Board::boardSize_</qualifiedname>
+        <briefdescription>
+<para>boardSize is the number of rows or columns in the board. a 3x3 board has a boardSize of 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="29" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_board_1a644749e247a38adc51e2a42d87fd4e48" compoundref="_board_8cpp" startline="23" endline="28">Board</referencedby>
+        <referencedby refid="class_board_1acba2cffa38302b3bed1f43d681eefb28" compoundref="_board_8cpp" startline="12" endline="16">Board</referencedby>
+        <referencedby refid="class_board_1ac77f209904bb37545295c17649a9dc17" compoundref="_board_8cpp" startline="18" endline="21">Board</referencedby>
+        <referencedby refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" compoundref="_board_8cpp" startline="8" endline="10">Board</referencedby>
+        <referencedby refid="class_board_1a1b7486c5df3db7e5a1c8ed097492527f" compoundref="_board_8cpp" startline="99" endline="174">evaluateBoard</referencedby>
+        <referencedby refid="class_board_1ae4ccc3271e479d7f9284b9567dc4c2a6" compoundref="_board_8cpp" startline="30" endline="35">operator=</referencedby>
+        <referencedby refid="class_board_1aaef819a8d1a10c35d9f802195802236e" compoundref="_board_8cpp" startline="176" endline="184">reset</referencedby>
+        <referencedby refid="class_board_1addcaa486e1293eebcb323fb936353f43" compoundref="_board_8cpp" startline="80" endline="92">resetCell</referencedby>
+        <referencedby refid="class_board_1a109cbc4dc8c6c76d05caba0345eedc17" compoundref="_board_8cpp" startline="56" endline="78">setPlayerInput</referencedby>
+        <referencedby refid="class_board_1ad82bf1ecd8b4e65f8c5fd6133e831138" compoundref="_board_8cpp" startline="186" endline="189">size</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::Board</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>Board</name>
+        <qualifiedname>Board::Board</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a board given a board size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the number of rows or columns in the board. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="36" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="8" bodyend="10"/>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+        <references refid="class_board_1ad82bf1ecd8b4e65f8c5fd6133e831138" compoundref="_board_8cpp" startline="186" endline="189">size</references>
+        <referencedby refid="class_board_1a644749e247a38adc51e2a42d87fd4e48" compoundref="_board_8cpp" startline="23" endline="28">Board</referencedby>
+        <referencedby refid="class_board_1acba2cffa38302b3bed1f43d681eefb28" compoundref="_board_8cpp" startline="12" endline="16">Board</referencedby>
+        <referencedby refid="class_board_1ac77f209904bb37545295c17649a9dc17" compoundref="_board_8cpp" startline="18" endline="21">Board</referencedby>
+        <referencedby refid="class_board_1ae4ccc3271e479d7f9284b9567dc4c2a6" compoundref="_board_8cpp" startline="30" endline="35">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1acba2cffa38302b3bed1f43d681eefb28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::Board</definition>
+        <argsstring>(Board &amp;b)</argsstring>
+        <name>Board</name>
+        <qualifiedname>Board::Board</qualifiedname>
+        <param>
+          <type><ref refid="class_board" kindref="compound">Board</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_board" kindref="compound">Board</ref> copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The board to be copied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="41" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="12" bodyend="16"/>
+        <references refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" compoundref="_board_8cpp" startline="8" endline="10">Board</references>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1ac77f209904bb37545295c17649a9dc17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::Board</definition>
+        <argsstring>(const Board &amp;b)</argsstring>
+        <name>Board</name>
+        <qualifiedname>Board::Board</qualifiedname>
+        <param>
+          <type>const <ref refid="class_board" kindref="compound">Board</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="43" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="18" bodyend="21"/>
+        <references refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" compoundref="_board_8cpp" startline="8" endline="10">Board</references>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a644749e247a38adc51e2a42d87fd4e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::Board</definition>
+        <argsstring>(Board &amp;&amp;b)</argsstring>
+        <name>Board</name>
+        <qualifiedname>Board::Board</qualifiedname>
+        <param>
+          <type><ref refid="class_board" kindref="compound">Board</ref> &amp;&amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_board" kindref="compound">Board</ref> move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The board to be moved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="48" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="23" bodyend="28"/>
+        <references refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" compoundref="_board_8cpp" startline="8" endline="10">Board</references>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1ae4ccc3271e479d7f9284b9567dc4c2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_board" kindref="compound">Board</ref> &amp;</type>
+        <definition>Board &amp; Board::operator=</definition>
+        <argsstring>(Board b)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Board::operator=</qualifiedname>
+        <param>
+          <type><ref refid="class_board" kindref="compound">Board</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>This assignment operator implements the copy &amp; swap idiom, so it works as a move and a copy assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The board to be copied or moved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a reference to this object, so this operator can be chained. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="55" column="11" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="30" bodyend="35"/>
+        <references refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" compoundref="_board_8cpp" startline="8" endline="10">Board</references>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1af73f45730119a1fd8f6670f53f959e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Board::~Board</definition>
+        <argsstring>()</argsstring>
+        <name>~Board</name>
+        <qualifiedname>Board::~Board</qualifiedname>
+        <briefdescription>
+<para><ref refid="class_board" kindref="compound">Board</ref> destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="59" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a1b7486c5df3db7e5a1c8ed097492527f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref></type>
+        <definition>BoardState Board::evaluateBoard</definition>
+        <argsstring>() const</argsstring>
+        <name>evaluateBoard</name>
+        <qualifiedname>Board::evaluateBoard</qualifiedname>
+        <briefdescription>
+<para>evaluateBoard evaluates whether the state of the current board. the function can evaluate to X wins or O wins or a Tie or No Winner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the state of the current board. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="65" column="24" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="99" bodyend="174"/>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" compoundref="_t_t_t_common_types_8h" startline="147">Empty</references>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" compoundref="_t_t_t_common_types_8h" startline="152">NoWinner</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" compoundref="_t_t_t_common_types_8h" startline="147">O</references>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" compoundref="_t_t_t_common_types_8h" startline="152">OWins</references>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" compoundref="_t_t_t_common_types_8h" startline="152">Tie</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" compoundref="_t_t_t_common_types_8h" startline="147">X</references>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" compoundref="_t_t_t_common_types_8h" startline="152">XWins</references>
+        <referencedby refid="class_mini_max_agent_1a9d99e71c93f92fc3bda35809fa031fd8" compoundref="_mini_max_agent_8cpp" startline="11" endline="43">MiniMaxAgent::maxMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="_mini_max_agent_8cpp" startline="45" endline="76">MiniMaxAgent::minMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a8d0a338b90f9a44c44ccbbad873009a9" compoundref="_mini_max_agent_8cpp" startline="95" endline="129">MiniMaxAgent::play</referencedby>
+        <referencedby refid="class_board_1a109cbc4dc8c6c76d05caba0345eedc17" compoundref="_board_8cpp" startline="56" endline="78">setPlayerInput</referencedby>
+        <referencedby refid="tst__board_8h_1ab48b30211c8ddeb6587b53c4ada0bc31" compoundref="tst__board_8h" startline="405" endline="462">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a19e3b68208955da7395c5d38ffca8ba4" compoundref="tst__board_8h" startline="193" endline="344">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a8ca0397d3342d267ba6a7f13b98a2a05" compoundref="tst__board_8h" startline="346" endline="403">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a28b2bf2a7ac67d83661b3eaa3b2c118b" compoundref="tst__board_8h" startline="40" endline="191">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1adcd416e8815daad735b5333917656196" compoundref="tst__minimaxagent_8h" startline="77" endline="140">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1af7058d3c7505db3452d4c7025fe11d82" compoundref="tst__minimaxagent_8h" startline="12" endline="75">TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a109cbc4dc8c6c76d05caba0345eedc17" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Board::setPlayerInput</definition>
+        <argsstring>(size_t row, size_t col, BoardMarks currentPlayer)</argsstring>
+        <name>setPlayerInput</name>
+        <qualifiedname>Board::setPlayerInput</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>currentPlayer</declname>
+        </param>
+        <briefdescription>
+<para>setPlayerInput sets the board with the mark given in the specified location. after boundary checking the input row and column, and if the game hasen&apos;t reached a final state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the cell target. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the cell target. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the mark of the current player. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether the update was successfull or not based on the boundary check and validity of input given the board state. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>exception when the row or column is out of bounds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="76" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="56" bodyend="78"/>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" compoundref="_t_t_t_common_types_8h" startline="147">Empty</references>
+        <references refid="class_board_1a1b7486c5df3db7e5a1c8ed097492527f" compoundref="_board_8cpp" startline="99" endline="174">evaluateBoard</references>
+        <references refid="_t_t_t_common_types_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" compoundref="_t_t_t_common_types_8h" startline="152">NoWinner</references>
+        <referencedby refid="class_mini_max_agent_1a9d99e71c93f92fc3bda35809fa031fd8" compoundref="_mini_max_agent_8cpp" startline="11" endline="43">MiniMaxAgent::maxMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="_mini_max_agent_8cpp" startline="45" endline="76">MiniMaxAgent::minMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a8d0a338b90f9a44c44ccbbad873009a9" compoundref="_mini_max_agent_8cpp" startline="95" endline="129">MiniMaxAgent::play</referencedby>
+        <referencedby refid="tst__board_8h_1a6f8e97e39d716ebe3e1abcc8814441fd" compoundref="tst__board_8h" startline="559" endline="577">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1ab48b30211c8ddeb6587b53c4ada0bc31" compoundref="tst__board_8h" startline="405" endline="462">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a19e3b68208955da7395c5d38ffca8ba4" compoundref="tst__board_8h" startline="193" endline="344">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a8ca0397d3342d267ba6a7f13b98a2a05" compoundref="tst__board_8h" startline="346" endline="403">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a28b2bf2a7ac67d83661b3eaa3b2c118b" compoundref="tst__board_8h" startline="40" endline="191">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1afe8d32a4b1841501528198e3c3c317ff" compoundref="tst__board_8h" startline="9" endline="38">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a1ac3aa7aeea81ead4ab8dd66e94dde49" compoundref="tst__board_8h" startline="488" endline="557">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a9a2d51e4d9cf35eba8a63c379734358c" compoundref="tst__board_8h" startline="472" endline="478">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a5d13b3bb92d3a06be7fdf1b54961ea52" compoundref="tst__board_8h" startline="480" endline="486">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a9af799f6e2643a3997d0c094b5971d2b" compoundref="tst__board_8h" startline="464" endline="470">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1a032eae83898806e040369ea3602d53a7" compoundref="tst__minimaxagent_8h" startline="207" endline="270">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1adcd416e8815daad735b5333917656196" compoundref="tst__minimaxagent_8h" startline="77" endline="140">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1a8fab0dc25c45462fbed06661dc299e71" compoundref="tst__minimaxagent_8h" startline="142" endline="205">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1af7058d3c7505db3452d4c7025fe11d82" compoundref="tst__minimaxagent_8h" startline="12" endline="75">TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+        <definition>BoardMarks Board::at</definition>
+        <argsstring>(size_t row, size_t col) const</argsstring>
+        <name>at</name>
+        <qualifiedname>Board::at</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+<para>at is a getter function that returns a cell given a row and a column. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the cell target. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the cell target. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the value mark at the cell. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>exception when the row or column is out of bounds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="84" column="24" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="94" bodyend="97"/>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <referencedby refid="class_mini_max_agent_1a9d99e71c93f92fc3bda35809fa031fd8" compoundref="_mini_max_agent_8cpp" startline="11" endline="43">MiniMaxAgent::maxMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="_mini_max_agent_8cpp" startline="45" endline="76">MiniMaxAgent::minMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a8d0a338b90f9a44c44ccbbad873009a9" compoundref="_mini_max_agent_8cpp" startline="95" endline="129">MiniMaxAgent::play</referencedby>
+        <referencedby refid="tst__board_8h_1ac555eeb8f6fce63474f024697664db1d" compoundref="tst__board_8h" startline="579" endline="586">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a6f8e97e39d716ebe3e1abcc8814441fd" compoundref="tst__board_8h" startline="559" endline="577">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1afe8d32a4b1841501528198e3c3c317ff" compoundref="tst__board_8h" startline="9" endline="38">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1a032eae83898806e040369ea3602d53a7" compoundref="tst__minimaxagent_8h" startline="207" endline="270">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1a8fab0dc25c45462fbed06661dc299e71" compoundref="tst__minimaxagent_8h" startline="142" endline="205">TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1aaef819a8d1a10c35d9f802195802236e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Board::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>Board::reset</qualifiedname>
+        <briefdescription>
+<para>reset allows resetting the whole board, marking all the cells as empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="88" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="176" bodyend="184"/>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" compoundref="_t_t_t_common_types_8h" startline="147">Empty</references>
+        <referencedby refid="tst__board_8h_1ab48b30211c8ddeb6587b53c4ada0bc31" compoundref="tst__board_8h" startline="405" endline="462">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a19e3b68208955da7395c5d38ffca8ba4" compoundref="tst__board_8h" startline="193" endline="344">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a8ca0397d3342d267ba6a7f13b98a2a05" compoundref="tst__board_8h" startline="346" endline="403">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a28b2bf2a7ac67d83661b3eaa3b2c118b" compoundref="tst__board_8h" startline="40" endline="191">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1afe8d32a4b1841501528198e3c3c317ff" compoundref="tst__board_8h" startline="9" endline="38">TEST</referencedby>
+        <referencedby refid="tst__board_8h_1a1ac3aa7aeea81ead4ab8dd66e94dde49" compoundref="tst__board_8h" startline="488" endline="557">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1a032eae83898806e040369ea3602d53a7" compoundref="tst__minimaxagent_8h" startline="207" endline="270">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1adcd416e8815daad735b5333917656196" compoundref="tst__minimaxagent_8h" startline="77" endline="140">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1a8fab0dc25c45462fbed06661dc299e71" compoundref="tst__minimaxagent_8h" startline="142" endline="205">TEST</referencedby>
+        <referencedby refid="tst__minimaxagent_8h_1af7058d3c7505db3452d4c7025fe11d82" compoundref="tst__minimaxagent_8h" startline="12" endline="75">TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1addcaa486e1293eebcb323fb936353f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Board::resetCell</definition>
+        <argsstring>(size_t row, size_t col)</argsstring>
+        <name>resetCell</name>
+        <qualifiedname>Board::resetCell</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+<para>resetCell allows resetting a given cell to an empty type, without the extra state checks done in the setPlayerInput function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="93" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="80" bodyend="92"/>
+        <references refid="class_board_1adfd225a07d805a10bf34c7592218eb70" compoundref="_board_8h" startline="24">board_</references>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+        <references refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" compoundref="_t_t_t_common_types_8h" startline="147">Empty</references>
+        <referencedby refid="class_mini_max_agent_1a9d99e71c93f92fc3bda35809fa031fd8" compoundref="_mini_max_agent_8cpp" startline="11" endline="43">MiniMaxAgent::maxMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="_mini_max_agent_8cpp" startline="45" endline="76">MiniMaxAgent::minMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a8d0a338b90f9a44c44ccbbad873009a9" compoundref="_mini_max_agent_8cpp" startline="95" endline="129">MiniMaxAgent::play</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_board_1ad82bf1ecd8b4e65f8c5fd6133e831138" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Board::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>Board::size</qualifiedname>
+        <briefdescription>
+<para>size is a getter functions of the board size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the size of the board i.e. numebr of rows or columns. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="98" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.cpp" bodystart="186" bodyend="189"/>
+        <references refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" compoundref="_board_8h" startline="29">boardSize_</references>
+        <referencedby refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" compoundref="_board_8cpp" startline="8" endline="10">Board</referencedby>
+        <referencedby refid="class_mini_max_agent_1a9d99e71c93f92fc3bda35809fa031fd8" compoundref="_mini_max_agent_8cpp" startline="11" endline="43">MiniMaxAgent::maxMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="_mini_max_agent_8cpp" startline="45" endline="76">MiniMaxAgent::minMove</referencedby>
+        <referencedby refid="class_mini_max_agent_1a8d0a338b90f9a44c44ccbbad873009a9" compoundref="_mini_max_agent_8cpp" startline="95" endline="129">MiniMaxAgent::play</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_board" kindref="compound">Board</ref> class is responsible for representing the underlying model of the game, it is a 2D matrix representation of the GUI that is machine readable, and can be used when running any sort of algorithms on the board. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" line="16" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model/Board.h" bodystart="17" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_board_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" prot="public" virt="virtual"><scope>Board</scope><name>at</name></member>
+      <member refid="class_board_1aa94a6eebfdf27a7ec5c9011db662da9a" prot="public" virt="non-virtual"><scope>Board</scope><name>Board</name></member>
+      <member refid="class_board_1acba2cffa38302b3bed1f43d681eefb28" prot="public" virt="non-virtual"><scope>Board</scope><name>Board</name></member>
+      <member refid="class_board_1ac77f209904bb37545295c17649a9dc17" prot="public" virt="non-virtual"><scope>Board</scope><name>Board</name></member>
+      <member refid="class_board_1a644749e247a38adc51e2a42d87fd4e48" prot="public" virt="non-virtual"><scope>Board</scope><name>Board</name></member>
+      <member refid="class_board_1adfd225a07d805a10bf34c7592218eb70" prot="protected" virt="non-virtual"><scope>Board</scope><name>board_</name></member>
+      <member refid="class_board_1a9be071bf59fbbb74c3eade9a74d8f521" prot="protected" virt="non-virtual"><scope>Board</scope><name>boardSize_</name></member>
+      <member refid="class_board_1a1b7486c5df3db7e5a1c8ed097492527f" prot="public" virt="virtual"><scope>Board</scope><name>evaluateBoard</name></member>
+      <member refid="class_board_1ae4ccc3271e479d7f9284b9567dc4c2a6" prot="public" virt="non-virtual"><scope>Board</scope><name>operator=</name></member>
+      <member refid="class_board_1aaef819a8d1a10c35d9f802195802236e" prot="public" virt="virtual"><scope>Board</scope><name>reset</name></member>
+      <member refid="class_board_1addcaa486e1293eebcb323fb936353f43" prot="public" virt="virtual"><scope>Board</scope><name>resetCell</name></member>
+      <member refid="class_board_1a109cbc4dc8c6c76d05caba0345eedc17" prot="public" virt="virtual"><scope>Board</scope><name>setPlayerInput</name></member>
+      <member refid="class_board_1ad82bf1ecd8b4e65f8c5fd6133e831138" prot="public" virt="non-virtual"><scope>Board</scope><name>size</name></member>
+      <member refid="class_board_1af73f45730119a1fd8f6670f53f959e68" prot="public" virt="virtual"><scope>Board</scope><name>~Board</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

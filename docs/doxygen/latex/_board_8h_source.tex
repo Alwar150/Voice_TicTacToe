@@ -1,0 +1,42 @@
+\doxysection{Board.\+h}
+\hypertarget{_board_8h_source}{}\label{_board_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/Model/Board.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/Model/Board.h}}
+\mbox{\hyperlink{_board_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BOARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BOARD\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_t_t_common_types_8h}{TTTCommonTypes.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtGlobal>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{protected}:\ \textcolor{comment}{//\ Data}}
+\DoxyCodeLine{00024\ \ \ \ \ vector<vector<BoardMarks>>\ \mbox{\hyperlink{class_board_adfd225a07d805a10bf34c7592218eb70}{board\_}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_board_a9be071bf59fbbb74c3eade9a74d8f521}{boardSize\_}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}(\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{size}});}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}(\mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}\&\ b);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}\&\ b);}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}(\mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}\&\&\ b);}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}\&\ \mbox{\hyperlink{class_board_ae4ccc3271e479d7f9284b9567dc4c2a6}{operator=}}(\mbox{\hyperlink{class_board_aa94a6eebfdf27a7ec5c9011db662da9a}{Board}}\ b);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{\string~Board}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222}{BoardState}}\ \mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{evaluateBoard}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ col,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ currentPlayer);}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ \mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ col)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_board_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_board_addcaa486e1293eebcb323fb936353f43}{resetCell}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ col);}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{size}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#ifdef\ QT\_DEBUG}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ printBoard\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BOARD\_H}}
+
+\end{DoxyCode}

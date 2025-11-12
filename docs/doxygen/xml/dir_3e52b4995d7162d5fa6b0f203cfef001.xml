@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_3e52b4995d7162d5fa6b0f203cfef001" kind="dir">
+    <compoundname>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network</compoundname>
+    <innerfile refid="_network_manager_8cpp">NetworkManager.cpp</innerfile>
+    <innerfile refid="_network_manager_8h">NetworkManager.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/"/>
+  </compounddef>
+</doxygen>

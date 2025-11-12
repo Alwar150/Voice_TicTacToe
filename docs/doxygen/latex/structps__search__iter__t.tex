@@ -1,0 +1,87 @@
+\doxysection{ps\+\_\+search\+\_\+iter\+\_\+t Struct Reference}
+\hypertarget{structps__search__iter__t}{}\label{structps__search__iter__t}\index{ps\_search\_iter\_t@{ps\_search\_iter\_t}}
+
+
+Iterator over search modules.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/search.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__search__iter__t_ac8ae8c4c4f792d0c12eef3426abe4a93}{ps\+\_\+search\+\_\+iter\+\_\+next}} (\mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__search__iter__t_a86d9b5968b9fe317a6335345fb9a2dd0}{ps\+\_\+search\+\_\+iter\+\_\+val}} (\mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__search__iter__t_a41e404de59cbd7bfc32f2da3ec7e6137}{ps\+\_\+search\+\_\+iter\+\_\+free}} (\mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterator over search modules. 
+
+\label{doc-func-members}
+\Hypertarget{structps__search__iter__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__search__iter__t_a41e404de59cbd7bfc32f2da3ec7e6137}\index{ps\_search\_iter\_t@{ps\_search\_iter\_t}!ps\_search\_iter\_free@{ps\_search\_iter\_free}}
+\index{ps\_search\_iter\_free@{ps\_search\_iter\_free}!ps\_search\_iter\_t@{ps\_search\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_search\_iter\_free()}{ps\_search\_iter\_free()}}
+{\footnotesize\ttfamily \label{structps__search__iter__t_a41e404de59cbd7bfc32f2da3ec7e6137} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+search\+\_\+iter\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Delete an unfinished search iterator
+
+\begin{DoxySeeAlso}{See also}
+ps\+\_\+activate\+\_\+search 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}, and \mbox{\hyperlink{structps__search__iter__t_a86d9b5968b9fe317a6335345fb9a2dd0}{ps\+\_\+search\+\_\+iter\+\_\+val()}}.
+
+\Hypertarget{structps__search__iter__t_ac8ae8c4c4f792d0c12eef3426abe4a93}\index{ps\_search\_iter\_t@{ps\_search\_iter\_t}!ps\_search\_iter\_next@{ps\_search\_iter\_next}}
+\index{ps\_search\_iter\_next@{ps\_search\_iter\_next}!ps\_search\_iter\_t@{ps\_search\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_search\_iter\_next()}{ps\_search\_iter\_next()}}
+{\footnotesize\ttfamily \label{structps__search__iter__t_ac8ae8c4c4f792d0c12eef3426abe4a93} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+search\+\_\+iter\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Updates search iterator to point to the next position.
+
+This function automatically frees the iterator object upon reaching the final entry. \begin{DoxySeeAlso}{See also}
+ps\+\_\+activate\+\_\+search 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__search__iter__t_a86d9b5968b9fe317a6335345fb9a2dd0}\index{ps\_search\_iter\_t@{ps\_search\_iter\_t}!ps\_search\_iter\_val@{ps\_search\_iter\_val}}
+\index{ps\_search\_iter\_val@{ps\_search\_iter\_val}!ps\_search\_iter\_t@{ps\_search\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_search\_iter\_val()}{ps\_search\_iter\_val()}}
+{\footnotesize\ttfamily \label{structps__search__iter__t_a86d9b5968b9fe317a6335345fb9a2dd0} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} ps\+\_\+search\+\_\+iter\+\_\+val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__search__iter__t}{ps\+\_\+search\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Retrieves the name of the search the iterator points to.
+
+\begin{DoxySeeAlso}{See also}
+ps\+\_\+activate\+\_\+search
+\end{DoxySeeAlso}
+Updates search iterator to point to the next position.
+
+This function automatically frees the iterator object upon reaching the final entry. \begin{DoxySeeAlso}{See also}
+ps\+\_\+activate\+\_\+search 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+Referenced by \mbox{\hyperlink{structps__search__iter__t_a41e404de59cbd7bfc32f2da3ec7e6137}{ps\+\_\+search\+\_\+iter\+\_\+free()}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{search_8h}{search.\+h}}\end{DoxyCompactItemize}

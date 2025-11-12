@@ -1,0 +1,80 @@
+\chapter{Pocket\+Sphinx API Documentation }
+\hypertarget{index}{}\label{index}\index{PocketSphinx API Documentation@{PocketSphinx API Documentation}}
+\begin{DoxyAuthor}{Author}
+David Huggins-\/\+Daines \href{mailto:dhdaines@gmail.com}{\texttt{dhdaines@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+5.\+0.\+4 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+January 10, 2025
+\end{DoxyDate}
+\hypertarget{index_intro_sec}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{index_intro_sec}
+This is the documentation for the Pocket\+Sphinx speech recognition engine. The main API calls are documented in \doxylink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t} and \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t}. The organization of this document is not optimal due to the limitations of Doxygen, so if you know of a better tool for documenting object-\/oriented interfaces in C, please let me know.\hypertarget{index_install_sec}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{index_install_sec}
+To install from source, you will need a C compiler and a recent version of CMake. If you wish to use an integrated development environment, Visual Studio Code will automate most of this process for you once you have installed C++ and CMake support as described at \href{https://code.visualstudio.com/docs/languages/cpp}{\texttt{https\+://code.\+visualstudio.\+com/docs/languages/cpp}}
+
+The easiest way to program Pocket\+Sphinx is with the Python module. See \href{http://pocketsphinx.readthedocs.io/}{\texttt{http\+://pocketsphinx.\+readthedocs.\+io/}} for installation and usage instructions.\hypertarget{index_unix_install}{}\doxysubsection{\texorpdfstring{Unix-\/like systems}{Unix-\/like systems}}\label{index_unix_install}
+From the top-\/level source directory, use CMake to generate a build directory\+: \begin{DoxyVerb}cmake -S . -B build
+\end{DoxyVerb}
+
+
+Now you can compile and run the tests, and install the code\+: \begin{DoxyVerb}cmake --build build
+cmake --build build --target check
+cmake --build build --target install
+\end{DoxyVerb}
+
+
+By default CMake will try to install things in {\ttfamily /usr/local}, which you might not have access to. If you want to install somewhere else you need to set {\ttfamily CMAKE\+\_\+\+INSTALL\+\_\+\+PREFIX} {\itshape when running cmake for the first time}, for example\+: \begin{DoxyVerb}cmake -S . -B build -DCMAKE_INSTALL_PREFIX=$HOME/.local
+\end{DoxyVerb}
+\hypertarget{index_windows_install}{}\doxysubsection{\texorpdfstring{Windows}{Windows}}\label{index_windows_install}
+On Windows, the process is similar, but you will need to tell CMake what build tool you are using with the {\ttfamily -\/G} option, and there are many of them. The build is known to work with {\ttfamily nmake} but it is easiest just to use Visual Studio Code, which should automatically detect and offer to run the build when you add the source directory to your list of directories. Once built, you will find the EXE files in {\ttfamily build\textbackslash{}Debug} or {\ttfamily build\textbackslash{}Release} depending on your build type.\hypertarget{index_build_options}{}\doxysubsection{\texorpdfstring{Compilation options}{Compilation options}}\label{index_build_options}
+By default, Pocket\+Sphinx does {\itshape not} build shared libraries, as there are not very many executables, and the library is quite smol. If you insist on building them, you can add {\ttfamily BUILD\+\_\+\+SHARED\+\_\+\+LIBS=ON} to the CMake configuration. This is done either in the CMake GUI, in Visual Studio Code, or with the {\ttfamily -\/D} option to the first CMake command-\/line above, e.\+g.\+: \begin{DoxyVerb}cmake -S. -B build -DBUILD_SHARED_LIBS=ON
+\end{DoxyVerb}
+
+
+GStreamer support is not built by default, but can be enabled with {\ttfamily BUILD\+\_\+\+GSTREAMER=ON}.
+
+Pocket\+Sphinx uses a mixture of fixed and floating-\/point computation by default, but can be configured to use fixed-\/point (nearly) exclusively with {\ttfamily FIXED\+\_\+\+POINT=ON}.\hypertarget{index_programming_sec}{}\doxysection{\texorpdfstring{Using the Library}{Using the Library}}\label{index_programming_sec}
+Minimally, to do speech recognition, you must first create a configuration, using \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t} and its associated functions. This configuration is then passed to ps\+\_\+init() to initialize the decoder, which is returned as a \doxylink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}. Note that you must ultimately release the configuration with ps\+\_\+config\+\_\+free() to avoid memory leaks.
+
+At this point, you can start an "{}utterance"{} (a section of speech you wish to recognize) with ps\+\_\+start\+\_\+utt() and pass audio data to the decoder with ps\+\_\+process\+\_\+raw(). When finished, call ps\+\_\+end\+\_\+utt() to finalize recognition. The result can then be obtained with ps\+\_\+get\+\_\+hyp(). To get a detailed word segmentation, use ps\+\_\+seg\+\_\+iter(). To get the N-\/best results, use ps\+\_\+nbest().
+
+When you no longer need the decoder, release its memory with ps\+\_\+free().
+
+A concrete example can be found in simple.\+c.
+
+You may, however, wish to do more interesting things like segmenting and recognizing speech from an audio stream. As described below, Pocket\+Sphinx will {\itshape not} handle the details of microphone input for you, because doing this in a reliable and portable way is outside the scope of a speech recognizer. In theory, \href{http://www.portaudio.com/}{\texttt{Port\+Audio}} should work across many platforms. An example using it is in live\+\_\+portaudio.\+c.
+
+On Windows, an example of using the \href{https://learn.microsoft.com/en-us/windows/win32/multimedia/waveform-audio}{\texttt{Waveform Audio API}} can be found in live\+\_\+win32.\+c.
+
+On GNU/\+Linux and some other platforms, audio might be handled by the Pulse\+Audio library/server, in which case you can also use the technique in live\+\_\+pulseaudio.\+c.
+
+Finally, if you have {\ttfamily sox} on your platform, you can simply use the method shown in live.\+c.\hypertarget{index_faq_sec}{}\doxysection{\texorpdfstring{Frequently Asked Questions}{Frequently Asked Questions}}\label{index_faq_sec}
+\hypertarget{index_faq_api}{}\doxysubsection{\texorpdfstring{My code no longer compiles! Why?}{My code no longer compiles! Why?}}\label{index_faq_api}
+Some APIs were intentionally broken by the 5.\+0.\+0 release. The most likely culprit here is the configuration API, where the old "{}options"{} which started with a {\ttfamily -\/} are now "{}parameters"{} which do not, and instead of a {\ttfamily cmd\+\_\+ln\+\_\+t} it is now a {\ttfamily \doxylink{structps__config__t}{ps\+\_\+config\+\_\+t}}. There is no backward compatibility, you have to change your code manually. This is straightforward for the most part. For example, instead of writing\+: \begin{DoxyVerb}cmdln = cmd_ln_init(NULL, "-samprate", "16000", NULL);
+cmd_ln_set_int32_r(NULL, "-maxwpf", 40);
+\end{DoxyVerb}
+
+
+You should write\+: \begin{DoxyVerb}config = ps_config_init(NULL);
+ps_config_set_int(config, "samprate", 16000);
+ps_config_set_int(config, "maxwpf", 40);
+\end{DoxyVerb}
+
+
+Another likely suspect is the \doxylink{search_8h}{search module API} where the function names have been changed to be more intuitive. Wherever you had {\ttfamily ps\+\_\+set\+\_\+search} you can use ps\+\_\+activate\+\_\+search(), it is the same function. Likewise, anything that was {\ttfamily ps\+\_\+set\+\_\+\texorpdfstring{$\ast$}{*}} is now {\ttfamily ps\+\_\+add\+\_\+\texorpdfstring{$\ast$}{*}}, e.\+g. ps\+\_\+add\+\_\+lm(), ps\+\_\+add\+\_\+fsg(), ps\+\_\+add\+\_\+keyphrase().\hypertarget{index_faq_path}{}\doxysubsection{\texorpdfstring{What does ERROR\+: "{}acmod.\+c, line NN\+: ..."{} mean?}{What does ERROR\+: "{}acmod.\+c, line NN\+: ..."{} mean?}}\label{index_faq_path}
+In general you will get "{}\+Acoustic model definition is not specified"{} or "{}\+Folder does not contain acoustic model definition"{} errors if Pocket\+Sphinx cannot find a model. If you are trying to use the default module, perhaps you have not installed Pocket\+Sphinx. Unfortunately it is not designed to run "{}in-\/place"{}, but you can get around this by setting the {\ttfamily POCKETSPHINX\+\_\+\+PATH} environment variable, e.\+g. \begin{DoxyVerb}cmake --build build
+POCKETSPHINX_PATH=$PWD/model build/pocketsphinx single foo.wav
+\end{DoxyVerb}
+\hypertarget{index_faq_blank}{}\doxysubsection{\texorpdfstring{There is literally no output!}{There is literally no output!}}\label{index_faq_blank}
+If by this you mean it doesn\textquotesingle{}t spew copious logging output like it used to, you can solve this by passing {\ttfamily -\/loglevel INFO} on the command-\/line, or setting the {\ttfamily loglevel} parameter to {\ttfamily "{}INFO"{}}, or calling \doxylink{err_8h_ac011c0d3b793abc19010c2255bce5c88}{err\+\_\+set\+\_\+loglevel()} with {\ttfamily \doxylink{err_8h_afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c}{ERR\+\_\+\+INFO}}.
+
+If you mean that you just don\textquotesingle{}t have any recognition result, you may have forgotten to configure a dictionary. Or see \doxysectlink{index_faq_error}{below}{2} for other reasons the output could be blank.\hypertarget{index_faq_audio}{}\doxysubsection{\texorpdfstring{Why doesn\textquotesingle{}t my audio device work?}{Why doesn\textquotesingle{}t my audio device work?}}\label{index_faq_audio}
+Because it\textquotesingle{}s an audio device. They don\textquotesingle{}t work, at least for things other than making annoying "{}beep boop"{} noises and playing Video Games. More generally, I cannot solve this problem for you, because every single computer, operating system, sound card, microphone, phase of the moon, and day of the week is different when it comes to recording audio. That\textquotesingle{}s why I suggest you use SoX, because (a) it usually works, and (b) whoever wrote it seems to have retired long ago, so you can\textquotesingle{}t bother them.\hypertarget{index_faq_error}{}\doxysubsection{\texorpdfstring{The recognized text is wrong.}{The recognized text is wrong.}}\label{index_faq_error}
+That\textquotesingle{}s not a question! But since this isn\textquotesingle{}t Jeopardy, and my name is not Watson, I\textquotesingle{}ll try to answer it anyway. Be aware that the answer depends on many things, first and foremost what you mean by "{}wrong"{}.
+
+If it {\itshape sounds} the same, e.\+g. "{}wreck a nice beach"{} when you said "{}recognize speech"{} then the issue is that the {\bfseries{language model}} is not appropriate for the task, domain, dialect, or whatever it is you\textquotesingle{}re trying to recognize. You may wish to consider writing a JSGF grammar and using it instead of the default language model (with the {\ttfamily jsgf} parameter). Or you can get an N-\/best list or word lattice and rescore it with a better language model, such as a recurrent neural network or a human being.
+
+If it is total nonsense, or if it is just blank, or if it\textquotesingle{}s the same word repeated, e.\+g. "{}a a a a a a"{}, then there is likely a problem with the input audio. The sampling rate could be wrong, or even if it\textquotesingle{}s correct, you may have narrow-\/band data. Try to look at the spectrogram (Audacity can show you this) and see if it looks empty or flat below the frequency in the {\ttfamily upperf} parameter. Alternately it could just be very noisy. In particular, if the noise consists of other people talking, automatic speech recognition will nearly always fail.\hypertarget{index_faq_tech}{}\doxysubsection{\texorpdfstring{Why don\textquotesingle{}t you support (pick one or more\+: WFST, f\+MLLR, SAT, DNN, CTC, LAS, CNN, RNN, LSTM, etc)?}{Why don\textquotesingle{}t you support (pick one or more\+: WFST, f\+MLLR, SAT, DNN, CTC, LAS, CNN, RNN, LSTM, etc)?}}\label{index_faq_tech}
+Not because there\textquotesingle{}s anything wrong with those things (except LAS, which is kind of a dumb idea) but simply because Pocket\+Sphinx does not do them, or anything like them, and there is no point in adding them to it when other systems exist. Many of them are also heavily dependent on distasteful and wasteful platforms like C++, CUDA, Tensor\+Flow, Py\+Torch, and so on.\hypertarget{index_thanks_sec}{}\doxysection{\texorpdfstring{Acknowledgements}{Acknowledgements}}\label{index_thanks_sec}
+Pocket\+Sphinx was originally released by David Huggins-\/\+Daines, but is largely based on the previous Sphinx-\/\+II and Sphinx-\/\+III systems, developed by a large number of contributors at Carnegie Mellon University, and released as open source under a BSD-\/like license thanks to Kevin Lenzo. For some time, it was maintained by Nickolay Shmyrev and others at Alpha Cephei, Inc. See the {\ttfamily AUTHORS} file for a list of contributors. 

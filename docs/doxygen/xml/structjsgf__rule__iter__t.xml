@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structjsgf__rule__iter__t" kind="struct" language="C++" prot="public">
+    <compoundname>jsgf_rule_iter_t</compoundname>
+    <includes refid="model_8h" local="no">model.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structjsgf__rule__iter__t_1a1cd6f2f32b5d8760e4e40147b134da6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT jsgf_rule_iter_t * jsgf_rule_iter_next</definition>
+        <argsstring>(jsgf_rule_iter_t *itor)</argsstring>
+        <name>jsgf_rule_iter_next</name>
+        <qualifiedname>jsgf_rule_iter_t::jsgf_rule_iter_next</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Advance an iterator to the next rule in the grammar. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="170" column="18" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="170" declcolumn="18"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__rule__iter__t_1abe051dab5b1c6357aae9115d1d704fe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT jsgf_rule_t * jsgf_rule_iter_rule</definition>
+        <argsstring>(jsgf_rule_iter_t *itor)</argsstring>
+        <name>jsgf_rule_iter_rule</name>
+        <qualifiedname>jsgf_rule_iter_t::jsgf_rule_iter_rule</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current rule in a rule iterator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="177" column="13" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="177" declcolumn="13"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__rule__iter__t_1ac1b4559a440db063eb21e9d4ade59621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void jsgf_rule_iter_free</definition>
+        <argsstring>(jsgf_rule_iter_t *itor)</argsstring>
+        <name>jsgf_rule_iter_free</name>
+        <qualifiedname>jsgf_rule_iter_t::jsgf_rule_iter_free</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__rule__iter__t" kindref="compound">jsgf_rule_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a rule iterator (if the end hasn&apos;t been reached). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="184" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="184" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Iterator over rules in a grammar. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="153" column="1"/>
+    <listofallmembers>
+      <member refid="structjsgf__rule__iter__t_1ac1b4559a440db063eb21e9d4ade59621" prot="public" virt="non-virtual"><scope>jsgf_rule_iter_t</scope><name>jsgf_rule_iter_free</name></member>
+      <member refid="structjsgf__rule__iter__t_1a1cd6f2f32b5d8760e4e40147b134da6c" prot="public" virt="non-virtual"><scope>jsgf_rule_iter_t</scope><name>jsgf_rule_iter_next</name></member>
+      <member refid="structjsgf__rule__iter__t_1abe051dab5b1c6357aae9115d1d704fe5" prot="public" virt="non-virtual"><scope>jsgf_rule_iter_t</scope><name>jsgf_rule_iter_rule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

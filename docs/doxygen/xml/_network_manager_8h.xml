@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_network_manager_8h" kind="file" language="C++">
+    <compoundname>NetworkManager.h</compoundname>
+    <includes local="no">QObject</includes>
+    <includes local="no">QTcpSocket</includes>
+    <includes local="no">QTimer</includes>
+    <includedby refid="_t_t_t_controller_8h" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</includedby>
+    <includedby refid="_network_manager_8cpp" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp</includedby>
+    <includedby refid="_title_screen_8cpp" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h</label>
+        <link refid="_network_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>QTcpSocket</label>
+      </node>
+      <node id="4">
+        <label>QTimer</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.cpp</label>
+        <link refid="_network_manager_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h</label>
+        <link refid="_network_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_network_manager" prot="public">NetworkManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NETWORKMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NETWORKMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTcpSocket&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_network_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" kindref="member">NetworkManager</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a25e5a69c0dba31cc028050c2b6eea855" kindref="member">NetworkManager</ref>(QObject<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1ae5e79e2a2a383d9b63169b38444152cc" kindref="member">connectToServer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;ip,<sp/>quint16<sp/>port);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a1733d9420c11080527bb32edaa1bae14" kindref="member">sendMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;message);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="19" refid="class_network_manager_1aa2d7233230f2d609c31d9fd064c2f461" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1aa2d7233230f2d609c31d9fd064c2f461" kindref="member">connected</ref>();</highlight></codeline>
+<codeline lineno="20" refid="class_network_manager_1a3c9d18963e77a155faf338b86927e2e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a3c9d18963e77a155faf338b86927e2e5" kindref="member">disconnected</ref>();</highlight></codeline>
+<codeline lineno="21" refid="class_network_manager_1a03c54af7cc88df99a5c4dd916002554c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a03c54af7cc88df99a5c4dd916002554c" kindref="member">errorOccurred</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;error);</highlight></codeline>
+<codeline lineno="22" refid="class_network_manager_1a8c9f27ead277af0afc322b551a40acb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a8c9f27ead277af0afc322b551a40acb7" kindref="member">messageSent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;message);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a58117c282e533ceff2ebab1a6d459699" kindref="member">onConnected</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a0028518c2761defad4d923b42493463b" kindref="member">onDisconnected</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a102d12758db0f241cff62e14c1e12baa" kindref="member">onError</ref>(QAbstractSocket::SocketError<sp/>socketError);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_network_manager_1a2459cd9d2ab2defef9af5d6b902cc8f5" kindref="member">onSocketReadyRead</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTcpSocket<sp/>*<ref refid="class_network_manager_1abd7a5f326e9abe441fd5bd86b49b20d2" kindref="member">socket_</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>NETWORKMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network/NetworkManager.h"/>
+  </compounddef>
+</doxygen>

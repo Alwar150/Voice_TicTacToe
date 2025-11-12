@@ -1,0 +1,161 @@
+\doxysection{jsgf\+\_\+t Struct Reference}
+\hypertarget{structjsgf__t}{}\label{structjsgf__t}\index{jsgf\_t@{jsgf\_t}}
+
+
+JSGF parser.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/model.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structjsgf__t_a5988aae174c3ea4a8458c68dd737272e}{jsgf\+\_\+parse\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}filename, \mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}parent)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structjsgf__t_a2c261446ef7e5eb84b4c0cd7ea403a4c}{jsgf\+\_\+parse\+\_\+string}} (const char \texorpdfstring{$\ast$}{*}string, \mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}parent)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structjsgf__t_a81f8acb8b49c1ef7cb695321f5c9b7f5}{jsgf\+\_\+grammar\+\_\+name}} (\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}jsgf)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structjsgf__t_ad33f663dddfec516122f2ee0d5c58b89}{jsgf\+\_\+grammar\+\_\+free}} (\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}jsgf)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__rule__t}{jsgf\+\_\+rule\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structjsgf__t_ab0bf791d1ae06bf952d30401377767c8}{jsgf\+\_\+get\+\_\+rule}} (\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}grammar, const char \texorpdfstring{$\ast$}{*}name)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__rule__t}{jsgf\+\_\+rule\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structjsgf__t_ac4c63ff31f11effef78a867cc61c9937}{jsgf\+\_\+get\+\_\+public\+\_\+rule}} (\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}grammar)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__rule__iter__t}{jsgf\+\_\+rule\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structjsgf__t_ab78d604e387eb282d66e1017bf2ef718}{jsgf\+\_\+rule\+\_\+iter}} (\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}grammar)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structfsg__model__t}{fsg\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structjsgf__t_a3351602453d463a51eb6e9fa832dc956}{jsgf\+\_\+build\+\_\+fsg}} (\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}grammar, \mbox{\hyperlink{structjsgf__rule__t}{jsgf\+\_\+rule\+\_\+t}} \texorpdfstring{$\ast$}{*}rule, \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, \mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}} lw)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structjsgf__t_ab31ecf0ecdde813d744f7830f29e58db}{jsgf\+\_\+write\+\_\+fsg}} (\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}grammar, \mbox{\hyperlink{structjsgf__rule__t}{jsgf\+\_\+rule\+\_\+t}} \texorpdfstring{$\ast$}{*}rule, FILE \texorpdfstring{$\ast$}{*}outfh)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+JSGF parser. 
+
+\label{doc-func-members}
+\Hypertarget{structjsgf__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structjsgf__t_a3351602453d463a51eb6e9fa832dc956}\index{jsgf\_t@{jsgf\_t}!jsgf\_build\_fsg@{jsgf\_build\_fsg}}
+\index{jsgf\_build\_fsg@{jsgf\_build\_fsg}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_build\_fsg()}{jsgf\_build\_fsg()}}
+{\footnotesize\ttfamily \label{structjsgf__t_a3351602453d463a51eb6e9fa832dc956} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structfsg__model__t}{fsg\+\_\+model\+\_\+t}} \texorpdfstring{$\ast$}{*} jsgf\+\_\+build\+\_\+fsg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{grammar}{, }\item[{\mbox{\hyperlink{structjsgf__rule__t}{jsgf\+\_\+rule\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{rule}{, }\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{\mbox{\hyperlink{prim__type_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}{float32}}}]{lw}{}\end{DoxyParamCaption})}
+
+Build a Sphinx FSG object from a JSGF rule. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structjsgf__t_ac4c63ff31f11effef78a867cc61c9937}\index{jsgf\_t@{jsgf\_t}!jsgf\_get\_public\_rule@{jsgf\_get\_public\_rule}}
+\index{jsgf\_get\_public\_rule@{jsgf\_get\_public\_rule}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_get\_public\_rule()}{jsgf\_get\_public\_rule()}}
+{\footnotesize\ttfamily \label{structjsgf__t_ac4c63ff31f11effef78a867cc61c9937} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__rule__t}{jsgf\+\_\+rule\+\_\+t}} \texorpdfstring{$\ast$}{*} jsgf\+\_\+get\+\_\+public\+\_\+rule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{grammar}{}\end{DoxyParamCaption})}
+
+Returns the first public rule of the grammar 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structjsgf__t_ab0bf791d1ae06bf952d30401377767c8}\index{jsgf\_t@{jsgf\_t}!jsgf\_get\_rule@{jsgf\_get\_rule}}
+\index{jsgf\_get\_rule@{jsgf\_get\_rule}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_get\_rule()}{jsgf\_get\_rule()}}
+{\footnotesize\ttfamily \label{structjsgf__t_ab0bf791d1ae06bf952d30401377767c8} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__rule__t}{jsgf\+\_\+rule\+\_\+t}} \texorpdfstring{$\ast$}{*} jsgf\+\_\+get\+\_\+rule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{grammar}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+Get a rule by name from a grammar. Name should not contain brackets. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structjsgf__t_ad33f663dddfec516122f2ee0d5c58b89}\index{jsgf\_t@{jsgf\_t}!jsgf\_grammar\_free@{jsgf\_grammar\_free}}
+\index{jsgf\_grammar\_free@{jsgf\_grammar\_free}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_grammar\_free()}{jsgf\_grammar\_free()}}
+{\footnotesize\ttfamily \label{structjsgf__t_ad33f663dddfec516122f2ee0d5c58b89} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void jsgf\+\_\+grammar\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{jsgf}{}\end{DoxyParamCaption})}
+
+Free a JSGF grammar. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structjsgf__t_a81f8acb8b49c1ef7cb695321f5c9b7f5}\index{jsgf\_t@{jsgf\_t}!jsgf\_grammar\_name@{jsgf\_grammar\_name}}
+\index{jsgf\_grammar\_name@{jsgf\_grammar\_name}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_grammar\_name()}{jsgf\_grammar\_name()}}
+{\footnotesize\ttfamily \label{structjsgf__t_a81f8acb8b49c1ef7cb695321f5c9b7f5} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const  \texorpdfstring{$\ast$}{*} jsgf\+\_\+grammar\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{jsgf}{}\end{DoxyParamCaption})}
+
+Get the grammar name from the file. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structjsgf__t_a5988aae174c3ea4a8458c68dd737272e}\index{jsgf\_t@{jsgf\_t}!jsgf\_parse\_file@{jsgf\_parse\_file}}
+\index{jsgf\_parse\_file@{jsgf\_parse\_file}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_parse\_file()}{jsgf\_parse\_file()}}
+{\footnotesize\ttfamily \label{structjsgf__t_a5988aae174c3ea4a8458c68dd737272e} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*} jsgf\+\_\+parse\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{, }\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{parent}{}\end{DoxyParamCaption})}
+
+Parse a JSGF grammar from a file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the name of the file to parse. \\
+\hline
+{\em parent} & optional parent grammar for this one (NULL, usually). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new JSGF grammar object, or NULL on failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structjsgf__t_a2c261446ef7e5eb84b4c0cd7ea403a4c}\index{jsgf\_t@{jsgf\_t}!jsgf\_parse\_string@{jsgf\_parse\_string}}
+\index{jsgf\_parse\_string@{jsgf\_parse\_string}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_parse\_string()}{jsgf\_parse\_string()}}
+{\footnotesize\ttfamily \label{structjsgf__t_a2c261446ef7e5eb84b4c0cd7ea403a4c} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*} jsgf\+\_\+parse\+\_\+string (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{string}{, }\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{parent}{}\end{DoxyParamCaption})}
+
+Parse a JSGF grammar from a string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & 0-\/terminated string with grammar. \\
+\hline
+{\em parent} & optional parent grammar for this one (NULL, usually). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new JSGF grammar object, or NULL on failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structjsgf__t_ab78d604e387eb282d66e1017bf2ef718}\index{jsgf\_t@{jsgf\_t}!jsgf\_rule\_iter@{jsgf\_rule\_iter}}
+\index{jsgf\_rule\_iter@{jsgf\_rule\_iter}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_rule\_iter()}{jsgf\_rule\_iter()}}
+{\footnotesize\ttfamily \label{structjsgf__t_ab78d604e387eb282d66e1017bf2ef718} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structjsgf__rule__iter__t}{jsgf\+\_\+rule\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} jsgf\+\_\+rule\+\_\+iter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{grammar}{}\end{DoxyParamCaption})}
+
+Get an iterator over all rules in a grammar. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structjsgf__t_ab31ecf0ecdde813d744f7830f29e58db}\index{jsgf\_t@{jsgf\_t}!jsgf\_write\_fsg@{jsgf\_write\_fsg}}
+\index{jsgf\_write\_fsg@{jsgf\_write\_fsg}!jsgf\_t@{jsgf\_t}}
+\doxysubsubsection{\texorpdfstring{jsgf\_write\_fsg()}{jsgf\_write\_fsg()}}
+{\footnotesize\ttfamily \label{structjsgf__t_ab31ecf0ecdde813d744f7830f29e58db} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int jsgf\+\_\+write\+\_\+fsg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structjsgf__t}{jsgf\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{grammar}{, }\item[{\mbox{\hyperlink{structjsgf__rule__t}{jsgf\+\_\+rule\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{rule}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{outfh}{}\end{DoxyParamCaption})}
+
+Convert a JSGF rule to Sphinx FSG text form.
+
+This does a direct conversion without doing transitive closure on null transitions and so forth. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{model_8h}{model.\+h}}\end{DoxyCompactItemize}

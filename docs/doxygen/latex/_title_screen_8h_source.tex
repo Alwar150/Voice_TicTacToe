@@ -1,0 +1,41 @@
+\doxysection{Title\+Screen.\+h}
+\hypertarget{_title_screen_8h_source}{}\label{_title_screen_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/View/TitleScreen.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/View/TitleScreen.h}}
+\mbox{\hyperlink{_title_screen_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TITLESCREEN\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TITLESCREEN\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_t_t_common_types_8h}{TTTCommonTypes.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ui\_titlescreen.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f}{TitleScreen}}\ final\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_title_screen_ab2bd7b4fbf49e5fc48d02b7d32e3581f}{TitleScreen}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ std::unique\_ptr<Ui::TitleScreen>\ \mbox{\hyperlink{class_title_screen_a7a9d7dc7526d061a36a27a287a36ce6d}{ui}};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_a72a76e4ff3f03dfc11538ae0de2156b5}{setConnections}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}}\ \mbox{\hyperlink{class_title_screen_a2ed43c9eb5cbc9136fcc726b8cb31fdb}{options\_}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_a06e835ca83c6ead23fa0f24833ec76b9}{closeEvent}}(QCloseEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_aad4454fc738633edbad55ebe00ceec3d}{updateBoardSize}}(\textcolor{keywordtype}{int}\ size);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_af028098c1b235b3da76941c83776de20}{updateSinglePlayer}}(\textcolor{keywordtype}{bool}\ checked);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_a65a292091aba9a84cf518af2d395f2b0}{updateTwoPlayers}}(\textcolor{keywordtype}{bool}\ checked);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_a2cb34f420ea007de5bec91a91b6f2abe}{updateAIstartsGame}}(\textcolor{keywordtype}{bool}\ checked);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_a60d1e875593a02a6ee01508235680a47}{updateMiniMaxDepth}}(\textcolor{keywordtype}{int}\ depth);}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_ac55c2f2485f58d3b7b389e7414a358d6}{startGame}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ signals:}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_title_screen_a8d6e439797b80238c95602359ba029bd}{exited}}();}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TITLESCREEN\_H}}
+
+\end{DoxyCode}

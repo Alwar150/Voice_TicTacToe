@@ -1,0 +1,13 @@
+\chapter{Deprecated List }
+\hypertarget{deprecated}{}\label{deprecated}\index{Deprecated List@{Deprecated List}}
+
+\begin{DoxyRefList}
+\item[{\parbox[t]{\linewidth}{Member \doxylink{structps__decoder__t_adcbb8aeb9ebf3f73e935d3b3c8832ea0}{ps\+\_\+decoder\+\_\+t\+::ps\+\_\+get\+\_\+in\+\_\+speech} (\doxylink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t} \texorpdfstring{$\ast$}{*}ps)}}]\hfill \\
+\label{deprecated__deprecated000002}%
+\Hypertarget{deprecated__deprecated000002}%
+This function is retained for compatibility but should not be considered a reliable voice activity detector. It will always return 1 between calls to \doxylink{structps__decoder__t_ade3909b1c12c1b70afe284639e70cbff}{ps\+\_\+start\+\_\+utt()} and \doxylink{structps__decoder__t_ab9339de730713b68cbd68a7f36dc8730}{ps\+\_\+end\+\_\+utt()}. You probably want \doxylink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}, but for single frames of data you can also use \doxylink{structps__vad__t}{ps\+\_\+vad\+\_\+t}. 
+\item[{\parbox[t]{\linewidth}{Member \doxylink{structps__decoder__t_a89be3b2a8f83291a225db0bcd9ee65b2}{ps\+\_\+decoder\+\_\+t\+::ps\+\_\+start\+\_\+stream} (\doxylink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t} \texorpdfstring{$\ast$}{*}ps)}}]\hfill \\
+\label{deprecated__deprecated000001}%
+\Hypertarget{deprecated__deprecated000001}%
+This function is retained for compatibility, but its only effect is to reset the noise removal statistics, which are otherwise retained across utterances. You do not need to call it.
+\end{DoxyRefList}

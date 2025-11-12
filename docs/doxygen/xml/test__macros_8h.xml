@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="test__macros_8h" kind="file" language="C++">
+    <compoundname>test_macros.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">math.h</includes>
+    <includes refid="logmath_8h" local="no">pocketsphinx/logmath.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h</label>
+        <link refid="test__macros_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="6">
+        <label>pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>pocketsphinx/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="9">
+        <label>pocketsphinx/sphinx_config.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="test__macros_8h_1a002b2f4894492820fe708b1b7e7c5e70" prot="public" static="no">
+        <name>EPSILON</name>
+        <initializer>0.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="8" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1a79f6bbe6259a64c13e1e886482e3318f" prot="public" static="no">
+        <name>TEST_ASSERT</name>
+        <param><defname>x</defname></param>
+        <initializer>if (!(x)) { fprintf(stderr, &quot;FAIL: %s\n&quot;, #x); exit(1); }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="9" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1a28c3e33e75987220375e36d1480e26ec" prot="public" static="no">
+        <name>TEST_EQUAL</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer><ref refid="test__macros_8h_1a79f6bbe6259a64c13e1e886482e3318f" kindref="member">TEST_ASSERT</ref>((a) == (b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="10" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1a1b09bdf6f3e0b8179d60c281979315ad" prot="public" static="no">
+        <name>TEST_EQUAL_FLOAT</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer><ref refid="test__macros_8h_1a79f6bbe6259a64c13e1e886482e3318f" kindref="member">TEST_ASSERT</ref>(fabs((a) - (b)) &lt; <ref refid="test__macros_8h_1a002b2f4894492820fe708b1b7e7c5e70" kindref="member">EPSILON</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="11" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1a0eef56b2d6534c89cf9b61be21c8388d" prot="public" static="no">
+        <name>TEST_EQUAL_MFCC</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer><ref refid="test__macros_8h_1a79f6bbe6259a64c13e1e886482e3318f" kindref="member">TEST_ASSERT</ref>(fabs((a) - (b)) &lt; <ref refid="test__macros_8h_1a002b2f4894492820fe708b1b7e7c5e70" kindref="member">EPSILON</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="15" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1acea402073f80f0575d7d4ab99ee5eaf2" prot="public" static="no">
+        <name>TEST_EQUAL_STRING</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer><ref refid="test__macros_8h_1a79f6bbe6259a64c13e1e886482e3318f" kindref="member">TEST_ASSERT</ref>(0 == strcmp((a), (b)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="17" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1a565e51ece01c3c4264033e66d4ba1a56" prot="public" static="no">
+        <name>LOG_EPSILON</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="18" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1a9f9099681dc34f0ab9dd51af1b2d6f6c" prot="public" static="no">
+        <name>TEST_EQUAL_LOG</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer><ref refid="test__macros_8h_1a79f6bbe6259a64c13e1e886482e3318f" kindref="member">TEST_ASSERT</ref>(abs((a) - (b)) &lt; <ref refid="test__macros_8h_1a565e51ece01c3c4264033e66d4ba1a56" kindref="member">LOG_EPSILON</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="19" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1aef1ae35c9e85cb2c7fd3cf55a471da77" prot="public" static="no">
+        <name>MODELDIR</name>
+        <initializer>&quot;/home/ratty/Downloads/pocketsphinx-<ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>/model&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="20" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1a17897dbbc6ff46c90212d087f60f38c4" prot="public" static="no">
+        <name>DATADIR</name>
+        <initializer>&quot;/home/ratty/Downloads/pocketsphinx-<ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>/test/data&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="21" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="test__macros_8h_1ac113d790114db55db497a92effbb759c" prot="public" static="no">
+        <name>TESTDATADIR</name>
+        <initializer>&quot;/home/ratty/Downloads/pocketsphinx-<ref refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>/test/regression&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" line="22" column="9" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="logmath_8h" kindref="compound">pocketsphinx/logmath.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="test__macros_8h_1a002b2f4894492820fe708b1b7e7c5e70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EPSILON<sp/>0.01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="test__macros_8h_1a79f6bbe6259a64c13e1e886482e3318f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_ASSERT(x)<sp/>if<sp/>(!(x))<sp/>{<sp/>fprintf(stderr,<sp/>&quot;FAIL:<sp/>%s\n&quot;,<sp/>#x);<sp/>exit(1);<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="test__macros_8h_1a28c3e33e75987220375e36d1480e26ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_EQUAL(a,b)<sp/>TEST_ASSERT((a)<sp/>==<sp/>(b))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="test__macros_8h_1a1b09bdf6f3e0b8179d60c281979315ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_EQUAL_FLOAT(a,b)<sp/>TEST_ASSERT(fabs((a)<sp/>-<sp/>(b))<sp/>&lt;<sp/>EPSILON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>FIXED_POINT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_EQUAL_MFCC(a,b)<sp/>TEST_EQUAL(a,b)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="test__macros_8h_1a0eef56b2d6534c89cf9b61be21c8388d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_EQUAL_MFCC(a,b)<sp/>TEST_ASSERT(fabs((a)<sp/>-<sp/>(b))<sp/>&lt;<sp/>EPSILON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="test__macros_8h_1acea402073f80f0575d7d4ab99ee5eaf2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_EQUAL_STRING(a,b)<sp/>TEST_ASSERT(0<sp/>==<sp/>strcmp((a),<sp/>(b)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="test__macros_8h_1a565e51ece01c3c4264033e66d4ba1a56" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_EPSILON<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="test__macros_8h_1a9f9099681dc34f0ab9dd51af1b2d6f6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_EQUAL_LOG(a,b)<sp/>TEST_ASSERT(abs((a)<sp/>-<sp/>(b))<sp/>&lt;<sp/>LOG_EPSILON)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="test__macros_8h_1aef1ae35c9e85cb2c7fd3cf55a471da77" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODELDIR<sp/>&quot;/home/ratty/Downloads/pocketsphinx-main/model&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="test__macros_8h_1a17897dbbc6ff46c90212d087f60f38c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATADIR<sp/>&quot;/home/ratty/Downloads/pocketsphinx-main/test/data&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="test__macros_8h_1ac113d790114db55db497a92effbb759c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TESTDATADIR<sp/>&quot;/home/ratty/Downloads/pocketsphinx-main/test/regression&quot;</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples/test/unit/test_macros.h"/>
+  </compounddef>
+</doxygen>

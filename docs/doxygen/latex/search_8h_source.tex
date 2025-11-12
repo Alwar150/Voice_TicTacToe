@@ -1,0 +1,132 @@
+\doxysection{search.\+h}
+\hypertarget{search_8h_source}{}\label{search_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/search.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/search.h}}
+\mbox{\hyperlink{search_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/\ c-\/basic-\/offset:4;\ indent-\/tabs-\/mode:\ nil\ -\/*-\/\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ ====================================================================}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2014\ Alpha\ Cephei\ Inc..\ \ All\ rights}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ reserved.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Redistribution\ and\ use\ in\ source\ and\ binary\ forms,\ with\ or\ without}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ modification,\ are\ permitted\ provided\ that\ the\ following\ conditions}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ are\ met:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ 1.\ Redistributions\ of\ source\ code\ must\ retain\ the\ above\ copyright}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer.\ }}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ 2.\ Redistributions\ in\ binary\ form\ must\ reproduce\ the\ above\ copyright}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer\ in}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ \ \ the\ documentation\ and/or\ other\ materials\ provided\ with\ the}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ \ \ distribution.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ PROVIDED\ BY\ ALPHA\ CEPHEI\ INC.\ \`{}\`{}AS\ IS''\ AND\ }}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ ANY\ EXPRESSED\ OR\ IMPLIED\ WARRANTIES,\ INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ }}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY\ AND\ FITNESS\ FOR\ A\ PARTICULAR}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ PURPOSE\ ARE\ DISCLAIMED.\ \ IN\ NO\ EVENT\ SHALL\ CARNEGIE\ MELLON\ UNIVERSITY}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ NOR\ ITS\ EMPLOYEES\ BE\ LIABLE\ FOR\ ANY\ DIRECT,\ INDIRECT,\ INCIDENTAL,}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ SPECIAL,\ EXEMPLARY,\ OR\ CONSEQUENTIAL\ DAMAGES\ (INCLUDING,\ BUT\ NOT\ }}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ LIMITED\ TO,\ PROCUREMENT\ OF\ SUBSTITUTE\ GOODS\ OR\ SERVICES;\ LOSS\ OF\ USE,\ }}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ DATA,\ OR\ PROFITS;\ OR\ BUSINESS\ INTERRUPTION)\ HOWEVER\ CAUSED\ AND\ ON\ ANY\ }}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ THEORY\ OF\ LIABILITY,\ WHETHER\ IN\ CONTRACT,\ STRICT\ LIABILITY,\ OR\ TORT\ }}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ (INCLUDING\ NEGLIGENCE\ OR\ OTHERWISE)\ ARISING\ IN\ ANY\ WAY\ OUT\ OF\ THE\ USE\ }}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ OF\ THIS\ SOFTWARE,\ EVEN\ IF\ ADVISED\ OF\ THE\ POSSIBILITY\ OF\ SUCH\ DAMAGE.}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ ====================================================================}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#ifndef\ \_\_PS\_SEARCH\_H\_\_}}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#define\ \_\_PS\_SEARCH\_H\_\_}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{model_8h}{pocketsphinx/model.h}}>}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{alignment_8h}{pocketsphinx/alignment.h}}>}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00084\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#if\ 0}}
+\DoxyCodeLine{00087\ \}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_search\_iter\_s\ \mbox{\hyperlink{structps__search__iter__t}{ps\_search\_iter\_t}};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{comment}{/*\ Forward-\/declare\ this\ because\ header\ files\ are\ an\ atrocity.\ */}}
+\DoxyCodeLine{00097\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_decoder\_s\ \mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00109\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00110\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a602108d3b7b35927477243b1978b8d89}{ps\_activate\_search}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00118\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}\ }
+\DoxyCodeLine{00119\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structps__decoder__t_a1a589bf2956a5905368e9288979743b8}{ps\_current\_search}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00132\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_aca66da675491dfbcd51f66a2cead19c9}{ps\_remove\_search}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00141\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00142\ \mbox{\hyperlink{structps__search__iter__t}{ps\_search\_iter\_t}}\ *\mbox{\hyperlink{structps__decoder__t_a3c85d53bfd56dc83226cc7f3bbcdcef6}{ps\_search\_iter}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00152\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00153\ \mbox{\hyperlink{structps__search__iter__t}{ps\_search\_iter\_t}}\ *\mbox{\hyperlink{structps__search__iter__t_ac8ae8c4c4f792d0c12eef3426abe4a93}{ps\_search\_iter\_next}}(\mbox{\hyperlink{structps__search__iter__t}{ps\_search\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00161\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00162\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structps__search__iter__t_a86d9b5968b9fe317a6335345fb9a2dd0}{ps\_search\_iter\_val}}(\mbox{\hyperlink{structps__search__iter__t}{ps\_search\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00170\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00171\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structps__search__iter__t_a41e404de59cbd7bfc32f2da3ec7e6137}{ps\_search\_iter\_free}}(\mbox{\hyperlink{structps__search__iter__t}{ps\_search\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00181\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00182\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structps__search__iter__t_a86d9b5968b9fe317a6335345fb9a2dd0}{ps\_search\_iter\_val}}(\mbox{\hyperlink{structps__search__iter__t}{ps\_search\_iter\_t}}\ *itor);}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00194\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}\ }
+\DoxyCodeLine{00195\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *\mbox{\hyperlink{structps__decoder__t_ab11d511d180c9aea9779f545d4d22809}{ps\_get\_lm}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00196\ \ }
+\DoxyCodeLine{00206\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00207\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_af94c4cc983fee1c22cd9042c35f6b4ba}{ps\_add\_lm}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *lm);}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00217\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00218\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a268455d472a947079dc9ece74f6a6fab}{ps\_add\_lm\_file}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path);}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00228\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00229\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *\mbox{\hyperlink{structps__decoder__t_a70c94d4192c66e9f203eb72f92ee532c}{ps\_get\_fsg}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00240\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00241\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a88b4dcabadab8aceff79d273a71d61d5}{ps\_add\_fsg}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \mbox{\hyperlink{structfsg__model__t}{fsg\_model\_t}}\ *fsg);}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00251\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00252\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a27cb38750271a285addc3d9c5f15c8ab}{ps\_add\_jsgf\_file}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path);}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00262\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00263\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_ad975de5e4114ee1d534ceffdacb18394}{ps\_add\_jsgf\_string}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *jsgf\_string);}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00273\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}\ }
+\DoxyCodeLine{00274\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structps__decoder__t_a7000861f6aa97e98f8a7c95d3e3ba157}{ps\_get\_kws}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00285\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}\ }
+\DoxyCodeLine{00286\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_adb32316b526c8ac3cbd4d9b5a2b8122b}{ps\_add\_kws}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *keyfile);}
+\DoxyCodeLine{00287\ }
+\DoxyCodeLine{00297\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}\ }
+\DoxyCodeLine{00298\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a87aced38ba183da00ebd04c002af01d5}{ps\_add\_keyphrase}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *keyphrase);}
+\DoxyCodeLine{00299\ \ }
+\DoxyCodeLine{00309\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00310\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a8ae78fa993cad9e1da24b052b80fff78}{ps\_add\_allphone}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \mbox{\hyperlink{structngram__model__t}{ngram\_model\_t}}\ *lm);}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00320\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00321\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a6e324573a9de664cfa0a37a5cd7a6fc8}{ps\_add\_allphone\_file}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path);}
+\DoxyCodeLine{00322\ }
+\DoxyCodeLine{00345\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00346\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a911c4849d7ffaf2960177c34968c1b0d}{ps\_set\_align\_text}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *words);}
+\DoxyCodeLine{00347\ }
+\DoxyCodeLine{00374\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00375\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__decoder__t_a82092689e27601f7bc9227cd904b0266}{ps\_set\_alignment}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps,\ \mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}}\ *al);}
+\DoxyCodeLine{00376\ }
+\DoxyCodeLine{00390\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00391\ \mbox{\hyperlink{structps__alignment__t}{ps\_alignment\_t}}\ *\mbox{\hyperlink{structps__decoder__t_a34112271b4b2a3cb6616e072a36f693d}{ps\_get\_alignment}}(\mbox{\hyperlink{structps__decoder__t}{ps\_decoder\_t}}\ *ps);}
+\DoxyCodeLine{00392\ }
+\DoxyCodeLine{00393\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00394\ \}}
+\DoxyCodeLine{00395\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00396\ }
+\DoxyCodeLine{00397\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_PS\_SEARCH\_H\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

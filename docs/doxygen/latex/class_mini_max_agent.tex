@@ -1,0 +1,300 @@
+\doxysection{Mini\+Max\+Agent Class Reference}
+\hypertarget{class_mini_max_agent}{}\label{class_mini_max_agent}\index{MiniMaxAgent@{MiniMaxAgent}}
+
+
+The \doxylink{class_mini_max_agent}{Mini\+Max\+Agent} class handles all the logic of picking a cell based on the Mini\+Max Algorithm.  
+
+
+
+
+{\ttfamily \#include $<$Mini\+Max\+Agent.\+h$>$}
+
+Inheritance diagram for Mini\+Max\+Agent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mini_max_agent}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mini_max_agent_afb157bc316a81cc03d4096f8febef386}{Mini\+Max\+Agent}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr, unsigned short depth, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} AImark)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_mini_max_agent}{Mini\+Max\+Agent}\+: a constructor function that creates the Mini\+Max Agent. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play}} () override
+\begin{DoxyCompactList}\small\item\em Start the minimax algorithm to choose a cell to play based on a given board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{max\+Move}} (\mbox{\hyperlink{class_board}{Board}} \&board, unsigned short depth, short alpha, short beta) const
+\begin{DoxyCompactList}\small\item\em max\+Move simulates the AI choice based on the final game states, as it wants to win it will choose the maximum score of each simulated move. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{min\+Move}} (\mbox{\hyperlink{class_board}{Board}} \&board, unsigned short depth, short alpha, short beta) const
+\begin{DoxyCompactList}\small\item\em min\+Move simulates the player choice based on the final game states, as it wants to win it will choose the minimum score of each simulated move. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b}{score}} (const \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}} state) const
+\begin{DoxyCompactList}\small\item\em score associates a score to the final states of a game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned short \mbox{\hyperlink{class_mini_max_agent_aa1920de5421331a5a88dd55c727ec6fc}{depth\+\_\+}}
+\begin{DoxyCompactList}\small\item\em depth cutoff of the minimax algorithm\textquotesingle{}s search tree. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \mbox{\hyperlink{class_mini_max_agent_a846ab21da7047d2f95b92d355d43c6d3}{AImark\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The mark (X or O) of the AI. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \mbox{\hyperlink{class_mini_max_agent_a985f5527d35de87b23d9f271faf91c75}{player\+Mark\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The mark (X or O) of the human player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr short \mbox{\hyperlink{class_mini_max_agent_a1e7fa70e257c4423ab555e04cb7eaa0a}{AI\+\_\+\+WIN\+\_\+\+SCORE}} = 1
+\begin{DoxyCompactList}\small\item\em AI\+\_\+\+WIN\+\_\+\+SCORE defines the score of the final board when the AI wins. \end{DoxyCompactList}\item 
+static constexpr short \mbox{\hyperlink{class_mini_max_agent_a2cbab0bdd892f994f7e3e13d0f4be53d}{PLAYER\+\_\+\+WIN\+\_\+\+SCORE}} = -\/1
+\begin{DoxyCompactList}\small\item\em PLAYER\+\_\+\+WIN\+\_\+\+SCORE defines the score of the final board when the human player wins. \end{DoxyCompactList}\item 
+static constexpr short \mbox{\hyperlink{class_mini_max_agent_a9ae263accc262d5f9eac741125229f13}{TIE\+\_\+\+SCORE}} = 0
+\begin{DoxyCompactList}\small\item\em TIE\+\_\+\+SCORE defines the score of the final board when the the game is a tie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_mini_max_agent}{Mini\+Max\+Agent} class handles all the logic of picking a cell based on the Mini\+Max Algorithm. 
+
+It simulates all possible plays taking turns simulating an AI turn then a \doxylink{class_player}{Player} turn until a final state is reached, then it scores the final state by giving a negative value if the \doxylink{class_player}{Player} wins and a positive value if it wins, then backtracks picking the minimum score if it is the player turn and the max score if its the AI turn. 
+
+\label{doc-constructors}
+\Hypertarget{class_mini_max_agent_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mini_max_agent_afb157bc316a81cc03d4096f8febef386}\index{MiniMaxAgent@{MiniMaxAgent}!MiniMaxAgent@{MiniMaxAgent}}
+\index{MiniMaxAgent@{MiniMaxAgent}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{MiniMaxAgent()}{MiniMaxAgent()}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_afb157bc316a81cc03d4096f8febef386} 
+Mini\+Max\+Agent\+::\+Mini\+Max\+Agent (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}, }\item[{unsigned short}]{depth}{, }\item[{\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{AImark}{}\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_mini_max_agent}{Mini\+Max\+Agent}\+: a constructor function that creates the Mini\+Max Agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & cutoff of the minimax algorithm\textquotesingle{}s search tree. \\
+\hline
+{\em AImark} & The mark (X or O) of the AI. \\
+\hline
+{\em player\+Mark} & The mark (X or O) of the human player. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_mini_max_agent_a846ab21da7047d2f95b92d355d43c6d3}{AImark\+\_\+}}, \mbox{\hyperlink{class_mini_max_agent_aa1920de5421331a5a88dd55c727ec6fc}{depth\+\_\+}}, and \mbox{\hyperlink{class_mini_max_agent_a985f5527d35de87b23d9f271faf91c75}{player\+Mark\+\_\+}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_mini_max_agent_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}\index{MiniMaxAgent@{MiniMaxAgent}!maxMove@{maxMove}}
+\index{maxMove@{maxMove}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{maxMove()}{maxMove()}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8} 
+short Mini\+Max\+Agent\+::max\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board}{, }\item[{unsigned short}]{depth}{, }\item[{short}]{alpha}{, }\item[{short}]{beta}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+max\+Move simulates the AI choice based on the final game states, as it wants to win it will choose the maximum score of each simulated move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & a reference to the board model. \\
+\hline
+{\em depth} & The current depth of the search tree. \\
+\hline
+{\em alpha} & The minimum score that the maximizing player is assured of. \\
+\hline
+{\em beta} & The maximum score that the minimizing player is assured of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_mini_max_agent_a846ab21da7047d2f95b92d355d43c6d3}{AImark\+\_\+}}, \mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{Board\+::at()}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}, \mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{Board\+::evaluate\+Board()}}, \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{min\+Move()}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}, \mbox{\hyperlink{class_board_addcaa486e1293eebcb323fb936353f43}{Board\+::reset\+Cell()}}, \mbox{\hyperlink{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b}{score()}}, \mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{Board\+::set\+Player\+Input()}}, and \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{Board\+::size()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{min\+Move()}}.
+
+\Hypertarget{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}\index{MiniMaxAgent@{MiniMaxAgent}!minMove@{minMove}}
+\index{minMove@{minMove}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{minMove()}{minMove()}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136} 
+short Mini\+Max\+Agent\+::min\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board}{, }\item[{unsigned short}]{depth}{, }\item[{short}]{alpha}{, }\item[{short}]{beta}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+min\+Move simulates the player choice based on the final game states, as it wants to win it will choose the minimum score of each simulated move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & a reference to the board model. \\
+\hline
+{\em depth} & The current depth of the search tree. \\
+\hline
+{\em alpha} & The minimum score that the maximizing player is assured of. \\
+\hline
+{\em beta} & The maximum score that the minimizing player is assured of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{Board\+::at()}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}, \mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{Board\+::evaluate\+Board()}}, \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{max\+Move()}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}, \mbox{\hyperlink{class_mini_max_agent_a985f5527d35de87b23d9f271faf91c75}{player\+Mark\+\_\+}}, \mbox{\hyperlink{class_board_addcaa486e1293eebcb323fb936353f43}{Board\+::reset\+Cell()}}, \mbox{\hyperlink{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b}{score()}}, \mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{Board\+::set\+Player\+Input()}}, and \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{Board\+::size()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{max\+Move()}}, and \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play()}}.
+
+\Hypertarget{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}\index{MiniMaxAgent@{MiniMaxAgent}!play@{play}}
+\index{play@{play}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9} 
+int Mini\+Max\+Agent\+::play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Start the minimax algorithm to choose a cell to play based on a given board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & a reference to the board model. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chosen cell index (in a 1D array) that the AI played. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_mini_max_agent_a846ab21da7047d2f95b92d355d43c6d3}{AImark\+\_\+}}, \mbox{\hyperlink{class_board_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{Board\+::at()}}, \mbox{\hyperlink{class_mini_max_agent_aa1920de5421331a5a88dd55c727ec6fc}{depth\+\_\+}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}, \mbox{\hyperlink{class_board_a1b7486c5df3db7e5a1c8ed097492527f}{Board\+::evaluate\+Board()}}, \mbox{\hyperlink{namespacedefaults_a543ba1bdceef75ed7ebc4160be54bfcb}{defaults\+::\+INVALID\+\_\+\+CELL}}, \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{min\+Move()}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}, \mbox{\hyperlink{class_board_addcaa486e1293eebcb323fb936353f43}{Board\+::reset\+Cell()}}, \mbox{\hyperlink{class_board_a109cbc4dc8c6c76d05caba0345eedc17}{Board\+::set\+Player\+Input()}}, and \mbox{\hyperlink{class_board_ad82bf1ecd8b4e65f8c5fd6133e831138}{Board\+::size()}}.
+
+
+
+Referenced by \mbox{\hyperlink{tst__minimaxagent_8h_a032eae83898806e040369ea3602d53a7}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_adcd416e8815daad735b5333917656196}{TEST()}}, \mbox{\hyperlink{tst__minimaxagent_8h_a8fab0dc25c45462fbed06661dc299e71}{TEST()}}, and \mbox{\hyperlink{tst__minimaxagent_8h_af7058d3c7505db3452d4c7025fe11d82}{TEST()}}.
+
+\Hypertarget{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b}\index{MiniMaxAgent@{MiniMaxAgent}!score@{score}}
+\index{score@{score}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{score()}{score()}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b} 
+short Mini\+Max\+Agent\+::score (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}}}]{state}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+score associates a score to the final states of a game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & is an input paramater that specifies the state of the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a score based on the state of the game. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_mini_max_agent_a1e7fa70e257c4423ab555e04cb7eaa0a}{AI\+\_\+\+WIN\+\_\+\+SCORE}}, \mbox{\hyperlink{class_mini_max_agent_a846ab21da7047d2f95b92d355d43c6d3}{AImark\+\_\+}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97}{OWins}}, \mbox{\hyperlink{class_mini_max_agent_a2cbab0bdd892f994f7e3e13d0f4be53d}{PLAYER\+\_\+\+WIN\+\_\+\+SCORE}}, \mbox{\hyperlink{class_mini_max_agent_a9ae263accc262d5f9eac741125229f13}{TIE\+\_\+\+SCORE}}, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}, and \mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed}{XWins}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{max\+Move()}}, and \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{min\+Move()}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_mini_max_agent_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_mini_max_agent_a1e7fa70e257c4423ab555e04cb7eaa0a}\index{MiniMaxAgent@{MiniMaxAgent}!AI\_WIN\_SCORE@{AI\_WIN\_SCORE}}
+\index{AI\_WIN\_SCORE@{AI\_WIN\_SCORE}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{AI\_WIN\_SCORE}{AI\_WIN\_SCORE}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a1e7fa70e257c4423ab555e04cb7eaa0a} 
+short Mini\+Max\+Agent\+::\+AI\+\_\+\+WIN\+\_\+\+SCORE = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+AI\+\_\+\+WIN\+\_\+\+SCORE defines the score of the final board when the AI wins. 
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b}{score()}}.
+
+\Hypertarget{class_mini_max_agent_a846ab21da7047d2f95b92d355d43c6d3}\index{MiniMaxAgent@{MiniMaxAgent}!AImark\_@{AImark\_}}
+\index{AImark\_@{AImark\_}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{AImark\_}{AImark\_}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a846ab21da7047d2f95b92d355d43c6d3} 
+const \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} Mini\+Max\+Agent\+::\+AImark\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The mark (X or O) of the AI. 
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a9d99e71c93f92fc3bda35809fa031fd8}{max\+Move()}}, \mbox{\hyperlink{class_mini_max_agent_afb157bc316a81cc03d4096f8febef386}{Mini\+Max\+Agent()}}, \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play()}}, and \mbox{\hyperlink{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b}{score()}}.
+
+\Hypertarget{class_mini_max_agent_aa1920de5421331a5a88dd55c727ec6fc}\index{MiniMaxAgent@{MiniMaxAgent}!depth\_@{depth\_}}
+\index{depth\_@{depth\_}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{depth\_}{depth\_}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_aa1920de5421331a5a88dd55c727ec6fc} 
+const unsigned short Mini\+Max\+Agent\+::depth\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+depth cutoff of the minimax algorithm\textquotesingle{}s search tree. 
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_afb157bc316a81cc03d4096f8febef386}{Mini\+Max\+Agent()}}, and \mbox{\hyperlink{class_mini_max_agent_a8d0a338b90f9a44c44ccbbad873009a9}{play()}}.
+
+\Hypertarget{class_mini_max_agent_a2cbab0bdd892f994f7e3e13d0f4be53d}\index{MiniMaxAgent@{MiniMaxAgent}!PLAYER\_WIN\_SCORE@{PLAYER\_WIN\_SCORE}}
+\index{PLAYER\_WIN\_SCORE@{PLAYER\_WIN\_SCORE}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_WIN\_SCORE}{PLAYER\_WIN\_SCORE}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a2cbab0bdd892f994f7e3e13d0f4be53d} 
+short Mini\+Max\+Agent\+::\+PLAYER\+\_\+\+WIN\+\_\+\+SCORE = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+PLAYER\+\_\+\+WIN\+\_\+\+SCORE defines the score of the final board when the human player wins. 
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b}{score()}}.
+
+\Hypertarget{class_mini_max_agent_a985f5527d35de87b23d9f271faf91c75}\index{MiniMaxAgent@{MiniMaxAgent}!playerMark\_@{playerMark\_}}
+\index{playerMark\_@{playerMark\_}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{playerMark\_}{playerMark\_}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a985f5527d35de87b23d9f271faf91c75} 
+const \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} Mini\+Max\+Agent\+::player\+Mark\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The mark (X or O) of the human player. 
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_afb157bc316a81cc03d4096f8febef386}{Mini\+Max\+Agent()}}, and \mbox{\hyperlink{class_mini_max_agent_a0385ea9e47150171b03dbdfc5b349136}{min\+Move()}}.
+
+\Hypertarget{class_mini_max_agent_a9ae263accc262d5f9eac741125229f13}\index{MiniMaxAgent@{MiniMaxAgent}!TIE\_SCORE@{TIE\_SCORE}}
+\index{TIE\_SCORE@{TIE\_SCORE}!MiniMaxAgent@{MiniMaxAgent}}
+\doxysubsubsection{\texorpdfstring{TIE\_SCORE}{TIE\_SCORE}}
+{\footnotesize\ttfamily \label{class_mini_max_agent_a9ae263accc262d5f9eac741125229f13} 
+short Mini\+Max\+Agent\+::\+TIE\+\_\+\+SCORE = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+TIE\+\_\+\+SCORE defines the score of the final board when the the game is a tie. 
+
+
+
+Referenced by \mbox{\hyperlink{class_mini_max_agent_a1472ae706782c168d8e1965bac90097b}{score()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+AI/\mbox{\hyperlink{_mini_max_agent_8h}{Mini\+Max\+Agent.\+h}}\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+AI/\mbox{\hyperlink{_mini_max_agent_8cpp}{Mini\+Max\+Agent.\+cpp}}\end{DoxyCompactItemize}

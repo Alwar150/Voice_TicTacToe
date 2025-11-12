@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structjsgf__rule__t" kind="struct" language="C++" prot="public">
+    <compoundname>jsgf_rule_t</compoundname>
+    <includes refid="model_8h" local="no">pocketsphinx/model.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structjsgf__rule__t_1ae28ad8446aa8d384fe82cbbb1910cfe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> char const *</type>
+        <definition>POCKETSPHINX_EXPORT char const  * jsgf_rule_name</definition>
+        <argsstring>(jsgf_rule_t *rule)</argsstring>
+        <name>jsgf_rule_name</name>
+        <qualifiedname>jsgf_rule_t::jsgf_rule_name</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref> *</type>
+          <declname>rule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the rule name from a rule. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="143" column="12" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="143" declcolumn="12"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structjsgf__rule__t_1ab2abfa878f7efbbc04d562ddb9ce6200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int jsgf_rule_public</definition>
+        <argsstring>(jsgf_rule_t *rule)</argsstring>
+        <name>jsgf_rule_public</name>
+        <qualifiedname>jsgf_rule_t::jsgf_rule_public</qualifiedname>
+        <param>
+          <type><ref refid="structjsgf__rule__t" kindref="compound">jsgf_rule_t</ref> *</type>
+          <declname>rule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a rule is public or not. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="150" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" declline="150" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Rule in a parsed JSGF grammar. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/model.h" line="66" column="1"/>
+    <listofallmembers>
+      <member refid="structjsgf__rule__t_1ae28ad8446aa8d384fe82cbbb1910cfe1" prot="public" virt="non-virtual"><scope>jsgf_rule_t</scope><name>jsgf_rule_name</name></member>
+      <member refid="structjsgf__rule__t_1ab2abfa878f7efbbc04d562ddb9ce6200" prot="public" virt="non-virtual"><scope>jsgf_rule_t</scope><name>jsgf_rule_public</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

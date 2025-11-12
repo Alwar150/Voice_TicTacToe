@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_t_t_t_controller_8h" kind="file" language="C++">
+    <compoundname>TTTController.h</compoundname>
+    <includes refid="_a_i_agent_8h" local="yes">AIAgent.h</includes>
+    <includes refid="_board_8h" local="yes">Board.h</includes>
+    <includes refid="_t_t_t_common_types_8h" local="yes">TTTCommonTypes.h</includes>
+    <includes refid="_tic_tac_toe_game_8h" local="yes">TicTacToeGame.h</includes>
+    <includes refid="_network_manager_8h" local="yes">NetworkManager.h</includes>
+    <includes local="no">QTcpSocket</includes>
+    <includes local="no">QObject</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">portaudio.h</includes>
+    <includes refid="pocketsphinx_8h" local="no">pocketsphinx.h</includes>
+    <includes local="no">signal.h</includes>
+    <includedby refid="_t_t_t_controller_8cpp" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</includedby>
+    <includedby refid="_title_screen_8cpp" local="yes">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>AIAgent.h</label>
+        <link refid="_a_i_agent_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Board.h</label>
+        <link refid="_board_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>NetworkManager.h</label>
+        <link refid="_network_manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TTTCommonTypes.h</label>
+        <link refid="_t_t_t_common_types_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>TicTacToeGame.h</label>
+        <link refid="_tic_tac_toe_game_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>pocketsphinx/alignment.h</label>
+        <link refid="alignment_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>pocketsphinx/endpointer.h</label>
+        <link refid="endpointer_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>pocketsphinx/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>pocketsphinx/export.h</label>
+        <link refid="export_8h"/>
+      </node>
+      <node id="25">
+        <label>pocketsphinx/lattice.h</label>
+        <link refid="lattice_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>pocketsphinx/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>pocketsphinx/mllr.h</label>
+        <link refid="mllr_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>pocketsphinx/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>pocketsphinx/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>pocketsphinx/search.h</label>
+        <link refid="search_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>pocketsphinx/sphinx_config.h</label>
+        <link refid="include_2pocketsphinx_2sphinx__config_8h"/>
+      </node>
+      <node id="20">
+        <label>pocketsphinx/vad.h</label>
+        <link refid="vad_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>QDialog</label>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="35">
+        <label>QTcpSocket</label>
+      </node>
+      <node id="36">
+        <label>QTimer</label>
+      </node>
+      <node id="28">
+        <label>QtGlobal</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="19">
+        <label>errno.h</label>
+      </node>
+      <node id="33">
+        <label>memory</label>
+      </node>
+      <node id="13">
+        <label>pocketsphinx/sphinx_config.h</label>
+      </node>
+      <node id="8">
+        <label>portaudio.h</label>
+      </node>
+      <node id="27">
+        <label>signal.h</label>
+      </node>
+      <node id="17">
+        <label>stdarg.h</label>
+      </node>
+      <node id="10">
+        <label>stdio.h</label>
+      </node>
+      <node id="18">
+        <label>stdlib.h</label>
+      </node>
+      <node id="31">
+        <label>ui_TicTacToeGame.h</label>
+      </node>
+      <node id="29">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.cpp</label>
+        <link refid="_t_t_t_controller_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h</label>
+        <link refid="_t_t_t_controller_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View/TitleScreen.cpp</label>
+        <link refid="_title_screen_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_t_t_t_controller" prot="public">TTTController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TTTCONTROLLER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TTTCONTROLLER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_i_agent_8h" kindref="compound">AIAgent.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_board_8h" kindref="compound">Board.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_t_t_common_types_8h" kindref="compound">TTTCommonTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tic_tac_toe_game_8h" kindref="compound">TicTacToeGame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_network_manager_8h" kindref="compound">NetworkManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTcpSocket&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;portaudio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pocketsphinx_8h" kindref="compound">pocketsphinx.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::unique_ptr;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::vector;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_t_t_t_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" kindref="member">TTTController</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34" refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tic_tac_toe_game" kindref="compound">TicTacToeGame</ref><sp/><ref refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" kindref="member">view_</ref>;</highlight></codeline>
+<codeline lineno="38" refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_board" kindref="compound">Board</ref><sp/><ref refid="class_t_t_t_controller_1aad7647092c2b5c9980bbe74aee4e4892" kindref="member">board_</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Cell&gt;<sp/><ref refid="class_t_t_t_controller_1acc38c6351607ee19a1dfc313b80da9a2" kindref="member">cells_</ref>;</highlight></codeline>
+<codeline lineno="46" refid="class_t_t_t_controller_1aade7f92b4b06dbf7e17dc5a3772c0aef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_t_t_t_options" kindref="compound">TTTOptions</ref>&amp;<sp/><ref refid="class_t_t_t_controller_1aade7f92b4b06dbf7e17dc5a3772c0aef" kindref="member">options_</ref>;</highlight></codeline>
+<codeline lineno="50" refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_t_t_common_types_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/><ref refid="class_t_t_t_controller_1afc92e84ff160da3b8a7f9e50a7d9e921" kindref="member">currentPlayer_</ref>;</highlight></codeline>
+<codeline lineno="54" refid="class_t_t_t_controller_1a2c3f88a3462b7aad96bf352322c46f3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>unique_ptr&lt;AIAgent&gt;<sp/><ref refid="class_t_t_t_controller_1a2c3f88a3462b7aad96bf352322c46f3e" kindref="member">agent_</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a8375926f879380ce4fcca19e7c8a9ca4" kindref="member">setConnections</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a14db27ac7fab7fa75f993b1efb282b15" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_t_t_t_controller_1a858247e19d3d31564d8e716f9d81354e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTcpSocket<sp/>*<ref refid="class_t_t_t_controller_1a858247e19d3d31564d8e716f9d81354e" kindref="member">socket_</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a57edf31f9b9a6cf7b3d5261715f92b15" kindref="member">setupNetwork</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1acae67d371dfa6272adc7670040c01a23" kindref="member">sendMove</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>player);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a2b17b7aa11412f978e257afb2aebab5b" kindref="member">updateGameState</ref>(<ref refid="struct_cell" kindref="compound">Cell</ref><sp/>&amp;cell);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1abc2caf1b04a521118fbb23058f8d3a55" kindref="member">AIAgentPlay</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1ad083b0e4ac90abc1b9b1578a4407ada7" kindref="member">HumanPlay</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a0d1a0122a2ec371163fb5d9d13c928f5" kindref="member">switchPlayer</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1ab8fd0d485df345aefed502a00082c828" kindref="member">TTTController</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_t_t_t_options" kindref="compound">TTTOptions</ref><sp/>&amp;options,<sp/>QObject<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a1926fc5ac8a6cac2a75de663157d0023" kindref="member">startGame</ref>();</highlight></codeline>
+<codeline lineno="102" refid="class_t_t_t_controller_1a0736512a7a5cffa6fefecbe9e4f2a072" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a0736512a7a5cffa6fefecbe9e4f2a072" kindref="member">parseSpeechToCell</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;text)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>keywords<sp/>=<sp/>text.split(</highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/>Qt::SkipEmptyParts);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(keywords.size()<sp/>&lt;<sp/>2)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>k1<sp/>=<sp/>keywords[0];</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>k2<sp/>=<sp/>keywords[1];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k1<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;arriba&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;izquierda&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;arriba&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;derecha&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k1<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;centro&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;izquierda&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>3;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;centro&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;derecha&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>5;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;arriba&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;abajo&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>7;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k1<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;abajo&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;izquierda&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>6;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;centro&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>7;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k2<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;derecha&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>8;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127" refid="class_t_t_t_controller_1a6293931772f0ec9eea531c8a1fb1e050" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="class_t_t_t_controller_1a6293931772f0ec9eea531c8a1fb1e050" kindref="member">getView</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="class_t_t_t_controller_1adc04ff1397e03c02603972eb9674ebba" kindref="member">view_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="133" refid="class_t_t_t_controller_1a513f925f29dcfebb4139030f46243cb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a513f925f29dcfebb4139030f46243cb4" kindref="member">AIFinished</ref>();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="class_t_t_t_controller_1ae1514051a94219f50a5740af4e02e43d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1ae1514051a94219f50a5740af4e02e43d" kindref="member">humanFinished</ref>();</highlight></codeline>
+<codeline lineno="136" refid="class_t_t_t_controller_1a4b36edfb9a40062357e0038ed00b3b96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a4b36edfb9a40062357e0038ed00b3b96" kindref="member">speechRecognized</ref>(QString);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1a48889524dfe5f7215cafed10c69812c9" kindref="member">updateGame</ref>(<ref refid="struct_cell" kindref="compound">Cell</ref><sp/>&amp;cell);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1abbd8ecce0bb5cf7b949282a17b3d74cb" kindref="member">onSpeechRecognized</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;text);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_t_t_t_controller_1aa653f1b7fcb4eaf10d39979ebd9317d6" kindref="member">onSocketReadyRead</ref>();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>TTTCONTROLLER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller/TTTController.h"/>
+  </compounddef>
+</doxygen>

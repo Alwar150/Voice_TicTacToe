@@ -1,0 +1,287 @@
+\doxysection{logmath\+\_\+t Struct Reference}
+\hypertarget{structlogmath__t}{}\label{structlogmath__t}\index{logmath\_t@{logmath\_t}}
+
+
+Integer log math computation class.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/logmath.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structlogmath__t_a67fa75e38e518666547d676b1723be86}{logmath\+\_\+init}} (\mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} base, int shift, int use\+\_\+table)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structlogmath__t_ad5f25906919e112859a51dec5aa96752}{logmath\+\_\+read}} (const char \texorpdfstring{$\ast$}{*}filename)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \mbox{\hyperlink{structlogmath__t_a02bcbb922fcbb4983cc003da84f5da6d}{logmath\+\_\+write}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, const char \texorpdfstring{$\ast$}{*}filename)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \mbox{\hyperlink{structlogmath__t_ae921cd21e0c7c28a5801f5063ddb8228}{logmath\+\_\+get\+\_\+table\+\_\+shape}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, \mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}} \texorpdfstring{$\ast$}{*}out\+\_\+size, \mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}} \texorpdfstring{$\ast$}{*}out\+\_\+width, \mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}} \texorpdfstring{$\ast$}{*}out\+\_\+shift)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} \mbox{\hyperlink{structlogmath__t_a6e619faaacbd3eea427e22b223353754}{logmath\+\_\+get\+\_\+base}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_aa7188fd7b15e28688d86a368e31df2e0}{logmath\+\_\+get\+\_\+zero}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_ae484ab0132dc7324ee9927b660ac77d8}{logmath\+\_\+get\+\_\+width}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_af12b536b7cd046d8c02f98b647e290cd}{logmath\+\_\+get\+\_\+shift}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structlogmath__t_afaa475efd12231945f531fca362d82d9}{logmath\+\_\+retain}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_a178bfdd5bb8c9f8c84e9e5c00cc343a4}{logmath\+\_\+free}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_ab706b56ac49ab2dfa945d2d32758ab55}{logmath\+\_\+add\+\_\+exact}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, int logb\+\_\+p, int logb\+\_\+q)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_a49c7b087532d7cf136167ad6cf61e4b3}{logmath\+\_\+add}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, int logb\+\_\+p, int logb\+\_\+q)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_a9e3c7cbe0d9b3ba74b7e6965cacd6d5a}{logmath\+\_\+log}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} p)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} \mbox{\hyperlink{structlogmath__t_a439a78b7c6f5821a750574ececc20fae}{logmath\+\_\+exp}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, int logb\+\_\+p)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_a66303cb0b91f43452ea500f53ef7eaa5}{logmath\+\_\+ln\+\_\+to\+\_\+log}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} log\+\_\+p)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} \mbox{\hyperlink{structlogmath__t_abaff7c0ba0976c7cf8f232d8340b7b2f}{logmath\+\_\+log\+\_\+to\+\_\+ln}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, int logb\+\_\+p)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{structlogmath__t_abb7027d633f0cabb372504e189e7b4b0}{logmath\+\_\+log10\+\_\+to\+\_\+log}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} log\+\_\+p)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} float \mbox{\hyperlink{structlogmath__t_a9cc2394054dc95d9e94720d036f28a41}{logmath\+\_\+log10\+\_\+to\+\_\+log\+\_\+float}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} log\+\_\+p)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} \mbox{\hyperlink{structlogmath__t_ac8fe69a67fcca378b1e5a32428899a23}{logmath\+\_\+log\+\_\+to\+\_\+log10}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, int logb\+\_\+p)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} \mbox{\hyperlink{structlogmath__t_a4e596e6d01e92280e0caa24a48727afb}{logmath\+\_\+log\+\_\+float\+\_\+to\+\_\+log10}} (\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}lmath, float log\+\_\+p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Integer log math computation class. 
+
+\label{doc-func-members}
+\Hypertarget{structlogmath__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structlogmath__t_a49c7b087532d7cf136167ad6cf61e4b3}\index{logmath\_t@{logmath\_t}!logmath\_add@{logmath\_add}}
+\index{logmath\_add@{logmath\_add}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_add()}{logmath\_add()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a49c7b087532d7cf136167ad6cf61e4b3} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{int}]{logb\+\_\+p}{, }\item[{int}]{logb\+\_\+q}{}\end{DoxyParamCaption})}
+
+Add two values in log space (i.\+e. return log(exp(p)+exp(q))) 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_ab706b56ac49ab2dfa945d2d32758ab55}\index{logmath\_t@{logmath\_t}!logmath\_add\_exact@{logmath\_add\_exact}}
+\index{logmath\_add\_exact@{logmath\_add\_exact}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_add\_exact()}{logmath\_add\_exact()}}
+{\footnotesize\ttfamily \label{structlogmath__t_ab706b56ac49ab2dfa945d2d32758ab55} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+add\+\_\+exact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{int}]{logb\+\_\+p}{, }\item[{int}]{logb\+\_\+q}{}\end{DoxyParamCaption})}
+
+Add two values in log space exactly and slowly (without using add table). 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a439a78b7c6f5821a750574ececc20fae}\index{logmath\_t@{logmath\_t}!logmath\_exp@{logmath\_exp}}
+\index{logmath\_exp@{logmath\_exp}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_exp()}{logmath\_exp()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a439a78b7c6f5821a750574ececc20fae} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} logmath\+\_\+exp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{int}]{logb\+\_\+p}{}\end{DoxyParamCaption})}
+
+Convert integer log in base B to linear floating point. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a178bfdd5bb8c9f8c84e9e5c00cc343a4}\index{logmath\_t@{logmath\_t}!logmath\_free@{logmath\_free}}
+\index{logmath\_free@{logmath\_free}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_free()}{logmath\_free()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a178bfdd5bb8c9f8c84e9e5c00cc343a4} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{}\end{DoxyParamCaption})}
+
+Free a log table.
+
+\begin{DoxyReturn}{Returns}
+new reference count (0 if freed completely) 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a6e619faaacbd3eea427e22b223353754}\index{logmath\_t@{logmath\_t}!logmath\_get\_base@{logmath\_get\_base}}
+\index{logmath\_get\_base@{logmath\_get\_base}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_get\_base()}{logmath\_get\_base()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a6e619faaacbd3eea427e22b223353754} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} logmath\+\_\+get\+\_\+base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{}\end{DoxyParamCaption})}
+
+Get the log base. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_af12b536b7cd046d8c02f98b647e290cd}\index{logmath\_t@{logmath\_t}!logmath\_get\_shift@{logmath\_get\_shift}}
+\index{logmath\_get\_shift@{logmath\_get\_shift}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_get\_shift()}{logmath\_get\_shift()}}
+{\footnotesize\ttfamily \label{structlogmath__t_af12b536b7cd046d8c02f98b647e290cd} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+get\+\_\+shift (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{}\end{DoxyParamCaption})}
+
+Get the shift of the values in a log table. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_ae921cd21e0c7c28a5801f5063ddb8228}\index{logmath\_t@{logmath\_t}!logmath\_get\_table\_shape@{logmath\_get\_table\_shape}}
+\index{logmath\_get\_table\_shape@{logmath\_get\_table\_shape}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_get\_table\_shape()}{logmath\_get\_table\_shape()}}
+{\footnotesize\ttfamily \label{structlogmath__t_ae921cd21e0c7c28a5801f5063ddb8228} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} logmath\+\_\+get\+\_\+table\+\_\+shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{\mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+size}{, }\item[{\mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+width}{, }\item[{\mbox{\hyperlink{prim__type_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+shift}{}\end{DoxyParamCaption})}
+
+Get the log table size and dimensions. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_ae484ab0132dc7324ee9927b660ac77d8}\index{logmath\_t@{logmath\_t}!logmath\_get\_width@{logmath\_get\_width}}
+\index{logmath\_get\_width@{logmath\_get\_width}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_get\_width()}{logmath\_get\_width()}}
+{\footnotesize\ttfamily \label{structlogmath__t_ae484ab0132dc7324ee9927b660ac77d8} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+get\+\_\+width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{}\end{DoxyParamCaption})}
+
+Get the width of the values in a log table. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_aa7188fd7b15e28688d86a368e31df2e0}\index{logmath\_t@{logmath\_t}!logmath\_get\_zero@{logmath\_get\_zero}}
+\index{logmath\_get\_zero@{logmath\_get\_zero}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_get\_zero()}{logmath\_get\_zero()}}
+{\footnotesize\ttfamily \label{structlogmath__t_aa7188fd7b15e28688d86a368e31df2e0} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+get\+\_\+zero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{}\end{DoxyParamCaption})}
+
+Get the smallest possible value represented in this base. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a67fa75e38e518666547d676b1723be86}\index{logmath\_t@{logmath\_t}!logmath\_init@{logmath\_init}}
+\index{logmath\_init@{logmath\_init}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_init()}{logmath\_init()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a67fa75e38e518666547d676b1723be86} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*} logmath\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}}]{base}{, }\item[{int}]{shift}{, }\item[{int}]{use\+\_\+table}{}\end{DoxyParamCaption})}
+
+Initialize a log math computation table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & The base B in which computation is to be done. \\
+\hline
+{\em shift} & Log values are shifted right by this many bits. \\
+\hline
+{\em use\+\_\+table} & Whether to use an add table or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created log math table. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a66303cb0b91f43452ea500f53ef7eaa5}\index{logmath\_t@{logmath\_t}!logmath\_ln\_to\_log@{logmath\_ln\_to\_log}}
+\index{logmath\_ln\_to\_log@{logmath\_ln\_to\_log}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_ln\_to\_log()}{logmath\_ln\_to\_log()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a66303cb0b91f43452ea500f53ef7eaa5} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+ln\+\_\+to\+\_\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{\mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}}]{log\+\_\+p}{}\end{DoxyParamCaption})}
+
+Convert natural log (in floating point) to integer log in base B. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a9e3c7cbe0d9b3ba74b7e6965cacd6d5a}\index{logmath\_t@{logmath\_t}!logmath\_log@{logmath\_log}}
+\index{logmath\_log@{logmath\_log}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_log()}{logmath\_log()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a9e3c7cbe0d9b3ba74b7e6965cacd6d5a} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{\mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}}]{p}{}\end{DoxyParamCaption})}
+
+Convert linear floating point number to integer log in base B. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_abb7027d633f0cabb372504e189e7b4b0}\index{logmath\_t@{logmath\_t}!logmath\_log10\_to\_log@{logmath\_log10\_to\_log}}
+\index{logmath\_log10\_to\_log@{logmath\_log10\_to\_log}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_log10\_to\_log()}{logmath\_log10\_to\_log()}}
+{\footnotesize\ttfamily \label{structlogmath__t_abb7027d633f0cabb372504e189e7b4b0} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int logmath\+\_\+log10\+\_\+to\+\_\+log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{\mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}}]{log\+\_\+p}{}\end{DoxyParamCaption})}
+
+Convert base 10 log (in floating point) to integer log in base B. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a9cc2394054dc95d9e94720d036f28a41}\index{logmath\_t@{logmath\_t}!logmath\_log10\_to\_log\_float@{logmath\_log10\_to\_log\_float}}
+\index{logmath\_log10\_to\_log\_float@{logmath\_log10\_to\_log\_float}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_log10\_to\_log\_float()}{logmath\_log10\_to\_log\_float()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a9cc2394054dc95d9e94720d036f28a41} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} float logmath\+\_\+log10\+\_\+to\+\_\+log\+\_\+float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{\mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}}}]{log\+\_\+p}{}\end{DoxyParamCaption})}
+
+Convert base 10 log (in floating point) to float log in base B. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a4e596e6d01e92280e0caa24a48727afb}\index{logmath\_t@{logmath\_t}!logmath\_log\_float\_to\_log10@{logmath\_log\_float\_to\_log10}}
+\index{logmath\_log\_float\_to\_log10@{logmath\_log\_float\_to\_log10}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_log\_float\_to\_log10()}{logmath\_log\_float\_to\_log10()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a4e596e6d01e92280e0caa24a48727afb} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} logmath\+\_\+log\+\_\+float\+\_\+to\+\_\+log10 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{float}]{log\+\_\+p}{}\end{DoxyParamCaption})}
+
+Convert float log in base B to base 10 log. \Hypertarget{structlogmath__t_abaff7c0ba0976c7cf8f232d8340b7b2f}\index{logmath\_t@{logmath\_t}!logmath\_log\_to\_ln@{logmath\_log\_to\_ln}}
+\index{logmath\_log\_to\_ln@{logmath\_log\_to\_ln}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_log\_to\_ln()}{logmath\_log\_to\_ln()}}
+{\footnotesize\ttfamily \label{structlogmath__t_abaff7c0ba0976c7cf8f232d8340b7b2f} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} logmath\+\_\+log\+\_\+to\+\_\+ln (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{int}]{logb\+\_\+p}{}\end{DoxyParamCaption})}
+
+Convert integer log in base B to natural log (in floating point). 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_ac8fe69a67fcca378b1e5a32428899a23}\index{logmath\_t@{logmath\_t}!logmath\_log\_to\_log10@{logmath\_log\_to\_log10}}
+\index{logmath\_log\_to\_log10@{logmath\_log\_to\_log10}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_log\_to\_log10()}{logmath\_log\_to\_log10()}}
+{\footnotesize\ttfamily \label{structlogmath__t_ac8fe69a67fcca378b1e5a32428899a23} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}{float64}} logmath\+\_\+log\+\_\+to\+\_\+log10 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{int}]{logb\+\_\+p}{}\end{DoxyParamCaption})}
+
+Convert integer log in base B to base 10 log (in floating point). 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_ad5f25906919e112859a51dec5aa96752}\index{logmath\_t@{logmath\_t}!logmath\_read@{logmath\_read}}
+\index{logmath\_read@{logmath\_read}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_read()}{logmath\_read()}}
+{\footnotesize\ttfamily \label{structlogmath__t_ad5f25906919e112859a51dec5aa96752} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*} logmath\+\_\+read (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})}
+
+Memory-\/map (or read) a log table from a file. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_afaa475efd12231945f531fca362d82d9}\index{logmath\_t@{logmath\_t}!logmath\_retain@{logmath\_retain}}
+\index{logmath\_retain@{logmath\_retain}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_retain()}{logmath\_retain()}}
+{\footnotesize\ttfamily \label{structlogmath__t_afaa475efd12231945f531fca362d82d9} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*} logmath\+\_\+retain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{}\end{DoxyParamCaption})}
+
+Retain ownership of a log table.
+
+\begin{DoxyReturn}{Returns}
+pointer to retained log table. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structlogmath__t_a02bcbb922fcbb4983cc003da84f5da6d}\index{logmath\_t@{logmath\_t}!logmath\_write@{logmath\_write}}
+\index{logmath\_write@{logmath\_write}!logmath\_t@{logmath\_t}}
+\doxysubsubsection{\texorpdfstring{logmath\_write()}{logmath\_write()}}
+{\footnotesize\ttfamily \label{structlogmath__t_a02bcbb922fcbb4983cc003da84f5da6d} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} logmath\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlogmath__t}{logmath\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lmath}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})}
+
+Write a log table to a file. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{logmath_8h}{logmath.\+h}}\end{DoxyCompactItemize}

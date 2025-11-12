@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__mllr__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_mllr_t</compoundname>
+    <includes refid="mllr_8h" local="no">pocketsphinx/mllr.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__mllr__t_1a8fcd58d5834aac31266cd253777a2c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__mllr__t" kindref="compound">ps_mllr_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_mllr_t * ps_mllr_read</definition>
+        <argsstring>(char const *file)</argsstring>
+        <name>ps_mllr_read</name>
+        <qualifiedname>ps_mllr_t::ps_mllr_read</qualifiedname>
+        <param>
+          <type>char const *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a speaker-adaptive linear transform from a file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h" line="70" column="11" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h" declline="70" declcolumn="11"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__mllr__t_1a915cd853e598d6ab4a4c92276c56b4b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__mllr__t" kindref="compound">ps_mllr_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_mllr_t * ps_mllr_retain</definition>
+        <argsstring>(ps_mllr_t *mllr)</argsstring>
+        <name>ps_mllr_retain</name>
+        <qualifiedname>ps_mllr_t::ps_mllr_retain</qualifiedname>
+        <param>
+          <type><ref refid="structps__mllr__t" kindref="compound">ps_mllr_t</ref> *</type>
+          <declname>mllr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retain a pointer to a linear transform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h" line="77" column="11" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h" declline="77" declcolumn="11"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__mllr__t_1ae56a8c52dd7513b1883536f2a729e1d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_mllr_free</definition>
+        <argsstring>(ps_mllr_t *mllr)</argsstring>
+        <name>ps_mllr_free</name>
+        <qualifiedname>ps_mllr_t::ps_mllr_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__mllr__t" kindref="compound">ps_mllr_t</ref> *</type>
+          <declname>mllr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release a pointer to a linear transform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h" line="84" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h" declline="84" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Linear transform object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/mllr.h" line="60" column="1"/>
+    <listofallmembers>
+      <member refid="structps__mllr__t_1ae56a8c52dd7513b1883536f2a729e1d0" prot="public" virt="non-virtual"><scope>ps_mllr_t</scope><name>ps_mllr_free</name></member>
+      <member refid="structps__mllr__t_1a8fcd58d5834aac31266cd253777a2c5e" prot="public" virt="non-virtual"><scope>ps_mllr_t</scope><name>ps_mllr_read</name></member>
+      <member refid="structps__mllr__t_1a915cd853e598d6ab4a4c92276c56b4b2" prot="public" virt="non-virtual"><scope>ps_mllr_t</scope><name>ps_mllr_retain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

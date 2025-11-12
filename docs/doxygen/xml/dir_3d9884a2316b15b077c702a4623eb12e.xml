@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_3d9884a2316b15b077c702a4623eb12e" kind="dir">
+    <compoundname>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master</compoundname>
+    <innerdir refid="dir_a2e82b4e0ac64657f77f5a9a0cc058cc">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI</innerdir>
+    <innerdir refid="dir_37b780ba032610e1ee204646aeeb079a">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Config</innerdir>
+    <innerdir refid="dir_7c341489219056279403641d0f7c52de">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Controller</innerdir>
+    <innerdir refid="dir_4797d907ae48f413ac06f3cf9d252bdb">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/examples</innerdir>
+    <innerdir refid="dir_19e79deb46b5494920d60f6c1487a32e">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include</innerdir>
+    <innerdir refid="dir_e17808f8d4b75895bd903217f726af3a">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Model</innerdir>
+    <innerdir refid="dir_3e52b4995d7162d5fa6b0f203cfef001">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Network</innerdir>
+    <innerdir refid="dir_254468ffa5fb37a3652f0c1916dd8eac">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech</innerdir>
+    <innerdir refid="dir_d913f9539fd1cffe48392e1a2787b807">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/TicTacToeTest</innerdir>
+    <innerdir refid="dir_6b24e234736ee76983202a12a7b7e744">C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/View</innerdir>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="_t_t_t_common_types_8h">TTTCommonTypes.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/"/>
+  </compounddef>
+</doxygen>

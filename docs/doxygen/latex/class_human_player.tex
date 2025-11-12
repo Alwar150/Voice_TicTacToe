@@ -1,0 +1,128 @@
+\doxysection{Human\+Player Class Reference}
+\hypertarget{class_human_player}{}\label{class_human_player}\index{HumanPlayer@{HumanPlayer}}
+
+
+{\ttfamily \#include $<$Human\+Player.\+h$>$}
+
+Inheritance diagram for Human\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_human_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_human_player_a22dec6c1020171eae458f479c6334792}{start\+Listening}} ()
+\item 
+void \mbox{\hyperlink{class_human_player_a45a91368ca76a18df8f838297810f4f6}{stop\+Listening}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_human_player_aa44723a6fb43eb95f764a43d6a7f4d1a}{Human\+Player}} (QObject \&parent=nullptr, const \mbox{\hyperlink{class_board}{Board}} \&board\+\_\+ref, \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} player\+Mark=\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Board\+Marks\+::\+Empty}}) virtual \texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_human_player}{Human\+Player}}()
+\item 
+void \mbox{\hyperlink{class_human_player_ad005d15e0c30f35fd870b25dbde208c9}{play}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_human_player_ae3be4ef0c7e7d6aaeb150c9ded077683}{on\+Speech\+Recognized}} (const QString \&text)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_human_player_af30c714ea5f45a8acac300ccc672c87c}{parse\+Speech\+Command}} (const QString \&text)
+\item 
+bool \mbox{\hyperlink{class_human_player_ab915a74ea5785cad0294dc5502acf8cd}{validate\+Command}} (const QString \&command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_speech_manager}{Speech\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_human_player_a274fc9efd09115ccfa0cfac882e49dce}{stt\+\_\+}}
+\item 
+QThread \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_human_player_a75e961bdb6f8c7e0fff5f7b01cfc038b}{stt\+Thread\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_human_player_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_human_player_aa44723a6fb43eb95f764a43d6a7f4d1a}\index{HumanPlayer@{HumanPlayer}!HumanPlayer@{HumanPlayer}}
+\index{HumanPlayer@{HumanPlayer}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{HumanPlayer()}{HumanPlayer()}}
+{\footnotesize\ttfamily \label{class_human_player_aa44723a6fb43eb95f764a43d6a7f4d1a} 
+Human\+Player\+::\+Human\+Player (\begin{DoxyParamCaption}\item[{QObject \&}]{parent}{ = {\ttfamily nullptr}, }\item[{const \mbox{\hyperlink{class_board}{Board}} \&}]{board\+\_\+ref}{, }\item[{\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{player\+Mark}{ = {\ttfamily \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Board\+Marks\+::\+Empty}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+References \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}, and \mbox{\hyperlink{class_human_player_aa44723a6fb43eb95f764a43d6a7f4d1a}{Human\+Player()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_human_player_aa44723a6fb43eb95f764a43d6a7f4d1a}{Human\+Player()}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_human_player_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_human_player_ae3be4ef0c7e7d6aaeb150c9ded077683}\index{HumanPlayer@{HumanPlayer}!onSpeechRecognized@{onSpeechRecognized}}
+\index{onSpeechRecognized@{onSpeechRecognized}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{onSpeechRecognized}{onSpeechRecognized}}
+{\footnotesize\ttfamily \label{class_human_player_ae3be4ef0c7e7d6aaeb150c9ded077683} 
+void Human\+Player\+::on\+Speech\+Recognized (\begin{DoxyParamCaption}\item[{const QString \&}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+\Hypertarget{class_human_player_af30c714ea5f45a8acac300ccc672c87c}\index{HumanPlayer@{HumanPlayer}!parseSpeechCommand@{parseSpeechCommand}}
+\index{parseSpeechCommand@{parseSpeechCommand}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{parseSpeechCommand()}{parseSpeechCommand()}}
+{\footnotesize\ttfamily \label{class_human_player_af30c714ea5f45a8acac300ccc672c87c} 
+int Human\+Player\+::parse\+Speech\+Command (\begin{DoxyParamCaption}\item[{const QString \&}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_human_player_ad005d15e0c30f35fd870b25dbde208c9}\index{HumanPlayer@{HumanPlayer}!play@{play}}
+\index{play@{play}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_human_player_ad005d15e0c30f35fd870b25dbde208c9} 
+void Human\+Player\+::play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_human_player_a22dec6c1020171eae458f479c6334792}\index{HumanPlayer@{HumanPlayer}!startListening@{startListening}}
+\index{startListening@{startListening}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{startListening}{startListening}}
+{\footnotesize\ttfamily \label{class_human_player_a22dec6c1020171eae458f479c6334792} 
+void Human\+Player\+::start\+Listening (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\Hypertarget{class_human_player_a45a91368ca76a18df8f838297810f4f6}\index{HumanPlayer@{HumanPlayer}!stopListening@{stopListening}}
+\index{stopListening@{stopListening}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{stopListening}{stopListening}}
+{\footnotesize\ttfamily \label{class_human_player_a45a91368ca76a18df8f838297810f4f6} 
+void Human\+Player\+::stop\+Listening (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\Hypertarget{class_human_player_ab915a74ea5785cad0294dc5502acf8cd}\index{HumanPlayer@{HumanPlayer}!validateCommand@{validateCommand}}
+\index{validateCommand@{validateCommand}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{validateCommand()}{validateCommand()}}
+{\footnotesize\ttfamily \label{class_human_player_ab915a74ea5785cad0294dc5502acf8cd} 
+bool Human\+Player\+::validate\+Command (\begin{DoxyParamCaption}\item[{const QString \&}]{command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_human_player_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_human_player_a274fc9efd09115ccfa0cfac882e49dce}\index{HumanPlayer@{HumanPlayer}!stt\_@{stt\_}}
+\index{stt\_@{stt\_}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{stt\_}{stt\_}}
+{\footnotesize\ttfamily \label{class_human_player_a274fc9efd09115ccfa0cfac882e49dce} 
+\mbox{\hyperlink{class_speech_manager}{Speech\+Manager}}\texorpdfstring{$\ast$}{*} Human\+Player\+::stt\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_human_player_a75e961bdb6f8c7e0fff5f7b01cfc038b}\index{HumanPlayer@{HumanPlayer}!sttThread\_@{sttThread\_}}
+\index{sttThread\_@{sttThread\_}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{sttThread\_}{sttThread\_}}
+{\footnotesize\ttfamily \label{class_human_player_a75e961bdb6f8c7e0fff5f7b01cfc038b} 
+QThread\texorpdfstring{$\ast$}{*} Human\+Player\+::stt\+Thread\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+AI/\mbox{\hyperlink{_human_player_8h}{Human\+Player.\+h}}\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+AI/\mbox{\hyperlink{_human_player_8cpp}{Human\+Player.\+cpp}}\end{DoxyCompactItemize}

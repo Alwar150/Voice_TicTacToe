@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>PocketSphinx API Documentation</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>David Huggins-Daines <ulink url="mailto:dhdaines@gmail.com">dhdaines@gmail.com</ulink> </para>
+</simplesect>
+<simplesect kind="version"><para>5.0.4 </para>
+</simplesect>
+<simplesect kind="date"><para>January 10, 2025</para>
+</simplesect>
+</para>
+<sect1 id="index_1intro_sec">
+<title>Introduction</title><para>This is the documentation for the PocketSphinx speech recognition engine. The main API calls are documented in <ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> and <ref refid="structps__config__t" kindref="compound">ps_config_t</ref>. The organization of this document is not optimal due to the limitations of Doxygen, so if you know of a better tool for documenting object-oriented interfaces in C, please let me know.</para>
+</sect1>
+<sect1 id="index_1install_sec">
+<title>Installation</title><para>To install from source, you will need a C compiler and a recent version of CMake. If you wish to use an integrated development environment, Visual Studio Code will automate most of this process for you once you have installed C++ and CMake support as described at <ulink url="https://code.visualstudio.com/docs/languages/cpp">https://code.visualstudio.com/docs/languages/cpp</ulink></para>
+<para>The easiest way to program PocketSphinx is with the Python module. See <ulink url="http://pocketsphinx.readthedocs.io/">http://pocketsphinx.readthedocs.io/</ulink> for installation and usage instructions.</para>
+<sect2 id="index_1unix_install">
+<title>Unix-like systems</title><para>From the top-level source directory, use CMake to generate a build directory: <verbatim>cmake -S . -B build
+</verbatim></para>
+<para>Now you can compile and run the tests, and install the code: <verbatim>cmake --build build
+cmake --build build --target check
+cmake --build build --target install
+</verbatim></para>
+<para>By default CMake will try to install things in <computeroutput>/usr/local</computeroutput>, which you might not have access to. If you want to install somewhere else you need to set <computeroutput>CMAKE_INSTALL_PREFIX</computeroutput> <emphasis>when running cmake for the first time</emphasis>, for example: <verbatim>cmake -S . -B build -DCMAKE_INSTALL_PREFIX=$HOME/.local
+</verbatim></para>
+</sect2>
+<sect2 id="index_1windows_install">
+<title>Windows</title><para>On Windows, the process is similar, but you will need to tell CMake what build tool you are using with the <computeroutput>-G</computeroutput> option, and there are many of them. The build is known to work with <computeroutput>nmake</computeroutput> but it is easiest just to use Visual Studio Code, which should automatically detect and offer to run the build when you add the source directory to your list of directories. Once built, you will find the EXE files in <computeroutput>build\Debug</computeroutput> or <computeroutput>build\Release</computeroutput> depending on your build type.</para>
+</sect2>
+<sect2 id="index_1build_options">
+<title>Compilation options</title><para>By default, PocketSphinx does <emphasis>not</emphasis> build shared libraries, as there are not very many executables, and the library is quite smol. If you insist on building them, you can add <computeroutput>BUILD_SHARED_LIBS=ON</computeroutput> to the CMake configuration. This is done either in the CMake GUI, in Visual Studio Code, or with the <computeroutput>-D</computeroutput> option to the first CMake command-line above, e.g.: <verbatim>cmake -S. -B build -DBUILD_SHARED_LIBS=ON
+</verbatim></para>
+<para>GStreamer support is not built by default, but can be enabled with <computeroutput>BUILD_GSTREAMER=ON</computeroutput>.</para>
+<para>PocketSphinx uses a mixture of fixed and floating-point computation by default, but can be configured to use fixed-point (nearly) exclusively with <computeroutput>FIXED_POINT=ON</computeroutput>.</para>
+</sect2>
+</sect1>
+<sect1 id="index_1programming_sec">
+<title>Using the Library</title><para>Minimally, to do speech recognition, you must first create a configuration, using <ref refid="structps__config__t" kindref="compound">ps_config_t</ref> and its associated functions. This configuration is then passed to ps_init() to initialize the decoder, which is returned as a <ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref>. Note that you must ultimately release the configuration with ps_config_free() to avoid memory leaks.</para>
+<para>At this point, you can start an &quot;utterance&quot; (a section of speech you wish to recognize) with ps_start_utt() and pass audio data to the decoder with ps_process_raw(). When finished, call ps_end_utt() to finalize recognition. The result can then be obtained with ps_get_hyp(). To get a detailed word segmentation, use ps_seg_iter(). To get the N-best results, use ps_nbest().</para>
+<para>When you no longer need the decoder, release its memory with ps_free().</para>
+<para>A concrete example can be found in simple.c.</para>
+<para>You may, however, wish to do more interesting things like segmenting and recognizing speech from an audio stream. As described below, PocketSphinx will <emphasis>not</emphasis> handle the details of microphone input for you, because doing this in a reliable and portable way is outside the scope of a speech recognizer. In theory, <ulink url="http://www.portaudio.com/">PortAudio</ulink> should work across many platforms. An example using it is in live_portaudio.c.</para>
+<para>On Windows, an example of using the <ulink url="https://learn.microsoft.com/en-us/windows/win32/multimedia/waveform-audio">Waveform Audio API</ulink> can be found in live_win32.c.</para>
+<para>On GNU/Linux and some other platforms, audio might be handled by the PulseAudio library/server, in which case you can also use the technique in live_pulseaudio.c.</para>
+<para>Finally, if you have <computeroutput>sox</computeroutput> on your platform, you can simply use the method shown in live.c.</para>
+</sect1>
+<sect1 id="index_1faq_sec">
+<title>Frequently Asked Questions</title><sect2 id="index_1faq_api">
+<title>My code no longer compiles! Why?</title><para>Some APIs were intentionally broken by the 5.0.0 release. The most likely culprit here is the configuration API, where the old &quot;options&quot; which started with a <computeroutput>-</computeroutput> are now &quot;parameters&quot; which do not, and instead of a <computeroutput>cmd_ln_t</computeroutput> it is now a <computeroutput><ref refid="structps__config__t" kindref="compound">ps_config_t</ref></computeroutput>. There is no backward compatibility, you have to change your code manually. This is straightforward for the most part. For example, instead of writing: <verbatim>cmdln = cmd_ln_init(NULL, &quot;-samprate&quot;, &quot;16000&quot;, NULL);
+cmd_ln_set_int32_r(NULL, &quot;-maxwpf&quot;, 40);
+</verbatim></para>
+<para>You should write: <verbatim>config = ps_config_init(NULL);
+ps_config_set_int(config, &quot;samprate&quot;, 16000);
+ps_config_set_int(config, &quot;maxwpf&quot;, 40);
+</verbatim></para>
+<para>Another likely suspect is the <ref refid="search_8h" kindref="compound">search module API</ref> where the function names have been changed to be more intuitive. Wherever you had <computeroutput>ps_set_search</computeroutput> you can use ps_activate_search(), it is the same function. Likewise, anything that was <computeroutput>ps_set_*</computeroutput> is now <computeroutput>ps_add_*</computeroutput>, e.g. ps_add_lm(), ps_add_fsg(), ps_add_keyphrase().</para>
+</sect2>
+<sect2 id="index_1faq_path">
+<title>What does ERROR: &quot;acmod.c, line NN: ...&quot; mean?</title><para>In general you will get &quot;Acoustic model definition is not
+specified&quot; or &quot;Folder does not contain acoustic model definition&quot; errors if PocketSphinx cannot find a model. If you are trying to use the default module, perhaps you have not installed PocketSphinx. Unfortunately it is not designed to run &quot;in-place&quot;, but you can get around this by setting the <computeroutput>POCKETSPHINX_PATH</computeroutput> environment variable, e.g. <verbatim>cmake --build build
+POCKETSPHINX_PATH=$PWD/model build/pocketsphinx single foo.wav
+</verbatim></para>
+</sect2>
+<sect2 id="index_1faq_blank">
+<title>There is literally no output!</title><para>If by this you mean it doesn&apos;t spew copious logging output like it used to, you can solve this by passing <computeroutput>-loglevel INFO</computeroutput> on the command-line, or setting the <computeroutput>loglevel</computeroutput> parameter to <computeroutput>"INFO"</computeroutput>, or calling <ref refid="err_8h_1ac011c0d3b793abc19010c2255bce5c88" kindref="member">err_set_loglevel()</ref> with <computeroutput><ref refid="err_8h_1afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c" kindref="member">ERR_INFO</ref></computeroutput>.</para>
+<para>If you mean that you just don&apos;t have any recognition result, you may have forgotten to configure a dictionary. Or see <ref refid="index_1faq_error" kindref="member">below</ref> for other reasons the output could be blank.</para>
+</sect2>
+<sect2 id="index_1faq_audio">
+<title>Why doesn&apos;t my audio device work?</title><para>Because it&apos;s an audio device. They don&apos;t work, at least for things other than making annoying &quot;beep boop&quot; noises and playing Video Games. More generally, I cannot solve this problem for you, because every single computer, operating system, sound card, microphone, phase of the moon, and day of the week is different when it comes to recording audio. That&apos;s why I suggest you use SoX, because (a) it usually works, and (b) whoever wrote it seems to have retired long ago, so you can&apos;t bother them.</para>
+</sect2>
+<sect2 id="index_1faq_error">
+<title>The recognized text is wrong.</title><para>That&apos;s not a question! But since this isn&apos;t Jeopardy, and my name is not Watson, I&apos;ll try to answer it anyway. Be aware that the answer depends on many things, first and foremost what you mean by &quot;wrong&quot;.</para>
+<para>If it <emphasis>sounds</emphasis> the same, e.g. &quot;wreck a nice beach&quot; when you said &quot;recognize speech&quot; then the issue is that the <bold>language model</bold> is not appropriate for the task, domain, dialect, or whatever it is you&apos;re trying to recognize. You may wish to consider writing a JSGF grammar and using it instead of the default language model (with the <computeroutput>jsgf</computeroutput> parameter). Or you can get an N-best list or word lattice and rescore it with a better language model, such as a recurrent neural network or a human being.</para>
+<para>If it is total nonsense, or if it is just blank, or if it&apos;s the same word repeated, e.g. &quot;a a a a a a&quot;, then there is likely a problem with the input audio. The sampling rate could be wrong, or even if it&apos;s correct, you may have narrow-band data. Try to look at the spectrogram (Audacity can show you this) and see if it looks empty or flat below the frequency in the <computeroutput>upperf</computeroutput> parameter. Alternately it could just be very noisy. In particular, if the noise consists of other people talking, automatic speech recognition will nearly always fail.</para>
+</sect2>
+<sect2 id="index_1faq_tech">
+<title>Why don&apos;t you support (pick one or more: WFST, fMLLR, SAT, DNN, CTC, LAS, CNN, RNN, LSTM, etc)?</title><para>Not because there&apos;s anything wrong with those things (except LAS, which is kind of a dumb idea) but simply because PocketSphinx does not do them, or anything like them, and there is no point in adding them to it when other systems exist. Many of them are also heavily dependent on distasteful and wasteful platforms like C++, CUDA, TensorFlow, PyTorch, and so on.</para>
+</sect2>
+</sect1>
+<sect1 id="index_1thanks_sec">
+<title>Acknowledgements</title><para>PocketSphinx was originally released by David Huggins-Daines, but is largely based on the previous Sphinx-II and Sphinx-III systems, developed by a large number of contributors at Carnegie Mellon University, and released as open source under a BSD-like license thanks to Kevin Lenzo. For some time, it was maintained by Nickolay Shmyrev and others at Alpha Cephei, Inc. See the <computeroutput>AUTHORS</computeroutput> file for a list of contributors. </para>
+</sect1>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h"/>
+  </compounddef>
+</doxygen>

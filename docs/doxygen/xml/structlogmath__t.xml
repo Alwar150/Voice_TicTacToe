@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structlogmath__t" kind="struct" language="C++" prot="public">
+    <compoundname>logmath_t</compoundname>
+    <includes refid="logmath_8h" local="no">pocketsphinx/logmath.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structlogmath__t_1a67fa75e38e518666547d676b1723be86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT logmath_t * logmath_init</definition>
+        <argsstring>(float64 base, int shift, int use_table)</argsstring>
+        <name>logmath_init</name>
+        <qualifiedname>logmath_t::logmath_init</qualifiedname>
+        <param>
+          <type><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>use_table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a log math computation table.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base B in which computation is to be done. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log values are shifted right by this many bits. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>use_table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to use an add table or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created log math table. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="127" column="11" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="127" declcolumn="11"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1ad5f25906919e112859a51dec5aa96752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT logmath_t * logmath_read</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>logmath_read</name>
+        <qualifiedname>logmath_t::logmath_read</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Memory-map (or read) a log table from a file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="134" column="11" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="134" declcolumn="11"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a02bcbb922fcbb4983cc003da84f5da6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+        <definition>POCKETSPHINX_EXPORT int32 logmath_write</definition>
+        <argsstring>(logmath_t *lmath, const char *filename)</argsstring>
+        <name>logmath_write</name>
+        <qualifiedname>logmath_t::logmath_write</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write a log table to a file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="141" column="7" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="141" declcolumn="7"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1ae921cd21e0c7c28a5801f5063ddb8228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref></type>
+        <definition>POCKETSPHINX_EXPORT int32 logmath_get_table_shape</definition>
+        <argsstring>(logmath_t *lmath, uint32 *out_size, uint32 *out_width, uint32 *out_shift)</argsstring>
+        <name>logmath_get_table_shape</name>
+        <qualifiedname>logmath_t::logmath_get_table_shape</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref> *</type>
+          <declname>out_size</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref> *</type>
+          <declname>out_width</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref> *</type>
+          <declname>out_shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the log table size and dimensions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="148" column="7" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="148" declcolumn="7"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a6e619faaacbd3eea427e22b223353754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+        <definition>POCKETSPHINX_EXPORT float64 logmath_get_base</definition>
+        <argsstring>(logmath_t *lmath)</argsstring>
+        <name>logmath_get_base</name>
+        <qualifiedname>logmath_t::logmath_get_base</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the log base. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="156" column="9" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="156" declcolumn="9"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1aa7188fd7b15e28688d86a368e31df2e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_get_zero</definition>
+        <argsstring>(logmath_t *lmath)</argsstring>
+        <name>logmath_get_zero</name>
+        <qualifiedname>logmath_t::logmath_get_zero</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the smallest possible value represented in this base. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="163" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="163" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1ae484ab0132dc7324ee9927b660ac77d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_get_width</definition>
+        <argsstring>(logmath_t *lmath)</argsstring>
+        <name>logmath_get_width</name>
+        <qualifiedname>logmath_t::logmath_get_width</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the width of the values in a log table. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="170" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="170" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1af12b536b7cd046d8c02f98b647e290cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_get_shift</definition>
+        <argsstring>(logmath_t *lmath)</argsstring>
+        <name>logmath_get_shift</name>
+        <qualifiedname>logmath_t::logmath_get_shift</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the shift of the values in a log table. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="177" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="177" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1afaa475efd12231945f531fca362d82d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT logmath_t * logmath_retain</definition>
+        <argsstring>(logmath_t *lmath)</argsstring>
+        <name>logmath_retain</name>
+        <qualifiedname>logmath_t::logmath_retain</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retain ownership of a log table.</para>
+<para><simplesect kind="return"><para>pointer to retained log table. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="186" column="11" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="186" declcolumn="11"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a178bfdd5bb8c9f8c84e9e5c00cc343a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_free</definition>
+        <argsstring>(logmath_t *lmath)</argsstring>
+        <name>logmath_free</name>
+        <qualifiedname>logmath_t::logmath_free</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free a log table.</para>
+<para><simplesect kind="return"><para>new reference count (0 if freed completely) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="195" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="195" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1ab706b56ac49ab2dfa945d2d32758ab55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_add_exact</definition>
+        <argsstring>(logmath_t *lmath, int logb_p, int logb_q)</argsstring>
+        <name>logmath_add_exact</name>
+        <qualifiedname>logmath_t::logmath_add_exact</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>logb_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>logb_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add two values in log space exactly and slowly (without using add table). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="202" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="202" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a49c7b087532d7cf136167ad6cf61e4b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_add</definition>
+        <argsstring>(logmath_t *lmath, int logb_p, int logb_q)</argsstring>
+        <name>logmath_add</name>
+        <qualifiedname>logmath_t::logmath_add</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>logb_p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>logb_q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add two values in log space (i.e. return log(exp(p)+exp(q))) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="209" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="209" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a9e3c7cbe0d9b3ba74b7e6965cacd6d5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_log</definition>
+        <argsstring>(logmath_t *lmath, float64 p)</argsstring>
+        <name>logmath_log</name>
+        <qualifiedname>logmath_t::logmath_log</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert linear floating point number to integer log in base B. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="216" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="216" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a439a78b7c6f5821a750574ececc20fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+        <definition>POCKETSPHINX_EXPORT float64 logmath_exp</definition>
+        <argsstring>(logmath_t *lmath, int logb_p)</argsstring>
+        <name>logmath_exp</name>
+        <qualifiedname>logmath_t::logmath_exp</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>logb_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert integer log in base B to linear floating point. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="223" column="9" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="223" declcolumn="9"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a66303cb0b91f43452ea500f53ef7eaa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_ln_to_log</definition>
+        <argsstring>(logmath_t *lmath, float64 log_p)</argsstring>
+        <name>logmath_ln_to_log</name>
+        <qualifiedname>logmath_t::logmath_ln_to_log</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+          <declname>log_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert natural log (in floating point) to integer log in base B. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="230" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="230" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1abaff7c0ba0976c7cf8f232d8340b7b2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+        <definition>POCKETSPHINX_EXPORT float64 logmath_log_to_ln</definition>
+        <argsstring>(logmath_t *lmath, int logb_p)</argsstring>
+        <name>logmath_log_to_ln</name>
+        <qualifiedname>logmath_t::logmath_log_to_ln</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>logb_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert integer log in base B to natural log (in floating point). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="237" column="9" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="237" declcolumn="9"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1abb7027d633f0cabb372504e189e7b4b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int logmath_log10_to_log</definition>
+        <argsstring>(logmath_t *lmath, float64 log_p)</argsstring>
+        <name>logmath_log10_to_log</name>
+        <qualifiedname>logmath_t::logmath_log10_to_log</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+          <declname>log_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert base 10 log (in floating point) to integer log in base B. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="244" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="244" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a9cc2394054dc95d9e94720d036f28a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> float</type>
+        <definition>POCKETSPHINX_EXPORT float logmath_log10_to_log_float</definition>
+        <argsstring>(logmath_t *lmath, float64 log_p)</argsstring>
+        <name>logmath_log10_to_log_float</name>
+        <qualifiedname>logmath_t::logmath_log10_to_log_float</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+          <declname>log_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert base 10 log (in floating point) to float log in base B. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="251" column="7" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="251" declcolumn="7"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1ac8fe69a67fcca378b1e5a32428899a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+        <definition>POCKETSPHINX_EXPORT float64 logmath_log_to_log10</definition>
+        <argsstring>(logmath_t *lmath, int logb_p)</argsstring>
+        <name>logmath_log_to_log10</name>
+        <qualifiedname>logmath_t::logmath_log_to_log10</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>logb_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert integer log in base B to base 10 log (in floating point). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="258" column="9" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="258" declcolumn="9"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structlogmath__t_1a4e596e6d01e92280e0caa24a48727afb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="prim__type_8h_1a232fad1b0d6dcc7c16aabde98b2e2a80" kindref="member">float64</ref></type>
+        <definition>POCKETSPHINX_EXPORT float64 logmath_log_float_to_log10</definition>
+        <argsstring>(logmath_t *lmath, float log_p)</argsstring>
+        <name>logmath_log_float_to_log10</name>
+        <qualifiedname>logmath_t::logmath_log_float_to_log10</qualifiedname>
+        <param>
+          <type><ref refid="structlogmath__t" kindref="compound">logmath_t</ref> *</type>
+          <declname>lmath</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>log_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert float log in base B to base 10 log. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="265" column="9" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" declline="265" declcolumn="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Integer log math computation class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/logmath.h" line="108" column="1"/>
+    <listofallmembers>
+      <member refid="structlogmath__t_1a49c7b087532d7cf136167ad6cf61e4b3" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_add</name></member>
+      <member refid="structlogmath__t_1ab706b56ac49ab2dfa945d2d32758ab55" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_add_exact</name></member>
+      <member refid="structlogmath__t_1a439a78b7c6f5821a750574ececc20fae" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_exp</name></member>
+      <member refid="structlogmath__t_1a178bfdd5bb8c9f8c84e9e5c00cc343a4" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_free</name></member>
+      <member refid="structlogmath__t_1a6e619faaacbd3eea427e22b223353754" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_get_base</name></member>
+      <member refid="structlogmath__t_1af12b536b7cd046d8c02f98b647e290cd" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_get_shift</name></member>
+      <member refid="structlogmath__t_1ae921cd21e0c7c28a5801f5063ddb8228" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_get_table_shape</name></member>
+      <member refid="structlogmath__t_1ae484ab0132dc7324ee9927b660ac77d8" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_get_width</name></member>
+      <member refid="structlogmath__t_1aa7188fd7b15e28688d86a368e31df2e0" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_get_zero</name></member>
+      <member refid="structlogmath__t_1a67fa75e38e518666547d676b1723be86" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_init</name></member>
+      <member refid="structlogmath__t_1a66303cb0b91f43452ea500f53ef7eaa5" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_ln_to_log</name></member>
+      <member refid="structlogmath__t_1a9e3c7cbe0d9b3ba74b7e6965cacd6d5a" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_log</name></member>
+      <member refid="structlogmath__t_1abb7027d633f0cabb372504e189e7b4b0" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_log10_to_log</name></member>
+      <member refid="structlogmath__t_1a9cc2394054dc95d9e94720d036f28a41" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_log10_to_log_float</name></member>
+      <member refid="structlogmath__t_1a4e596e6d01e92280e0caa24a48727afb" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_log_float_to_log10</name></member>
+      <member refid="structlogmath__t_1abaff7c0ba0976c7cf8f232d8340b7b2f" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_log_to_ln</name></member>
+      <member refid="structlogmath__t_1ac8fe69a67fcca378b1e5a32428899a23" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_log_to_log10</name></member>
+      <member refid="structlogmath__t_1ad5f25906919e112859a51dec5aa96752" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_read</name></member>
+      <member refid="structlogmath__t_1afaa475efd12231945f531fca362d82d9" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_retain</name></member>
+      <member refid="structlogmath__t_1a02bcbb922fcbb4983cc003da84f5da6d" prot="public" virt="non-virtual"><scope>logmath_t</scope><name>logmath_write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

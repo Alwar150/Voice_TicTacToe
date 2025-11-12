@@ -1,0 +1,268 @@
+\doxysection{Speech\+Manager Class Reference}
+\hypertarget{class_speech_manager}{}\label{class_speech_manager}\index{SpeechManager@{SpeechManager}}
+
+
+{\ttfamily \#include $<$Speech\+Manager.\+h$>$}
+
+Inheritance diagram for Speech\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_speech_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_speech_manager_abdde7758804b9f537d9d704583e6c8b3}{speech\+Recognized}} (const QString \&text)
+\item 
+void \mbox{\hyperlink{class_speech_manager_af020ff04f584cedbd3105f299c1a66b0}{speech\+Ready\+To\+Process}} (const char \texorpdfstring{$\ast$}{*}hyp)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\mbox{\hyperlink{class_speech_manager_a473b5a5d90f5486c0306278220d8138c}{\texorpdfstring{$\sim$}{\string~}\+Speech\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_speech_manager_a94d6a6d8b5aa00b913e751c2620a9e52}{configure}} ()
+\item 
+void \mbox{\hyperlink{class_speech_manager_a13ab24c0b019530b8c35557091fac078}{init}} ()
+\item 
+void \mbox{\hyperlink{class_speech_manager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_speech_manager_a9e0d24a7b396f00dbb1dee267450d3e9}{process\+Recognition\+Result}} (const char \texorpdfstring{$\ast$}{*}hyp)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_speech_manager_ad48e68cab4316e371cc56ca75150897d}{hyp\+Is\+Valid}} ()
+\item 
+void \mbox{\hyperlink{class_speech_manager_a13a4749dbb01af8d5faf9e181b11c56e}{free\+Heap}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Pa\+Stream \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_speech_manager_a84982042bef20eb360ec44351fd84757}{stream\+\_\+}}
+\item 
+Pa\+Error \mbox{\hyperlink{class_speech_manager_a12e44c03e875470507ec74a417fa0156}{err\+\_\+}}
+\item 
+\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_speech_manager_a5457cda86b4ca0afd9d4ab9655baacf0}{decoder\+\_\+}}
+\item 
+\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_speech_manager_aed90e5c57c5e43394492fb748ef5dec4}{config\+\_\+}}
+\item 
+\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_speech_manager_a2d256afb5806a933dfd832fa49d1b148}{ep\+\_\+}}
+\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_speech_manager_a33dd9ba7578619b2f8bfb2be029c4c20}{frame\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_speech_manager_a5ae23337be3cfd612918b64b2dac7fa8}{frame\+\_\+size\+\_\+}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_speech_manager_ad36d507a363bd64922e7cd8c85334bda}{hyp\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_speech_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}\index{SpeechManager@{SpeechManager}!SpeechManager@{SpeechManager}}
+\index{SpeechManager@{SpeechManager}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{SpeechManager()}{SpeechManager()}}
+{\footnotesize\ttfamily \label{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a} 
+Speech\+Manager\+::\+Speech\+Manager (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+DEV-\/\+SPEECH-\/0003 @title \doxylink{class_speech_manager}{Speech\+Manager} bloquea el hilo principal Solved @severity High ratty \doxylink{class_speech_manager}{Speech\+Manager} debe moverse a QThread TASK-\/\+THREAD-\/0002 
+
+References \mbox{\hyperlink{class_speech_manager_aed90e5c57c5e43394492fb748ef5dec4}{config\+\_\+}}, \mbox{\hyperlink{class_speech_manager_a5457cda86b4ca0afd9d4ab9655baacf0}{decoder\+\_\+}}, \mbox{\hyperlink{class_speech_manager_a2d256afb5806a933dfd832fa49d1b148}{ep\+\_\+}}, \mbox{\hyperlink{class_speech_manager_a33dd9ba7578619b2f8bfb2be029c4c20}{frame\+\_\+}}, \mbox{\hyperlink{class_speech_manager_a5ae23337be3cfd612918b64b2dac7fa8}{frame\+\_\+size\+\_\+}}, \mbox{\hyperlink{class_speech_manager_a9e0d24a7b396f00dbb1dee267450d3e9}{process\+Recognition\+Result()}}, \mbox{\hyperlink{class_speech_manager_af020ff04f584cedbd3105f299c1a66b0}{speech\+Ready\+To\+Process()}}, \mbox{\hyperlink{class_speech_manager_abdde7758804b9f537d9d704583e6c8b3}{speech\+Recognized()}}, and \mbox{\hyperlink{class_speech_manager_a84982042bef20eb360ec44351fd84757}{stream\+\_\+}}.
+
+\Hypertarget{class_speech_manager_a473b5a5d90f5486c0306278220d8138c}\index{SpeechManager@{SpeechManager}!````~SpeechManager@{\texorpdfstring{$\sim$}{\string~}SpeechManager}}
+\index{````~SpeechManager@{\texorpdfstring{$\sim$}{\string~}SpeechManager}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SpeechManager()}{\string~SpeechManager()}}
+{\footnotesize\ttfamily \label{class_speech_manager_a473b5a5d90f5486c0306278220d8138c} 
+Speech\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Speech\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{class_speech_manager_a13a4749dbb01af8d5faf9e181b11c56e}{free\+Heap()}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_speech_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_speech_manager_a94d6a6d8b5aa00b913e751c2620a9e52}\index{SpeechManager@{SpeechManager}!configure@{configure}}
+\index{configure@{configure}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily \label{class_speech_manager_a94d6a6d8b5aa00b913e751c2620a9e52} 
+void Speech\+Manager\+::configure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{class_speech_manager_aed90e5c57c5e43394492fb748ef5dec4}{config\+\_\+}}, and \mbox{\hyperlink{class_config_manager_ab72b9c36d8c92066d54eabae525da210}{Config\+Manager\+::instance()}}.
+
+\Hypertarget{class_speech_manager_a13a4749dbb01af8d5faf9e181b11c56e}\index{SpeechManager@{SpeechManager}!freeHeap@{freeHeap}}
+\index{freeHeap@{freeHeap}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{freeHeap()}{freeHeap()}}
+{\footnotesize\ttfamily \label{class_speech_manager_a13a4749dbb01af8d5faf9e181b11c56e} 
+void Speech\+Manager\+::free\+Heap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{class_speech_manager_a5457cda86b4ca0afd9d4ab9655baacf0}{decoder\+\_\+}}, and \mbox{\hyperlink{class_speech_manager_a2d256afb5806a933dfd832fa49d1b148}{ep\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a473b5a5d90f5486c0306278220d8138c}{\texorpdfstring{$\sim$}{\string~}\+Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_ad48e68cab4316e371cc56ca75150897d}\index{SpeechManager@{SpeechManager}!hypIsValid@{hypIsValid}}
+\index{hypIsValid@{hypIsValid}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{hypIsValid()}{hypIsValid()}}
+{\footnotesize\ttfamily \label{class_speech_manager_ad48e68cab4316e371cc56ca75150897d} 
+bool Speech\+Manager\+::hyp\+Is\+Valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{class_speech_manager_ad36d507a363bd64922e7cd8c85334bda}{hyp\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{class_speech_manager_a13ab24c0b019530b8c35557091fac078}\index{SpeechManager@{SpeechManager}!init@{init}}
+\index{init@{init}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_speech_manager_a13ab24c0b019530b8c35557091fac078} 
+void Speech\+Manager\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{err_8h_abaacffc3c0f14e4dd180b1e38c62c5a0}{E\+\_\+\+FATAL}}, \mbox{\hyperlink{err_8h_acc9aaeb2e0eb21f964913c14403d6795}{E\+\_\+\+FATAL\+\_\+\+SYSTEM}}, \mbox{\hyperlink{prim__type_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{endpointer_8h_aaa16760235cea4c0a06db70c907bc576}{ps\+\_\+endpointer\+\_\+frame\+\_\+size}}, and \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc}{PS\+\_\+\+VAD\+\_\+\+LOOSE}}.
+
+\Hypertarget{class_speech_manager_a9e0d24a7b396f00dbb1dee267450d3e9}\index{SpeechManager@{SpeechManager}!processRecognitionResult@{processRecognitionResult}}
+\index{processRecognitionResult@{processRecognitionResult}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{processRecognitionResult}{processRecognitionResult}}
+{\footnotesize\ttfamily \label{class_speech_manager_a9e0d24a7b396f00dbb1dee267450d3e9} 
+void Speech\+Manager\+::process\+Recognition\+Result (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{hyp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_af020ff04f584cedbd3105f299c1a66b0}\index{SpeechManager@{SpeechManager}!speechReadyToProcess@{speechReadyToProcess}}
+\index{speechReadyToProcess@{speechReadyToProcess}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{speechReadyToProcess}{speechReadyToProcess}}
+{\footnotesize\ttfamily \label{class_speech_manager_af020ff04f584cedbd3105f299c1a66b0} 
+void Speech\+Manager\+::speech\+Ready\+To\+Process (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{hyp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_abdde7758804b9f537d9d704583e6c8b3}\index{SpeechManager@{SpeechManager}!speechRecognized@{speechRecognized}}
+\index{speechRecognized@{speechRecognized}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{speechRecognized}{speechRecognized}}
+{\footnotesize\ttfamily \label{class_speech_manager_abdde7758804b9f537d9d704583e6c8b3} 
+void Speech\+Manager\+::speech\+Recognized (\begin{DoxyParamCaption}\item[{const QString \&}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_af62b1ec680a5e45e289d629d561c8432}\index{SpeechManager@{SpeechManager}!startListening@{startListening}}
+\index{startListening@{startListening}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{startListening()}{startListening()}}
+{\footnotesize\ttfamily \label{class_speech_manager_af62b1ec680a5e45e289d629d561c8432} 
+void Speech\+Manager\+::start\+Listening (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{err_8h_a87a0a12135a290cf16d06b63fcfa0ccf}{E\+\_\+\+ERROR}}, \mbox{\hyperlink{err_8h_abaacffc3c0f14e4dd180b1e38c62c5a0}{E\+\_\+\+FATAL}}, \mbox{\hyperlink{prim__type_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE}}, \mbox{\hyperlink{class_speech_manager_ad48e68cab4316e371cc56ca75150897d}{hyp\+Is\+Valid()}}, and \mbox{\hyperlink{prim__type_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_speech_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_speech_manager_aed90e5c57c5e43394492fb748ef5dec4}\index{SpeechManager@{SpeechManager}!config\_@{config\_}}
+\index{config\_@{config\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{config\_}{config\_}}
+{\footnotesize\ttfamily \label{class_speech_manager_aed90e5c57c5e43394492fb748ef5dec4} 
+\mbox{\hyperlink{structps__config__t}{ps\+\_\+config\+\_\+t}}\texorpdfstring{$\ast$}{*} Speech\+Manager\+::config\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a94d6a6d8b5aa00b913e751c2620a9e52}{configure()}}, and \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_a5457cda86b4ca0afd9d4ab9655baacf0}\index{SpeechManager@{SpeechManager}!decoder\_@{decoder\_}}
+\index{decoder\_@{decoder\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{decoder\_}{decoder\_}}
+{\footnotesize\ttfamily \label{class_speech_manager_a5457cda86b4ca0afd9d4ab9655baacf0} 
+\mbox{\hyperlink{structps__decoder__t}{ps\+\_\+decoder\+\_\+t}}\texorpdfstring{$\ast$}{*} Speech\+Manager\+::decoder\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a13a4749dbb01af8d5faf9e181b11c56e}{free\+Heap()}}, and \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_a2d256afb5806a933dfd832fa49d1b148}\index{SpeechManager@{SpeechManager}!ep\_@{ep\_}}
+\index{ep\_@{ep\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{ep\_}{ep\_}}
+{\footnotesize\ttfamily \label{class_speech_manager_a2d256afb5806a933dfd832fa49d1b148} 
+\mbox{\hyperlink{structps__endpointer__t}{ps\+\_\+endpointer\+\_\+t}}\texorpdfstring{$\ast$}{*} Speech\+Manager\+::ep\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a13a4749dbb01af8d5faf9e181b11c56e}{free\+Heap()}}, and \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_a12e44c03e875470507ec74a417fa0156}\index{SpeechManager@{SpeechManager}!err\_@{err\_}}
+\index{err\_@{err\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{err\_}{err\_}}
+{\footnotesize\ttfamily \label{class_speech_manager_a12e44c03e875470507ec74a417fa0156} 
+Pa\+Error Speech\+Manager\+::err\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_speech_manager_a33dd9ba7578619b2f8bfb2be029c4c20}\index{SpeechManager@{SpeechManager}!frame\_@{frame\_}}
+\index{frame\_@{frame\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{frame\_}{frame\_}}
+{\footnotesize\ttfamily \label{class_speech_manager_a33dd9ba7578619b2f8bfb2be029c4c20} 
+short\texorpdfstring{$\ast$}{*} Speech\+Manager\+::frame\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_a5ae23337be3cfd612918b64b2dac7fa8}\index{SpeechManager@{SpeechManager}!frame\_size\_@{frame\_size\_}}
+\index{frame\_size\_@{frame\_size\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{frame\_size\_}{frame\_size\_}}
+{\footnotesize\ttfamily \label{class_speech_manager_a5ae23337be3cfd612918b64b2dac7fa8} 
+size\+\_\+t Speech\+Manager\+::frame\+\_\+size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+\Hypertarget{class_speech_manager_ad36d507a363bd64922e7cd8c85334bda}\index{SpeechManager@{SpeechManager}!hyp\_@{hyp\_}}
+\index{hyp\_@{hyp\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{hyp\_}{hyp\_}}
+{\footnotesize\ttfamily \label{class_speech_manager_ad36d507a363bd64922e7cd8c85334bda} 
+const char\texorpdfstring{$\ast$}{*} Speech\+Manager\+::hyp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_ad48e68cab4316e371cc56ca75150897d}{hyp\+Is\+Valid()}}.
+
+\Hypertarget{class_speech_manager_a84982042bef20eb360ec44351fd84757}\index{SpeechManager@{SpeechManager}!stream\_@{stream\_}}
+\index{stream\_@{stream\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{stream\_}{stream\_}}
+{\footnotesize\ttfamily \label{class_speech_manager_a84982042bef20eb360ec44351fd84757} 
+Pa\+Stream\texorpdfstring{$\ast$}{*} Speech\+Manager\+::stream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+Speech/\mbox{\hyperlink{_speech_manager_8h}{Speech\+Manager.\+h}}\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/\+Speech/\mbox{\hyperlink{_speech_manager_8cpp}{Speech\+Manager.\+cpp}}\end{DoxyCompactItemize}

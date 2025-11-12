@@ -7,6 +7,7 @@ NetworkManager::NetworkManager(QObject *parent)
     connect(socket_, &QTcpSocket::connected, this, &NetworkManager::onConnected);
     connect(socket_, &QTcpSocket::disconnected, this, &NetworkManager::onDisconnected);
     connect(socket_, &QTcpSocket::errorOccurred, this, &NetworkManager::onError);
+    connect(socket_, &QTcpSocket::readyRead, this, &TTTController::onSocketReadyRead);
 }
 
 void NetworkManager::connectToServer(const QString &ip, quint16 port)
@@ -42,4 +43,12 @@ void NetworkManager::onError(QAbstractSocket::SocketError socketError)
 {
     Q_UNUSED(socketError);
     emit errorOccurred(socket_->errorString());
+}
+
+void NetworkManager::onSocketReadyRead()
+{
+    QByteArray data = socket_->readAll();
+    QString msg = QString::fromUtf8(data).trimmed();
+    qDebug() << "[NET] Recibido:" << msg;
+
 }

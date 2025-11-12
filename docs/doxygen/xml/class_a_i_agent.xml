@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_a_i_agent" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AIAgent</compoundname>
+    <basecompoundref refid="class_player" prot="public" virt="non-virtual">Player</basecompoundref>
+    <derivedcompoundref refid="class_no_agent" prot="public" virt="non-virtual">NoAgent</derivedcompoundref>
+    <includes refid="_a_i_agent_8h" local="no">AIAgent.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_i_agent_1a9c5f515eb3df94792ba02da8ac899cf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AIAgent::AIAgent</definition>
+        <argsstring>()</argsstring>
+        <name>AIAgent</name>
+        <qualifiedname>AIAgent::AIAgent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" line="13" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_agent_1a5614d02341e652bd2df4f3b2fb4d44c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual AIAgent::~AIAgent</definition>
+        <argsstring>()</argsstring>
+        <name>~AIAgent</name>
+        <qualifiedname>AIAgent::~AIAgent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" line="14" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_agent_1ac137ab96f5f7c53e74d4c9c7342021eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int AIAgent::play</definition>
+        <argsstring>(const Board &amp;board)=0</argsstring>
+        <name>play</name>
+        <qualifiedname>AIAgent::play</qualifiedname>
+        <reimplementedby refid="class_no_agent_1a4c20d7b44b9b7061ae60893e577a3575">play</reimplementedby>
+        <param>
+          <type>const <ref refid="class_board" kindref="compound">Board</ref> &amp;</type>
+          <declname>board</declname>
+        </param>
+        <briefdescription>
+<para>Start the algorithm to choose a cell to play based on a given board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>board</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a reference to the board model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the chosen cell index (in a 1D array) that the AI played. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" line="20" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_i_agent_1ae694da05657ba286840b533523d9c64f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AIAgent::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>AIAgent::reset</qualifiedname>
+        <briefdescription>
+<para>reset function that will reset the state of any search algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" line="24" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AIAgent</label>
+        <link refid="class_a_i_agent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>NoAgent</label>
+        <link refid="class_no_agent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AIAgent</label>
+        <link refid="class_a_i_agent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Board</label>
+        <link refid="class_board"/>
+      </node>
+      <node id="2">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" line="10" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/AIAgent.h" bodystart="11" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_a_i_agent_1a9c5f515eb3df94792ba02da8ac899cf5" prot="public" virt="non-virtual"><scope>AIAgent</scope><name>AIAgent</name></member>
+      <member refid="class_player_1a088227ab53747cc4955b0a3859b69a84" prot="protected" virt="non-virtual"><scope>AIAgent</scope><name>board_</name></member>
+      <member refid="class_player_1ae8c600761eeb36ef938927dd87a87011" prot="protected" virt="non-virtual"><scope>AIAgent</scope><name>mark_</name></member>
+      <member refid="class_a_i_agent_1ac137ab96f5f7c53e74d4c9c7342021eb" prot="public" virt="pure-virtual"><scope>AIAgent</scope><name>play</name></member>
+      <member refid="class_player_1af85db5d05b014bf19d873038c56dc7ed" prot="public" virt="pure-virtual" ambiguityscope="Player::"><scope>AIAgent</scope><name>play</name></member>
+      <member refid="class_player_1a8c885f35774ed96d466e67194b74de95" prot="public" virt="non-virtual"><scope>AIAgent</scope><name>Player</name></member>
+      <member refid="class_player_1af9436bec15f91ee87fb86907b720be52" prot="public" virt="non-virtual"><scope>AIAgent</scope><name>playerFinished</name></member>
+      <member refid="class_a_i_agent_1ae694da05657ba286840b533523d9c64f" prot="public" virt="virtual"><scope>AIAgent</scope><name>reset</name></member>
+      <member refid="class_a_i_agent_1a5614d02341e652bd2df4f3b2fb4d44c3" prot="public" virt="virtual"><scope>AIAgent</scope><name>~AIAgent</name></member>
+      <member refid="class_player_1a8981c201ffb2270c0b6dbd467b627376" prot="public" virt="virtual"><scope>AIAgent</scope><name>~Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

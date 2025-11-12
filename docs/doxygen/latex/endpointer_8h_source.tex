@@ -1,0 +1,114 @@
+\doxysection{endpointer.\+h}
+\hypertarget{endpointer_8h_source}{}\label{endpointer_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/endpointer.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/endpointer.h}}
+\mbox{\hyperlink{endpointer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/\ c-\/basic-\/offset:4;\ indent-\/tabs-\/mode:\ nil\ -\/*-\/\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ ====================================================================}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2022\ David\ Huggins-\/Daines.\ \ All\ rights\ reserved.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Redistribution\ and\ use\ in\ source\ and\ binary\ forms,\ with\ or\ without}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ modification,\ are\ permitted\ provided\ that\ the\ following\ conditions}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ are\ met:}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ 1.\ Redistributions\ of\ source\ code\ must\ retain\ the\ above\ copyright}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer.}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ 2.\ Redistributions\ in\ binary\ form\ must\ reproduce\ the\ above\ copyright}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer\ in}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ \ \ the\ documentation\ and/or\ other\ materials\ provided\ with\ the}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ \ \ distribution.}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ PROVIDED\ \`{}\`{}AS\ IS''\ AND\ ANY\ EXPRESSED\ OR\ IMPLIED}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ WARRANTIES,\ INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ THE\ IMPLIED\ WARRANTIES}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ OF\ MERCHANTABILITY\ AND\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE\ ARE}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ DISCLAIMED.\ \ IN\ NO\ EVENT\ SHALL\ THE\ AUTHOR\ BE\ LIABLE\ FOR\ ANY\ DIRECT,}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ INDIRECT,\ INCIDENTAL,\ SPECIAL,\ EXEMPLARY,\ OR\ CONSEQUENTIAL\ DAMAGES}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ (INCLUDING,\ BUT\ NOT\ LIMITED\ TO,\ PROCUREMENT\ OF\ SUBSTITUTE\ GOODS\ OR}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ SERVICES;\ LOSS\ OF\ USE,\ DATA,\ OR\ PROFITS;\ OR\ BUSINESS\ INTERRUPTION)}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ HOWEVER\ CAUSED\ AND\ ON\ ANY\ THEORY\ OF\ LIABILITY,\ WHETHER\ IN\ CONTRACT,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ STRICT\ LIABILITY,\ OR\ TORT\ (INCLUDING\ NEGLIGENCE\ OR\ OTHERWISE)}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ ARISING\ IN\ ANY\ WAY\ OUT\ OF\ THE\ USE\ OF\ THIS\ SOFTWARE,\ EVEN\ IF\ ADVISED}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ OF\ THE\ POSSIBILITY\ OF\ SUCH\ DAMAGE.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ ====================================================================}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#ifndef\ \_\_PS\_ENDPOINTER\_H\_\_}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ \_\_PS\_ENDPOINTER\_H\_\_}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prim__type_8h}{pocketsphinx/prim\_type.h}}>}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{export_8h}{pocketsphinx/export.h}}>}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00046\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#if\ 0}}
+\DoxyCodeLine{00049\ \}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{prim__type_8h}{pocketsphinx/prim\_type.h}}>}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{export_8h}{pocketsphinx/export.h}}>}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{vad_8h}{pocketsphinx/vad.h}}>}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }ps\_endpointer\_s\ \mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{typedef}\ double\ (*\mbox{\hyperlink{endpointer_8h_ac01ff24b5365d201fb0ed51bf7e830c2}{ps\_endpointer\_timestamp\_cb\_t}})(\textcolor{keywordtype}{void}\ *user\_data);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ PS\_ENDPOINTER\_DEFAULT\_WINDOW\ 0.3}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#define\ PS\_ENDPOINTER\_DEFAULT\_RATIO\ 0.9}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00111\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00112\ \mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *\mbox{\hyperlink{structps__endpointer__t_a52206006da981da07bd016f7b3dd9b18}{ps\_endpointer\_init}}(\textcolor{keywordtype}{double}\ window,}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ ratio,}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\_vad\_mode\_t}}\ mode,}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sample\_rate,\ \textcolor{keywordtype}{double}\ frame\_length);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00124\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00125\ \mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *\mbox{\hyperlink{structps__endpointer__t_a95eb7899d6e092ccbd0a73392c23e5c4}{ps\_endpointer\_retain}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep);}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00134\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00135\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__endpointer__t_ad1c967ebc8f3975d40c8002428cdde32}{ps\_endpointer\_free}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00145\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00146\ \mbox{\hyperlink{structps__vad__t}{ps\_vad\_t}}\ *\mbox{\hyperlink{structps__endpointer__t_a2bce53f42a5010f9fbb43a953a16b34a}{ps\_endpointer\_vad}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep);}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\#define\ ps\_endpointer\_frame\_size(ep)\ ps\_vad\_frame\_size(ps\_endpointer\_vad(ep))}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#define\ ps\_endpointer\_frame\_length(ep)\ ps\_vad\_frame\_length(ps\_endpointer\_vad(ep))}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#define\ ps\_endpointer\_sample\_rate(ep)\ ps\_vad\_sample\_rate(ps\_endpointer\_vad(ep))}}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00178\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00179\ \textcolor{keyword}{const}\ \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}}\ *\mbox{\hyperlink{structps__endpointer__t_a67c0e37e1bd947ade4006b8a28049869}{ps\_endpointer\_process}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep,}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}}\ *frame);}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00196\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00197\ \textcolor{keyword}{const}\ \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}}\ *\mbox{\hyperlink{structps__endpointer__t_a666c55812e40204dddd7ef672c797264}{ps\_endpointer\_end\_stream}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep,}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{prim__type_8h_a4355d16fcf9f644c9ac84293f0b1801f}{int16}}\ *frame,}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ nsamp,}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ *out\_nsamp);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00217\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00218\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__endpointer__t_adac16cf29e75f65ec68957daaaa2d467}{ps\_endpointer\_in\_speech}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep);}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00224\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00225\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structps__endpointer__t_a808204c820723b3cd4c16d38c66980c6}{ps\_endpointer\_speech\_start}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep);}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00231\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00232\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structps__endpointer__t_abc71fe3155fa1a9536c58c3c69fe8dea}{ps\_endpointer\_speech\_end}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep);}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00251\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00252\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structps__endpointer__t_a5d6ba30b00e6e8f849800b0fa352bf9c}{ps\_endpointer\_set\_timestamp\_func}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep,}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{endpointer_8h_ac01ff24b5365d201fb0ed51bf7e830c2}{ps\_endpointer\_timestamp\_cb\_t}}\ cb,}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *user\_data);}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00267\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00268\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structps__endpointer__t_afa8a03e9be7cda8d8bad1978e3c25add}{ps\_endpointer\_timestamp}}(\mbox{\hyperlink{structps__endpointer__t}{ps\_endpointer\_t}}\ *ep);}
+\DoxyCodeLine{00269\ }
+\DoxyCodeLine{00270\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00271\ \}}
+\DoxyCodeLine{00272\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00274\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_\_PS\_ENDPOINTER\_H\_\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

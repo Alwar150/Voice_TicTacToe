@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__vad__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_vad_t</compoundname>
+    <includes refid="vad_8h" local="no">pocketsphinx/vad.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__vad__t_1a28a9c81b473d91a2fcd0fef37c32a4ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_vad_t * ps_vad_init</definition>
+        <argsstring>(ps_vad_mode_t mode, int sample_rate, double frame_length)</argsstring>
+        <name>ps_vad_init</name>
+        <qualifiedname>ps_vad_t::ps_vad_init</qualifiedname>
+        <param>
+          <type><ref refid="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" kindref="member">ps_vad_mode_t</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frame_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize voice activity detection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&quot;Aggressiveness&quot; of voice activity detection. Stricter values (see <ref refid="vad_8h_1a635b81a4ad803c8c4f164929802c15e3" kindref="member">ps_vad_mode_t</ref>) are less likely to misclassify non-speech as speech. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sample_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sampling rate of input, or 0 for default (which can be obtained with <ref refid="structps__vad__t_1a1c692aeda85aa6122589404ef401e03c" kindref="member">ps_vad_sample_rate()</ref>). Only 8000, 16000, 32000, 48000 are directly supported. See <ref refid="structps__vad__t_1a69fe34f7717228b0cc8ada126d1d5feb" kindref="member">ps_vad_set_input_params()</ref> for more information. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame length in seconds, or 0.0 for the default. Only 0.01, 0.02, 0.03 currently supported. <bold>Actual</bold> value may differ, you must use <ref refid="vad_8h_1a8605289aba98c9ef20a53d77fd1bcfe4" kindref="member">ps_vad_frame_length()</ref> to obtain it. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VAD object or NULL on failure (invalid parameter for instance). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="106" column="10" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" declline="106" declcolumn="10"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__vad__t_1aa851b665f47d6f6033c5963e453bc43e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_vad_t * ps_vad_retain</definition>
+        <argsstring>(ps_vad_t *vad)</argsstring>
+        <name>ps_vad_retain</name>
+        <qualifiedname>ps_vad_t::ps_vad_retain</qualifiedname>
+        <param>
+          <type><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+          <declname>vad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retain a pointer to voice activity detector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Voice activity detector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Voice activity detector with incremented reference count. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="116" column="10" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" declline="116" declcolumn="10"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__vad__t_1add5e5c92c593edbf45edd20624129370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_vad_free</definition>
+        <argsstring>(ps_vad_t *vad)</argsstring>
+        <name>ps_vad_free</name>
+        <qualifiedname>ps_vad_t::ps_vad_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+          <declname>vad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release a pointer to voice activity detector.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Voice activity detector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>New reference count (0 if freed). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="126" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" declline="126" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__vad__t_1a69fe34f7717228b0cc8ada126d1d5feb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_vad_set_input_params</definition>
+        <argsstring>(ps_vad_t *vad, int sample_rate, double frame_length)</argsstring>
+        <name>ps_vad_set_input_params</name>
+        <qualifiedname>ps_vad_t::ps_vad_set_input_params</qualifiedname>
+        <param>
+          <type><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+          <declname>vad</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frame_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the input parameters for voice activity detection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sampling rate of input, or 0 for default (which can be obtained with <ref refid="structps__vad__t_1a1c692aeda85aa6122589404ef401e03c" kindref="member">ps_vad_sample_rate()</ref>). Only 8000, 16000, 32000, 48000 are directly supported, others will use the closest supported rate (within reason). Note that this means that the actual frame length may not be exactly the one requested, so you must always use the one returned by <ref refid="structps__vad__t_1ac35931b7e6c879dbda6508f302be4751" kindref="member">ps_vad_frame_size()</ref> (in samples) or <ref refid="vad_8h_1a8605289aba98c9ef20a53d77fd1bcfe4" kindref="member">ps_vad_frame_length()</ref> (in seconds). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Requested frame length in seconds, or 0.0 for the default. Only 0.01, 0.02, 0.03 currently supported. <bold>Actual frame length may be different, you must always use <ref refid="vad_8h_1a8605289aba98c9ef20a53d77fd1bcfe4" kindref="member">ps_vad_frame_length()</ref> to obtain it.</bold> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success or -1 on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="147" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" declline="147" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__vad__t_1a1c692aeda85aa6122589404ef401e03c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_vad_sample_rate</definition>
+        <argsstring>(ps_vad_t *vad)</argsstring>
+        <name>ps_vad_sample_rate</name>
+        <qualifiedname>ps_vad_t::ps_vad_sample_rate</qualifiedname>
+        <param>
+          <type><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+          <declname>vad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the sampling rate expected by voice activity detection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Voice activity detector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Expected sampling rate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="157" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" declline="157" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__vad__t_1ac35931b7e6c879dbda6508f302be4751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> size_t</type>
+        <definition>POCKETSPHINX_EXPORT size_t ps_vad_frame_size</definition>
+        <argsstring>(ps_vad_t *vad)</argsstring>
+        <name>ps_vad_frame_size</name>
+        <qualifiedname>ps_vad_t::ps_vad_frame_size</qualifiedname>
+        <param>
+          <type><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+          <declname>vad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of samples expected by voice activity detection.</para>
+<para>You <bold>must</bold> always ensure that the buffers passed to <ref refid="structps__vad__t_1aaf0e13d20d7b8988977ca8e5a9894cb7" kindref="member">ps_vad_classify()</ref> contain this number of samples (zero-pad them if necessary).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Voice activity detector. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Size, in samples, of the frames passed to <ref refid="structps__vad__t_1aaf0e13d20d7b8988977ca8e5a9894cb7" kindref="member">ps_vad_classify()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="171" column="8" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" declline="171" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="structps__vad__t_1aaf0e13d20d7b8988977ca8e5a9894cb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="vad_8h_1a8ec7428965724fab96f9ca4f7ded5b4d" kindref="member">ps_vad_class_t</ref></type>
+        <definition>POCKETSPHINX_EXPORT ps_vad_class_t ps_vad_classify</definition>
+        <argsstring>(ps_vad_t *vad, const int16 *frame)</argsstring>
+        <name>ps_vad_classify</name>
+        <qualifiedname>ps_vad_t::ps_vad_classify</qualifiedname>
+        <param>
+          <type><ref refid="structps__vad__t" kindref="compound">ps_vad_t</ref> *</type>
+          <declname>vad</declname>
+        </param>
+        <param>
+          <type>const <ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Classify a frame as speech or not speech.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Voice activity detector. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame of input, <bold>must</bold> contain the number of samples returned by <ref refid="structps__vad__t_1ac35931b7e6c879dbda6508f302be4751" kindref="member">ps_vad_frame_size()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>PS_VAD_SPEECH, PS_VAD_NOT_SPEECH, or PS_VAD_ERROR (see <ref refid="vad_8h_1a8ec7428965724fab96f9ca4f7ded5b4d" kindref="member">ps_vad_class_t</ref>). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="191" column="16" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" declline="191" declcolumn="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Voice activity detector. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/vad.h" line="53" column="1"/>
+    <listofallmembers>
+      <member refid="structps__vad__t_1aaf0e13d20d7b8988977ca8e5a9894cb7" prot="public" virt="non-virtual"><scope>ps_vad_t</scope><name>ps_vad_classify</name></member>
+      <member refid="structps__vad__t_1ac35931b7e6c879dbda6508f302be4751" prot="public" virt="non-virtual"><scope>ps_vad_t</scope><name>ps_vad_frame_size</name></member>
+      <member refid="structps__vad__t_1add5e5c92c593edbf45edd20624129370" prot="public" virt="non-virtual"><scope>ps_vad_t</scope><name>ps_vad_free</name></member>
+      <member refid="structps__vad__t_1a28a9c81b473d91a2fcd0fef37c32a4ac" prot="public" virt="non-virtual"><scope>ps_vad_t</scope><name>ps_vad_init</name></member>
+      <member refid="structps__vad__t_1aa851b665f47d6f6033c5963e453bc43e" prot="public" virt="non-virtual"><scope>ps_vad_t</scope><name>ps_vad_retain</name></member>
+      <member refid="structps__vad__t_1a1c692aeda85aa6122589404ef401e03c" prot="public" virt="non-virtual"><scope>ps_vad_t</scope><name>ps_vad_sample_rate</name></member>
+      <member refid="structps__vad__t_1a69fe34f7717228b0cc8ada126d1d5feb" prot="public" virt="non-virtual"><scope>ps_vad_t</scope><name>ps_vad_set_input_params</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

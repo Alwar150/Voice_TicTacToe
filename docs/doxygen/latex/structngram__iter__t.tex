@@ -1,0 +1,96 @@
+\doxysection{ngram\+\_\+iter\+\_\+t Struct Reference}
+\hypertarget{structngram__iter__t}{}\label{structngram__iter__t}\index{ngram\_iter\_t@{ngram\_iter\_t}}
+
+
+M-\/gram (yes, {\bfseries{M}}-\/gram) iterator object.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx/model.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} const \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structngram__iter__t_a3d7fe2b1fa4b1d0fe98222f82eb0063c}{ngram\+\_\+iter\+\_\+get}} (\mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor, \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}out\+\_\+score, \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}out\+\_\+bowt)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structngram__iter__t_a95f095adb2dc9ac85393cbb2b2feb9f3}{ngram\+\_\+iter\+\_\+successors}} (\mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structngram__iter__t_ac9d66c8e7f546f56dbe7ab2aa4a46174}{ngram\+\_\+iter\+\_\+next}} (\mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structngram__iter__t_ac23506fc4549b2226ef32723f6b73c4f}{ngram\+\_\+iter\+\_\+free}} (\mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}itor)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M-\/gram (yes, {\bfseries{M}}-\/gram) iterator object. 
+
+This is an iterator over the N-\/\+Gram successors of a given word or N-\/1-\/\+Gram, that is why it is called "{}\+M"{} and not "{}\+N"{}. 
+
+\label{doc-func-members}
+\Hypertarget{structngram__iter__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structngram__iter__t_ac23506fc4549b2226ef32723f6b73c4f}\index{ngram\_iter\_t@{ngram\_iter\_t}!ngram\_iter\_free@{ngram\_iter\_free}}
+\index{ngram\_iter\_free@{ngram\_iter\_free}!ngram\_iter\_t@{ngram\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ngram\_iter\_free()}{ngram\_iter\_free()}}
+{\footnotesize\ttfamily \label{structngram__iter__t_ac23506fc4549b2226ef32723f6b73c4f} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ngram\+\_\+iter\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Terminate an M-\/gram iterator. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structngram__iter__t_a3d7fe2b1fa4b1d0fe98222f82eb0063c}\index{ngram\_iter\_t@{ngram\_iter\_t}!ngram\_iter\_get@{ngram\_iter\_get}}
+\index{ngram\_iter\_get@{ngram\_iter\_get}!ngram\_iter\_t@{ngram\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ngram\_iter\_get()}{ngram\_iter\_get()}}
+{\footnotesize\ttfamily \label{structngram__iter__t_a3d7fe2b1fa4b1d0fe98222f82eb0063c} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} const  \texorpdfstring{$\ast$}{*} ngram\+\_\+iter\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{, }\item[{\mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+score}{, }\item[{\mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+bowt}{}\end{DoxyParamCaption})}
+
+Get information from the current M-\/gram in an iterator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out\+\_\+score} & Output\+: Score for this M-\/gram (including any word penalty and language weight). \\
+\hline
+{\em out\+\_\+bowt} & Output\+: Backoff weight for this M-\/gram. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+read-\/only array of word IDs. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structngram__iter__t_ac9d66c8e7f546f56dbe7ab2aa4a46174}\index{ngram\_iter\_t@{ngram\_iter\_t}!ngram\_iter\_next@{ngram\_iter\_next}}
+\index{ngram\_iter\_next@{ngram\_iter\_next}!ngram\_iter\_t@{ngram\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ngram\_iter\_next()}{ngram\_iter\_next()}}
+{\footnotesize\ttfamily \label{structngram__iter__t_ac9d66c8e7f546f56dbe7ab2aa4a46174} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ngram\+\_\+iter\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Advance an M-\/gram iterator. 
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structngram__iter__t_a95f095adb2dc9ac85393cbb2b2feb9f3}\index{ngram\_iter\_t@{ngram\_iter\_t}!ngram\_iter\_successors@{ngram\_iter\_successors}}
+\index{ngram\_iter\_successors@{ngram\_iter\_successors}!ngram\_iter\_t@{ngram\_iter\_t}}
+\doxysubsubsection{\texorpdfstring{ngram\_iter\_successors()}{ngram\_iter\_successors()}}
+{\footnotesize\ttfamily \label{structngram__iter__t_a95f095adb2dc9ac85393cbb2b2feb9f3} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*} ngram\+\_\+iter\+\_\+successors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structngram__iter__t}{ngram\+\_\+iter\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{itor}{}\end{DoxyParamCaption})}
+
+Iterate over all M-\/gram successors of an M-\/1-\/gram.
+
+
+\begin{DoxyParams}{Parameters}
+{\em itor} & Iterator pointing to the M-\/1-\/gram to get successors of. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/\mbox{\hyperlink{model_8h}{model.\+h}}\end{DoxyCompactItemize}

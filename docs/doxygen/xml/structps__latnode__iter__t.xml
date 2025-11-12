@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__latnode__iter__t" kind="struct" language="C++" prot="public">
+    <compoundname>ps_latnode_iter_t</compoundname>
+    <includes refid="lattice_8h" local="no">pocketsphinx/lattice.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structps__latnode__iter__t_1a6b62626b9613fe78a1b74a9b8e969c33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__latnode__iter__t" kindref="compound">ps_latnode_iter_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_latnode_iter_t * ps_latnode_iter_next</definition>
+        <argsstring>(ps_latnode_iter_t *itor)</argsstring>
+        <name>ps_latnode_iter_next</name>
+        <qualifiedname>ps_latnode_iter_t::ps_latnode_iter_next</qualifiedname>
+        <param>
+          <type><ref refid="structps__latnode__iter__t" kindref="compound">ps_latnode_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Move to next node in iteration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Updated node iterator, or NULL if finished </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="184" column="19" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="184" declcolumn="19"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__latnode__iter__t_1ae9a6464b83d37bfa2ce570206eff6aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> void</type>
+        <definition>POCKETSPHINX_EXPORT void ps_latnode_iter_free</definition>
+        <argsstring>(ps_latnode_iter_t *itor)</argsstring>
+        <name>ps_latnode_iter_free</name>
+        <qualifiedname>ps_latnode_iter_t::ps_latnode_iter_free</qualifiedname>
+        <param>
+          <type><ref refid="structps__latnode__iter__t" kindref="compound">ps_latnode_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop iterating over nodes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="192" column="6" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="192" declcolumn="6"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__latnode__iter__t_1a36ccc88328881079f3fe511c993072b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> <ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+        <definition>POCKETSPHINX_EXPORT ps_latnode_t * ps_latnode_iter_node</definition>
+        <argsstring>(ps_latnode_iter_t *itor)</argsstring>
+        <name>ps_latnode_iter_node</name>
+        <qualifiedname>ps_latnode_iter_t::ps_latnode_iter_node</qualifiedname>
+        <param>
+          <type><ref refid="structps__latnode__iter__t" kindref="compound">ps_latnode_iter_t</ref> *</type>
+          <declname>itor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get node from iterator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="199" column="14" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="199" declcolumn="14"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+      <memberdef kind="function" id="structps__latnode__iter__t_1a42bd0fbfe8b0cab1a9a7e799a3fc30a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" kindref="member">POCKETSPHINX_EXPORT</ref> int</type>
+        <definition>POCKETSPHINX_EXPORT int ps_latnode_times</definition>
+        <argsstring>(ps_latnode_t *node, int16 *out_fef, int16 *out_lef)</argsstring>
+        <name>ps_latnode_times</name>
+        <qualifiedname>ps_latnode_iter_t::ps_latnode_times</qualifiedname>
+        <param>
+          <type><ref refid="structps__latnode__t" kindref="compound">ps_latnode_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref> *</type>
+          <declname>out_fef</declname>
+        </param>
+        <param>
+          <type><ref refid="prim__type_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref> *</type>
+          <declname>out_lef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get start and end time range for a node.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node inquired about. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_fef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: End frame of first exit from this node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_lef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: End frame of last exit from this node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Start frame for all edges exiting this node. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="211" column="5" declfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" declline="211" declcolumn="5"/>
+        <references refid="export_8h_1a9c2845c705133f5589dd8c2bfd32b886" compoundref="export_8h" startline="12">POCKETSPHINX_EXPORT</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Iterator over DAG nodes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx/lattice.h" line="76" column="1"/>
+    <listofallmembers>
+      <member refid="structps__latnode__iter__t_1ae9a6464b83d37bfa2ce570206eff6aad" prot="public" virt="non-virtual"><scope>ps_latnode_iter_t</scope><name>ps_latnode_iter_free</name></member>
+      <member refid="structps__latnode__iter__t_1a6b62626b9613fe78a1b74a9b8e969c33" prot="public" virt="non-virtual"><scope>ps_latnode_iter_t</scope><name>ps_latnode_iter_next</name></member>
+      <member refid="structps__latnode__iter__t_1a36ccc88328881079f3fe511c993072b0" prot="public" virt="non-virtual"><scope>ps_latnode_iter_t</scope><name>ps_latnode_iter_node</name></member>
+      <member refid="structps__latnode__iter__t_1a42bd0fbfe8b0cab1a9a7e799a3fc30a2" prot="public" virt="non-virtual"><scope>ps_latnode_iter_t</scope><name>ps_latnode_times</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

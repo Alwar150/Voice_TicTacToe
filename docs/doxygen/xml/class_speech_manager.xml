@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_speech_manager" kind="class" language="C++" prot="public">
+    <compoundname>SpeechManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="_speech_manager_8h" local="no">SpeechManager.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_speech_manager_1a84982042bef20eb360ec44351fd84757" prot="private" static="no" mutable="no">
+        <type>PaStream *</type>
+        <definition>PaStream* SpeechManager::stream_</definition>
+        <argsstring></argsstring>
+        <name>stream_</name>
+        <qualifiedname>SpeechManager::stream_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="31" column="14" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_speech_manager_1a12e44c03e875470507ec74a417fa0156" prot="private" static="no" mutable="no">
+        <type>PaError</type>
+        <definition>PaError SpeechManager::err_</definition>
+        <argsstring></argsstring>
+        <name>err_</name>
+        <qualifiedname>SpeechManager::err_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="32" column="13" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_speech_manager_1a5457cda86b4ca0afd9d4ab9655baacf0" prot="private" static="no" mutable="no">
+        <type><ref refid="structps__decoder__t" kindref="compound">ps_decoder_t</ref> *</type>
+        <definition>ps_decoder_t* SpeechManager::decoder_</definition>
+        <argsstring></argsstring>
+        <name>decoder_</name>
+        <qualifiedname>SpeechManager::decoder_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="33" column="18" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_speech_manager_1a13a4749dbb01af8d5faf9e181b11c56e" compoundref="_speech_manager_8cpp" startline="104" endline="107">freeHeap</referencedby>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_speech_manager_1aed90e5c57c5e43394492fb748ef5dec4" prot="private" static="no" mutable="no">
+        <type><ref refid="structps__config__t" kindref="compound">ps_config_t</ref> *</type>
+        <definition>ps_config_t* SpeechManager::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <qualifiedname>SpeechManager::config_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="34" column="17" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_speech_manager_1a94d6a6d8b5aa00b913e751c2620a9e52" compoundref="_speech_manager_8cpp" startline="22" endline="33">configure</referencedby>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_speech_manager_1a2d256afb5806a933dfd832fa49d1b148" prot="private" static="no" mutable="no">
+        <type><ref refid="structps__endpointer__t" kindref="compound">ps_endpointer_t</ref> *</type>
+        <definition>ps_endpointer_t* SpeechManager::ep_</definition>
+        <argsstring></argsstring>
+        <name>ep_</name>
+        <qualifiedname>SpeechManager::ep_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="35" column="21" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_speech_manager_1a13a4749dbb01af8d5faf9e181b11c56e" compoundref="_speech_manager_8cpp" startline="104" endline="107">freeHeap</referencedby>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_speech_manager_1a33dd9ba7578619b2f8bfb2be029c4c20" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* SpeechManager::frame_</definition>
+        <argsstring></argsstring>
+        <name>frame_</name>
+        <qualifiedname>SpeechManager::frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="36" column="11" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_speech_manager_1a5ae23337be3cfd612918b64b2dac7fa8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SpeechManager::frame_size_</definition>
+        <argsstring></argsstring>
+        <name>frame_size_</name>
+        <qualifiedname>SpeechManager::frame_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="37" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_speech_manager_1ad36d507a363bd64922e7cd8c85334bda" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* SpeechManager::hyp_</definition>
+        <argsstring></argsstring>
+        <name>hyp_</name>
+        <qualifiedname>SpeechManager::hyp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="38" column="16" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_speech_manager_1ad48e68cab4316e371cc56ca75150897d" compoundref="_speech_manager_8cpp" startline="98" endline="102">hypIsValid</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpeechManager::SpeechManager</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>SpeechManager</name>
+        <qualifiedname>SpeechManager::SpeechManager</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DEV-SPEECH-0003 @title <ref refid="class_speech_manager" kindref="compound">SpeechManager</ref> bloquea el hilo principal Solved @severity High ratty <ref refid="class_speech_manager" kindref="compound">SpeechManager</ref> debe moverse a QThread TASK-THREAD-0002 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="19" column="14" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp" bodystart="12" bodyend="16"/>
+        <references refid="class_speech_manager_1aed90e5c57c5e43394492fb748ef5dec4" compoundref="_speech_manager_8h" startline="34">config_</references>
+        <references refid="class_speech_manager_1a5457cda86b4ca0afd9d4ab9655baacf0" compoundref="_speech_manager_8h" startline="33">decoder_</references>
+        <references refid="class_speech_manager_1a2d256afb5806a933dfd832fa49d1b148" compoundref="_speech_manager_8h" startline="35">ep_</references>
+        <references refid="class_speech_manager_1a33dd9ba7578619b2f8bfb2be029c4c20" compoundref="_speech_manager_8h" startline="36">frame_</references>
+        <references refid="class_speech_manager_1a5ae23337be3cfd612918b64b2dac7fa8" compoundref="_speech_manager_8h" startline="37">frame_size_</references>
+        <references refid="class_speech_manager_1a9e0d24a7b396f00dbb1dee267450d3e9">processRecognitionResult</references>
+        <references refid="class_speech_manager_1af020ff04f584cedbd3105f299c1a66b0">speechReadyToProcess</references>
+        <references refid="class_speech_manager_1abdde7758804b9f537d9d704583e6c8b3">speechRecognized</references>
+        <references refid="class_speech_manager_1a84982042bef20eb360ec44351fd84757" compoundref="_speech_manager_8h" startline="31">stream_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_speech_manager_1a473b5a5d90f5486c0306278220d8138c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SpeechManager::~SpeechManager</definition>
+        <argsstring>()</argsstring>
+        <name>~SpeechManager</name>
+        <qualifiedname>SpeechManager::~SpeechManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="20" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp" bodystart="18" bodyend="20"/>
+        <references refid="class_speech_manager_1a13a4749dbb01af8d5faf9e181b11c56e" compoundref="_speech_manager_8cpp" startline="104" endline="107">freeHeap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_speech_manager_1a94d6a6d8b5aa00b913e751c2620a9e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpeechManager::configure</definition>
+        <argsstring>()</argsstring>
+        <name>configure</name>
+        <qualifiedname>SpeechManager::configure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="21" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp" bodystart="22" bodyend="33"/>
+        <references refid="class_speech_manager_1aed90e5c57c5e43394492fb748ef5dec4" compoundref="_speech_manager_8h" startline="34">config_</references>
+        <references refid="class_config_manager_1ab72b9c36d8c92066d54eabae525da210" compoundref="_config_manager_8cpp" startline="3" endline="7">ConfigManager::instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_speech_manager_1a13ab24c0b019530b8c35557091fac078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpeechManager::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>SpeechManager::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="22" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp" bodystart="35" bodyend="56"/>
+        <references refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" compoundref="err_8h" startline="80" endline="84">E_FATAL</references>
+        <references refid="err_8h_1acc9aaeb2e0eb21f964913c14403d6795" compoundref="err_8h" startline="89" endline="93">E_FATAL_SYSTEM</references>
+        <references refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="prim__type_8h" startline="159">NULL</references>
+        <references refid="endpointer_8h_1aaa16760235cea4c0a06db70c907bc576" compoundref="endpointer_8h" startline="153">ps_endpointer_frame_size</references>
+        <references refid="vad_8h_1abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc" compoundref="vad_8h" startline="63">PS_VAD_LOOSE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_speech_manager_1af62b1ec680a5e45e289d629d561c8432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpeechManager::startListening</definition>
+        <argsstring>()</argsstring>
+        <name>startListening</name>
+        <qualifiedname>SpeechManager::startListening</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="23" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp" bodystart="58" bodyend="96"/>
+        <references refid="err_8h_1a87a0a12135a290cf16d06b63fcfa0ccf" compoundref="err_8h" startline="103">E_ERROR</references>
+        <references refid="err_8h_1abaacffc3c0f14e4dd180b1e38c62c5a0" compoundref="err_8h" startline="80" endline="84">E_FATAL</references>
+        <references refid="prim__type_8h_1aa93f0eb578d23995850d61f7d61c55c1" compoundref="prim__type_8h" startline="155">FALSE</references>
+        <references refid="class_speech_manager_1ad48e68cab4316e371cc56ca75150897d" compoundref="_speech_manager_8cpp" startline="98" endline="102">hypIsValid</references>
+        <references refid="prim__type_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="prim__type_8h" startline="159">NULL</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_speech_manager_1abdde7758804b9f537d9d704583e6c8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpeechManager::speechRecognized</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>speechRecognized</name>
+        <qualifiedname>SpeechManager::speechRecognized</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="25" column="10"/>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="class_speech_manager_1af020ff04f584cedbd3105f299c1a66b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpeechManager::speechReadyToProcess</definition>
+        <argsstring>(const char *hyp)</argsstring>
+        <name>speechReadyToProcess</name>
+        <qualifiedname>SpeechManager::speechReadyToProcess</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>hyp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="26" column="10"/>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_speech_manager_1a9e0d24a7b396f00dbb1dee267450d3e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpeechManager::processRecognitionResult</definition>
+        <argsstring>(const char *hyp)</argsstring>
+        <name>processRecognitionResult</name>
+        <qualifiedname>SpeechManager::processRecognitionResult</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>hyp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="29" column="10"/>
+        <referencedby refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" compoundref="_speech_manager_8cpp" startline="12" endline="16">SpeechManager</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_speech_manager_1ad48e68cab4316e371cc56ca75150897d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpeechManager::hypIsValid</definition>
+        <argsstring>()</argsstring>
+        <name>hypIsValid</name>
+        <qualifiedname>SpeechManager::hypIsValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="39" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp" bodystart="98" bodyend="102"/>
+        <references refid="class_speech_manager_1ad36d507a363bd64922e7cd8c85334bda" compoundref="_speech_manager_8h" startline="38">hyp_</references>
+        <referencedby refid="class_speech_manager_1af62b1ec680a5e45e289d629d561c8432" compoundref="_speech_manager_8cpp" startline="58" endline="96">startListening</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_speech_manager_1a13a4749dbb01af8d5faf9e181b11c56e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpeechManager::freeHeap</definition>
+        <argsstring>()</argsstring>
+        <name>freeHeap</name>
+        <qualifiedname>SpeechManager::freeHeap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="40" column="10" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.cpp" bodystart="104" bodyend="107"/>
+        <references refid="class_speech_manager_1a5457cda86b4ca0afd9d4ab9655baacf0" compoundref="_speech_manager_8h" startline="33">decoder_</references>
+        <references refid="class_speech_manager_1a2d256afb5806a933dfd832fa49d1b148" compoundref="_speech_manager_8h" startline="35">ep_</references>
+        <referencedby refid="class_speech_manager_1a473b5a5d90f5486c0306278220d8138c" compoundref="_speech_manager_8cpp" startline="18" endline="20">~SpeechManager</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>SpeechManager</label>
+        <link refid="class_speech_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>SpeechManager</label>
+        <link refid="class_speech_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>decoder_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>config_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ep_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ps_config_t</label>
+        <link refid="structps__config__t"/>
+      </node>
+      <node id="3">
+        <label>ps_decoder_t</label>
+        <link refid="structps__decoder__t"/>
+      </node>
+      <node id="5">
+        <label>ps_endpointer_t</label>
+        <link refid="structps__endpointer__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" line="15" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/Speech/SpeechManager.h" bodystart="16" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_speech_manager_1aed90e5c57c5e43394492fb748ef5dec4" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>config_</name></member>
+      <member refid="class_speech_manager_1a94d6a6d8b5aa00b913e751c2620a9e52" prot="public" virt="non-virtual"><scope>SpeechManager</scope><name>configure</name></member>
+      <member refid="class_speech_manager_1a5457cda86b4ca0afd9d4ab9655baacf0" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>decoder_</name></member>
+      <member refid="class_speech_manager_1a2d256afb5806a933dfd832fa49d1b148" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>ep_</name></member>
+      <member refid="class_speech_manager_1a12e44c03e875470507ec74a417fa0156" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>err_</name></member>
+      <member refid="class_speech_manager_1a33dd9ba7578619b2f8bfb2be029c4c20" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>frame_</name></member>
+      <member refid="class_speech_manager_1a5ae23337be3cfd612918b64b2dac7fa8" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>frame_size_</name></member>
+      <member refid="class_speech_manager_1a13a4749dbb01af8d5faf9e181b11c56e" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>freeHeap</name></member>
+      <member refid="class_speech_manager_1ad36d507a363bd64922e7cd8c85334bda" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>hyp_</name></member>
+      <member refid="class_speech_manager_1ad48e68cab4316e371cc56ca75150897d" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>hypIsValid</name></member>
+      <member refid="class_speech_manager_1a13ab24c0b019530b8c35557091fac078" prot="public" virt="non-virtual"><scope>SpeechManager</scope><name>init</name></member>
+      <member refid="class_speech_manager_1a9e0d24a7b396f00dbb1dee267450d3e9" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>processRecognitionResult</name></member>
+      <member refid="class_speech_manager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" prot="public" virt="non-virtual"><scope>SpeechManager</scope><name>SpeechManager</name></member>
+      <member refid="class_speech_manager_1af020ff04f584cedbd3105f299c1a66b0" prot="public" virt="non-virtual"><scope>SpeechManager</scope><name>speechReadyToProcess</name></member>
+      <member refid="class_speech_manager_1abdde7758804b9f537d9d704583e6c8b3" prot="public" virt="non-virtual"><scope>SpeechManager</scope><name>speechRecognized</name></member>
+      <member refid="class_speech_manager_1af62b1ec680a5e45e289d629d561c8432" prot="public" virt="non-virtual"><scope>SpeechManager</scope><name>startListening</name></member>
+      <member refid="class_speech_manager_1a84982042bef20eb360ec44351fd84757" prot="private" virt="non-virtual"><scope>SpeechManager</scope><name>stream_</name></member>
+      <member refid="class_speech_manager_1a473b5a5d90f5486c0306278220d8138c" prot="public" virt="non-virtual"><scope>SpeechManager</scope><name>~SpeechManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,415 @@
+\doxysection{C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/err.h File Reference}
+\hypertarget{err_8h}{}\label{err_8h}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/err.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/err.h}}
+
+
+Implementation of logging routines.  
+
+
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/export.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{err_8h_a0e884a86577f53ae267ba646fe59da0d}{E\+\_\+\+SYSCALL}}(stmt, ...)
+\item 
+\#define \mbox{\hyperlink{err_8h_af785434ca409c25676442575cd2495e6}{FILELINE}}~\+\_\+\+\_\+\+FILE\+\_\+\+\_\+ , \+\_\+\+\_\+\+LINE\+\_\+\+\_\+
+\item 
+\#define \mbox{\hyperlink{err_8h_abaacffc3c0f14e4dd180b1e38c62c5a0}{E\+\_\+\+FATAL}}(...)
+\item 
+\#define \mbox{\hyperlink{err_8h_acc9aaeb2e0eb21f964913c14403d6795}{E\+\_\+\+FATAL\+\_\+\+SYSTEM}}(...)
+\item 
+\#define \mbox{\hyperlink{err_8h_add0768056bee50c260c5623b4edd4038}{E\+\_\+\+ERROR\+\_\+\+SYSTEM}}(...)
+\item 
+\#define \mbox{\hyperlink{err_8h_a87a0a12135a290cf16d06b63fcfa0ccf}{E\+\_\+\+ERROR}}(...)
+\item 
+\#define \mbox{\hyperlink{err_8h_aed4c99044fd3e70b7b33a0298a2279b4}{E\+\_\+\+WARN}}(...)
+\item 
+\#define \mbox{\hyperlink{err_8h_a92dbeb77b8e1facc7b15abab6ad19b73}{E\+\_\+\+INFO}}(...)
+\item 
+\#define \mbox{\hyperlink{err_8h_aaf6601c7c08a803c55f2d55fcd8d5759}{E\+\_\+\+INFOCONT}}(...)
+\item 
+\#define \mbox{\hyperlink{err_8h_abe6c68e16406b5f7aee0ec70e1f7d7f1}{E\+\_\+\+INFO\+\_\+\+NOFN}}(...)
+\item 
+\#define \mbox{\hyperlink{err_8h_af4689a912d0c49e9eb5244659d8702ad}{E\+\_\+\+DEBUG}}(...)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290d}{err\+\_\+e}} \mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{err_8h_acd85e2692b5204208b001e6219df9674}{err\+\_\+cb\+\_\+f}}) (void \texorpdfstring{$\ast$}{*}user\+\_\+data, \mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}}, const char \texorpdfstring{$\ast$}{*},...)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290d}{err\+\_\+e}} \{ \newline
+\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290daadbdbedaf5c8e589e141c3c7ac56b418}{ERR\+\_\+\+DEBUG}}
+, \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c}{ERR\+\_\+\+INFO}}
+, \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263}{ERR\+\_\+\+WARN}}
+, \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022}{ERR\+\_\+\+ERROR}}
+, \newline
+\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e}{ERR\+\_\+\+FATAL}}
+, \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da51a80ce92f9392669de4e57f0f8f915e}{ERR\+\_\+\+MAX}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{err_8h_a013286d4dd133b9a716953ede1ddb0ae}{err\+\_\+msg}} (\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}} lvl, const char \texorpdfstring{$\ast$}{*}path, long ln, const char \texorpdfstring{$\ast$}{*}fmt,...)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{err_8h_ad6a26dc9c533d592a6e98b85941bb200}{err\+\_\+msg\+\_\+system}} (\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}} lvl, const char \texorpdfstring{$\ast$}{*}path, long ln, const char \texorpdfstring{$\ast$}{*}fmt,...)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{err_8h_a85783daf263f1638977c3e07b8f4725b}{err\+\_\+logfp\+\_\+cb}} (void \texorpdfstring{$\ast$}{*}user\+\_\+data, \mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}} level, const char \texorpdfstring{$\ast$}{*}fmt,...)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{err_8h_ac011c0d3b793abc19010c2255bce5c88}{err\+\_\+set\+\_\+loglevel}} (\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}} lvl)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{err_8h_a33774becab4a590524f8edb99f4a826b}{err\+\_\+set\+\_\+loglevel\+\_\+str}} (const char \texorpdfstring{$\ast$}{*}lvl)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{err_8h_a27fbaecbcb755fd9e5a503566b6ec542}{err\+\_\+set\+\_\+callback}} (\mbox{\hyperlink{err_8h_acd85e2692b5204208b001e6219df9674}{err\+\_\+cb\+\_\+f}} callback, void \texorpdfstring{$\ast$}{*}user\+\_\+data)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{err_8h_adead72aa5614d8d305ab8710369ea01b}{err\+\_\+set\+\_\+logfp}} (FILE \texorpdfstring{$\ast$}{*}stream)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} FILE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{err_8h_a037fb194ca22cbbdd9252afa317a4f61}{err\+\_\+get\+\_\+logfp}} (void)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int \mbox{\hyperlink{err_8h_a2ff33abcf6f29dd25138f0d9846a26cd}{err\+\_\+set\+\_\+logfile}} (const char \texorpdfstring{$\ast$}{*}path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of logging routines. 
+
+Logging, warning, debug and error message output functionality is provided in this file. Sphinxbase defines several level of logging messages -\/ INFO, WARNING, ERROR, FATAL. By default output goes to standard error output.
+
+Logging is implemented through macros. They take same arguments as printf\+: format string and values. By default source file name and source line are prepended to the message. Log output could be redirected to any file using \doxylink{err_8h_adead72aa5614d8d305ab8710369ea01b}{err\+\_\+set\+\_\+logfp()} and \doxylink{err_8h_a2ff33abcf6f29dd25138f0d9846a26cd}{err\+\_\+set\+\_\+logfile()} functions. To disable logging in your application, call err\+\_\+set\+\_\+logfp(\+NULL).
+
+It\textquotesingle{}s possible to log multiline info messages, to do that you need to start message with E\+\_\+\+INFO and output other lines with E\+\_\+\+INFOCONT. 
+
+\label{doc-define-members}
+\Hypertarget{err_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{err_8h_af4689a912d0c49e9eb5244659d8702ad}\index{err.h@{err.h}!E\_DEBUG@{E\_DEBUG}}
+\index{E\_DEBUG@{E\_DEBUG}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_DEBUG}{E\_DEBUG}}
+{\footnotesize\ttfamily \label{err_8h_af4689a912d0c49e9eb5244659d8702ad} 
+\#define E\+\_\+\+DEBUG(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+Debug is disabled by default \Hypertarget{err_8h_a87a0a12135a290cf16d06b63fcfa0ccf}\index{err.h@{err.h}!E\_ERROR@{E\_ERROR}}
+\index{E\_ERROR@{E\_ERROR}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_ERROR}{E\_ERROR}}
+{\footnotesize\ttfamily \label{err_8h_a87a0a12135a290cf16d06b63fcfa0ccf} 
+\#define E\+\_\+\+ERROR(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{err_8h_a013286d4dd133b9a716953ede1ddb0ae}{err\_msg}}(\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022}{ERR\_ERROR}},\ \mbox{\hyperlink{err_8h_af785434ca409c25676442575cd2495e6}{FILELINE}},\ \_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+Print error message to error log 
+
+Referenced by \mbox{\hyperlink{struct_speech_to_text_a243545518fed839c5fa5fe95aadde2a3}{Speech\+To\+Text\+::listen()}}, and \mbox{\hyperlink{class_speech_manager_af62b1ec680a5e45e289d629d561c8432}{Speech\+Manager\+::start\+Listening()}}.
+
+\Hypertarget{err_8h_add0768056bee50c260c5623b4edd4038}\index{err.h@{err.h}!E\_ERROR\_SYSTEM@{E\_ERROR\_SYSTEM}}
+\index{E\_ERROR\_SYSTEM@{E\_ERROR\_SYSTEM}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_ERROR\_SYSTEM}{E\_ERROR\_SYSTEM}}
+{\footnotesize\ttfamily \label{err_8h_add0768056bee50c260c5623b4edd4038} 
+\#define E\+\_\+\+ERROR\+\_\+\+SYSTEM(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{err_8h_ad6a26dc9c533d592a6e98b85941bb200}{err\_msg\_system}}(\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022}{ERR\_ERROR}},\ \mbox{\hyperlink{err_8h_af785434ca409c25676442575cd2495e6}{FILELINE}},\ \_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+Print error text; Call perror("{}"{}); \Hypertarget{err_8h_abaacffc3c0f14e4dd180b1e38c62c5a0}\index{err.h@{err.h}!E\_FATAL@{E\_FATAL}}
+\index{E\_FATAL@{E\_FATAL}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_FATAL}{E\_FATAL}}
+{\footnotesize\ttfamily \label{err_8h_abaacffc3c0f14e4dd180b1e38c62c5a0} 
+\#define E\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ err\_msg(\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e}{ERR\_FATAL}},\ \mbox{\hyperlink{err_8h_af785434ca409c25676442575cd2495e6}{FILELINE}},\ \_\_VA\_ARGS\_\_);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ exit(EXIT\_FAILURE);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+Exit with non-\/zero status after error message 
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a13ab24c0b019530b8c35557091fac078}{Speech\+Manager\+::init()}}, \mbox{\hyperlink{struct_speech_to_text_ae5b7a33ea5ba734da4e3caed42a5e185}{Speech\+To\+Text\+::init()}}, \mbox{\hyperlink{struct_speech_to_text_a243545518fed839c5fa5fe95aadde2a3}{Speech\+To\+Text\+::listen()}}, and \mbox{\hyperlink{class_speech_manager_af62b1ec680a5e45e289d629d561c8432}{Speech\+Manager\+::start\+Listening()}}.
+
+\Hypertarget{err_8h_acc9aaeb2e0eb21f964913c14403d6795}\index{err.h@{err.h}!E\_FATAL\_SYSTEM@{E\_FATAL\_SYSTEM}}
+\index{E\_FATAL\_SYSTEM@{E\_FATAL\_SYSTEM}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_FATAL\_SYSTEM}{E\_FATAL\_SYSTEM}}
+{\footnotesize\ttfamily \label{err_8h_acc9aaeb2e0eb21f964913c14403d6795} 
+\#define E\+\_\+\+FATAL\+\_\+\+SYSTEM(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ err\_msg\_system(\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e}{ERR\_FATAL}},\ \mbox{\hyperlink{err_8h_af785434ca409c25676442575cd2495e6}{FILELINE}},\ \_\_VA\_ARGS\_\_);\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ exit(EXIT\_FAILURE);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+Print error text; Call perror("{}"{}); exit(errno); 
+
+Referenced by \mbox{\hyperlink{class_speech_manager_a13ab24c0b019530b8c35557091fac078}{Speech\+Manager\+::init()}}, and \mbox{\hyperlink{struct_speech_to_text_ae5b7a33ea5ba734da4e3caed42a5e185}{Speech\+To\+Text\+::init()}}.
+
+\Hypertarget{err_8h_a92dbeb77b8e1facc7b15abab6ad19b73}\index{err.h@{err.h}!E\_INFO@{E\_INFO}}
+\index{E\_INFO@{E\_INFO}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_INFO}{E\_INFO}}
+{\footnotesize\ttfamily \label{err_8h_a92dbeb77b8e1facc7b15abab6ad19b73} 
+\#define E\+\_\+\+INFO(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{err_8h_a013286d4dd133b9a716953ede1ddb0ae}{err\_msg}}(\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c}{ERR\_INFO}},\ \mbox{\hyperlink{err_8h_af785434ca409c25676442575cd2495e6}{FILELINE}},\ \_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+Print logging information to standard error stream \Hypertarget{err_8h_abe6c68e16406b5f7aee0ec70e1f7d7f1}\index{err.h@{err.h}!E\_INFO\_NOFN@{E\_INFO\_NOFN}}
+\index{E\_INFO\_NOFN@{E\_INFO\_NOFN}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_INFO\_NOFN}{E\_INFO\_NOFN}}
+{\footnotesize\ttfamily \label{err_8h_abe6c68e16406b5f7aee0ec70e1f7d7f1} 
+\#define E\+\_\+\+INFO\+\_\+\+NOFN(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{err_8h_a013286d4dd133b9a716953ede1ddb0ae}{err\_msg}}(\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c}{ERR\_INFO}},\ \mbox{\hyperlink{prim__type_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}},\ 0,\ \_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+Print logging information without filename. \Hypertarget{err_8h_aaf6601c7c08a803c55f2d55fcd8d5759}\index{err.h@{err.h}!E\_INFOCONT@{E\_INFOCONT}}
+\index{E\_INFOCONT@{E\_INFOCONT}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_INFOCONT}{E\_INFOCONT}}
+{\footnotesize\ttfamily \label{err_8h_aaf6601c7c08a803c55f2d55fcd8d5759} 
+\#define E\+\_\+\+INFOCONT(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{err_8h_a013286d4dd133b9a716953ede1ddb0ae}{err\_msg}}(\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c}{ERR\_INFO}},\ \mbox{\hyperlink{prim__type_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}},\ 0,\ \_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+Continue printing the information to standard error stream \Hypertarget{err_8h_a0e884a86577f53ae267ba646fe59da0d}\index{err.h@{err.h}!E\_SYSCALL@{E\_SYSCALL}}
+\index{E\_SYSCALL@{E\_SYSCALL}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_SYSCALL}{E\_SYSCALL}}
+{\footnotesize\ttfamily \label{err_8h_a0e884a86577f53ae267ba646fe59da0d} 
+\#define E\+\_\+\+SYSCALL(\begin{DoxyParamCaption}\item[{}]{stmt}{, }\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (stmt)\ \mbox{\hyperlink{err_8h_acc9aaeb2e0eb21f964913c14403d6795}{E\_FATAL\_SYSTEM}}(\_\_VA\_ARGS\_\_);}
+
+\end{DoxyCode}
+\Hypertarget{err_8h_aed4c99044fd3e70b7b33a0298a2279b4}\index{err.h@{err.h}!E\_WARN@{E\_WARN}}
+\index{E\_WARN@{E\_WARN}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{E\_WARN}{E\_WARN}}
+{\footnotesize\ttfamily \label{err_8h_aed4c99044fd3e70b7b33a0298a2279b4} 
+\#define E\+\_\+\+WARN(\begin{DoxyParamCaption}\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{err_8h_a013286d4dd133b9a716953ede1ddb0ae}{err\_msg}}(\mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263}{ERR\_WARN}},\ \mbox{\hyperlink{err_8h_af785434ca409c25676442575cd2495e6}{FILELINE}},\ \_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+Print warning message to error log \Hypertarget{err_8h_af785434ca409c25676442575cd2495e6}\index{err.h@{err.h}!FILELINE@{FILELINE}}
+\index{FILELINE@{FILELINE}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{FILELINE}{FILELINE}}
+{\footnotesize\ttfamily \label{err_8h_af785434ca409c25676442575cd2495e6} 
+\#define FILELINE~\+\_\+\+\_\+\+FILE\+\_\+\+\_\+ , \+\_\+\+\_\+\+LINE\+\_\+\+\_\+}
+
+
+
+\label{doc-typedef-members}
+\Hypertarget{err_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{err_8h_acd85e2692b5204208b001e6219df9674}\index{err.h@{err.h}!err\_cb\_f@{err\_cb\_f}}
+\index{err\_cb\_f@{err\_cb\_f}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_cb\_f}{err\_cb\_f}}
+{\footnotesize\ttfamily \label{err_8h_acd85e2692b5204208b001e6219df9674} 
+typedef void(\texorpdfstring{$\ast$}{*} err\+\_\+cb\+\_\+f) (void \texorpdfstring{$\ast$}{*}user\+\_\+data, \mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}}, const char \texorpdfstring{$\ast$}{*},...)}
+
+\Hypertarget{err_8h_a77b3e477e86186edab4963cbdb1899d5}\index{err.h@{err.h}!err\_lvl\_t@{err\_lvl\_t}}
+\index{err\_lvl\_t@{err\_lvl\_t}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_lvl\_t}{err\_lvl\_t}}
+{\footnotesize\ttfamily \label{err_8h_a77b3e477e86186edab4963cbdb1899d5} 
+typedef enum \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290d}{err\+\_\+e}} \mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}}}
+
+
+
+\label{doc-enum-members}
+\Hypertarget{err_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{err_8h_afb81270102ce9c1b3d15f3f78d89290d}\index{err.h@{err.h}!err\_e@{err\_e}}
+\index{err\_e@{err\_e}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_e}{err\_e}}
+{\footnotesize\ttfamily \label{err_8h_afb81270102ce9c1b3d15f3f78d89290d} 
+enum \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290d}{err\+\_\+e}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_DEBUG@{ERR\_DEBUG}!err.h@{err.h}}\index{err.h@{err.h}!ERR\_DEBUG@{ERR\_DEBUG}}}\Hypertarget{err_8h_afb81270102ce9c1b3d15f3f78d89290daadbdbedaf5c8e589e141c3c7ac56b418}\label{err_8h_afb81270102ce9c1b3d15f3f78d89290daadbdbedaf5c8e589e141c3c7ac56b418} 
+ERR\+\_\+\+DEBUG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_INFO@{ERR\_INFO}!err.h@{err.h}}\index{err.h@{err.h}!ERR\_INFO@{ERR\_INFO}}}\Hypertarget{err_8h_afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c}\label{err_8h_afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c} 
+ERR\+\_\+\+INFO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_WARN@{ERR\_WARN}!err.h@{err.h}}\index{err.h@{err.h}!ERR\_WARN@{ERR\_WARN}}}\Hypertarget{err_8h_afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263}\label{err_8h_afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263} 
+ERR\+\_\+\+WARN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_ERROR@{ERR\_ERROR}!err.h@{err.h}}\index{err.h@{err.h}!ERR\_ERROR@{ERR\_ERROR}}}\Hypertarget{err_8h_afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022}\label{err_8h_afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022} 
+ERR\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_FATAL@{ERR\_FATAL}!err.h@{err.h}}\index{err.h@{err.h}!ERR\_FATAL@{ERR\_FATAL}}}\Hypertarget{err_8h_afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e}\label{err_8h_afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e} 
+ERR\+\_\+\+FATAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERR\_MAX@{ERR\_MAX}!err.h@{err.h}}\index{err.h@{err.h}!ERR\_MAX@{ERR\_MAX}}}\Hypertarget{err_8h_afb81270102ce9c1b3d15f3f78d89290da51a80ce92f9392669de4e57f0f8f915e}\label{err_8h_afb81270102ce9c1b3d15f3f78d89290da51a80ce92f9392669de4e57f0f8f915e} 
+ERR\+\_\+\+MAX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-func-members}
+\Hypertarget{err_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{err_8h_a037fb194ca22cbbdd9252afa317a4f61}\index{err.h@{err.h}!err\_get\_logfp@{err\_get\_logfp}}
+\index{err\_get\_logfp@{err\_get\_logfp}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_get\_logfp()}{err\_get\_logfp()}}
+{\footnotesize\ttfamily \label{err_8h_a037fb194ca22cbbdd9252afa317a4f61} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} FILE \texorpdfstring{$\ast$}{*} err\+\_\+get\+\_\+logfp (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Get the current logging filehandle.
+
+\begin{DoxyReturn}{Returns}
+Current logging filehandle, NULL if logging is disabled. Initially it returns stderr 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{err_8h_a85783daf263f1638977c3e07b8f4725b}\index{err.h@{err.h}!err\_logfp\_cb@{err\_logfp\_cb}}
+\index{err\_logfp\_cb@{err\_logfp\_cb}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_logfp\_cb()}{err\_logfp\_cb()}}
+{\footnotesize\ttfamily \label{err_8h_a85783daf263f1638977c3e07b8f4725b} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void err\+\_\+logfp\+\_\+cb (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{user\+\_\+data}{, }\item[{\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}}}]{level}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{fmt}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+\Hypertarget{err_8h_a013286d4dd133b9a716953ede1ddb0ae}\index{err.h@{err.h}!err\_msg@{err\_msg}}
+\index{err\_msg@{err\_msg}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_msg()}{err\_msg()}}
+{\footnotesize\ttfamily \label{err_8h_a013286d4dd133b9a716953ede1ddb0ae} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void err\+\_\+msg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}}}]{lvl}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{path}{, }\item[{long}]{ln}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{fmt}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{err_8h_ad6a26dc9c533d592a6e98b85941bb200}\index{err.h@{err.h}!err\_msg\_system@{err\_msg\_system}}
+\index{err\_msg\_system@{err\_msg\_system}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_msg\_system()}{err\_msg\_system()}}
+{\footnotesize\ttfamily \label{err_8h_ad6a26dc9c533d592a6e98b85941bb200} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void err\+\_\+msg\+\_\+system (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}}}]{lvl}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{path}{, }\item[{long}]{ln}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{fmt}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{err_8h_a27fbaecbcb755fd9e5a503566b6ec542}\index{err.h@{err.h}!err\_set\_callback@{err\_set\_callback}}
+\index{err\_set\_callback@{err\_set\_callback}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_set\_callback()}{err\_set\_callback()}}
+{\footnotesize\ttfamily \label{err_8h_a27fbaecbcb755fd9e5a503566b6ec542} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void err\+\_\+set\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{err_8h_acd85e2692b5204208b001e6219df9674}{err\+\_\+cb\+\_\+f}}}]{callback}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{user\+\_\+data}{}\end{DoxyParamCaption})}
+
+Sets function to output error messages. Use it to redirect the logging to your application. By default the handler which dumps messages to stderr is set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & callback to pass messages too \\
+\hline
+{\em user\+\_\+data} & data to pass to callback \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{err_8h_a2ff33abcf6f29dd25138f0d9846a26cd}\index{err.h@{err.h}!err\_set\_logfile@{err\_set\_logfile}}
+\index{err\_set\_logfile@{err\_set\_logfile}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_set\_logfile()}{err\_set\_logfile()}}
+{\footnotesize\ttfamily \label{err_8h_a2ff33abcf6f29dd25138f0d9846a26cd} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int err\+\_\+set\+\_\+logfile (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{path}{}\end{DoxyParamCaption})}
+
+Append all log messages to a given file.
+
+Previous logging filehandle is closed (unless it was stdout or stderr).
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & File path to send log messages to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, \texorpdfstring{$<$}{<}0 for failure (e.\+g. if file does not exist) 
+\end{DoxyReturn}
+\Hypertarget{err_8h_adead72aa5614d8d305ab8710369ea01b}\index{err.h@{err.h}!err\_set\_logfp@{err\_set\_logfp}}
+\index{err\_set\_logfp@{err\_set\_logfp}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_set\_logfp()}{err\_set\_logfp()}}
+{\footnotesize\ttfamily \label{err_8h_adead72aa5614d8d305ab8710369ea01b} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void err\+\_\+set\+\_\+logfp (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{stream}{}\end{DoxyParamCaption})}
+
+Direct all logging to a given filehandle if default logfp callback is set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Filehandle to send log messages to, or NULL to disable logging. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{err_8h_ac011c0d3b793abc19010c2255bce5c88}\index{err.h@{err.h}!err\_set\_loglevel@{err\_set\_loglevel}}
+\index{err\_set\_loglevel@{err\_set\_loglevel}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_set\_loglevel()}{err\_set\_loglevel()}}
+{\footnotesize\ttfamily \label{err_8h_ac011c0d3b793abc19010c2255bce5c88} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} int err\+\_\+set\+\_\+loglevel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\+\_\+lvl\+\_\+t}}}]{lvl}{}\end{DoxyParamCaption})}
+
+Set minimum logging level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & Level below which messages will not be logged (note ERR\+\_\+\+DEBUG messages are not logged unless compiled in debugging mode) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+previous log level. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{err_8h_a33774becab4a590524f8edb99f4a826b}\index{err.h@{err.h}!err\_set\_loglevel\_str@{err\_set\_loglevel\_str}}
+\index{err\_set\_loglevel\_str@{err\_set\_loglevel\_str}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err\_set\_loglevel\_str()}{err\_set\_loglevel\_str()}}
+{\footnotesize\ttfamily \label{err_8h_a33774becab4a590524f8edb99f4a826b} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} const char \texorpdfstring{$\ast$}{*} err\+\_\+set\+\_\+loglevel\+\_\+str (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{lvl}{}\end{DoxyParamCaption})}
+
+Set minimum logging levelfrom a string
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & Level below which messages will not be logged (note ERR\+\_\+\+DEBUG messages are not logged unless compiled in debugging mode). A string corresponding to the names in enum \doxylink{err_8h_afb81270102ce9c1b3d15f3f78d89290d}{err\+\_\+e}, but without the leading "{}\+ERR\+\_\+"{} prefix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+previous log level string, or NULL for invalid argument. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+

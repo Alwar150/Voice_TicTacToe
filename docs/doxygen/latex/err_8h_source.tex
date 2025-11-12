@@ -1,0 +1,139 @@
+\doxysection{err.\+h}
+\hypertarget{err_8h_source}{}\label{err_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/err.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/err.h}}
+\mbox{\hyperlink{err_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/\ c-\/basic-\/offset:\ 4;\ indent-\/tabs-\/mode:\ nil\ -\/*-\/\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ ====================================================================}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Copyright\ (c)\ 1999-\/2004\ Carnegie\ Mellon\ University.\ \ All\ rights}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ reserved.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Redistribution\ and\ use\ in\ source\ and\ binary\ forms,\ with\ or\ without}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ modification,\ are\ permitted\ provided\ that\ the\ following\ conditions}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ are\ met:}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ 1.\ Redistributions\ of\ source\ code\ must\ retain\ the\ above\ copyright}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ 2.\ Redistributions\ in\ binary\ form\ must\ reproduce\ the\ above\ copyright}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ \ \ notice,\ this\ list\ of\ conditions\ and\ the\ following\ disclaimer\ in}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ \ \ the\ documentation\ and/or\ other\ materials\ provided\ with\ the}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ \ \ distribution.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ This\ work\ was\ supported\ in\ part\ by\ funding\ from\ the\ Defense\ Advanced}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ Research\ Projects\ Agency\ and\ the\ National\ Science\ Foundation\ of\ the}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ United\ States\ of\ America,\ and\ the\ CMU\ Sphinx\ Speech\ Consortium.}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ THIS\ SOFTWARE\ IS\ PROVIDED\ BY\ CARNEGIE\ MELLON\ UNIVERSITY\ \`{}\`{}AS\ IS''\ AND}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ ANY\ EXPRESSED\ OR\ IMPLIED\ WARRANTIES,\ INCLUDING,\ BUT\ NOT\ LIMITED\ TO,}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ THE\ IMPLIED\ WARRANTIES\ OF\ MERCHANTABILITY\ AND\ FITNESS\ FOR\ A\ PARTICULAR}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ PURPOSE\ ARE\ DISCLAIMED.\ \ IN\ NO\ EVENT\ SHALL\ CARNEGIE\ MELLON\ UNIVERSITY}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ NOR\ ITS\ EMPLOYEES\ BE\ LIABLE\ FOR\ ANY\ DIRECT,\ INDIRECT,\ INCIDENTAL,}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ SPECIAL,\ EXEMPLARY,\ OR\ CONSEQUENTIAL\ DAMAGES\ (INCLUDING,\ BUT\ NOT}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *\ LIMITED\ TO,\ PROCUREMENT\ OF\ SUBSTITUTE\ GOODS\ OR\ SERVICES;\ LOSS\ OF\ USE,}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ DATA,\ OR\ PROFITS;\ OR\ BUSINESS\ INTERRUPTION)\ HOWEVER\ CAUSED\ AND\ ON\ ANY}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ THEORY\ OF\ LIABILITY,\ WHETHER\ IN\ CONTRACT,\ STRICT\ LIABILITY,\ OR\ TORT}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ (INCLUDING\ NEGLIGENCE\ OR\ OTHERWISE)\ ARISING\ IN\ ANY\ WAY\ OUT\ OF\ THE\ USE}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ OF\ THIS\ SOFTWARE,\ EVEN\ IF\ ADVISED\ OF\ THE\ POSSIBILITY\ OF\ SUCH\ DAMAGE.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ ====================================================================}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#ifndef\ \_LIBUTIL\_ERR\_H\_}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ \_LIBUTIL\_ERR\_H\_}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#include\ <stdarg.h>}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#include\ <errno.h>}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{export_8h}{pocketsphinx/export.h}}>}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00066\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#if\ 0}}
+\DoxyCodeLine{00069\ \textcolor{comment}{/*\ Fool\ Emacs.\ */}}
+\DoxyCodeLine{00070\ \}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ E\_SYSCALL(stmt,\ ...)\ \ if\ (stmt)\ E\_FATAL\_SYSTEM(\_\_VA\_ARGS\_\_);}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ FILELINE\ \ \_\_FILE\_\_\ ,\ \_\_LINE\_\_}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ E\_FATAL(...)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\ \ \ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ err\_msg(ERR\_FATAL,\ FILELINE,\ \_\_VA\_ARGS\_\_);\ \(\backslash\)}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ exit(EXIT\_FAILURE);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\ \ \ \ \}\ while\ (0)}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#define\ E\_FATAL\_SYSTEM(...)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\ \ \ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ err\_msg\_system(ERR\_FATAL,\ FILELINE,\ \_\_VA\_ARGS\_\_);\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ exit(EXIT\_FAILURE);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\ \ \ \ \}\ while\ (0)}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#define\ E\_ERROR\_SYSTEM(...)\ \ \ \ \ err\_msg\_system(ERR\_ERROR,\ FILELINE,\ \_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#define\ E\_ERROR(...)\ \ \ \ \ err\_msg(ERR\_ERROR,\ FILELINE,\ \_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#define\ E\_WARN(...)\ \ \ \ \ \ err\_msg(ERR\_WARN,\ FILELINE,\ \_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#define\ E\_INFO(...)\ \ \ \ \ \ err\_msg(ERR\_INFO,\ FILELINE,\ \_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#define\ E\_INFOCONT(...)\ \ err\_msg(ERR\_INFO,\ NULL,\ 0,\ \_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#define\ E\_INFO\_NOFN(...)\ \ err\_msg(ERR\_INFO,\ NULL,\ 0,\ \_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#ifdef\ SPHINX\_DEBUG}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#define\ E\_DEBUG(...)\ err\_msg(ERR\_DEBUG,\ NULL,\ 0,\ \_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#define\ E\_DEBUG(...)}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290d}{err\_e}}\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290daadbdbedaf5c8e589e141c3c7ac56b418}{ERR\_DEBUG}},}
+\DoxyCodeLine{00136\ \ \ \ \ \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da09d65dd5a3222924ee07b66587ef071c}{ERR\_INFO}},}
+\DoxyCodeLine{00137\ \ \ \ \ \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da076c6f2f57e126f611237a2a65bdd263}{ERR\_WARN}},}
+\DoxyCodeLine{00138\ \ \ \ \ \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da13efaa142118dbc06b490ac7ca1cb022}{ERR\_ERROR}},}
+\DoxyCodeLine{00139\ \ \ \ \ \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da182e80681e784dc5d8dbb1897617bd6e}{ERR\_FATAL}},}
+\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{err_8h_afb81270102ce9c1b3d15f3f78d89290da51a80ce92f9392669de4e57f0f8f915e}{ERR\_MAX}}}
+\DoxyCodeLine{00141\ \}\ \mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\_lvl\_t}};}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00144\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{err_8h_a013286d4dd133b9a716953ede1ddb0ae}{err\_msg}}(\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\_lvl\_t}}\ lvl,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path,\ \textcolor{keywordtype}{long}\ ln,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *fmt,\ ...);}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00147\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{err_8h_ad6a26dc9c533d592a6e98b85941bb200}{err\_msg\_system}}(\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\_lvl\_t}}\ lvl,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path,\ \textcolor{keywordtype}{long}\ ln,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *fmt,\ ...);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{err_8h_a85783daf263f1638977c3e07b8f4725b}{err\_logfp\_cb}}(\textcolor{keywordtype}{void}\ *\ user\_data,\ \mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\_lvl\_t}}\ level,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *fmt,\ ...);}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{err_8h_acd85e2692b5204208b001e6219df9674}{err\_cb\_f}})(\textcolor{keywordtype}{void}*\ user\_data,\ \mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\_lvl\_t}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ ...);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00162\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00163\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{err_8h_ac011c0d3b793abc19010c2255bce5c88}{err\_set\_loglevel}}(\mbox{\hyperlink{err_8h_a77b3e477e86186edab4963cbdb1899d5}{err\_lvl\_t}}\ lvl);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00174\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00175\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{err_8h_a33774becab4a590524f8edb99f4a826b}{err\_set\_loglevel\_str}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *lvl);}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00185\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00186\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{err_8h_a27fbaecbcb755fd9e5a503566b6ec542}{err\_set\_callback}}(\mbox{\hyperlink{err_8h_acd85e2692b5204208b001e6219df9674}{err\_cb\_f}}\ callback,\ \textcolor{keywordtype}{void}\ *user\_data);}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00193\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00194\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{err_8h_adead72aa5614d8d305ab8710369ea01b}{err\_set\_logfp}}(FILE\ *stream);}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00202\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00203\ FILE\ *\mbox{\hyperlink{err_8h_a037fb194ca22cbbdd9252afa317a4f61}{err\_get\_logfp}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00213\ \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\_EXPORT}}}
+\DoxyCodeLine{00214\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{err_8h_a2ff33abcf6f29dd25138f0d9846a26cd}{err\_set\_logfile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path);}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00217\ \}}
+\DoxyCodeLine{00218\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !\_ERR\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

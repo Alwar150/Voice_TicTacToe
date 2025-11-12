@@ -1,0 +1,42 @@
+\doxysection{Tic\+Tac\+Toe\+Game.\+h}
+\hypertarget{_tic_tac_toe_game_8h_source}{}\label{_tic_tac_toe_game_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/View/TicTacToeGame.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/View/TicTacToeGame.h}}
+\mbox{\hyperlink{_tic_tac_toe_game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_t_t_common_types_8h}{TTTCommonTypes.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}ui\_TicTacToeGame.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tic_tac_toe_game_acab186bab68d7cf8a2c6f4ce87e6de13}{TicTacToeGame}}\ final\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_tic_tac_toe_game_acab186bab68d7cf8a2c6f4ce87e6de13}{TicTacToeGame}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tic_tac_toe_game_a6df8896115fc708fa4dd12bc6c04e34a}{updateCell}}(\mbox{\hyperlink{struct_cell}{Cell}}\ \&cell,\ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ currentPlayer);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tic_tac_toe_game_a9dd5dc95d4e7edf631cdd4a8d77c4e12}{declareGameState}}(\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222}{BoardState}}\ boardState);}
+\DoxyCodeLine{00048\ \ \ \ \ vector<Cell>\ \mbox{\hyperlink{class_tic_tac_toe_game_a9dd8af6820a6a994aeaf8ba6bee6fc89}{buildCellButtons}}(\textcolor{keywordtype}{size\_t}\ boardSize);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tic_tac_toe_game_a8a891d7dcf57178c79f325a92751f44c}{reset}}(vector<Cell>\ \&cells);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ std::unique\_ptr<Ui::TicTacToeGame>\ \mbox{\hyperlink{class_tic_tac_toe_game_ab64b2821a1025135891b4610b8454031}{ui}};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tic_tac_toe_game_a1c9c0235d321bee6cbe121a14c946434}{setConnections}}();}
+\DoxyCodeLine{00071\ \ \ \ \ QString\ \mbox{\hyperlink{class_tic_tac_toe_game_a0b8fee976515895d15eb59c282b057d1}{getPlayerText}}(\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ currentPlayer);}
+\DoxyCodeLine{00077\ \ \ \ \ QString\ \mbox{\hyperlink{class_tic_tac_toe_game_ac18fe593bff035ce81a7f5e97727870a}{getPlayerStyleSheet}}(\mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ currentPlayer);}
+\DoxyCodeLine{00085\ \ \ \ \ QString\ \mbox{\hyperlink{class_tic_tac_toe_game_af4349fa57bc46d6e3030ff2482ea57c9}{getBoardFinalStateText}}(\mbox{\hyperlink{_t_t_t_common_types_8h_a8c50f66384175c1e9157b3c9b23cf222}{BoardState}}\ boardState);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ signals:}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tic_tac_toe_game_ad0072c616d4d9284ca69245a635b8303}{newGame}}();}
+\DoxyCodeLine{00093\ \};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_a2e82b4e0ac64657f77f5a9a0cc058cc" kind="dir">
+    <compoundname>C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI</compoundname>
+    <innerfile refid="_a_i_agent_8h">AIAgent.h</innerfile>
+    <innerfile refid="_human_player_8cpp">HumanPlayer.cpp</innerfile>
+    <innerfile refid="_human_player_8h">HumanPlayer.h</innerfile>
+    <innerfile refid="_mini_max_agent_8cpp">MiniMaxAgent.cpp</innerfile>
+    <innerfile refid="_mini_max_agent_8h">MiniMaxAgent.h</innerfile>
+    <innerfile refid="_no_agent_8h">NoAgent.h</innerfile>
+    <innerfile refid="_player_8h">Player.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/AI/"/>
+  </compounddef>
+</doxygen>

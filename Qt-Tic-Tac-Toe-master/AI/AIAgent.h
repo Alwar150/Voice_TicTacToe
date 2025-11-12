@@ -1,16 +1,17 @@
 #ifndef AIAGENT_H
 #define AIAGENT_H
-
+#include "Player.h"
 /**
  * @brief The AIAgent Interface describes
  * the behaviour of any implemented AI agents.
  */
 
 class Board;
-class AIAgent
+class AIAgent : public Player
 {
 public:
-    AIAgent() {}
+    AIAgent(QObject *parent_ = nullptr, BoardMarks playerMark, const Board& borad_ref)
+    : Player(parent_,playerMark,borad_ref) {}
     virtual ~AIAgent() {}
     /**
      * @brief Start the algorithm to choose a cell to play based on a given board.

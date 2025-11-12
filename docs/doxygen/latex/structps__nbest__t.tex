@@ -1,0 +1,114 @@
+\doxysection{ps\+\_\+nbest\+\_\+t Struct Reference}
+\hypertarget{structps__nbest__t}{}\label{structps__nbest__t}\index{ps\_nbest\_t@{ps\_nbest\_t}}
+
+
+N-\/best hypothesis iterator object.  
+
+
+
+
+{\ttfamily \#include $<$pocketsphinx.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__nbest__t_ae72b70b5c5560f3864d15f1c2ac7d393}{ps\+\_\+nbest\+\_\+next}} (\mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*}nbest)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__nbest__t_af6aeed1a376d89f966277e7165a30555}{ps\+\_\+nbest\+\_\+hyp}} (\mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*}nbest, \mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}out\+\_\+score)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structps__nbest__t_a63ca4168dd84b279b5a3a0cc405362ea}{ps\+\_\+nbest\+\_\+seg}} (\mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*}nbest)
+\item 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void \mbox{\hyperlink{structps__nbest__t_a83379b2da95eebdf5070d29196a9b067}{ps\+\_\+nbest\+\_\+free}} (\mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*}nbest)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+N-\/best hypothesis iterator object. 
+
+\label{doc-func-members}
+\Hypertarget{structps__nbest__t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structps__nbest__t_a83379b2da95eebdf5070d29196a9b067}\index{ps\_nbest\_t@{ps\_nbest\_t}!ps\_nbest\_free@{ps\_nbest\_free}}
+\index{ps\_nbest\_free@{ps\_nbest\_free}!ps\_nbest\_t@{ps\_nbest\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_nbest\_free()}{ps\_nbest\_free()}}
+{\footnotesize\ttfamily \label{structps__nbest__t_a83379b2da95eebdf5070d29196a9b067} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} void ps\+\_\+nbest\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{nbest}{}\end{DoxyParamCaption})}
+
+Finish N-\/best search early, releasing resources.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbest} & N-\/best iterator. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__nbest__t_af6aeed1a376d89f966277e7165a30555}\index{ps\_nbest\_t@{ps\_nbest\_t}!ps\_nbest\_hyp@{ps\_nbest\_hyp}}
+\index{ps\_nbest\_hyp@{ps\_nbest\_hyp}!ps\_nbest\_t@{ps\_nbest\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_nbest\_hyp()}{ps\_nbest\_hyp()}}
+{\footnotesize\ttfamily \label{structps__nbest__t_af6aeed1a376d89f966277e7165a30555} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} char const  \texorpdfstring{$\ast$}{*} ps\+\_\+nbest\+\_\+hyp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{nbest}{, }\item[{\mbox{\hyperlink{prim__type_8h_a56f1a81c92849566ae864511088eb7e8}{int32}} \texorpdfstring{$\ast$}{*}}]{out\+\_\+score}{}\end{DoxyParamCaption})}
+
+Get the hypothesis string from an N-\/best list iterator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbest} & N-\/best iterator. \\
+\hline
+{\em out\+\_\+score} & Output\+: Path score for this hypothesis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String containing next best hypothesis. Note that this pointer is only valid for the current iteration. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__nbest__t_ae72b70b5c5560f3864d15f1c2ac7d393}\index{ps\_nbest\_t@{ps\_nbest\_t}!ps\_nbest\_next@{ps\_nbest\_next}}
+\index{ps\_nbest\_next@{ps\_nbest\_next}!ps\_nbest\_t@{ps\_nbest\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_nbest\_next()}{ps\_nbest\_next()}}
+{\footnotesize\ttfamily \label{structps__nbest__t_ae72b70b5c5560f3864d15f1c2ac7d393} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+nbest\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{nbest}{}\end{DoxyParamCaption})}
+
+Move an N-\/best list iterator forward.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbest} & N-\/best iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Updated N-\/best iterator, or NULL if no more hypotheses are available (iterator is freed ni this case). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+\Hypertarget{structps__nbest__t_a63ca4168dd84b279b5a3a0cc405362ea}\index{ps\_nbest\_t@{ps\_nbest\_t}!ps\_nbest\_seg@{ps\_nbest\_seg}}
+\index{ps\_nbest\_seg@{ps\_nbest\_seg}!ps\_nbest\_t@{ps\_nbest\_t}}
+\doxysubsubsection{\texorpdfstring{ps\_nbest\_seg()}{ps\_nbest\_seg()}}
+{\footnotesize\ttfamily \label{structps__nbest__t_a63ca4168dd84b279b5a3a0cc405362ea} 
+\mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}} \mbox{\hyperlink{structps__seg__t}{ps\+\_\+seg\+\_\+t}} \texorpdfstring{$\ast$}{*} ps\+\_\+nbest\+\_\+seg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structps__nbest__t}{ps\+\_\+nbest\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{nbest}{}\end{DoxyParamCaption})}
+
+Get the word segmentation from an N-\/best list iterator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbest} & N-\/best iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Iterator over the next best hypothesis. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{export_8h_a9c2845c705133f5589dd8c2bfd32b886}{POCKETSPHINX\+\_\+\+EXPORT}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/\mbox{\hyperlink{pocketsphinx_8h}{pocketsphinx.\+h}}\end{DoxyCompactItemize}

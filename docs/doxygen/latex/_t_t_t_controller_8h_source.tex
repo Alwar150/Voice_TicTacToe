@@ -1,0 +1,94 @@
+\doxysection{TTTController.\+h}
+\hypertarget{_t_t_t_controller_8h_source}{}\label{_t_t_t_controller_8h_source}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/Controller/TTTController.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/Controller/TTTController.h}}
+\mbox{\hyperlink{_t_t_t_controller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TTTCONTROLLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TTTCONTROLLER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_a_i_agent_8h}{AIAgent.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_board_8h}{Board.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_t_t_common_types_8h}{TTTCommonTypes.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tic_tac_toe_game_8h}{TicTacToeGame.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_network_manager_8h}{NetworkManager.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <portaudio.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{pocketsphinx_8h}{pocketsphinx.h}}>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <signal.h>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }std::unique\_ptr;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00030\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_tic_tac_toe_game}{TicTacToeGame}}\ \mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\_}};}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_board}{Board}}\ \mbox{\hyperlink{class_t_t_t_controller_aad7647092c2b5c9980bbe74aee4e4892}{board\_}};}
+\DoxyCodeLine{00042\ \ \ \ \ vector<Cell>\ \mbox{\hyperlink{class_t_t_t_controller_acc38c6351607ee19a1dfc313b80da9a2}{cells\_}};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}}\&\ \mbox{\hyperlink{class_t_t_t_controller_aade7f92b4b06dbf7e17dc5a3772c0aef}{options\_}};}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{_t_t_t_common_types_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ \mbox{\hyperlink{class_t_t_t_controller_afc92e84ff160da3b8a7f9e50a7d9e921}{currentPlayer\_}};}
+\DoxyCodeLine{00054\ \ \ \ \ unique\_ptr<AIAgent>\ \mbox{\hyperlink{class_t_t_t_controller_a2c3f88a3462b7aad96bf352322c46f3e}{agent\_}};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:\ \textcolor{comment}{//\ Methods}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a8375926f879380ce4fcca19e7c8a9ca4}{setConnections}}();}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a14db27ac7fab7fa75f993b1efb282b15}{reset}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ QTcpSocket\ *\mbox{\hyperlink{class_t_t_t_controller_a858247e19d3d31564d8e716f9d81354e}{socket\_}};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a57edf31f9b9a6cf7b3d5261715f92b15}{setupNetwork}}();}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_acae67d371dfa6272adc7670040c01a23}{sendMove}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ col,\ \textcolor{keywordtype}{char}\ player);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{protected}:\ \textcolor{comment}{//\ Methods}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a2b17b7aa11412f978e257afb2aebab5b}{updateGameState}}(\mbox{\hyperlink{struct_cell}{Cell}}\ \&cell);}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_abc2caf1b04a521118fbb23058f8d3a55}{AIAgentPlay}}();}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_ad083b0e4ac90abc1b9b1578a4407ada7}{HumanPlay}}();}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a0d1a0122a2ec371163fb5d9d13c928f5}{switchPlayer}}();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_t_t_t_controller_ab8fd0d485df345aefed502a00082c828}{TTTController}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_t_t_t_options}{TTTOptions}}\ \&options,\ QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a1926fc5ac8a6cac2a75de663157d0023}{startGame}}();}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_t_t_t_controller_a0736512a7a5cffa6fefecbe9e4f2a072}{parseSpeechToCell}}(\textcolor{keyword}{const}\ QString\ \&text)}
+\DoxyCodeLine{00103\ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ QStringList\ keywords\ =\ text.split(\textcolor{charliteral}{'\ '},\ Qt::SkipEmptyParts);}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (keywords.size()\ <\ 2)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacedefaults_a543ba1bdceef75ed7ebc4160be54bfcb}{defaults::INVALID\_CELL}};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ QString\ k1\ =\ keywords[0];}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ QString\ k2\ =\ keywords[1];}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k1\ ==\ \textcolor{stringliteral}{"{}arriba"{}})\ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}izquierda"{}})\ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}arriba"{}})\ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}derecha"{}})\ \textcolor{keywordflow}{return}\ 2;}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (k1\ ==\ \textcolor{stringliteral}{"{}centro"{}})\ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}izquierda"{}})\ \textcolor{keywordflow}{return}\ 3;}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}centro"{}})\ \textcolor{keywordflow}{return}\ 4;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}derecha"{}})\ \textcolor{keywordflow}{return}\ 5;}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}arriba"{}})\ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}abajo"{}})\ \textcolor{keywordflow}{return}\ 7;}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (k1\ ==\ \textcolor{stringliteral}{"{}abajo"{}})\ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}izquierda"{}})\ \textcolor{keywordflow}{return}\ 6;}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}centro"{}})\ \textcolor{keywordflow}{return}\ 7;}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ==\ \textcolor{stringliteral}{"{}derecha"{}})\ \textcolor{keywordflow}{return}\ 8;}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacedefaults_a543ba1bdceef75ed7ebc4160be54bfcb}{defaults::INVALID\_CELL}};}
+\DoxyCodeLine{00126\ \ \ \ \ \}}
+\DoxyCodeLine{00127\ \ \ \ \ QWidget*\ \mbox{\hyperlink{class_t_t_t_controller_a6293931772f0ec9eea531c8a1fb1e050}{getView}}()\ \{\ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{class_t_t_t_controller_adc04ff1397e03c02603972eb9674ebba}{view\_}};\ \}}
+\DoxyCodeLine{00128\ signals:}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a513f925f29dcfebb4139030f46243cb4}{AIFinished}}();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_ae1514051a94219f50a5740af4e02e43d}{humanFinished}}();}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a4b36edfb9a40062357e0038ed00b3b96}{speechRecognized}}(QString);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_a48889524dfe5f7215cafed10c69812c9}{updateGame}}(\mbox{\hyperlink{struct_cell}{Cell}}\ \&cell);}
+\DoxyCodeLine{00145\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_abbd8ecce0bb5cf7b949282a17b3d74cb}{onSpeechRecognized}}(\textcolor{keyword}{const}\ QString\ \&text);}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_t_t_t_controller_aa653f1b7fcb4eaf10d39979ebd9317d6}{onSocketReadyRead}}();}
+\DoxyCodeLine{00148\ \};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TTTCONTROLLER\_H}}
+
+\end{DoxyCode}

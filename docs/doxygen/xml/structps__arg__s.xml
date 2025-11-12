@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="structps__arg__s" kind="struct" language="C++" prot="public">
+    <compoundname>ps_arg_s</compoundname>
+    <includes refid="pocketsphinx_8h" local="no">pocketsphinx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structps__arg__s_1ad6445eb93c75f7f3c3dd7d5e1f2ad9f4" prot="public" static="no" mutable="no">
+        <type>char const  *</type>
+        <definition>char const* ps_arg_s::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>ps_arg_s::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the command line switch </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="118" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps__arg__s_1ab8782fedc6874de7bd94ef72fb082844" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ps_arg_s::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>ps_arg_s::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the argument in question </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="119" column="5" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps__arg__s_1ae4b363c984de270be2983114160e1afe" prot="public" static="no" mutable="no">
+        <type>char const  *</type>
+        <definition>char const* ps_arg_s::deflt</definition>
+        <argsstring></argsstring>
+        <name>deflt</name>
+        <qualifiedname>ps_arg_s::deflt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default value (as a character string), or NULL if none </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="120" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structps__arg__s_1abe8839e8c74b69526a032ca5e6b9c488" prot="public" static="no" mutable="no">
+        <type>char const  *</type>
+        <definition>char const* ps_arg_s::doc</definition>
+        <argsstring></argsstring>
+        <name>doc</name>
+        <qualifiedname>ps_arg_s::doc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Documentation/description string </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="121" column="12" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" line="117" column="1" bodyfile="C:/Users/ferna/Voice_TicTacToe/Qt-Tic-Tac-Toe-master/include/pocketsphinx.h" bodystart="117" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structps__arg__s_1ae4b363c984de270be2983114160e1afe" prot="public" virt="non-virtual"><scope>ps_arg_s</scope><name>deflt</name></member>
+      <member refid="structps__arg__s_1abe8839e8c74b69526a032ca5e6b9c488" prot="public" virt="non-virtual"><scope>ps_arg_s</scope><name>doc</name></member>
+      <member refid="structps__arg__s_1ad6445eb93c75f7f3c3dd7d5e1f2ad9f4" prot="public" virt="non-virtual"><scope>ps_arg_s</scope><name>name</name></member>
+      <member refid="structps__arg__s_1ab8782fedc6874de7bd94ef72fb082844" prot="public" virt="non-virtual"><scope>ps_arg_s</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

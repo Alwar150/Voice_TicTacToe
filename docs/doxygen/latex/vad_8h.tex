@@ -1,0 +1,156 @@
+\doxysection{C\+:/\+Users/ferna/\+Voice\+\_\+\+Tic\+Tac\+Toe/\+Qt-\/\+Tic-\/\+Tac-\/\+Toe-\/master/include/pocketsphinx/vad.h File Reference}
+\hypertarget{vad_8h}{}\label{vad_8h}\index{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/vad.h@{C:/Users/ferna/Voice\_TicTacToe/Qt-\/Tic-\/Tac-\/Toe-\/master/include/pocketsphinx/vad.h}}
+
+
+Simple voice activity detection.  
+
+
+{\ttfamily \#include $<$pocketsphinx/prim\+\_\+type.\+h$>$}\newline
+{\ttfamily \#include $<$pocketsphinx/export.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{vad_8h_a619d5a74e526164718dfee5ed9a48202}{PS\+\_\+\+VAD\+\_\+\+DEFAULT\+\_\+\+SAMPLE\+\_\+\+RATE}}~16000
+\item 
+\#define \mbox{\hyperlink{vad_8h_a42e1e50b03fb55c0b0377cf017c70390}{PS\+\_\+\+VAD\+\_\+\+DEFAULT\+\_\+\+FRAME\+\_\+\+LENGTH}}~0.\+03
+\item 
+\#define \mbox{\hyperlink{vad_8h_a8605289aba98c9ef20a53d77fd1bcfe4}{ps\+\_\+vad\+\_\+frame\+\_\+length}}(vad)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct ps\+\_\+vad\+\_\+s \mbox{\hyperlink{vad_8h_a6813ff6e0f9e0f11336dd7cc5d901170}{ps\+\_\+vad\+\_\+t}}
+\item 
+typedef enum \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008a}{ps\+\_\+vad\+\_\+mode\+\_\+e}} \mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\+\_\+vad\+\_\+mode\+\_\+t}}
+\item 
+typedef enum \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52}{ps\+\_\+vad\+\_\+class\+\_\+e}} \mbox{\hyperlink{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d}{ps\+\_\+vad\+\_\+class\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008a}{ps\+\_\+vad\+\_\+mode\+\_\+e}} \{ \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc}{PS\+\_\+\+VAD\+\_\+\+LOOSE}} = 0
+, \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa89e52dc825838610a3aa4ea0fe03fdc7}{PS\+\_\+\+VAD\+\_\+\+MEDIUM\+\_\+\+LOOSE}} = 1
+, \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa4048797917df161a4c563d7275ad8d9d}{PS\+\_\+\+VAD\+\_\+\+MEDIUM\+\_\+\+STRICT}} = 2
+, \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa3a0206f29e4236c2b69943f4f59e41b5}{PS\+\_\+\+VAD\+\_\+\+STRICT}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Voice activity detection "{}aggressiveness"{} levels. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52}{ps\+\_\+vad\+\_\+class\+\_\+e}} \{ \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a91962e1736dea5e5360514d28d91b2ef}{PS\+\_\+\+VAD\+\_\+\+ERROR}} = -\/1
+, \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a1996a23a0326d2ed6ea77907504365bd}{PS\+\_\+\+VAD\+\_\+\+NOT\+\_\+\+SPEECH}} = 0
+, \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a4e21d4159f6b5aa4f3d055ee4669f5a6}{PS\+\_\+\+VAD\+\_\+\+SPEECH}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Classification of input frames returned by ps\+\_\+vad\+\_\+classify(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple voice activity detection. 
+
+Because doxygen is Bad Software, the actual documentation can only exist in \doxylink{structps__vad__t}{ps\+\_\+vad\+\_\+t}. Sorry about that. 
+
+\label{doc-define-members}
+\Hypertarget{vad_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{vad_8h_a42e1e50b03fb55c0b0377cf017c70390}\index{vad.h@{vad.h}!PS\_VAD\_DEFAULT\_FRAME\_LENGTH@{PS\_VAD\_DEFAULT\_FRAME\_LENGTH}}
+\index{PS\_VAD\_DEFAULT\_FRAME\_LENGTH@{PS\_VAD\_DEFAULT\_FRAME\_LENGTH}!vad.h@{vad.h}}
+\doxysubsubsection{\texorpdfstring{PS\_VAD\_DEFAULT\_FRAME\_LENGTH}{PS\_VAD\_DEFAULT\_FRAME\_LENGTH}}
+{\footnotesize\ttfamily \label{vad_8h_a42e1e50b03fb55c0b0377cf017c70390} 
+\#define PS\+\_\+\+VAD\+\_\+\+DEFAULT\+\_\+\+FRAME\+\_\+\+LENGTH~0.\+03}
+
+Default frame length for voice activity detector \Hypertarget{vad_8h_a619d5a74e526164718dfee5ed9a48202}\index{vad.h@{vad.h}!PS\_VAD\_DEFAULT\_SAMPLE\_RATE@{PS\_VAD\_DEFAULT\_SAMPLE\_RATE}}
+\index{PS\_VAD\_DEFAULT\_SAMPLE\_RATE@{PS\_VAD\_DEFAULT\_SAMPLE\_RATE}!vad.h@{vad.h}}
+\doxysubsubsection{\texorpdfstring{PS\_VAD\_DEFAULT\_SAMPLE\_RATE}{PS\_VAD\_DEFAULT\_SAMPLE\_RATE}}
+{\footnotesize\ttfamily \label{vad_8h_a619d5a74e526164718dfee5ed9a48202} 
+\#define PS\+\_\+\+VAD\+\_\+\+DEFAULT\+\_\+\+SAMPLE\+\_\+\+RATE~16000}
+
+Default sampling rate for voice activity detector \Hypertarget{vad_8h_a8605289aba98c9ef20a53d77fd1bcfe4}\index{vad.h@{vad.h}!ps\_vad\_frame\_length@{ps\_vad\_frame\_length}}
+\index{ps\_vad\_frame\_length@{ps\_vad\_frame\_length}!vad.h@{vad.h}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_frame\_length}{ps\_vad\_frame\_length}}
+{\footnotesize\ttfamily \label{vad_8h_a8605289aba98c9ef20a53d77fd1bcfe4} 
+\#define ps\+\_\+vad\+\_\+frame\+\_\+length(\begin{DoxyParamCaption}\item[{}]{vad}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((double)ps\_vad\_frame\_size(vad)\ /\ ps\_vad\_sample\_rate(vad))}
+
+\end{DoxyCode}
+Get the {\itshape actual} length of a frame in seconds.
+
+This may differ from the value requested in ps\+\_\+vad\+\_\+set\+\_\+input\+\_\+params(). 
+
+\label{doc-typedef-members}
+\Hypertarget{vad_8h_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d}\index{vad.h@{vad.h}!ps\_vad\_class\_t@{ps\_vad\_class\_t}}
+\index{ps\_vad\_class\_t@{ps\_vad\_class\_t}!vad.h@{vad.h}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_class\_t}{ps\_vad\_class\_t}}
+{\footnotesize\ttfamily \label{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d} 
+typedef enum \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52}{ps\+\_\+vad\+\_\+class\+\_\+e}} \mbox{\hyperlink{vad_8h_a8ec7428965724fab96f9ca4f7ded5b4d}{ps\+\_\+vad\+\_\+class\+\_\+t}}}
+
+\Hypertarget{vad_8h_a635b81a4ad803c8c4f164929802c15e3}\index{vad.h@{vad.h}!ps\_vad\_mode\_t@{ps\_vad\_mode\_t}}
+\index{ps\_vad\_mode\_t@{ps\_vad\_mode\_t}!vad.h@{vad.h}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_mode\_t}{ps\_vad\_mode\_t}}
+{\footnotesize\ttfamily \label{vad_8h_a635b81a4ad803c8c4f164929802c15e3} 
+typedef enum \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008a}{ps\+\_\+vad\+\_\+mode\+\_\+e}} \mbox{\hyperlink{vad_8h_a635b81a4ad803c8c4f164929802c15e3}{ps\+\_\+vad\+\_\+mode\+\_\+t}}}
+
+\Hypertarget{vad_8h_a6813ff6e0f9e0f11336dd7cc5d901170}\index{vad.h@{vad.h}!ps\_vad\_t@{ps\_vad\_t}}
+\index{ps\_vad\_t@{ps\_vad\_t}!vad.h@{vad.h}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_t}{ps\_vad\_t}}
+{\footnotesize\ttfamily \label{vad_8h_a6813ff6e0f9e0f11336dd7cc5d901170} 
+typedef struct ps\+\_\+vad\+\_\+s ps\+\_\+vad\+\_\+t}
+
+
+
+\label{doc-enum-members}
+\Hypertarget{vad_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52}\index{vad.h@{vad.h}!ps\_vad\_class\_e@{ps\_vad\_class\_e}}
+\index{ps\_vad\_class\_e@{ps\_vad\_class\_e}!vad.h@{vad.h}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_class\_e}{ps\_vad\_class\_e}}
+{\footnotesize\ttfamily \label{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52} 
+enum \mbox{\hyperlink{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52}{ps\+\_\+vad\+\_\+class\+\_\+e}}}
+
+
+
+Classification of input frames returned by ps\+\_\+vad\+\_\+classify(). 
+
+\doxylink{vad_8h}{pocketsphinx/vad.\+h} \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PS\_VAD\_ERROR@{PS\_VAD\_ERROR}!vad.h@{vad.h}}\index{vad.h@{vad.h}!PS\_VAD\_ERROR@{PS\_VAD\_ERROR}}}\Hypertarget{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a91962e1736dea5e5360514d28d91b2ef}\label{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a91962e1736dea5e5360514d28d91b2ef} 
+PS\+\_\+\+VAD\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PS\_VAD\_NOT\_SPEECH@{PS\_VAD\_NOT\_SPEECH}!vad.h@{vad.h}}\index{vad.h@{vad.h}!PS\_VAD\_NOT\_SPEECH@{PS\_VAD\_NOT\_SPEECH}}}\Hypertarget{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a1996a23a0326d2ed6ea77907504365bd}\label{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a1996a23a0326d2ed6ea77907504365bd} 
+PS\+\_\+\+VAD\+\_\+\+NOT\+\_\+\+SPEECH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PS\_VAD\_SPEECH@{PS\_VAD\_SPEECH}!vad.h@{vad.h}}\index{vad.h@{vad.h}!PS\_VAD\_SPEECH@{PS\_VAD\_SPEECH}}}\Hypertarget{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a4e21d4159f6b5aa4f3d055ee4669f5a6}\label{vad_8h_aca4440aaf5b90a96ad30702d6ace5f52a4e21d4159f6b5aa4f3d055ee4669f5a6} 
+PS\+\_\+\+VAD\+\_\+\+SPEECH&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{vad_8h_abbe4d33c65a9eadfc19e34814b67008a}\index{vad.h@{vad.h}!ps\_vad\_mode\_e@{ps\_vad\_mode\_e}}
+\index{ps\_vad\_mode\_e@{ps\_vad\_mode\_e}!vad.h@{vad.h}}
+\doxysubsubsection{\texorpdfstring{ps\_vad\_mode\_e}{ps\_vad\_mode\_e}}
+{\footnotesize\ttfamily \label{vad_8h_abbe4d33c65a9eadfc19e34814b67008a} 
+enum \mbox{\hyperlink{vad_8h_abbe4d33c65a9eadfc19e34814b67008a}{ps\+\_\+vad\+\_\+mode\+\_\+e}}}
+
+
+
+Voice activity detection "{}aggressiveness"{} levels. 
+
+\doxylink{vad_8h}{pocketsphinx/vad.\+h} \begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PS\_VAD\_LOOSE@{PS\_VAD\_LOOSE}!vad.h@{vad.h}}\index{vad.h@{vad.h}!PS\_VAD\_LOOSE@{PS\_VAD\_LOOSE}}}\Hypertarget{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc}\label{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa6291991c4f31b5c536b866ee410f33fc} 
+PS\+\_\+\+VAD\+\_\+\+LOOSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PS\_VAD\_MEDIUM\_LOOSE@{PS\_VAD\_MEDIUM\_LOOSE}!vad.h@{vad.h}}\index{vad.h@{vad.h}!PS\_VAD\_MEDIUM\_LOOSE@{PS\_VAD\_MEDIUM\_LOOSE}}}\Hypertarget{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa89e52dc825838610a3aa4ea0fe03fdc7}\label{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa89e52dc825838610a3aa4ea0fe03fdc7} 
+PS\+\_\+\+VAD\+\_\+\+MEDIUM\+\_\+\+LOOSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PS\_VAD\_MEDIUM\_STRICT@{PS\_VAD\_MEDIUM\_STRICT}!vad.h@{vad.h}}\index{vad.h@{vad.h}!PS\_VAD\_MEDIUM\_STRICT@{PS\_VAD\_MEDIUM\_STRICT}}}\Hypertarget{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa4048797917df161a4c563d7275ad8d9d}\label{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa4048797917df161a4c563d7275ad8d9d} 
+PS\+\_\+\+VAD\+\_\+\+MEDIUM\+\_\+\+STRICT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PS\_VAD\_STRICT@{PS\_VAD\_STRICT}!vad.h@{vad.h}}\index{vad.h@{vad.h}!PS\_VAD\_STRICT@{PS\_VAD\_STRICT}}}\Hypertarget{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa3a0206f29e4236c2b69943f4f59e41b5}\label{vad_8h_abbe4d33c65a9eadfc19e34814b67008aa3a0206f29e4236c2b69943f4f59e41b5} 
+PS\+\_\+\+VAD\+\_\+\+STRICT&\\
+\hline
+
+\end{DoxyEnumFields}
