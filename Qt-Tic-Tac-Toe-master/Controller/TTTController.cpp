@@ -1,6 +1,5 @@
 #include "TTTController.h"
 #include "MiniMaxAgent.h"
-#include "NoAgent.h"
 #include "TicTacToeGame.h"
 #include <QPushButton>
 #include <QtConcurrent/QtConcurrentRun>
@@ -16,17 +15,22 @@ TTTController::TTTController(const TTTOptions &options, QObject *parent)
     // Build GUI
     cells_ = view_.buildCellButtons(options.boardSize);
 
+    // Specifies the type of agent, and its behaviour throught polymorphism.
+    if (options_.AIopponent){
+        if(options_.AIstarts){
+            playerX_ = std::make_unique<MiniMaxAgent>(board_,BoardMarks::X,options_.miniMaxDepth,this);
+            playerO_ = std::make_unique<HumanPlayer>(board_,BoardMarks::O,this);
+        } else {
+            playerO_ = std::make_unique<MiniMaxAgent>(board_,BoardMarks::O,options_.miniMaxDepth,this);
+            playerX_ = std::make_unique<HumanPlayer>(board_,BoardMarks::X,this);
+        }
+    } else {
+        playerX_ = std::make_unique<HumanPlayer>(board_,BoardMarks::X,this);
+        playerO_ = std::make_unique<HumanPlayer>(board_,BoardMarks::O,this);
+    }
+    network_ = new NetworkManager;
     // Set Connections to the UI elements.
     setConnections();
-
-    // Specifies the type of agent, and its behaviour throught polymorphism.
-    if (options_.AIopponent && options_.AIstarts)
-        agent_ = std::make_unique<MiniMaxAgent>(options_.miniMaxDepth, BoardMarks::X, BoardMarks::O);
-    else if (options_.AIopponent)
-        agent_ = std::make_unique<MiniMaxAgent>(options_.miniMaxDepth, BoardMarks::O, BoardMarks::X);
-    else
-        agent_ = std::make_unique<NoAgent>();
-
     // Setup a new game.
     reset();
 }
@@ -39,20 +43,50 @@ void TTTController::startGame()
 
 void TTTController::setConnections()
 {
+    const QString ip = ConfigManager::instance().getValue("Network/server_ip", "127.0.0.1");
+    const int port = ConfigManager::instance().getInt("Network/server_port", 5000);
 
-    // New Game Connection - resetting the game.
-    connect(&view_, &TicTacToeGame::newGame, this, [&] { reset(); });
+    network_->connectToServer(ip,port);
+    //
+    // 🔁 Reiniciar el juego desde la interfaz gráfica
+    //
+    connect(&view_, &TicTacToeGame::newGame, this, [&]() { reset(); });
 
-    // Connect AI to play after a cell is chosen by human input.
-    connect(this, &TTTController::humanFinished,
-            this, &TTTController::AIAgentPlay, Qt::QueuedConnection);
+    //
+    // 🧩 Conexiones entre los jugadores y el controlador
+    //
+    // Cuando playerX_ (IA o humano) termina su turno y emite `playerFinished(int index)`
+    // se actualiza el tablero desde el controlador.
+    connect(playerX_.get(), &Player::playerFinished,
+            this, [this](const int& idx) {
+                this->updateGame(cells_.at(static_cast<size_t>(idx)));
+            });
 
-    connect(this, &TTTController::AIFinished,
-            this, &TTTController::HumanPlay, Qt::QueuedConnection);
-    connect(this, &TTTController::speechRecognized,
-            this, &TTTController::onSpeechRecognized);
-    setupNetwork();
+    // Igual para el jugador O, pero como su signal tiene el mismo tipo de parámetro,
+    // podemos conectar directamente al slot.
+    connect(playerO_.get(), &Player::playerFinished,
+            this, [this](const int& idx) {
+                this->updateGame(cells_.at(static_cast<size_t>(idx)));
+            });
 
+    //
+    // 🌐 Conexiones de red con NetworkManager
+    //
+    connect(network_, &NetworkManager::connected, this, []() {
+        qDebug() << "[CORE::NET] Conectado al servidor.";
+    });
+
+    connect(network_, &NetworkManager::disconnected, this, []() {
+        qDebug() << "[CORE::NET] Desconectado del servidor.";
+    });
+
+    connect(network_, &NetworkManager::messageSent, this, [](const QString& msg) {
+        qDebug() << "[CORE::NET] Mensaje enviado:" << msg;
+    });
+
+    // Ejemplo: si NetworkManager recibe algo (puedes definir una señal messageReceived(QString))
+    connect(network_, &NetworkManager::messageReceived,
+            this, &TTTController::onNetworkMessageReceived);
 }
 
 void TTTController::updateGameState(Cell &cell)
@@ -61,7 +95,7 @@ void TTTController::updateGameState(Cell &cell)
     this->view_.updateCell(cell, currentPlayer_);
 
 #ifdef QT_DEBUG
-    qDebug() << "Current playter: " << (currentPlayer_ == BoardMarks::X ? "X" : "O");
+    qDebug() << "[CORE] Current player: " << (currentPlayer_ == BoardMarks::X ? "X" : "O");
     board_.printBoard();
 #endif
     // Update board state and declare state if its a final state.
@@ -78,55 +112,9 @@ void TTTController::reset()
     view_.reset(cells_);
     // Resets the internal Representation of the board.
     board_.reset();
-    // Resets the AI agent.
-    // Uses the arrow operator to avoid calling unique_pointer::reset()
-    agent_->reset();
-    // Start AI play.
-    if (options_.AIstarts)
-        AIAgentPlay();
-    else{
-        HumanPlay();
-    }
-}
 
-void TTTController::AIAgentPlay()
-{
-    qDebug() << "AIAgentPlay called!";
-    int cellIdx = agent_->play(board_);
-    qDebug() << "AI tries to play at index:" << cellIdx << "with mark" << (int)currentPlayer_;
-
-    if (cellIdx != defaults::INVALID_CELL) {
-        Cell &cell = cells_.at(static_cast<size_t>(cellIdx));
-        qDebug() << "Cell status before play:" << (int)board_.at(cell.row, cell.col);
-        updateGame(cell);
-    } else {
-        qDebug() << "AI returned INVALID_CELL!";
-    }
-}
-
-void TTTController::HumanPlay()
-{
-    // Crea una instancia en heap (para no destruirla al salir del scope)
-    SpeechToText *stt = new SpeechToText();
-    stt->configuration();
-
-    // Ejecuta el reconocimiento en un hilo aparte
-    QFuture<void> future = QtConcurrent::run([this]() {
-        SpeechToText stt;
-        stt.configuration();
-        stt.init();
-        stt.listen();
-
-        QString hyp = QString::fromUtf8(stt.hyp);
-
-        // Enviar de forma segura al hilo principal:
-        QMetaObject::invokeMethod(this, [this, hyp]() {
-            emit speechRecognized(hyp);
-        }, Qt::QueuedConnection);
-
-        stt.free();
-    });
-
+    // Start.
+    playerX_->play();
 }
 
 void TTTController::switchPlayer()
@@ -146,94 +134,30 @@ void TTTController::updateGame(Cell &cell)
         BoardMarks prevPlayer = currentPlayer_;
         updateGameState(cell);
 
-        qDebug() << "PrevPlayer:" << (prevPlayer == BoardMarks::X ? "X" : "O")
+        qDebug() << "[CORE] PrevPlayer:" << (prevPlayer == BoardMarks::X ? "X" : "O")
                  << ", currentPlayer:" << (currentPlayer_ == BoardMarks::X ? "X" : "O");
-        sendMove(cell.row,cell.col,currentPlayer_ == BoardMarks::X ? 'X' : 'O');
-    }
-
-}
-
-void TTTController::onSpeechRecognized(const QString &text)
-{
-#ifdef QT_DEBUG
-    qDebug() << "Reconocido:" << text;
-#endif
-
-    // Aquí conviertes la frase en cellIdx como antes
-    int cellIdx = parseSpeechToCell(text);
-    if (cellIdx != defaults::INVALID_CELL) {
-        updateGame(cells_.at(static_cast<size_t>(cellIdx)));
-    } else {
-        // Si no entendió, pedir otra vez
-        HumanPlay();
-    }
-}
-
-void TTTController::setupNetwork() {
-    socket_ = new QTcpSocket(this);
-
-    connect(socket_, &QTcpSocket::connected, []() {
-        qDebug() << "[NET] Conectado al servidor.";
-    });
-
-    connect(socket_, &QTcpSocket::errorOccurred, [](QAbstractSocket::SocketError err) {
-        qWarning() << "[NET] Error TCP:" << err;
-    });
-
-    connect(socket_, &QTcpSocket::readyRead, this, &TTTController::onSocketReadyRead);
-
-    socket_->connectToHost("192.168.1.135", 5000); // IP del servidor
-}
-
-void TTTController::onSocketReadyRead() {
-    QByteArray data = socket_->readAll();
-    QString msg = QString::fromUtf8(data).trimmed();
-    qDebug() << "[NET] Recibido:" << msg;
-
-    if (msg == "DONE") {
-        qDebug() << "[GAME] Movimiento completado por el robot.";
-        BoardMarks prevPlayer = currentPlayer_;
-        switchPlayer();
-        if (options_.AIstarts) {
-            if(prevPlayer == BoardMarks::X){
-            // AIPlayed
-                qDebug() << "Emit AIFinished";
-                emit AIFinished();
-                return;
-            }
-            else if(prevPlayer == BoardMarks::O){
-            //HumanPlayed
-                qDebug() << "Emit humanFinished";
-                emit humanFinished();
-                return;
-            }
-
+        // Network send move to server
+        {
+            QString msg = "";
+            msg = QString::number(cell.row) + "," + QString::number(cell.col) + QString(currentPlayer_ == BoardMarks::X ? "X" : "O");
+            network_->sendMessage(msg);
         }
-        else if (!options_.AIstarts){
-            if(prevPlayer == BoardMarks::X){
-            //HumanPlayed
-                qDebug() << "Emit humanFinished";
-                emit humanFinished();
-                return;
-            }
-            else if(prevPlayer == BoardMarks::O){
-            //AIPlayed
-                qDebug() << "Emit AIFinished";
-                emit AIFinished();
-                return;
-            }
-            qDebug() << "Emit AIFinished";
-            emit AIFinished();
-            return;
-        }
+
     }
 }
 
-
-void TTTController::sendMove(int row, int col, char player) {
-    if (socket_ && socket_->isOpen()) {
-        QString msg = QString("MOVE %1 %2 %3\n").arg(row).arg(col).arg(player);
-        socket_->write(msg.toUtf8());
+void TTTController::onNetworkMessageReceived(const QString& msg){
+    if(msg == "DONE"){
+        if(board_.evaluateBoard() == BoardState::NoWinner){
+            switchPlayer();
+            if(currentPlayer_ == BoardMarks::X){
+                playerX_->play();
+            }else{
+                playerO_->play();
+            }
+        } else {
+            reset();
+        }
     }
 }
 

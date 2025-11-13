@@ -20,6 +20,7 @@ signals:
     void disconnected();
     void errorOccurred(const QString &error);
     void messageSent(const QString &message);
+    void messageReceived(const QString &message);
 
 private slots:
     void onConnected();

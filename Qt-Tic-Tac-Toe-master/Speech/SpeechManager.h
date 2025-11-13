@@ -9,7 +9,7 @@
 #include <portaudio.h>
 #include <pocketsphinx.h>
 #include <signal.h>
-#include "ConfigManager.h"
+#include <ConfigManager.h>
 
 
 class SpeechManager : public QObject

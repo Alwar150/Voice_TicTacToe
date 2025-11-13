@@ -16,8 +16,9 @@
  */
 
 class MiniMaxAgent final : public AIAgent
-Q_OBJECT
 {
+Q_OBJECT
+
 public:
     /**
      * @brief MiniMaxAgent: a constructor function that creates the MiniMax Agent.
@@ -25,13 +26,13 @@ public:
      * @param AImark: The mark (X or O) of the AI.
      * @param playerMark: The mark (X or O) of the human player.
      */
-    MiniMaxAgent(QObject* parent = nullptr, BoardMarks AImark,const Board& board,unsigned short depth);
+    explicit MiniMaxAgent(const Board& board,BoardMarks AImark,unsigned short depth, QObject* parent = nullptr);
     /**
      * @brief Start the minimax algorithm to choose a cell to play based on a given board.
      * @param board: a reference to the board model.
      * @return the chosen cell index (in a 1D array) that the AI played.
      */
-    int play() override;
+    void play() override;
 
 private:
     /**

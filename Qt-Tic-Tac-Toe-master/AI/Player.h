@@ -8,20 +8,23 @@
  * in the Tic Tac Toe game, such as human players and AI players.
  */
 class Player : public QObject
-{ 
+{
+    Q_OBJECT
     public:
-    Player(QObject *parent_ = nullptr, BoardMarks playerMark, const Board& borad_ref) : 
-    parent(parent_),
-    mark_(playerMark) {}
+    explicit Player(const BoardMarks& playerMark, const Board& board_ref, QObject *parent_ = nullptr) :
+        QObject(parent_),
+        board_(&board_ref),
+        mark_(playerMark){}
     virtual ~Player() {}
     virtual void play() = 0;
+
     signals:
-    void playerFinished(const int& cell);
+    void playerFinished(int const& cell);
 
     protected:
     
     const Board* board_;
-    const BoardMarks mark_;
+    const BoardMarks& mark_;
 
 };
 
