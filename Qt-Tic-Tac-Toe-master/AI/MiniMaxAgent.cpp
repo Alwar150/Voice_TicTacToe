@@ -2,8 +2,8 @@
 #include <QPair>
 #include <limits.h>
 
-MiniMaxAgent::MiniMaxAgent(QObject* parent = nullptr, BoardMarks AImark, const Board& board,unsigned short depth)
-    : AIAgent(parent,AImark,board), depth_(depth){}
+MiniMaxAgent::MiniMaxAgent( const Board& board,BoardMarks AImark,unsigned short depth, QObject* parent)
+    : AIAgent(AImark,board,parent), depth_(depth){}
 
 short MiniMaxAgent::maxMove(Board &board, unsigned short depth, short alpha, short beta) const
 {
@@ -89,12 +89,12 @@ short MiniMaxAgent::score(const BoardState state) const
     return TIE_SCORE;
 }
 
-int MiniMaxAgent::play()
+void MiniMaxAgent::play()
 {
-    Board copy_ = this->*board;
+    Board copy_(*board_);
     // No play if the board is at a final state.
     if (BoardState::NoWinner != copy_.evaluateBoard())
-        return defaults::INVALID_CELL;
+        emit playerFinished(-1);
 
     // Start of the minimax algorith and choose the best score of all available cells.
     int bestScore = INT_MIN;
@@ -122,5 +122,6 @@ int MiniMaxAgent::play()
     // Set the AI choice on the board.
     copy_.setPlayerInput(bestEntry.first, bestEntry.second, mark_);
     // Return the 1D index of the cell to delegate any other updates needed.
-    return static_cast<int>(bestEntry.first * copy_.size() + bestEntry.second);
+    emit playerFinished( static_cast<int>(bestEntry.first * copy_.size() + bestEntry.second));
+    return;
 }

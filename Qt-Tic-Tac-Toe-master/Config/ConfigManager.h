@@ -6,6 +6,7 @@
 #include <QSettings>
 #include <QDir>
 #include <QDebug>
+#include <QCoreApplication>
 
 /**
  * @brief The ConfigManager class
@@ -52,7 +53,7 @@ public:
      * @brief Devuelve un valor como booleano.
      */
     bool getBool(const QString& key, bool defaultValue = false) const;
-
+    QString resolvePath(const QString& relativePath) const;
 private:
     explicit ConfigManager(QObject *parent = nullptr);
     ~ConfigManager() override = default;
@@ -62,6 +63,7 @@ private:
     ConfigManager& operator=(const ConfigManager&) = delete;
 
     QSettings* settings_ = nullptr;
+    QString baseDir_;
 };
 
 #endif // CONFIGMANAGER_H

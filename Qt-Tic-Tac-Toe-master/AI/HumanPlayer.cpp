@@ -1,49 +1,32 @@
 #include "HumanPlayer.h"
 
-HumanPlayer::HumanPlayer(QObject& parent = nullptr, const Board& board_ref, BoardMarks playerMark = BoardMarks::Empty) 
-: Player(parent, playerMark, board_ref){
-    stt_ = new SpeechManager(this);
+HumanPlayer::HumanPlayer(const Board& board_ref, BoardMarks playerMark,QObject* parent)
+: Player(playerMark, board_ref, parent){
+    stt_ = new SpeechManager();
     sttThread_ = nullptr;
     stt_->configure();
     // 1. Conectar la señal del hilo principal (HumanPlayer) con el slot de SpeechManager
     // startListening() -> slot startSpeechRecognition() en el hilo worker
     connect(this, &HumanPlayer::startListening,
-            speechManager_, &SpeechManager::startListening,
+            stt_, &SpeechManager::startListening,
             Qt::QueuedConnection);
 
-    // 2. Conectar la señal de SpeechManager (hipótesis reconocida) con el slot de HumanPlayer
-    // Esto se ejecuta en el hilo principal
-    connect(speechManager_, &SpeechManager::speechRecognized,
-            this, [this]() {
-                QString hyp = speechManager_->getCurrentHyp(); // obtener hipótesis
-                QMetaObject::invokeMethod(this, "onSpeechRecognized",
-                                          Qt::QueuedConnection,
-                                          Q_ARG(QString, hyp));
-            });
-
     // 3. Conectar señal para detener la escucha y devolver SpeechManager al hilo principal
-    connect(this, &HumanPlayer::stopListening, speechManager_, [this]() {
-        speechThread_->quit();
-        speechThread_->wait();  // Espera a que termine el hilo
-        speechManager_->moveToThread(this->thread()); // devuelve al hilo principal
+    connect(this, &HumanPlayer::stopListening, stt_, [this]() {
+        sttThread_->quit();
+        sttThread_->wait();  // Espera a que termine el hilo
+        stt_->moveToThread(this->thread()); // devuelve al hilo principal
     });
+
+    connect(stt_, &SpeechManager::speechRecognized, this, &HumanPlayer::parseSpeechCommand);
+}
+
 
     void HumanPlayer::play(){
         sttThread_ = new QThread(this);
         stt_->moveToThread(sttThread_);
         sttThread_->start();
         emit startListening();
-    }
-
-    void HumanPlayer::onSpeechRecognized(const QString &text){
-        int cell = parseSpeechCommand(text);
-        if (cell != -1) {
-            emit playerFinished(cell);
-            emit stopListening();
-        } else {
-            qDebug() << "[HumanPlayer] Comando no válido:" << text;
-            emit startListening(); // Reiniciar escucha
-        }
     }
 
     void HumanPlayer::parseSpeechCommand(const QString &text){
@@ -62,20 +45,20 @@ HumanPlayer::HumanPlayer(QObject& parent = nullptr, const Board& board_ref, Boar
         // Determinar fila
         if (first == "arriba" || second == "arriba") {
             row = 0;
-        } else if (first == "centro" || second == "centro") {
-            row = 1;
         } else if (first == "abajo" || second == "abajo") {
             row = 2;
+        } else if (first == "centro" || second == "centro") {
+            row = 1;
         }
         // Determinar columna
         if (first == "izquierda" || second == "izquierda") {
             col = 0;
-        } else if (first == "centro" || second == "centro") {
-            col = 1;
         } else if (first == "derecha" || second == "derecha") {
             col = 2;
+        } else if (first == "centro" || second == "centro") {
+            col = 1;
         }
-        if(board_->at(row, col) != BoardMarks::EMPTY){
+        if(board_->at(row, col) != BoardMarks::Empty){
             emit startListening();
             return; // Celda ya ocupada
         }

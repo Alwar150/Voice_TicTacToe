@@ -18,20 +18,30 @@ void ConfigManager::load(const QString& filePath)
     QString configPath;
 
     if (!filePath.isEmpty()) {
-        configPath = filePath;
+        configPath = QDir::cleanPath(filePath);
     } else {
-        // Busca "config.ini" en el directorio actual de ejecución
-        QString localPath = QDir::currentPath() + QDir::separator() + "config.ini";
-        if (QFile::exists(localPath)) {
-            configPath = localPath;
+        // Si existe variable de entorno CONFIG_PATH, usarla
+        QString envPath = qEnvironmentVariable("CONFIG_PATH");
+        if (!envPath.isEmpty() && QFile::exists(envPath)) {
+            configPath = QDir::cleanPath(envPath);
         } else {
-            // Busca también en el mismo directorio que el ejecutable
-            QString execDir = QCoreApplication::applicationDirPath() + QDir::separator() + "config.ini";
-            if (QFile::exists(execDir))
-                configPath = execDir;
-            else {
-                qWarning() << "[ConfigManager] No se encontró config.ini. Se usará configuración por defecto.";
-                return;
+            // Busca config.ini en el directorio actual
+            QDir currentDir(QDir::currentPath());
+            QString localPath = currentDir.filePath("config.ini");
+
+            if (QFile::exists(localPath)) {
+                configPath = QDir::cleanPath(localPath);
+            } else {
+                // Busca también en el mismo directorio del ejecutable
+                QDir execDir(QCoreApplication::applicationDirPath());
+                QString execPath = execDir.filePath("config.ini");
+
+                if (QFile::exists(execPath))
+                    configPath = QDir::cleanPath(execPath);
+                else {
+                    qWarning() << "[ConfigManager] No se encontró config.ini.";
+                    return;
+                }
             }
         }
     }
@@ -40,8 +50,13 @@ void ConfigManager::load(const QString& filePath)
         delete settings_;
 
     settings_ = new QSettings(configPath, QSettings::IniFormat);
+
+    // ⚙️ Guardamos la ruta base para resolver rutas relativas más adelante
+    baseDir_ = QFileInfo(configPath).absolutePath();
+
     qDebug() << "[ConfigManager] Archivo de configuración cargado desde:" << configPath;
 }
+
 
 QString ConfigManager::getValue(const QString& key, const QString& defaultValue) const
 {
@@ -72,4 +87,10 @@ bool ConfigManager::getBool(const QString& key, bool defaultValue) const
     }
 
     return settings_->value(key, defaultValue).toBool();
+}
+
+QString ConfigManager::resolvePath(const QString& relativePath) const {
+    if (QDir(relativePath).isAbsolute())
+        return relativePath; // ya es absoluta
+    return QDir(baseDir_).filePath(relativePath);
 }

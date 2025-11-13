@@ -1,6 +1,7 @@
 #ifndef TTTCONTROLLER_H
 #define TTTCONTROLLER_H
-#include "AIAgent.h"
+#include "MiniMaxAgent.h"
+#include "HumanPlayer.h"
 #include "Board.h"
 #include "TTTCommonTypes.h"
 #include "TicTacToeGame.h"
@@ -49,9 +50,17 @@ protected:
      */
     BoardMarks currentPlayer_;
     /**
-     * @brief agent is the AI agent chosen to play against the human player.
+     * @brief player holding the Boardmarks::X
      */
-    unique_ptr<AIAgent> agent_;
+    unique_ptr<Player> playerX_;
+    /**
+     * @brief player holding the Boardmarks::X
+     */
+    unique_ptr<Player> playerO_;
+    /**
+     * @brief network managment object for socket communication purposes
+     */
+    NetworkManager* network_;
 
 private: // Methods
     /**
@@ -65,28 +74,16 @@ private: // Methods
      */
     void reset();
 
-    QTcpSocket *socket_;
-    void setupNetwork();
-    void sendMove(int row, int col, char player);
-
 protected: // Methods
     /**
      * @brief updateGameState updates the view and the model and switches the current player.
      * @param cell: the clicked cell that the player chooses.
      */
-    virtual void updateGameState(Cell &cell);
-    /**
-     * @brief AIAgentPlay calls the AI agent to play given the current board inputs.
-     */
-    virtual void AIAgentPlay();
-    /**
-     * @brief HumanPlay calls the Speech Recognition Engine for decoding input into Cell.
-     */
-    virtual void HumanPlay();
+    void updateGameState(Cell &cell);
     /**
      * @brief switchPlayer switches the current player mark (X to O and O to X).
      */
-    virtual void switchPlayer();
+    void switchPlayer();
 
 public:
     /**
@@ -99,41 +96,15 @@ public:
      * @brief startGame executes this QDialog to show the GUI and start the gameplay.
      */
     virtual void startGame();
-    int parseSpeechToCell(const QString &text)
-    {
-        QStringList keywords = text.split(' ', Qt::SkipEmptyParts);
-        if (keywords.size() < 2) return defaults::INVALID_CELL;
 
-        QString k1 = keywords[0];
-        QString k2 = keywords[1];
-
-        if (k1 == "arriba") {
-            if (k2 == "izquierda") return 0;
-            if (k2 == "arriba") return 1;
-            if (k2 == "derecha") return 2;
-        } else if (k1 == "centro") {
-            if (k2 == "izquierda") return 3;
-            if (k2 == "centro") return 4;
-            if (k2 == "derecha") return 5;
-            if (k2 == "arriba") return 1;
-            if (k2 == "abajo") return 7;
-        } else if (k1 == "abajo") {
-            if (k2 == "izquierda") return 6;
-            if (k2 == "centro") return 7;
-            if (k2 == "derecha") return 8;
-        }
-        return defaults::INVALID_CELL;
-    }
     QWidget* getView() { return &view_; }
-signals:
-    /**
-     * @brief turnFinished is emitted when the human player is finished with the cell input,
-     * and the internal game state is supposed to be updated.
-     */
-    void AIFinished();
 
-    void humanFinished();
-    void speechRecognized(QString);
+signals:
+    // NET
+
+    // Players
+
+
 
 
 public slots:
@@ -141,10 +112,10 @@ public slots:
      * @brief updateGame sets the cell clicked in the model (board).
      * @param cell: the clicked cell that the player chooses.
      */
-    virtual void updateGame(Cell &cell);
+    void updateGame(Cell &cell);
+
 private slots:
-    void onSpeechRecognized(const QString &text);
-    void onSocketReadyRead();
+    void onNetworkMessageReceived(const QString& msg);
 };
 
 #endif // TTTCONTROLLER_H
