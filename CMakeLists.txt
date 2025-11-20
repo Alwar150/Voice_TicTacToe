@@ -105,21 +105,40 @@ FetchContent_MakeAvailable(portaudio)
 endif(WIN32)
 
 if(UNIX)
-    FetchContent_Declare(
-  pocketsphinx
-  GIT_REPOSITORY https://github.com/MiguelFernandezLorenzo/pocketsphinx-deps-cmake.git
-  GIT_TAG        main
-  FIND_PACKAGE_ARGS NAMES PocketSphinx
-)
+    # Directorio de instalación de PocketSphinx
+    set(POCKETSPHINX_BASE_DIR "$ENV{HOME}/cmusphinx")
+    message(STATUS "usqueda establecida en ${POCKETSPHINX_BASE_DIR}")
+    # Rutas específicas
+    set(POCKETSPHINX_INCLUDE_DIR "${POCKETSPHINX_BASE_DIR}/include")
+    set(POCKETSPHINX_INCLUDE_DIR "${POCKETSPHINX_BASE_DIR}/include/pocketsphinx")
 
-FetchContent_Declare(
-  portaudio
-  GIT_REPOSITORY https://github.com/PortAudio/portaudio.git
-  GIT_TAG        v19.7.0 
-  FIND_PACKAGE_ARGS NAMES PortAudio
-)
+    # 2. Buscar el archivo de librería (lib/pocketsphinx.lib o lib/pocketsphinx.dll.a)
+    find_library(POCKETSPHINX_LIBRARY
+        NAMES pocketsphinx
+        PATHS "${POCKETSPHINX_BASE_DIR}/lib"
+        REQUIRED
+    )
 
-FetchContent_MakeAvailable(portaudio pocketsphinx)
+    # 3. Crear un target IMPORTADO para el enlace.
+    # Esto es crucial para que 'target_link_libraries' funcione.
+    if(POCKETSPHINX_LIBRARY)
+        # Crear un target INTERFACE para las cabeceras
+        add_library(pocketsphinx STATIC IMPORTED)
+
+    # Le decimos a CMake dónde está el archivo de librería
+    set_target_properties(pocketsphinx PROPERTIES
+        IMPORTED_LOCATION "${POCKETSPHINX_LIBRARY}"
+    )
+
+    # Le decimos a CMake dónde están las cabeceras para ese target
+    target_include_directories(pocketsphinx INTERFACE
+        "${POCKETSPHINX_INCLUDE_DIR}"
+    )
+        message(STATUS "PocketSphinx encontrado y target creado: ${POCKETSPHINX_LIBRARY}")
+    else()
+        message(FATAL_ERROR "PocketSphinx no encontrado en ${POCKETSPHINX_BASE_DIR}/lib. Por favor, instale la librería manualmente.")
+    endif()
+
 endif(UNIX)
 
 

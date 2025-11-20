@@ -134,12 +134,10 @@ void TTTController::updateGame(Cell &cell)
         BoardMarks prevPlayer = currentPlayer_;
         updateGameState(cell);
 
-        qDebug() << "[CORE] PrevPlayer:" << (prevPlayer == BoardMarks::X ? "X" : "O")
-                 << ", currentPlayer:" << (currentPlayer_ == BoardMarks::X ? "X" : "O");
         // Network send move to server
         {
             QString msg = "";
-            msg = QString::number(cell.row) + "," + QString::number(cell.col) + QString(currentPlayer_ == BoardMarks::X ? "X" : "O");
+            msg = QString::number(cell.row) + "," + QString::number(cell.col) + "," + QString(currentPlayer_ == BoardMarks::X ? "X" : "O");
             network_->sendMessage(msg);
         }
 

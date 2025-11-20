@@ -3,86 +3,108 @@
 #include "AIAgent.h"
 
 /**
- * @brief The MiniMaxAgent class handles all the logic
- * of picking a cell based on the MiniMax Algorithm.
+ * @brief La clase MiniMaxAgent implementa la lógica para seleccionar el mejor movimiento mediante el algoritmo Minimax.
  *
- * It simulates all possible plays taking turns simulating
- * an AI turn then a Player turn until a final state is
- * reached, then it scores the final state by giving a
- * negative value if the Player wins and a positive value
- * if it wins, then backtracks picking the minimum score
- * if it is the player turn and the max score if its
- * the AI turn.
+ * Hereda de AIAgent (la clase base para agentes de IA). Este agente simula recursivamente
+ * todos los posibles movimientos futuros hasta alcanzar un estado final o la profundidad máxima
+ * de búsqueda (`depth_`). Utiliza la **poda Alpha-Beta** para optimizar la búsqueda.
+ * El algoritmo evalúa los estados finales asignando puntuaciones: positiva para la victoria de la IA,
+ * negativa para la victoria del jugador humano, y cero para un empate.
  */
-
 class MiniMaxAgent final : public AIAgent
 {
-Q_OBJECT
+    Q_OBJECT
 
 public:
     /**
-     * @brief MiniMaxAgent: a constructor function that creates the MiniMax Agent.
-     * @param depth: cutoff of the minimax algorithm's search tree.
-     * @param AImark: The mark (X or O) of the AI.
-     * @param playerMark: The mark (X or O) of the human player.
+     * @brief Constructor de la clase MiniMaxAgent.
+     *
+     * Inicializa el agente con el tablero, el marcador asignado a la IA y la profundidad
+     * máxima para la búsqueda Minimax.
+     *
+     * @param board Referencia constante al tablero del juego.
+     * @param AImark El marcador (BoardMarks::X o BoardMarks::O) asignado a la IA.
+     * @param depth La profundidad máxima de búsqueda (cutoff) para el algoritmo Minimax.
+     * @param parent Puntero al objeto QObject padre.
      */
-    explicit MiniMaxAgent(const Board& board,BoardMarks AImark,unsigned short depth, QObject* parent = nullptr);
+    explicit MiniMaxAgent(const Board& board, BoardMarks AImark, unsigned short depth, QObject* parent = nullptr);
+
     /**
-     * @brief Start the minimax algorithm to choose a cell to play based on a given board.
-     * @param board: a reference to the board model.
-     * @return the chosen cell index (in a 1D array) that the AI played.
+     * @brief Inicia el algoritmo Minimax para determinar y ejecutar el mejor movimiento de la IA.
+     *
+     * Este método es la implementación de la función abstracta de la clase `Player`.
+     * Calcula la mejor celda y emite la señal `playerFinished` con el índice de la celda elegida.
      */
     void play() override;
 
 private:
     /**
-     * @brief depth cutoff of the minimax algorithm's search tree.
+     * @brief Profundidad máxima de búsqueda del árbol del algoritmo Minimax.
+     *
+     * Define el límite de cuántos movimientos futuros simulará el agente.
      */
     const unsigned short depth_;
+
     /**
-     * @brief playerMark_ returns the mark of the human player.
-     * @return the mark of the human player.
+     * @brief Devuelve el marcador del jugador humano.
+     *
+     * Determina automáticamente el marcador del jugador oponente basándose en el marcador de la IA.
+     * @return El marcador (BoardMarks::X o BoardMarks::O) del jugador humano.
      */
     inline BoardMarks playerMark_() const {
         return (BoardMarks::X == mark_) ? BoardMarks::O : BoardMarks::X;
     }
+
     /**
-     * @brief AI_WIN_SCORE defines the score of the final board when the AI wins.
+     * @brief Puntuación asignada al estado final cuando la IA gana la partida.
      */
     static constexpr short AI_WIN_SCORE = 1;
+
     /**
-     * @brief PLAYER_WIN_SCORE defines the score of the final board when the human player wins.
+     * @brief Puntuación asignada al estado final cuando el jugador humano gana la partida.
      */
     static constexpr short PLAYER_WIN_SCORE = -1;
+
     /**
-     * @brief TIE_SCORE defines the score of the final board when the the game is a tie.
+     * @brief Puntuación asignada al estado final cuando el juego termina en empate.
      */
     static constexpr short TIE_SCORE = 0;
 
     /**
-     * @brief maxMove simulates the AI choice based on the final game states,
-     * as it wants to win it will choose the maximum score of each simulated move.
-     * @param board: a reference to the board model.
-     * @param depth: The current depth of the search tree.
-     * @param alpha: The minimum score that the maximizing player is assured of.
-     * @param beta: The maximum score that the minimizing player is assured of.
-     * @return
+     * @brief Función del nodo maximizador (turno de la IA).
+     *
+     * Simula el turno de la IA, eligiendo la jugada que maximice la puntuación final
+     * y aplicando la poda Alpha-Beta.
+     *
+     * @param board Referencia al modelo del tablero (se modifica temporalmente durante la simulación).
+     * @param depth La profundidad actual del árbol de búsqueda.
+     * @param alpha El valor mínimo garantizado para el maximizador (IA).
+     * @param beta El valor máximo garantizado para el minimizador (Jugador).
+     * @return La máxima puntuación posible para el estado actual.
      */
     short maxMove(Board &board, unsigned short depth, short alpha, short beta) const;
+
     /**
-     * @brief minMove simulates the player choice based on the final game states,
-     * as it wants to win it will choose the minimum score of each simulated move.
-     * @param board: a reference to the board model.
-     * @param depth: The current depth of the search tree.
-     * @param alpha: The minimum score that the maximizing player is assured of.
-     * @param beta: The maximum score that the minimizing player is assured of.
-     * @return
+     * @brief Función del nodo minimizador (turno del jugador humano).
+     *
+     * Simula el turno del jugador humano, eligiendo la jugada que minimice la puntuación final
+     * de la IA y aplicando la poda Alpha-Beta.
+     *
+     * @param board Referencia al modelo del tablero (se modifica temporalmente durante la simulación).
+     * @param depth La profundidad actual del árbol de búsqueda.
+     * @param alpha El valor mínimo garantizado para el maximizador (IA).
+     * @param beta El valor máximo garantizado para el minimizador (Jugador).
+     * @return La mínima puntuación posible para el estado actual.
      */
     short minMove(Board &board, unsigned short depth, short alpha, short beta) const;
+
     /**
-     * @brief score associates a score to the final states of a game.
-     * @param state is an input paramater that specifies the state of the game.
-     * @return a score based on the state of the game.
+     * @brief Asocia una puntuación a un estado final del juego.
+     *
+     * Evalúa el estado del tablero determinando si hay un ganador, un perdedor o un empate.
+     *
+     * @param state El estado final del juego (BoardState).
+     * @return Una puntuación basada en el estado del juego (AI_WIN_SCORE, PLAYER_WIN_SCORE, TIE_SCORE).
      */
     short score(const BoardState state) const;
 };

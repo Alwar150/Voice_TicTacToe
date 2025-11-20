@@ -3,7 +3,9 @@
 HumanPlayer::HumanPlayer(const Board& board_ref, BoardMarks playerMark,QObject* parent)
 : Player(playerMark, board_ref, parent){
     stt_ = new SpeechManager();
-    sttThread_ = nullptr;
+    sttThread_ = new QThread(this);
+    sttThread_->start();
+    stt_->moveToThread(sttThread_);
     stt_->configure();
     // 1. Conectar la señal del hilo principal (HumanPlayer) con el slot de SpeechManager
     // startListening() -> slot startSpeechRecognition() en el hilo worker
@@ -11,21 +13,12 @@ HumanPlayer::HumanPlayer(const Board& board_ref, BoardMarks playerMark,QObject* 
             stt_, &SpeechManager::startListening,
             Qt::QueuedConnection);
 
-    // 3. Conectar señal para detener la escucha y devolver SpeechManager al hilo principal
-    connect(this, &HumanPlayer::stopListening, stt_, [this]() {
-        sttThread_->quit();
-        sttThread_->wait();  // Espera a que termine el hilo
-        stt_->moveToThread(this->thread()); // devuelve al hilo principal
-    });
-
     connect(stt_, &SpeechManager::speechRecognized, this, &HumanPlayer::parseSpeechCommand);
+    connect(sttThread_, &QThread::finished, this, &QObject::deleteLater);
 }
 
 
     void HumanPlayer::play(){
-        sttThread_ = new QThread(this);
-        stt_->moveToThread(sttThread_);
-        sttThread_->start();
         emit startListening();
     }
 
