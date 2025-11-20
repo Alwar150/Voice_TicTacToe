@@ -18,152 +18,151 @@ using std::unique_ptr;
 using std::vector;
 
 /**
- * @brief The TTTController class is the controller for a Tic Tac Toe game,
- * it takes in game options as input, and controls the view (TicTacToeGame)
- * and the model (Board) according to the game logic specified in this class,
- * it is also responsible for calling the AI agent to play its turn if specified
- * by the game options.
+ * @file TTTController.h
+ * @brief Definition of the TTTController class for the Tic-Tac-Toe game controller (MVC pattern)
+ * @author Miguel Fernández Lorenzo
+ * @version 1.0
+ * @date November 2025
  */
 
 /**
- * @brief La clase TTTController actúa como el controlador (C de MVC) para un juego de Tic-Tac-Toe.
+ * @brief The TTTController class acts as the controller (C in MVC) for a Tic-Tac-Toe game.
  *
- * TTTController gestiona la interacción entre la interfaz de usuario (la Vista, TicTacToeGame),
- * el estado del juego (el Modelo, Board) y la lógica de juego, incluyendo la gestión de
- * turnos, agentes de IA (MiniMaxAgent), jugadores humanos y la comunicación de red (NetworkManager).
- * Se encarga de recibir las opciones de juego y orquestar el flujo de la partida.
+ * TTTController manages the interaction between the user interface (the View, TicTacToeGame),
+ * the game state (the Model, Board) and the game logic, including turn management,
+ * AI agents (MiniMaxAgent), human players and network communication (NetworkManager).
+ * It is responsible for receiving game options and orchestrating the game flow.
  */
 class TTTController : public QObject
 {
     Q_OBJECT
 protected:
     /**
-     * @brief La vista (View) del juego de Tic-Tac-Toe.
+     * @brief The view (View) of the Tic-Tac-Toe game.
      */
     TicTacToeGame view_;
     /**
-     * @brief El modelo (Model) que representa el estado subyacente del tablero.
+     * @brief The model (Model) representing the underlying board state.
      */
     Board board_;
     /**
-     * @brief Colección de referencias a los elementos visuales (botones de celda) de la vista.
+     * @brief Collection of references to the visual elements (cell buttons) of the view.
      */
     vector<Cell> cells_;
     /**
-     * @brief Colección de valores y banderas que controlan el modo y opciones del juego.
+     * @brief Collection of values and flags that control the game mode and options.
      */
     const TTTOptions& options_;
     /**
-     * @brief El marcador (BoardMarks) del jugador al que le toca jugar el turno actual.
+     * @brief The marker (BoardMarks) of the player whose turn it is to play.
      */
     BoardMarks currentPlayer_;
     /**
-     * @brief Puntero único al objeto Player que utiliza la marca BoardMarks::X.
+     * @brief Unique pointer to the Player object using the BoardMarks::X marker.
      */
     unique_ptr<Player> playerX_;
     /**
-     * @brief Puntero único al objeto Player que utiliza la marca BoardMarks::O.
+     * @brief Unique pointer to the Player object using the BoardMarks::O marker.
      */
     unique_ptr<Player> playerO_;
     /**
-     * @brief Puntero al objeto NetworkManager para propósitos de comunicación de red (multijugador).
+     * @brief Pointer to the NetworkManager object for network communication purposes (multiplayer).
      */
     NetworkManager* network_;
 
 private: // Methods
     /**
-     * @brief Configura las conexiones de señales y slots entre la vista (GUI) y el controlador.
+     * @brief Configures signal and slot connections between the view (GUI) and the controller.
      *
-     * Este método establece las conexiones necesarias para manejar eventos de la GUI, como
-     * clics en las celdas o botones de menú.
+     * This method establishes the necessary connections to handle GUI events, such as
+     * clicks on cells or menu buttons.
      */
     void setConnections();
     /**
-     * @brief Reinicia todos los componentes internos del juego.
+     * @brief Resets all internal game components.
      *
-     * Restablece el modelo (Board), la vista (TicTacToeGame) y prepara los jugadores
-     * para una nueva partida. Si el agente de IA debe empezar, realiza el primer movimiento.
+     * Resets the model (Board), the view (TicTacToeGame) and prepares the players
+     * for a new game. If the AI agent should start, it makes the first move.
      */
     void reset();
 
 protected: // Methods
     /**
-     * @brief Actualiza el estado del juego después de un movimiento válido.
+     * @brief Updates the game state after a valid move.
      *
-     * Actualiza el modelo, refresca la vista, verifica condiciones de victoria/empate
-     * y cambia al siguiente jugador.
+     * Updates the model, refreshes the view, checks victory/tie conditions
+     * and switches to the next player.
      *
-     * @param cell Referencia a la celda que ha sido seleccionada por el jugador.
+     * @param cell Reference to the cell that has been selected by the player.
      */
     void updateGameState(Cell &cell);
     /**
-     * @brief Cambia el marcador del jugador actual (de X a O o de O a X).
+     * @brief Switches the current player marker (from X to O or from O to X).
      */
     void switchPlayer();
 
 public:
     /**
-     * @brief Constructor del controlador del juego.
+     * @brief Constructor of the game controller.
      *
-     * Inicializa el modelo, la vista, los jugadores (HumanPlayer, MiniMaxAgent) y
-     * establece las conexiones iniciales.
+     * Initializes the model, view, players (HumanPlayer, MiniMaxAgent) and
+     * establishes the initial connections.
      *
-     * @param options La colección de valores y banderas que controlan el juego.
-     * @param parent Puntero al objeto QObject padre que es dueño de esta instancia.
+     * @param options The collection of values and flags that control the game.
+     * @param parent Pointer to the parent QObject that owns this instance.
      */
     explicit TTTController(const TTTOptions &options, QObject *parent = nullptr);
 
     /**
-     * @brief Inicia la ejecución de la interfaz gráfica y el juego.
+     * @brief Starts the graphical interface execution and the game.
      *
-     * Muestra la GUI (generalmente llamando a `view_.exec()` o `view_.show()`)
-     * y comienza la lógica del juego.
+     * Shows the GUI (usually by calling `view_.exec()` or `view_.show()`)
+     * and begins the game logic.
      */
     virtual void startGame();
 
     /**
-     * @brief Devuelve un puntero al QWidget que representa la vista del juego.
-     * @return Puntero al objeto QWidget de la vista.
+     * @brief Returns a pointer to the QWidget representing the game view.
+     * @return Pointer to the view's QWidget object.
      */
     QWidget* getView() { return &view_; }
 
 signals:
     // --- NET ---
     /**
-     * @brief Señal emitida para enviar un mensaje a través de la red (si el modo es multijugador).
-     * @param msg El mensaje a enviar (típicamente una representación del movimiento).
+     * @brief Signal emitted to send a message through the network (if the mode is multiplayer).
+     * @param msg The message to send (typically a representation of the move).
      */
     void sendMessage(const QString& msg);
 
     // --- Players ---
     /**
-     * @brief Señal emitida para indicar a los jugadores que inicien su turno.
+     * @brief Signal emitted to indicate to players to start their turn.
      *
-     * Esta señal se puede conectar al método `play()` de los jugadores para iniciar
-     * la lógica de movimiento (e.g., esperar clic humano o calcular movimiento de IA).
+     * This signal can be connected to the `play()` method of players to start
+     * the move logic (e.g., wait for human click or calculate AI move).
      */
     void playTurn();
 
-
 public slots:
     /**
-     * @brief Slot invocado cuando una celda ha sido clickeada por un jugador humano.
+     * @brief Slot invoked when a cell has been clicked by a human player.
      *
-     * Recibe la celda clickeada y ejecuta la lógica de `updateGameState` si el movimiento
-     * es válido y es el turno de un jugador local.
+     * Receives the clicked cell and executes the `updateGameState` logic if the move
+     * is valid and it's a local player's turn.
      *
-     * @param cell Referencia a la celda clickeada que el jugador elige.
+     * @param cell Reference to the clicked cell that the player chooses.
      */
     void updateGame(Cell &cell);
 
 private slots:
     /**
-     * @brief Slot invocado al recibir un mensaje del NetworkManager.
+     * @brief Slot invoked when receiving a message from the NetworkManager.
      *
-     * Procesa el mensaje recibido (típicamente un movimiento de un jugador remoto)
-     * y actualiza el estado del juego.
+     * Processes the received message (typically a move from a remote player)
+     * and updates the game state.
      *
-     * @param msg La cadena de texto recibida a través de la red.
+     * @param msg The text string received through the network.
      */
     void onNetworkMessageReceived(const QString& msg);
 };

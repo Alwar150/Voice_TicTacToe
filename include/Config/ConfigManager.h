@@ -9,12 +9,19 @@
 #include <QCoreApplication>
 
 /**
- * @brief La clase ConfigManager gestiona la configuración de la aplicación.
+ * @file ConfigManager.h
+ * @brief Definition of the ConfigManager class for application configuration management
+ * @author Miguel Fernández Lorenzo
+ * @version 1.0
+ * @date November 2025
+ */
+
+/**
+ * @brief The ConfigManager class manages the application configuration.
  *
- * Gestiona la configuración de la aplicación desde un archivo config.ini.
- * Aplica el patrón **Singleton** para asegurar que solo existe una instancia
- * accesible globalmente, proporcionando un punto centralizado para acceder
- * a las opciones del programa.
+ * Manages the application configuration from a config.ini file.
+ * Applies the **Singleton** pattern to ensure only one globally accessible
+ * instance exists, providing a centralized point to access program options.
  */
 class ConfigManager final : public QObject
 {
@@ -22,91 +29,91 @@ class ConfigManager final : public QObject
 
 public:
     /**
-     * @brief Obtiene la instancia única del ConfigManager (Singleton).
+     * @brief Gets the unique instance of ConfigManager (Singleton).
      *
-     * Este es el punto de acceso global al gestor de configuración.
+     * This is the global access point to the configuration manager.
      *
-     * @return Referencia al único objeto ConfigManager.
+     * @return Reference to the unique ConfigManager object.
      */
     static ConfigManager& instance();
 
     /**
-     * @brief Carga el archivo de configuración desde la ruta indicada.
+     * @brief Loads the configuration file from the specified path.
      *
-     * Si no se especifica ruta, buscará un archivo `config.ini` en el directorio
-     * actual de la aplicación. Inicializa el objeto QSettings interno.
+     * If no path is specified, it will look for a `config.ini` file in the
+     * current application directory. Initializes the internal QSettings object.
      *
-     * @param filePath Ruta completa al archivo .ini. Si está vacío, usa el valor por defecto.
+     * @param filePath Complete path to the .ini file. If empty, uses the default value.
      */
     void load(const QString& filePath = QString());
 
     /**
-     * @brief Devuelve un valor del archivo INI como QString.
+     * @brief Returns a value from the INI file as QString.
      *
-     * Lee un valor del QSettings asociado. Si la clave no existe, devuelve el valor por defecto.
+     * Reads a value from the associated QSettings. If the key doesn't exist, returns the default value.
      *
-     * @param key Clave de la configuración (por ejemplo, "network/ip").
-     * @param defaultValue Valor por defecto si no se encuentra la clave.
-     * @return Valor asociado a la clave como QString.
+     * @param key Configuration key (e.g., "network/ip").
+     * @param defaultValue Default value if the key is not found.
+     * @return Value associated with the key as QString.
      */
     QString getValue(const QString& key, const QString& defaultValue = QString()) const;
 
     /**
-     * @brief Devuelve un valor del archivo INI como entero.
+     * @brief Returns a value from the INI file as integer.
      *
-     * Convierte el valor de la clave a un entero.
+     * Converts the key value to an integer.
      *
-     * @param key Clave de la configuración (por ejemplo, "audio/samplerate").
-     * @param defaultValue Valor por defecto si no se encuentra la clave.
-     * @return Valor asociado a la clave como int.
+     * @param key Configuration key (e.g., "audio/samplerate").
+     * @param defaultValue Default value if the key is not found.
+     * @return Value associated with the key as int.
      */
     int getInt(const QString& key, int defaultValue = 0) const;
 
     /**
-     * @brief Devuelve un valor del archivo INI como booleano.
+     * @brief Returns a value from the INI file as boolean.
      *
-     * Convierte el valor de la clave a un booleano (true si es "true", "on", "1", etc.).
+     * Converts the key value to a boolean (true if it's "true", "on", "1", etc.).
      *
-     * @param key Clave de la configuración (por ejemplo, "ai/enabled").
-     * @param defaultValue Valor por defecto si no se encuentra la clave.
-     * @return Valor asociado a la clave como bool.
+     * @param key Configuration key (e.g., "ai/enabled").
+     * @param defaultValue Default value if the key is not found.
+     * @return Value associated with the key as bool.
      */
     bool getBool(const QString& key, bool defaultValue = false) const;
 
     /**
-     * @brief Resuelve una ruta relativa utilizando el directorio base de la aplicación.
+     * @brief Resolves a relative path using the application base directory.
      *
-     * Utiliza el directorio base establecido durante la carga para convertir una
-     * ruta relativa (ej. "data/model.dat") en una ruta absoluta.
+     * Uses the base directory established during loading to convert a
+     * relative path (e.g., "data/model.dat") to an absolute path.
      *
-     * @param relativePath La ruta relativa a resolver.
-     * @return La ruta absoluta calculada.
+     * @param relativePath The relative path to resolve.
+     * @return The calculated absolute path.
      */
     QString resolvePath(const QString& relativePath) const;
 
 private:
     /**
-     * @brief Constructor privado.
+     * @brief Private constructor.
      *
-     * Privado para asegurar el patrón Singleton.
+     * Private to ensure the Singleton pattern.
      *
-     * @param parent Puntero al objeto padre (QObject).
+     * @param parent Pointer to the parent object (QObject).
      */
     explicit ConfigManager(QObject *parent = nullptr);
 
     /**
      * @brief Destructor.
      *
-     * Uso de `= default` para la implementación estándar.
+     * Uses `= default` for standard implementation.
      */
     ~ConfigManager() override = default;
 
-    // Bloquear copia y asignación
-    ConfigManager(const ConfigManager&) = delete;            ///< Constructor de copia bloqueado.
-    ConfigManager& operator=(const ConfigManager&) = delete; ///< Operador de asignación bloqueado.
+    // Block copy and assignment
+    ConfigManager(const ConfigManager&) = delete;            ///< Copy constructor blocked.
+    ConfigManager& operator=(const ConfigManager&) = delete; ///< Assignment operator blocked.
 
-    QSettings* settings_ = nullptr; ///< Puntero al objeto QSettings que maneja el archivo INI.
-    QString baseDir_;               ///< El directorio base del archivo de configuración cargado.
+    QSettings* settings_ = nullptr; ///< Pointer to the QSettings object that manages the INI file.
+    QString baseDir_;               ///< The base directory of the loaded configuration file.
 };
 
 #endif // CONFIGMANAGER_H

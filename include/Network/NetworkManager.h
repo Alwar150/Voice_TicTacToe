@@ -6,13 +6,21 @@
 #include <QTimer>
 
 /**
- * @brief Clase gestora de la comunicación de red TCP.
+ * @file NetworkManager.h
+ * @brief Definition of the NetworkManager class for TCP communication
+ * @author Miguel Fernández Lorenzo
+ * @version 1.0
+ * @date November 2025
+ */
+
+/**
+ * @brief TCP communication manager class.
  *
- * Esta clase proporciona una interfaz para conectar a un servidor TCP,
- * enviar y recibir mensajes de forma asíncrona utilizando QTcpSocket.
+ * This class provides an interface to connect to a TCP server,
+ * send and receive messages asynchronously using QTcpSocket.
  *
- * Emite señales para notificar el estado de la conexión, errores y
- * la recepción de mensajes.
+ * Emits signals to notify connection status, errors and
+ * message reception.
  */
 class NetworkManager : public QObject
 {
@@ -20,96 +28,96 @@ class NetworkManager : public QObject
 
 public:
     /**
-     * @brief Constructor de la clase NetworkManager.
+     * @brief Constructor of the NetworkManager class.
      *
-     * Inicializa el QTcpSocket.
+     * Initializes the QTcpSocket.
      *
-     * @param parent Puntero al objeto padre (QObject).
+     * @param parent Pointer to the parent object (QObject).
      */
     explicit NetworkManager(QObject *parent = nullptr);
 
     /**
-     * @brief Intenta establecer una conexión con un servidor remoto.
+     * @brief Attempts to establish a connection with a remote server.
      *
-     * Inicia el proceso de conexión no bloqueante. El resultado de la conexión
-     * se notifica a través de las señales connected() o errorOccurred().
+     * Starts the non-blocking connection process. The connection result
+     * is notified through the connected() or errorOccurred() signals.
      *
-     * @param ip La dirección IP o nombre de host del servidor (ej. "127.0.0.1").
-     * @param port El número de puerto TCP del servidor.
+     * @param ip The IP address or host name of the server (e.g., "127.0.0.1").
+     * @param port The TCP port number of the server.
      */
     void connectToServer(const QString &ip, quint16 port);
 
     /**
-     * @brief Envía un mensaje de texto al servidor conectado.
+     * @brief Sends a text message to the connected server.
      *
-     * El mensaje se convierte a bytes y se escribe en el socket.
+     * The message is converted to bytes and written to the socket.
      *
-     * @param message El mensaje de texto a enviar.
+     * @param message The text message to send.
      */
     void sendMessage(const QString &message);
 
 signals:
     /**
-     * @brief Señal emitida cuando la conexión TCP se ha establecido con éxito.
+     * @brief Signal emitted when the TCP connection is successfully established.
      */
     void connected();
 
     /**
-     * @brief Señal emitida cuando la conexión TCP se ha cerrado (por el host, el servidor o un error).
+     * @brief Signal emitted when the TCP connection is closed (by host, server or error).
      */
     void disconnected();
 
     /**
-     * @brief Señal emitida cuando ocurre un error durante la conexión o la transmisión.
-     * @param error Descripción del error.
+     * @brief Signal emitted when an error occurs during connection or transmission.
+     * @param error Description of the error.
      */
     void errorOccurred(const QString &error);
 
     /**
-     * @brief Señal emitida después de que un mensaje ha sido enviado al servidor.
-     * @param message El mensaje de texto que fue enviado.
+     * @brief Signal emitted after a message has been sent to the server.
+     * @param message The text message that was sent.
      */
     void messageSent(const QString &message);
 
     /**
-     * @brief Señal emitida cuando se ha recibido un mensaje completo del servidor.
-     * @param message El mensaje de texto recibido.
+     * @brief Signal emitted when a complete message has been received from the server.
+     * @param message The received text message.
      */
     void messageReceived(const QString &message);
 
 private slots:
     /**
-     * @brief Slot invocado cuando el QTcpSocket se conecta con éxito.
+     * @brief Slot invoked when the QTcpSocket connects successfully.
      *
-     * Emite la señal `connected()`.
+     * Emits the `connected()` signal.
      */
     void onConnected();
 
     /**
-     * @brief Slot invocado cuando el QTcpSocket se desconecta.
+     * @brief Slot invoked when the QTcpSocket disconnects.
      *
-     * Emite la señal `disconnected()`.
+     * Emits the `disconnected()` signal.
      */
     void onDisconnected();
 
     /**
-     * @brief Slot invocado cuando el QTcpSocket reporta un error.
+     * @brief Slot invoked when the QTcpSocket reports an error.
      *
-     * Mapea el error del socket a una descripción legible y emite `errorOccurred()`.
+     * Maps the socket error to a readable description and emits `errorOccurred()`.
      *
-     * @param socketError El código de error del socket.
+     * @param socketError The socket error code.
      */
     void onError(QAbstractSocket::SocketError socketError);
 
     /**
-     * @brief Slot invocado cuando hay nuevos datos listos para leer en el socket.
+     * @brief Slot invoked when there is new data ready to read in the socket.
      *
-     * Lee todos los datos disponibles y los procesa como un mensaje.
+     * Reads all available data and processes it as a message.
      */
     void onSocketReadyRead();
 
 private:
-    QTcpSocket *socket_; ///< Puntero al objeto QTcpSocket que gestiona la conexión TCP.
+    QTcpSocket *socket_; ///< Pointer to the QTcpSocket object that manages the TCP connection.
 };
 
 #endif //NETWORKMANAGER_H

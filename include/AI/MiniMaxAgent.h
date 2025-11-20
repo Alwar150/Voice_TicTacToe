@@ -3,13 +3,21 @@
 #include "AIAgent.h"
 
 /**
- * @brief La clase MiniMaxAgent implementa la lógica para seleccionar el mejor movimiento mediante el algoritmo Minimax.
+ * @file MiniMaxAgent.h
+ * @brief Definition of the MiniMaxAgent class implementing the Minimax algorithm with Alpha-Beta pruning
+ * @author Miguel Fernández Lorenzo
+ * @version 1.0
+ * @date November 2025
+ */
+
+/**
+ * @brief The MiniMaxAgent class implements the logic to select the best move using the Minimax algorithm.
  *
- * Hereda de AIAgent (la clase base para agentes de IA). Este agente simula recursivamente
- * todos los posibles movimientos futuros hasta alcanzar un estado final o la profundidad máxima
- * de búsqueda (`depth_`). Utiliza la **poda Alpha-Beta** para optimizar la búsqueda.
- * El algoritmo evalúa los estados finales asignando puntuaciones: positiva para la victoria de la IA,
- * negativa para la victoria del jugador humano, y cero para un empate.
+ * Inherits from AIAgent (the base class for AI agents). This agent recursively simulates
+ * all possible future moves until reaching a final state or the maximum search depth (`depth_`).
+ * Uses **Alpha-Beta pruning** to optimize the search.
+ * The algorithm evaluates final states by assigning scores: positive for AI victory,
+ * negative for human player victory, and zero for a tie.
  */
 class MiniMaxAgent final : public AIAgent
 {
@@ -17,94 +25,94 @@ class MiniMaxAgent final : public AIAgent
 
 public:
     /**
-     * @brief Constructor de la clase MiniMaxAgent.
+     * @brief Constructor for the MiniMaxAgent class.
      *
-     * Inicializa el agente con el tablero, el marcador asignado a la IA y la profundidad
-     * máxima para la búsqueda Minimax.
+     * Initializes the agent with the board, the marker assigned to the AI, and the maximum
+     * depth for the Minimax search.
      *
-     * @param board Referencia constante al tablero del juego.
-     * @param AImark El marcador (BoardMarks::X o BoardMarks::O) asignado a la IA.
-     * @param depth La profundidad máxima de búsqueda (cutoff) para el algoritmo Minimax.
-     * @param parent Puntero al objeto QObject padre.
+     * @param board Constant reference to the game board.
+     * @param AImark The marker (BoardMarks::X or BoardMarks::O) assigned to the AI.
+     * @param depth The maximum search depth (cutoff) for the Minimax algorithm.
+     * @param parent Pointer to the parent QObject.
      */
     explicit MiniMaxAgent(const Board& board, BoardMarks AImark, unsigned short depth, QObject* parent = nullptr);
 
     /**
-     * @brief Inicia el algoritmo Minimax para determinar y ejecutar el mejor movimiento de la IA.
+     * @brief Starts the Minimax algorithm to determine and execute the AI's best move.
      *
-     * Este método es la implementación de la función abstracta de la clase `Player`.
-     * Calcula la mejor celda y emite la señal `playerFinished` con el índice de la celda elegida.
+     * This method is the implementation of the abstract function from the `Player` class.
+     * Calculates the best cell and emits the `playerFinished` signal with the index of the chosen cell.
      */
     void play() override;
 
 private:
     /**
-     * @brief Profundidad máxima de búsqueda del árbol del algoritmo Minimax.
+     * @brief Maximum search depth of the Minimax algorithm tree.
      *
-     * Define el límite de cuántos movimientos futuros simulará el agente.
+     * Defines the limit of how many future moves the agent will simulate.
      */
     const unsigned short depth_;
 
     /**
-     * @brief Devuelve el marcador del jugador humano.
+     * @brief Returns the human player's marker.
      *
-     * Determina automáticamente el marcador del jugador oponente basándose en el marcador de la IA.
-     * @return El marcador (BoardMarks::X o BoardMarks::O) del jugador humano.
+     * Automatically determines the opponent player's marker based on the AI's marker.
+     * @return The marker (BoardMarks::X or BoardMarks::O) of the human player.
      */
     inline BoardMarks playerMark_() const {
         return (BoardMarks::X == mark_) ? BoardMarks::O : BoardMarks::X;
     }
 
     /**
-     * @brief Puntuación asignada al estado final cuando la IA gana la partida.
+     * @brief Score assigned to the final state when the AI wins the game.
      */
     static constexpr short AI_WIN_SCORE = 1;
 
     /**
-     * @brief Puntuación asignada al estado final cuando el jugador humano gana la partida.
+     * @brief Score assigned to the final state when the human player wins the game.
      */
     static constexpr short PLAYER_WIN_SCORE = -1;
 
     /**
-     * @brief Puntuación asignada al estado final cuando el juego termina en empate.
+     * @brief Score assigned to the final state when the game ends in a tie.
      */
     static constexpr short TIE_SCORE = 0;
 
     /**
-     * @brief Función del nodo maximizador (turno de la IA).
+     * @brief Maximizer node function (AI's turn).
      *
-     * Simula el turno de la IA, eligiendo la jugada que maximice la puntuación final
-     * y aplicando la poda Alpha-Beta.
+     * Simulates the AI's turn, choosing the move that maximizes the final score
+     * and applying Alpha-Beta pruning.
      *
-     * @param board Referencia al modelo del tablero (se modifica temporalmente durante la simulación).
-     * @param depth La profundidad actual del árbol de búsqueda.
-     * @param alpha El valor mínimo garantizado para el maximizador (IA).
-     * @param beta El valor máximo garantizado para el minimizador (Jugador).
-     * @return La máxima puntuación posible para el estado actual.
+     * @param board Reference to the board model (temporarily modified during simulation).
+     * @param depth The current depth of the search tree.
+     * @param alpha The minimum value guaranteed for the maximizer (AI).
+     * @param beta The maximum value guaranteed for the minimizer (Player).
+     * @return The maximum possible score for the current state.
      */
     short maxMove(Board &board, unsigned short depth, short alpha, short beta) const;
 
     /**
-     * @brief Función del nodo minimizador (turno del jugador humano).
+     * @brief Minimizer node function (human player's turn).
      *
-     * Simula el turno del jugador humano, eligiendo la jugada que minimice la puntuación final
-     * de la IA y aplicando la poda Alpha-Beta.
+     * Simulates the human player's turn, choosing the move that minimizes the AI's final score
+     * and applying Alpha-Beta pruning.
      *
-     * @param board Referencia al modelo del tablero (se modifica temporalmente durante la simulación).
-     * @param depth La profundidad actual del árbol de búsqueda.
-     * @param alpha El valor mínimo garantizado para el maximizador (IA).
-     * @param beta El valor máximo garantizado para el minimizador (Jugador).
-     * @return La mínima puntuación posible para el estado actual.
+     * @param board Reference to the board model (temporarily modified during simulation).
+     * @param depth The current depth of the search tree.
+     * @param alpha The minimum value guaranteed for the maximizer (AI).
+     * @param beta The maximum value guaranteed for the minimizer (Player).
+     * @return The minimum possible score for the current state.
      */
     short minMove(Board &board, unsigned short depth, short alpha, short beta) const;
 
     /**
-     * @brief Asocia una puntuación a un estado final del juego.
+     * @brief Assigns a score to a final game state.
      *
-     * Evalúa el estado del tablero determinando si hay un ganador, un perdedor o un empate.
+     * Evaluates the board state by determining if there is a winner, a loser, or a tie.
      *
-     * @param state El estado final del juego (BoardState).
-     * @return Una puntuación basada en el estado del juego (AI_WIN_SCORE, PLAYER_WIN_SCORE, TIE_SCORE).
+     * @param state The final game state (BoardState).
+     * @return A score based on the game state (AI_WIN_SCORE, PLAYER_WIN_SCORE, TIE_SCORE).
      */
     short score(const BoardState state) const;
 };

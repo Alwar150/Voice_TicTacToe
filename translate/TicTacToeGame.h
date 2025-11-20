@@ -9,13 +9,6 @@
 
 using std::vector;
 
-/**
- * @file TicTacToeGame.h
- * @brief Definition of the TicTacToeGame class for the game GUI
- * @author Miguel Fernández Lorenzo
- * @version 1.0
- * @date November 2025
- */
 
 /**
  * @brief The TicTacToeGame class is responsible for the GUI of a game,
@@ -24,6 +17,7 @@ using std::vector;
  * the title screen, and a button for resetting the game and playing a
  * new one.
  */
+
 class TicTacToeGame final : public QDialog
 {
     Q_OBJECT

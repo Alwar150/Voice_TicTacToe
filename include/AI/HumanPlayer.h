@@ -5,89 +5,98 @@
 #include <QThread>
 
 /**
- * @brief La clase HumanPlayer representa al jugador humano en el juego.
+ * @file HumanPlayer.h
+ * @brief Definition of the HumanPlayer class that represents the human player.
+ * @author Miguel Fernández Lorenzo
+ * @version 1.0
+ * @date November 2025
+ */
+
+/**
+ * @class HumanPlayer
+ * @brief The HumanPlayer class represents the human player in the game.
  *
- * Hereda de la clase base abstracta Player. Se encarga de capturar la entrada
- * del usuario (ya sea por clic en la GUI o, en este caso, por reconocimiento
- * de voz mediante SpeechManager) y convertirla en un movimiento válido en el tablero.
+ * Inherits from the abstract base class Player. It is responsible for capturing
+ * user input (either through GUI clicks or, in this case, through voice
+ * recognition using SpeechManager) and converting it into a valid move on the board.
  *
- * Utiliza un hilo de trabajo (`QThread`) dedicado para el procesamiento de voz
- * (`SpeechManager`) para evitar bloquear el hilo principal de la interfaz gráfica.
+ * Uses a dedicated worker thread (`QThread`) for voice processing
+ * (`SpeechManager`) to avoid blocking the main GUI thread.
  */
 class HumanPlayer final : public Player{
     Q_OBJECT
 
 public:
     /**
-     * @brief Constructor del jugador humano.
+     * @brief Constructor for the human player.
      *
-     * Inicializa la referencia al tablero y el marcador del jugador. También
-     * crea e inicializa el objeto SpeechManager y el hilo asociado.
+     * Initializes the reference to the board and the player's marker. Also
+     * creates and initializes the SpeechManager object and its associated thread.
      *
-     * @param board_ref Referencia constante al modelo del tablero.
-     * @param playerMark El marcador (BoardMarks::X o BoardMarks::O) asignado al jugador.
-     * @param parent Puntero al objeto QObject padre.
+     * @param board_ref Constant reference to the board model.
+     * @param playerMark The marker (BoardMarks::X or BoardMarks::O) assigned to the player.
+     * @param parent Pointer to the parent QObject.
      */
     explicit HumanPlayer(const Board& board_ref, BoardMarks playerMark = BoardMarks::Empty, QObject* parent = nullptr);
 
     /**
-     * @brief Destructor del jugador humano.
+     * @brief Destructor for the human player.
      *
-     * Se encarga de limpiar y terminar de forma segura el hilo de reconocimiento de voz.
+     * Handles the cleanup and safe termination of the voice recognition thread.
      */
     virtual ~HumanPlayer() {}
 
     /**
-     * @brief Inicia el turno del jugador humano.
+     * @brief Starts the human player's turn.
      *
-     * Este método sobrescrito inicia el hilo de reconocimiento de voz (`SpeechManager`)
-     * y le indica que comience la escucha, esperando un comando del usuario.
+     * This overridden method starts the voice recognition thread (`SpeechManager`)
+     * and instructs it to begin listening, waiting for a user command.
      */
     void play() override;
 
 signals:
     /**
-     * @brief Señal emitida para iniciar la escucha del micrófono en el hilo de trabajo.
+     * @brief Signal emitted to start microphone listening in the worker thread.
      */
     void startListening();
 
     /**
-     * @brief Señal emitida para detener la escucha del micrófono y apagar el hilo de trabajo.
+     * @brief Signal emitted to stop microphone listening and shut down the worker thread.
      */
     void stopListening();
 
 private:
     /**
-     * @brief Procesa el texto reconocido por el SpeechManager.
+     * @brief Processes the text recognized by the SpeechManager.
      *
-     * Este método recibe la hipótesis de texto (`text`) del sistema de reconocimiento de voz
-     * e inicia la validación del comando.
+     * This method receives the text hypothesis (`text`) from the voice recognition system
+     * and initiates command validation.
      *
-     * @param text La cadena de texto reconocida (comando de voz).
+     * @param text The recognized text string (voice command).
      */
     void parseSpeechCommand(const QString &text);
 
     /**
-     * @brief Valida si el comando de voz reconocido corresponde a un movimiento válido.
+     * @brief Validates whether the recognized voice command corresponds to a valid move.
      *
-     * Verifica que el comando sea entendible (ej. "jugar celda 5") y que la celda
-     * indicada esté disponible en el tablero.
+     * Verifies that the command is understandable (e.g., "play cell 5") and that the
+     * indicated cell is available on the board.
      *
-     * @param command La cadena de texto a validar.
-     * @return true si el comando es válido y la celda está disponible.
+     * @param command The text string to validate.
+     * @return true if the command is valid and the cell is available.
      */
     bool validateCommand(const QString &command);
 
     /**
-     * @brief Slot encargado de gestionar el ciclo de vida del hilo de trabajo.
+     * @brief Slot responsible for managing the worker thread lifecycle.
      *
-     * Ejecuta el proceso de finalización segura del hilo (`quit()`, `wait()`)
-     * y la liberación de recursos (`QThread::deleteLater`).
+     * Executes the safe thread termination process (`quit()`, `wait()`)
+     * and resource cleanup (`QThread::deleteLater`).
      */
     void handleThreadCleanup();
 
-    SpeechManager* stt_;    ///< Puntero al objeto SpeechManager, el *worker* para el reconocimiento de voz.
-    QThread* sttThread_;    ///< Puntero al hilo de trabajo dedicado a ejecutar el SpeechManager.
+    SpeechManager* stt_;    ///< Pointer to the SpeechManager object, the *worker* for voice recognition.
+    QThread* sttThread_;    ///< Pointer to the worker thread dedicated to running the SpeechManager.
 };
 
 #endif // HUMANPLAYER_H

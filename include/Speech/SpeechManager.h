@@ -11,116 +11,122 @@
 #include <signal.h>
 #include <ConfigManager.h>
 
+/**
+ * @file SpeechManager.h
+ * @brief Definition of the SpeechManager class for voice recognition using Pocketsphinx and PortAudio
+ * @author Miguel Fernández Lorenzo
+ * @version 1.0
+ * @date November 2025
+ */
 
 /**
- * @brief Clase gestora del reconocimiento de voz utilizando Pocketsphinx y PortAudio.
+ * @brief Voice recognition manager class using Pocketsphinx and PortAudio.
  *
- * Esta clase encapsula toda la lógica para la captura de audio (PortAudio) y
- * el procesamiento del reconocimiento de voz (Pocketsphinx) en un hilo de trabajo
- * separado.
+ * This class encapsulates all the logic for audio capture (PortAudio) and
+ * voice recognition processing (Pocketsphinx) in a separate worker thread.
  *
- * Emite señales cuando el discurso es reconocido, permitiendo la comunicación
- * segura con el hilo principal (Main Thread).
+ * Emits signals when speech is recognized, allowing safe communication
+ * with the main thread.
  */
 class SpeechManager : public QObject
 {
     Q_OBJECT
 public:
     /**
-     * @brief Constructor de la clase SpeechManager.
+     * @brief Constructor of the SpeechManager class.
      *
-     * Inicializa los punteros de los recursos de PortAudio y Pocketsphinx a nullptr
-     * y configura el objeto para la gestión de hilos.
+     * Initializes PortAudio and Pocketsphinx resource pointers to nullptr
+     * and configures the object for thread management.
      *
-     * @param parent Puntero al objeto padre (QObject).
+     * @param parent Pointer to the parent object (QObject).
      */
     explicit SpeechManager(QObject *parent = nullptr);
 
     /**
-     * @brief Destructor de la clase SpeechManager.
+     * @brief Destructor of the SpeechManager class.
      *
-     * Garantiza la liberación de todos los recursos de Pocketsphinx y PortAudio
-     * (`ps_free`, `Pa_Terminate`, etc.) para evitar pérdidas de memoria.
+     * Ensures the release of all Pocketsphinx and PortAudio resources
+     * (`ps_free`, `Pa_Terminate`, etc.) to prevent memory leaks.
      */
     ~SpeechManager();
 
     /**
-     * @brief Configura los parámetros iniciales de Pocketsphinx.
+     * @brief Configures the initial Pocketsphinx parameters.
      *
-     * Esta función se encarga de cargar los modelos de lenguaje, el diccionario y
-     * los parámetros acústicos en la estructura `ps_config_t`.
-     * Debe llamarse antes de `init()`.
+     * This function is responsible for loading language models, the dictionary and
+     * acoustic parameters into the `ps_config_t` structure.
+     * Must be called before `init()`.
      */
     void configure();
 
     /**
-     * @brief Inicializa el decodificador de Pocketsphinx y PortAudio.
+     * @brief Initializes the Pocketsphinx decoder and PortAudio.
      *
-     * Crea e inicializa el decodificador (`ps_decoder_t`) con la configuración
-     * establecida en `configure()` y prepara la captura de audio de PortAudio.
+     * Creates and initializes the decoder (`ps_decoder_t`) with the configuration
+     * established in `configure()` and prepares PortAudio audio capture.
      */
     void init();
 
     /**
-     * @brief Inicia la captura de audio y el bucle de reconocimiento de voz.
+     * @brief Starts audio capture and the voice recognition loop.
      *
-     * Abre el *stream* de audio de PortAudio e inicia el proceso de reconocimiento
-     * de voz continuo de Pocketsphinx. Debe ser llamado desde el hilo de trabajo.
+     * Opens the PortAudio audio stream and starts the Pocketsphinx
+     * continuous voice recognition process. Must be called from the worker thread.
      */
     void startListening();
 
 signals:
     /**
-     * @brief Señal emitida cuando una frase o comando ha sido reconocido.
-     * @param text La cadena de texto reconocida (la hipótesis).
+     * @brief Signal emitted when a phrase or command has been recognized.
+     * @param text The recognized text string (the hypothesis).
      */
     void speechRecognized(const QString &text);
 
     /**
-     * @brief Señal emitida cuando Pocketsphinx devuelve una nueva hipótesis.
+     * @brief Signal emitted when Pocketsphinx returns a new hypothesis.
      *
-     * Se utiliza principalmente para la comunicación interna entre métodos
-     * del worker thread antes de enviar el resultado al hilo principal.
+     * Mainly used for internal communication between methods
+     * of the worker thread before sending the result to the main thread.
      *
-     * @param hyp La hipótesis de reconocimiento como una cadena de caracteres C.
+     * @param hyp The recognition hypothesis as a C character string.
      */
     void speechReadyToProcess(const char *hyp);
 
 private slots:
     /**
-     * @brief Procesa el resultado de la hipótesis devuelta por Pocketsphinx.
+     * @brief Processes the hypothesis result returned by Pocketsphinx.
      *
-     * Este slot se encarga de realizar una validación final y emitir la señal
-     * `speechRecognized` si la hipótesis es válida.
+     * This slot is responsible for performing final validation and emitting the
+     * `speechRecognized` signal if the hypothesis is valid.
      *
-     * @param hyp La cadena de texto reconocida.
+     * @param hyp The recognized text string.
      */
     void processRecognitionResult(const char *hyp);
 
 private:
-    PaStream *stream_;           ///< Puntero al *stream* de audio de PortAudio.
-    PaError err_;                ///< Código de error de PortAudio.
-    ps_decoder_t *decoder_;      ///< Puntero principal al decodificador de Pocketsphinx.
-    ps_config_t *config_;        ///< Configuración utilizada por el decodificador.
-    ps_endpointer_t *ep_;        ///< Detector de final de voz (VAD) de Pocketsphinx.
-    short *frame_;               ///< *Buffer* para almacenar fragmentos de audio.
-    size_t frame_size_;          ///< Tamaño de los fragmentos de audio.
-    const char *hyp_;            ///< La hipótesis de reconocimiento actual.
+    PaStream *stream_;           ///< Pointer to the PortAudio audio stream.
+    PaError err_;                ///< PortAudio error code.
+    ps_decoder_t *decoder_;      ///< Main pointer to the Pocketsphinx decoder.
+    ps_config_t *config_;        ///< Configuration used by the decoder.
+    ps_endpointer_t *ep_;        ///< Pocketsphinx voice activity detector (VAD).
+    short *frame_;               ///< Buffer to store audio fragments.
+    size_t frame_size_;          ///< Size of audio fragments.
+    const char *hyp_;            ///< The current recognition hypothesis.
 
     /**
-     * @brief Verifica si la hipótesis de reconocimiento es válida.
+     * @brief Verifies if the recognition hypothesis is valid.
      *
-     * Comprueba si la hipótesis no es nula y cumple con los requisitos mínimos
-     * de confianza o longitud para ser considerada un comando.
-     * @return true si la hipótesis es válida.
+     * Checks if the hypothesis is not null and meets the minimum requirements
+     * of confidence or length to be considered a command.
+     * @return true if the hypothesis is valid.
      */
     bool hypIsValid();
 
     /**
-     * @brief Libera la memoria asignada en el *heap* (montón).
+     * @brief Frees memory allocated on the heap.
      *
-     * Función auxiliar utilizada por el destructor para liberar todos los punteros
-     * de Pocketsphinx y PortAudio.
+     * Helper function used by the destructor to free all Pocketsphinx
+     * and PortAudio pointers.
      */
     void freeHeap();
 };

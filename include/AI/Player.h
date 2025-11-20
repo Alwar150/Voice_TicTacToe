@@ -3,26 +3,33 @@
 // ... includes ...
 
 /**
- * @brief La clase Player es una clase base abstracta para diferentes tipos de jugadores.
+ * @file Player.h
+ * @brief Definition of the Player abstract base class for different player types
+ * @author Miguel Fernández Lorenzo
+ * @version 1.0
+ * @date November 2025
+ */
+
+/**
+ * @brief The Player class is an abstract base class for different types of players.
  *
- * Esta clase define la interfaz común para todos los participantes del juego
- * de Tic-Tac-Toe, ya sean jugadores humanos (HumanPlayer), agentes de IA
- * (MiniMaxAgent) o jugadores de red. Proporciona el mecanismo para iniciar
- * el turno (`play()`) y notificar el movimiento realizado.
+ * This class defines the common interface for all participants in the Tic-Tac-Toe game,
+ * whether they are human players (HumanPlayer), AI agents (MiniMaxAgent), or network players.
+ * It provides the mechanism to start the turn (`play()`) and notify the completed move.
  */
 class Player : public QObject
 {
     Q_OBJECT
 public:
     /**
-     * @brief Constructor de la clase base Player.
+     * @brief Constructor for the base Player class.
      *
-     * Inicializa el jugador con su marcador (X u O) y una referencia al tablero
-     * del juego para que el jugador pueda consultar su estado.
+     * Initializes the player with their marker (X or O) and a reference to the game board
+     * so the player can query its state.
      *
-     * @param playerMark El marcador (BoardMarks::X o BoardMarks::O) asignado al jugador.
-     * @param board_ref Referencia constante al objeto Board (Modelo) del juego.
-     * @param parent_ Puntero al objeto QObject padre (nullptr por defecto).
+     * @param playerMark The marker (BoardMarks::X or BoardMarks::O) assigned to the player.
+     * @param board_ref Constant reference to the game Board object (Model).
+     * @param parent_ Pointer to the parent QObject (nullptr by default).
      */
     explicit Player(const BoardMarks& playerMark, const Board& board_ref, QObject *parent_ = nullptr) :
         QObject(parent_),
@@ -30,41 +37,41 @@ public:
         mark_(playerMark){}
 
     /**
-     * @brief Destructor virtual.
+     * @brief Virtual destructor.
      *
-     * Permite la correcta destrucción de las clases derivadas a través de un puntero a la clase base.
+     * Allows proper destruction of derived classes through a base class pointer.
      */
     virtual ~Player() {}
 
     /**
-     * @brief Método abstracto puro para iniciar la lógica de movimiento del jugador.
+     * @brief Pure abstract method to start the player's move logic.
      *
-     * Las clases derivadas deben implementar este método para ejecutar la lógica de su turno
-     * (e.g., esperar una entrada de voz/clic, calcular el mejor movimiento de IA).
+     * Derived classes must implement this method to execute their turn logic
+     * (e.g., wait for voice/click input, calculate the best AI move).
      */
     virtual void play() = 0;
 
 signals:
     /**
-     * @brief Señal emitida cuando el jugador ha completado su movimiento.
+     * @brief Signal emitted when the player has completed their move.
      *
-     * Esta señal debe ser emitida por el jugador después de determinar su movimiento
-     * para notificar al controlador qué celda debe ser marcada.
+     * This signal should be emitted by the player after determining their move
+     * to notify the controller which cell should be marked.
      *
-     * @param cell El índice de la celda (0-8) elegida por el jugador.
+     * @param cell The index of the cell (0-8) chosen by the player.
      */
     void playerFinished(int const& cell);
 
 protected:
     /**
-     * @brief Puntero constante al tablero del juego.
+     * @brief Constant pointer to the game board.
      *
-     * Usado para consultar el estado actual de las celdas antes de realizar un movimiento.
+     * Used to query the current state of cells before making a move.
      */
     const Board* board_;
 
     /**
-     * @brief Referencia constante al marcador asignado a este jugador (X o O).
+     * @brief Constant reference to the marker assigned to this player (X or O).
      */
     const BoardMarks& mark_;
 

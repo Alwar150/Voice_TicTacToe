@@ -1,48 +1,57 @@
 #ifndef AIAGENT_H
 #define AIAGENT_H
 #include "Player.h"
+
 /**
- * @brief La interfaz AIAgent describe el comportamiento de cualquier agente de Inteligencia Artificial implementado.
- *
- * Esta clase base abstracta hereda de Player y establece una interfaz común
- * para todos los agentes de IA (como MiniMaxAgent). Define las funciones
- * básicas necesarias para que un agente reinicie su estado interno antes
- * de un nuevo turno o juego.
+ * @file AIAgent.h
+ * @brief Definition of the AIAgent interface for artificial intelligence agents
+ * @author Miguel Fernández Lorenzo
+ * @version 1.0
+ * @date November 2025
  */
 
-class Board; // Declaración anticipada (forward declaration)
+/**
+ * @brief The AIAgent interface describes the behavior of any implemented Artificial Intelligence agent.
+ *
+ * This abstract base class inherits from Player and establishes a common interface
+ * for all AI agents (such as MiniMaxAgent). It defines the basic functions
+ * necessary for an agent to reset its internal state before
+ * a new turn or game.
+ */
+
+class Board; // Forward declaration
 
 class AIAgent : public Player
 {
 public:
     /**
-     * @brief Constructor de la clase base AIAgent.
+     * @brief Constructor for the AIAgent base class.
      *
-     * Inicializa el agente con su marcador y una referencia al tablero.
+     * Initializes the agent with its marker and a reference to the board.
      *
-     * @param playerMark El marcador (BoardMarks::X o BoardMarks::O) asignado a la IA.
-     * @param borad_ref Referencia constante al objeto Board (Modelo) del juego.
-     * @param parent_ Puntero al objeto QObject padre (nullptr por defecto).
+     * @param playerMark The marker (BoardMarks::X or BoardMarks::O) assigned to the AI.
+     * @param borad_ref Constant reference to the game Board object (Model).
+     * @param parent_ Pointer to the parent QObject (nullptr by default).
      */
     AIAgent(BoardMarks playerMark, const Board& borad_ref, QObject *parent_ = nullptr)
         : Player(playerMark, borad_ref, parent_) {}
 
     /**
-     * @brief Destructor virtual.
+     * @brief Virtual destructor.
      *
-     * Permite la correcta destrucción de las clases derivadas a través de un puntero a la clase base.
+     * Allows proper destruction of derived classes through a base class pointer.
      */
     virtual ~AIAgent() {}
 
     /**
-     * @brief Función de reinicio que restablece el estado de cualquier algoritmo de búsqueda interno.
+     * @brief Reset function that restores the state of any internal search algorithm.
      *
-     * Este método es llamado típicamente al comienzo de una nueva partida.
-     * Las clases derivadas deben implementar este método para limpiar cualquier memoria caché
-     * o estructuras de datos utilizadas por sus algoritmos (aunque no es un método abstracto puro aquí,
-     * se define la intención de la función).
+     * This method is typically called at the beginning of a new game.
+     * Derived classes must implement this method to clear any cache memory
+     * or data structures used by their algorithms (although it's not a pure abstract method here,
+     * the function's intent is defined).
      */
-    virtual void reset() = 0; // Se hace abstracto para forzar la implementación en derivados
+    virtual void reset() = 0; // Made abstract to force implementation in derived classes
 };
 
 #endif // AIAGENT_H

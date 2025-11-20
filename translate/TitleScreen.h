@@ -6,18 +6,11 @@
 #include <memory>
 
 /**
- * @file TitleScreen.h
- * @brief Definition of the TitleScreen class for the main menu GUI
- * @author Miguel Fernández Lorenzo
- * @version 1.0
- * @date November 2025
- */
-
-/**
  * @brief The TitleScreen class is responsible for the GUI of the title screen,
  * its main functionality is to gather game options set by the user,
  * then starting a game by creating a Tic Tac Toe controller with the user options.
  */
+
 class TitleScreen final : public QMainWindow
 {
     Q_OBJECT
@@ -78,6 +71,7 @@ public slots:
      * @brief startGame hides the title screen and creates a Tic tac toe controller to start a game.
      */
     void startGame();
+
 
 signals:
     /**

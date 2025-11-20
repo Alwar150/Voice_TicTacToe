@@ -17,14 +17,6 @@ constexpr char O_COLOR[] = "#FF5722";
 constexpr char DEFAULT_COLOR[] = "#FFF";
 }
 /**
- * @file TTTCommonTypes.h
- * @brief Definition of common types and constants for the Tic-Tac-Toe game
- * @author Miguel Fernández Lorenzo
- * @version 1.0
- * @date November 2025
- */
-
-/**
  * @brief The Cell struct represents a board cell and all the necessary
  * information needed about the cell.
  */

@@ -7,21 +7,15 @@
 using std::vector;
 
 /**
- * @file Board.h
- * @brief Definition of the Board class representing the game model
- * @author Miguel Fernández Lorenzo
- * @version 1.0
- * @date November 2025
- */
-
-/**
  * @brief The Board class is responsible for representing
  * the underlying model of the game, it is a 2D matrix representation
  * of the GUI that is machine readable, and can be used when running
  * any sort of algorithms on the board.
  */
+
 class Board
 {
+
 protected: // Data
     /**
      * @brief board is a 2D vector that represents a machine readable
@@ -45,10 +39,7 @@ public:
      * @param b: The board to be copied.
      */
     Board(Board& b);
-    /**
-     * @brief Board copy of const constructor.
-     * @param b: The const board to be copied.
-     */
+
     Board(const Board& b);
     /**
      * @brief Board move constructor.
