@@ -1,0 +1,905 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Pocket\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sphinx API Documentation }{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Installation}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Unix-\/like systems}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Windows}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Compilation options}{2}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Using the Library}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Frequently Asked Questions}{3}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}My code no longer compiles! Why?}{3}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}What does ERROR\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}: "{}acmod.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c, line NN\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}: ..."{} mean?}{4}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}There is literally no output!}{4}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Why doesn\textquotesingle {}t my audio device work?}{4}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}The recognized text is wrong.}{4}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}Why don\textquotesingle {}t you support (pick one or more\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}: WFST, f\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MLLR, SAT, DNN, CTC, LAS, CNN, RNN, LSTM, etc)?}{4}{subsection.1.4.6}%
+\contentsline {section}{\numberline {1.5}Acknowledgements}{5}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Deprecated List }{7}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Directory Hierarchy}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Directories}{9}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Namespace Index}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Namespace List}{13}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Hierarchical Index}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Class Hierarchy}{15}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Class Index}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Class List}{17}{section.6.1}%
+\contentsline {chapter}{\numberline {7}File Index}{19}{chapter.7}%
+\contentsline {section}{\numberline {7.1}File List}{19}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Directory Documentation}{21}{chapter.8}%
+\contentsline {section}{\numberline {8.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI Directory Reference}{21}{section.8.1}%
+\contentsline {section}{\numberline {8.2}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config Directory Reference}{21}{section.8.2}%
+\contentsline {section}{\numberline {8.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller Directory Reference}{21}{section.8.3}%
+\contentsline {section}{\numberline {8.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/examples Directory Reference}{22}{section.8.4}%
+\contentsline {section}{\numberline {8.5}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/examples/include Directory Reference}{22}{section.8.5}%
+\contentsline {section}{\numberline {8.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include Directory Reference}{22}{section.8.6}%
+\contentsline {section}{\numberline {8.7}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model Directory Reference}{22}{section.8.7}%
+\contentsline {section}{\numberline {8.8}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network Directory Reference}{22}{section.8.8}%
+\contentsline {section}{\numberline {8.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/examples/include/pocketsphinx Directory Reference}{23}{section.8.9}%
+\contentsline {section}{\numberline {8.10}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx Directory Reference}{23}{section.8.10}%
+\contentsline {section}{\numberline {8.11}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master Directory Reference}{23}{section.8.11}%
+\contentsline {section}{\numberline {8.12}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech Directory Reference}{24}{section.8.12}%
+\contentsline {section}{\numberline {8.13}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/examples/test Directory Reference}{24}{section.8.13}%
+\contentsline {section}{\numberline {8.14}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Test Directory Reference}{24}{section.8.14}%
+\contentsline {section}{\numberline {8.15}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/examples/test/unit Directory Reference}{24}{section.8.15}%
+\contentsline {section}{\numberline {8.16}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View Directory Reference}{24}{section.8.16}%
+\contentsline {chapter}{\numberline {9}Namespace Documentation}{25}{chapter.9}%
+\contentsline {section}{\numberline {9.1}defaults Namespace Reference}{25}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Variable Documentation}{25}{subsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.1.1}DEFAULT\_BOARD\_SIZE}{25}{subsubsection.9.1.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.1.2}DEFAULT\_COLOR}{25}{subsubsection.9.1.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.1.3}DEFAULT\_MINIMAX\_DEPTH}{25}{subsubsection.9.1.1.3}%
+\contentsline {subsubsection}{\numberline {9.1.1.4}GUI\_CELL\_COLUMN\_SPAN}{26}{subsubsection.9.1.1.4}%
+\contentsline {subsubsection}{\numberline {9.1.1.5}GUI\_CELL\_ROW\_SPAN}{26}{subsubsection.9.1.1.5}%
+\contentsline {subsubsection}{\numberline {9.1.1.6}INVALID\_CELL}{26}{subsubsection.9.1.1.6}%
+\contentsline {subsubsection}{\numberline {9.1.1.7}O\_COLOR}{26}{subsubsection.9.1.1.7}%
+\contentsline {subsubsection}{\numberline {9.1.1.8}X\_COLOR}{26}{subsubsection.9.1.1.8}%
+\contentsline {chapter}{\numberline {10}Class Documentation}{27}{chapter.10}%
+\contentsline {section}{\numberline {10.1}AIAgent Class Reference}{27}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Constructor \& Destructor Documentation}{28}{subsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.1.1}AIAgent()}{28}{subsubsection.10.1.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.1.2}$\sim $AIAgent()}{28}{subsubsection.10.1.1.2}%
+\contentsline {subsection}{\numberline {10.1.2}Member Function Documentation}{28}{subsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.2.1}play()}{28}{subsubsection.10.1.2.1}%
+\contentsline {subsubsection}{\numberline {10.1.2.2}reset()}{29}{subsubsection.10.1.2.2}%
+\contentsline {section}{\numberline {10.2}anytype\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s Union Reference}{29}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Member Data Documentation}{29}{subsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.1.1}fl}{29}{subsubsection.10.2.1.1}%
+\contentsline {subsubsection}{\numberline {10.2.1.2}i}{29}{subsubsection.10.2.1.2}%
+\contentsline {subsubsection}{\numberline {10.2.1.3}ptr}{29}{subsubsection.10.2.1.3}%
+\contentsline {subsubsection}{\numberline {10.2.1.4}ui}{29}{subsubsection.10.2.1.4}%
+\contentsline {section}{\numberline {10.3}anytype\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Union Reference}{30}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Detailed Description}{30}{subsection.10.3.1}%
+\contentsline {section}{\numberline {10.4}Board Class Reference}{30}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Detailed Description}{31}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Constructor \& Destructor Documentation}{31}{subsection.10.4.2}%
+\contentsline {subsubsection}{\numberline {10.4.2.1}Board()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{31}{subsubsection.10.4.2.1}%
+\contentsline {subsubsection}{\numberline {10.4.2.2}Board()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{31}{subsubsection.10.4.2.2}%
+\contentsline {subsubsection}{\numberline {10.4.2.3}Board()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{31}{subsubsection.10.4.2.3}%
+\contentsline {subsubsection}{\numberline {10.4.2.4}Board()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{32}{subsubsection.10.4.2.4}%
+\contentsline {subsubsection}{\numberline {10.4.2.5}$\sim $Board()}{33}{subsubsection.10.4.2.5}%
+\contentsline {subsection}{\numberline {10.4.3}Member Function Documentation}{33}{subsection.10.4.3}%
+\contentsline {subsubsection}{\numberline {10.4.3.1}at()}{33}{subsubsection.10.4.3.1}%
+\contentsline {subsubsection}{\numberline {10.4.3.2}evaluateBoard()}{33}{subsubsection.10.4.3.2}%
+\contentsline {subsubsection}{\numberline {10.4.3.3}operator=()}{34}{subsubsection.10.4.3.3}%
+\contentsline {subsubsection}{\numberline {10.4.3.4}reset()}{34}{subsubsection.10.4.3.4}%
+\contentsline {subsubsection}{\numberline {10.4.3.5}resetCell()}{34}{subsubsection.10.4.3.5}%
+\contentsline {subsubsection}{\numberline {10.4.3.6}setPlayerInput()}{34}{subsubsection.10.4.3.6}%
+\contentsline {subsubsection}{\numberline {10.4.3.7}size()}{35}{subsubsection.10.4.3.7}%
+\contentsline {subsection}{\numberline {10.4.4}Member Data Documentation}{35}{subsection.10.4.4}%
+\contentsline {subsubsection}{\numberline {10.4.4.1}board\_}{35}{subsubsection.10.4.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.4.2}boardSize\_}{36}{subsubsection.10.4.4.2}%
+\contentsline {section}{\numberline {10.5}Cell Struct Reference}{36}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}Detailed Description}{36}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}Constructor \& Destructor Documentation}{36}{subsection.10.5.2}%
+\contentsline {subsubsection}{\numberline {10.5.2.1}Cell()}{36}{subsubsection.10.5.2.1}%
+\contentsline {subsection}{\numberline {10.5.3}Member Data Documentation}{37}{subsection.10.5.3}%
+\contentsline {subsubsection}{\numberline {10.5.3.1}cellBtn}{37}{subsubsection.10.5.3.1}%
+\contentsline {subsubsection}{\numberline {10.5.3.2}col}{37}{subsubsection.10.5.3.2}%
+\contentsline {subsubsection}{\numberline {10.5.3.3}row}{37}{subsubsection.10.5.3.3}%
+\contentsline {section}{\numberline {10.6}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{37}{section.10.6}%
+\contentsline {subsection}{\numberline {10.6.1}Detailed Description}{38}{subsection.10.6.1}%
+\contentsline {subsection}{\numberline {10.6.2}Constructor \& Destructor Documentation}{38}{subsection.10.6.2}%
+\contentsline {subsubsection}{\numberline {10.6.2.1}ConfigManager()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{38}{subsubsection.10.6.2.1}%
+\contentsline {subsubsection}{\numberline {10.6.2.2}$\sim $ConfigManager()}{38}{subsubsection.10.6.2.2}%
+\contentsline {subsubsection}{\numberline {10.6.2.3}ConfigManager()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{38}{subsubsection.10.6.2.3}%
+\contentsline {subsection}{\numberline {10.6.3}Member Function Documentation}{39}{subsection.10.6.3}%
+\contentsline {subsubsection}{\numberline {10.6.3.1}getBool()}{39}{subsubsection.10.6.3.1}%
+\contentsline {subsubsection}{\numberline {10.6.3.2}getInt()}{39}{subsubsection.10.6.3.2}%
+\contentsline {subsubsection}{\numberline {10.6.3.3}getValue()}{39}{subsubsection.10.6.3.3}%
+\contentsline {subsubsection}{\numberline {10.6.3.4}instance()}{39}{subsubsection.10.6.3.4}%
+\contentsline {subsubsection}{\numberline {10.6.3.5}load()}{40}{subsubsection.10.6.3.5}%
+\contentsline {subsubsection}{\numberline {10.6.3.6}operator=()}{40}{subsubsection.10.6.3.6}%
+\contentsline {subsection}{\numberline {10.6.4}Member Data Documentation}{40}{subsection.10.6.4}%
+\contentsline {subsubsection}{\numberline {10.6.4.1}settings\_}{40}{subsubsection.10.6.4.1}%
+\contentsline {section}{\numberline {10.7}fsg\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}model\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{40}{section.10.7}%
+\contentsline {subsection}{\numberline {10.7.1}Detailed Description}{41}{subsection.10.7.1}%
+\contentsline {subsection}{\numberline {10.7.2}Member Function Documentation}{41}{subsection.10.7.2}%
+\contentsline {subsubsection}{\numberline {10.7.2.1}fsg\_model\_accept()}{41}{subsubsection.10.7.2.1}%
+\contentsline {subsubsection}{\numberline {10.7.2.2}fsg\_model\_free()}{42}{subsubsection.10.7.2.2}%
+\contentsline {subsubsection}{\numberline {10.7.2.3}fsg\_model\_read()}{42}{subsubsection.10.7.2.3}%
+\contentsline {subsubsection}{\numberline {10.7.2.4}fsg\_model\_readfile()}{42}{subsubsection.10.7.2.4}%
+\contentsline {subsubsection}{\numberline {10.7.2.5}fsg\_model\_retain()}{43}{subsubsection.10.7.2.5}%
+\contentsline {subsubsection}{\numberline {10.7.2.6}fsg\_model\_write()}{43}{subsubsection.10.7.2.6}%
+\contentsline {subsubsection}{\numberline {10.7.2.7}fsg\_model\_write\_fsm()}{43}{subsubsection.10.7.2.7}%
+\contentsline {subsubsection}{\numberline {10.7.2.8}fsg\_model\_write\_symtab()}{43}{subsubsection.10.7.2.8}%
+\contentsline {subsubsection}{\numberline {10.7.2.9}fsg\_model\_writefile()}{43}{subsubsection.10.7.2.9}%
+\contentsline {subsubsection}{\numberline {10.7.2.10}fsg\_model\_writefile\_fsm()}{44}{subsubsection.10.7.2.10}%
+\contentsline {subsubsection}{\numberline {10.7.2.11}fsg\_model\_writefile\_symtab()}{44}{subsubsection.10.7.2.11}%
+\contentsline {subsubsection}{\numberline {10.7.2.12}jsgf\_read\_file()}{44}{subsubsection.10.7.2.12}%
+\contentsline {subsubsection}{\numberline {10.7.2.13}jsgf\_read\_string()}{44}{subsubsection.10.7.2.13}%
+\contentsline {section}{\numberline {10.8}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player Class Reference}{45}{section.10.8}%
+\contentsline {subsection}{\numberline {10.8.1}Constructor \& Destructor Documentation}{45}{subsection.10.8.1}%
+\contentsline {subsubsection}{\numberline {10.8.1.1}HumanPlayer()}{45}{subsubsection.10.8.1.1}%
+\contentsline {subsection}{\numberline {10.8.2}Member Function Documentation}{46}{subsection.10.8.2}%
+\contentsline {subsubsection}{\numberline {10.8.2.1}onSpeechRecognized}{46}{subsubsection.10.8.2.1}%
+\contentsline {subsubsection}{\numberline {10.8.2.2}parseSpeechCommand()}{46}{subsubsection.10.8.2.2}%
+\contentsline {subsubsection}{\numberline {10.8.2.3}play()}{46}{subsubsection.10.8.2.3}%
+\contentsline {subsubsection}{\numberline {10.8.2.4}startListening}{46}{subsubsection.10.8.2.4}%
+\contentsline {subsubsection}{\numberline {10.8.2.5}stopListening}{46}{subsubsection.10.8.2.5}%
+\contentsline {subsubsection}{\numberline {10.8.2.6}validateCommand()}{46}{subsubsection.10.8.2.6}%
+\contentsline {subsection}{\numberline {10.8.3}Member Data Documentation}{46}{subsection.10.8.3}%
+\contentsline {subsubsection}{\numberline {10.8.3.1}stt\_}{46}{subsubsection.10.8.3.1}%
+\contentsline {subsubsection}{\numberline {10.8.3.2}sttThread\_}{46}{subsubsection.10.8.3.2}%
+\contentsline {section}{\numberline {10.9}jsgf\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}rule\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{47}{section.10.9}%
+\contentsline {subsection}{\numberline {10.9.1}Detailed Description}{47}{subsection.10.9.1}%
+\contentsline {subsection}{\numberline {10.9.2}Member Function Documentation}{47}{subsection.10.9.2}%
+\contentsline {subsubsection}{\numberline {10.9.2.1}jsgf\_rule\_iter\_free()}{47}{subsubsection.10.9.2.1}%
+\contentsline {subsubsection}{\numberline {10.9.2.2}jsgf\_rule\_iter\_next()}{47}{subsubsection.10.9.2.2}%
+\contentsline {subsubsection}{\numberline {10.9.2.3}jsgf\_rule\_iter\_rule()}{47}{subsubsection.10.9.2.3}%
+\contentsline {section}{\numberline {10.10}jsgf\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}rule\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{48}{section.10.10}%
+\contentsline {subsection}{\numberline {10.10.1}Detailed Description}{48}{subsection.10.10.1}%
+\contentsline {subsection}{\numberline {10.10.2}Member Function Documentation}{48}{subsection.10.10.2}%
+\contentsline {subsubsection}{\numberline {10.10.2.1}jsgf\_rule\_name()}{48}{subsubsection.10.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.10.2.2}jsgf\_rule\_public()}{48}{subsubsection.10.10.2.2}%
+\contentsline {section}{\numberline {10.11}jsgf\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{48}{section.10.11}%
+\contentsline {subsection}{\numberline {10.11.1}Detailed Description}{49}{subsection.10.11.1}%
+\contentsline {subsection}{\numberline {10.11.2}Member Function Documentation}{49}{subsection.10.11.2}%
+\contentsline {subsubsection}{\numberline {10.11.2.1}jsgf\_build\_fsg()}{49}{subsubsection.10.11.2.1}%
+\contentsline {subsubsection}{\numberline {10.11.2.2}jsgf\_get\_public\_rule()}{49}{subsubsection.10.11.2.2}%
+\contentsline {subsubsection}{\numberline {10.11.2.3}jsgf\_get\_rule()}{49}{subsubsection.10.11.2.3}%
+\contentsline {subsubsection}{\numberline {10.11.2.4}jsgf\_grammar\_free()}{50}{subsubsection.10.11.2.4}%
+\contentsline {subsubsection}{\numberline {10.11.2.5}jsgf\_grammar\_name()}{50}{subsubsection.10.11.2.5}%
+\contentsline {subsubsection}{\numberline {10.11.2.6}jsgf\_parse\_file()}{50}{subsubsection.10.11.2.6}%
+\contentsline {subsubsection}{\numberline {10.11.2.7}jsgf\_parse\_string()}{50}{subsubsection.10.11.2.7}%
+\contentsline {subsubsection}{\numberline {10.11.2.8}jsgf\_rule\_iter()}{51}{subsubsection.10.11.2.8}%
+\contentsline {subsubsection}{\numberline {10.11.2.9}jsgf\_write\_fsg()}{51}{subsubsection.10.11.2.9}%
+\contentsline {section}{\numberline {10.12}logadd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s Struct Reference}{51}{section.10.12}%
+\contentsline {subsection}{\numberline {10.12.1}Member Data Documentation}{52}{subsection.10.12.1}%
+\contentsline {subsubsection}{\numberline {10.12.1.1}shift}{52}{subsubsection.10.12.1.1}%
+\contentsline {subsubsection}{\numberline {10.12.1.2}table}{52}{subsubsection.10.12.1.2}%
+\contentsline {subsubsection}{\numberline {10.12.1.3}table\_size}{52}{subsubsection.10.12.1.3}%
+\contentsline {subsubsection}{\numberline {10.12.1.4}width}{52}{subsubsection.10.12.1.4}%
+\contentsline {section}{\numberline {10.13}logadd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{52}{section.10.13}%
+\contentsline {subsection}{\numberline {10.13.1}Detailed Description}{52}{subsection.10.13.1}%
+\contentsline {section}{\numberline {10.14}logmath\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{53}{section.10.14}%
+\contentsline {subsection}{\numberline {10.14.1}Detailed Description}{53}{subsection.10.14.1}%
+\contentsline {subsection}{\numberline {10.14.2}Member Function Documentation}{53}{subsection.10.14.2}%
+\contentsline {subsubsection}{\numberline {10.14.2.1}logmath\_add()}{53}{subsubsection.10.14.2.1}%
+\contentsline {subsubsection}{\numberline {10.14.2.2}logmath\_add\_exact()}{54}{subsubsection.10.14.2.2}%
+\contentsline {subsubsection}{\numberline {10.14.2.3}logmath\_exp()}{54}{subsubsection.10.14.2.3}%
+\contentsline {subsubsection}{\numberline {10.14.2.4}logmath\_free()}{54}{subsubsection.10.14.2.4}%
+\contentsline {subsubsection}{\numberline {10.14.2.5}logmath\_get\_base()}{54}{subsubsection.10.14.2.5}%
+\contentsline {subsubsection}{\numberline {10.14.2.6}logmath\_get\_shift()}{54}{subsubsection.10.14.2.6}%
+\contentsline {subsubsection}{\numberline {10.14.2.7}logmath\_get\_table\_shape()}{55}{subsubsection.10.14.2.7}%
+\contentsline {subsubsection}{\numberline {10.14.2.8}logmath\_get\_width()}{55}{subsubsection.10.14.2.8}%
+\contentsline {subsubsection}{\numberline {10.14.2.9}logmath\_get\_zero()}{55}{subsubsection.10.14.2.9}%
+\contentsline {subsubsection}{\numberline {10.14.2.10}logmath\_init()}{55}{subsubsection.10.14.2.10}%
+\contentsline {subsubsection}{\numberline {10.14.2.11}logmath\_ln\_to\_log()}{56}{subsubsection.10.14.2.11}%
+\contentsline {subsubsection}{\numberline {10.14.2.12}logmath\_log()}{56}{subsubsection.10.14.2.12}%
+\contentsline {subsubsection}{\numberline {10.14.2.13}logmath\_log10\_to\_log()}{56}{subsubsection.10.14.2.13}%
+\contentsline {subsubsection}{\numberline {10.14.2.14}logmath\_log10\_to\_log\_float()}{56}{subsubsection.10.14.2.14}%
+\contentsline {subsubsection}{\numberline {10.14.2.15}logmath\_log\_float\_to\_log10()}{56}{subsubsection.10.14.2.15}%
+\contentsline {subsubsection}{\numberline {10.14.2.16}logmath\_log\_to\_ln()}{57}{subsubsection.10.14.2.16}%
+\contentsline {subsubsection}{\numberline {10.14.2.17}logmath\_log\_to\_log10()}{57}{subsubsection.10.14.2.17}%
+\contentsline {subsubsection}{\numberline {10.14.2.18}logmath\_read()}{57}{subsubsection.10.14.2.18}%
+\contentsline {subsubsection}{\numberline {10.14.2.19}logmath\_retain()}{57}{subsubsection.10.14.2.19}%
+\contentsline {subsubsection}{\numberline {10.14.2.20}logmath\_write()}{57}{subsubsection.10.14.2.20}%
+\contentsline {section}{\numberline {10.15}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent Class Reference}{58}{section.10.15}%
+\contentsline {subsection}{\numberline {10.15.1}Detailed Description}{59}{subsection.10.15.1}%
+\contentsline {subsection}{\numberline {10.15.2}Constructor \& Destructor Documentation}{59}{subsection.10.15.2}%
+\contentsline {subsubsection}{\numberline {10.15.2.1}MiniMaxAgent()}{59}{subsubsection.10.15.2.1}%
+\contentsline {subsection}{\numberline {10.15.3}Member Function Documentation}{59}{subsection.10.15.3}%
+\contentsline {subsubsection}{\numberline {10.15.3.1}maxMove()}{59}{subsubsection.10.15.3.1}%
+\contentsline {subsubsection}{\numberline {10.15.3.2}minMove()}{60}{subsubsection.10.15.3.2}%
+\contentsline {subsubsection}{\numberline {10.15.3.3}play()}{60}{subsubsection.10.15.3.3}%
+\contentsline {subsubsection}{\numberline {10.15.3.4}score()}{60}{subsubsection.10.15.3.4}%
+\contentsline {subsection}{\numberline {10.15.4}Member Data Documentation}{61}{subsection.10.15.4}%
+\contentsline {subsubsection}{\numberline {10.15.4.1}AI\_WIN\_SCORE}{61}{subsubsection.10.15.4.1}%
+\contentsline {subsubsection}{\numberline {10.15.4.2}AImark\_}{61}{subsubsection.10.15.4.2}%
+\contentsline {subsubsection}{\numberline {10.15.4.3}depth\_}{61}{subsubsection.10.15.4.3}%
+\contentsline {subsubsection}{\numberline {10.15.4.4}PLAYER\_WIN\_SCORE}{61}{subsubsection.10.15.4.4}%
+\contentsline {subsubsection}{\numberline {10.15.4.5}playerMark\_}{62}{subsubsection.10.15.4.5}%
+\contentsline {subsubsection}{\numberline {10.15.4.6}TIE\_SCORE}{62}{subsubsection.10.15.4.6}%
+\contentsline {section}{\numberline {10.16}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{62}{section.10.16}%
+\contentsline {subsection}{\numberline {10.16.1}Constructor \& Destructor Documentation}{63}{subsection.10.16.1}%
+\contentsline {subsubsection}{\numberline {10.16.1.1}NetworkManager()}{63}{subsubsection.10.16.1.1}%
+\contentsline {subsection}{\numberline {10.16.2}Member Function Documentation}{63}{subsection.10.16.2}%
+\contentsline {subsubsection}{\numberline {10.16.2.1}connected}{63}{subsubsection.10.16.2.1}%
+\contentsline {subsubsection}{\numberline {10.16.2.2}connectToServer()}{63}{subsubsection.10.16.2.2}%
+\contentsline {subsubsection}{\numberline {10.16.2.3}disconnected}{63}{subsubsection.10.16.2.3}%
+\contentsline {subsubsection}{\numberline {10.16.2.4}errorOccurred}{63}{subsubsection.10.16.2.4}%
+\contentsline {subsubsection}{\numberline {10.16.2.5}messageSent}{64}{subsubsection.10.16.2.5}%
+\contentsline {subsubsection}{\numberline {10.16.2.6}onConnected}{64}{subsubsection.10.16.2.6}%
+\contentsline {subsubsection}{\numberline {10.16.2.7}onDisconnected}{64}{subsubsection.10.16.2.7}%
+\contentsline {subsubsection}{\numberline {10.16.2.8}onError}{64}{subsubsection.10.16.2.8}%
+\contentsline {subsubsection}{\numberline {10.16.2.9}onSocketReadyRead}{64}{subsubsection.10.16.2.9}%
+\contentsline {subsubsection}{\numberline {10.16.2.10}sendMessage()}{64}{subsubsection.10.16.2.10}%
+\contentsline {subsection}{\numberline {10.16.3}Member Data Documentation}{65}{subsection.10.16.3}%
+\contentsline {subsubsection}{\numberline {10.16.3.1}socket\_}{65}{subsubsection.10.16.3.1}%
+\contentsline {section}{\numberline {10.17}ngram\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}class\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{65}{section.10.17}%
+\contentsline {subsection}{\numberline {10.17.1}Detailed Description}{65}{subsection.10.17.1}%
+\contentsline {section}{\numberline {10.18}ngram\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{65}{section.10.18}%
+\contentsline {subsection}{\numberline {10.18.1}Detailed Description}{65}{subsection.10.18.1}%
+\contentsline {subsection}{\numberline {10.18.2}Member Function Documentation}{66}{subsection.10.18.2}%
+\contentsline {subsubsection}{\numberline {10.18.2.1}ngram\_iter\_free()}{66}{subsubsection.10.18.2.1}%
+\contentsline {subsubsection}{\numberline {10.18.2.2}ngram\_iter\_get()}{66}{subsubsection.10.18.2.2}%
+\contentsline {subsubsection}{\numberline {10.18.2.3}ngram\_iter\_next()}{66}{subsubsection.10.18.2.3}%
+\contentsline {subsubsection}{\numberline {10.18.2.4}ngram\_iter\_successors()}{66}{subsubsection.10.18.2.4}%
+\contentsline {section}{\numberline {10.19}ngram\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}model\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}set\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{67}{section.10.19}%
+\contentsline {subsection}{\numberline {10.19.1}Detailed Description}{67}{subsection.10.19.1}%
+\contentsline {subsection}{\numberline {10.19.2}Member Function Documentation}{67}{subsection.10.19.2}%
+\contentsline {subsubsection}{\numberline {10.19.2.1}ngram\_model\_set\_iter\_free()}{67}{subsubsection.10.19.2.1}%
+\contentsline {subsubsection}{\numberline {10.19.2.2}ngram\_model\_set\_iter\_model()}{67}{subsubsection.10.19.2.2}%
+\contentsline {subsubsection}{\numberline {10.19.2.3}ngram\_model\_set\_iter\_next()}{68}{subsubsection.10.19.2.3}%
+\contentsline {section}{\numberline {10.20}ngram\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}model\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{68}{section.10.20}%
+\contentsline {subsection}{\numberline {10.20.1}Detailed Description}{69}{subsection.10.20.1}%
+\contentsline {subsection}{\numberline {10.20.2}Member Function Documentation}{70}{subsection.10.20.2}%
+\contentsline {subsubsection}{\numberline {10.20.2.1}ngram\_bg\_score()}{70}{subsubsection.10.20.2.1}%
+\contentsline {subsubsection}{\numberline {10.20.2.2}ngram\_file\_name\_to\_type()}{70}{subsubsection.10.20.2.2}%
+\contentsline {subsubsection}{\numberline {10.20.2.3}ngram\_iter()}{70}{subsubsection.10.20.2.3}%
+\contentsline {subsubsection}{\numberline {10.20.2.4}ngram\_model\_add\_class()}{70}{subsubsection.10.20.2.4}%
+\contentsline {subsubsection}{\numberline {10.20.2.5}ngram\_model\_add\_class\_word()}{71}{subsubsection.10.20.2.5}%
+\contentsline {subsubsection}{\numberline {10.20.2.6}ngram\_model\_add\_word()}{71}{subsubsection.10.20.2.6}%
+\contentsline {subsubsection}{\numberline {10.20.2.7}ngram\_model\_apply\_weights()}{72}{subsubsection.10.20.2.7}%
+\contentsline {subsubsection}{\numberline {10.20.2.8}ngram\_model\_casefold()}{72}{subsubsection.10.20.2.8}%
+\contentsline {subsubsection}{\numberline {10.20.2.9}ngram\_model\_flush()}{72}{subsubsection.10.20.2.9}%
+\contentsline {subsubsection}{\numberline {10.20.2.10}ngram\_model\_free()}{72}{subsubsection.10.20.2.10}%
+\contentsline {subsubsection}{\numberline {10.20.2.11}ngram\_model\_get\_counts()}{72}{subsubsection.10.20.2.11}%
+\contentsline {subsubsection}{\numberline {10.20.2.12}ngram\_model\_get\_size()}{73}{subsubsection.10.20.2.12}%
+\contentsline {subsubsection}{\numberline {10.20.2.13}ngram\_model\_get\_weights()}{73}{subsubsection.10.20.2.13}%
+\contentsline {subsubsection}{\numberline {10.20.2.14}ngram\_model\_mgrams()}{73}{subsubsection.10.20.2.14}%
+\contentsline {subsubsection}{\numberline {10.20.2.15}ngram\_model\_read()}{74}{subsubsection.10.20.2.15}%
+\contentsline {subsubsection}{\numberline {10.20.2.16}ngram\_model\_read\_classdef()}{75}{subsubsection.10.20.2.16}%
+\contentsline {subsubsection}{\numberline {10.20.2.17}ngram\_model\_retain()}{75}{subsubsection.10.20.2.17}%
+\contentsline {subsubsection}{\numberline {10.20.2.18}ngram\_model\_set\_add()}{76}{subsubsection.10.20.2.18}%
+\contentsline {subsubsection}{\numberline {10.20.2.19}ngram\_model\_set\_count()}{76}{subsubsection.10.20.2.19}%
+\contentsline {subsubsection}{\numberline {10.20.2.20}ngram\_model\_set\_current()}{76}{subsubsection.10.20.2.20}%
+\contentsline {subsubsection}{\numberline {10.20.2.21}ngram\_model\_set\_current\_wid()}{76}{subsubsection.10.20.2.21}%
+\contentsline {subsubsection}{\numberline {10.20.2.22}ngram\_model\_set\_init()}{77}{subsubsection.10.20.2.22}%
+\contentsline {subsubsection}{\numberline {10.20.2.23}ngram\_model\_set\_interp()}{77}{subsubsection.10.20.2.23}%
+\contentsline {subsubsection}{\numberline {10.20.2.24}ngram\_model\_set\_iter()}{77}{subsubsection.10.20.2.24}%
+\contentsline {subsubsection}{\numberline {10.20.2.25}ngram\_model\_set\_known\_wid()}{78}{subsubsection.10.20.2.25}%
+\contentsline {subsubsection}{\numberline {10.20.2.26}ngram\_model\_set\_lookup()}{78}{subsubsection.10.20.2.26}%
+\contentsline {subsubsection}{\numberline {10.20.2.27}ngram\_model\_set\_map\_words()}{78}{subsubsection.10.20.2.27}%
+\contentsline {subsubsection}{\numberline {10.20.2.28}ngram\_model\_set\_read()}{79}{subsubsection.10.20.2.28}%
+\contentsline {subsubsection}{\numberline {10.20.2.29}ngram\_model\_set\_remove()}{80}{subsubsection.10.20.2.29}%
+\contentsline {subsubsection}{\numberline {10.20.2.30}ngram\_model\_set\_select()}{80}{subsubsection.10.20.2.30}%
+\contentsline {subsubsection}{\numberline {10.20.2.31}ngram\_model\_write()}{81}{subsubsection.10.20.2.31}%
+\contentsline {subsubsection}{\numberline {10.20.2.32}ngram\_ng\_iter()}{81}{subsubsection.10.20.2.32}%
+\contentsline {subsubsection}{\numberline {10.20.2.33}ngram\_ng\_prob()}{81}{subsubsection.10.20.2.33}%
+\contentsline {subsubsection}{\numberline {10.20.2.34}ngram\_ng\_score()}{81}{subsubsection.10.20.2.34}%
+\contentsline {subsubsection}{\numberline {10.20.2.35}ngram\_prob()}{82}{subsubsection.10.20.2.35}%
+\contentsline {subsubsection}{\numberline {10.20.2.36}ngram\_probv()}{82}{subsubsection.10.20.2.36}%
+\contentsline {subsubsection}{\numberline {10.20.2.37}ngram\_score()}{82}{subsubsection.10.20.2.37}%
+\contentsline {subsubsection}{\numberline {10.20.2.38}ngram\_score\_to\_prob()}{83}{subsubsection.10.20.2.38}%
+\contentsline {subsubsection}{\numberline {10.20.2.39}ngram\_str\_to\_type()}{83}{subsubsection.10.20.2.39}%
+\contentsline {subsubsection}{\numberline {10.20.2.40}ngram\_tg\_score()}{83}{subsubsection.10.20.2.40}%
+\contentsline {subsubsection}{\numberline {10.20.2.41}ngram\_type\_to\_str()}{84}{subsubsection.10.20.2.41}%
+\contentsline {subsubsection}{\numberline {10.20.2.42}ngram\_unknown\_wid()}{84}{subsubsection.10.20.2.42}%
+\contentsline {subsubsection}{\numberline {10.20.2.43}ngram\_wid()}{84}{subsubsection.10.20.2.43}%
+\contentsline {subsubsection}{\numberline {10.20.2.44}ngram\_word()}{84}{subsubsection.10.20.2.44}%
+\contentsline {subsubsection}{\numberline {10.20.2.45}ngram\_zero()}{85}{subsubsection.10.20.2.45}%
+\contentsline {section}{\numberline {10.21}No\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent Class Reference}{85}{section.10.21}%
+\contentsline {subsection}{\numberline {10.21.1}Detailed Description}{86}{subsection.10.21.1}%
+\contentsline {subsection}{\numberline {10.21.2}Constructor \& Destructor Documentation}{86}{subsection.10.21.2}%
+\contentsline {subsubsection}{\numberline {10.21.2.1}NoAgent()}{86}{subsubsection.10.21.2.1}%
+\contentsline {subsubsection}{\numberline {10.21.2.2}$\sim $NoAgent()}{86}{subsubsection.10.21.2.2}%
+\contentsline {subsection}{\numberline {10.21.3}Member Function Documentation}{86}{subsection.10.21.3}%
+\contentsline {subsubsection}{\numberline {10.21.3.1}play()}{86}{subsubsection.10.21.3.1}%
+\contentsline {section}{\numberline {10.22}Player Class Reference}{87}{section.10.22}%
+\contentsline {subsection}{\numberline {10.22.1}Detailed Description}{88}{subsection.10.22.1}%
+\contentsline {subsection}{\numberline {10.22.2}Constructor \& Destructor Documentation}{88}{subsection.10.22.2}%
+\contentsline {subsubsection}{\numberline {10.22.2.1}Player()}{88}{subsubsection.10.22.2.1}%
+\contentsline {subsubsection}{\numberline {10.22.2.2}$\sim $Player()}{88}{subsubsection.10.22.2.2}%
+\contentsline {subsection}{\numberline {10.22.3}Member Function Documentation}{88}{subsection.10.22.3}%
+\contentsline {subsubsection}{\numberline {10.22.3.1}play()}{88}{subsubsection.10.22.3.1}%
+\contentsline {subsubsection}{\numberline {10.22.3.2}playerFinished}{88}{subsubsection.10.22.3.2}%
+\contentsline {subsection}{\numberline {10.22.4}Member Data Documentation}{88}{subsection.10.22.4}%
+\contentsline {subsubsection}{\numberline {10.22.4.1}board\_}{88}{subsubsection.10.22.4.1}%
+\contentsline {subsubsection}{\numberline {10.22.4.2}mark\_}{88}{subsubsection.10.22.4.2}%
+\contentsline {section}{\numberline {10.23}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}alignment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{89}{section.10.23}%
+\contentsline {subsection}{\numberline {10.23.1}Detailed Description}{89}{subsection.10.23.1}%
+\contentsline {subsection}{\numberline {10.23.2}Member Function Documentation}{89}{subsection.10.23.2}%
+\contentsline {subsubsection}{\numberline {10.23.2.1}ps\_alignment\_iter\_children()}{89}{subsubsection.10.23.2.1}%
+\contentsline {subsubsection}{\numberline {10.23.2.2}ps\_alignment\_iter\_free()}{89}{subsubsection.10.23.2.2}%
+\contentsline {subsubsection}{\numberline {10.23.2.3}ps\_alignment\_iter\_name()}{89}{subsubsection.10.23.2.3}%
+\contentsline {subsubsection}{\numberline {10.23.2.4}ps\_alignment\_iter\_next()}{90}{subsubsection.10.23.2.4}%
+\contentsline {subsubsection}{\numberline {10.23.2.5}ps\_alignment\_iter\_seg()}{90}{subsubsection.10.23.2.5}%
+\contentsline {section}{\numberline {10.24}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}alignment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{90}{section.10.24}%
+\contentsline {subsection}{\numberline {10.24.1}Detailed Description}{91}{subsection.10.24.1}%
+\contentsline {subsection}{\numberline {10.24.2}Member Function Documentation}{91}{subsection.10.24.2}%
+\contentsline {subsubsection}{\numberline {10.24.2.1}ps\_alignment\_free()}{91}{subsubsection.10.24.2.1}%
+\contentsline {subsubsection}{\numberline {10.24.2.2}ps\_alignment\_phones()}{91}{subsubsection.10.24.2.2}%
+\contentsline {subsubsection}{\numberline {10.24.2.3}ps\_alignment\_retain()}{91}{subsubsection.10.24.2.3}%
+\contentsline {subsubsection}{\numberline {10.24.2.4}ps\_alignment\_states()}{91}{subsubsection.10.24.2.4}%
+\contentsline {subsubsection}{\numberline {10.24.2.5}ps\_alignment\_words()}{91}{subsubsection.10.24.2.5}%
+\contentsline {section}{\numberline {10.25}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}arg\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s Struct Reference}{92}{section.10.25}%
+\contentsline {subsection}{\numberline {10.25.1}Member Data Documentation}{92}{subsection.10.25.1}%
+\contentsline {subsubsection}{\numberline {10.25.1.1}deflt}{92}{subsubsection.10.25.1.1}%
+\contentsline {subsubsection}{\numberline {10.25.1.2}doc}{92}{subsubsection.10.25.1.2}%
+\contentsline {subsubsection}{\numberline {10.25.1.3}name}{92}{subsubsection.10.25.1.3}%
+\contentsline {subsubsection}{\numberline {10.25.1.4}type}{92}{subsubsection.10.25.1.4}%
+\contentsline {section}{\numberline {10.26}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}arg\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{92}{section.10.26}%
+\contentsline {subsection}{\numberline {10.26.1}Detailed Description}{93}{subsection.10.26.1}%
+\contentsline {section}{\numberline {10.27}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{93}{section.10.27}%
+\contentsline {subsection}{\numberline {10.27.1}Detailed Description}{94}{subsection.10.27.1}%
+\contentsline {subsection}{\numberline {10.27.2}Member Function Documentation}{94}{subsection.10.27.2}%
+\contentsline {subsubsection}{\numberline {10.27.2.1}ps\_config\_bool()}{94}{subsubsection.10.27.2.1}%
+\contentsline {subsubsection}{\numberline {10.27.2.2}ps\_config\_float()}{94}{subsubsection.10.27.2.2}%
+\contentsline {subsubsection}{\numberline {10.27.2.3}ps\_config\_free()}{94}{subsubsection.10.27.2.3}%
+\contentsline {subsubsection}{\numberline {10.27.2.4}ps\_config\_get()}{94}{subsubsection.10.27.2.4}%
+\contentsline {subsubsection}{\numberline {10.27.2.5}ps\_config\_init()}{95}{subsubsection.10.27.2.5}%
+\contentsline {subsubsection}{\numberline {10.27.2.6}ps\_config\_int()}{95}{subsubsection.10.27.2.6}%
+\contentsline {subsubsection}{\numberline {10.27.2.7}ps\_config\_nistfile()}{95}{subsubsection.10.27.2.7}%
+\contentsline {subsubsection}{\numberline {10.27.2.8}ps\_config\_parse\_json()}{96}{subsubsection.10.27.2.8}%
+\contentsline {subsubsection}{\numberline {10.27.2.9}ps\_config\_retain()}{96}{subsubsection.10.27.2.9}%
+\contentsline {subsubsection}{\numberline {10.27.2.10}ps\_config\_serialize\_json()}{97}{subsubsection.10.27.2.10}%
+\contentsline {subsubsection}{\numberline {10.27.2.11}ps\_config\_set()}{97}{subsubsection.10.27.2.11}%
+\contentsline {subsubsection}{\numberline {10.27.2.12}ps\_config\_set\_bool()}{98}{subsubsection.10.27.2.12}%
+\contentsline {subsubsection}{\numberline {10.27.2.13}ps\_config\_set\_float()}{98}{subsubsection.10.27.2.13}%
+\contentsline {subsubsection}{\numberline {10.27.2.14}ps\_config\_set\_int()}{98}{subsubsection.10.27.2.14}%
+\contentsline {subsubsection}{\numberline {10.27.2.15}ps\_config\_set\_str()}{98}{subsubsection.10.27.2.15}%
+\contentsline {subsubsection}{\numberline {10.27.2.16}ps\_config\_soundfile()}{99}{subsubsection.10.27.2.16}%
+\contentsline {subsubsection}{\numberline {10.27.2.17}ps\_config\_str()}{99}{subsubsection.10.27.2.17}%
+\contentsline {subsubsection}{\numberline {10.27.2.18}ps\_config\_typeof()}{99}{subsubsection.10.27.2.18}%
+\contentsline {subsubsection}{\numberline {10.27.2.19}ps\_config\_validate()}{100}{subsubsection.10.27.2.19}%
+\contentsline {subsubsection}{\numberline {10.27.2.20}ps\_config\_wavfile()}{100}{subsubsection.10.27.2.20}%
+\contentsline {subsubsection}{\numberline {10.27.2.21}ps\_default\_search\_args()}{101}{subsubsection.10.27.2.21}%
+\contentsline {subsubsection}{\numberline {10.27.2.22}ps\_expand\_model\_config()}{101}{subsubsection.10.27.2.22}%
+\contentsline {subsubsection}{\numberline {10.27.2.23}ps\_init()}{101}{subsubsection.10.27.2.23}%
+\contentsline {subsection}{\numberline {10.27.3}Friends And Related Symbol Documentation}{102}{subsection.10.27.3}%
+\contentsline {subsubsection}{\numberline {10.27.3.1}ps\_default\_modeldir()}{102}{subsubsection.10.27.3.1}%
+\contentsline {section}{\numberline {10.28}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}decoder\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{102}{section.10.28}%
+\contentsline {subsection}{\numberline {10.28.1}Detailed Description}{103}{subsection.10.28.1}%
+\contentsline {subsection}{\numberline {10.28.2}Member Function Documentation}{103}{subsection.10.28.2}%
+\contentsline {subsubsection}{\numberline {10.28.2.1}ps\_activate\_search()}{103}{subsubsection.10.28.2.1}%
+\contentsline {subsubsection}{\numberline {10.28.2.2}ps\_add\_allphone()}{104}{subsubsection.10.28.2.2}%
+\contentsline {subsubsection}{\numberline {10.28.2.3}ps\_add\_allphone\_file()}{104}{subsubsection.10.28.2.3}%
+\contentsline {subsubsection}{\numberline {10.28.2.4}ps\_add\_fsg()}{105}{subsubsection.10.28.2.4}%
+\contentsline {subsubsection}{\numberline {10.28.2.5}ps\_add\_jsgf\_file()}{105}{subsubsection.10.28.2.5}%
+\contentsline {subsubsection}{\numberline {10.28.2.6}ps\_add\_jsgf\_string()}{105}{subsubsection.10.28.2.6}%
+\contentsline {subsubsection}{\numberline {10.28.2.7}ps\_add\_keyphrase()}{106}{subsubsection.10.28.2.7}%
+\contentsline {subsubsection}{\numberline {10.28.2.8}ps\_add\_kws()}{106}{subsubsection.10.28.2.8}%
+\contentsline {subsubsection}{\numberline {10.28.2.9}ps\_add\_lm()}{106}{subsubsection.10.28.2.9}%
+\contentsline {subsubsection}{\numberline {10.28.2.10}ps\_add\_lm\_file()}{107}{subsubsection.10.28.2.10}%
+\contentsline {subsubsection}{\numberline {10.28.2.11}ps\_add\_word()}{107}{subsubsection.10.28.2.11}%
+\contentsline {subsubsection}{\numberline {10.28.2.12}ps\_current\_search()}{107}{subsubsection.10.28.2.12}%
+\contentsline {subsubsection}{\numberline {10.28.2.13}ps\_decode\_raw()}{108}{subsubsection.10.28.2.13}%
+\contentsline {subsubsection}{\numberline {10.28.2.14}ps\_decode\_senscr()}{108}{subsubsection.10.28.2.14}%
+\contentsline {subsubsection}{\numberline {10.28.2.15}ps\_end\_utt()}{108}{subsubsection.10.28.2.15}%
+\contentsline {subsubsection}{\numberline {10.28.2.16}ps\_free()}{109}{subsubsection.10.28.2.16}%
+\contentsline {subsubsection}{\numberline {10.28.2.17}ps\_get\_alignment()}{109}{subsubsection.10.28.2.17}%
+\contentsline {subsubsection}{\numberline {10.28.2.18}ps\_get\_all\_time()}{109}{subsubsection.10.28.2.18}%
+\contentsline {subsubsection}{\numberline {10.28.2.19}ps\_get\_cmn()}{110}{subsubsection.10.28.2.19}%
+\contentsline {subsubsection}{\numberline {10.28.2.20}ps\_get\_config()}{110}{subsubsection.10.28.2.20}%
+\contentsline {subsubsection}{\numberline {10.28.2.21}ps\_get\_fsg()}{111}{subsubsection.10.28.2.21}%
+\contentsline {subsubsection}{\numberline {10.28.2.22}ps\_get\_hyp()}{111}{subsubsection.10.28.2.22}%
+\contentsline {subsubsection}{\numberline {10.28.2.23}ps\_get\_in\_speech()}{111}{subsubsection.10.28.2.23}%
+\contentsline {subsubsection}{\numberline {10.28.2.24}ps\_get\_kws()}{112}{subsubsection.10.28.2.24}%
+\contentsline {subsubsection}{\numberline {10.28.2.25}ps\_get\_lattice()}{112}{subsubsection.10.28.2.25}%
+\contentsline {subsubsection}{\numberline {10.28.2.26}ps\_get\_lm()}{113}{subsubsection.10.28.2.26}%
+\contentsline {subsubsection}{\numberline {10.28.2.27}ps\_get\_logmath()}{113}{subsubsection.10.28.2.27}%
+\contentsline {subsubsection}{\numberline {10.28.2.28}ps\_get\_n\_frames()}{113}{subsubsection.10.28.2.28}%
+\contentsline {subsubsection}{\numberline {10.28.2.29}ps\_get\_prob()}{114}{subsubsection.10.28.2.29}%
+\contentsline {subsubsection}{\numberline {10.28.2.30}ps\_get\_utt\_time()}{114}{subsubsection.10.28.2.30}%
+\contentsline {subsubsection}{\numberline {10.28.2.31}ps\_load\_dict()}{114}{subsubsection.10.28.2.31}%
+\contentsline {subsubsection}{\numberline {10.28.2.32}ps\_lookup\_word()}{115}{subsubsection.10.28.2.32}%
+\contentsline {subsubsection}{\numberline {10.28.2.33}ps\_nbest()}{115}{subsubsection.10.28.2.33}%
+\contentsline {subsubsection}{\numberline {10.28.2.34}ps\_process\_cep()}{116}{subsubsection.10.28.2.34}%
+\contentsline {subsubsection}{\numberline {10.28.2.35}ps\_process\_raw()}{117}{subsubsection.10.28.2.35}%
+\contentsline {subsubsection}{\numberline {10.28.2.36}ps\_reinit()}{118}{subsubsection.10.28.2.36}%
+\contentsline {subsubsection}{\numberline {10.28.2.37}ps\_reinit\_feat()}{118}{subsubsection.10.28.2.37}%
+\contentsline {subsubsection}{\numberline {10.28.2.38}ps\_remove\_search()}{119}{subsubsection.10.28.2.38}%
+\contentsline {subsubsection}{\numberline {10.28.2.39}ps\_retain()}{119}{subsubsection.10.28.2.39}%
+\contentsline {subsubsection}{\numberline {10.28.2.40}ps\_save\_dict()}{119}{subsubsection.10.28.2.40}%
+\contentsline {subsubsection}{\numberline {10.28.2.41}ps\_search\_iter()}{120}{subsubsection.10.28.2.41}%
+\contentsline {subsubsection}{\numberline {10.28.2.42}ps\_seg\_iter()}{120}{subsubsection.10.28.2.42}%
+\contentsline {subsubsection}{\numberline {10.28.2.43}ps\_set\_align\_text()}{120}{subsubsection.10.28.2.43}%
+\contentsline {subsubsection}{\numberline {10.28.2.44}ps\_set\_alignment()}{121}{subsubsection.10.28.2.44}%
+\contentsline {subsubsection}{\numberline {10.28.2.45}ps\_set\_cmn()}{121}{subsubsection.10.28.2.45}%
+\contentsline {subsubsection}{\numberline {10.28.2.46}ps\_start\_stream()}{122}{subsubsection.10.28.2.46}%
+\contentsline {subsubsection}{\numberline {10.28.2.47}ps\_start\_utt()}{122}{subsubsection.10.28.2.47}%
+\contentsline {subsubsection}{\numberline {10.28.2.48}ps\_update\_mllr()}{122}{subsubsection.10.28.2.48}%
+\contentsline {section}{\numberline {10.29}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}endpointer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{123}{section.10.29}%
+\contentsline {subsection}{\numberline {10.29.1}Detailed Description}{123}{subsection.10.29.1}%
+\contentsline {subsection}{\numberline {10.29.2}Member Function Documentation}{123}{subsection.10.29.2}%
+\contentsline {subsubsection}{\numberline {10.29.2.1}ps\_endpointer\_end\_stream()}{123}{subsubsection.10.29.2.1}%
+\contentsline {subsubsection}{\numberline {10.29.2.2}ps\_endpointer\_free()}{124}{subsubsection.10.29.2.2}%
+\contentsline {subsubsection}{\numberline {10.29.2.3}ps\_endpointer\_in\_speech()}{124}{subsubsection.10.29.2.3}%
+\contentsline {subsubsection}{\numberline {10.29.2.4}ps\_endpointer\_init()}{125}{subsubsection.10.29.2.4}%
+\contentsline {subsubsection}{\numberline {10.29.2.5}ps\_endpointer\_process()}{125}{subsubsection.10.29.2.5}%
+\contentsline {subsubsection}{\numberline {10.29.2.6}ps\_endpointer\_retain()}{126}{subsubsection.10.29.2.6}%
+\contentsline {subsubsection}{\numberline {10.29.2.7}ps\_endpointer\_set\_timestamp\_func()}{126}{subsubsection.10.29.2.7}%
+\contentsline {subsubsection}{\numberline {10.29.2.8}ps\_endpointer\_speech\_end()}{126}{subsubsection.10.29.2.8}%
+\contentsline {subsubsection}{\numberline {10.29.2.9}ps\_endpointer\_speech\_start()}{127}{subsubsection.10.29.2.9}%
+\contentsline {subsubsection}{\numberline {10.29.2.10}ps\_endpointer\_timestamp()}{127}{subsubsection.10.29.2.10}%
+\contentsline {subsubsection}{\numberline {10.29.2.11}ps\_endpointer\_vad()}{127}{subsubsection.10.29.2.11}%
+\contentsline {section}{\numberline {10.30}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}latlink\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{127}{section.10.30}%
+\contentsline {subsection}{\numberline {10.30.1}Detailed Description}{128}{subsection.10.30.1}%
+\contentsline {subsection}{\numberline {10.30.2}Member Function Documentation}{128}{subsection.10.30.2}%
+\contentsline {subsubsection}{\numberline {10.30.2.1}ps\_latlink\_iter\_free()}{128}{subsubsection.10.30.2.1}%
+\contentsline {subsubsection}{\numberline {10.30.2.2}ps\_latlink\_iter\_link()}{128}{subsubsection.10.30.2.2}%
+\contentsline {subsubsection}{\numberline {10.30.2.3}ps\_latlink\_iter\_next()}{128}{subsubsection.10.30.2.3}%
+\contentsline {section}{\numberline {10.31}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}latlink\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{129}{section.10.31}%
+\contentsline {subsection}{\numberline {10.31.1}Detailed Description}{129}{subsection.10.31.1}%
+\contentsline {subsection}{\numberline {10.31.2}Member Function Documentation}{129}{subsection.10.31.2}%
+\contentsline {subsubsection}{\numberline {10.31.2.1}ps\_latlink\_baseword()}{129}{subsubsection.10.31.2.1}%
+\contentsline {subsubsection}{\numberline {10.31.2.2}ps\_latlink\_nodes()}{129}{subsubsection.10.31.2.2}%
+\contentsline {subsubsection}{\numberline {10.31.2.3}ps\_latlink\_pred()}{130}{subsubsection.10.31.2.3}%
+\contentsline {subsubsection}{\numberline {10.31.2.4}ps\_latlink\_prob()}{130}{subsubsection.10.31.2.4}%
+\contentsline {subsubsection}{\numberline {10.31.2.5}ps\_latlink\_times()}{131}{subsubsection.10.31.2.5}%
+\contentsline {subsubsection}{\numberline {10.31.2.6}ps\_latlink\_word()}{131}{subsubsection.10.31.2.6}%
+\contentsline {section}{\numberline {10.32}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}latnode\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{132}{section.10.32}%
+\contentsline {subsection}{\numberline {10.32.1}Detailed Description}{132}{subsection.10.32.1}%
+\contentsline {subsection}{\numberline {10.32.2}Member Function Documentation}{132}{subsection.10.32.2}%
+\contentsline {subsubsection}{\numberline {10.32.2.1}ps\_latnode\_iter\_free()}{132}{subsubsection.10.32.2.1}%
+\contentsline {subsubsection}{\numberline {10.32.2.2}ps\_latnode\_iter\_next()}{132}{subsubsection.10.32.2.2}%
+\contentsline {subsubsection}{\numberline {10.32.2.3}ps\_latnode\_iter\_node()}{133}{subsubsection.10.32.2.3}%
+\contentsline {subsubsection}{\numberline {10.32.2.4}ps\_latnode\_times()}{133}{subsubsection.10.32.2.4}%
+\contentsline {section}{\numberline {10.33}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}latnode\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{133}{section.10.33}%
+\contentsline {subsection}{\numberline {10.33.1}Detailed Description}{134}{subsection.10.33.1}%
+\contentsline {subsection}{\numberline {10.33.2}Member Function Documentation}{134}{subsection.10.33.2}%
+\contentsline {subsubsection}{\numberline {10.33.2.1}ps\_latnode\_baseword()}{134}{subsubsection.10.33.2.1}%
+\contentsline {subsubsection}{\numberline {10.33.2.2}ps\_latnode\_entries()}{134}{subsubsection.10.33.2.2}%
+\contentsline {subsubsection}{\numberline {10.33.2.3}ps\_latnode\_exits()}{134}{subsubsection.10.33.2.3}%
+\contentsline {subsubsection}{\numberline {10.33.2.4}ps\_latnode\_prob()}{135}{subsubsection.10.33.2.4}%
+\contentsline {subsubsection}{\numberline {10.33.2.5}ps\_latnode\_word()}{135}{subsubsection.10.33.2.5}%
+\contentsline {section}{\numberline {10.34}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}lattice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{136}{section.10.34}%
+\contentsline {subsection}{\numberline {10.34.1}Detailed Description}{136}{subsection.10.34.1}%
+\contentsline {subsection}{\numberline {10.34.2}Member Function Documentation}{136}{subsection.10.34.2}%
+\contentsline {subsubsection}{\numberline {10.34.2.1}ps\_latnode\_iter()}{136}{subsubsection.10.34.2.1}%
+\contentsline {subsubsection}{\numberline {10.34.2.2}ps\_lattice\_bestpath()}{137}{subsubsection.10.34.2.2}%
+\contentsline {subsubsection}{\numberline {10.34.2.3}ps\_lattice\_free()}{137}{subsubsection.10.34.2.3}%
+\contentsline {subsubsection}{\numberline {10.34.2.4}ps\_lattice\_get\_logmath()}{137}{subsubsection.10.34.2.4}%
+\contentsline {subsubsection}{\numberline {10.34.2.5}ps\_lattice\_link()}{138}{subsubsection.10.34.2.5}%
+\contentsline {subsubsection}{\numberline {10.34.2.6}ps\_lattice\_n\_frames()}{138}{subsubsection.10.34.2.6}%
+\contentsline {subsubsection}{\numberline {10.34.2.7}ps\_lattice\_posterior()}{138}{subsubsection.10.34.2.7}%
+\contentsline {subsubsection}{\numberline {10.34.2.8}ps\_lattice\_posterior\_prune()}{138}{subsubsection.10.34.2.8}%
+\contentsline {subsubsection}{\numberline {10.34.2.9}ps\_lattice\_read()}{139}{subsubsection.10.34.2.9}%
+\contentsline {subsubsection}{\numberline {10.34.2.10}ps\_lattice\_retain()}{139}{subsubsection.10.34.2.10}%
+\contentsline {subsubsection}{\numberline {10.34.2.11}ps\_lattice\_reverse\_edges()}{139}{subsubsection.10.34.2.11}%
+\contentsline {subsubsection}{\numberline {10.34.2.12}ps\_lattice\_reverse\_next()}{140}{subsubsection.10.34.2.12}%
+\contentsline {subsubsection}{\numberline {10.34.2.13}ps\_lattice\_traverse\_edges()}{140}{subsubsection.10.34.2.13}%
+\contentsline {subsubsection}{\numberline {10.34.2.14}ps\_lattice\_traverse\_next()}{141}{subsubsection.10.34.2.14}%
+\contentsline {subsubsection}{\numberline {10.34.2.15}ps\_lattice\_write()}{141}{subsubsection.10.34.2.15}%
+\contentsline {subsubsection}{\numberline {10.34.2.16}ps\_lattice\_write\_htk()}{142}{subsubsection.10.34.2.16}%
+\contentsline {section}{\numberline {10.35}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}mllr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{142}{section.10.35}%
+\contentsline {subsection}{\numberline {10.35.1}Detailed Description}{142}{subsection.10.35.1}%
+\contentsline {subsection}{\numberline {10.35.2}Member Function Documentation}{142}{subsection.10.35.2}%
+\contentsline {subsubsection}{\numberline {10.35.2.1}ps\_mllr\_free()}{142}{subsubsection.10.35.2.1}%
+\contentsline {subsubsection}{\numberline {10.35.2.2}ps\_mllr\_read()}{143}{subsubsection.10.35.2.2}%
+\contentsline {subsubsection}{\numberline {10.35.2.3}ps\_mllr\_retain()}{143}{subsubsection.10.35.2.3}%
+\contentsline {section}{\numberline {10.36}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}nbest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{143}{section.10.36}%
+\contentsline {subsection}{\numberline {10.36.1}Detailed Description}{143}{subsection.10.36.1}%
+\contentsline {subsection}{\numberline {10.36.2}Member Function Documentation}{143}{subsection.10.36.2}%
+\contentsline {subsubsection}{\numberline {10.36.2.1}ps\_nbest\_free()}{143}{subsubsection.10.36.2.1}%
+\contentsline {subsubsection}{\numberline {10.36.2.2}ps\_nbest\_hyp()}{144}{subsubsection.10.36.2.2}%
+\contentsline {subsubsection}{\numberline {10.36.2.3}ps\_nbest\_next()}{144}{subsubsection.10.36.2.3}%
+\contentsline {subsubsection}{\numberline {10.36.2.4}ps\_nbest\_seg()}{144}{subsubsection.10.36.2.4}%
+\contentsline {section}{\numberline {10.37}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}search\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{145}{section.10.37}%
+\contentsline {subsection}{\numberline {10.37.1}Detailed Description}{145}{subsection.10.37.1}%
+\contentsline {subsection}{\numberline {10.37.2}Member Function Documentation}{145}{subsection.10.37.2}%
+\contentsline {subsubsection}{\numberline {10.37.2.1}ps\_search\_iter\_free()}{145}{subsubsection.10.37.2.1}%
+\contentsline {subsubsection}{\numberline {10.37.2.2}ps\_search\_iter\_next()}{146}{subsubsection.10.37.2.2}%
+\contentsline {subsubsection}{\numberline {10.37.2.3}ps\_search\_iter\_val()}{146}{subsubsection.10.37.2.3}%
+\contentsline {section}{\numberline {10.38}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}seg\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{146}{section.10.38}%
+\contentsline {subsection}{\numberline {10.38.1}Detailed Description}{147}{subsection.10.38.1}%
+\contentsline {subsection}{\numberline {10.38.2}Member Function Documentation}{147}{subsection.10.38.2}%
+\contentsline {subsubsection}{\numberline {10.38.2.1}ps\_seg\_frames()}{147}{subsubsection.10.38.2.1}%
+\contentsline {subsubsection}{\numberline {10.38.2.2}ps\_seg\_free()}{147}{subsubsection.10.38.2.2}%
+\contentsline {subsubsection}{\numberline {10.38.2.3}ps\_seg\_next()}{147}{subsubsection.10.38.2.3}%
+\contentsline {subsubsection}{\numberline {10.38.2.4}ps\_seg\_prob()}{148}{subsubsection.10.38.2.4}%
+\contentsline {subsubsection}{\numberline {10.38.2.5}ps\_seg\_word()}{148}{subsubsection.10.38.2.5}%
+\contentsline {section}{\numberline {10.39}ps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}vad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{149}{section.10.39}%
+\contentsline {subsection}{\numberline {10.39.1}Detailed Description}{149}{subsection.10.39.1}%
+\contentsline {subsection}{\numberline {10.39.2}Member Function Documentation}{149}{subsection.10.39.2}%
+\contentsline {subsubsection}{\numberline {10.39.2.1}ps\_vad\_classify()}{149}{subsubsection.10.39.2.1}%
+\contentsline {subsubsection}{\numberline {10.39.2.2}ps\_vad\_frame\_size()}{150}{subsubsection.10.39.2.2}%
+\contentsline {subsubsection}{\numberline {10.39.2.3}ps\_vad\_free()}{150}{subsubsection.10.39.2.3}%
+\contentsline {subsubsection}{\numberline {10.39.2.4}ps\_vad\_init()}{150}{subsubsection.10.39.2.4}%
+\contentsline {subsubsection}{\numberline {10.39.2.5}ps\_vad\_retain()}{151}{subsubsection.10.39.2.5}%
+\contentsline {subsubsection}{\numberline {10.39.2.6}ps\_vad\_sample\_rate()}{151}{subsubsection.10.39.2.6}%
+\contentsline {subsubsection}{\numberline {10.39.2.7}ps\_vad\_set\_input\_params()}{152}{subsubsection.10.39.2.7}%
+\contentsline {section}{\numberline {10.40}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{152}{section.10.40}%
+\contentsline {subsection}{\numberline {10.40.1}Constructor \& Destructor Documentation}{153}{subsection.10.40.1}%
+\contentsline {subsubsection}{\numberline {10.40.1.1}SpeechManager()}{153}{subsubsection.10.40.1.1}%
+\contentsline {subsubsection}{\numberline {10.40.1.2}$\sim $SpeechManager()}{153}{subsubsection.10.40.1.2}%
+\contentsline {subsection}{\numberline {10.40.2}Member Function Documentation}{154}{subsection.10.40.2}%
+\contentsline {subsubsection}{\numberline {10.40.2.1}configure()}{154}{subsubsection.10.40.2.1}%
+\contentsline {subsubsection}{\numberline {10.40.2.2}freeHeap()}{154}{subsubsection.10.40.2.2}%
+\contentsline {subsubsection}{\numberline {10.40.2.3}hypIsValid()}{154}{subsubsection.10.40.2.3}%
+\contentsline {subsubsection}{\numberline {10.40.2.4}init()}{154}{subsubsection.10.40.2.4}%
+\contentsline {subsubsection}{\numberline {10.40.2.5}processRecognitionResult}{154}{subsubsection.10.40.2.5}%
+\contentsline {subsubsection}{\numberline {10.40.2.6}speechReadyToProcess}{154}{subsubsection.10.40.2.6}%
+\contentsline {subsubsection}{\numberline {10.40.2.7}speechRecognized}{155}{subsubsection.10.40.2.7}%
+\contentsline {subsubsection}{\numberline {10.40.2.8}startListening()}{155}{subsubsection.10.40.2.8}%
+\contentsline {subsection}{\numberline {10.40.3}Member Data Documentation}{155}{subsection.10.40.3}%
+\contentsline {subsubsection}{\numberline {10.40.3.1}config\_}{155}{subsubsection.10.40.3.1}%
+\contentsline {subsubsection}{\numberline {10.40.3.2}decoder\_}{155}{subsubsection.10.40.3.2}%
+\contentsline {subsubsection}{\numberline {10.40.3.3}ep\_}{155}{subsubsection.10.40.3.3}%
+\contentsline {subsubsection}{\numberline {10.40.3.4}err\_}{155}{subsubsection.10.40.3.4}%
+\contentsline {subsubsection}{\numberline {10.40.3.5}frame\_}{155}{subsubsection.10.40.3.5}%
+\contentsline {subsubsection}{\numberline {10.40.3.6}frame\_size\_}{156}{subsubsection.10.40.3.6}%
+\contentsline {subsubsection}{\numberline {10.40.3.7}hyp\_}{156}{subsubsection.10.40.3.7}%
+\contentsline {subsubsection}{\numberline {10.40.3.8}stream\_}{156}{subsubsection.10.40.3.8}%
+\contentsline {section}{\numberline {10.41}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Text Struct Reference}{156}{section.10.41}%
+\contentsline {subsection}{\numberline {10.41.1}Member Function Documentation}{157}{subsection.10.41.1}%
+\contentsline {subsubsection}{\numberline {10.41.1.1}catch\_sig()}{157}{subsubsection.10.41.1.1}%
+\contentsline {subsubsection}{\numberline {10.41.1.2}configuration()}{157}{subsubsection.10.41.1.2}%
+\contentsline {subsubsection}{\numberline {10.41.1.3}free()}{157}{subsubsection.10.41.1.3}%
+\contentsline {subsubsection}{\numberline {10.41.1.4}hypIsValid()}{157}{subsubsection.10.41.1.4}%
+\contentsline {subsubsection}{\numberline {10.41.1.5}init()}{157}{subsubsection.10.41.1.5}%
+\contentsline {subsubsection}{\numberline {10.41.1.6}listen()}{157}{subsubsection.10.41.1.6}%
+\contentsline {subsection}{\numberline {10.41.2}Member Data Documentation}{158}{subsection.10.41.2}%
+\contentsline {subsubsection}{\numberline {10.41.2.1}config}{158}{subsubsection.10.41.2.1}%
+\contentsline {subsubsection}{\numberline {10.41.2.2}decoder}{158}{subsubsection.10.41.2.2}%
+\contentsline {subsubsection}{\numberline {10.41.2.3}ep}{158}{subsubsection.10.41.2.3}%
+\contentsline {subsubsection}{\numberline {10.41.2.4}err}{158}{subsubsection.10.41.2.4}%
+\contentsline {subsubsection}{\numberline {10.41.2.5}frame}{158}{subsubsection.10.41.2.5}%
+\contentsline {subsubsection}{\numberline {10.41.2.6}frame\_size}{158}{subsubsection.10.41.2.6}%
+\contentsline {subsubsection}{\numberline {10.41.2.7}hyp}{158}{subsubsection.10.41.2.7}%
+\contentsline {subsubsection}{\numberline {10.41.2.8}stream}{159}{subsubsection.10.41.2.8}%
+\contentsline {section}{\numberline {10.42}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game Class Reference}{159}{section.10.42}%
+\contentsline {subsection}{\numberline {10.42.1}Detailed Description}{160}{subsection.10.42.1}%
+\contentsline {subsection}{\numberline {10.42.2}Constructor \& Destructor Documentation}{160}{subsection.10.42.2}%
+\contentsline {subsubsection}{\numberline {10.42.2.1}TicTacToeGame()}{160}{subsubsection.10.42.2.1}%
+\contentsline {subsection}{\numberline {10.42.3}Member Function Documentation}{160}{subsection.10.42.3}%
+\contentsline {subsubsection}{\numberline {10.42.3.1}buildCellButtons()}{160}{subsubsection.10.42.3.1}%
+\contentsline {subsubsection}{\numberline {10.42.3.2}declareGameState()}{161}{subsubsection.10.42.3.2}%
+\contentsline {subsubsection}{\numberline {10.42.3.3}getBoardFinalStateText()}{161}{subsubsection.10.42.3.3}%
+\contentsline {subsubsection}{\numberline {10.42.3.4}getPlayerStyleSheet()}{161}{subsubsection.10.42.3.4}%
+\contentsline {subsubsection}{\numberline {10.42.3.5}getPlayerText()}{162}{subsubsection.10.42.3.5}%
+\contentsline {subsubsection}{\numberline {10.42.3.6}newGame}{162}{subsubsection.10.42.3.6}%
+\contentsline {subsubsection}{\numberline {10.42.3.7}reset()}{162}{subsubsection.10.42.3.7}%
+\contentsline {subsubsection}{\numberline {10.42.3.8}setConnections()}{163}{subsubsection.10.42.3.8}%
+\contentsline {subsubsection}{\numberline {10.42.3.9}updateCell()}{163}{subsubsection.10.42.3.9}%
+\contentsline {subsection}{\numberline {10.42.4}Member Data Documentation}{163}{subsection.10.42.4}%
+\contentsline {subsubsection}{\numberline {10.42.4.1}ui}{163}{subsubsection.10.42.4.1}%
+\contentsline {section}{\numberline {10.43}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen Class Reference}{164}{section.10.43}%
+\contentsline {subsection}{\numberline {10.43.1}Detailed Description}{165}{subsection.10.43.1}%
+\contentsline {subsection}{\numberline {10.43.2}Constructor \& Destructor Documentation}{165}{subsection.10.43.2}%
+\contentsline {subsubsection}{\numberline {10.43.2.1}TitleScreen()}{165}{subsubsection.10.43.2.1}%
+\contentsline {subsection}{\numberline {10.43.3}Member Function Documentation}{165}{subsection.10.43.3}%
+\contentsline {subsubsection}{\numberline {10.43.3.1}closeEvent()}{165}{subsubsection.10.43.3.1}%
+\contentsline {subsubsection}{\numberline {10.43.3.2}exited}{166}{subsubsection.10.43.3.2}%
+\contentsline {subsubsection}{\numberline {10.43.3.3}setConnections()}{166}{subsubsection.10.43.3.3}%
+\contentsline {subsubsection}{\numberline {10.43.3.4}startGame}{166}{subsubsection.10.43.3.4}%
+\contentsline {subsubsection}{\numberline {10.43.3.5}updateAIstartsGame}{166}{subsubsection.10.43.3.5}%
+\contentsline {subsubsection}{\numberline {10.43.3.6}updateBoardSize}{166}{subsubsection.10.43.3.6}%
+\contentsline {subsubsection}{\numberline {10.43.3.7}updateMiniMaxDepth}{167}{subsubsection.10.43.3.7}%
+\contentsline {subsubsection}{\numberline {10.43.3.8}updateSinglePlayer}{167}{subsubsection.10.43.3.8}%
+\contentsline {subsubsection}{\numberline {10.43.3.9}updateTwoPlayers}{167}{subsubsection.10.43.3.9}%
+\contentsline {subsection}{\numberline {10.43.4}Member Data Documentation}{168}{subsection.10.43.4}%
+\contentsline {subsubsection}{\numberline {10.43.4.1}options\_}{168}{subsubsection.10.43.4.1}%
+\contentsline {subsubsection}{\numberline {10.43.4.2}ui}{168}{subsubsection.10.43.4.2}%
+\contentsline {section}{\numberline {10.44}TTTController Class Reference}{168}{section.10.44}%
+\contentsline {subsection}{\numberline {10.44.1}Detailed Description}{170}{subsection.10.44.1}%
+\contentsline {subsection}{\numberline {10.44.2}Constructor \& Destructor Documentation}{170}{subsection.10.44.2}%
+\contentsline {subsubsection}{\numberline {10.44.2.1}TTTController()}{170}{subsubsection.10.44.2.1}%
+\contentsline {subsection}{\numberline {10.44.3}Member Function Documentation}{171}{subsection.10.44.3}%
+\contentsline {subsubsection}{\numberline {10.44.3.1}AIAgentPlay()}{171}{subsubsection.10.44.3.1}%
+\contentsline {subsubsection}{\numberline {10.44.3.2}AIFinished}{171}{subsubsection.10.44.3.2}%
+\contentsline {subsubsection}{\numberline {10.44.3.3}getView()}{171}{subsubsection.10.44.3.3}%
+\contentsline {subsubsection}{\numberline {10.44.3.4}humanFinished}{171}{subsubsection.10.44.3.4}%
+\contentsline {subsubsection}{\numberline {10.44.3.5}HumanPlay()}{171}{subsubsection.10.44.3.5}%
+\contentsline {subsubsection}{\numberline {10.44.3.6}onSocketReadyRead}{172}{subsubsection.10.44.3.6}%
+\contentsline {subsubsection}{\numberline {10.44.3.7}onSpeechRecognized}{172}{subsubsection.10.44.3.7}%
+\contentsline {subsubsection}{\numberline {10.44.3.8}parseSpeechToCell()}{172}{subsubsection.10.44.3.8}%
+\contentsline {subsubsection}{\numberline {10.44.3.9}reset()}{172}{subsubsection.10.44.3.9}%
+\contentsline {subsubsection}{\numberline {10.44.3.10}sendMove()}{172}{subsubsection.10.44.3.10}%
+\contentsline {subsubsection}{\numberline {10.44.3.11}setConnections()}{173}{subsubsection.10.44.3.11}%
+\contentsline {subsubsection}{\numberline {10.44.3.12}setupNetwork()}{173}{subsubsection.10.44.3.12}%
+\contentsline {subsubsection}{\numberline {10.44.3.13}speechRecognized}{173}{subsubsection.10.44.3.13}%
+\contentsline {subsubsection}{\numberline {10.44.3.14}startGame()}{173}{subsubsection.10.44.3.14}%
+\contentsline {subsubsection}{\numberline {10.44.3.15}switchPlayer()}{173}{subsubsection.10.44.3.15}%
+\contentsline {subsubsection}{\numberline {10.44.3.16}updateGame}{173}{subsubsection.10.44.3.16}%
+\contentsline {subsubsection}{\numberline {10.44.3.17}updateGameState()}{174}{subsubsection.10.44.3.17}%
+\contentsline {subsection}{\numberline {10.44.4}Member Data Documentation}{174}{subsection.10.44.4}%
+\contentsline {subsubsection}{\numberline {10.44.4.1}agent\_}{174}{subsubsection.10.44.4.1}%
+\contentsline {subsubsection}{\numberline {10.44.4.2}board\_}{174}{subsubsection.10.44.4.2}%
+\contentsline {subsubsection}{\numberline {10.44.4.3}cells\_}{174}{subsubsection.10.44.4.3}%
+\contentsline {subsubsection}{\numberline {10.44.4.4}currentPlayer\_}{175}{subsubsection.10.44.4.4}%
+\contentsline {subsubsection}{\numberline {10.44.4.5}options\_}{175}{subsubsection.10.44.4.5}%
+\contentsline {subsubsection}{\numberline {10.44.4.6}socket\_}{175}{subsubsection.10.44.4.6}%
+\contentsline {subsubsection}{\numberline {10.44.4.7}view\_}{175}{subsubsection.10.44.4.7}%
+\contentsline {section}{\numberline {10.45}TTTOptions Struct Reference}{175}{section.10.45}%
+\contentsline {subsection}{\numberline {10.45.1}Detailed Description}{176}{subsection.10.45.1}%
+\contentsline {subsection}{\numberline {10.45.2}Member Data Documentation}{176}{subsection.10.45.2}%
+\contentsline {subsubsection}{\numberline {10.45.2.1}AIopponent}{176}{subsubsection.10.45.2.1}%
+\contentsline {subsubsection}{\numberline {10.45.2.2}AIstarts}{176}{subsubsection.10.45.2.2}%
+\contentsline {subsubsection}{\numberline {10.45.2.3}boardSize}{176}{subsubsection.10.45.2.3}%
+\contentsline {subsubsection}{\numberline {10.45.2.4}miniMaxDepth}{176}{subsubsection.10.45.2.4}%
+\contentsline {chapter}{\numberline {11}File Documentation}{177}{chapter.11}%
+\contentsline {section}{\numberline {11.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AIAgent.h File Reference}{177}{section.11.1}%
+\contentsline {section}{\numberline {11.2}AIAgent.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{177}{section.11.2}%
+\contentsline {section}{\numberline {11.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.cpp File Reference}{177}{section.11.3}%
+\contentsline {section}{\numberline {11.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.h File Reference}{178}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{178}{section.11.5}%
+\contentsline {section}{\numberline {11.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.cpp File Reference}{178}{section.11.6}%
+\contentsline {section}{\numberline {11.7}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.h File Reference}{178}{section.11.7}%
+\contentsline {section}{\numberline {11.8}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{179}{section.11.8}%
+\contentsline {section}{\numberline {11.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}No\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.h File Reference}{179}{section.11.9}%
+\contentsline {section}{\numberline {11.10}No\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{180}{section.11.10}%
+\contentsline {section}{\numberline {11.11}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.h File Reference}{180}{section.11.11}%
+\contentsline {section}{\numberline {11.12}Player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{180}{section.11.12}%
+\contentsline {section}{\numberline {11.13}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.cpp File Reference}{181}{section.11.13}%
+\contentsline {section}{\numberline {11.14}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.h File Reference}{181}{section.11.14}%
+\contentsline {section}{\numberline {11.15}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{181}{section.11.15}%
+\contentsline {section}{\numberline {11.16}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TTTController.cpp File Reference}{182}{section.11.16}%
+\contentsline {section}{\numberline {11.17}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TTTController.h File Reference}{182}{section.11.17}%
+\contentsline {section}{\numberline {11.18}TTTController.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{182}{section.11.18}%
+\contentsline {section}{\numberline {11.19}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/examples/config.h File Reference}{183}{section.11.19}%
+\contentsline {subsection}{\numberline {11.19.1}Macro Definition Documentation}{184}{subsection.11.19.1}%
+\contentsline {subsubsection}{\numberline {11.19.1.1}DEFAULT\_RADIX}{184}{subsubsection.11.19.1.1}%
+\contentsline {subsubsection}{\numberline {11.19.1.2}HAVE\_LONG\_LONG}{184}{subsubsection.11.19.1.2}%
+\contentsline {subsubsection}{\numberline {11.19.1.3}HAVE\_POPEN}{184}{subsubsection.11.19.1.3}%
+\contentsline {subsubsection}{\numberline {11.19.1.4}HAVE\_SNPRINTF}{184}{subsubsection.11.19.1.4}%
+\contentsline {subsubsection}{\numberline {11.19.1.5}HAVE\_STDINT\_H}{184}{subsubsection.11.19.1.5}%
+\contentsline {subsubsection}{\numberline {11.19.1.6}HAVE\_SYS\_STAT\_H}{184}{subsubsection.11.19.1.6}%
+\contentsline {subsubsection}{\numberline {11.19.1.7}HAVE\_SYS\_TYPES\_H}{184}{subsubsection.11.19.1.7}%
+\contentsline {subsubsection}{\numberline {11.19.1.8}HAVE\_UNISTD\_H}{185}{subsubsection.11.19.1.8}%
+\contentsline {subsubsection}{\numberline {11.19.1.9}PACKAGE\_BUGREPORT}{185}{subsubsection.11.19.1.9}%
+\contentsline {subsubsection}{\numberline {11.19.1.10}PACKAGE\_NAME}{185}{subsubsection.11.19.1.10}%
+\contentsline {subsubsection}{\numberline {11.19.1.11}PACKAGE\_STRING}{185}{subsubsection.11.19.1.11}%
+\contentsline {subsubsection}{\numberline {11.19.1.12}PACKAGE\_TARNAME}{185}{subsubsection.11.19.1.12}%
+\contentsline {subsubsection}{\numberline {11.19.1.13}PACKAGE\_URL}{185}{subsubsection.11.19.1.13}%
+\contentsline {subsubsection}{\numberline {11.19.1.14}PACKAGE\_VERSION}{185}{subsubsection.11.19.1.14}%
+\contentsline {subsubsection}{\numberline {11.19.1.15}SIZEOF\_LONG}{185}{subsubsection.11.19.1.15}%
+\contentsline {subsubsection}{\numberline {11.19.1.16}SIZEOF\_LONG\_LONG}{185}{subsubsection.11.19.1.16}%
+\contentsline {section}{\numberline {11.20}config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{186}{section.11.20}%
+\contentsline {section}{\numberline {11.21}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/examples/include/pocketsphinx/sphinx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config.h File Reference}{186}{section.11.21}%
+\contentsline {subsection}{\numberline {11.21.1}Macro Definition Documentation}{187}{subsection.11.21.1}%
+\contentsline {subsubsection}{\numberline {11.21.1.1}DEFAULT\_RADIX}{187}{subsubsection.11.21.1.1}%
+\contentsline {subsubsection}{\numberline {11.21.1.2}HAVE\_LONG\_LONG}{187}{subsubsection.11.21.1.2}%
+\contentsline {subsubsection}{\numberline {11.21.1.3}SIZEOF\_LONG}{187}{subsubsection.11.21.1.3}%
+\contentsline {subsubsection}{\numberline {11.21.1.4}SIZEOF\_LONG\_LONG}{187}{subsubsection.11.21.1.4}%
+\contentsline {section}{\numberline {11.22}sphinx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{187}{section.11.22}%
+\contentsline {section}{\numberline {11.23}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/sphinx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config.h File Reference}{188}{section.11.23}%
+\contentsline {subsection}{\numberline {11.23.1}Macro Definition Documentation}{188}{subsection.11.23.1}%
+\contentsline {subsubsection}{\numberline {11.23.1.1}DEFAULT\_RADIX}{188}{subsubsection.11.23.1.1}%
+\contentsline {subsubsection}{\numberline {11.23.1.2}HAVE\_LONG\_LONG}{188}{subsubsection.11.23.1.2}%
+\contentsline {subsubsection}{\numberline {11.23.1.3}SIZEOF\_LONG}{188}{subsubsection.11.23.1.3}%
+\contentsline {subsubsection}{\numberline {11.23.1.4}SIZEOF\_LONG\_LONG}{188}{subsubsection.11.23.1.4}%
+\contentsline {section}{\numberline {11.24}sphinx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{188}{section.11.24}%
+\contentsline {section}{\numberline {11.25}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/examples/test/unit/test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}macros.h File Reference}{189}{section.11.25}%
+\contentsline {subsection}{\numberline {11.25.1}Macro Definition Documentation}{189}{subsection.11.25.1}%
+\contentsline {subsubsection}{\numberline {11.25.1.1}DATADIR}{189}{subsubsection.11.25.1.1}%
+\contentsline {subsubsection}{\numberline {11.25.1.2}EPSILON}{189}{subsubsection.11.25.1.2}%
+\contentsline {subsubsection}{\numberline {11.25.1.3}LOG\_EPSILON}{189}{subsubsection.11.25.1.3}%
+\contentsline {subsubsection}{\numberline {11.25.1.4}MODELDIR}{189}{subsubsection.11.25.1.4}%
+\contentsline {subsubsection}{\numberline {11.25.1.5}TEST\_ASSERT}{190}{subsubsection.11.25.1.5}%
+\contentsline {subsubsection}{\numberline {11.25.1.6}TEST\_EQUAL}{190}{subsubsection.11.25.1.6}%
+\contentsline {subsubsection}{\numberline {11.25.1.7}TEST\_EQUAL\_FLOAT}{190}{subsubsection.11.25.1.7}%
+\contentsline {subsubsection}{\numberline {11.25.1.8}TEST\_EQUAL\_LOG}{190}{subsubsection.11.25.1.8}%
+\contentsline {subsubsection}{\numberline {11.25.1.9}TEST\_EQUAL\_MFCC}{190}{subsubsection.11.25.1.9}%
+\contentsline {subsubsection}{\numberline {11.25.1.10}TEST\_EQUAL\_STRING}{190}{subsubsection.11.25.1.10}%
+\contentsline {subsubsection}{\numberline {11.25.1.11}TESTDATADIR}{191}{subsubsection.11.25.1.11}%
+\contentsline {section}{\numberline {11.26}test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}macros.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{191}{section.11.26}%
+\contentsline {section}{\numberline {11.27}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx.h File Reference}{191}{section.11.27}%
+\contentsline {subsection}{\numberline {11.27.1}Detailed Description}{192}{subsection.11.27.1}%
+\contentsline {subsection}{\numberline {11.27.2}Typedef Documentation}{192}{subsection.11.27.2}%
+\contentsline {subsubsection}{\numberline {11.27.2.1}ps\_arg\_t}{192}{subsubsection.11.27.2.1}%
+\contentsline {subsubsection}{\numberline {11.27.2.2}ps\_config\_t}{193}{subsubsection.11.27.2.2}%
+\contentsline {subsubsection}{\numberline {11.27.2.3}ps\_decoder\_t}{193}{subsubsection.11.27.2.3}%
+\contentsline {subsubsection}{\numberline {11.27.2.4}ps\_nbest\_t}{193}{subsubsection.11.27.2.4}%
+\contentsline {subsubsection}{\numberline {11.27.2.5}ps\_seg\_t}{193}{subsubsection.11.27.2.5}%
+\contentsline {subsubsection}{\numberline {11.27.2.6}ps\_type\_t}{193}{subsubsection.11.27.2.6}%
+\contentsline {subsection}{\numberline {11.27.3}Enumeration Type Documentation}{193}{subsection.11.27.3}%
+\contentsline {subsubsection}{\numberline {11.27.3.1}ps\_type\_e}{193}{subsubsection.11.27.3.1}%
+\contentsline {subsection}{\numberline {11.27.4}Function Documentation}{194}{subsection.11.27.4}%
+\contentsline {subsubsection}{\numberline {11.27.4.1}ps\_args()}{194}{subsubsection.11.27.4.1}%
+\contentsline {section}{\numberline {11.28}pocketsphinx.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{194}{section.11.28}%
+\contentsline {section}{\numberline {11.29}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/alignment.h File Reference}{198}{section.11.29}%
+\contentsline {subsection}{\numberline {11.29.1}Detailed Description}{198}{subsection.11.29.1}%
+\contentsline {subsection}{\numberline {11.29.2}Macro Definition Documentation}{198}{subsection.11.29.2}%
+\contentsline {subsubsection}{\numberline {11.29.2.1}PS\_ALIGNMENT\_NONE}{198}{subsubsection.11.29.2.1}%
+\contentsline {subsection}{\numberline {11.29.3}Typedef Documentation}{198}{subsection.11.29.3}%
+\contentsline {subsubsection}{\numberline {11.29.3.1}ps\_alignment\_iter\_t}{198}{subsubsection.11.29.3.1}%
+\contentsline {subsubsection}{\numberline {11.29.3.2}ps\_alignment\_t}{198}{subsubsection.11.29.3.2}%
+\contentsline {section}{\numberline {11.30}alignment.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{199}{section.11.30}%
+\contentsline {section}{\numberline {11.31}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/endpointer.h File Reference}{200}{section.11.31}%
+\contentsline {subsection}{\numberline {11.31.1}Detailed Description}{200}{subsection.11.31.1}%
+\contentsline {subsection}{\numberline {11.31.2}Macro Definition Documentation}{200}{subsection.11.31.2}%
+\contentsline {subsubsection}{\numberline {11.31.2.1}PS\_ENDPOINTER\_DEFAULT\_RATIO}{200}{subsubsection.11.31.2.1}%
+\contentsline {subsubsection}{\numberline {11.31.2.2}PS\_ENDPOINTER\_DEFAULT\_WINDOW}{201}{subsubsection.11.31.2.2}%
+\contentsline {subsubsection}{\numberline {11.31.2.3}ps\_endpointer\_frame\_length}{201}{subsubsection.11.31.2.3}%
+\contentsline {subsubsection}{\numberline {11.31.2.4}ps\_endpointer\_frame\_size}{201}{subsubsection.11.31.2.4}%
+\contentsline {subsubsection}{\numberline {11.31.2.5}ps\_endpointer\_sample\_rate}{201}{subsubsection.11.31.2.5}%
+\contentsline {subsection}{\numberline {11.31.3}Typedef Documentation}{201}{subsection.11.31.3}%
+\contentsline {subsubsection}{\numberline {11.31.3.1}ps\_endpointer\_t}{201}{subsubsection.11.31.3.1}%
+\contentsline {subsubsection}{\numberline {11.31.3.2}ps\_endpointer\_timestamp\_cb\_t}{201}{subsubsection.11.31.3.2}%
+\contentsline {section}{\numberline {11.32}endpointer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{202}{section.11.32}%
+\contentsline {section}{\numberline {11.33}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/err.h File Reference}{203}{section.11.33}%
+\contentsline {subsection}{\numberline {11.33.1}Detailed Description}{204}{subsection.11.33.1}%
+\contentsline {subsection}{\numberline {11.33.2}Macro Definition Documentation}{204}{subsection.11.33.2}%
+\contentsline {subsubsection}{\numberline {11.33.2.1}E\_DEBUG}{204}{subsubsection.11.33.2.1}%
+\contentsline {subsubsection}{\numberline {11.33.2.2}E\_ERROR}{205}{subsubsection.11.33.2.2}%
+\contentsline {subsubsection}{\numberline {11.33.2.3}E\_ERROR\_SYSTEM}{205}{subsubsection.11.33.2.3}%
+\contentsline {subsubsection}{\numberline {11.33.2.4}E\_FATAL}{205}{subsubsection.11.33.2.4}%
+\contentsline {subsubsection}{\numberline {11.33.2.5}E\_FATAL\_SYSTEM}{205}{subsubsection.11.33.2.5}%
+\contentsline {subsubsection}{\numberline {11.33.2.6}E\_INFO}{206}{subsubsection.11.33.2.6}%
+\contentsline {subsubsection}{\numberline {11.33.2.7}E\_INFO\_NOFN}{206}{subsubsection.11.33.2.7}%
+\contentsline {subsubsection}{\numberline {11.33.2.8}E\_INFOCONT}{206}{subsubsection.11.33.2.8}%
+\contentsline {subsubsection}{\numberline {11.33.2.9}E\_SYSCALL}{206}{subsubsection.11.33.2.9}%
+\contentsline {subsubsection}{\numberline {11.33.2.10}E\_WARN}{206}{subsubsection.11.33.2.10}%
+\contentsline {subsubsection}{\numberline {11.33.2.11}FILELINE}{207}{subsubsection.11.33.2.11}%
+\contentsline {subsection}{\numberline {11.33.3}Typedef Documentation}{207}{subsection.11.33.3}%
+\contentsline {subsubsection}{\numberline {11.33.3.1}err\_cb\_f}{207}{subsubsection.11.33.3.1}%
+\contentsline {subsubsection}{\numberline {11.33.3.2}err\_lvl\_t}{207}{subsubsection.11.33.3.2}%
+\contentsline {subsection}{\numberline {11.33.4}Enumeration Type Documentation}{207}{subsection.11.33.4}%
+\contentsline {subsubsection}{\numberline {11.33.4.1}err\_e}{207}{subsubsection.11.33.4.1}%
+\contentsline {subsection}{\numberline {11.33.5}Function Documentation}{207}{subsection.11.33.5}%
+\contentsline {subsubsection}{\numberline {11.33.5.1}err\_get\_logfp()}{207}{subsubsection.11.33.5.1}%
+\contentsline {subsubsection}{\numberline {11.33.5.2}err\_logfp\_cb()}{208}{subsubsection.11.33.5.2}%
+\contentsline {subsubsection}{\numberline {11.33.5.3}err\_msg()}{208}{subsubsection.11.33.5.3}%
+\contentsline {subsubsection}{\numberline {11.33.5.4}err\_msg\_system()}{208}{subsubsection.11.33.5.4}%
+\contentsline {subsubsection}{\numberline {11.33.5.5}err\_set\_callback()}{208}{subsubsection.11.33.5.5}%
+\contentsline {subsubsection}{\numberline {11.33.5.6}err\_set\_logfile()}{208}{subsubsection.11.33.5.6}%
+\contentsline {subsubsection}{\numberline {11.33.5.7}err\_set\_logfp()}{209}{subsubsection.11.33.5.7}%
+\contentsline {subsubsection}{\numberline {11.33.5.8}err\_set\_loglevel()}{209}{subsubsection.11.33.5.8}%
+\contentsline {subsubsection}{\numberline {11.33.5.9}err\_set\_loglevel\_str()}{209}{subsubsection.11.33.5.9}%
+\contentsline {section}{\numberline {11.34}err.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{210}{section.11.34}%
+\contentsline {section}{\numberline {11.35}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/export.h File Reference}{211}{section.11.35}%
+\contentsline {subsection}{\numberline {11.35.1}Macro Definition Documentation}{212}{subsection.11.35.1}%
+\contentsline {subsubsection}{\numberline {11.35.1.1}POCKETSPHINX\_EXPORT}{212}{subsubsection.11.35.1.1}%
+\contentsline {section}{\numberline {11.36}export.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{213}{section.11.36}%
+\contentsline {section}{\numberline {11.37}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/lattice.h File Reference}{213}{section.11.37}%
+\contentsline {subsection}{\numberline {11.37.1}Detailed Description}{214}{subsection.11.37.1}%
+\contentsline {subsection}{\numberline {11.37.2}Typedef Documentation}{214}{subsection.11.37.2}%
+\contentsline {subsubsection}{\numberline {11.37.2.1}ps\_latlink\_iter\_t}{214}{subsubsection.11.37.2.1}%
+\contentsline {subsubsection}{\numberline {11.37.2.2}ps\_latlink\_t}{214}{subsubsection.11.37.2.2}%
+\contentsline {subsubsection}{\numberline {11.37.2.3}ps\_latnode\_iter\_t}{214}{subsubsection.11.37.2.3}%
+\contentsline {subsubsection}{\numberline {11.37.2.4}ps\_latnode\_t}{214}{subsubsection.11.37.2.4}%
+\contentsline {subsubsection}{\numberline {11.37.2.5}ps\_lattice\_t}{214}{subsubsection.11.37.2.5}%
+\contentsline {section}{\numberline {11.38}lattice.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{214}{section.11.38}%
+\contentsline {section}{\numberline {11.39}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/logmath.h File Reference}{216}{section.11.39}%
+\contentsline {subsection}{\numberline {11.39.1}Detailed Description}{217}{subsection.11.39.1}%
+\contentsline {subsection}{\numberline {11.39.2}Macro Definition Documentation}{218}{subsection.11.39.2}%
+\contentsline {subsubsection}{\numberline {11.39.2.1}LOGMATH\_TABLE}{218}{subsubsection.11.39.2.1}%
+\contentsline {subsection}{\numberline {11.39.3}Typedef Documentation}{218}{subsection.11.39.3}%
+\contentsline {subsubsection}{\numberline {11.39.3.1}logadd\_t}{218}{subsubsection.11.39.3.1}%
+\contentsline {subsubsection}{\numberline {11.39.3.2}logmath\_t}{218}{subsubsection.11.39.3.2}%
+\contentsline {section}{\numberline {11.40}logmath.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{218}{section.11.40}%
+\contentsline {section}{\numberline {11.41}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/mllr.h File Reference}{220}{section.11.41}%
+\contentsline {subsection}{\numberline {11.41.1}Detailed Description}{220}{subsection.11.41.1}%
+\contentsline {subsection}{\numberline {11.41.2}Typedef Documentation}{220}{subsection.11.41.2}%
+\contentsline {subsubsection}{\numberline {11.41.2.1}ps\_mllr\_t}{220}{subsubsection.11.41.2.1}%
+\contentsline {section}{\numberline {11.42}mllr.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{220}{section.11.42}%
+\contentsline {section}{\numberline {11.43}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/model.h File Reference}{221}{section.11.43}%
+\contentsline {subsection}{\numberline {11.43.1}Detailed Description}{222}{subsection.11.43.1}%
+\contentsline {subsection}{\numberline {11.43.2}Macro Definition Documentation}{222}{subsection.11.43.2}%
+\contentsline {subsubsection}{\numberline {11.43.2.1}NGRAM\_INVALID\_WID}{222}{subsubsection.11.43.2.1}%
+\contentsline {subsection}{\numberline {11.43.3}Typedef Documentation}{222}{subsection.11.43.3}%
+\contentsline {subsubsection}{\numberline {11.43.3.1}fsg\_model\_t}{222}{subsubsection.11.43.3.1}%
+\contentsline {subsubsection}{\numberline {11.43.3.2}jsgf\_rule\_iter\_t}{222}{subsubsection.11.43.3.2}%
+\contentsline {subsubsection}{\numberline {11.43.3.3}jsgf\_rule\_t}{222}{subsubsection.11.43.3.3}%
+\contentsline {subsubsection}{\numberline {11.43.3.4}jsgf\_t}{223}{subsubsection.11.43.3.4}%
+\contentsline {subsubsection}{\numberline {11.43.3.5}ngram\_case\_t}{223}{subsubsection.11.43.3.5}%
+\contentsline {subsubsection}{\numberline {11.43.3.6}ngram\_class\_t}{223}{subsubsection.11.43.3.6}%
+\contentsline {subsubsection}{\numberline {11.43.3.7}ngram\_file\_type\_t}{223}{subsubsection.11.43.3.7}%
+\contentsline {subsubsection}{\numberline {11.43.3.8}ngram\_iter\_t}{223}{subsubsection.11.43.3.8}%
+\contentsline {subsubsection}{\numberline {11.43.3.9}ngram\_model\_set\_iter\_t}{223}{subsubsection.11.43.3.9}%
+\contentsline {subsubsection}{\numberline {11.43.3.10}ngram\_model\_t}{223}{subsubsection.11.43.3.10}%
+\contentsline {subsection}{\numberline {11.43.4}Enumeration Type Documentation}{223}{subsection.11.43.4}%
+\contentsline {subsubsection}{\numberline {11.43.4.1}ngram\_case\_e}{223}{subsubsection.11.43.4.1}%
+\contentsline {subsubsection}{\numberline {11.43.4.2}ngram\_file\_type\_e}{224}{subsubsection.11.43.4.2}%
+\contentsline {section}{\numberline {11.44}model.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{224}{section.11.44}%
+\contentsline {section}{\numberline {11.45}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/prim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}type.h File Reference}{228}{section.11.45}%
+\contentsline {subsection}{\numberline {11.45.1}Detailed Description}{229}{subsection.11.45.1}%
+\contentsline {subsection}{\numberline {11.45.2}Macro Definition Documentation}{229}{subsection.11.45.2}%
+\contentsline {subsubsection}{\numberline {11.45.2.1}\_\_BIGSTACKVARIABLE\_\_}{229}{subsubsection.11.45.2.1}%
+\contentsline {subsubsection}{\numberline {11.45.2.2}FALSE}{230}{subsubsection.11.45.2.2}%
+\contentsline {subsubsection}{\numberline {11.45.2.3}MAX\_IEEE\_NORM\_POS\_FLOAT32}{230}{subsubsection.11.45.2.3}%
+\contentsline {subsubsection}{\numberline {11.45.2.4}MAX\_IEEE\_NORM\_POS\_FLOAT64}{230}{subsubsection.11.45.2.4}%
+\contentsline {subsubsection}{\numberline {11.45.2.5}MAX\_INT16}{230}{subsubsection.11.45.2.5}%
+\contentsline {subsubsection}{\numberline {11.45.2.6}MAX\_INT32}{230}{subsubsection.11.45.2.6}%
+\contentsline {subsubsection}{\numberline {11.45.2.7}MAX\_INT8}{230}{subsubsection.11.45.2.7}%
+\contentsline {subsubsection}{\numberline {11.45.2.8}MAX\_NEG\_INT16}{230}{subsubsection.11.45.2.8}%
+\contentsline {subsubsection}{\numberline {11.45.2.9}MAX\_NEG\_INT32}{230}{subsubsection.11.45.2.9}%
+\contentsline {subsubsection}{\numberline {11.45.2.10}MAX\_NEG\_INT8}{230}{subsubsection.11.45.2.10}%
+\contentsline {subsubsection}{\numberline {11.45.2.11}MAX\_POS\_FLOAT32}{230}{subsubsection.11.45.2.11}%
+\contentsline {subsubsection}{\numberline {11.45.2.12}MAX\_POS\_FLOAT64}{231}{subsubsection.11.45.2.12}%
+\contentsline {subsubsection}{\numberline {11.45.2.13}MAX\_UINT16}{231}{subsubsection.11.45.2.13}%
+\contentsline {subsubsection}{\numberline {11.45.2.14}MAX\_UINT32}{231}{subsubsection.11.45.2.14}%
+\contentsline {subsubsection}{\numberline {11.45.2.15}MAX\_UINT8}{231}{subsubsection.11.45.2.15}%
+\contentsline {subsubsection}{\numberline {11.45.2.16}MIN\_IEEE\_NORM\_NEG\_FLOAT32}{231}{subsubsection.11.45.2.16}%
+\contentsline {subsubsection}{\numberline {11.45.2.17}MIN\_IEEE\_NORM\_NEG\_FLOAT64}{231}{subsubsection.11.45.2.17}%
+\contentsline {subsubsection}{\numberline {11.45.2.18}MIN\_IEEE\_NORM\_POS\_FLOAT32}{231}{subsubsection.11.45.2.18}%
+\contentsline {subsubsection}{\numberline {11.45.2.19}MIN\_IEEE\_NORM\_POS\_FLOAT64}{231}{subsubsection.11.45.2.19}%
+\contentsline {subsubsection}{\numberline {11.45.2.20}MIN\_NEG\_FLOAT32}{231}{subsubsection.11.45.2.20}%
+\contentsline {subsubsection}{\numberline {11.45.2.21}MIN\_NEG\_FLOAT64}{231}{subsubsection.11.45.2.21}%
+\contentsline {subsubsection}{\numberline {11.45.2.22}MIN\_POS\_FLOAT32}{232}{subsubsection.11.45.2.22}%
+\contentsline {subsubsection}{\numberline {11.45.2.23}MIN\_POS\_FLOAT64}{232}{subsubsection.11.45.2.23}%
+\contentsline {subsubsection}{\numberline {11.45.2.24}NULL}{232}{subsubsection.11.45.2.24}%
+\contentsline {subsubsection}{\numberline {11.45.2.25}TRUE}{232}{subsubsection.11.45.2.25}%
+\contentsline {subsection}{\numberline {11.45.3}Typedef Documentation}{232}{subsection.11.45.3}%
+\contentsline {subsubsection}{\numberline {11.45.3.1}anytype\_t}{232}{subsubsection.11.45.3.1}%
+\contentsline {subsubsection}{\numberline {11.45.3.2}float32}{232}{subsubsection.11.45.3.2}%
+\contentsline {subsubsection}{\numberline {11.45.3.3}float64}{232}{subsubsection.11.45.3.3}%
+\contentsline {subsubsection}{\numberline {11.45.3.4}int16}{232}{subsubsection.11.45.3.4}%
+\contentsline {subsubsection}{\numberline {11.45.3.5}int32}{232}{subsubsection.11.45.3.5}%
+\contentsline {subsubsection}{\numberline {11.45.3.6}int64}{233}{subsubsection.11.45.3.6}%
+\contentsline {subsubsection}{\numberline {11.45.3.7}int8}{233}{subsubsection.11.45.3.7}%
+\contentsline {subsubsection}{\numberline {11.45.3.8}uint16}{233}{subsubsection.11.45.3.8}%
+\contentsline {subsubsection}{\numberline {11.45.3.9}uint32}{233}{subsubsection.11.45.3.9}%
+\contentsline {subsubsection}{\numberline {11.45.3.10}uint64}{233}{subsubsection.11.45.3.10}%
+\contentsline {subsubsection}{\numberline {11.45.3.11}uint8}{233}{subsubsection.11.45.3.11}%
+\contentsline {section}{\numberline {11.46}prim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{233}{section.11.46}%
+\contentsline {section}{\numberline {11.47}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/search.h File Reference}{235}{section.11.47}%
+\contentsline {subsection}{\numberline {11.47.1}Detailed Description}{236}{subsection.11.47.1}%
+\contentsline {subsection}{\numberline {11.47.2}Typedef Documentation}{236}{subsection.11.47.2}%
+\contentsline {subsubsection}{\numberline {11.47.2.1}ps\_search\_iter\_t}{236}{subsubsection.11.47.2.1}%
+\contentsline {section}{\numberline {11.48}search.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{237}{section.11.48}%
+\contentsline {section}{\numberline {11.49}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/include/pocketsphinx/vad.h File Reference}{238}{section.11.49}%
+\contentsline {subsection}{\numberline {11.49.1}Detailed Description}{239}{subsection.11.49.1}%
+\contentsline {subsection}{\numberline {11.49.2}Macro Definition Documentation}{239}{subsection.11.49.2}%
+\contentsline {subsubsection}{\numberline {11.49.2.1}PS\_VAD\_DEFAULT\_FRAME\_LENGTH}{239}{subsubsection.11.49.2.1}%
+\contentsline {subsubsection}{\numberline {11.49.2.2}PS\_VAD\_DEFAULT\_SAMPLE\_RATE}{239}{subsubsection.11.49.2.2}%
+\contentsline {subsubsection}{\numberline {11.49.2.3}ps\_vad\_frame\_length}{239}{subsubsection.11.49.2.3}%
+\contentsline {subsection}{\numberline {11.49.3}Typedef Documentation}{239}{subsection.11.49.3}%
+\contentsline {subsubsection}{\numberline {11.49.3.1}ps\_vad\_class\_t}{239}{subsubsection.11.49.3.1}%
+\contentsline {subsubsection}{\numberline {11.49.3.2}ps\_vad\_mode\_t}{240}{subsubsection.11.49.3.2}%
+\contentsline {subsubsection}{\numberline {11.49.3.3}ps\_vad\_t}{240}{subsubsection.11.49.3.3}%
+\contentsline {subsection}{\numberline {11.49.4}Enumeration Type Documentation}{240}{subsection.11.49.4}%
+\contentsline {subsubsection}{\numberline {11.49.4.1}ps\_vad\_class\_e}{240}{subsubsection.11.49.4.1}%
+\contentsline {subsubsection}{\numberline {11.49.4.2}ps\_vad\_mode\_e}{240}{subsubsection.11.49.4.2}%
+\contentsline {section}{\numberline {11.50}vad.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{241}{section.11.50}%
+\contentsline {section}{\numberline {11.51}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/main.cpp File Reference}{242}{section.11.51}%
+\contentsline {subsection}{\numberline {11.51.1}Function Documentation}{242}{subsection.11.51.1}%
+\contentsline {subsubsection}{\numberline {11.51.1.1}main()}{242}{subsubsection.11.51.1.1}%
+\contentsline {section}{\numberline {11.52}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Test/main.cpp File Reference}{242}{section.11.52}%
+\contentsline {subsection}{\numberline {11.52.1}Function Documentation}{243}{subsection.11.52.1}%
+\contentsline {subsubsection}{\numberline {11.52.1.1}main()}{243}{subsubsection.11.52.1.1}%
+\contentsline {section}{\numberline {11.53}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board.cpp File Reference}{243}{section.11.53}%
+\contentsline {section}{\numberline {11.54}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board.h File Reference}{243}{section.11.54}%
+\contentsline {section}{\numberline {11.55}Board.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{243}{section.11.55}%
+\contentsline {section}{\numberline {11.56}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.cpp File Reference}{244}{section.11.56}%
+\contentsline {section}{\numberline {11.57}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.h File Reference}{244}{section.11.57}%
+\contentsline {section}{\numberline {11.58}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{244}{section.11.58}%
+\contentsline {section}{\numberline {11.59}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.cpp File Reference}{245}{section.11.59}%
+\contentsline {section}{\numberline {11.60}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.h File Reference}{245}{section.11.60}%
+\contentsline {section}{\numberline {11.61}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{245}{section.11.61}%
+\contentsline {section}{\numberline {11.62}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Test/tst\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}board.h File Reference}{246}{section.11.62}%
+\contentsline {subsection}{\numberline {11.62.1}Function Documentation}{246}{subsection.11.62.1}%
+\contentsline {subsubsection}{\numberline {11.62.1.1}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [1/11]}}{246}{subsubsection.11.62.1.1}%
+\contentsline {subsubsection}{\numberline {11.62.1.2}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [2/11]}}{247}{subsubsection.11.62.1.2}%
+\contentsline {subsubsection}{\numberline {11.62.1.3}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [3/11]}}{247}{subsubsection.11.62.1.3}%
+\contentsline {subsubsection}{\numberline {11.62.1.4}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [4/11]}}{247}{subsubsection.11.62.1.4}%
+\contentsline {subsubsection}{\numberline {11.62.1.5}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [5/11]}}{247}{subsubsection.11.62.1.5}%
+\contentsline {subsubsection}{\numberline {11.62.1.6}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [6/11]}}{247}{subsubsection.11.62.1.6}%
+\contentsline {subsubsection}{\numberline {11.62.1.7}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [7/11]}}{247}{subsubsection.11.62.1.7}%
+\contentsline {subsubsection}{\numberline {11.62.1.8}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [8/11]}}{248}{subsubsection.11.62.1.8}%
+\contentsline {subsubsection}{\numberline {11.62.1.9}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [9/11]}}{248}{subsubsection.11.62.1.9}%
+\contentsline {subsubsection}{\numberline {11.62.1.10}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [10/11]}}{248}{subsubsection.11.62.1.10}%
+\contentsline {subsubsection}{\numberline {11.62.1.11}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [11/11]}}{248}{subsubsection.11.62.1.11}%
+\contentsline {section}{\numberline {11.63}tst\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}board.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{248}{section.11.63}%
+\contentsline {section}{\numberline {11.64}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Test/tst\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}minimaxagent.h File Reference}{255}{section.11.64}%
+\contentsline {subsection}{\numberline {11.64.1}Function Documentation}{255}{subsection.11.64.1}%
+\contentsline {subsubsection}{\numberline {11.64.1.1}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{255}{subsubsection.11.64.1.1}%
+\contentsline {subsubsection}{\numberline {11.64.1.2}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{256}{subsubsection.11.64.1.2}%
+\contentsline {subsubsection}{\numberline {11.64.1.3}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{256}{subsubsection.11.64.1.3}%
+\contentsline {subsubsection}{\numberline {11.64.1.4}TEST()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{256}{subsubsection.11.64.1.4}%
+\contentsline {section}{\numberline {11.65}tst\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}minimaxagent.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{256}{section.11.65}%
+\contentsline {section}{\numberline {11.66}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TTTCommon\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types.h File Reference}{259}{section.11.66}%
+\contentsline {subsection}{\numberline {11.66.1}Enumeration Type Documentation}{260}{subsection.11.66.1}%
+\contentsline {subsubsection}{\numberline {11.66.1.1}BoardMarks}{260}{subsubsection.11.66.1.1}%
+\contentsline {subsubsection}{\numberline {11.66.1.2}BoardState}{260}{subsubsection.11.66.1.2}%
+\contentsline {subsection}{\numberline {11.66.2}Variable Documentation}{261}{subsection.11.66.2}%
+\contentsline {subsubsection}{\numberline {11.66.2.1}global\_done}{261}{subsubsection.11.66.2.1}%
+\contentsline {section}{\numberline {11.67}TTTCommon\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{261}{section.11.67}%
+\contentsline {section}{\numberline {11.68}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game.cpp File Reference}{263}{section.11.68}%
+\contentsline {section}{\numberline {11.69}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game.h File Reference}{263}{section.11.69}%
+\contentsline {section}{\numberline {11.70}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{263}{section.11.70}%
+\contentsline {section}{\numberline {11.71}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen.cpp File Reference}{264}{section.11.71}%
+\contentsline {section}{\numberline {11.72}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/ferna/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Voice\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qt-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe-\/master/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen.h File Reference}{264}{section.11.72}%
+\contentsline {section}{\numberline {11.73}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{264}{section.11.73}%

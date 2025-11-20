@@ -7,11 +7,11 @@ REFERENCED_BY_RELATION = YES
 
 # --- Información del proyecto ---
 PROJECT_NAME           = "Voice TicTacToe"
-PROJECT_BRIEF          = "Juego de tres en raya controlado por voz (Qt + IA)"
+PROJECT_BRIEF          = "Juego de tres en raya controlado por voz"
 
 # --- Entradas ---
 # Carpeta donde está tu código fuente
-INPUT                  = ../Qt-Tic-Tac-Toe-master
+INPUT                  = ../.
 FILE_PATTERNS          = *.cpp *.h
 RECURSIVE              = YES
 
