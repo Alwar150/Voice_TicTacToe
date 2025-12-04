@@ -2,7 +2,7 @@
 client = startTcpClient();
 function tclient = startTcpClient()
     % Define la dirección del servidor y el puerto
-    serverAddress = '192.168.56.1';
+    serverAddress = '127.0.0.1';
     serverPort = 5000;
 
     disp('--------------------------------------------------');
@@ -38,7 +38,7 @@ function handleDataAvailable(src, ~)
     % Asegúrate de que el buffer esté limpio si esperas más datos
     flush(src); 
 
-    sendMessage(src, "1,1,X");
+    sendMessage(src, "1,2,X");
 end
 
 % Función para enviar mensajes al servidor

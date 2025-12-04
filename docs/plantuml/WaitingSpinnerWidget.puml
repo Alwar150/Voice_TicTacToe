@@ -1,0 +1,25 @@
+/**
+ * @file WaitingSpinnerWidget.puml
+ * @brief PlantUML block for `WaitingSpinnerWidget` to be included by Doxygen.
+ *
+ * Generated from `include/View/waitingspinnerwidget.h` using the HumanPlayer.h format.
+ */
+
+/**
+ * @startuml
+ * class WaitingSpinnerWidget
+ * --
+ * -_color: QColor
+ * -_roundness: qreal
+ * -_timer: QTimer*
+ * -_isSpinning: bool
+ * --
+ * +WaitingSpinnerWidget(...)
+ * +start(): void
+ * +stop(): void
+ * +setColor(QColor): void
+ * +isSpinning(): bool
+ * --
+ * WaitingSpinnerWidget ..|> QWidget
+ * @enduml
+ */

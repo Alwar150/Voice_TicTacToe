@@ -8,7 +8,7 @@
 /**
  * @file TitleScreen.h
  * @brief Definition of the TitleScreen class for the main menu GUI
- * @author Miguel Fernández Lorenzo
+ * @author Abdelrahman Osama
  * @version 1.0
  * @date November 2025
  */
@@ -17,6 +17,22 @@
  * @brief The TitleScreen class is responsible for the GUI of the title screen,
  * its main functionality is to gather game options set by the user,
  * then starting a game by creating a Tic Tac Toe controller with the user options.
+ *
+ * @startuml
+ * class TitleScreen
+ * --
+ * -ui: std::unique_ptr<Ui::TitleScreen>
+ * -options_: TTTOptions
+ * --
+ * +TitleScreen(QWidget* parent = nullptr)
+ * +updateSinglePlayer(bool): void
+ * +updateTwoPlayers(bool): void
+ * +updateAIstartsGame(bool): void
+ * +updateMiniMaxDepth(int): void
+ * +startGame(): void
+ * --
+ * TitleScreen ..|> QMainWindow
+ * @enduml
  */
 class TitleScreen final : public QMainWindow
 {
@@ -49,11 +65,6 @@ private:
     void closeEvent(QCloseEvent *event) override;
 
 public slots:
-    /**
-     * @brief updateBoardSize updates the board size in the current options.
-     * @param size: the number of rows or columns in the board.
-     */
-    void updateBoardSize(int size);
     /**
      * @brief updateSinglePlayer updates the AI existence flag to true as there is one player.
      * @param checked: wether the radio button is checked or not.

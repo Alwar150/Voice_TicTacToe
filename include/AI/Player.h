@@ -1,6 +1,8 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-// ... includes ...
+#include <QObject>
+#include <TTTCommonTypes.h>
+#include <Board.h>
 
 /**
  * @file Player.h
@@ -11,12 +13,29 @@
  */
 
 /**
+ * @class Player
  * @brief The Player class is an abstract base class for different types of players.
  *
  * This class defines the common interface for all participants in the Tic-Tac-Toe game,
  * whether they are human players (HumanPlayer), AI agents (MiniMaxAgent), or network players.
  * It provides the mechanism to start the turn (`play()`) and notify the completed move.
+ *
+ * @startuml
+ * interface Player {
+ *   +play(): void
+ *   --
+ *   -board_: Board*
+ *   -mark_: BoardMarks&
+ *   --
+ *   +playerFinished(int): signal
+ * }
+ *
+ * Player ..|> QObject
+ * @enduml
  */
+
+ 
+
 class Player : public QObject
 {
     Q_OBJECT

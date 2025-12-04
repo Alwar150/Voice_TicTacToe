@@ -3,6 +3,7 @@
 
 #include "TTTCommonTypes.h"
 #include "ui_TicTacToeGame.h"
+#include "waitingspinnerwidget.h"
 #include <QDialog>
 #include <vector>
 #include <memory>
@@ -12,9 +13,8 @@ using std::vector;
 /**
  * @file TicTacToeGame.h
  * @brief Definition of the TicTacToeGame class for the game GUI
- * @author Miguel Fernández Lorenzo
+ * @author Abdelrahman Osama
  * @version 1.0
- * @date November 2025
  */
 
 /**
@@ -23,6 +23,25 @@ using std::vector;
  * variable size, and a navigation button to take the user back to
  * the title screen, and a button for resetting the game and playing a
  * new one.
+ *
+ * @startuml
+ * class TicTacToeGame
+ * --
+ * -ui: std::unique_ptr<Ui::TicTacToeGame>
+ * -waiter: WaitingSpinnerWidget*
+ * --
+ * +TicTacToeGame(QWidget* parent = nullptr)
+ * +updateCell(Cell&, BoardMarks): void
+ * +declareGameState(BoardState): void
+ * +buildCellButtons(size_t): std::vector<Cell>
+ * +reset(std::vector<Cell>&): void
+ * +updateConnectionStatus(bool): void
+ * +updateRecordingStatus(bool): void
+ * +updateWaitingStatus(bool): void
+ * --
+ * TicTacToeGame ..|> QDialog
+ * TicTacToeGame --> WaitingSpinnerWidget
+ * @enduml
  */
 class TicTacToeGame final : public QDialog
 {
@@ -59,6 +78,17 @@ public:
      */
     void reset(vector<Cell> &cells);
 
+    /**
+     * @brief Update de visual indicator of the conection status with socket server
+     */
+    void updateConnectionStatus(bool);
+    void updateRecordingStatus(bool);
+    void updateWaitingStatus(bool);
+    /**
+     * @brief Activate or deactivate the visual loading indicator
+     */
+
+
 private:
     /**
      * @brief ui is a reference to the ui object of the tic tac toe game.
@@ -90,12 +120,23 @@ private:
      */
     QString getBoardFinalStateText(BoardState boardState);
 
+    void setLedStyle(QLabel* label, const QString& text, const QString& bgColor, const QString& textColor, int fontSize);
+    /**
+     * @brief WaitingSpinnerWidget, intended to be an animated wheel when process is waiting server response
+     */
+    WaitingSpinnerWidget* waiter;
+
+
 signals:
     /**
      * @brief newGame is emitted when the New Game button is clicked and
      * some reset logic must be executed.
      */
     void newGame();
+    /**
+     * @brief goBack is emitted when the Back button is clicked and the TtitleScreen must reappear.
+     */
+    void goBack();
 };
 
 #endif // MAINWINDOW_H

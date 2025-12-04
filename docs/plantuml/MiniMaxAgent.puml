@@ -1,0 +1,25 @@
+/**
+ * @file MiniMaxAgent.puml
+ * @brief PlantUML block for `MiniMaxAgent` to be included by Doxygen.
+ *
+ * Extracted from `include/AI/MiniMaxAgent.h`.
+ */
+
+/**
+ * @startuml
+ * class MiniMaxAgent extends AIAgent
+ * --
+ * -depth_: unsigned short
+ * --
+ * +MiniMaxAgent(const Board&, BoardMarks, unsigned short, QObject*)
+ * +play(): void
+ * -maxMove(Board&, unsigned short, short, short): short
+ * -minMove(Board&, unsigned short, short, short): short
+ * -score(const BoardState): short
+ * +<<signal>>  playerFinished(int)
+ * --
+ * Player ..|> QObject
+ * AIAgent ..|> Player
+ * MiniMaxAgent ..|> AIAgent
+ * @enduml
+ */

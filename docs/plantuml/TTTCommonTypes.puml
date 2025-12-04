@@ -1,0 +1,26 @@
+/**
+ * @file TTTCommonTypes.puml
+ * @brief PlantUML block for `TTTCommonTypes` (structs/enums) to be included by Doxygen.
+ *
+ * Generated from `include/TTTCommonTypes.h` using the HumanPlayer.h format.
+ */
+
+/**
+ * @startuml
+ * struct Cell
+ * --
+ * -cellBtn: QPushButton*
+ * -row: int
+ * -col: int
+ * --
+ * struct TTTOptions
+ * --
+ * -boardSize: size_t
+ * -miniMaxDepth: unsigned short
+ * -AIopponent: bool
+ * -AIstarts: bool
+ * --
+ * enum BoardMarks { Empty, X, O }
+ * enum BoardState { NoWinner, XWins, OWins, Tie }
+ * @enduml
+ */

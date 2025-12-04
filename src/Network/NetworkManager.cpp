@@ -31,13 +31,13 @@ void NetworkManager::sendMessage(const QString &message)
 void NetworkManager::onConnected()
 {
     qDebug() << "[NET] Conectado al servidor.";
-
+    emit connected();
 }
 
 void NetworkManager::onDisconnected()
 {
     qDebug() << "[NET] Desconectado del servidor.";
-
+    emit disconnected();
 }
 
 void NetworkManager::onError(QAbstractSocket::SocketError socketError)

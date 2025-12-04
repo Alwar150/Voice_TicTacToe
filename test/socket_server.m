@@ -1,7 +1,7 @@
 server = startTcpServer();
 function tserver = startTcpServer()
     % Define la dirección local (localhost) y el puerto
-    serverAddress = '127.0.0.1';
+    serverAddress = '192.168.56.1';
     serverPort = 5000;
 
     disp('--------------------------------------------------');
@@ -13,7 +13,7 @@ function tserver = startTcpServer()
                         "ConnectionChangedFcn", @handleConnectionChange); % Usamos terminador para mensajes claros
     
     % OPCIONAL: Si esperas cadenas de texto (como en C++), ajusta el terminador
-    configureTerminator(tserver,"CR/LF"); % Usa 'LF' (Line Feed) o 'CR/LF' (Windows)
+    configureTerminator(tserver,"LF"); % Usa 'LF' (Line Feed) o 'CR/LF' (Windows)
     configureCallback(tserver,"terminator",@handleDataAvailable);
     disp('Servidor iniciado. Esperando conexiones (Presiona Ctrl+C o usa clear tserver para detener).');
     disp('--------------------------------------------------');

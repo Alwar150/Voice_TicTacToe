@@ -27,6 +27,25 @@
  *
  * Emits signals when speech is recognized, allowing safe communication
  * with the main thread.
+ *
+ * @startuml
+ * class SpeechManager
+ * --
+ * -stream_: PaStream*
+ * -decoder_: ps_decoder_t*
+ * -config_: ps_config_t*
+ * -frame_: short*
+ * -frame_size_: size_t
+ * -hyp_: const char*
+ * --
+ * +SpeechManager(QObject* parent = nullptr)
+ * +~SpeechManager()
+ * +configure(): void
+ * +init(): void
+ * +startListening(): void
+ * --
+ * SpeechManager ..|> QObject
+ * @enduml
  */
 class SpeechManager : public QObject
 {

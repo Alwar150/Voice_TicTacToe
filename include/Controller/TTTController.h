@@ -32,6 +32,31 @@ using std::vector;
  * the game state (the Model, Board) and the game logic, including turn management,
  * AI agents (MiniMaxAgent), human players and network communication (NetworkManager).
  * It is responsible for receiving game options and orchestrating the game flow.
+ *
+ * @startuml
+ * class TTTController
+ * --
+ * -view_: TicTacToeGame
+ * -board_: Board
+ * -cells_: std::vector<Cell>
+ * -options_: TTTOptions&
+ * -currentPlayer_: BoardMarks
+ * -playerX_: std::unique_ptr<Player>
+ * -playerO_: std::unique_ptr<Player>
+ * -network_: NetworkManager*
+ * --
+ * +TTTController(const TTTOptions&, QObject*)
+ * +startGame(): void
+ * +getView(): QWidget*
+ * +updateGame(Cell&): void
+ * +updateGameState(Cell&): void
+ * +switchPlayer(): void
+ * --
+ * TTTController ..|> QObject
+ * TTTController --> TicTacToeGame
+ * TTTController --> Board
+ * TTTController --> NetworkManager
+ * @enduml
  */
 class TTTController : public QObject
 {

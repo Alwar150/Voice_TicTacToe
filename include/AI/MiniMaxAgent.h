@@ -18,7 +18,25 @@
  * Uses **Alpha-Beta pruning** to optimize the search.
  * The algorithm evaluates final states by assigning scores: positive for AI victory,
  * negative for human player victory, and zero for a tie.
+ *
+ * @startuml
+ * class MiniMaxAgent extends AIAgent
+ * --
+ * -depth_: unsigned short
+ * --
+ * +MiniMaxAgent(const Board&, BoardMarks, unsigned short, QObject*)
+ * +play(): void
+ * -maxMove(Board&, unsigned short, short, short): short
+ * -minMove(Board&, unsigned short, short, short): short
+ * -score(const BoardState): short
+ * +<<signal>>  playerFinished(int)
+ * --
+ * Player ..|> QObject
+ * AIAgent ..|> Player
+ * MiniMaxAgent ..|> AIAgent
+ * @enduml
  */
+
 class MiniMaxAgent final : public AIAgent
 {
     Q_OBJECT

@@ -22,6 +22,22 @@
  * Manages the application configuration from a config.ini file.
  * Applies the **Singleton** pattern to ensure only one globally accessible
  * instance exists, providing a centralized point to access program options.
+ *
+ * @startuml
+ * class ConfigManager
+ * --
+ * -settings_: QSettings*
+ * -baseDir_: QString
+ * --
+ * +instance(): ConfigManager&
+ * +load(const QString&): void
+ * +getValue(const QString&, const QString&): QString
+ * +getInt(const QString&, int): int
+ * +getBool(const QString&, bool): bool
+ * +resolvePath(const QString&): QString
+ * --
+ * ConfigManager ..|> QObject
+ * @enduml
  */
 class ConfigManager final : public QObject
 {

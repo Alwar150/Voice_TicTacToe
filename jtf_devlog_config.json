@@ -1,0 +1,21 @@
+{
+  "project": {
+    "name": "Tic-Tac-Toe with AI",
+    "version": "1.0",
+    "description": "Juego de tres en raya con IA y reconocimiento de voz"
+  },
+  "standards": {
+    "version": "JTF-C++ Lite",
+    "critical_modules": [
+      "Board", "MiniMaxAgent", "SpeechManager", "TTTController"
+    ]
+  },
+  "git": {
+    "analysis_period": "2 months ago",
+    "branch": "main"
+  },
+  "output": {
+    "doxygen_file": ".doxygen-devlog",
+    "reports_dir": "docs/jtf_devlog/output"
+  }
+}

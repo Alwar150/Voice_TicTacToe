@@ -1,0 +1,33 @@
+/**
+ * @file TTTController.puml
+ * @brief PlantUML block for `TTTController` to be included by Doxygen.
+ *
+ * Generated from `include/Controller/TTTController.h` using the HumanPlayer.h format.
+ */
+
+/**
+ * @startuml
+ * class TTTController
+ * --
+ * -view_: TicTacToeGame
+ * -board_: Board
+ * -cells_: std::vector<Cell>
+ * -options_: TTTOptions&
+ * -currentPlayer_: BoardMarks
+ * -playerX_: std::unique_ptr<Player>
+ * -playerO_: std::unique_ptr<Player>
+ * -network_: NetworkManager*
+ * --
+ * +TTTController(const TTTOptions&, QObject*)
+ * +startGame(): void
+ * +getView(): QWidget*
+ * +updateGame(Cell&): void
+ * +updateGameState(Cell&): void
+ * +switchPlayer(): void
+ * --
+ * TTTController ..|> QObject
+ * TTTController --> TicTacToeGame
+ * TTTController --> Board
+ * TTTController --> NetworkManager
+ * @enduml
+ */

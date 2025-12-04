@@ -1,0 +1,99 @@
+@startuml
+
+'=======================
+' Interfaces
+'=======================
+interface Player {
+    +makeMove(board: Board): void
+}
+
+interface AIAgent extends Player {
+}
+
+'=======================
+' Clases concretas
+'=======================
+class SpeechManager {
+    -engine: pocketsphinx
+    +startListening(): void
+    +stopListening(): void
+}
+
+class ConfigManager {
+    -static instance: ConfigManager
+    -settings: QSettings
+    +getInstance(): ConfigManager
+    +get(key: string): QVariant
+    +set(key: string, value: QVariant): void
+}
+
+class NetworkManager {
+    +connectToServer(ip: string, port: int): void
+    +sendMessage(msg: string): void
+    +receiveMessage(): string
+}
+
+class TTTController {
+    -currentPlayer_: BoardMarks
+    -board_: Board
+    -cells_: vector<Cell>
+    -options_: TTTOptions
+    -playerX_: unique_ptr<Player>
+    -playerO_: unique_ptr<Player>
+    -network_: NetworkManager*
+    -view_: TicTacToeGame*
+    +startGame(): void
+    +processMove(): void
+}
+
+class TicTacToeGame {
+    -ui: QDialog
+    +updateBoard(board: Board): void
+}
+
+class Board {
+    -cells: vector<BoardMarks>
+}
+
+class Cell {
+    -button: QPushButton*
+    -row: int
+    -col: int
+}
+
+class MiniMaxAgent {
+    -depth: int
+    +makeMove(board: Board): void
+}
+
+class HumanPlayer {
+    -speech_: SpeechManager
+    +makeMove(board: Board): void
+    +startListening(): void
+    +stopListening(): void
+}
+
+class TitleScreen {
+    -controller_: TTTController*
+}
+
+'=======================
+' Relaciones de herencia
+'=======================
+Player <|-- AIAgent
+AIAgent <|-- MiniMaxAgent
+Player <|-- HumanPlayer
+
+'=======================
+' Composición / Contención
+'=======================
+TitleScreen --> TTTController : crea
+TTTController --> TicTacToeGame : view_
+TTTController --> NetworkManager : network_
+TTTController --> Player : playerX_ / playerO_
+TTTController --> Board
+TTTController --> Cell : cells_ *
+TicTacToeGame --> Cell
+HumanPlayer --> SpeechManager
+
+@enduml

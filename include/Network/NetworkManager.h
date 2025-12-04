@@ -21,6 +21,19 @@
  *
  * Emits signals to notify connection status, errors and
  * message reception.
+ *
+ * @startuml
+ * class NetworkManager
+ * --
+ * -socket_: QTcpSocket*
+ * -timer_: QTimer*
+ * --
+ * +NetworkManager(QObject* parent = nullptr)
+ * +connectToServer(const QString&, quint16): void
+ * +sendMessage(const QString&): void
+ * --
+ * NetworkManager ..|> QObject
+ * @enduml
  */
 class NetworkManager : public QObject
 {

@@ -22,6 +22,24 @@ constexpr char DEFAULT_COLOR[] = "#FFF";
  * @author Miguel Fernández Lorenzo
  * @version 1.0
  * @date November 2025
+ *
+ * @startuml
+ * struct Cell
+ * --
+ * -cellBtn: QPushButton*
+ * -row: int
+ * -col: int
+ * --
+ * struct TTTOptions
+ * --
+ * -boardSize: size_t
+ * -miniMaxDepth: unsigned short
+ * -AIopponent: bool
+ * -AIstarts: bool
+ * --
+ * enum BoardMarks { Empty, X, O }
+ * enum BoardState { NoWinner, XWins, OWins, Tie }
+ * @enduml
  */
 
 /**

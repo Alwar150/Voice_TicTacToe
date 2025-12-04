@@ -1,0 +1,27 @@
+/**
+ * @file TicTacToeGame.puml
+ * @brief PlantUML block for `TicTacToeGame` to be included by Doxygen.
+ *
+ * Generated from `include/View/TicTacToeGame.h` using the HumanPlayer.h format.
+ */
+
+/**
+ * @startuml
+ * class TicTacToeGame
+ * --
+ * -ui: std::unique_ptr<Ui::TicTacToeGame>
+ * -waiter: WaitingSpinnerWidget*
+ * --
+ * +TicTacToeGame(QWidget* parent = nullptr)
+ * +updateCell(Cell&, BoardMarks): void
+ * +declareGameState(BoardState): void
+ * +buildCellButtons(size_t): std::vector<Cell>
+ * +reset(std::vector<Cell>&): void
+ * +updateConnectionStatus(bool): void
+ * +updateRecordingStatus(bool): void
+ * +updateWaitingStatus(bool): void
+ * --
+ * TicTacToeGame ..|> QDialog
+ * TicTacToeGame --> WaitingSpinnerWidget
+ * @enduml
+ */

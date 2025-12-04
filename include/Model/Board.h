@@ -19,6 +19,27 @@ using std::vector;
  * the underlying model of the game, it is a 2D matrix representation
  * of the GUI that is machine readable, and can be used when running
  * any sort of algorithms on the board.
+ *
+ * @startuml
+ * class Board
+ * --
+ * -board_: std::vector<std::vector<BoardMarks>>
+ * -boardSize_: size_t
+ * --
+ * +Board(size_t)
+ * +Board(Board&)
+ * +Board(const Board&)
+ * +Board(Board&&)
+ * +operator=(Board): Board&
+ * +~Board()
+ * +evaluateBoard(): BoardState
+ * +setPlayerInput(size_t, size_t, BoardMarks): bool
+ * +at(size_t, size_t): BoardMarks
+ * +reset(): void
+ * +resetCell(size_t, size_t): void
+ * +size(): size_t
+ * --
+ * @enduml
  */
 class Board
 {

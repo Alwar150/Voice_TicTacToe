@@ -1,0 +1,25 @@
+/**
+ * @file HumanPlayer.puml
+ * @brief PlantUML block for `HumanPlayer` to be included by Doxygen.
+ *
+ * Extracted from `include/AI/HumanPlayer.h`.
+ */
+
+/**
+ * @startuml
+ * class HumanPlayer extends Player
+ * --
+ * -stt_: SpeechManager*
+ * -sttThread_: QThread*
+ * --
+ * +HumanPlayer(const Board&, BoardMarks, QObject*)
+ * +~HumanPlayer()
+ * +play(): void
+ * +<<signal>>  startListening()
+ * +<<signal>>  stopListening()
+ * +<<signal>> playerFinished(int)
+ * --
+ * Player ..|> QObject
+ * HumanPlayer ..|> Player
+ * @enduml
+ */

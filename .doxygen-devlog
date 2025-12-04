@@ -1,0 +1,50 @@
+/**
+ * @file .doxygen-devlog
+ * @brief DEVLOG INTERNO - Registro de Desarrollo del Equipo
+ * @internal
+ * @team_only
+ * @generated_automatically
+ * @date 2025-11-20 22:18
+ */
+
+/**
+ * @page devlog_interno DevLog - Uso Interno del Equipo
+
+# 🚀 Registro de Desarrollo Interno
+
+**⚠️ ESTA DOCUMENTACIÓN ES SOLO PARA EL EQUIPO DE DESARROLLO**
+
+## 📊 Métricas del Equipo
+
+- **Total de commits analizados**: 18
+- **Nuevas funcionalidades**: 3
+- **Correcciones de bugs**: 4
+- **Mejoras técnicas**: 2
+- **Otros cambios**: 9
+
+## 🎯 Nuevas Funcionalidades
+
+- **2025-10-21** (`13e4b6a4`): Add files via upload
+  - Archivos: Voice_TicTacToe_Gantt.xlsx
+- **2025-11-03** (`bd8d80f7`): Add speech recognition dependencies
+  - Archivos: Qt-Tic-Tac-Toe-master/examples/.gitignore, Qt-Tic-Tac-Toe-master/examples/3.wav, Qt-Tic-Tac-Toe-master/examples/B_1_C_4.wav ... (+1488 más)
+- **2025-11-17** (`9a460b44`): Add Matlab and Coppelia files for testing
+  - Archivos: UR5_VTTT.ttt, socket_server.m
+
+## 🐛 Correcciones Técnicas
+
+- **2025-11-11** (`c2213c99`): Bugfix: Correccion de IA saltandose turnos
+- **2025-11-13** (`8978a7da`): Codigo refactorizado y funcional. BUGFIX: Reset despues de fin de partida, interpretaci'on de voz a celda en cualquier orden.
+- **2025-11-11** (`c34c8af7`): Bugfix: IA not respecting turns, switchPlayer not triggering
+- **2025-11-13** (`4999b02e`): DEV: Refactorized code. BUGFIX: Reset after game over.
+
+## ⚡ Mejoras Técnicas
+
+- **2025-11-12** (`61b18025`): Refactoring starting point
+- **2025-11-12** (`72464b0a`): Refactoring starting point
+
+## 📈 Resumen de Actividad
+
+⚠️ **Actividad moderada** - considerar aumentar ritmo.
+
+*/

@@ -22,7 +22,26 @@
  *
  * Uses a dedicated worker thread (`QThread`) for voice processing
  * (`SpeechManager`) to avoid blocking the main GUI thread.
+ *
+ * @startuml
+ * class HumanPlayer extends Player
+ * --
+ * -stt_: SpeechManager*
+ * -sttThread_: QThread*
+ * --
+ * +HumanPlayer(const Board&, BoardMarks, QObject*)
+ * +~HumanPlayer()
+ * +play(): void
+ * +<<signal>>  startListening()
+ * +<<signal>>  stopListening()
+ * +<<signal>> playerFinished(int)
+ * --
+ * Player ..|> QObject
+ * HumanPlayer ..|> Player
+ * @enduml
  */
+
+ 
 class HumanPlayer final : public Player{
     Q_OBJECT
 
