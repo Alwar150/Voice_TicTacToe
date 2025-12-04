@@ -26,6 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <QTimer>
 #include <QColor>
 
+<<<<<<< HEAD
 /**
  * @class WaitingSpinnerWidget
  * @brief A customizable spinning animation widget.
@@ -48,6 +49,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  * @enduml
  */
 
+=======
+>>>>>>> afdadd3d46bec0902f02aec6604c627e510e4f67
 class WaitingSpinnerWidget : public QWidget {
     Q_OBJECT
 public:

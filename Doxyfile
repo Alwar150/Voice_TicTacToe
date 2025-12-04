@@ -11,15 +11,24 @@ PROJECT_BRIEF          = "Juego de tres en raya controlado por voz"
 
 # --- Entradas ---
 # Carpetas donde está tu código fuente (rutas relativas al repo)
+<<<<<<< HEAD
 INPUT                  = include src
 FILE_PATTERNS          = *.cpp *.h
+=======
+INPUT                  = include src docs/plantuml
+FILE_PATTERNS          = *.cpp *.h *.puml
+>>>>>>> afdadd3d46bec0902f02aec6604c627e510e4f67
 RECURSIVE              = YES
 
 # --- Salida ---
 OUTPUT_DIRECTORY       = .docs/doxygen
 GENERATE_HTML          = NO
 GENERATE_XML           = YES
+<<<<<<< HEAD
 GENERATE_UML           = YES
+=======
+GENERATE_UML = YES
+>>>>>>> afdadd3d46bec0902f02aec6604c627e510e4f67
 XML_OUTPUT             = xml
 XML_PROGRAMLISTING     = YES
 GENERATE_LATEX         = YES
@@ -38,6 +47,14 @@ PLANTUML_INCLUDE_PATH  =
 GENERATE_TRTF          = NO
 MSCFILE_DIRS           = 
 DIAFILE_DIRS           = 
+# Estas opciones desactivan la lista de ficheros detallada y el listado de namespaces.
+GENERATE_FILELIST              = NO
+GENERATE_DETAILED_FILELIST     = NO
+GENERATE_NAMESPACE_LIST        = NO
+GENERATE_CLASSLIST             = NO
+GENERATE_CLASSINDEX            = NO
+
+# Evitar generación de secciones de 'Files' y 'Namespaces' en la salida
 # Estas opciones desactivan la lista de ficheros detallada y el listado de namespaces.
 GENERATE_FILELIST              = NO
 GENERATE_DETAILED_FILELIST     = NO
