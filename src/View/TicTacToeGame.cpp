@@ -8,14 +8,28 @@ TicTacToeGame::TicTacToeGame(QWidget *parent)
     // remove question mark from the title bar
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
     ui->setupUi(this);
+    // Accedemos al LED (connectionLabel)
+    // CRÍTICO: Establecer ancho y alto iguales a 20x20 para asegurar la forma redonda
+    ui->connectionLabel->setFixedSize(20, 20);
+    ui->connectionLabel->setToolTip("Estado de Conexión: Desconectado");
+
+    ui->RecordLabel->setFixedSize(40, 25);
+
+    ui->WaitingLabel->setFixedSize(50, 20);
+
+    waiter = new WaitingSpinnerWidget(this,true,true);
+    updateWaitingStatus(false);
+
+    updateConnectionStatus(false); // Inicializar en rojo y aplicar el estilo redondo
     setConnections();
+    this->adjustSize();
 }
 
 void TicTacToeGame::setConnections()
 {
     // New Game Connection - resetting the game
     connect(ui->reset, &QPushButton::clicked, [=] { emit newGame(); });
-    connect(ui->back, &QPushButton::clicked, [=] { close(); });
+    connect(ui->back, &QPushButton::clicked, [=] { emit goBack(); });
 }
 
 vector<Cell> TicTacToeGame::buildCellButtons(size_t boardSize)
@@ -115,3 +129,92 @@ void TicTacToeGame::reset(vector<Cell> &cells)
     for (auto &cell : cells)
         cell.cellBtn->setText("");
 }
+
+void TicTacToeGame::updateConnectionStatus(bool isConnected)
+{
+    // Mensaje de depuración para confirmar que el slot se está ejecutando
+    qDebug() << "Slot updateConnectionStatus llamado. isConnected:" << isConnected;
+
+    // Paso 1: Limpiar explícitamente el estilo anterior.
+    ui->connectionLabel->setStyleSheet(QString());
+
+    // Acceder al LED a través del puntero de UI
+    if (isConnected) {
+        // Estilo VERDE (Conectado)
+        ui->connectionLabel->setStyleSheet(
+            "background-color: #4CAF50;" // Verde
+            // border-radius = 10px (la mitad de 20px) garantiza el círculo
+            "border-radius: 10px;"
+            "border: 2px solid #388E3C;"
+            );
+        ui->connectionLabel->setToolTip("Estado de Conexión: Conectado");
+    } else {
+        // Estilo ROJO (Desconectado)
+        ui->connectionLabel->setStyleSheet(
+            "background-color: #F44336;" // Rojo
+            "border-radius: 10px;"
+            "border: 2px solid #D32F2F;"
+            );
+        ui->connectionLabel->setToolTip("Estado de Conexión: Desconectado");
+    }
+}
+
+void TicTacToeGame::updateRecordingStatus(bool isRecording)
+{
+    // Mensaje de depuración para confirmar que el slot se está ejecutando
+    qDebug() << "Slot updateRecordingStatus llamado. isRecording:" << isRecording;
+
+    // Paso 1: Limpiar explícitamente el estilo anterior.
+    ui->connectionLabel->setStyleSheet(QString());
+
+    // Acceder al LED a través del puntero de UI
+    if (isRecording) {
+        // ROJO: Grabando
+        setLedStyle(ui->RecordLabel, "REC", "#e74c3c", "white", 12);
+    } else {
+        // GRIS: No grabando
+        setLedStyle(ui->RecordLabel, "REC", "#7f8c8d", "white", 12);
+    }
+    this->adjustSize();
+}
+
+void TicTacToeGame::updateWaitingStatus(bool isWaiting)
+{
+    // Mensaje de depuración para confirmar que el slot se está ejecutando
+    qDebug() << "Slot updateWaitingStatus llamado. isWaiting:" << isWaiting;
+
+    // Paso 1: Limpiar explícitamente el estilo anterior.
+    ui->WaitingLabel->setStyleSheet(QString());
+
+    // Acceder al LED a través del puntero de UI
+    if (isWaiting) {
+        // NARANJA/AMARILLO: Esperando respuesta del servidor
+        setLedStyle(ui->WaitingLabel, "ESPERANDO", "#f39c12", "white", 9);
+        waiter->start();
+    } else {
+        // VERDE CLARO: Listo para recibir input/acción
+        setLedStyle(ui->WaitingLabel, "LISTO", "#27ae60", "white", 9);
+        waiter->stop();
+    }
+    this->adjustSize();
+}
+
+void TicTacToeGame::setLedStyle(QLabel* label, const QString& text, const QString& bgColor, const QString& textColor, int fontSize){
+    if (label) {
+        label->setText(text);
+        label->setAlignment(Qt::AlignCenter);
+        label->setStyleSheet(QString(
+                                 "QLabel { "
+                                 "   font-weight: bold; "
+                                 "   font-size: %1pt; "
+                                 "   color: %2; "
+                                 "   background-color: %3; "
+                                 "   border: 1px solid rgba(0, 0, 0, 0.2); "
+                                 "   border-radius: 20px; "
+                                 "   padding: 4px; "
+                                 "}"
+                                 ).arg(fontSize).arg(textColor, bgColor));
+    }
+    this->adjustSize();
+}
+

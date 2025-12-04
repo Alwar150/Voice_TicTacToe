@@ -8,7 +8,7 @@
 /**
  * @file TitleScreen.h
  * @brief Definition of the TitleScreen class for the main menu GUI
- * @author Miguel Fernández Lorenzo
+ * @author Abdelrahman Osama
  * @version 1.0
  * @date November 2025
  */
@@ -49,11 +49,6 @@ private:
     void closeEvent(QCloseEvent *event) override;
 
 public slots:
-    /**
-     * @brief updateBoardSize updates the board size in the current options.
-     * @param size: the number of rows or columns in the board.
-     */
-    void updateBoardSize(int size);
     /**
      * @brief updateSinglePlayer updates the AI existence flag to true as there is one player.
      * @param checked: wether the radio button is checked or not.

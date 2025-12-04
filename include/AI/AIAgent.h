@@ -11,6 +11,7 @@
  */
 
 /**
+ * @class AIAgent
  * @brief The AIAgent interface describes the behavior of any implemented Artificial Intelligence agent.
  *
  * This abstract base class inherits from Player and establishes a common interface
@@ -18,6 +19,7 @@
  * necessary for an agent to reset its internal state before
  * a new turn or game.
  */
+
 
 class Board; // Forward declaration
 
@@ -42,16 +44,6 @@ public:
      * Allows proper destruction of derived classes through a base class pointer.
      */
     virtual ~AIAgent() {}
-
-    /**
-     * @brief Reset function that restores the state of any internal search algorithm.
-     *
-     * This method is typically called at the beginning of a new game.
-     * Derived classes must implement this method to clear any cache memory
-     * or data structures used by their algorithms (although it's not a pure abstract method here,
-     * the function's intent is defined).
-     */
-    virtual void reset() = 0; // Made abstract to force implementation in derived classes
 };
 
 #endif // AIAGENT_H

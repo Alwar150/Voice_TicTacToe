@@ -1,0 +1,21 @@
+/**
+ * @file NetworkManager.puml
+ * @brief PlantUML block for `NetworkManager` to be included by Doxygen.
+ *
+ * Generated from `include/Network/NetworkManager.h` using the HumanPlayer.h format.
+ */
+
+/**
+ * @startuml
+ * class NetworkManager
+ * --
+ * -socket_: QTcpSocket*
+ * -timer_: QTimer*
+ * --
+ * +NetworkManager(QObject* parent = nullptr)
+ * +connectToServer(const QString&, quint16): void
+ * +sendMessage(const QString&): void
+ * --
+ * NetworkManager ..|> QObject
+ * @enduml
+ */

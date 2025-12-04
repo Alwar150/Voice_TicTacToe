@@ -19,6 +19,7 @@
  * The algorithm evaluates final states by assigning scores: positive for AI victory,
  * negative for human player victory, and zero for a tie.
  */
+
 class MiniMaxAgent final : public AIAgent
 {
     Q_OBJECT

@@ -1,6 +1,5 @@
 #include "TitleScreen.h"
 #include "TTTController.h"
-#include "NetworkManager.h"
 
 TitleScreen::TitleScreen(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::TitleScreen)
@@ -11,19 +10,12 @@ TitleScreen::TitleScreen(QWidget *parent)
 
 void TitleScreen::setConnections()
 {
-    connect(ui->boardSize, SIGNAL(valueChanged(int)), SLOT(updateBoardSize(int)));
     connect(ui->onePlayer, SIGNAL(toggled(bool)), SLOT(updateSinglePlayer(bool)));
     connect(ui->twoPlayers, SIGNAL(toggled(bool)), SLOT(updateTwoPlayers(bool)));
     connect(ui->AIStarts, SIGNAL(toggled(bool)), SLOT(updateAIstartsGame(bool)));
     connect(ui->miniMaxDepth, SIGNAL(valueChanged(int)),
             SLOT(updateMiniMaxDepth(int)));
     connect(ui->startGame, SIGNAL(clicked()), SLOT(startGame()));
-}
-
-void TitleScreen::updateBoardSize(int size)
-{
-    ui->boardSizeValue->setText(QString::number(size));
-    options_.boardSize = static_cast<size_t>(size);
 }
 
 void TitleScreen::updateSinglePlayer(bool checked)
@@ -67,9 +59,12 @@ void TitleScreen::startGame()
 
     ttt->startGame();
 
-    // Conectar para que, cuando la vista se cierre, el título reaparezca
-    QObject::connect(ttt->getView(), &QWidget::destroyed, this, [this, ttt]() {
+    // Conectamos la señal semántica 'finishedGame()'
+    // Esto se dispara cuando el botón 'Atrás' es pulsado en la vista.
+    QObject::connect(static_cast<TicTacToeGame*>(ttt->getView()), &TicTacToeGame::goBack, this, [this, ttt]() {
         this->show();
+        // La vista (TicTacToeGame) ya ha sido marcada para destrucción
+        // por close() + Qt::WA_DeleteOnClose. Solo necesitamos limpiar el controlador.
         ttt->deleteLater();  // Limpieza segura del controlador
     });
 }

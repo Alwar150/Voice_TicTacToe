@@ -23,6 +23,8 @@
  * Uses a dedicated worker thread (`QThread`) for voice processing
  * (`SpeechManager`) to avoid blocking the main GUI thread.
  */
+
+ 
 class HumanPlayer final : public Player{
     Q_OBJECT
 

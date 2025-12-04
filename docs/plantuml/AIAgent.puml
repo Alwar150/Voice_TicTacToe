@@ -1,0 +1,12 @@
+/**
+ * @file AIAgent.puml
+ * @brief PlantUML block for `AIAgent` to be included by Doxygen.
+ *
+ * Extracted from `include/AI/AIAgent.h`.
+ */
+
+/**
+ * @startuml
+ * interface AIAgent extends Player
+ * @enduml
+ */

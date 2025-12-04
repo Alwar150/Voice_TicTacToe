@@ -20,13 +20,49 @@ TTTController::TTTController(const TTTOptions &options, QObject *parent)
         if(options_.AIstarts){
             playerX_ = std::make_unique<MiniMaxAgent>(board_,BoardMarks::X,options_.miniMaxDepth,this);
             playerO_ = std::make_unique<HumanPlayer>(board_,BoardMarks::O,this);
+            connect(dynamic_cast<HumanPlayer*>(playerO_.get()), &HumanPlayer::startListening,
+                    this, [this]() {
+                        static_cast<TicTacToeGame*>(this->getView())->updateRecordingStatus(true);
+                    });
+
+            connect(dynamic_cast<HumanPlayer*>(playerO_.get()), &HumanPlayer::stopListening,
+                    this, [this]() {
+                        static_cast<TicTacToeGame*>(this->getView())->updateRecordingStatus(false);
+                    });
         } else {
             playerO_ = std::make_unique<MiniMaxAgent>(board_,BoardMarks::O,options_.miniMaxDepth,this);
             playerX_ = std::make_unique<HumanPlayer>(board_,BoardMarks::X,this);
+            connect(dynamic_cast<HumanPlayer*>(playerX_.get()), &HumanPlayer::startListening,
+                    this, [this]() {
+                        static_cast<TicTacToeGame*>(this->getView())->updateRecordingStatus(true);
+                    });
+
+            connect(dynamic_cast<HumanPlayer*>(playerX_.get()), &HumanPlayer::stopListening,
+                    this, [this]() {
+                        static_cast<TicTacToeGame*>(this->getView())->updateRecordingStatus(false);
+                    });
         }
     } else {
         playerX_ = std::make_unique<HumanPlayer>(board_,BoardMarks::X,this);
         playerO_ = std::make_unique<HumanPlayer>(board_,BoardMarks::O,this);
+        connect(dynamic_cast<HumanPlayer*>(playerX_.get()), &HumanPlayer::startListening,
+                this, [this]() {
+                    static_cast<TicTacToeGame*>(this->getView())->updateRecordingStatus(true);
+                });
+
+        connect(dynamic_cast<HumanPlayer*>(playerX_.get()), &HumanPlayer::stopListening,
+                this, [this]() {
+                    static_cast<TicTacToeGame*>(this->getView())->updateRecordingStatus(false);
+                });
+        connect(dynamic_cast<HumanPlayer*>(playerO_.get()), &HumanPlayer::startListening,
+                this, [this]() {
+                    static_cast<TicTacToeGame*>(this->getView())->updateRecordingStatus(true);
+                });
+
+        connect(dynamic_cast<HumanPlayer*>(playerO_.get()), &HumanPlayer::stopListening,
+                this, [this]() {
+                    static_cast<TicTacToeGame*>(this->getView())->updateRecordingStatus(false);
+                });
     }
     network_ = new NetworkManager;
     // Set Connections to the UI elements.
@@ -72,21 +108,28 @@ void TTTController::setConnections()
     //
     // 🌐 Conexiones de red con NetworkManager
     //
-    connect(network_, &NetworkManager::connected, this, []() {
+    connect(network_, &NetworkManager::connected, this, [this]() {
         qDebug() << "[CORE::NET] Conectado al servidor.";
+        static_cast<TicTacToeGame*>(this->getView())->updateConnectionStatus(true);
     });
 
-    connect(network_, &NetworkManager::disconnected, this, []() {
+    connect(network_, &NetworkManager::disconnected, this, [this]() {
         qDebug() << "[CORE::NET] Desconectado del servidor.";
+        static_cast<TicTacToeGame*>(this->getView())->updateConnectionStatus(false);
     });
 
-    connect(network_, &NetworkManager::messageSent, this, [](const QString& msg) {
+    connect(network_, &NetworkManager::messageSent, this, [this](const QString& msg) {
         qDebug() << "[CORE::NET] Mensaje enviado:" << msg;
+        static_cast<TicTacToeGame*>(this->getView())->updateWaitingStatus(true);
     });
 
     // Ejemplo: si NetworkManager recibe algo (puedes definir una señal messageReceived(QString))
-    connect(network_, &NetworkManager::messageReceived,
-            this, &TTTController::onNetworkMessageReceived);
+    connect(network_, &NetworkManager::messageReceived,this,[this](const QString& msg){
+        qDebug() << "[CORE::NET] Mensaje recibido:" << msg;
+        &TTTController::onNetworkMessageReceived;
+        // We don't check the content of the message
+        static_cast<TicTacToeGame*>(this->getView())->updateWaitingStatus(false);
+    });
 }
 
 void TTTController::updateGameState(Cell &cell)

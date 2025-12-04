@@ -3,7 +3,7 @@
  <class>TicTacToeGame</class>
  <widget class="QDialog" name="TicTacToeGame">
   <property name="windowModality">
-   <enum>Qt::WindowModal</enum>
+   <enum>Qt::WindowModality::WindowModal</enum>
   </property>
   <property name="geometry">
    <rect>
@@ -59,9 +59,70 @@ max-width: 100px;
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="RecordLabel">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Rec</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="WaitingLabel">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Waiting</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="connectionLabel">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
           <widget class="QPushButton" name="back">
            <property name="text">
-            <string>Back to title screen</string>
+            <string>Back</string>
            </property>
           </widget>
          </item>

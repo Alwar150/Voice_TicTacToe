@@ -1,0 +1,21 @@
+/**
+ * @file Player.puml
+ * @brief PlantUML block for `Player` to be included by Doxygen.
+ *
+ * Extracted from `include/AI/Player.h`.
+ */
+
+/**
+ * @startuml
+ * interface Player {
+ *   +play(): void
+ *   --
+ *   -board_: Board*
+ *   -mark_: BoardMarks&
+ *   --
+ *   +playerFinished(int): signal
+ * }
+ *
+ * Player ..|> QObject
+ * @enduml
+ */

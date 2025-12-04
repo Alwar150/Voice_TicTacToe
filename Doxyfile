@@ -1,0 +1,45 @@
+REFERENCES_RELATION = YES
+REFERENCED_BY_RELATION = YES
+
+# ===========================================================================
+# DOXYFILE CONFIGURACIÓN PARA VOICE_TICTACTOE
+# ===========================================================================
+
+# --- Información del proyecto ---
+PROJECT_NAME           = "Voice TicTacToe"
+PROJECT_BRIEF          = "Juego de tres en raya controlado por voz"
+
+# --- Entradas ---
+# Carpetas donde está tu código fuente (rutas relativas al repo)
+INPUT                  = include src docs/plantuml
+FILE_PATTERNS          = *.cpp *.h *.puml
+RECURSIVE              = YES
+
+# --- Salida ---
+OUTPUT_DIRECTORY       = ./doxygen
+GENERATE_HTML          = NO
+GENERATE_XML           = YES
+GENERATE_UML = YES
+XML_OUTPUT             = xml
+XML_PROGRAMLISTING     = YES
+
+# Evitar generación de secciones de 'Files' y 'Namespaces' en la salida
+# Estas opciones desactivan la lista de ficheros detallada y el listado de namespaces.
+GENERATE_FILELIST              = NO
+GENERATE_DETAILED_FILELIST     = NO
+GENERATE_NAMESPACE_LIST        = NO
+GENERATE_CLASSLIST             = NO
+GENERATE_CLASSINDEX            = NO
+
+# --- Extracción de documentación ---
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+
+# --- Manejo de advertencias ---
+QUIET                  = NO
+WARN_IF_UNDOCUMENTED   = NO
+
+# --- Opcional: excluir binarios o temporales ---
+EXCLUDE_PATTERNS       = */build/* */cmake-build* */out/*

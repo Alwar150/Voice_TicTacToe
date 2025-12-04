@@ -1,0 +1,29 @@
+/**
+ * @file Board.puml
+ * @brief PlantUML block for `Board` to be included by Doxygen.
+ *
+ * Generated from `include/Model/Board.h` using the HumanPlayer.h format.
+ */
+
+/**
+ * @startuml
+ * class Board
+ * --
+ * -board_: std::vector<std::vector<BoardMarks>>
+ * -boardSize_: size_t
+ * --
+ * +Board(size_t)
+ * +Board(Board&)
+ * +Board(const Board&)
+ * +Board(Board&&)
+ * +operator=(Board): Board&
+ * +~Board()
+ * +evaluateBoard(): BoardState
+ * +setPlayerInput(size_t, size_t, BoardMarks): bool
+ * +at(size_t, size_t): BoardMarks
+ * +reset(): void
+ * +resetCell(size_t, size_t): void
+ * +size(): size_t
+ * --
+ * @enduml
+ */
