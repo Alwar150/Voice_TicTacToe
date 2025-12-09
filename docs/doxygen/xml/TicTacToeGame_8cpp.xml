@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="TicTacToeGame_8cpp" kind="file" language="C++">
+    <compoundname>TicTacToeGame.cpp</compoundname>
+    <includes refid="TicTacToeGame_8h" local="yes">TicTacToeGame.h</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">QPushButton</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>TTTCommonTypes.h</label>
+        <link refid="TTTCommonTypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TicTacToeGame.h</label>
+        <link refid="TicTacToeGame_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>waitingspinnerwidget.h</label>
+        <link refid="waitingspinnerwidget_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/View/TicTacToeGame.cpp</label>
+        <link refid="TicTacToeGame_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QColor</label>
+      </node>
+      <node id="12">
+        <label>QMessageBox</label>
+      </node>
+      <node id="13">
+        <label>QPushButton</label>
+      </node>
+      <node id="10">
+        <label>QTimer</label>
+      </node>
+      <node id="9">
+        <label>QWidget</label>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="5">
+        <label>portaudio.h</label>
+      </node>
+      <node id="6">
+        <label>signal.h</label>
+      </node>
+      <node id="7">
+        <label>ui_TicTacToeGame.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TicTacToeGame_8h" kindref="compound">TicTacToeGame.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" refkind="member"><highlight class="normal"><ref refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" kindref="member">TicTacToeGame::TicTacToeGame</ref>(QWidget<sp/>*parent)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>QDialog(parent),<sp/>ui(new<sp/>Ui::<ref refid="classTicTacToeGame" kindref="compound">TicTacToeGame</ref>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remove<sp/>question<sp/>mark<sp/>from<sp/>the<sp/>title<sp/>bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>setWindowFlags(windowFlags()<sp/>&amp;<sp/>~Qt::WindowContextHelpButtonHint);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Accedemos<sp/>al<sp/>LED<sp/>(connectionLabel)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CRÍTICO:<sp/>Establecer<sp/>ancho<sp/>y<sp/>alto<sp/>iguales<sp/>a<sp/>20x20<sp/>para<sp/>asegurar<sp/>la<sp/>forma<sp/>redonda</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;connectionLabel-&gt;setFixedSize(20,<sp/>20);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;connectionLabel-&gt;setToolTip(</highlight><highlight class="stringliteral">&quot;Estado<sp/>de<sp/>Conexión:<sp/>Desconectado&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;RecordLabel-&gt;setFixedSize(40,<sp/>25);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;WaitingLabel-&gt;setFixedSize(50,<sp/>20);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" kindref="member">waiter</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" kindref="member">updateWaitingStatus</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" kindref="member">updateConnectionStatus</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Inicializar<sp/>en<sp/>rojo<sp/>y<sp/>aplicar<sp/>el<sp/>estilo<sp/>redondo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" kindref="member">setConnections</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;adjustSize();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" kindref="member">TicTacToeGame::setConnections</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>New<sp/>Game<sp/>Connection<sp/>-<sp/>resetting<sp/>the<sp/>game</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;reset,<sp/>&amp;QPushButton::clicked,<sp/>[=]<sp/>{<sp/>emit<sp/>newGame();<sp/>});</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;back,<sp/>&amp;QPushButton::clicked,<sp/>[=]<sp/>{<sp/>emit<sp/>goBack();<sp/>});</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" refkind="member"><highlight class="normal">vector&lt;Cell&gt;<sp/><ref refid="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" kindref="member">TicTacToeGame::buildCellButtons</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>boardSize)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Cell&gt;<sp/>cells;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>cells.reserve(boardSize<sp/>*<sp/>boardSize);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>0;<sp/>row<sp/>&lt;<sp/>boardSize;<sp/>++row)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>0;<sp/>col<sp/>&lt;<sp/>boardSize;<sp/>++col)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>buttons<sp/>to<sp/>gridLayout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPushButton<sp/>*btn<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QPushButton();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn-&gt;setProperty(</highlight><highlight class="stringliteral">&quot;cell&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;gridBoard-&gt;addWidget(btn,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(row),</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(col),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" kindref="member">defaults::GUI_CELL_ROW_SPAN</ref>,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" kindref="member">defaults::GUI_CELL_COLUMN_SPAN</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reference<sp/>to<sp/>cells</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cells.emplace_back(btn,<sp/>row,<sp/>col);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Adjusts<sp/>window<sp/>size<sp/>to<sp/>fit<sp/>children<sp/>widgets<sp/>added<sp/>dynamically</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>adjustSize();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>by<sp/>value<sp/>to<sp/>allow<sp/>for<sp/>RVO<sp/>(Copy<sp/>Ellision)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cells;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classTicTacToeGame_1a0b8fee976515895d15eb59c282b057d1" refkind="member"><highlight class="normal">QString<sp/><ref refid="classTicTacToeGame_1a0b8fee976515895d15eb59c282b057d1" kindref="member">TicTacToeGame::getPlayerText</ref>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>currentPlayer)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(currentPlayer)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">BoardMarks::O</ref>:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;O&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">BoardMarks::X</ref>:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;X&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" refkind="member"><highlight class="normal">QString<sp/><ref refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" kindref="member">TicTacToeGame::getPlayerStyleSheet</ref>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>currentPlayer)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>color;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(currentPlayer)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">BoardMarks::O</ref>:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color<sp/>=<sp/><ref refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" kindref="member">defaults::O_COLOR</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">BoardMarks::X</ref>:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color<sp/>=<sp/><ref refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" kindref="member">defaults::X_COLOR</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color<sp/>=<sp/><ref refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" kindref="member">defaults::DEFAULT_COLOR</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QString(</highlight><highlight class="stringliteral">&quot;font:<sp/>50px<sp/>\&quot;Verdana\&quot;;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;min-height:<sp/>100px;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;max-height:<sp/>100px;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;min-width:<sp/>100px;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;max-width:<sp/>100px;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;color:<sp/>%1&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.arg(color);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" kindref="member">TicTacToeGame::updateCell</ref>(<ref refid="structCell" kindref="compound">Cell</ref><sp/>&amp;cell,<sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>currentPlayer)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>Cell<sp/>button<sp/>in<sp/>GUI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>cell.<ref refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref>-&gt;setStyleSheet(<ref refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" kindref="member">getPlayerStyleSheet</ref>(currentPlayer));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>cell.<ref refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref>-&gt;setText(<ref refid="classTicTacToeGame_1a0b8fee976515895d15eb59c282b057d1" kindref="member">getPlayerText</ref>(currentPlayer));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classTicTacToeGame_1af4349fa57bc46d6e3030ff2482ea57c9" refkind="member"><highlight class="normal">QString<sp/><ref refid="classTicTacToeGame_1af4349fa57bc46d6e3030ff2482ea57c9" kindref="member">TicTacToeGame::getBoardFinalStateText</ref>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>boardState)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(boardState)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" kindref="member">BoardState::XWins</ref>:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;player<sp/>X<sp/>wins!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" kindref="member">BoardState::OWins</ref>:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;player<sp/>O<sp/>wins!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" kindref="member">BoardState::Tie</ref>:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;it&apos;s<sp/>a<sp/>tie!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="classTicTacToeGame_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" kindref="member">TicTacToeGame::declareGameState</ref>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>boardState)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox<sp/>resultBox;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>resultBox.setWindowTitle(</highlight><highlight class="stringliteral">&quot;Game<sp/>Result&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>resultBox.setText(</highlight><highlight class="stringliteral">&quot;Game<sp/>over,<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classTicTacToeGame_1af4349fa57bc46d6e3030ff2482ea57c9" kindref="member">getBoardFinalStateText</ref>(boardState));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>resultBox.exec();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classTicTacToeGame_1a8a891d7dcf57178c79f325a92751f44c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a8a891d7dcf57178c79f325a92751f44c" kindref="member">TicTacToeGame::reset</ref>(vector&lt;Cell&gt;<sp/>&amp;cells)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Resets<sp/>the<sp/>GUI<sp/>cells<sp/>to<sp/>an<sp/>empty<sp/>button<sp/>with<sp/>no<sp/>text<sp/>marks.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;cell<sp/>:<sp/>cells)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell.cellBtn-&gt;setText(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" kindref="member">TicTacToeGame::updateConnectionStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isConnected)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mensaje<sp/>de<sp/>depuración<sp/>para<sp/>confirmar<sp/>que<sp/>el<sp/>slot<sp/>se<sp/>está<sp/>ejecutando</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Slot<sp/>updateConnectionStatus<sp/>llamado.<sp/>isConnected:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>isConnected;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Paso<sp/>1:<sp/>Limpiar<sp/>explícitamente<sp/>el<sp/>estilo<sp/>anterior.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;connectionLabel-&gt;setStyleSheet(QString());</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Acceder<sp/>al<sp/>LED<sp/>a<sp/>través<sp/>del<sp/>puntero<sp/>de<sp/>UI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isConnected)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Estilo<sp/>VERDE<sp/>(Conectado)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;connectionLabel-&gt;setStyleSheet(</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;background-color:<sp/>#4CAF50;&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Verde</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>border-radius<sp/>=<sp/>10px<sp/>(la<sp/>mitad<sp/>de<sp/>20px)<sp/>garantiza<sp/>el<sp/>círculo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;border-radius:<sp/>10px;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;border:<sp/>2px<sp/>solid<sp/>#388E3C;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;connectionLabel-&gt;setToolTip(</highlight><highlight class="stringliteral">&quot;Estado<sp/>de<sp/>Conexión:<sp/>Conectado&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Estilo<sp/>ROJO<sp/>(Desconectado)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;connectionLabel-&gt;setStyleSheet(</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;background-color:<sp/>#F44336;&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Rojo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;border-radius:<sp/>10px;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;border:<sp/>2px<sp/>solid<sp/>#D32F2F;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;connectionLabel-&gt;setToolTip(</highlight><highlight class="stringliteral">&quot;Estado<sp/>de<sp/>Conexión:<sp/>Desconectado&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="classTicTacToeGame_1a5bc188ae6a5806246edc175844725518" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a5bc188ae6a5806246edc175844725518" kindref="member">TicTacToeGame::updateRecordingStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isRecording)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mensaje<sp/>de<sp/>depuración<sp/>para<sp/>confirmar<sp/>que<sp/>el<sp/>slot<sp/>se<sp/>está<sp/>ejecutando</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Slot<sp/>updateRecordingStatus<sp/>llamado.<sp/>isRecording:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>isRecording;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Paso<sp/>1:<sp/>Limpiar<sp/>explícitamente<sp/>el<sp/>estilo<sp/>anterior.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;connectionLabel-&gt;setStyleSheet(QString());</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Acceder<sp/>al<sp/>LED<sp/>a<sp/>través<sp/>del<sp/>puntero<sp/>de<sp/>UI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isRecording)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ROJO:<sp/>Grabando</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" kindref="member">setLedStyle</ref>(<ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;RecordLabel,<sp/></highlight><highlight class="stringliteral">&quot;REC&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;#e74c3c&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;white&quot;</highlight><highlight class="normal">,<sp/>12);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GRIS:<sp/>No<sp/>grabando</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" kindref="member">setLedStyle</ref>(<ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;RecordLabel,<sp/></highlight><highlight class="stringliteral">&quot;REC&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;#7f8c8d&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;white&quot;</highlight><highlight class="normal">,<sp/>12);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;adjustSize();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" kindref="member">TicTacToeGame::updateWaitingStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isWaiting)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mensaje<sp/>de<sp/>depuración<sp/>para<sp/>confirmar<sp/>que<sp/>el<sp/>slot<sp/>se<sp/>está<sp/>ejecutando</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Slot<sp/>updateWaitingStatus<sp/>llamado.<sp/>isWaiting:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>isWaiting;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Paso<sp/>1:<sp/>Limpiar<sp/>explícitamente<sp/>el<sp/>estilo<sp/>anterior.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;WaitingLabel-&gt;setStyleSheet(QString());</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Acceder<sp/>al<sp/>LED<sp/>a<sp/>través<sp/>del<sp/>puntero<sp/>de<sp/>UI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isWaiting)<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NARANJA/AMARILLO:<sp/>Esperando<sp/>respuesta<sp/>del<sp/>servidor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" kindref="member">setLedStyle</ref>(<ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;WaitingLabel,<sp/></highlight><highlight class="stringliteral">&quot;ESPERANDO&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;#f39c12&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;white&quot;</highlight><highlight class="normal">,<sp/>9);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" kindref="member">waiter</ref>-&gt;<ref refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>VERDE<sp/>CLARO:<sp/>Listo<sp/>para<sp/>recibir<sp/>input/acción</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" kindref="member">setLedStyle</ref>(<ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>-&gt;WaitingLabel,<sp/></highlight><highlight class="stringliteral">&quot;LISTO&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;#27ae60&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;white&quot;</highlight><highlight class="normal">,<sp/>9);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" kindref="member">waiter</ref>-&gt;<ref refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;adjustSize();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" kindref="member">TicTacToeGame::setLedStyle</ref>(QLabel*<sp/>label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>text,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>bgColor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>textColor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fontSize){</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(label)<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label-&gt;setText(text);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label-&gt;setAlignment(Qt::AlignCenter);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label-&gt;setStyleSheet(QString(</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;QLabel<sp/>{<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>font-weight:<sp/>bold;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>font-size:<sp/>%1pt;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>color:<sp/>%2;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>background-color:<sp/>%3;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>border:<sp/>1px<sp/>solid<sp/>rgba(0,<sp/>0,<sp/>0,<sp/>0.2);<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>border-radius:<sp/>20px;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>padding:<sp/>4px;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>).arg(fontSize).arg(textColor,<sp/>bgColor));</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;adjustSize();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/View/TicTacToeGame.cpp"/>
+  </compounddef>
+</doxygen>

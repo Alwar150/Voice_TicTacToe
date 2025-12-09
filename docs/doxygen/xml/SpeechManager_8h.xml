@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="SpeechManager_8h" kind="file" language="C++">
+    <compoundname>SpeechManager.h</compoundname>
+    <includes local="no">QObject</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">QDebug</includes>
+    <includes local="no">QtConcurrent/QtConcurrentRun</includes>
+    <includes local="no">QFuture</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">portaudio.h</includes>
+    <includes local="no">pocketsphinx.h</includes>
+    <includes local="no">signal.h</includes>
+    <includes refid="ConfigManager_8h" local="no">ConfigManager.h</includes>
+    <includedby refid="HumanPlayer_8h" local="no">include/AI/HumanPlayer.h</includedby>
+    <includedby refid="SpeechManager_8cpp" local="yes">src/Speech/SpeechManager.cpp</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>ConfigManager.h</label>
+        <link refid="ConfigManager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/Speech/SpeechManager.h</label>
+        <link refid="SpeechManager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>QCoreApplication</label>
+      </node>
+      <node id="4">
+        <label>QDebug</label>
+      </node>
+      <node id="13">
+        <label>QDir</label>
+      </node>
+      <node id="6">
+        <label>QFuture</label>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="12">
+        <label>QSettings</label>
+      </node>
+      <node id="3">
+        <label>QString</label>
+      </node>
+      <node id="5">
+        <label>QtConcurrent/QtConcurrentRun</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="9">
+        <label>pocketsphinx.h</label>
+      </node>
+      <node id="8">
+        <label>portaudio.h</label>
+      </node>
+      <node id="10">
+        <label>signal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/AI/HumanPlayer.h</label>
+        <link refid="HumanPlayer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/Controller/TTTController.h</label>
+        <link refid="TTTController_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/Speech/SpeechManager.h</label>
+        <link refid="SpeechManager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/AI/HumanPlayer.cpp</label>
+        <link refid="HumanPlayer_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/Controller/TTTController.cpp</label>
+        <link refid="TTTController_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/Network/NetworkManager.cpp</label>
+        <link refid="NetworkManager_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/Speech/SpeechManager.cpp</label>
+        <link refid="SpeechManager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/View/TitleScreen.cpp</label>
+        <link refid="TitleScreen_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSpeechManager" prot="public">SpeechManager</innerclass>
+    <briefdescription>
+<para>Definition of the <ref refid="classSpeechManager" kindref="compound">SpeechManager</ref> class for voice recognition using Pocketsphinx and PortAudio. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Miguel Fernández Lorenzo </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>November 2025 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SPEECHMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPEECHMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtConcurrent/QtConcurrentRun&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFuture&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;portaudio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pocketsphinx.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ConfigManager_8h" kindref="compound">ConfigManager.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classSpeechManager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSpeechManager" kindref="compound">SpeechManager</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="classSpeechManager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" kindref="member">SpeechManager</ref>(QObject<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSpeechManager_1a473b5a5d90f5486c0306278220d8138c" kindref="member">~SpeechManager</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a94d6a6d8b5aa00b913e751c2620a9e52" kindref="member">configure</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a13ab24c0b019530b8c35557091fac078" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1af62b1ec680a5e45e289d629d561c8432" kindref="member">startListening</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="102" refid="classSpeechManager_1abdde7758804b9f537d9d704583e6c8b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1abdde7758804b9f537d9d704583e6c8b3" kindref="member">speechRecognized</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;text);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classSpeechManager_1af020ff04f584cedbd3105f299c1a66b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1af020ff04f584cedbd3105f299c1a66b0" kindref="member">speechReadyToProcess</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*hyp);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a9e0d24a7b396f00dbb1dee267450d3e9" kindref="member">processRecognitionResult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*hyp);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126" refid="classSpeechManager_1a84982042bef20eb360ec44351fd84757" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PaStream<sp/>*<ref refid="classSpeechManager_1a84982042bef20eb360ec44351fd84757" kindref="member">stream_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PaError<sp/><ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ps_decoder_t<sp/>*<ref refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" kindref="member">decoder_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ps_config_t<sp/>*<ref refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" kindref="member">config_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ps_endpointer_t<sp/>*<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="classSpeechManager_1a33dd9ba7578619b2f8bfb2be029c4c20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<ref refid="classSpeechManager_1a33dd9ba7578619b2f8bfb2be029c4c20" kindref="member">frame_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132" refid="classSpeechManager_1a5ae23337be3cfd612918b64b2dac7fa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a5ae23337be3cfd612918b64b2dac7fa8" kindref="member">frame_size_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="classSpeechManager_1ad36d507a363bd64922e7cd8c85334bda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classSpeechManager_1ad36d507a363bd64922e7cd8c85334bda" kindref="member">hyp_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1ad48e68cab4316e371cc56ca75150897d" kindref="member">hypIsValid</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a13a4749dbb01af8d5faf9e181b11c56e" kindref="member">freeHeap</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SPEECHMANAGER_H</highlight></codeline>
+    </programlisting>
+    <location file="include/Speech/SpeechManager.h"/>
+  </compounddef>
+</doxygen>

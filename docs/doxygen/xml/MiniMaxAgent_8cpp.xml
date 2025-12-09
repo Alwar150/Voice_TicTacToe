@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="MiniMaxAgent_8cpp" kind="file" language="C++">
+    <compoundname>MiniMaxAgent.cpp</compoundname>
+    <includes refid="MiniMaxAgent_8h" local="yes">MiniMaxAgent.h</includes>
+    <includes local="no">QPair</includes>
+    <includes local="no">limits.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>AIAgent.h</label>
+        <link refid="AIAgent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MiniMaxAgent.h</label>
+        <link refid="MiniMaxAgent_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Player.h</label>
+        <link refid="Player_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TTTCommonTypes.h</label>
+        <link refid="TTTCommonTypes_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/AI/MiniMaxAgent.cpp</label>
+        <link refid="MiniMaxAgent_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QObject</label>
+      </node>
+      <node id="13">
+        <label>QPair</label>
+      </node>
+      <node id="11">
+        <label>QtGlobal</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="14">
+        <label>limits.h</label>
+      </node>
+      <node id="8">
+        <label>portaudio.h</label>
+      </node>
+      <node id="9">
+        <label>signal.h</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MiniMaxAgent_8h" kindref="compound">MiniMaxAgent.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPair&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classMiniMaxAgent_1a86fa345e7ac1972127173ebd95d1c963" refkind="member"><highlight class="normal"><ref refid="classMiniMaxAgent_1a86fa345e7ac1972127173ebd95d1c963" kindref="member">MiniMaxAgent::MiniMaxAgent</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classBoard" kindref="compound">Board</ref>&amp;<sp/>board,<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>AImark,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>depth,<sp/>QObject*<sp/>parent)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classAIAgent" kindref="compound">AIAgent</ref>(AImark,board,parent),<sp/>depth_(depth){}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" kindref="member">MiniMaxAgent::maxMove</ref>(<ref refid="classBoard" kindref="compound">Board</ref><sp/>&amp;board,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>depth,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>beta)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="9"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>game<sp/>over<sp/>return<sp/>score.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>state<sp/>=<sp/>board.<ref refid="classBoard_1a1b7486c5df3db7e5a1c8ed097492527f" kindref="member">evaluateBoard</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(0<sp/>==<sp/>depth)<sp/>||<sp/>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" kindref="member">BoardState::NoWinner</ref><sp/>!=<sp/>state)<sp/>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">score</ref>(state);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Choose<sp/>the<sp/>best<sp/>score<sp/>given<sp/>all<sp/>empty<sp/>cell<sp/>choices.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>bestScore<sp/>=<sp/>SHRT_MIN;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>0;<sp/>row<sp/>&lt;<sp/>board.<ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>();<sp/>++row)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>0;<sp/>col<sp/>&lt;<sp/>board.<ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>();<sp/>++col)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">BoardMarks::Empty</ref><sp/>==<sp/>board.<ref refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" kindref="member">at</ref>(row,<sp/>col))<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Try<sp/>the<sp/>move</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>board.<ref refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" kindref="member">setPlayerInput</ref>(row,<sp/>col,<sp/><ref refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" kindref="member">mark_</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compare<sp/>result<sp/>of<sp/>this<sp/>move<sp/>with<sp/>respect<sp/>to<sp/>AI.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">score</ref><sp/>=<sp/><ref refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" kindref="member">minMove</ref>(board,<sp/>depth<sp/>-<sp/>1,<sp/>alpha,<sp/>beta);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>move<sp/>done.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>board.<ref refid="classBoard_1addcaa486e1293eebcb323fb936353f43" kindref="member">resetCell</ref>(row,<sp/>col);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>best<sp/>score.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bestScore<sp/>=<sp/>std::max(bestScore,<sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">score</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>alpha</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alpha<sp/>=<sp/>std::max(alpha,<sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">score</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prune<sp/>the<sp/>rest<sp/>of<sp/>cells<sp/>after<sp/>this<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(beta<sp/>&lt;=<sp/>alpha)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bestScore;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" kindref="member">MiniMaxAgent::minMove</ref>(<ref refid="classBoard" kindref="compound">Board</ref><sp/>&amp;board,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>depth,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>alpha,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>beta)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="43"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>game<sp/>over<sp/>return<sp/>score</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>state<sp/>=<sp/>board.<ref refid="classBoard_1a1b7486c5df3db7e5a1c8ed097492527f" kindref="member">evaluateBoard</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(0<sp/>==<sp/>depth)<sp/>||<sp/>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" kindref="member">BoardState::NoWinner</ref><sp/>!=<sp/>state)<sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">score</ref>(state);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>bestScore<sp/>=<sp/>SHRT_MAX;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>0;<sp/>row<sp/>&lt;<sp/>board.<ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>();<sp/>++row)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>0;<sp/>col<sp/>&lt;<sp/>board.<ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>();<sp/>++col)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">BoardMarks::Empty</ref><sp/>==<sp/>board.<ref refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" kindref="member">at</ref>(row,<sp/>col))<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Try<sp/>the<sp/>move</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>board.<ref refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" kindref="member">setPlayerInput</ref>(row,<sp/>col,<sp/><ref refid="classMiniMaxAgent_1adde21208d43b0ff75ecd2c014c217c78" kindref="member">playerMark_</ref>());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compare<sp/>result<sp/>of<sp/>this<sp/>move<sp/>with<sp/>respect<sp/>to<sp/>player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">score</ref><sp/>=<sp/><ref refid="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" kindref="member">maxMove</ref>(board,<sp/>depth<sp/>-<sp/>1,<sp/>alpha,<sp/>beta);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>move<sp/>done</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>board.<ref refid="classBoard_1addcaa486e1293eebcb323fb936353f43" kindref="member">resetCell</ref>(row,<sp/>col);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>best<sp/>score.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bestScore<sp/>=<sp/>std::min(bestScore,<sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">score</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>beta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>beta<sp/>=<sp/>std::min(beta,<sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">score</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prune<sp/>the<sp/>rest<sp/>of<sp/>cells<sp/>after<sp/>this<sp/>one.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(beta<sp/>&lt;=<sp/>alpha)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bestScore;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kindref="member">MiniMaxAgent::score</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>state)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>AI<sp/>win<sp/>score.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">BoardMarks::O</ref><sp/>==<sp/><ref refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" kindref="member">mark_</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" kindref="member">BoardState::OWins</ref><sp/>==<sp/>state)<sp/>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a1e7fa70e257c4423ab555e04cb7eaa0a" kindref="member">AI_WIN_SCORE</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">BoardMarks::X</ref><sp/>==<sp/><ref refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" kindref="member">mark_</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" kindref="member">BoardState::XWins</ref><sp/>==<sp/>state)<sp/>)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a1e7fa70e257c4423ab555e04cb7eaa0a" kindref="member">AI_WIN_SCORE</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Player<sp/>win<sp/>score.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">BoardMarks::O</ref><sp/>==<sp/><ref refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" kindref="member">mark_</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" kindref="member">BoardState::XWins</ref><sp/>==<sp/>state)<sp/>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a2cbab0bdd892f994f7e3e13d0f4be53d" kindref="member">PLAYER_WIN_SCORE</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">BoardMarks::X</ref><sp/>==<sp/><ref refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" kindref="member">mark_</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" kindref="member">BoardState::OWins</ref><sp/>==<sp/>state)<sp/>)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a2cbab0bdd892f994f7e3e13d0f4be53d" kindref="member">PLAYER_WIN_SCORE</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Tie<sp/>or<sp/>a<sp/>non<sp/>final<sp/>state<sp/>score.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a9ae263accc262d5f9eac741125229f13" kindref="member">TIE_SCORE</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classMiniMaxAgent_1a9fd00e9550a3e78b6ba76c1db80bf78f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMiniMaxAgent_1a9fd00e9550a3e78b6ba76c1db80bf78f" kindref="member">MiniMaxAgent::play</ref>()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref><sp/>copy_(*<ref refid="classPlayer_1a088227ab53747cc4955b0a3859b69a84" kindref="member">board_</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>play<sp/>if<sp/>the<sp/>board<sp/>is<sp/>at<sp/>a<sp/>final<sp/>state.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" kindref="member">BoardState::NoWinner</ref><sp/>!=<sp/>copy_.<ref refid="classBoard_1a1b7486c5df3db7e5a1c8ed097492527f" kindref="member">evaluateBoard</ref>())</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emit<sp/><ref refid="classPlayer_1a53a95aa136684609c19494ac2faefc59" kindref="member">playerFinished</ref>(-1);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>of<sp/>the<sp/>minimax<sp/>algorith<sp/>and<sp/>choose<sp/>the<sp/>best<sp/>score<sp/>of<sp/>all<sp/>available<sp/>cells.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bestScore<sp/>=<sp/>INT_MIN;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>QPair&lt;size_t,<sp/>size_t&gt;<sp/>bestEntry;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>0;<sp/>row<sp/>&lt;<sp/>copy_.<ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>();<sp/>++row)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>0;<sp/>col<sp/>&lt;<sp/>copy_.<ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>();<sp/>++col)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">BoardMarks::Empty</ref><sp/>==<sp/>copy_.<ref refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" kindref="member">at</ref>(row,<sp/>col))<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Try<sp/>the<sp/>move</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy_.<ref refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" kindref="member">setPlayerInput</ref>(row,<sp/>col,<sp/><ref refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" kindref="member">mark_</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>best<sp/>score<sp/>and<sp/>the<sp/>best<sp/>cell<sp/>location.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>moveScore<sp/>=<sp/><ref refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" kindref="member">minMove</ref>(copy_,<sp/><ref refid="classMiniMaxAgent_1aa1920de5421331a5a88dd55c727ec6fc" kindref="member">depth_</ref><sp/>-<sp/>1,<sp/>SHRT_MIN,<sp/>SHRT_MAX);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(moveScore<sp/>&gt;<sp/>bestScore)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bestScore<sp/>=<sp/>moveScore;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bestEntry.first<sp/>=<sp/>row;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bestEntry.second<sp/>=<sp/>col;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>move<sp/>done</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy_.<ref refid="classBoard_1addcaa486e1293eebcb323fb936353f43" kindref="member">resetCell</ref>(row,<sp/>col);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>AI<sp/>choice<sp/>on<sp/>the<sp/>board.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>copy_.<ref refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" kindref="member">setPlayerInput</ref>(bestEntry.first,<sp/>bestEntry.second,<sp/><ref refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" kindref="member">mark_</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>1D<sp/>index<sp/>of<sp/>the<sp/>cell<sp/>to<sp/>delegate<sp/>any<sp/>other<sp/>updates<sp/>needed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="classPlayer_1a53a95aa136684609c19494ac2faefc59" kindref="member">playerFinished</ref>(<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(bestEntry.first<sp/>*<sp/>copy_.<ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>()<sp/>+<sp/>bestEntry.second));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/AI/MiniMaxAgent.cpp"/>
+  </compounddef>
+</doxygen>

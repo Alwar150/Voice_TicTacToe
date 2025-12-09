@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classConfigManager" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>ConfigManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="ConfigManager_8h" local="no">ConfigManager.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classConfigManager_1a9d30f8b6a03a88758b1a27dae2c02458" prot="private" static="no" mutable="no">
+        <type>QSettings *</type>
+        <definition>QSettings* ConfigManager::settings_</definition>
+        <argsstring></argsstring>
+        <name>settings_</name>
+        <qualifiedname>ConfigManager::settings_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Pointer to the QSettings object that manages the INI file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="115" column="15" bodyfile="include/Config/ConfigManager.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classConfigManager_1a2fc430f2f48d29787b668e048947a5d3" compoundref="ConfigManager_8cpp" startline="82" endline="90">getBool</referencedby>
+        <referencedby refid="classConfigManager_1a8fcb73283ae43f36e70ae09990edb315" compoundref="ConfigManager_8cpp" startline="72" endline="80">getInt</referencedby>
+        <referencedby refid="classConfigManager_1ab0a26220dad8b8b9c29e00ac3e06a455" compoundref="ConfigManager_8cpp" startline="61" endline="70">getValue</referencedby>
+        <referencedby refid="classConfigManager_1a61e0d30507438bdb93773586fd17dcd2" compoundref="ConfigManager_8cpp" startline="16" endline="58">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classConfigManager_1afb25aedc49f0a7f61d3ce9fe2d0d520f" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString ConfigManager::baseDir_</definition>
+        <argsstring></argsstring>
+        <name>baseDir_</name>
+        <qualifiedname>ConfigManager::baseDir_</qualifiedname>
+        <briefdescription>
+<para>The base directory of the loaded configuration file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="116" column="13" bodyfile="include/Config/ConfigManager.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classConfigManager_1a61e0d30507438bdb93773586fd17dcd2" compoundref="ConfigManager_8cpp" startline="16" endline="58">load</referencedby>
+        <referencedby refid="classConfigManager_1a281150cbf5141f3f232b0485b23327b2" compoundref="ConfigManager_8cpp" startline="92" endline="96">resolvePath</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classConfigManager_1ab72b9c36d8c92066d54eabae525da210" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classConfigManager" kindref="compound">ConfigManager</ref> &amp;</type>
+        <definition>ConfigManager &amp; ConfigManager::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>ConfigManager::instance</qualifiedname>
+        <briefdescription>
+<para>Gets the unique instance of <ref refid="classConfigManager" kindref="compound">ConfigManager</ref> (Singleton). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the global access point to the configuration manager.</para>
+<para><simplesect kind="return"><para>Reference to the unique <ref refid="classConfigManager" kindref="compound">ConfigManager</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="38" column="26" bodyfile="src/Config/ConfigManager.cpp" bodystart="3" bodyend="7"/>
+        <references refid="classConfigManager_1ab72b9c36d8c92066d54eabae525da210" compoundref="ConfigManager_8cpp" startline="3" endline="7">instance</references>
+        <referencedby refid="classSpeechManager_1a94d6a6d8b5aa00b913e751c2620a9e52" compoundref="SpeechManager_8cpp" startline="20" endline="31">SpeechManager::configure</referencedby>
+        <referencedby refid="classConfigManager_1ab72b9c36d8c92066d54eabae525da210" compoundref="ConfigManager_8cpp" startline="3" endline="7">instance</referencedby>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="6" endline="18">main</referencedby>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classConfigManager_1a61e0d30507438bdb93773586fd17dcd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfigManager::load</definition>
+        <argsstring>(const QString &amp;filePath=QString())</argsstring>
+        <name>load</name>
+        <qualifiedname>ConfigManager::load</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+          <defval>QString()</defval>
+        </param>
+        <briefdescription>
+<para>Loads the configuration file from the specified path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If no path is specified, it will look for a <computeroutput>config.ini</computeroutput> file in the current application directory. Initializes the internal QSettings object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Complete path to the .ini file. If empty, uses the default value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="48" column="10" bodyfile="src/Config/ConfigManager.cpp" bodystart="16" bodyend="58"/>
+        <references refid="classConfigManager_1afb25aedc49f0a7f61d3ce9fe2d0d520f" compoundref="ConfigManager_8h" startline="116">baseDir_</references>
+        <references refid="classConfigManager_1a9d30f8b6a03a88758b1a27dae2c02458" compoundref="ConfigManager_8h" startline="115">settings_</references>
+        <referencedby refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="main_8cpp" startline="6" endline="18">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classConfigManager_1ab0a26220dad8b8b9c29e00ac3e06a455" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString ConfigManager::getValue</definition>
+        <argsstring>(const QString &amp;key, const QString &amp;defaultValue=QString()) const</argsstring>
+        <name>getValue</name>
+        <qualifiedname>ConfigManager::getValue</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>QString()</defval>
+        </param>
+        <briefdescription>
+<para>Returns a value from the INI file as QString. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads a value from the associated QSettings. If the key doesn&apos;t exist, returns the default value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration key (e.g., &quot;network/ip&quot;). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default value if the key is not found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value associated with the key as QString. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="59" column="13" bodyfile="src/Config/ConfigManager.cpp" bodystart="61" bodyend="70"/>
+        <references refid="classConfigManager_1a9d30f8b6a03a88758b1a27dae2c02458" compoundref="ConfigManager_8h" startline="115">settings_</references>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classConfigManager_1a8fcb73283ae43f36e70ae09990edb315" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ConfigManager::getInt</definition>
+        <argsstring>(const QString &amp;key, int defaultValue=0) const</argsstring>
+        <name>getInt</name>
+        <qualifiedname>ConfigManager::getInt</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defaultValue</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Returns a value from the INI file as integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts the key value to an integer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration key (e.g., &quot;audio/samplerate&quot;). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default value if the key is not found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value associated with the key as int. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="70" column="9" bodyfile="src/Config/ConfigManager.cpp" bodystart="72" bodyend="80"/>
+        <references refid="classConfigManager_1a9d30f8b6a03a88758b1a27dae2c02458" compoundref="ConfigManager_8h" startline="115">settings_</references>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classConfigManager_1a2fc430f2f48d29787b668e048947a5d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ConfigManager::getBool</definition>
+        <argsstring>(const QString &amp;key, bool defaultValue=false) const</argsstring>
+        <name>getBool</name>
+        <qualifiedname>ConfigManager::getBool</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>defaultValue</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Returns a value from the INI file as boolean. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts the key value to a boolean (true if it&apos;s &quot;true&quot;, &quot;on&quot;, &quot;1&quot;, etc.).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration key (e.g., &quot;ai/enabled&quot;). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default value if the key is not found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value associated with the key as bool. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="81" column="10" bodyfile="src/Config/ConfigManager.cpp" bodystart="82" bodyend="90"/>
+        <references refid="classConfigManager_1a9d30f8b6a03a88758b1a27dae2c02458" compoundref="ConfigManager_8h" startline="115">settings_</references>
+      </memberdef>
+      <memberdef kind="function" id="classConfigManager_1a281150cbf5141f3f232b0485b23327b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString ConfigManager::resolvePath</definition>
+        <argsstring>(const QString &amp;relativePath) const</argsstring>
+        <name>resolvePath</name>
+        <qualifiedname>ConfigManager::resolvePath</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>relativePath</declname>
+        </param>
+        <briefdescription>
+<para>Resolves a relative path using the application base directory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses the base directory established during loading to convert a relative path (e.g., &quot;data/model.dat&quot;) to an absolute path.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>relativePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relative path to resolve. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The calculated absolute path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="92" column="13" bodyfile="src/Config/ConfigManager.cpp" bodystart="92" bodyend="96"/>
+        <references refid="classConfigManager_1afb25aedc49f0a7f61d3ce9fe2d0d520f" compoundref="ConfigManager_8h" startline="116">baseDir_</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classConfigManager_1a41931ff9b32816a676885e4c78c3ab83" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigManager::ConfigManager</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>ConfigManager</name>
+        <qualifiedname>ConfigManager::ConfigManager</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Private constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Private to ensure the Singleton pattern.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the parent object (QObject). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="102" column="14" bodyfile="src/Config/ConfigManager.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigManager_1af27fe922a8151eed5b1dc926ddf045b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigManager::~ConfigManager</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~ConfigManager</name>
+        <qualifiedname>ConfigManager::~ConfigManager</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses <computeroutput>= default</computeroutput> for standard implementation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="109" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigManager_1a106691c1efb4ec9d6f0688419e455906" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConfigManager::ConfigManager</definition>
+        <argsstring>(const ConfigManager &amp;)=delete</argsstring>
+        <name>ConfigManager</name>
+        <qualifiedname>ConfigManager::ConfigManager</qualifiedname>
+        <param>
+          <type>const <ref refid="classConfigManager" kindref="compound">ConfigManager</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Copy constructor blocked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="112" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classConfigManager_1a0fd5bb24753934f9ec6430ab3bea7fd9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classConfigManager" kindref="compound">ConfigManager</ref> &amp;</type>
+        <definition>ConfigManager &amp; ConfigManager::operator=</definition>
+        <argsstring>(const ConfigManager &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ConfigManager::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classConfigManager" kindref="compound">ConfigManager</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Assignment operator blocked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Config/ConfigManager.h" line="113" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classConfigManager" kindref="compound">ConfigManager</ref> class manages the application configuration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages the application configuration from a config.ini file. Applies the <bold>Singleton</bold> pattern to ensure only one globally accessible instance exists, providing a centralized point to access program options. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ConfigManager</label>
+        <link refid="classConfigManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ConfigManager</label>
+        <link refid="classConfigManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/Config/ConfigManager.h" line="26" column="1" bodyfile="include/Config/ConfigManager.h" bodystart="27" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classConfigManager_1afb25aedc49f0a7f61d3ce9fe2d0d520f" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>baseDir_</name></member>
+      <member refid="classConfigManager_1a41931ff9b32816a676885e4c78c3ab83" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>ConfigManager</name></member>
+      <member refid="classConfigManager_1a106691c1efb4ec9d6f0688419e455906" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>ConfigManager</name></member>
+      <member refid="classConfigManager_1a2fc430f2f48d29787b668e048947a5d3" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>getBool</name></member>
+      <member refid="classConfigManager_1a8fcb73283ae43f36e70ae09990edb315" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>getInt</name></member>
+      <member refid="classConfigManager_1ab0a26220dad8b8b9c29e00ac3e06a455" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>getValue</name></member>
+      <member refid="classConfigManager_1ab72b9c36d8c92066d54eabae525da210" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>instance</name></member>
+      <member refid="classConfigManager_1a61e0d30507438bdb93773586fd17dcd2" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>load</name></member>
+      <member refid="classConfigManager_1a0fd5bb24753934f9ec6430ab3bea7fd9" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>operator=</name></member>
+      <member refid="classConfigManager_1a281150cbf5141f3f232b0485b23327b2" prot="public" virt="non-virtual"><scope>ConfigManager</scope><name>resolvePath</name></member>
+      <member refid="classConfigManager_1a9d30f8b6a03a88758b1a27dae2c02458" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>settings_</name></member>
+      <member refid="classConfigManager_1af27fe922a8151eed5b1dc926ddf045b1" prot="private" virt="non-virtual"><scope>ConfigManager</scope><name>~ConfigManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

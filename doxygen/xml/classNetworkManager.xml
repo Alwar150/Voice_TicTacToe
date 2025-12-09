@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classNetworkManager" kind="class" language="C++" prot="public">
+    <compoundname>NetworkManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="NetworkManager_8h" local="no">NetworkManager.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNetworkManager_1abd7a5f326e9abe441fd5bd86b49b20d2" prot="private" static="no" mutable="no">
+        <type>QTcpSocket *</type>
+        <definition>QTcpSocket* NetworkManager::socket_</definition>
+        <argsstring></argsstring>
+        <name>socket_</name>
+        <qualifiedname>NetworkManager::socket_</qualifiedname>
+        <briefdescription>
+<para>Pointer to the QTcpSocket object that manages the TCP connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="120" column="16" bodyfile="include/Network/NetworkManager.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classNetworkManager_1ae5e79e2a2a383d9b63169b38444152cc" compoundref="NetworkManager_8cpp" startline="14" endline="18">connectToServer</referencedby>
+        <referencedby refid="classNetworkManager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="NetworkManager_8cpp" startline="5" endline="12">NetworkManager</referencedby>
+        <referencedby refid="classNetworkManager_1a102d12758db0f241cff62e14c1e12baa" compoundref="NetworkManager_8cpp" startline="43" endline="47">onError</referencedby>
+        <referencedby refid="classNetworkManager_1a2459cd9d2ab2defef9af5d6b902cc8f5" compoundref="NetworkManager_8cpp" startline="49" endline="66">onSocketReadyRead</referencedby>
+        <referencedby refid="classNetworkManager_1a1733d9420c11080527bb32edaa1bae14" compoundref="NetworkManager_8cpp" startline="20" endline="29">sendMessage</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNetworkManager_1a25e5a69c0dba31cc028050c2b6eea855" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NetworkManager::NetworkManager</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>NetworkManager</name>
+        <qualifiedname>NetworkManager::NetworkManager</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classNetworkManager" kindref="compound">NetworkManager</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the QTcpSocket.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the parent object (QObject). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="37" column="14" bodyfile="src/Network/NetworkManager.cpp" bodystart="5" bodyend="12"/>
+        <references refid="classNetworkManager_1a58117c282e533ceff2ebab1a6d459699" compoundref="NetworkManager_8cpp" startline="31" endline="35">onConnected</references>
+        <references refid="classNetworkManager_1a0028518c2761defad4d923b42493463b" compoundref="NetworkManager_8cpp" startline="37" endline="41">onDisconnected</references>
+        <references refid="classNetworkManager_1a102d12758db0f241cff62e14c1e12baa" compoundref="NetworkManager_8cpp" startline="43" endline="47">onError</references>
+        <references refid="classNetworkManager_1a2459cd9d2ab2defef9af5d6b902cc8f5" compoundref="NetworkManager_8cpp" startline="49" endline="66">onSocketReadyRead</references>
+        <references refid="classNetworkManager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="NetworkManager_8h" startline="120">socket_</references>
+      </memberdef>
+      <memberdef kind="function" id="classNetworkManager_1ae5e79e2a2a383d9b63169b38444152cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::connectToServer</definition>
+        <argsstring>(const QString &amp;ip, quint16 port)</argsstring>
+        <name>connectToServer</name>
+        <qualifiedname>NetworkManager::connectToServer</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>quint16</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to establish a connection with a remote server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts the non-blocking connection process. The connection result is notified through the <ref refid="classNetworkManager_1aa2d7233230f2d609c31d9fd064c2f461" kindref="member">connected()</ref> or <ref refid="classNetworkManager_1a03c54af7cc88df99a5c4dd916002554c" kindref="member">errorOccurred()</ref> signals.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IP address or host name of the server (e.g., &quot;127.0.0.1&quot;). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TCP port number of the server. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="48" column="10" bodyfile="src/Network/NetworkManager.cpp" bodystart="14" bodyend="18"/>
+        <references refid="classNetworkManager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="NetworkManager_8h" startline="120">socket_</references>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classNetworkManager_1a1733d9420c11080527bb32edaa1bae14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::sendMessage</definition>
+        <argsstring>(const QString &amp;message)</argsstring>
+        <name>sendMessage</name>
+        <qualifiedname>NetworkManager::sendMessage</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Sends a text message to the connected server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The message is converted to bytes and written to the socket.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text message to send. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="57" column="10" bodyfile="src/Network/NetworkManager.cpp" bodystart="20" bodyend="29"/>
+        <references refid="classNetworkManager_1a03c54af7cc88df99a5c4dd916002554c">errorOccurred</references>
+        <references refid="classNetworkManager_1a8c9f27ead277af0afc322b551a40acb7">messageSent</references>
+        <references refid="classNetworkManager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="NetworkManager_8h" startline="120">socket_</references>
+        <referencedby refid="classTTTController_1a48889524dfe5f7215cafed10c69812c9" compoundref="TTTController_8cpp" startline="171" endline="188">TTTController::updateGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classNetworkManager_1aa2d7233230f2d609c31d9fd064c2f461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::connected</definition>
+        <argsstring>()</argsstring>
+        <name>connected</name>
+        <qualifiedname>NetworkManager::connected</qualifiedname>
+        <briefdescription>
+<para>Signal emitted when the TCP connection is successfully established. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="63" column="10"/>
+        <referencedby refid="classNetworkManager_1a58117c282e533ceff2ebab1a6d459699" compoundref="NetworkManager_8cpp" startline="31" endline="35">onConnected</referencedby>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classNetworkManager_1a3c9d18963e77a155faf338b86927e2e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::disconnected</definition>
+        <argsstring>()</argsstring>
+        <name>disconnected</name>
+        <qualifiedname>NetworkManager::disconnected</qualifiedname>
+        <briefdescription>
+<para>Signal emitted when the TCP connection is closed (by host, server or error). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="68" column="10"/>
+        <referencedby refid="classNetworkManager_1a0028518c2761defad4d923b42493463b" compoundref="NetworkManager_8cpp" startline="37" endline="41">onDisconnected</referencedby>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classNetworkManager_1a03c54af7cc88df99a5c4dd916002554c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::errorOccurred</definition>
+        <argsstring>(const QString &amp;error)</argsstring>
+        <name>errorOccurred</name>
+        <qualifiedname>NetworkManager::errorOccurred</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Signal emitted when an error occurs during connection or transmission. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Description of the error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="74" column="10"/>
+        <referencedby refid="classNetworkManager_1a1733d9420c11080527bb32edaa1bae14" compoundref="NetworkManager_8cpp" startline="20" endline="29">sendMessage</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classNetworkManager_1a8c9f27ead277af0afc322b551a40acb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::messageSent</definition>
+        <argsstring>(const QString &amp;message)</argsstring>
+        <name>messageSent</name>
+        <qualifiedname>NetworkManager::messageSent</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Signal emitted after a message has been sent to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text message that was sent. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="80" column="10"/>
+        <referencedby refid="classNetworkManager_1a1733d9420c11080527bb32edaa1bae14" compoundref="NetworkManager_8cpp" startline="20" endline="29">sendMessage</referencedby>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classNetworkManager_1a603d801e6200da430707381ba39241c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::messageReceived</definition>
+        <argsstring>(const QString &amp;message)</argsstring>
+        <name>messageReceived</name>
+        <qualifiedname>NetworkManager::messageReceived</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Signal emitted when a complete message has been received from the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The received text message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="86" column="10"/>
+        <referencedby refid="classNetworkManager_1a2459cd9d2ab2defef9af5d6b902cc8f5" compoundref="NetworkManager_8cpp" startline="49" endline="66">onSocketReadyRead</referencedby>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classNetworkManager_1a58117c282e533ceff2ebab1a6d459699" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::onConnected</definition>
+        <argsstring>()</argsstring>
+        <name>onConnected</name>
+        <qualifiedname>NetworkManager::onConnected</qualifiedname>
+        <briefdescription>
+<para>Slot invoked when the QTcpSocket connects successfully. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Emits the <computeroutput><ref refid="classNetworkManager_1aa2d7233230f2d609c31d9fd064c2f461" kindref="member">connected()</ref></computeroutput> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="94" column="10" bodyfile="src/Network/NetworkManager.cpp" bodystart="31" bodyend="35"/>
+        <references refid="classNetworkManager_1aa2d7233230f2d609c31d9fd064c2f461">connected</references>
+        <referencedby refid="classNetworkManager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="NetworkManager_8cpp" startline="5" endline="12">NetworkManager</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classNetworkManager_1a0028518c2761defad4d923b42493463b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::onDisconnected</definition>
+        <argsstring>()</argsstring>
+        <name>onDisconnected</name>
+        <qualifiedname>NetworkManager::onDisconnected</qualifiedname>
+        <briefdescription>
+<para>Slot invoked when the QTcpSocket disconnects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Emits the <computeroutput><ref refid="classNetworkManager_1a3c9d18963e77a155faf338b86927e2e5" kindref="member">disconnected()</ref></computeroutput> signal. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="101" column="10" bodyfile="src/Network/NetworkManager.cpp" bodystart="37" bodyend="41"/>
+        <references refid="classNetworkManager_1a3c9d18963e77a155faf338b86927e2e5">disconnected</references>
+        <referencedby refid="classNetworkManager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="NetworkManager_8cpp" startline="5" endline="12">NetworkManager</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classNetworkManager_1a102d12758db0f241cff62e14c1e12baa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::onError</definition>
+        <argsstring>(QAbstractSocket::SocketError socketError)</argsstring>
+        <name>onError</name>
+        <qualifiedname>NetworkManager::onError</qualifiedname>
+        <param>
+          <type>QAbstractSocket::SocketError</type>
+          <declname>socketError</declname>
+        </param>
+        <briefdescription>
+<para>Slot invoked when the QTcpSocket reports an error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Maps the socket error to a readable description and emits <computeroutput><ref refid="classNetworkManager_1a03c54af7cc88df99a5c4dd916002554c" kindref="member">errorOccurred()</ref></computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>socketError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The socket error code. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="110" column="10" bodyfile="src/Network/NetworkManager.cpp" bodystart="43" bodyend="47"/>
+        <references refid="classNetworkManager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="NetworkManager_8h" startline="120">socket_</references>
+        <referencedby refid="classNetworkManager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="NetworkManager_8cpp" startline="5" endline="12">NetworkManager</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classNetworkManager_1a2459cd9d2ab2defef9af5d6b902cc8f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NetworkManager::onSocketReadyRead</definition>
+        <argsstring>()</argsstring>
+        <name>onSocketReadyRead</name>
+        <qualifiedname>NetworkManager::onSocketReadyRead</qualifiedname>
+        <briefdescription>
+<para>Slot invoked when there is new data ready to read in the socket. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads all available data and processes it as a message. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Network/NetworkManager.h" line="117" column="10" bodyfile="src/Network/NetworkManager.cpp" bodystart="49" bodyend="66"/>
+        <references refid="classNetworkManager_1a603d801e6200da430707381ba39241c2">messageReceived</references>
+        <references refid="classNetworkManager_1abd7a5f326e9abe441fd5bd86b49b20d2" compoundref="NetworkManager_8h" startline="120">socket_</references>
+        <referencedby refid="classNetworkManager_1a25e5a69c0dba31cc028050c2b6eea855" compoundref="NetworkManager_8cpp" startline="5" endline="12">NetworkManager</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>TCP communication manager class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides an interface to connect to a TCP server, send and receive messages asynchronously using QTcpSocket.</para>
+<para>Emits signals to notify connection status, errors and message reception. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>NetworkManager</label>
+        <link refid="classNetworkManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>NetworkManager</label>
+        <link refid="classNetworkManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/Network/NetworkManager.h" line="25" column="1" bodyfile="include/Network/NetworkManager.h" bodystart="26" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classNetworkManager_1aa2d7233230f2d609c31d9fd064c2f461" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>connected</name></member>
+      <member refid="classNetworkManager_1ae5e79e2a2a383d9b63169b38444152cc" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>connectToServer</name></member>
+      <member refid="classNetworkManager_1a3c9d18963e77a155faf338b86927e2e5" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>disconnected</name></member>
+      <member refid="classNetworkManager_1a03c54af7cc88df99a5c4dd916002554c" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>errorOccurred</name></member>
+      <member refid="classNetworkManager_1a603d801e6200da430707381ba39241c2" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>messageReceived</name></member>
+      <member refid="classNetworkManager_1a8c9f27ead277af0afc322b551a40acb7" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>messageSent</name></member>
+      <member refid="classNetworkManager_1a25e5a69c0dba31cc028050c2b6eea855" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>NetworkManager</name></member>
+      <member refid="classNetworkManager_1a58117c282e533ceff2ebab1a6d459699" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>onConnected</name></member>
+      <member refid="classNetworkManager_1a0028518c2761defad4d923b42493463b" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>onDisconnected</name></member>
+      <member refid="classNetworkManager_1a102d12758db0f241cff62e14c1e12baa" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>onError</name></member>
+      <member refid="classNetworkManager_1a2459cd9d2ab2defef9af5d6b902cc8f5" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>onSocketReadyRead</name></member>
+      <member refid="classNetworkManager_1a1733d9420c11080527bb32edaa1bae14" prot="public" virt="non-virtual"><scope>NetworkManager</scope><name>sendMessage</name></member>
+      <member refid="classNetworkManager_1abd7a5f326e9abe441fd5bd86b49b20d2" prot="private" virt="non-virtual"><scope>NetworkManager</scope><name>socket_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

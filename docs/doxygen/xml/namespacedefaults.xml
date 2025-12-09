@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacedefaults" kind="namespace" language="C++">
+    <compoundname>defaults</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr short</type>
+        <definition>constexpr short defaults::INVALID_CELL</definition>
+        <argsstring></argsstring>
+        <name>INVALID_CELL</name>
+        <qualifiedname>defaults::INVALID_CELL</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="10" column="17" bodyfile="include/TTTCommonTypes.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t defaults::DEFAULT_BOARD_SIZE</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_BOARD_SIZE</name>
+        <qualifiedname>defaults::DEFAULT_BOARD_SIZE</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="11" column="18" bodyfile="include/TTTCommonTypes.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned short</type>
+        <definition>constexpr unsigned short defaults::DEFAULT_MINIMAX_DEPTH</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_MINIMAX_DEPTH</name>
+        <qualifiedname>defaults::DEFAULT_MINIMAX_DEPTH</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="12" column="26" bodyfile="include/TTTCommonTypes.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned short</type>
+        <definition>constexpr unsigned short defaults::GUI_CELL_ROW_SPAN</definition>
+        <argsstring></argsstring>
+        <name>GUI_CELL_ROW_SPAN</name>
+        <qualifiedname>defaults::GUI_CELL_ROW_SPAN</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="13" column="26" bodyfile="include/TTTCommonTypes.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" compoundref="TicTacToeGame_8cpp" startline="35" endline="58">TicTacToeGame::buildCellButtons</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned short</type>
+        <definition>constexpr unsigned short defaults::GUI_CELL_COLUMN_SPAN</definition>
+        <argsstring></argsstring>
+        <name>GUI_CELL_COLUMN_SPAN</name>
+        <qualifiedname>defaults::GUI_CELL_COLUMN_SPAN</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="14" column="26" bodyfile="include/TTTCommonTypes.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" compoundref="TicTacToeGame_8cpp" startline="35" endline="58">TicTacToeGame::buildCellButtons</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char defaults::X_COLOR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>X_COLOR</name>
+        <qualifiedname>defaults::X_COLOR</qualifiedname>
+        <initializer>= &quot;#455A64&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="15" column="16" bodyfile="include/TTTCommonTypes.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" compoundref="TicTacToeGame_8cpp" startline="72" endline="95">TicTacToeGame::getPlayerStyleSheet</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char defaults::O_COLOR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>O_COLOR</name>
+        <qualifiedname>defaults::O_COLOR</qualifiedname>
+        <initializer>= &quot;#FF5722&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="16" column="16" bodyfile="include/TTTCommonTypes.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" compoundref="TicTacToeGame_8cpp" startline="72" endline="95">TicTacToeGame::getPlayerStyleSheet</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char defaults::DEFAULT_COLOR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>DEFAULT_COLOR</name>
+        <qualifiedname>defaults::DEFAULT_COLOR</qualifiedname>
+        <initializer>= &quot;#FFF&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="17" column="16" bodyfile="include/TTTCommonTypes.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" compoundref="TicTacToeGame_8cpp" startline="72" endline="95">TicTacToeGame::getPlayerStyleSheet</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/TTTCommonTypes.h" line="8" column="1"/>
+  </compounddef>
+</doxygen>

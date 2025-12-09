@@ -1,0 +1,36 @@
+\doxysection{Player.\+h}
+\hypertarget{Player_8h_source}{}\label{Player_8h_source}\index{include/AI/Player.h@{include/AI/Player.h}}
+\mbox{\hyperlink{Player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLAYER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{TTTCommonTypes_8h}{TTTCommonTypes.h}}>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{Board_8h}{Board.h}}>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPlayer}{Player}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classPlayer_a1e6c1c4847747f85b6cadfa11074feef}{Player}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\&\ playerMark,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classBoard}{Board}}\&\ board\_ref,\ QObject\ *parent\_\ =\ \textcolor{keyword}{nullptr})\ :}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ QObject(parent\_),}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer_a088227ab53747cc4955b0a3859b69a84}{board\_}}(\&board\_ref),}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer_a896addb43bdc7926500d04387bb84ac0}{mark\_}}(playerMark)\{\}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classPlayer_a8981c201ffb2270c0b6dbd467b627376}{\string~Player}}()\ \{\}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_af85db5d05b014bf19d873038c56dc7ed}{play}}()\ =\ 0;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ signals:}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPlayer_a53a95aa136684609c19494ac2faefc59}{playerFinished}}(\textcolor{keywordtype}{int}\ \textcolor{keyword}{const}\&\ cell);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classBoard}{Board}}*\ \mbox{\hyperlink{classPlayer_a088227ab53747cc4955b0a3859b69a84}{board\_}};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\&\ \mbox{\hyperlink{classPlayer_a896addb43bdc7926500d04387bb84ac0}{mark\_}};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLAYER\_H}}
+
+\end{DoxyCode}

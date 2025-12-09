@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="waitingspinnerwidget_8h" kind="file" language="C++">
+    <compoundname>waitingspinnerwidget.h</compoundname>
+    <includes local="no">QWidget</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">QColor</includes>
+    <includedby refid="TicTacToeGame_8h" local="yes">include/View/TicTacToeGame.h</includedby>
+    <includedby refid="waitingspinnerwidget_8cpp" local="yes">src/waitingspinnerwidget.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/View/waitingspinnerwidget.h</label>
+        <link refid="waitingspinnerwidget_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QColor</label>
+      </node>
+      <node id="3">
+        <label>QTimer</label>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/Controller/TTTController.h</label>
+        <link refid="TTTController_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/View/TicTacToeGame.h</label>
+        <link refid="TicTacToeGame_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/View/waitingspinnerwidget.h</label>
+        <link refid="waitingspinnerwidget_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/Controller/TTTController.cpp</label>
+        <link refid="TTTController_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/Network/NetworkManager.cpp</label>
+        <link refid="NetworkManager_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/View/TicTacToeGame.cpp</label>
+        <link refid="TicTacToeGame_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/View/TitleScreen.cpp</label>
+        <link refid="TitleScreen_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/waitingspinnerwidget.cpp</label>
+        <link refid="waitingspinnerwidget_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classWaitingSpinnerWidget" prot="public">WaitingSpinnerWidget</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Original<sp/>Work<sp/>Copyright<sp/>(c)<sp/>2012-2014<sp/>Alexander<sp/>Turkin</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/>Modified<sp/>2014<sp/>by<sp/>William<sp/>Hallatt</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/>Modified<sp/>2015<sp/>by<sp/>Jacob<sp/>Dawid</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy<sp/>of</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,<sp/>FITNESS</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Qt<sp/>includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QWidget&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QColor&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">&lt;&lt;&lt;&lt;&lt;&lt;&lt;<sp/>HEAD</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">=======</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">&gt;&gt;&gt;&gt;&gt;&gt;&gt;<sp/>afdadd3d46bec0902f02aec6604c627e510e4f67</highlight></codeline>
+<codeline lineno="54" refid="classWaitingSpinnerWidget" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref>(QWidget<sp/>*parent<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>centerOnParent<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableParentWhenSpinning<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref>(Qt::WindowModality<sp/>modality,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QWidget<sp/>*parent<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>centerOnParent<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableParentWhenSpinning<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a5bc33ab179119f510d556c214fe7ac9b" kindref="member">setColor</ref>(QColor<sp/><ref refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" kindref="member">color</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a894f40b4623f9e7754c48e4478c23307" kindref="member">setRoundness</ref>(qreal<sp/><ref refid="classWaitingSpinnerWidget_1a2ceb91dfdafcd41b99f04aa2b4b81786" kindref="member">roundness</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1ad4ad8fab83b1a60cf1dff78d6ad716d7" kindref="member">setMinimumTrailOpacity</ref>(qreal<sp/><ref refid="classWaitingSpinnerWidget_1a8a9ed21ff17ead12fcbf26b163940dbe" kindref="member">minimumTrailOpacity</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1af9ec791036d62a78b0f557346d1c0262" kindref="member">setTrailFadePercentage</ref>(qreal<sp/>trail);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1addb2884587497961d78e24c50a2f1aba" kindref="member">setRevolutionsPerSecond</ref>(qreal<sp/>revolutionsPerSecond);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a29945c03eaf051081ea21f22dca6e97a" kindref="member">setNumberOfLines</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lines);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a797995d006da2e96b72daa959ddd274e" kindref="member">setLineLength</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a987a9c7234f83ca2665dd05f8d039e64" kindref="member">setLineWidth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a4adc650895478217a5f28c72a9df1e53" kindref="member">setInnerRadius</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
+<codeline lineno="87" refid="classWaitingSpinnerWidget_1a25b9639b865d15610a499aaced705afe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a25b9639b865d15610a499aaced705afe" kindref="member">setText</ref>(QString<sp/>text);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" kindref="member">color</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><ref refid="classWaitingSpinnerWidget_1a2ceb91dfdafcd41b99f04aa2b4b81786" kindref="member">roundness</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><ref refid="classWaitingSpinnerWidget_1a8a9ed21ff17ead12fcbf26b163940dbe" kindref="member">minimumTrailOpacity</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><ref refid="classWaitingSpinnerWidget_1aa0a76a4ea0666f843b8a4cf2cb5a7491" kindref="member">trailFadePercentage</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><ref refid="classWaitingSpinnerWidget_1a54f72cfcb508e8d4bea313891d87b766" kindref="member">revolutionsPersSecond</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1af6a17bce3bc7081c1e0297e6249576e0" kindref="member">numberOfLines</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1aa716528e1094789337adc5d291c69747" kindref="member">lineLength</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a6c42700d650379cffd704199c63c4f28" kindref="member">lineWidth</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a9db984232c785de31390485c30d7a596" kindref="member">innerRadius</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1ab02d5a79b1794c55b58b3cd417075a5a" kindref="member">isSpinning</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1aacb453453fd98625eb38e021de72070f" kindref="member">rotate</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" kindref="member">paintEvent</ref>(QPaintEvent<sp/>*<ref refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" kindref="member">paintEvent</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a144cdce01e10daeefb91846b7d7328a5" kindref="member">lineCountDistanceFromPrimary</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>current,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>primary,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>totalNrOfLines);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QColor<sp/><ref refid="classWaitingSpinnerWidget_1ab8adb44bc0a3eb32bfe9d7b5b1a83e4c" kindref="member">currentLineColor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>distance,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>totalNrOfLines,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qreal<sp/>trailFadePerc,<sp/>qreal<sp/>minOpacity,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" kindref="member">color</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" kindref="member">initialize</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" kindref="member">updateSize</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" kindref="member">updateTimer</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget_1a7ac6a1feaec54bd2f54c7110a179f46f" kindref="member">updatePosition</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="120" refid="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/><sp/><ref refid="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" kindref="member">_color</ref>;</highlight></codeline>
+<codeline lineno="121" refid="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" kindref="member">_roundness</ref>;<sp/></highlight><highlight class="comment">//<sp/>0..100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" kindref="member">_minimumTrailOpacity</ref>;</highlight></codeline>
+<codeline lineno="123" refid="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" kindref="member">_trailFadePercentage</ref>;</highlight></codeline>
+<codeline lineno="124" refid="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>qreal<sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" kindref="member">_revolutionsPerSecond</ref>;</highlight></codeline>
+<codeline lineno="125" refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" kindref="member">_numberOfLines</ref>;</highlight></codeline>
+<codeline lineno="126" refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" kindref="member">_lineLength</ref>;</highlight></codeline>
+<codeline lineno="127" refid="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" kindref="member">_lineWidth</ref>;</highlight></codeline>
+<codeline lineno="128" refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" kindref="member">_innerRadius</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="131" refid="classWaitingSpinnerWidget_1ac61cef28a4710c6d2a0ea3e8d0bca49b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1ac61cef28a4710c6d2a0ea3e8d0bca49b" kindref="member">WaitingSpinnerWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref>&amp;);</highlight></codeline>
+<codeline lineno="132" refid="classWaitingSpinnerWidget_1a82a516c36d956b5cdeaca95bac6162ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref>&amp;<sp/><ref refid="classWaitingSpinnerWidget_1a82a516c36d956b5cdeaca95bac6162ac" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref>&amp;);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTimer<sp/>*<ref refid="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" kindref="member">_timer</ref>;</highlight></codeline>
+<codeline lineno="135" refid="classWaitingSpinnerWidget_1ae9df7d573477f907da5da0b0518d300a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1ae9df7d573477f907da5da0b0518d300a" kindref="member">_centerOnParent</ref>;</highlight></codeline>
+<codeline lineno="136" refid="classWaitingSpinnerWidget_1af2e707cbf375a3b5626980854e7423f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1af2e707cbf375a3b5626980854e7423f2" kindref="member">_disableParentWhenSpinning</ref>;</highlight></codeline>
+<codeline lineno="137" refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" kindref="member">_currentCounter</ref>;</highlight></codeline>
+<codeline lineno="138" refid="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" kindref="member">_isSpinning</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/View/waitingspinnerwidget.h"/>
+  </compounddef>
+</doxygen>

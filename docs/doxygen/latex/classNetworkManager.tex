@@ -1,0 +1,326 @@
+\doxysection{Network\+Manager Class Reference}
+\hypertarget{classNetworkManager}{}\label{classNetworkManager}\index{NetworkManager@{NetworkManager}}
+
+
+TCP communication manager class.  
+
+
+
+
+{\ttfamily \#include $<$Network\+Manager.\+h$>$}
+
+
+
+Inherits QObject.
+
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classNetworkManager_aa2d7233230f2d609c31d9fd064c2f461}{connected}} ()
+\begin{DoxyCompactList}\small\item\em Signal emitted when the TCP connection is successfully established. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_a3c9d18963e77a155faf338b86927e2e5}{disconnected}} ()
+\begin{DoxyCompactList}\small\item\em Signal emitted when the TCP connection is closed (by host, server or error). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_a03c54af7cc88df99a5c4dd916002554c}{error\+Occurred}} (const QString \&error)
+\begin{DoxyCompactList}\small\item\em Signal emitted when an error occurs during connection or transmission. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_a8c9f27ead277af0afc322b551a40acb7}{message\+Sent}} (const QString \&message)
+\begin{DoxyCompactList}\small\item\em Signal emitted after a message has been sent to the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_a603d801e6200da430707381ba39241c2}{message\+Received}} (const QString \&message)
+\begin{DoxyCompactList}\small\item\em Signal emitted when a complete message has been received from the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNetworkManager_a25e5a69c0dba31cc028050c2b6eea855}{Network\+Manager}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classNetworkManager}{Network\+Manager} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_ae5e79e2a2a383d9b63169b38444152cc}{connect\+To\+Server}} (const QString \&ip, quint16 port)
+\begin{DoxyCompactList}\small\item\em Attempts to establish a connection with a remote server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_a1733d9420c11080527bb32edaa1bae14}{send\+Message}} (const QString \&message)
+\begin{DoxyCompactList}\small\item\em Sends a text message to the connected server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classNetworkManager_a58117c282e533ceff2ebab1a6d459699}{on\+Connected}} ()
+\begin{DoxyCompactList}\small\item\em Slot invoked when the QTcp\+Socket connects successfully. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_a0028518c2761defad4d923b42493463b}{on\+Disconnected}} ()
+\begin{DoxyCompactList}\small\item\em Slot invoked when the QTcp\+Socket disconnects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_a102d12758db0f241cff62e14c1e12baa}{on\+Error}} (QAbstract\+Socket\+::\+Socket\+Error socket\+Error)
+\begin{DoxyCompactList}\small\item\em Slot invoked when the QTcp\+Socket reports an error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetworkManager_a2459cd9d2ab2defef9af5d6b902cc8f5}{on\+Socket\+Ready\+Read}} ()
+\begin{DoxyCompactList}\small\item\em Slot invoked when there is new data ready to read in the socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QTcp\+Socket \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2}{socket\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to the QTcp\+Socket object that manages the TCP connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TCP communication manager class. 
+
+This class provides an interface to connect to a TCP server, send and receive messages asynchronously using QTcp\+Socket.
+
+Emits signals to notify connection status, errors and message reception.
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classNetworkManager_a25e5a69c0dba31cc028050c2b6eea855}\label{classNetworkManager_a25e5a69c0dba31cc028050c2b6eea855} 
+\index{NetworkManager@{NetworkManager}!NetworkManager@{NetworkManager}}
+\index{NetworkManager@{NetworkManager}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{NetworkManager()}{NetworkManager()}}
+{\footnotesize\ttfamily Network\+Manager\+::\+Network\+Manager (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of the \doxylink{classNetworkManager}{Network\+Manager} class. 
+
+Initializes the QTcp\+Socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to the parent object (QObject). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classNetworkManager_a58117c282e533ceff2ebab1a6d459699}{on\+Connected()}}, \mbox{\hyperlink{classNetworkManager_a0028518c2761defad4d923b42493463b}{on\+Disconnected()}}, \mbox{\hyperlink{classNetworkManager_a102d12758db0f241cff62e14c1e12baa}{on\+Error()}}, \mbox{\hyperlink{classNetworkManager_a2459cd9d2ab2defef9af5d6b902cc8f5}{on\+Socket\+Ready\+Read()}}, and \mbox{\hyperlink{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2}{socket\+\_\+}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classNetworkManager_aa2d7233230f2d609c31d9fd064c2f461}\label{classNetworkManager_aa2d7233230f2d609c31d9fd064c2f461} 
+\index{NetworkManager@{NetworkManager}!connected@{connected}}
+\index{connected@{connected}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{connected}{connected}}
+{\footnotesize\ttfamily void Network\+Manager\+::connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when the TCP connection is successfully established. 
+
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a58117c282e533ceff2ebab1a6d459699}{on\+Connected()}}, and \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{TTTController\+::set\+Connections()}}.
+
+\Hypertarget{classNetworkManager_ae5e79e2a2a383d9b63169b38444152cc}\label{classNetworkManager_ae5e79e2a2a383d9b63169b38444152cc} 
+\index{NetworkManager@{NetworkManager}!connectToServer@{connectToServer}}
+\index{connectToServer@{connectToServer}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{connectToServer()}{connectToServer()}}
+{\footnotesize\ttfamily void Network\+Manager\+::connect\+To\+Server (\begin{DoxyParamCaption}\item[{const QString \&}]{ip,  }\item[{quint16}]{port }\end{DoxyParamCaption})}
+
+
+
+Attempts to establish a connection with a remote server. 
+
+Starts the non-\/blocking connection process. The connection result is notified through the \doxylink{classNetworkManager_aa2d7233230f2d609c31d9fd064c2f461}{connected()} or \doxylink{classNetworkManager_a03c54af7cc88df99a5c4dd916002554c}{error\+Occurred()} signals.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & The IP address or host name of the server (e.\+g., "{}127.\+0.\+0.\+1"{}). \\
+\hline
+{\em port} & The TCP port number of the server. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2}{socket\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{TTTController\+::set\+Connections()}}.
+
+\Hypertarget{classNetworkManager_a3c9d18963e77a155faf338b86927e2e5}\label{classNetworkManager_a3c9d18963e77a155faf338b86927e2e5} 
+\index{NetworkManager@{NetworkManager}!disconnected@{disconnected}}
+\index{disconnected@{disconnected}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{disconnected}{disconnected}}
+{\footnotesize\ttfamily void Network\+Manager\+::disconnected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when the TCP connection is closed (by host, server or error). 
+
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a0028518c2761defad4d923b42493463b}{on\+Disconnected()}}, and \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{TTTController\+::set\+Connections()}}.
+
+\Hypertarget{classNetworkManager_a03c54af7cc88df99a5c4dd916002554c}\label{classNetworkManager_a03c54af7cc88df99a5c4dd916002554c} 
+\index{NetworkManager@{NetworkManager}!errorOccurred@{errorOccurred}}
+\index{errorOccurred@{errorOccurred}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{errorOccurred}{errorOccurred}}
+{\footnotesize\ttfamily void Network\+Manager\+::error\+Occurred (\begin{DoxyParamCaption}\item[{const QString \&}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when an error occurs during connection or transmission. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Description of the error. \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a1733d9420c11080527bb32edaa1bae14}{send\+Message()}}.
+
+\Hypertarget{classNetworkManager_a603d801e6200da430707381ba39241c2}\label{classNetworkManager_a603d801e6200da430707381ba39241c2} 
+\index{NetworkManager@{NetworkManager}!messageReceived@{messageReceived}}
+\index{messageReceived@{messageReceived}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{messageReceived}{messageReceived}}
+{\footnotesize\ttfamily void Network\+Manager\+::message\+Received (\begin{DoxyParamCaption}\item[{const QString \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when a complete message has been received from the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The received text message. \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a2459cd9d2ab2defef9af5d6b902cc8f5}{on\+Socket\+Ready\+Read()}}, and \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{TTTController\+::set\+Connections()}}.
+
+\Hypertarget{classNetworkManager_a8c9f27ead277af0afc322b551a40acb7}\label{classNetworkManager_a8c9f27ead277af0afc322b551a40acb7} 
+\index{NetworkManager@{NetworkManager}!messageSent@{messageSent}}
+\index{messageSent@{messageSent}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{messageSent}{messageSent}}
+{\footnotesize\ttfamily void Network\+Manager\+::message\+Sent (\begin{DoxyParamCaption}\item[{const QString \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted after a message has been sent to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The text message that was sent. \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a1733d9420c11080527bb32edaa1bae14}{send\+Message()}}, and \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{TTTController\+::set\+Connections()}}.
+
+\Hypertarget{classNetworkManager_a58117c282e533ceff2ebab1a6d459699}\label{classNetworkManager_a58117c282e533ceff2ebab1a6d459699} 
+\index{NetworkManager@{NetworkManager}!onConnected@{onConnected}}
+\index{onConnected@{onConnected}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{onConnected}{onConnected}}
+{\footnotesize\ttfamily void Network\+Manager\+::on\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot invoked when the QTcp\+Socket connects successfully. 
+
+Emits the {\ttfamily \doxylink{classNetworkManager_aa2d7233230f2d609c31d9fd064c2f461}{connected()}} signal. 
+
+References \mbox{\hyperlink{classNetworkManager_aa2d7233230f2d609c31d9fd064c2f461}{connected()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a25e5a69c0dba31cc028050c2b6eea855}{Network\+Manager()}}.
+
+\Hypertarget{classNetworkManager_a0028518c2761defad4d923b42493463b}\label{classNetworkManager_a0028518c2761defad4d923b42493463b} 
+\index{NetworkManager@{NetworkManager}!onDisconnected@{onDisconnected}}
+\index{onDisconnected@{onDisconnected}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{onDisconnected}{onDisconnected}}
+{\footnotesize\ttfamily void Network\+Manager\+::on\+Disconnected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot invoked when the QTcp\+Socket disconnects. 
+
+Emits the {\ttfamily \doxylink{classNetworkManager_a3c9d18963e77a155faf338b86927e2e5}{disconnected()}} signal. 
+
+References \mbox{\hyperlink{classNetworkManager_a3c9d18963e77a155faf338b86927e2e5}{disconnected()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a25e5a69c0dba31cc028050c2b6eea855}{Network\+Manager()}}.
+
+\Hypertarget{classNetworkManager_a102d12758db0f241cff62e14c1e12baa}\label{classNetworkManager_a102d12758db0f241cff62e14c1e12baa} 
+\index{NetworkManager@{NetworkManager}!onError@{onError}}
+\index{onError@{onError}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{onError}{onError}}
+{\footnotesize\ttfamily void Network\+Manager\+::on\+Error (\begin{DoxyParamCaption}\item[{QAbstract\+Socket\+::\+Socket\+Error}]{socket\+Error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot invoked when the QTcp\+Socket reports an error. 
+
+Maps the socket error to a readable description and emits {\ttfamily \doxylink{classNetworkManager_a03c54af7cc88df99a5c4dd916002554c}{error\+Occurred()}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket\+Error} & The socket error code. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2}{socket\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a25e5a69c0dba31cc028050c2b6eea855}{Network\+Manager()}}.
+
+\Hypertarget{classNetworkManager_a2459cd9d2ab2defef9af5d6b902cc8f5}\label{classNetworkManager_a2459cd9d2ab2defef9af5d6b902cc8f5} 
+\index{NetworkManager@{NetworkManager}!onSocketReadyRead@{onSocketReadyRead}}
+\index{onSocketReadyRead@{onSocketReadyRead}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{onSocketReadyRead}{onSocketReadyRead}}
+{\footnotesize\ttfamily void Network\+Manager\+::on\+Socket\+Ready\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot invoked when there is new data ready to read in the socket. 
+
+Reads all available data and processes it as a message. 
+
+References \mbox{\hyperlink{classNetworkManager_a603d801e6200da430707381ba39241c2}{message\+Received()}}, and \mbox{\hyperlink{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2}{socket\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_a25e5a69c0dba31cc028050c2b6eea855}{Network\+Manager()}}.
+
+\Hypertarget{classNetworkManager_a1733d9420c11080527bb32edaa1bae14}\label{classNetworkManager_a1733d9420c11080527bb32edaa1bae14} 
+\index{NetworkManager@{NetworkManager}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily void Network\+Manager\+::send\+Message (\begin{DoxyParamCaption}\item[{const QString \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Sends a text message to the connected server. 
+
+The message is converted to bytes and written to the socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The text message to send. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classNetworkManager_a03c54af7cc88df99a5c4dd916002554c}{error\+Occurred()}}, \mbox{\hyperlink{classNetworkManager_a8c9f27ead277af0afc322b551a40acb7}{message\+Sent()}}, and \mbox{\hyperlink{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2}{socket\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a48889524dfe5f7215cafed10c69812c9}{TTTController\+::update\+Game()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2}\label{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2} 
+\index{NetworkManager@{NetworkManager}!socket\_@{socket\_}}
+\index{socket\_@{socket\_}!NetworkManager@{NetworkManager}}
+\doxysubsubsection{\texorpdfstring{socket\_}{socket\_}}
+{\footnotesize\ttfamily QTcp\+Socket\texorpdfstring{$\ast$}{*} Network\+Manager\+::socket\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the QTcp\+Socket object that manages the TCP connection. 
+
+
+
+Referenced by \mbox{\hyperlink{classNetworkManager_ae5e79e2a2a383d9b63169b38444152cc}{connect\+To\+Server()}}, \mbox{\hyperlink{classNetworkManager_a25e5a69c0dba31cc028050c2b6eea855}{Network\+Manager()}}, \mbox{\hyperlink{classNetworkManager_a102d12758db0f241cff62e14c1e12baa}{on\+Error()}}, \mbox{\hyperlink{classNetworkManager_a2459cd9d2ab2defef9af5d6b902cc8f5}{on\+Socket\+Ready\+Read()}}, and \mbox{\hyperlink{classNetworkManager_a1733d9420c11080527bb32edaa1bae14}{send\+Message()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Network/\mbox{\hyperlink{NetworkManager_8h}{Network\+Manager.\+h}}\item 
+src/\+Network/\mbox{\hyperlink{NetworkManager_8cpp}{Network\+Manager.\+cpp}}\end{DoxyCompactItemize}

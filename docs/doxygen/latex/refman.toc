@@ -1,0 +1,344 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Namespace List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}defaults Namespace Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Variable Documentation}{9}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}DEFAULT\_BOARD\_SIZE}{9}{subsubsection.5.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.2}DEFAULT\_COLOR}{9}{subsubsection.5.1.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.1.3}DEFAULT\_MINIMAX\_DEPTH}{9}{subsubsection.5.1.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.1.4}GUI\_CELL\_COLUMN\_SPAN}{10}{subsubsection.5.1.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.1.5}GUI\_CELL\_ROW\_SPAN}{10}{subsubsection.5.1.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.1.6}INVALID\_CELL}{10}{subsubsection.5.1.1.6}%
+\contentsline {subsubsection}{\numberline {5.1.1.7}O\_COLOR}{10}{subsubsection.5.1.1.7}%
+\contentsline {subsubsection}{\numberline {5.1.1.8}X\_COLOR}{10}{subsubsection.5.1.1.8}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}AIAgent Class Reference}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{12}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Constructor \& Destructor Documentation}{12}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}AIAgent()}{12}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}$\sim $AIAgent()}{12}{subsubsection.6.1.2.2}%
+\contentsline {section}{\numberline {6.2}Board Class Reference}{13}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{13}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{14}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}Board()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{14}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}Board()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{14}{subsubsection.6.2.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.3}Board()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{14}{subsubsection.6.2.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.2.4}Board()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{14}{subsubsection.6.2.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.2.5}$\sim $Board()}{15}{subsubsection.6.2.2.5}%
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{15}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}at()}{15}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}evaluateBoard()}{15}{subsubsection.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.3.3}operator=()}{16}{subsubsection.6.2.3.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.4}printBoard()}{16}{subsubsection.6.2.3.4}%
+\contentsline {subsubsection}{\numberline {6.2.3.5}reset()}{16}{subsubsection.6.2.3.5}%
+\contentsline {subsubsection}{\numberline {6.2.3.6}resetCell()}{16}{subsubsection.6.2.3.6}%
+\contentsline {subsubsection}{\numberline {6.2.3.7}setPlayerInput()}{16}{subsubsection.6.2.3.7}%
+\contentsline {subsubsection}{\numberline {6.2.3.8}size()}{17}{subsubsection.6.2.3.8}%
+\contentsline {subsection}{\numberline {6.2.4}Member Data Documentation}{17}{subsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.4.1}board\_}{17}{subsubsection.6.2.4.1}%
+\contentsline {subsubsection}{\numberline {6.2.4.2}boardSize\_}{18}{subsubsection.6.2.4.2}%
+\contentsline {section}{\numberline {6.3}Cell Struct Reference}{18}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{18}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Constructor \& Destructor Documentation}{18}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}Cell()}{18}{subsubsection.6.3.2.1}%
+\contentsline {subsection}{\numberline {6.3.3}Member Data Documentation}{19}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}cellBtn}{19}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}col}{19}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}row}{19}{subsubsection.6.3.3.3}%
+\contentsline {section}{\numberline {6.4}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{19}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{20}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Constructor \& Destructor Documentation}{20}{subsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}ConfigManager()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{20}{subsubsection.6.4.2.1}%
+\contentsline {subsubsection}{\numberline {6.4.2.2}$\sim $ConfigManager()}{21}{subsubsection.6.4.2.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.3}ConfigManager()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{21}{subsubsection.6.4.2.3}%
+\contentsline {subsection}{\numberline {6.4.3}Member Function Documentation}{21}{subsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.3.1}getBool()}{21}{subsubsection.6.4.3.1}%
+\contentsline {subsubsection}{\numberline {6.4.3.2}getInt()}{21}{subsubsection.6.4.3.2}%
+\contentsline {subsubsection}{\numberline {6.4.3.3}getValue()}{22}{subsubsection.6.4.3.3}%
+\contentsline {subsubsection}{\numberline {6.4.3.4}instance()}{22}{subsubsection.6.4.3.4}%
+\contentsline {subsubsection}{\numberline {6.4.3.5}load()}{23}{subsubsection.6.4.3.5}%
+\contentsline {subsubsection}{\numberline {6.4.3.6}operator=()}{23}{subsubsection.6.4.3.6}%
+\contentsline {subsubsection}{\numberline {6.4.3.7}resolvePath()}{23}{subsubsection.6.4.3.7}%
+\contentsline {subsection}{\numberline {6.4.4}Member Data Documentation}{23}{subsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6.4.4.1}baseDir\_}{23}{subsubsection.6.4.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.4.2}settings\_}{24}{subsubsection.6.4.4.2}%
+\contentsline {section}{\numberline {6.5}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player Class Reference}{24}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{25}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Constructor \& Destructor Documentation}{25}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}HumanPlayer()}{25}{subsubsection.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}$\sim $HumanPlayer()}{26}{subsubsection.6.5.2.2}%
+\contentsline {subsection}{\numberline {6.5.3}Member Function Documentation}{26}{subsection.6.5.3}%
+\contentsline {subsubsection}{\numberline {6.5.3.1}handleThreadCleanup()}{26}{subsubsection.6.5.3.1}%
+\contentsline {subsubsection}{\numberline {6.5.3.2}parseSpeechCommand()}{26}{subsubsection.6.5.3.2}%
+\contentsline {subsubsection}{\numberline {6.5.3.3}play()}{27}{subsubsection.6.5.3.3}%
+\contentsline {subsubsection}{\numberline {6.5.3.4}startListening}{27}{subsubsection.6.5.3.4}%
+\contentsline {subsubsection}{\numberline {6.5.3.5}stopListening}{27}{subsubsection.6.5.3.5}%
+\contentsline {subsubsection}{\numberline {6.5.3.6}validateCommand()}{27}{subsubsection.6.5.3.6}%
+\contentsline {subsection}{\numberline {6.5.4}Member Data Documentation}{28}{subsection.6.5.4}%
+\contentsline {subsubsection}{\numberline {6.5.4.1}stt\_}{28}{subsubsection.6.5.4.1}%
+\contentsline {subsubsection}{\numberline {6.5.4.2}sttThread\_}{28}{subsubsection.6.5.4.2}%
+\contentsline {section}{\numberline {6.6}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent Class Reference}{28}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{30}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Constructor \& Destructor Documentation}{30}{subsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}MiniMaxAgent()}{30}{subsubsection.6.6.2.1}%
+\contentsline {subsection}{\numberline {6.6.3}Member Function Documentation}{30}{subsection.6.6.3}%
+\contentsline {subsubsection}{\numberline {6.6.3.1}maxMove()}{30}{subsubsection.6.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.6.3.2}minMove()}{31}{subsubsection.6.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.6.3.3}play()}{31}{subsubsection.6.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.6.3.4}playerMark\_()}{32}{subsubsection.6.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.6.3.5}score()}{32}{subsubsection.6.6.3.5}%
+\contentsline {subsection}{\numberline {6.6.4}Member Data Documentation}{32}{subsection.6.6.4}%
+\contentsline {subsubsection}{\numberline {6.6.4.1}AI\_WIN\_SCORE}{32}{subsubsection.6.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.6.4.2}depth\_}{33}{subsubsection.6.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.6.4.3}PLAYER\_WIN\_SCORE}{33}{subsubsection.6.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.6.4.4}TIE\_SCORE}{33}{subsubsection.6.6.4.4}%
+\contentsline {section}{\numberline {6.7}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{33}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{34}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Constructor \& Destructor Documentation}{34}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}NetworkManager()}{34}{subsubsection.6.7.2.1}%
+\contentsline {subsection}{\numberline {6.7.3}Member Function Documentation}{35}{subsection.6.7.3}%
+\contentsline {subsubsection}{\numberline {6.7.3.1}connected}{35}{subsubsection.6.7.3.1}%
+\contentsline {subsubsection}{\numberline {6.7.3.2}connectToServer()}{35}{subsubsection.6.7.3.2}%
+\contentsline {subsubsection}{\numberline {6.7.3.3}disconnected}{35}{subsubsection.6.7.3.3}%
+\contentsline {subsubsection}{\numberline {6.7.3.4}errorOccurred}{35}{subsubsection.6.7.3.4}%
+\contentsline {subsubsection}{\numberline {6.7.3.5}messageReceived}{36}{subsubsection.6.7.3.5}%
+\contentsline {subsubsection}{\numberline {6.7.3.6}messageSent}{36}{subsubsection.6.7.3.6}%
+\contentsline {subsubsection}{\numberline {6.7.3.7}onConnected}{36}{subsubsection.6.7.3.7}%
+\contentsline {subsubsection}{\numberline {6.7.3.8}onDisconnected}{37}{subsubsection.6.7.3.8}%
+\contentsline {subsubsection}{\numberline {6.7.3.9}onError}{37}{subsubsection.6.7.3.9}%
+\contentsline {subsubsection}{\numberline {6.7.3.10}onSocketReadyRead}{37}{subsubsection.6.7.3.10}%
+\contentsline {subsubsection}{\numberline {6.7.3.11}sendMessage()}{37}{subsubsection.6.7.3.11}%
+\contentsline {subsection}{\numberline {6.7.4}Member Data Documentation}{38}{subsection.6.7.4}%
+\contentsline {subsubsection}{\numberline {6.7.4.1}socket\_}{38}{subsubsection.6.7.4.1}%
+\contentsline {section}{\numberline {6.8}Player Class Reference}{38}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{39}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}Constructor \& Destructor Documentation}{39}{subsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}Player()}{39}{subsubsection.6.8.2.1}%
+\contentsline {subsubsection}{\numberline {6.8.2.2}$\sim $Player()}{39}{subsubsection.6.8.2.2}%
+\contentsline {subsection}{\numberline {6.8.3}Member Function Documentation}{39}{subsection.6.8.3}%
+\contentsline {subsubsection}{\numberline {6.8.3.1}play()}{39}{subsubsection.6.8.3.1}%
+\contentsline {subsubsection}{\numberline {6.8.3.2}playerFinished}{40}{subsubsection.6.8.3.2}%
+\contentsline {subsection}{\numberline {6.8.4}Member Data Documentation}{40}{subsection.6.8.4}%
+\contentsline {subsubsection}{\numberline {6.8.4.1}board\_}{40}{subsubsection.6.8.4.1}%
+\contentsline {subsubsection}{\numberline {6.8.4.2}mark\_}{40}{subsubsection.6.8.4.2}%
+\contentsline {section}{\numberline {6.9}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager Class Reference}{41}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{42}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.9.2}Constructor \& Destructor Documentation}{42}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}SpeechManager()}{42}{subsubsection.6.9.2.1}%
+\contentsline {subsubsection}{\numberline {6.9.2.2}$\sim $SpeechManager()}{42}{subsubsection.6.9.2.2}%
+\contentsline {subsection}{\numberline {6.9.3}Member Function Documentation}{43}{subsection.6.9.3}%
+\contentsline {subsubsection}{\numberline {6.9.3.1}configure()}{43}{subsubsection.6.9.3.1}%
+\contentsline {subsubsection}{\numberline {6.9.3.2}freeHeap()}{43}{subsubsection.6.9.3.2}%
+\contentsline {subsubsection}{\numberline {6.9.3.3}hypIsValid()}{43}{subsubsection.6.9.3.3}%
+\contentsline {subsubsection}{\numberline {6.9.3.4}init()}{44}{subsubsection.6.9.3.4}%
+\contentsline {subsubsection}{\numberline {6.9.3.5}processRecognitionResult}{44}{subsubsection.6.9.3.5}%
+\contentsline {subsubsection}{\numberline {6.9.3.6}speechReadyToProcess}{44}{subsubsection.6.9.3.6}%
+\contentsline {subsubsection}{\numberline {6.9.3.7}speechRecognized}{44}{subsubsection.6.9.3.7}%
+\contentsline {subsubsection}{\numberline {6.9.3.8}startListening()}{45}{subsubsection.6.9.3.8}%
+\contentsline {subsection}{\numberline {6.9.4}Member Data Documentation}{45}{subsection.6.9.4}%
+\contentsline {subsubsection}{\numberline {6.9.4.1}config\_}{45}{subsubsection.6.9.4.1}%
+\contentsline {subsubsection}{\numberline {6.9.4.2}decoder\_}{45}{subsubsection.6.9.4.2}%
+\contentsline {subsubsection}{\numberline {6.9.4.3}ep\_}{45}{subsubsection.6.9.4.3}%
+\contentsline {subsubsection}{\numberline {6.9.4.4}err\_}{46}{subsubsection.6.9.4.4}%
+\contentsline {subsubsection}{\numberline {6.9.4.5}frame\_}{46}{subsubsection.6.9.4.5}%
+\contentsline {subsubsection}{\numberline {6.9.4.6}frame\_size\_}{46}{subsubsection.6.9.4.6}%
+\contentsline {subsubsection}{\numberline {6.9.4.7}hyp\_}{46}{subsubsection.6.9.4.7}%
+\contentsline {subsubsection}{\numberline {6.9.4.8}stream\_}{46}{subsubsection.6.9.4.8}%
+\contentsline {section}{\numberline {6.10}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game Class Reference}{47}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{48}{subsection.6.10.1}%
+\contentsline {subsection}{\numberline {6.10.2}Constructor \& Destructor Documentation}{48}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}TicTacToeGame()}{48}{subsubsection.6.10.2.1}%
+\contentsline {subsection}{\numberline {6.10.3}Member Function Documentation}{48}{subsection.6.10.3}%
+\contentsline {subsubsection}{\numberline {6.10.3.1}buildCellButtons()}{48}{subsubsection.6.10.3.1}%
+\contentsline {subsubsection}{\numberline {6.10.3.2}declareGameState()}{49}{subsubsection.6.10.3.2}%
+\contentsline {subsubsection}{\numberline {6.10.3.3}getBoardFinalStateText()}{49}{subsubsection.6.10.3.3}%
+\contentsline {subsubsection}{\numberline {6.10.3.4}getPlayerStyleSheet()}{49}{subsubsection.6.10.3.4}%
+\contentsline {subsubsection}{\numberline {6.10.3.5}getPlayerText()}{50}{subsubsection.6.10.3.5}%
+\contentsline {subsubsection}{\numberline {6.10.3.6}goBack}{50}{subsubsection.6.10.3.6}%
+\contentsline {subsubsection}{\numberline {6.10.3.7}newGame}{50}{subsubsection.6.10.3.7}%
+\contentsline {subsubsection}{\numberline {6.10.3.8}reset()}{50}{subsubsection.6.10.3.8}%
+\contentsline {subsubsection}{\numberline {6.10.3.9}setConnections()}{51}{subsubsection.6.10.3.9}%
+\contentsline {subsubsection}{\numberline {6.10.3.10}setLedStyle()}{51}{subsubsection.6.10.3.10}%
+\contentsline {subsubsection}{\numberline {6.10.3.11}updateCell()}{51}{subsubsection.6.10.3.11}%
+\contentsline {subsubsection}{\numberline {6.10.3.12}updateConnectionStatus()}{51}{subsubsection.6.10.3.12}%
+\contentsline {subsubsection}{\numberline {6.10.3.13}updateRecordingStatus()}{52}{subsubsection.6.10.3.13}%
+\contentsline {subsubsection}{\numberline {6.10.3.14}updateWaitingStatus()}{52}{subsubsection.6.10.3.14}%
+\contentsline {subsection}{\numberline {6.10.4}Member Data Documentation}{52}{subsection.6.10.4}%
+\contentsline {subsubsection}{\numberline {6.10.4.1}ui}{52}{subsubsection.6.10.4.1}%
+\contentsline {subsubsection}{\numberline {6.10.4.2}waiter}{52}{subsubsection.6.10.4.2}%
+\contentsline {section}{\numberline {6.11}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen Class Reference}{53}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{54}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}Constructor \& Destructor Documentation}{54}{subsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}TitleScreen()}{54}{subsubsection.6.11.2.1}%
+\contentsline {subsection}{\numberline {6.11.3}Member Function Documentation}{54}{subsection.6.11.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.1}closeEvent()}{54}{subsubsection.6.11.3.1}%
+\contentsline {subsubsection}{\numberline {6.11.3.2}exited}{54}{subsubsection.6.11.3.2}%
+\contentsline {subsubsection}{\numberline {6.11.3.3}setConnections()}{55}{subsubsection.6.11.3.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.4}startGame}{55}{subsubsection.6.11.3.4}%
+\contentsline {subsubsection}{\numberline {6.11.3.5}updateAIstartsGame}{55}{subsubsection.6.11.3.5}%
+\contentsline {subsubsection}{\numberline {6.11.3.6}updateMiniMaxDepth}{55}{subsubsection.6.11.3.6}%
+\contentsline {subsubsection}{\numberline {6.11.3.7}updateSinglePlayer}{56}{subsubsection.6.11.3.7}%
+\contentsline {subsubsection}{\numberline {6.11.3.8}updateTwoPlayers}{56}{subsubsection.6.11.3.8}%
+\contentsline {subsection}{\numberline {6.11.4}Member Data Documentation}{56}{subsection.6.11.4}%
+\contentsline {subsubsection}{\numberline {6.11.4.1}options\_}{56}{subsubsection.6.11.4.1}%
+\contentsline {subsubsection}{\numberline {6.11.4.2}ui}{56}{subsubsection.6.11.4.2}%
+\contentsline {section}{\numberline {6.12}TTTController Class Reference}{57}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{58}{subsection.6.12.1}%
+\contentsline {subsection}{\numberline {6.12.2}Constructor \& Destructor Documentation}{58}{subsection.6.12.2}%
+\contentsline {subsubsection}{\numberline {6.12.2.1}TTTController()}{58}{subsubsection.6.12.2.1}%
+\contentsline {subsection}{\numberline {6.12.3}Member Function Documentation}{58}{subsection.6.12.3}%
+\contentsline {subsubsection}{\numberline {6.12.3.1}getView()}{58}{subsubsection.6.12.3.1}%
+\contentsline {subsubsection}{\numberline {6.12.3.2}onNetworkMessageReceived}{59}{subsubsection.6.12.3.2}%
+\contentsline {subsubsection}{\numberline {6.12.3.3}playTurn}{59}{subsubsection.6.12.3.3}%
+\contentsline {subsubsection}{\numberline {6.12.3.4}reset()}{59}{subsubsection.6.12.3.4}%
+\contentsline {subsubsection}{\numberline {6.12.3.5}sendMessage}{59}{subsubsection.6.12.3.5}%
+\contentsline {subsubsection}{\numberline {6.12.3.6}setConnections()}{60}{subsubsection.6.12.3.6}%
+\contentsline {subsubsection}{\numberline {6.12.3.7}startGame()}{60}{subsubsection.6.12.3.7}%
+\contentsline {subsubsection}{\numberline {6.12.3.8}switchPlayer()}{60}{subsubsection.6.12.3.8}%
+\contentsline {subsubsection}{\numberline {6.12.3.9}updateGame}{60}{subsubsection.6.12.3.9}%
+\contentsline {subsubsection}{\numberline {6.12.3.10}updateGameState()}{61}{subsubsection.6.12.3.10}%
+\contentsline {subsection}{\numberline {6.12.4}Member Data Documentation}{61}{subsection.6.12.4}%
+\contentsline {subsubsection}{\numberline {6.12.4.1}board\_}{61}{subsubsection.6.12.4.1}%
+\contentsline {subsubsection}{\numberline {6.12.4.2}cells\_}{61}{subsubsection.6.12.4.2}%
+\contentsline {subsubsection}{\numberline {6.12.4.3}currentPlayer\_}{61}{subsubsection.6.12.4.3}%
+\contentsline {subsubsection}{\numberline {6.12.4.4}network\_}{62}{subsubsection.6.12.4.4}%
+\contentsline {subsubsection}{\numberline {6.12.4.5}options\_}{62}{subsubsection.6.12.4.5}%
+\contentsline {subsubsection}{\numberline {6.12.4.6}playerO\_}{62}{subsubsection.6.12.4.6}%
+\contentsline {subsubsection}{\numberline {6.12.4.7}playerX\_}{62}{subsubsection.6.12.4.7}%
+\contentsline {subsubsection}{\numberline {6.12.4.8}view\_}{62}{subsubsection.6.12.4.8}%
+\contentsline {section}{\numberline {6.13}TTTOptions Struct Reference}{62}{section.6.13}%
+\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{63}{subsection.6.13.1}%
+\contentsline {subsection}{\numberline {6.13.2}Member Data Documentation}{63}{subsection.6.13.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.1}AIopponent}{63}{subsubsection.6.13.2.1}%
+\contentsline {subsubsection}{\numberline {6.13.2.2}AIstarts}{63}{subsubsection.6.13.2.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.3}boardSize}{63}{subsubsection.6.13.2.3}%
+\contentsline {subsubsection}{\numberline {6.13.2.4}miniMaxDepth}{63}{subsubsection.6.13.2.4}%
+\contentsline {section}{\numberline {6.14}Waiting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spinner\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Widget Class Reference}{63}{section.6.14}%
+\contentsline {subsection}{\numberline {6.14.1}Constructor \& Destructor Documentation}{65}{subsection.6.14.1}%
+\contentsline {subsubsection}{\numberline {6.14.1.1}WaitingSpinnerWidget()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{65}{subsubsection.6.14.1.1}%
+\contentsline {subsubsection}{\numberline {6.14.1.2}WaitingSpinnerWidget()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{65}{subsubsection.6.14.1.2}%
+\contentsline {subsubsection}{\numberline {6.14.1.3}WaitingSpinnerWidget()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{66}{subsubsection.6.14.1.3}%
+\contentsline {subsection}{\numberline {6.14.2}Member Function Documentation}{66}{subsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}color()}{66}{subsubsection.6.14.2.1}%
+\contentsline {subsubsection}{\numberline {6.14.2.2}currentLineColor()}{66}{subsubsection.6.14.2.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.3}initialize()}{66}{subsubsection.6.14.2.3}%
+\contentsline {subsubsection}{\numberline {6.14.2.4}innerRadius()}{66}{subsubsection.6.14.2.4}%
+\contentsline {subsubsection}{\numberline {6.14.2.5}isSpinning()}{66}{subsubsection.6.14.2.5}%
+\contentsline {subsubsection}{\numberline {6.14.2.6}lineCountDistanceFromPrimary()}{67}{subsubsection.6.14.2.6}%
+\contentsline {subsubsection}{\numberline {6.14.2.7}lineLength()}{67}{subsubsection.6.14.2.7}%
+\contentsline {subsubsection}{\numberline {6.14.2.8}lineWidth()}{67}{subsubsection.6.14.2.8}%
+\contentsline {subsubsection}{\numberline {6.14.2.9}minimumTrailOpacity()}{67}{subsubsection.6.14.2.9}%
+\contentsline {subsubsection}{\numberline {6.14.2.10}numberOfLines()}{67}{subsubsection.6.14.2.10}%
+\contentsline {subsubsection}{\numberline {6.14.2.11}operator=()}{67}{subsubsection.6.14.2.11}%
+\contentsline {subsubsection}{\numberline {6.14.2.12}paintEvent()}{67}{subsubsection.6.14.2.12}%
+\contentsline {subsubsection}{\numberline {6.14.2.13}revolutionsPersSecond()}{68}{subsubsection.6.14.2.13}%
+\contentsline {subsubsection}{\numberline {6.14.2.14}rotate}{68}{subsubsection.6.14.2.14}%
+\contentsline {subsubsection}{\numberline {6.14.2.15}roundness()}{68}{subsubsection.6.14.2.15}%
+\contentsline {subsubsection}{\numberline {6.14.2.16}setColor()}{68}{subsubsection.6.14.2.16}%
+\contentsline {subsubsection}{\numberline {6.14.2.17}setInnerRadius()}{68}{subsubsection.6.14.2.17}%
+\contentsline {subsubsection}{\numberline {6.14.2.18}setLineLength()}{68}{subsubsection.6.14.2.18}%
+\contentsline {subsubsection}{\numberline {6.14.2.19}setLineWidth()}{68}{subsubsection.6.14.2.19}%
+\contentsline {subsubsection}{\numberline {6.14.2.20}setMinimumTrailOpacity()}{69}{subsubsection.6.14.2.20}%
+\contentsline {subsubsection}{\numberline {6.14.2.21}setNumberOfLines()}{69}{subsubsection.6.14.2.21}%
+\contentsline {subsubsection}{\numberline {6.14.2.22}setRevolutionsPerSecond()}{69}{subsubsection.6.14.2.22}%
+\contentsline {subsubsection}{\numberline {6.14.2.23}setRoundness()}{69}{subsubsection.6.14.2.23}%
+\contentsline {subsubsection}{\numberline {6.14.2.24}setText()}{69}{subsubsection.6.14.2.24}%
+\contentsline {subsubsection}{\numberline {6.14.2.25}setTrailFadePercentage()}{69}{subsubsection.6.14.2.25}%
+\contentsline {subsubsection}{\numberline {6.14.2.26}start}{69}{subsubsection.6.14.2.26}%
+\contentsline {subsubsection}{\numberline {6.14.2.27}stop}{70}{subsubsection.6.14.2.27}%
+\contentsline {subsubsection}{\numberline {6.14.2.28}trailFadePercentage()}{70}{subsubsection.6.14.2.28}%
+\contentsline {subsubsection}{\numberline {6.14.2.29}updatePosition()}{70}{subsubsection.6.14.2.29}%
+\contentsline {subsubsection}{\numberline {6.14.2.30}updateSize()}{70}{subsubsection.6.14.2.30}%
+\contentsline {subsubsection}{\numberline {6.14.2.31}updateTimer()}{70}{subsubsection.6.14.2.31}%
+\contentsline {subsection}{\numberline {6.14.3}Member Data Documentation}{70}{subsection.6.14.3}%
+\contentsline {subsubsection}{\numberline {6.14.3.1}\_centerOnParent}{70}{subsubsection.6.14.3.1}%
+\contentsline {subsubsection}{\numberline {6.14.3.2}\_color}{71}{subsubsection.6.14.3.2}%
+\contentsline {subsubsection}{\numberline {6.14.3.3}\_currentCounter}{71}{subsubsection.6.14.3.3}%
+\contentsline {subsubsection}{\numberline {6.14.3.4}\_disableParentWhenSpinning}{71}{subsubsection.6.14.3.4}%
+\contentsline {subsubsection}{\numberline {6.14.3.5}\_innerRadius}{71}{subsubsection.6.14.3.5}%
+\contentsline {subsubsection}{\numberline {6.14.3.6}\_isSpinning}{71}{subsubsection.6.14.3.6}%
+\contentsline {subsubsection}{\numberline {6.14.3.7}\_lineLength}{71}{subsubsection.6.14.3.7}%
+\contentsline {subsubsection}{\numberline {6.14.3.8}\_lineWidth}{71}{subsubsection.6.14.3.8}%
+\contentsline {subsubsection}{\numberline {6.14.3.9}\_minimumTrailOpacity}{71}{subsubsection.6.14.3.9}%
+\contentsline {subsubsection}{\numberline {6.14.3.10}\_numberOfLines}{72}{subsubsection.6.14.3.10}%
+\contentsline {subsubsection}{\numberline {6.14.3.11}\_revolutionsPerSecond}{72}{subsubsection.6.14.3.11}%
+\contentsline {subsubsection}{\numberline {6.14.3.12}\_roundness}{72}{subsubsection.6.14.3.12}%
+\contentsline {subsubsection}{\numberline {6.14.3.13}\_timer}{72}{subsubsection.6.14.3.13}%
+\contentsline {subsubsection}{\numberline {6.14.3.14}\_trailFadePercentage}{72}{subsubsection.6.14.3.14}%
+\contentsline {chapter}{\numberline {7}File Documentation}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AIAgent.puml File Reference}{73}{section.7.1}%
+\contentsline {section}{\numberline {7.2}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board.puml File Reference}{73}{section.7.2}%
+\contentsline {section}{\numberline {7.3}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.puml File Reference}{73}{section.7.3}%
+\contentsline {section}{\numberline {7.4}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.puml File Reference}{73}{section.7.4}%
+\contentsline {section}{\numberline {7.5}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.puml File Reference}{73}{section.7.5}%
+\contentsline {section}{\numberline {7.6}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.puml File Reference}{73}{section.7.6}%
+\contentsline {section}{\numberline {7.7}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.puml File Reference}{73}{section.7.7}%
+\contentsline {section}{\numberline {7.8}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.puml File Reference}{73}{section.7.8}%
+\contentsline {section}{\numberline {7.9}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game.puml File Reference}{73}{section.7.9}%
+\contentsline {section}{\numberline {7.10}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen.puml File Reference}{73}{section.7.10}%
+\contentsline {section}{\numberline {7.11}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TTTCommon\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types.puml File Reference}{73}{section.7.11}%
+\contentsline {section}{\numberline {7.12}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TTTController.puml File Reference}{73}{section.7.12}%
+\contentsline {section}{\numberline {7.13}docs/plantuml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Waiting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spinner\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Widget.puml File Reference}{73}{section.7.13}%
+\contentsline {section}{\numberline {7.14}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AIAgent.h File Reference}{73}{section.7.14}%
+\contentsline {subsection}{\numberline {7.14.1}Detailed Description}{74}{subsection.7.14.1}%
+\contentsline {section}{\numberline {7.15}AIAgent.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{74}{section.7.15}%
+\contentsline {section}{\numberline {7.16}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.h File Reference}{74}{section.7.16}%
+\contentsline {subsection}{\numberline {7.16.1}Detailed Description}{75}{subsection.7.16.1}%
+\contentsline {section}{\numberline {7.17}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{75}{section.7.17}%
+\contentsline {section}{\numberline {7.18}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.h File Reference}{75}{section.7.18}%
+\contentsline {subsection}{\numberline {7.18.1}Detailed Description}{76}{subsection.7.18.1}%
+\contentsline {section}{\numberline {7.19}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{76}{section.7.19}%
+\contentsline {section}{\numberline {7.20}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.h File Reference}{77}{section.7.20}%
+\contentsline {subsection}{\numberline {7.20.1}Detailed Description}{77}{subsection.7.20.1}%
+\contentsline {section}{\numberline {7.21}Player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{77}{section.7.21}%
+\contentsline {section}{\numberline {7.22}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.h File Reference}{78}{section.7.22}%
+\contentsline {subsection}{\numberline {7.22.1}Detailed Description}{78}{subsection.7.22.1}%
+\contentsline {section}{\numberline {7.23}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{78}{section.7.23}%
+\contentsline {section}{\numberline {7.24}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TTTController.h File Reference}{79}{section.7.24}%
+\contentsline {subsection}{\numberline {7.24.1}Detailed Description}{79}{subsection.7.24.1}%
+\contentsline {section}{\numberline {7.25}TTTController.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{80}{section.7.25}%
+\contentsline {section}{\numberline {7.26}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board.h File Reference}{80}{section.7.26}%
+\contentsline {subsection}{\numberline {7.26.1}Detailed Description}{81}{subsection.7.26.1}%
+\contentsline {section}{\numberline {7.27}Board.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{81}{section.7.27}%
+\contentsline {section}{\numberline {7.28}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.h File Reference}{82}{section.7.28}%
+\contentsline {subsection}{\numberline {7.28.1}Detailed Description}{82}{subsection.7.28.1}%
+\contentsline {section}{\numberline {7.29}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{82}{section.7.29}%
+\contentsline {section}{\numberline {7.30}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.h File Reference}{83}{section.7.30}%
+\contentsline {subsection}{\numberline {7.30.1}Detailed Description}{83}{subsection.7.30.1}%
+\contentsline {section}{\numberline {7.31}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{84}{section.7.31}%
+\contentsline {section}{\numberline {7.32}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TTTCommon\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types.h File Reference}{84}{section.7.32}%
+\contentsline {subsection}{\numberline {7.32.1}Detailed Description}{85}{subsection.7.32.1}%
+\contentsline {subsection}{\numberline {7.32.2}Enumeration Type Documentation}{85}{subsection.7.32.2}%
+\contentsline {subsubsection}{\numberline {7.32.2.1}BoardMarks}{85}{subsubsection.7.32.2.1}%
+\contentsline {subsubsection}{\numberline {7.32.2.2}BoardState}{86}{subsubsection.7.32.2.2}%
+\contentsline {section}{\numberline {7.33}TTTCommon\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{86}{section.7.33}%
+\contentsline {section}{\numberline {7.34}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game.h File Reference}{87}{section.7.34}%
+\contentsline {subsection}{\numberline {7.34.1}Detailed Description}{87}{subsection.7.34.1}%
+\contentsline {section}{\numberline {7.35}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{87}{section.7.35}%
+\contentsline {section}{\numberline {7.36}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen.h File Reference}{88}{section.7.36}%
+\contentsline {subsection}{\numberline {7.36.1}Detailed Description}{88}{subsection.7.36.1}%
+\contentsline {section}{\numberline {7.37}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{89}{section.7.37}%
+\contentsline {section}{\numberline {7.38}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/waitingspinnerwidget.h File Reference}{89}{section.7.38}%
+\contentsline {section}{\numberline {7.39}waitingspinnerwidget.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{89}{section.7.39}%
+\contentsline {section}{\numberline {7.40}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Human\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.cpp File Reference}{91}{section.7.40}%
+\contentsline {section}{\numberline {7.41}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mini\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Agent.cpp File Reference}{91}{section.7.41}%
+\contentsline {section}{\numberline {7.42}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}AI/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player.cpp File Reference}{91}{section.7.42}%
+\contentsline {section}{\numberline {7.43}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.cpp File Reference}{91}{section.7.43}%
+\contentsline {section}{\numberline {7.44}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TTTController.cpp File Reference}{91}{section.7.44}%
+\contentsline {section}{\numberline {7.45}src/main.cpp File Reference}{91}{section.7.45}%
+\contentsline {subsection}{\numberline {7.45.1}Function Documentation}{92}{subsection.7.45.1}%
+\contentsline {subsubsection}{\numberline {7.45.1.1}main()}{92}{subsubsection.7.45.1.1}%
+\contentsline {section}{\numberline {7.46}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board.cpp File Reference}{92}{section.7.46}%
+\contentsline {section}{\numberline {7.47}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.cpp File Reference}{92}{section.7.47}%
+\contentsline {section}{\numberline {7.48}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speech\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manager.cpp File Reference}{92}{section.7.48}%
+\contentsline {section}{\numberline {7.49}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tac\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Toe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game.cpp File Reference}{92}{section.7.49}%
+\contentsline {section}{\numberline {7.50}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Title\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Screen.cpp File Reference}{92}{section.7.50}%
+\contentsline {section}{\numberline {7.51}src/waitingspinnerwidget.cpp File Reference}{93}{section.7.51}%
+\contentsline {chapter}{Index}{95}{section*.85}%

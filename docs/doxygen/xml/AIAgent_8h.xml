@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="AIAgent_8h" kind="file" language="C++">
+    <compoundname>AIAgent.h</compoundname>
+    <includes refid="Player_8h" local="yes">Player.h</includes>
+    <includedby refid="MiniMaxAgent_8h" local="yes">include/AI/MiniMaxAgent.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/AI/AIAgent.h</label>
+        <link refid="AIAgent_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player.h</label>
+        <link refid="Player_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TTTCommonTypes.h</label>
+        <link refid="TTTCommonTypes_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="9">
+        <label>QtGlobal</label>
+      </node>
+      <node id="5">
+        <label>cstddef</label>
+      </node>
+      <node id="6">
+        <label>portaudio.h</label>
+      </node>
+      <node id="7">
+        <label>signal.h</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/AI/AIAgent.h</label>
+        <link refid="AIAgent_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/AI/MiniMaxAgent.h</label>
+        <link refid="MiniMaxAgent_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/Controller/TTTController.h</label>
+        <link refid="TTTController_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/AI/MiniMaxAgent.cpp</label>
+        <link refid="MiniMaxAgent_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/Controller/TTTController.cpp</label>
+        <link refid="TTTController_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/Network/NetworkManager.cpp</label>
+        <link refid="NetworkManager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/View/TitleScreen.cpp</label>
+        <link refid="TitleScreen_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAIAgent" prot="public">AIAgent</innerclass>
+    <briefdescription>
+<para>Definition of the <ref refid="classAIAgent" kindref="compound">AIAgent</ref> interface for artificial intelligence agents. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Miguel Fernández Lorenzo </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>November 2025 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>AIAGENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AIAGENT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBoard" kindref="compound">Board</ref>;<sp/></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classAIAgent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAIAgent" kindref="compound">AIAgent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPlayer" kindref="compound">Player</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classAIAgent_1ab455925352ccde362887a32ee1ffd1f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAIAgent_1ab455925352ccde362887a32ee1ffd1f6" kindref="member">AIAgent</ref>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>playerMark,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classBoard" kindref="compound">Board</ref>&amp;<sp/>borad_ref,<sp/>QObject<sp/>*parent_<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classPlayer" kindref="compound">Player</ref>(playerMark,<sp/>borad_ref,<sp/>parent_)<sp/>{}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classAIAgent_1a5614d02341e652bd2df4f3b2fb4d44c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAIAgent_1a5614d02341e652bd2df4f3b2fb4d44c3" kindref="member">~AIAgent</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>AIAGENT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/AI/AIAgent.h"/>
+  </compounddef>
+</doxygen>

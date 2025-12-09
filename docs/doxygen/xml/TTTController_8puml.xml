@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="TTTController_8puml" kind="file" language="C++">
+    <compoundname>TTTController.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>TTTController.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`TTTController`<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Generated<sp/>from<sp/>`include/Controller/TTTController.h`<sp/>using<sp/>the<sp/>HumanPlayer.h<sp/>format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>class<sp/>TTTController</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-view_:<sp/>TicTacToeGame</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-board_:<sp/>Board</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-cells_:<sp/>std::vector&lt;Cell&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-options_:<sp/>TTTOptions&amp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-currentPlayer_:<sp/>BoardMarks</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-playerX_:<sp/>std::unique_ptr&lt;Player&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-playerO_:<sp/>std::unique_ptr&lt;Player&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-network_:<sp/>NetworkManager*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+TTTController(const<sp/>TTTOptions&amp;,<sp/>QObject*)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+startGame():<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+getView():<sp/>QWidget*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateGame(Cell&amp;):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateGameState(Cell&amp;):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+switchPlayer():<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>TTTController<sp/>..|&gt;<sp/>QObject</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>TTTController<sp/>--&gt;<sp/>TicTacToeGame</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>TTTController<sp/>--&gt;<sp/>Board</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>TTTController<sp/>--&gt;<sp/>NetworkManager</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/TTTController.puml"/>
+  </compounddef>
+</doxygen>

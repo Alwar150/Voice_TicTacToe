@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="ConfigManager_8puml" kind="file" language="C++">
+    <compoundname>ConfigManager.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>ConfigManager.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`ConfigManager`<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Generated<sp/>from<sp/>`include/Config/ConfigManager.h`<sp/>using<sp/>the<sp/>HumanPlayer.h<sp/>format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>class<sp/>ConfigManager</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-settings_:<sp/>QSettings*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-baseDir_:<sp/>QString</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+instance():<sp/>ConfigManager&amp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+load(const<sp/>QString&amp;):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+getValue(const<sp/>QString&amp;,<sp/>const<sp/>QString&amp;):<sp/>QString</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+getInt(const<sp/>QString&amp;,<sp/>int):<sp/>int</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+getBool(const<sp/>QString&amp;,<sp/>bool):<sp/>bool</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+resolvePath(const<sp/>QString&amp;):<sp/>QString</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ConfigManager<sp/>..|&gt;<sp/>QObject</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/ConfigManager.puml"/>
+  </compounddef>
+</doxygen>

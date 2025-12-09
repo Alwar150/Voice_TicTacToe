@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_63c0b1a8cbed33fc79c22cc2866dd601" kind="dir">
+    <compoundname>src/Speech</compoundname>
+    <innerfile refid="SpeechManager_8cpp">SpeechManager.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Speech/"/>
+  </compounddef>
+</doxygen>

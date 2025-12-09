@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="NetworkManager_8puml" kind="file" language="C++">
+    <compoundname>NetworkManager.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>NetworkManager.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`NetworkManager`<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Generated<sp/>from<sp/>`include/Network/NetworkManager.h`<sp/>using<sp/>the<sp/>HumanPlayer.h<sp/>format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>class<sp/>NetworkManager</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-socket_:<sp/>QTcpSocket*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-timer_:<sp/>QTimer*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+NetworkManager(QObject*<sp/>parent<sp/>=<sp/>nullptr)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+connectToServer(const<sp/>QString&amp;,<sp/>quint16):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+sendMessage(const<sp/>QString&amp;):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>NetworkManager<sp/>..|&gt;<sp/>QObject</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/NetworkManager.puml"/>
+  </compounddef>
+</doxygen>

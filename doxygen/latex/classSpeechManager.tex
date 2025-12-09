@@ -1,0 +1,385 @@
+\doxysection{Speech\+Manager Class Reference}
+\hypertarget{classSpeechManager}{}\label{classSpeechManager}\index{SpeechManager@{SpeechManager}}
+
+
+Voice recognition manager class using Pocketsphinx and Port\+Audio.  
+
+
+
+
+{\ttfamily \#include $<$Speech\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for Speech\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for Speech\+Manager\+:
+% FIG 1
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSpeechManager_abdde7758804b9f537d9d704583e6c8b3}{speech\+Recognized}} (const QString \&text)
+\begin{DoxyCompactList}\small\item\em Signal emitted when a phrase or command has been recognized. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpeechManager_af020ff04f584cedbd3105f299c1a66b0}{speech\+Ready\+To\+Process}} (const char \texorpdfstring{$\ast$}{*}hyp)
+\begin{DoxyCompactList}\small\item\em Signal emitted when Pocketsphinx returns a new hypothesis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSpeechManager_a6d0d1de5b2cb96efbd23cffaefb98c5a}{Speech\+Manager}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classSpeechManager}{Speech\+Manager} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSpeechManager_a473b5a5d90f5486c0306278220d8138c}{\texorpdfstring{$\sim$}{\string~}\+Speech\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{classSpeechManager}{Speech\+Manager} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpeechManager_a94d6a6d8b5aa00b913e751c2620a9e52}{configure}} ()
+\begin{DoxyCompactList}\small\item\em Configures the initial Pocketsphinx parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the Pocketsphinx decoder and Port\+Audio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening}} ()
+\begin{DoxyCompactList}\small\item\em Starts audio capture and the voice recognition loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSpeechManager_a9e0d24a7b396f00dbb1dee267450d3e9}{process\+Recognition\+Result}} (const char \texorpdfstring{$\ast$}{*}hyp)
+\begin{DoxyCompactList}\small\item\em Processes the hypothesis result returned by Pocketsphinx. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classSpeechManager_ad48e68cab4316e371cc56ca75150897d}{hyp\+Is\+Valid}} ()
+\begin{DoxyCompactList}\small\item\em Verifies if the recognition hypothesis is valid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpeechManager_a13a4749dbb01af8d5faf9e181b11c56e}{free\+Heap}} ()
+\begin{DoxyCompactList}\small\item\em Frees memory allocated on the heap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Pa\+Stream \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSpeechManager_a84982042bef20eb360ec44351fd84757}{stream\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to the Port\+Audio audio stream. \end{DoxyCompactList}\item 
+Pa\+Error \mbox{\hyperlink{classSpeechManager_a12e44c03e875470507ec74a417fa0156}{err\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Port\+Audio error code. \end{DoxyCompactList}\item 
+ps\+\_\+decoder\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSpeechManager_a5457cda86b4ca0afd9d4ab9655baacf0}{decoder\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Main pointer to the Pocketsphinx decoder. \end{DoxyCompactList}\item 
+ps\+\_\+config\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSpeechManager_aed90e5c57c5e43394492fb748ef5dec4}{config\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Configuration used by the decoder. \end{DoxyCompactList}\item 
+ps\+\_\+endpointer\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSpeechManager_a2d256afb5806a933dfd832fa49d1b148}{ep\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pocketsphinx voice activity detector (VAD). \end{DoxyCompactList}\item 
+short \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSpeechManager_a33dd9ba7578619b2f8bfb2be029c4c20}{frame\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Buffer to store audio fragments. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classSpeechManager_a5ae23337be3cfd612918b64b2dac7fa8}{frame\+\_\+size\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Size of audio fragments. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSpeechManager_ad36d507a363bd64922e7cd8c85334bda}{hyp\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The current recognition hypothesis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Voice recognition manager class using Pocketsphinx and Port\+Audio. 
+
+This class encapsulates all the logic for audio capture (Port\+Audio) and voice recognition processing (Pocketsphinx) in a separate worker thread.
+
+Emits signals when speech is recognized, allowing safe communication with the main thread. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSpeechManager_a6d0d1de5b2cb96efbd23cffaefb98c5a}\label{classSpeechManager_a6d0d1de5b2cb96efbd23cffaefb98c5a} 
+\index{SpeechManager@{SpeechManager}!SpeechManager@{SpeechManager}}
+\index{SpeechManager@{SpeechManager}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{SpeechManager()}{SpeechManager()}}
+{\footnotesize\ttfamily Speech\+Manager\+::\+Speech\+Manager (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of the \doxylink{classSpeechManager}{Speech\+Manager} class. 
+
+Initializes Port\+Audio and Pocketsphinx resource pointers to nullptr and configures the object for thread management.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to the parent object (QObject). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSpeechManager_a473b5a5d90f5486c0306278220d8138c}\label{classSpeechManager_a473b5a5d90f5486c0306278220d8138c} 
+\index{SpeechManager@{SpeechManager}!````~SpeechManager@{\texorpdfstring{$\sim$}{\string~}SpeechManager}}
+\index{````~SpeechManager@{\texorpdfstring{$\sim$}{\string~}SpeechManager}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SpeechManager()}{\string~SpeechManager()}}
+{\footnotesize\ttfamily Speech\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Speech\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor of the \doxylink{classSpeechManager}{Speech\+Manager} class. 
+
+Ensures the release of all Pocketsphinx and Port\+Audio resources ({\ttfamily ps\+\_\+free}, {\ttfamily Pa\+\_\+\+Terminate}, etc.) to prevent memory leaks. 
+
+References \mbox{\hyperlink{classSpeechManager_a13a4749dbb01af8d5faf9e181b11c56e}{free\+Heap()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSpeechManager_a94d6a6d8b5aa00b913e751c2620a9e52}\label{classSpeechManager_a94d6a6d8b5aa00b913e751c2620a9e52} 
+\index{SpeechManager@{SpeechManager}!configure@{configure}}
+\index{configure@{configure}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Speech\+Manager\+::configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configures the initial Pocketsphinx parameters. 
+
+This function is responsible for loading language models, the dictionary and acoustic parameters into the {\ttfamily ps\+\_\+config\+\_\+t} structure. Must be called before {\ttfamily \doxylink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}. 
+
+References \mbox{\hyperlink{classSpeechManager_aed90e5c57c5e43394492fb748ef5dec4}{config\+\_\+}}, and \mbox{\hyperlink{classConfigManager_ab72b9c36d8c92066d54eabae525da210}{Config\+Manager\+::instance()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}{Human\+Player\+::\+Human\+Player()}}.
+
+\Hypertarget{classSpeechManager_a13a4749dbb01af8d5faf9e181b11c56e}\label{classSpeechManager_a13a4749dbb01af8d5faf9e181b11c56e} 
+\index{SpeechManager@{SpeechManager}!freeHeap@{freeHeap}}
+\index{freeHeap@{freeHeap}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{freeHeap()}{freeHeap()}}
+{\footnotesize\ttfamily void Speech\+Manager\+::free\+Heap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Frees memory allocated on the heap. 
+
+Helper function used by the destructor to free all Pocketsphinx and Port\+Audio pointers. 
+
+References \mbox{\hyperlink{classSpeechManager_a5457cda86b4ca0afd9d4ab9655baacf0}{decoder\+\_\+}}, and \mbox{\hyperlink{classSpeechManager_a2d256afb5806a933dfd832fa49d1b148}{ep\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_a473b5a5d90f5486c0306278220d8138c}{\texorpdfstring{$\sim$}{\string~}\+Speech\+Manager()}}.
+
+\Hypertarget{classSpeechManager_ad48e68cab4316e371cc56ca75150897d}\label{classSpeechManager_ad48e68cab4316e371cc56ca75150897d} 
+\index{SpeechManager@{SpeechManager}!hypIsValid@{hypIsValid}}
+\index{hypIsValid@{hypIsValid}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{hypIsValid()}{hypIsValid()}}
+{\footnotesize\ttfamily bool Speech\+Manager\+::hyp\+Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Verifies if the recognition hypothesis is valid. 
+
+Checks if the hypothesis is not null and meets the minimum requirements of confidence or length to be considered a command. \begin{DoxyReturn}{Returns}
+true if the hypothesis is valid. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classSpeechManager_ad36d507a363bd64922e7cd8c85334bda}{hyp\+\_\+}}.
+
+\Hypertarget{classSpeechManager_a13ab24c0b019530b8c35557091fac078}\label{classSpeechManager_a13ab24c0b019530b8c35557091fac078} 
+\index{SpeechManager@{SpeechManager}!init@{init}}
+\index{init@{init}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Speech\+Manager\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the Pocketsphinx decoder and Port\+Audio. 
+
+Creates and initializes the decoder ({\ttfamily ps\+\_\+decoder\+\_\+t}) with the configuration established in {\ttfamily \doxylink{classSpeechManager_a94d6a6d8b5aa00b913e751c2620a9e52}{configure()}} and prepares Port\+Audio audio capture. 
+
+References \mbox{\hyperlink{classSpeechManager_aed90e5c57c5e43394492fb748ef5dec4}{config\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a5457cda86b4ca0afd9d4ab9655baacf0}{decoder\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a2d256afb5806a933dfd832fa49d1b148}{ep\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a12e44c03e875470507ec74a417fa0156}{err\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a33dd9ba7578619b2f8bfb2be029c4c20}{frame\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a5ae23337be3cfd612918b64b2dac7fa8}{frame\+\_\+size\+\_\+}}, and \mbox{\hyperlink{classSpeechManager_a84982042bef20eb360ec44351fd84757}{stream\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{classSpeechManager_a9e0d24a7b396f00dbb1dee267450d3e9}\label{classSpeechManager_a9e0d24a7b396f00dbb1dee267450d3e9} 
+\index{SpeechManager@{SpeechManager}!processRecognitionResult@{processRecognitionResult}}
+\index{processRecognitionResult@{processRecognitionResult}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{processRecognitionResult}{processRecognitionResult}}
+{\footnotesize\ttfamily void Speech\+Manager\+::process\+Recognition\+Result (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{hyp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Processes the hypothesis result returned by Pocketsphinx. 
+
+This slot is responsible for performing final validation and emitting the {\ttfamily speech\+Recognized} signal if the hypothesis is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hyp} & The recognized text string. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classSpeechManager_abdde7758804b9f537d9d704583e6c8b3}{speech\+Recognized()}}.
+
+\Hypertarget{classSpeechManager_af020ff04f584cedbd3105f299c1a66b0}\label{classSpeechManager_af020ff04f584cedbd3105f299c1a66b0} 
+\index{SpeechManager@{SpeechManager}!speechReadyToProcess@{speechReadyToProcess}}
+\index{speechReadyToProcess@{speechReadyToProcess}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{speechReadyToProcess}{speechReadyToProcess}}
+{\footnotesize\ttfamily void Speech\+Manager\+::speech\+Ready\+To\+Process (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{hyp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when Pocketsphinx returns a new hypothesis. 
+
+Mainly used for internal communication between methods of the worker thread before sending the result to the main thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hyp} & The recognition hypothesis as a C character string. \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{classSpeechManager_abdde7758804b9f537d9d704583e6c8b3}\label{classSpeechManager_abdde7758804b9f537d9d704583e6c8b3} 
+\index{SpeechManager@{SpeechManager}!speechRecognized@{speechRecognized}}
+\index{speechRecognized@{speechRecognized}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{speechRecognized}{speechRecognized}}
+{\footnotesize\ttfamily void Speech\+Manager\+::speech\+Recognized (\begin{DoxyParamCaption}\item[{const QString \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when a phrase or command has been recognized. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The recognized text string (the hypothesis). \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}{Human\+Player\+::\+Human\+Player()}}, and \mbox{\hyperlink{classSpeechManager_a9e0d24a7b396f00dbb1dee267450d3e9}{process\+Recognition\+Result()}}.
+
+\Hypertarget{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}\label{classSpeechManager_af62b1ec680a5e45e289d629d561c8432} 
+\index{SpeechManager@{SpeechManager}!startListening@{startListening}}
+\index{startListening@{startListening}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{startListening()}{startListening()}}
+{\footnotesize\ttfamily void Speech\+Manager\+::start\+Listening (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts audio capture and the voice recognition loop. 
+
+Opens the Port\+Audio audio stream and starts the Pocketsphinx continuous voice recognition process. Must be called from the worker thread. 
+
+References \mbox{\hyperlink{classSpeechManager_a5457cda86b4ca0afd9d4ab9655baacf0}{decoder\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a2d256afb5806a933dfd832fa49d1b148}{ep\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a12e44c03e875470507ec74a417fa0156}{err\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a33dd9ba7578619b2f8bfb2be029c4c20}{frame\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a5ae23337be3cfd612918b64b2dac7fa8}{frame\+\_\+size\+\_\+}}, \mbox{\hyperlink{classSpeechManager_ad36d507a363bd64922e7cd8c85334bda}{hyp\+\_\+}}, \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}, \mbox{\hyperlink{classSpeechManager_af020ff04f584cedbd3105f299c1a66b0}{speech\+Ready\+To\+Process()}}, and \mbox{\hyperlink{classSpeechManager_a84982042bef20eb360ec44351fd84757}{stream\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}{Human\+Player\+::\+Human\+Player()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classSpeechManager_aed90e5c57c5e43394492fb748ef5dec4}\label{classSpeechManager_aed90e5c57c5e43394492fb748ef5dec4} 
+\index{SpeechManager@{SpeechManager}!config\_@{config\_}}
+\index{config\_@{config\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{config\_}{config\_}}
+{\footnotesize\ttfamily ps\+\_\+config\+\_\+t\texorpdfstring{$\ast$}{*} Speech\+Manager\+::config\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Configuration used by the decoder. 
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_a94d6a6d8b5aa00b913e751c2620a9e52}{configure()}}, and \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}.
+
+\Hypertarget{classSpeechManager_a5457cda86b4ca0afd9d4ab9655baacf0}\label{classSpeechManager_a5457cda86b4ca0afd9d4ab9655baacf0} 
+\index{SpeechManager@{SpeechManager}!decoder\_@{decoder\_}}
+\index{decoder\_@{decoder\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{decoder\_}{decoder\_}}
+{\footnotesize\ttfamily ps\+\_\+decoder\+\_\+t\texorpdfstring{$\ast$}{*} Speech\+Manager\+::decoder\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Main pointer to the Pocketsphinx decoder. 
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_a13a4749dbb01af8d5faf9e181b11c56e}{free\+Heap()}}, \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}, and \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{classSpeechManager_a2d256afb5806a933dfd832fa49d1b148}\label{classSpeechManager_a2d256afb5806a933dfd832fa49d1b148} 
+\index{SpeechManager@{SpeechManager}!ep\_@{ep\_}}
+\index{ep\_@{ep\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{ep\_}{ep\_}}
+{\footnotesize\ttfamily ps\+\_\+endpointer\+\_\+t\texorpdfstring{$\ast$}{*} Speech\+Manager\+::ep\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pocketsphinx voice activity detector (VAD). 
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_a13a4749dbb01af8d5faf9e181b11c56e}{free\+Heap()}}, \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}, and \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{classSpeechManager_a12e44c03e875470507ec74a417fa0156}\label{classSpeechManager_a12e44c03e875470507ec74a417fa0156} 
+\index{SpeechManager@{SpeechManager}!err\_@{err\_}}
+\index{err\_@{err\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{err\_}{err\_}}
+{\footnotesize\ttfamily Pa\+Error Speech\+Manager\+::err\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Port\+Audio error code. 
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}, and \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{classSpeechManager_a33dd9ba7578619b2f8bfb2be029c4c20}\label{classSpeechManager_a33dd9ba7578619b2f8bfb2be029c4c20} 
+\index{SpeechManager@{SpeechManager}!frame\_@{frame\_}}
+\index{frame\_@{frame\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{frame\_}{frame\_}}
+{\footnotesize\ttfamily short\texorpdfstring{$\ast$}{*} Speech\+Manager\+::frame\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Buffer to store audio fragments. 
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}, and \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{classSpeechManager_a5ae23337be3cfd612918b64b2dac7fa8}\label{classSpeechManager_a5ae23337be3cfd612918b64b2dac7fa8} 
+\index{SpeechManager@{SpeechManager}!frame\_size\_@{frame\_size\_}}
+\index{frame\_size\_@{frame\_size\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{frame\_size\_}{frame\_size\_}}
+{\footnotesize\ttfamily size\+\_\+t Speech\+Manager\+::frame\+\_\+size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Size of audio fragments. 
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}, and \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{classSpeechManager_ad36d507a363bd64922e7cd8c85334bda}\label{classSpeechManager_ad36d507a363bd64922e7cd8c85334bda} 
+\index{SpeechManager@{SpeechManager}!hyp\_@{hyp\_}}
+\index{hyp\_@{hyp\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{hyp\_}{hyp\_}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} Speech\+Manager\+::hyp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The current recognition hypothesis. 
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_ad48e68cab4316e371cc56ca75150897d}{hyp\+Is\+Valid()}}, and \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+\Hypertarget{classSpeechManager_a84982042bef20eb360ec44351fd84757}\label{classSpeechManager_a84982042bef20eb360ec44351fd84757} 
+\index{SpeechManager@{SpeechManager}!stream\_@{stream\_}}
+\index{stream\_@{stream\_}!SpeechManager@{SpeechManager}}
+\doxysubsubsection{\texorpdfstring{stream\_}{stream\_}}
+{\footnotesize\ttfamily Pa\+Stream\texorpdfstring{$\ast$}{*} Speech\+Manager\+::stream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the Port\+Audio audio stream. 
+
+
+
+Referenced by \mbox{\hyperlink{classSpeechManager_a13ab24c0b019530b8c35557091fac078}{init()}}, and \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{start\+Listening()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Speech/\mbox{\hyperlink{SpeechManager_8h}{Speech\+Manager.\+h}}\item 
+src/\+Speech/\mbox{\hyperlink{SpeechManager_8cpp}{Speech\+Manager.\+cpp}}\end{DoxyCompactItemize}

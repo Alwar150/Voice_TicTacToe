@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_7784d12364ef0ec21cd188ca9cb3a89c" kind="dir">
+    <compoundname>src/View</compoundname>
+    <innerfile refid="TicTacToeGame_8cpp">TicTacToeGame.cpp</innerfile>
+    <innerfile refid="TitleScreen_8cpp">TitleScreen.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/View/"/>
+  </compounddef>
+</doxygen>

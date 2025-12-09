@@ -1,0 +1,39 @@
+\doxysection{Human\+Player.\+h}
+\hypertarget{HumanPlayer_8h_source}{}\label{HumanPlayer_8h_source}\index{include/AI/HumanPlayer.h@{include/AI/HumanPlayer.h}}
+\mbox{\hyperlink{HumanPlayer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ HUMANPLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ HUMANPLAYER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{Player_8h}{Player.h}}>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{SpeechManager_8h}{SpeechManager.h}}>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QThread>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classHumanPlayer}{HumanPlayer}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPlayer}{Player}}\{}
+\DoxyCodeLine{00029\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classHumanPlayer}{HumanPlayer}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classBoard}{Board}}\&\ board\_ref,\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ playerMark\ =\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{BoardMarks::Empty}},\ QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classHumanPlayer_a09eb3ec6888e29a8848a4e8459653e4a}{\string~HumanPlayer}}()\ \{\}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHumanPlayer_ad005d15e0c30f35fd870b25dbde208c9}{play}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ signals:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHumanPlayer_a22dec6c1020171eae458f479c6334792}{startListening}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHumanPlayer_a45a91368ca76a18df8f838297810f4f6}{stopListening}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d}{parseSpeechCommand}}(\textcolor{keyword}{const}\ QString\ \&text);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classHumanPlayer_ab915a74ea5785cad0294dc5502acf8cd}{validateCommand}}(\textcolor{keyword}{const}\ QString\ \&command);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHumanPlayer_a318ffcc6af2e9829f39df29892c066ee}{handleThreadCleanup}}();}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{classSpeechManager}{SpeechManager}}*\ \mbox{\hyperlink{classHumanPlayer_a274fc9efd09115ccfa0cfac882e49dce}{stt\_}};\ \ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ QThread*\ \mbox{\hyperlink{classHumanPlayer_a75e961bdb6f8c7e0fff5f7b01cfc038b}{sttThread\_}};\ \ \ \ }
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ HUMANPLAYER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerdir refid="dir_721ce8f54eb62e787f640d6027617add">include/AI</innerdir>
+    <innerdir refid="dir_4c66d8320edae8ac4eb532c864452e83">include/Config</innerdir>
+    <innerdir refid="dir_c02aaf12f699d5e777e90918b63404c1">include/Controller</innerdir>
+    <innerdir refid="dir_a66f277f0ad9d33996bc14e382b252ae">include/Model</innerdir>
+    <innerdir refid="dir_1553e7a2de22f123df73839d1e033b6d">include/Network</innerdir>
+    <innerdir refid="dir_8d56964d40e6de0293ab80987f32bc82">include/Speech</innerdir>
+    <innerdir refid="dir_4bd43993f2082ffe61b96e0db9f34ef1">include/View</innerdir>
+    <innerfile refid="TTTCommonTypes_8h">TTTCommonTypes.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

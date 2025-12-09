@@ -1,0 +1,40 @@
+\doxysection{Mini\+Max\+Agent.\+h}
+\hypertarget{MiniMaxAgent_8h_source}{}\label{MiniMaxAgent_8h_source}\index{include/AI/MiniMaxAgent.h@{include/AI/MiniMaxAgent.h}}
+\mbox{\hyperlink{MiniMaxAgent_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MINIMAXAGENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MINIMAXAGENT\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{AIAgent_8h}{AIAgent.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMiniMaxAgent}{MiniMaxAgent}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAIAgent}{AIAgent}}}
+\DoxyCodeLine{00041\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classMiniMaxAgent}{MiniMaxAgent}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classBoard}{Board}}\&\ board,\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ AImark,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ depth,\ QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMiniMaxAgent_a9fd00e9550a3e78b6ba76c1db80bf78f}{play}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{classMiniMaxAgent_aa1920de5421331a5a88dd55c727ec6fc}{depth\_}};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ \mbox{\hyperlink{classMiniMaxAgent_adde21208d43b0ff75ecd2c014c217c78}{playerMark\_}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}}\ ==\ \mbox{\hyperlink{classPlayer_a896addb43bdc7926500d04387bb84ac0}{mark\_}})\ ?\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{BoardMarks::O}}\ :\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{BoardMarks::X}};}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{classMiniMaxAgent_a1e7fa70e257c4423ab555e04cb7eaa0a}{AI\_WIN\_SCORE}}\ =\ 1;}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{classMiniMaxAgent_a2cbab0bdd892f994f7e3e13d0f4be53d}{PLAYER\_WIN\_SCORE}}\ =\ -\/1;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{classMiniMaxAgent_a9ae263accc262d5f9eac741125229f13}{TIE\_SCORE}}\ =\ 0;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{classMiniMaxAgent_a9d99e71c93f92fc3bda35809fa031fd8}{maxMove}}(\mbox{\hyperlink{classBoard}{Board}}\ \&board,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ depth,\ \textcolor{keywordtype}{short}\ alpha,\ \textcolor{keywordtype}{short}\ beta)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{classMiniMaxAgent_a0385ea9e47150171b03dbdfc5b349136}{minMove}}(\mbox{\hyperlink{classBoard}{Board}}\ \&board,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ depth,\ \textcolor{keywordtype}{short}\ alpha,\ \textcolor{keywordtype}{short}\ beta)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{classMiniMaxAgent_a1472ae706782c168d8e1965bac90097b}{score}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}{BoardState}}\ state)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00136\ \};}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MINIMAXAGENT\_H}}
+
+\end{DoxyCode}

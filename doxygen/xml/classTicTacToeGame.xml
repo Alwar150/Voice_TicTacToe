@@ -1,0 +1,546 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classTicTacToeGame" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>TicTacToeGame</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <includes refid="TicTacToeGame_8h" local="no">TicTacToeGame.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Ui::TicTacToeGame &gt;</type>
+        <definition>std::unique_ptr&lt;Ui::TicTacToeGame&gt; TicTacToeGame::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>TicTacToeGame::ui</qualifiedname>
+        <briefdescription>
+<para>Activate or deactivate the visual loading indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ui is a reference to the ui object of the tic tac toe game. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="77" column="21" bodyfile="include/View/TicTacToeGame.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" compoundref="TicTacToeGame_8cpp" startline="35" endline="58">buildCellButtons</referencedby>
+        <referencedby refid="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" compoundref="TicTacToeGame_8cpp" startline="28" endline="33">setConnections</referencedby>
+        <referencedby refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="TicTacToeGame_8cpp" startline="5" endline="26">TicTacToeGame</referencedby>
+        <referencedby refid="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" compoundref="TicTacToeGame_8cpp" startline="133" endline="160">updateConnectionStatus</referencedby>
+        <referencedby refid="classTicTacToeGame_1a5bc188ae6a5806246edc175844725518" compoundref="TicTacToeGame_8cpp" startline="162" endline="179">updateRecordingStatus</referencedby>
+        <referencedby refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" compoundref="TicTacToeGame_8cpp" startline="181" endline="200">updateWaitingStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" prot="private" static="no" mutable="no">
+        <type><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref> *</type>
+        <definition>WaitingSpinnerWidget* TicTacToeGame::waiter</definition>
+        <argsstring></argsstring>
+        <name>waiter</name>
+        <qualifiedname>TicTacToeGame::waiter</qualifiedname>
+        <briefdescription>
+<para><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref>, intended to be an animated wheel when process is waiting server response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="108" column="26" bodyfile="include/View/TicTacToeGame.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="TicTacToeGame_8cpp" startline="5" endline="26">TicTacToeGame</referencedby>
+        <referencedby refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" compoundref="TicTacToeGame_8cpp" startline="181" endline="200">updateWaitingStatus</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TicTacToeGame::TicTacToeGame</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>TicTacToeGame</name>
+        <qualifiedname>TicTacToeGame::TicTacToeGame</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="classTicTacToeGame" kindref="compound">TicTacToeGame</ref> constructs a view of a game. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a QWidget type parent that owns this instance of the controller. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="36" column="14" bodyfile="src/View/TicTacToeGame.cpp" bodystart="5" bodyend="26"/>
+        <references refid="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" compoundref="TicTacToeGame_8cpp" startline="28" endline="33">setConnections</references>
+        <references refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" compoundref="TicTacToeGame_8h" startline="77">ui</references>
+        <references refid="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" compoundref="TicTacToeGame_8cpp" startline="133" endline="160">updateConnectionStatus</references>
+        <references refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" compoundref="TicTacToeGame_8cpp" startline="181" endline="200">updateWaitingStatus</references>
+        <references refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" compoundref="TicTacToeGame_8h" startline="108">waiter</references>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::updateCell</definition>
+        <argsstring>(Cell &amp;cell, BoardMarks currentPlayer)</argsstring>
+        <name>updateCell</name>
+        <qualifiedname>TicTacToeGame::updateCell</qualifiedname>
+        <param>
+          <type><ref refid="structCell" kindref="compound">Cell</ref> &amp;</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>currentPlayer</declname>
+        </param>
+        <briefdescription>
+<para>updateCell sets the Text of the cell to the current player&apos;s mark. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a refernece to the clicked cell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current player&apos;s mark (X or O). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="42" column="10" bodyfile="src/View/TicTacToeGame.cpp" bodystart="97" bodyend="102"/>
+        <references refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" compoundref="TTTCommonTypes_8h" startline="33">Cell::cellBtn</references>
+        <references refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" compoundref="TicTacToeGame_8cpp" startline="72" endline="95">getPlayerStyleSheet</references>
+        <references refid="classTicTacToeGame_1a0b8fee976515895d15eb59c282b057d1" compoundref="TicTacToeGame_8cpp" startline="60" endline="70">getPlayerText</references>
+        <referencedby refid="classTTTController_1a2b17b7aa11412f978e257afb2aebab5b" compoundref="TTTController_8cpp" startline="135" endline="148">TTTController::updateGameState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::declareGameState</definition>
+        <argsstring>(BoardState boardState)</argsstring>
+        <name>declareGameState</name>
+        <qualifiedname>TicTacToeGame::declareGameState</qualifiedname>
+        <param>
+          <type><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref></type>
+          <declname>boardState</declname>
+        </param>
+        <briefdescription>
+<para>declareGameState outputs the board&apos;s state to a QMessageBox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boardState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current board state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="47" column="10" bodyfile="src/View/TicTacToeGame.cpp" bodystart="118" bodyend="124"/>
+        <references refid="classTicTacToeGame_1af4349fa57bc46d6e3030ff2482ea57c9" compoundref="TicTacToeGame_8cpp" startline="104" endline="116">getBoardFinalStateText</references>
+        <referencedby refid="classTTTController_1a2b17b7aa11412f978e257afb2aebab5b" compoundref="TTTController_8cpp" startline="135" endline="148">TTTController::updateGameState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="structCell" kindref="compound">Cell</ref> &gt;</type>
+        <definition>vector&lt; Cell &gt; TicTacToeGame::buildCellButtons</definition>
+        <argsstring>(size_t boardSize)</argsstring>
+        <name>buildCellButtons</name>
+        <qualifiedname>TicTacToeGame::buildCellButtons</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>boardSize</declname>
+        </param>
+        <briefdescription>
+<para>buildCellButtons builds the GUI cells as push buttons. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boardSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows or columns of a board. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a collection of cells containing push button references and their corresponding row and column. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="54" column="12" bodyfile="src/View/TicTacToeGame.cpp" bodystart="35" bodyend="58"/>
+        <references refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" compoundref="TTTCommonTypes_8h" startline="14">defaults::GUI_CELL_COLUMN_SPAN</references>
+        <references refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" compoundref="TTTCommonTypes_8h" startline="13">defaults::GUI_CELL_ROW_SPAN</references>
+        <references refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" compoundref="TicTacToeGame_8h" startline="77">ui</references>
+        <referencedby refid="classTTTController_1ab8fd0d485df345aefed502a00082c828" compoundref="TTTController_8cpp" startline="8" endline="72">TTTController::TTTController</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1a8a891d7dcf57178c79f325a92751f44c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::reset</definition>
+        <argsstring>(vector&lt; Cell &gt; &amp;cells)</argsstring>
+        <name>reset</name>
+        <qualifiedname>TicTacToeGame::reset</qualifiedname>
+        <param>
+          <type>vector&lt; <ref refid="structCell" kindref="compound">Cell</ref> &gt; &amp;</type>
+          <declname>cells</declname>
+        </param>
+        <briefdescription>
+<para>reset clears out the text of all push button cells. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a collection of cells containing push button references and their corresponding row and column. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="60" column="10" bodyfile="src/View/TicTacToeGame.cpp" bodystart="126" bodyend="131"/>
+        <referencedby refid="classTTTController_1a14db27ac7fab7fa75f993b1efb282b15" compoundref="TTTController_8cpp" startline="150" endline="161">TTTController::reset</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::updateConnectionStatus</definition>
+        <argsstring>(bool)</argsstring>
+        <name>updateConnectionStatus</name>
+        <qualifiedname>TicTacToeGame::updateConnectionStatus</qualifiedname>
+        <param>
+          <type>bool</type>
+          <defname>isConnected</defname>
+        </param>
+        <briefdescription>
+<para>Update de visual indicator of the conection status with socket server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="65" column="10" bodyfile="src/View/TicTacToeGame.cpp" bodystart="133" bodyend="160"/>
+        <references refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" compoundref="TicTacToeGame_8h" startline="77">ui</references>
+        <referencedby refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="TicTacToeGame_8cpp" startline="5" endline="26">TicTacToeGame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1a5bc188ae6a5806246edc175844725518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::updateRecordingStatus</definition>
+        <argsstring>(bool)</argsstring>
+        <name>updateRecordingStatus</name>
+        <qualifiedname>TicTacToeGame::updateRecordingStatus</qualifiedname>
+        <param>
+          <type>bool</type>
+          <defname>isRecording</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="66" column="10" bodyfile="src/View/TicTacToeGame.cpp" bodystart="162" bodyend="179"/>
+        <references refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" compoundref="TicTacToeGame_8cpp" startline="202" endline="219">setLedStyle</references>
+        <references refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" compoundref="TicTacToeGame_8h" startline="77">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::updateWaitingStatus</definition>
+        <argsstring>(bool)</argsstring>
+        <name>updateWaitingStatus</name>
+        <qualifiedname>TicTacToeGame::updateWaitingStatus</qualifiedname>
+        <param>
+          <type>bool</type>
+          <defname>isWaiting</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="67" column="10" bodyfile="src/View/TicTacToeGame.cpp" bodystart="181" bodyend="200"/>
+        <references refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" compoundref="TicTacToeGame_8cpp" startline="202" endline="219">setLedStyle</references>
+        <references refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" compoundref="waitingspinnerwidget_8cpp" startline="112" endline="125">WaitingSpinnerWidget::start</references>
+        <references refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" compoundref="waitingspinnerwidget_8cpp" startline="127" endline="139">WaitingSpinnerWidget::stop</references>
+        <references refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" compoundref="TicTacToeGame_8h" startline="77">ui</references>
+        <references refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" compoundref="TicTacToeGame_8h" startline="108">waiter</references>
+        <referencedby refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="TicTacToeGame_8cpp" startline="5" endline="26">TicTacToeGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::setConnections</definition>
+        <argsstring>()</argsstring>
+        <name>setConnections</name>
+        <qualifiedname>TicTacToeGame::setConnections</qualifiedname>
+        <briefdescription>
+<para>setConnections handles setting the connection to emit if cells have cliked, and the navigational back button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="82" column="10" bodyfile="src/View/TicTacToeGame.cpp" bodystart="28" bodyend="33"/>
+        <references refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" compoundref="TicTacToeGame_8h" startline="77">ui</references>
+        <referencedby refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" compoundref="TicTacToeGame_8cpp" startline="5" endline="26">TicTacToeGame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1a0b8fee976515895d15eb59c282b057d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString TicTacToeGame::getPlayerText</definition>
+        <argsstring>(BoardMarks currentPlayer)</argsstring>
+        <name>getPlayerText</name>
+        <qualifiedname>TicTacToeGame::getPlayerText</qualifiedname>
+        <param>
+          <type><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>currentPlayer</declname>
+        </param>
+        <briefdescription>
+<para>getPlayerText converts a board mark to a QString. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current player&apos;s mark (X or O). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a QString of the player&apos;s mark. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="88" column="13" bodyfile="src/View/TicTacToeGame.cpp" bodystart="60" bodyend="70"/>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e">O</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383">X</references>
+        <referencedby refid="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" compoundref="TicTacToeGame_8cpp" startline="97" endline="102">updateCell</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString TicTacToeGame::getPlayerStyleSheet</definition>
+        <argsstring>(BoardMarks currentPlayer)</argsstring>
+        <name>getPlayerStyleSheet</name>
+        <qualifiedname>TicTacToeGame::getPlayerStyleSheet</qualifiedname>
+        <param>
+          <type><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>currentPlayer</declname>
+        </param>
+        <briefdescription>
+<para>getPlayerStyleSheet gets a stylesheet associated with each player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current player&apos;s mark (X or O). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a QString stylesheet of the player given in the input. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="94" column="13" bodyfile="src/View/TicTacToeGame.cpp" bodystart="72" bodyend="95"/>
+        <references refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" compoundref="TTTCommonTypes_8h" startline="17">defaults::DEFAULT_COLOR</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e">O</references>
+        <references refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" compoundref="TTTCommonTypes_8h" startline="16">defaults::O_COLOR</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383">X</references>
+        <references refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" compoundref="TTTCommonTypes_8h" startline="15">defaults::X_COLOR</references>
+        <referencedby refid="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" compoundref="TicTacToeGame_8cpp" startline="97" endline="102">updateCell</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1af4349fa57bc46d6e3030ff2482ea57c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString TicTacToeGame::getBoardFinalStateText</definition>
+        <argsstring>(BoardState boardState)</argsstring>
+        <name>getBoardFinalStateText</name>
+        <qualifiedname>TicTacToeGame::getBoardFinalStateText</qualifiedname>
+        <param>
+          <type><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref></type>
+          <declname>boardState</declname>
+        </param>
+        <briefdescription>
+<para>getBoardFinalStateText converts a state to a decleration text, that will be used when declaring the final state of a game. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boardState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current board state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>QString decleration text, that will be used when declaring the final state of a game. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="102" column="13" bodyfile="src/View/TicTacToeGame.cpp" bodystart="104" bodyend="116"/>
+        <references refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97">OWins</references>
+        <references refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b">Tie</references>
+        <references refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed">XWins</references>
+        <referencedby refid="classTicTacToeGame_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" compoundref="TicTacToeGame_8cpp" startline="118" endline="124">declareGameState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::setLedStyle</definition>
+        <argsstring>(QLabel *label, const QString &amp;text, const QString &amp;bgColor, const QString &amp;textColor, int fontSize)</argsstring>
+        <name>setLedStyle</name>
+        <qualifiedname>TicTacToeGame::setLedStyle</qualifiedname>
+        <param>
+          <type>QLabel *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>bgColor</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>textColor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fontSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="104" column="10" bodyfile="src/View/TicTacToeGame.cpp" bodystart="202" bodyend="219"/>
+        <referencedby refid="classTicTacToeGame_1a5bc188ae6a5806246edc175844725518" compoundref="TicTacToeGame_8cpp" startline="162" endline="179">updateRecordingStatus</referencedby>
+        <referencedby refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" compoundref="TicTacToeGame_8cpp" startline="181" endline="200">updateWaitingStatus</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classTicTacToeGame_1ad0072c616d4d9284ca69245a635b8303" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::newGame</definition>
+        <argsstring>()</argsstring>
+        <name>newGame</name>
+        <qualifiedname>TicTacToeGame::newGame</qualifiedname>
+        <briefdescription>
+<para>newGame is emitted when the New Game button is clicked and some reset logic must be executed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="116" column="10"/>
+        <referencedby refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" compoundref="TTTController_8cpp" startline="80" endline="133">TTTController::setConnections</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classTicTacToeGame_1ac1bea86656497f38aa87436e5779b000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TicTacToeGame::goBack</definition>
+        <argsstring>()</argsstring>
+        <name>goBack</name>
+        <qualifiedname>TicTacToeGame::goBack</qualifiedname>
+        <briefdescription>
+<para>goBack is emitted when the Back button is clicked and the TtitleScreen must reappear. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/TicTacToeGame.h" line="120" column="10"/>
+        <referencedby refid="classTitleScreen_1ac55c2f2485f58d3b7b389e7414a358d6" compoundref="TitleScreen_8cpp" startline="53" endline="70">TitleScreen::startGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classTicTacToeGame" kindref="compound">TicTacToeGame</ref> class is responsible for the GUI of a game, it is responsible for building the cells of a board, which can be of variable size, and a navigation button to take the user back to the title screen, and a button for resetting the game and playing a new one. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+      <node id="1">
+        <label>TicTacToeGame</label>
+        <link refid="classTicTacToeGame"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+      <node id="4">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>TicTacToeGame</label>
+        <link refid="classTicTacToeGame"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>waiter</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>WaitingSpinnerWidget</label>
+        <link refid="classWaitingSpinnerWidget"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/View/TicTacToeGame.h" line="27" column="1" bodyfile="include/View/TicTacToeGame.h" bodystart="28" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>buildCellButtons</name></member>
+      <member refid="classTicTacToeGame_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>declareGameState</name></member>
+      <member refid="classTicTacToeGame_1af4349fa57bc46d6e3030ff2482ea57c9" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>getBoardFinalStateText</name></member>
+      <member refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>getPlayerStyleSheet</name></member>
+      <member refid="classTicTacToeGame_1a0b8fee976515895d15eb59c282b057d1" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>getPlayerText</name></member>
+      <member refid="classTicTacToeGame_1ac1bea86656497f38aa87436e5779b000" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>goBack</name></member>
+      <member refid="classTicTacToeGame_1ad0072c616d4d9284ca69245a635b8303" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>newGame</name></member>
+      <member refid="classTicTacToeGame_1a8a891d7dcf57178c79f325a92751f44c" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>reset</name></member>
+      <member refid="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>setConnections</name></member>
+      <member refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>setLedStyle</name></member>
+      <member refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>TicTacToeGame</name></member>
+      <member refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>ui</name></member>
+      <member refid="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>updateCell</name></member>
+      <member refid="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>updateConnectionStatus</name></member>
+      <member refid="classTicTacToeGame_1a5bc188ae6a5806246edc175844725518" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>updateRecordingStatus</name></member>
+      <member refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" prot="public" virt="non-virtual"><scope>TicTacToeGame</scope><name>updateWaitingStatus</name></member>
+      <member refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" prot="private" virt="non-virtual"><scope>TicTacToeGame</scope><name>waiter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

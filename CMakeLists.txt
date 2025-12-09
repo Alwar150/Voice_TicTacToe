@@ -10,6 +10,7 @@ set(CMAKE_AUTOUIC ON)
 # Encontrar Qt (Funciona bien en Qt Creator)
 # -----------------------------------------------------
 # Qt Creator inyecta las rutas del kit. Usar 'find_package' es suficiente.
+set(Qt6_DIR "$ENV{HOME}/Qt/6.10.0/gcc_64/lib/cmake/Qt6")
 find_package(Qt6 REQUIRED COMPONENTS
     Core
     Gui
@@ -144,7 +145,7 @@ target_link_libraries(tictactoe PRIVATE
     Qt6::Network
     Qt6::Concurrent
     # PortAudio está disponible a través de FetchContent
-    portaudio_static
+    portaudio
     # PocketSphinx (Target IMPORTED)
     pocketsphinx
 )

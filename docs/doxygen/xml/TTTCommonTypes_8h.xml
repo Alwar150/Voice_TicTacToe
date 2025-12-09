@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="TTTCommonTypes_8h" kind="file" language="C++">
+    <compoundname>TTTCommonTypes.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">portaudio.h</includes>
+    <includes local="no">signal.h</includes>
+    <includedby refid="Player_8h" local="no">include/AI/Player.h</includedby>
+    <includedby refid="TTTController_8h" local="yes">include/Controller/TTTController.h</includedby>
+    <includedby refid="Board_8h" local="yes">include/Model/Board.h</includedby>
+    <includedby refid="TicTacToeGame_8h" local="yes">include/View/TicTacToeGame.h</includedby>
+    <includedby refid="TitleScreen_8h" local="yes">include/View/TitleScreen.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/TTTCommonTypes.h</label>
+        <link refid="TTTCommonTypes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstddef</label>
+      </node>
+      <node id="3">
+        <label>portaudio.h</label>
+      </node>
+      <node id="4">
+        <label>signal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/AI/AIAgent.h</label>
+        <link refid="AIAgent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>include/AI/HumanPlayer.h</label>
+        <link refid="HumanPlayer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/AI/MiniMaxAgent.h</label>
+        <link refid="MiniMaxAgent_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/AI/Player.h</label>
+        <link refid="Player_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/Controller/TTTController.h</label>
+        <link refid="TTTController_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>include/Model/Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/TTTCommonTypes.h</label>
+        <link refid="TTTCommonTypes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>include/View/TicTacToeGame.h</label>
+        <link refid="TicTacToeGame_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>include/View/TitleScreen.h</label>
+        <link refid="TitleScreen_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/AI/HumanPlayer.cpp</label>
+        <link refid="HumanPlayer_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/AI/MiniMaxAgent.cpp</label>
+        <link refid="MiniMaxAgent_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/AI/Player.cpp</label>
+        <link refid="Player_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/Controller/TTTController.cpp</label>
+        <link refid="TTTController_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/Model/Board.cpp</label>
+        <link refid="Board_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/Network/NetworkManager.cpp</label>
+        <link refid="NetworkManager_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/View/TicTacToeGame.cpp</label>
+        <link refid="TicTacToeGame_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/View/TitleScreen.cpp</label>
+        <link refid="TitleScreen_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCell" prot="public">Cell</innerclass>
+    <innerclass refid="structTTTOptions" prot="public">TTTOptions</innerclass>
+    <innernamespace refid="namespacedefaults">defaults</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>BoardMarks</name>
+        <enumvalue id="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" prot="public">
+          <name>Empty</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" prot="public">
+          <name>O</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The BoardMarks enum defiens the type of mark on the board. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="72" column="1" bodyfile="include/TTTCommonTypes.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>BoardState</name>
+        <enumvalue id="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" prot="public">
+          <name>NoWinner</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" prot="public">
+          <name>XWins</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" prot="public">
+          <name>OWins</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" prot="public">
+          <name>Tie</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The BoardState enum defines the possible states of a board. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="77" column="1" bodyfile="include/TTTCommonTypes.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Definition of common types and constants for the Tic-Tac-Toe game. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Miguel Fernández Lorenzo </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>November 2025</para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TTTCOMMONTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TTTCOMMONTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;portaudio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QPushButton;</highlight></codeline>
+<codeline lineno="8" refid="namespacedefaults" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacedefaults" kindref="compound">defaults</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">INVALID_CELL</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="11" refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" kindref="member">DEFAULT_BOARD_SIZE</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="12" refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" kindref="member">DEFAULT_MINIMAX_DEPTH</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="13" refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" kindref="member">GUI_CELL_ROW_SPAN</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="14" refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" kindref="member">GUI_CELL_COLUMN_SPAN</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="15" refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" kindref="member">X_COLOR</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#455A64&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16" refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" kindref="member">O_COLOR</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#FF5722&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17" refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" kindref="member">DEFAULT_COLOR</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#FFF&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49" refid="structCell" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCell" kindref="compound">Cell</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51" refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<ref refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52" refid="structCell_1a85d2a7af6195f5196574790fbc1becfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCell_1a85d2a7af6195f5196574790fbc1becfd" kindref="member">row</ref><sp/>=<sp/><ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structCell_1a09e2f07cb87b7ae5898be20927cf28d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCell_1a09e2f07cb87b7ae5898be20927cf28d1" kindref="member">col</ref><sp/>=<sp/><ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structCell_1a5ad411cd7ac4344405a343573684dc14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCell_1a5ad411cd7ac4344405a343573684dc14" kindref="member">Cell</ref>(QPushButton<sp/>*<ref refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCell_1a85d2a7af6195f5196574790fbc1becfd" kindref="member">row</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCell_1a09e2f07cb87b7ae5898be20927cf28d1" kindref="member">col</ref>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref>(<ref refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" kindref="member">cellBtn</ref>),<sp/><ref refid="structCell_1a85d2a7af6195f5196574790fbc1becfd" kindref="member">row</ref>(<ref refid="structCell_1a85d2a7af6195f5196574790fbc1becfd" kindref="member">row</ref>),<sp/><ref refid="structCell_1a09e2f07cb87b7ae5898be20927cf28d1" kindref="member">col</ref>(<ref refid="structCell_1a09e2f07cb87b7ae5898be20927cf28d1" kindref="member">col</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structTTTOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structTTTOptions" kindref="compound">TTTOptions</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63" refid="structTTTOptions_1a018fe6935d21dbcf3db30a4a7b3abed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structTTTOptions_1a018fe6935d21dbcf3db30a4a7b3abed0" kindref="member">boardSize</ref><sp/>=<sp/><ref refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" kindref="member">defaults::DEFAULT_BOARD_SIZE</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structTTTOptions_1a086422e4da26dd24bc1166172a9237af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="structTTTOptions_1a086422e4da26dd24bc1166172a9237af" kindref="member">miniMaxDepth</ref><sp/>=<sp/><ref refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" kindref="member">defaults::DEFAULT_MINIMAX_DEPTH</ref>;</highlight></codeline>
+<codeline lineno="65" refid="structTTTOptions_1a415a2038b9a5bf87d0a8aa41ce52c8aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structTTTOptions_1a415a2038b9a5bf87d0a8aa41ce52c8aa" kindref="member">AIopponent</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66" refid="structTTTOptions_1a1d0e61b132d2b32ab27d6e345aac0697" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structTTTOptions_1a1d0e61b132d2b32ab27d6e345aac0697" kindref="member">AIstarts</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>{<sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">Empty</ref>,<sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">X</ref>,<sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">O</ref><sp/>};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>{<sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" kindref="member">NoWinner</ref>,<sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" kindref="member">XWins</ref>,<sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" kindref="member">OWins</ref>,<sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" kindref="member">Tie</ref><sp/>};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>TTTCOMMONTYPES_H</highlight></codeline>
+    </programlisting>
+    <location file="include/TTTCommonTypes.h"/>
+  </compounddef>
+</doxygen>

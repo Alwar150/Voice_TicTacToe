@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="HumanPlayer_8puml" kind="file" language="C++">
+    <compoundname>HumanPlayer.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>HumanPlayer.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`HumanPlayer`<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Extracted<sp/>from<sp/>`include/AI/HumanPlayer.h`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>class<sp/>HumanPlayer<sp/>extends<sp/>Player</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-stt_:<sp/>SpeechManager*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-sttThread_:<sp/>QThread*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+HumanPlayer(const<sp/>Board&amp;,<sp/>BoardMarks,<sp/>QObject*)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+~HumanPlayer()</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+play():<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+&lt;&lt;signal&gt;&gt;<sp/><sp/>startListening()</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+&lt;&lt;signal&gt;&gt;<sp/><sp/>stopListening()</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+&lt;&lt;signal&gt;&gt;<sp/>playerFinished(int)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Player<sp/>..|&gt;<sp/>QObject</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>HumanPlayer<sp/>..|&gt;<sp/>Player</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/HumanPlayer.puml"/>
+  </compounddef>
+</doxygen>

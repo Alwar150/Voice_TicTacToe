@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_2e83c74e257189dd0320a59549352bfc" kind="dir">
+    <compoundname>docs/plantuml</compoundname>
+    <innerfile refid="AIAgent_8puml">AIAgent.puml</innerfile>
+    <innerfile refid="Board_8puml">Board.puml</innerfile>
+    <innerfile refid="ConfigManager_8puml">ConfigManager.puml</innerfile>
+    <innerfile refid="HumanPlayer_8puml">HumanPlayer.puml</innerfile>
+    <innerfile refid="MiniMaxAgent_8puml">MiniMaxAgent.puml</innerfile>
+    <innerfile refid="NetworkManager_8puml">NetworkManager.puml</innerfile>
+    <innerfile refid="Player_8puml">Player.puml</innerfile>
+    <innerfile refid="SpeechManager_8puml">SpeechManager.puml</innerfile>
+    <innerfile refid="TicTacToeGame_8puml">TicTacToeGame.puml</innerfile>
+    <innerfile refid="TitleScreen_8puml">TitleScreen.puml</innerfile>
+    <innerfile refid="TTTCommonTypes_8puml">TTTCommonTypes.puml</innerfile>
+    <innerfile refid="TTTController_8puml">TTTController.puml</innerfile>
+    <innerfile refid="WaitingSpinnerWidget_8puml">WaitingSpinnerWidget.puml</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="docs/plantuml/"/>
+  </compounddef>
+</doxygen>

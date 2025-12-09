@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="TitleScreen_8cpp" kind="file" language="C++">
+    <compoundname>TitleScreen.cpp</compoundname>
+    <includes refid="TitleScreen_8h" local="yes">TitleScreen.h</includes>
+    <includes refid="TTTController_8h" local="yes">TTTController.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>AIAgent.h</label>
+        <link refid="AIAgent_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>HumanPlayer.h</label>
+        <link refid="HumanPlayer_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MiniMaxAgent.h</label>
+        <link refid="MiniMaxAgent_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Player.h</label>
+        <link refid="Player_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ConfigManager.h</label>
+        <link refid="ConfigManager_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>TTTController.h</label>
+        <link refid="TTTController_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>NetworkManager.h</label>
+        <link refid="NetworkManager_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>SpeechManager.h</label>
+        <link refid="SpeechManager_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TTTCommonTypes.h</label>
+        <link refid="TTTCommonTypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>TicTacToeGame.h</label>
+        <link refid="TicTacToeGame_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TitleScreen.h</label>
+        <link refid="TitleScreen_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>waitingspinnerwidget.h</label>
+        <link refid="waitingspinnerwidget_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/View/TitleScreen.cpp</label>
+        <link refid="TitleScreen_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>QColor</label>
+      </node>
+      <node id="28">
+        <label>QCoreApplication</label>
+      </node>
+      <node id="21">
+        <label>QDebug</label>
+      </node>
+      <node id="27">
+        <label>QDir</label>
+      </node>
+      <node id="23">
+        <label>QFuture</label>
+      </node>
+      <node id="8">
+        <label>QMainWindow</label>
+      </node>
+      <node id="14">
+        <label>QObject</label>
+      </node>
+      <node id="26">
+        <label>QSettings</label>
+      </node>
+      <node id="20">
+        <label>QString</label>
+      </node>
+      <node id="37">
+        <label>QTcpSocket</label>
+      </node>
+      <node id="29">
+        <label>QThread</label>
+      </node>
+      <node id="34">
+        <label>QTimer</label>
+      </node>
+      <node id="33">
+        <label>QWidget</label>
+      </node>
+      <node id="22">
+        <label>QtConcurrent/QtConcurrentRun</label>
+      </node>
+      <node id="16">
+        <label>QtGlobal</label>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="9">
+        <label>memory</label>
+      </node>
+      <node id="24">
+        <label>pocketsphinx.h</label>
+      </node>
+      <node id="5">
+        <label>portaudio.h</label>
+      </node>
+      <node id="6">
+        <label>signal.h</label>
+      </node>
+      <node id="31">
+        <label>ui_TicTacToeGame.h</label>
+      </node>
+      <node id="7">
+        <label>ui_titlescreen.h</label>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TitleScreen_8h" kindref="compound">TitleScreen.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TTTController_8h" kindref="compound">TTTController.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classTitleScreen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" refkind="member"><highlight class="normal"><ref refid="classTitleScreen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" kindref="member">TitleScreen::TitleScreen</ref>(QWidget<sp/>*parent)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>QMainWindow(parent),<sp/>ui(new<sp/>Ui::<ref refid="classTitleScreen" kindref="compound">TitleScreen</ref>)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a72a76e4ff3f03dfc11538ae0de2156b5" kindref="member">setConnections</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classTitleScreen_1a72a76e4ff3f03dfc11538ae0de2156b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTitleScreen_1a72a76e4ff3f03dfc11538ae0de2156b5" kindref="member">TitleScreen::setConnections</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;onePlayer,<sp/>SIGNAL(toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/>SLOT(<ref refid="classTitleScreen_1af028098c1b235b3da76941c83776de20" kindref="member">updateSinglePlayer</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;twoPlayers,<sp/>SIGNAL(toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/>SLOT(<ref refid="classTitleScreen_1a65a292091aba9a84cf518af2d395f2b0" kindref="member">updateTwoPlayers</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;AIStarts,<sp/>SIGNAL(toggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)),<sp/>SLOT(<ref refid="classTitleScreen_1a2cb34f420ea007de5bec91a91b6f2abe" kindref="member">updateAIstartsGame</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;miniMaxDepth,<sp/>SIGNAL(valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SLOT(<ref refid="classTitleScreen_1a60d1e875593a02a6ee01508235680a47" kindref="member">updateMiniMaxDepth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;startGame,<sp/>SIGNAL(clicked()),<sp/>SLOT(<ref refid="classTitleScreen_1ac55c2f2485f58d3b7b389e7414a358d6" kindref="member">startGame</ref>()));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classTitleScreen_1af028098c1b235b3da76941c83776de20" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTitleScreen_1af028098c1b235b3da76941c83776de20" kindref="member">TitleScreen::updateSinglePlayer</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(checked)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;AIStarts-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;miniMaxDepth-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.<ref refid="structTTTOptions_1a415a2038b9a5bf87d0a8aa41ce52c8aa" kindref="member">AIopponent</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classTitleScreen_1a65a292091aba9a84cf518af2d395f2b0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTitleScreen_1a65a292091aba9a84cf518af2d395f2b0" kindref="member">TitleScreen::updateTwoPlayers</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(checked)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;AIStarts-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;miniMaxDepth-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.<ref refid="structTTTOptions_1a415a2038b9a5bf87d0a8aa41ce52c8aa" kindref="member">AIopponent</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classTitleScreen_1a2cb34f420ea007de5bec91a91b6f2abe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTitleScreen_1a2cb34f420ea007de5bec91a91b6f2abe" kindref="member">TitleScreen::updateAIstartsGame</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>checked)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(checked)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.<ref refid="structTTTOptions_1a1d0e61b132d2b32ab27d6e345aac0697" kindref="member">AIstarts</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.<ref refid="structTTTOptions_1a1d0e61b132d2b32ab27d6e345aac0697" kindref="member">AIstarts</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classTitleScreen_1a60d1e875593a02a6ee01508235680a47" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTitleScreen_1a60d1e875593a02a6ee01508235680a47" kindref="member">TitleScreen::updateMiniMaxDepth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>depth)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kindref="member">ui</ref>-&gt;miniMaxDepthValue-&gt;setText(QString::number(depth));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTitleScreen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>.<ref refid="structTTTOptions_1a086422e4da26dd24bc1166172a9237af" kindref="member">miniMaxDepth</ref><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(depth);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classTitleScreen_1ac55c2f2485f58d3b7b389e7414a358d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTitleScreen_1ac55c2f2485f58d3b7b389e7414a358d6" kindref="member">TitleScreen::startGame</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;hide();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Crear<sp/>dinámicamente<sp/>el<sp/>controlador<sp/>para<sp/>que<sp/>no<sp/>se<sp/>destruya<sp/>al<sp/>salir<sp/>de<sp/>la<sp/>función</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>*ttt<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classTTTController" kindref="compound">TTTController</ref>(<ref refid="classTitleScreen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kindref="member">options_</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>ttt-&gt;startGame();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Conectamos<sp/>la<sp/>señal<sp/>semántica<sp/>&apos;finishedGame()&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Esto<sp/>se<sp/>dispara<sp/>cuando<sp/>el<sp/>botón<sp/>&apos;Atrás&apos;<sp/>es<sp/>pulsado<sp/>en<sp/>la<sp/>vista.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>QObject::connect(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classTicTacToeGame" kindref="compound">TicTacToeGame</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ttt-&gt;getView()),<sp/>&amp;<ref refid="classTicTacToeGame_1ac1bea86656497f38aa87436e5779b000" kindref="member">TicTacToeGame::goBack</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>ttt]()<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;show();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>La<sp/>vista<sp/>(TicTacToeGame)<sp/>ya<sp/>ha<sp/>sido<sp/>marcada<sp/>para<sp/>destrucción</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>por<sp/>close()<sp/>+<sp/>Qt::WA_DeleteOnClose.<sp/>Solo<sp/>necesitamos<sp/>limpiar<sp/>el<sp/>controlador.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ttt-&gt;deleteLater();<sp/><sp/></highlight><highlight class="comment">//<sp/>Limpieza<sp/>segura<sp/>del<sp/>controlador</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classTitleScreen_1a06e835ca83c6ead23fa0f24833ec76b9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTitleScreen_1a06e835ca83c6ead23fa0f24833ec76b9" kindref="member">TitleScreen::closeEvent</ref>(QCloseEvent<sp/>*event)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>QMainWindow::closeEvent(event);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="classTitleScreen_1a8d6e439797b80238c95602359ba029bd" kindref="member">exited</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/View/TitleScreen.cpp"/>
+  </compounddef>
+</doxygen>

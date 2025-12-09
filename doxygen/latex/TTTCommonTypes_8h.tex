@@ -1,0 +1,128 @@
+\doxysection{include/\+TTTCommon\+Types.h File Reference}
+\hypertarget{TTTCommonTypes_8h}{}\label{TTTCommonTypes_8h}\index{include/TTTCommonTypes.h@{include/TTTCommonTypes.h}}
+
+
+Definition of common types and constants for the Tic-\/\+Tac-\/\+Toe game.  
+
+
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$portaudio.\+h$>$}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+Include dependency graph for TTTCommon\+Types.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCell}{Cell}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{structCell}{Cell} struct represents a board cell and all the necessary information needed about the cell. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structTTTOptions}{TTTOptions}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{structTTTOptions}{TTTOptions} struct defines a tic tac toe game options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedefaults}{defaults}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \{ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}
+, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}
+, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}
+ \}
+\begin{DoxyCompactList}\small\item\em The Board\+Marks enum defiens the type of mark on the board. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}} \{ \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}
+, \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed}{XWins}}
+, \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97}{OWins}}
+, \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b}{Tie}}
+ \}
+\begin{DoxyCompactList}\small\item\em The Board\+State enum defines the possible states of a board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr short \mbox{\hyperlink{namespacedefaults_a543ba1bdceef75ed7ebc4160be54bfcb}{defaults\+::\+INVALID\+\_\+\+CELL}} = -\/1
+\item 
+constexpr size\+\_\+t \mbox{\hyperlink{namespacedefaults_a3d1c84f4b5f4d4ebe910d4093b85680e}{defaults\+::\+DEFAULT\+\_\+\+BOARD\+\_\+\+SIZE}} = 3
+\item 
+constexpr unsigned short \mbox{\hyperlink{namespacedefaults_a49b1b6d9f73cc2eb7da1a6f4346132d0}{defaults\+::\+DEFAULT\+\_\+\+MINIMAX\+\_\+\+DEPTH}} = 3
+\item 
+constexpr unsigned short \mbox{\hyperlink{namespacedefaults_a87616ad23782d44bc9f33455a6889e66}{defaults\+::\+GUI\+\_\+\+CELL\+\_\+\+ROW\+\_\+\+SPAN}} = 1
+\item 
+constexpr unsigned short \mbox{\hyperlink{namespacedefaults_aca5beb5b61bbee2b62591514da336e9a}{defaults\+::\+GUI\+\_\+\+CELL\+\_\+\+COLUMN\+\_\+\+SPAN}} = 1
+\item 
+constexpr char \mbox{\hyperlink{namespacedefaults_a2cdb92ca01789057aafbb7c70c347015}{defaults\+::\+X\+\_\+\+COLOR}} \mbox{[}$\,$\mbox{]} = "{}\#455A64"{}
+\item 
+constexpr char \mbox{\hyperlink{namespacedefaults_a6dba498f47aaf9fb6f733e50193c5a41}{defaults\+::\+O\+\_\+\+COLOR}} \mbox{[}$\,$\mbox{]} = "{}\#FF5722"{}
+\item 
+constexpr char \mbox{\hyperlink{namespacedefaults_ad0d694b17b3da7d45ff3197fc1b822a0}{defaults\+::\+DEFAULT\+\_\+\+COLOR}} \mbox{[}$\,$\mbox{]} = "{}\#FFF"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definition of common types and constants for the Tic-\/\+Tac-\/\+Toe game. 
+
+\begin{DoxyAuthor}{Author}
+Miguel Fernández Lorenzo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}\label{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5} 
+\index{TTTCommonTypes.h@{TTTCommonTypes.h}!BoardMarks@{BoardMarks}}
+\index{BoardMarks@{BoardMarks}!TTTCommonTypes.h@{TTTCommonTypes.h}}
+\doxysubsubsection{\texorpdfstring{BoardMarks}{BoardMarks}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The Board\+Marks enum defiens the type of mark on the board. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Empty@{Empty}!TTTCommonTypes.h@{TTTCommonTypes.h}}\index{TTTCommonTypes.h@{TTTCommonTypes.h}!Empty@{Empty}}}\Hypertarget{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}\label{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07} 
+Empty&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!TTTCommonTypes.h@{TTTCommonTypes.h}}\index{TTTCommonTypes.h@{TTTCommonTypes.h}!X@{X}}}\Hypertarget{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}\label{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383} 
+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O@{O}!TTTCommonTypes.h@{TTTCommonTypes.h}}\index{TTTCommonTypes.h@{TTTCommonTypes.h}!O@{O}}}\Hypertarget{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}\label{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e} 
+O&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}\label{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222} 
+\index{TTTCommonTypes.h@{TTTCommonTypes.h}!BoardState@{BoardState}}
+\index{BoardState@{BoardState}!TTTCommonTypes.h@{TTTCommonTypes.h}}
+\doxysubsubsection{\texorpdfstring{BoardState}{BoardState}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The Board\+State enum defines the possible states of a board. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoWinner@{NoWinner}!TTTCommonTypes.h@{TTTCommonTypes.h}}\index{TTTCommonTypes.h@{TTTCommonTypes.h}!NoWinner@{NoWinner}}}\Hypertarget{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}\label{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847} 
+No\+Winner&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XWins@{XWins}!TTTCommonTypes.h@{TTTCommonTypes.h}}\index{TTTCommonTypes.h@{TTTCommonTypes.h}!XWins@{XWins}}}\Hypertarget{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed}\label{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed} 
+XWins&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OWins@{OWins}!TTTCommonTypes.h@{TTTCommonTypes.h}}\index{TTTCommonTypes.h@{TTTCommonTypes.h}!OWins@{OWins}}}\Hypertarget{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97}\label{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97} 
+OWins&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Tie@{Tie}!TTTCommonTypes.h@{TTTCommonTypes.h}}\index{TTTCommonTypes.h@{TTTCommonTypes.h}!Tie@{Tie}}}\Hypertarget{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b}\label{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b} 
+Tie&\\
+\hline
+
+\end{DoxyEnumFields}

@@ -126,7 +126,7 @@ void TTTController::setConnections()
     // Ejemplo: si NetworkManager recibe algo (puedes definir una señal messageReceived(QString))
     connect(network_, &NetworkManager::messageReceived,this,[this](const QString& msg){
         qDebug() << "[CORE::NET] Mensaje recibido:" << msg;
-        &TTTController::onNetworkMessageReceived;
+        this->onNetworkMessageReceived(msg);
         // We don't check the content of the message
         static_cast<TicTacToeGame*>(this->getView())->updateWaitingStatus(false);
     });

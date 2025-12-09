@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Board_8h" kind="file" language="C++">
+    <compoundname>Board.h</compoundname>
+    <includes refid="TTTCommonTypes_8h" local="yes">TTTCommonTypes.h</includes>
+    <includes local="no">QtGlobal</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="Player_8h" local="no">include/AI/Player.h</includedby>
+    <includedby refid="TTTController_8h" local="yes">include/Controller/TTTController.h</includedby>
+    <includedby refid="Board_8cpp" local="yes">src/Model/Board.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/Model/Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TTTCommonTypes.h</label>
+        <link refid="TTTCommonTypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QtGlobal</label>
+      </node>
+      <node id="3">
+        <label>cstddef</label>
+      </node>
+      <node id="4">
+        <label>portaudio.h</label>
+      </node>
+      <node id="5">
+        <label>signal.h</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/AI/AIAgent.h</label>
+        <link refid="AIAgent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>include/AI/HumanPlayer.h</label>
+        <link refid="HumanPlayer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/AI/MiniMaxAgent.h</label>
+        <link refid="MiniMaxAgent_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/AI/Player.h</label>
+        <link refid="Player_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/Controller/TTTController.h</label>
+        <link refid="TTTController_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/Model/Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/AI/HumanPlayer.cpp</label>
+        <link refid="HumanPlayer_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/AI/MiniMaxAgent.cpp</label>
+        <link refid="MiniMaxAgent_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/AI/Player.cpp</label>
+        <link refid="Player_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/Controller/TTTController.cpp</label>
+        <link refid="TTTController_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/Model/Board.cpp</label>
+        <link refid="Board_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/Network/NetworkManager.cpp</label>
+        <link refid="NetworkManager_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/View/TitleScreen.cpp</label>
+        <link refid="TitleScreen_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classBoard" prot="public">Board</innerclass>
+    <briefdescription>
+<para>Definition of the <ref refid="classBoard" kindref="compound">Board</ref> class representing the game model. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Miguel Fernández Lorenzo </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>November 2025 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>BOARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TTTCommonTypes_8h" kindref="compound">TTTCommonTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGlobal&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::vector;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classBoard" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBoard" kindref="compound">Board</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Data</highlight></codeline>
+<codeline lineno="30" refid="classBoard_1adfd225a07d805a10bf34c7592218eb70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;BoardMarks&gt;&gt;<sp/><ref refid="classBoard_1adfd225a07d805a10bf34c7592218eb70" kindref="member">board_</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classBoard_1a9be071bf59fbbb74c3eade9a74d8f521" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classBoard_1a9be071bf59fbbb74c3eade9a74d8f521" kindref="member">boardSize_</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref>(<ref refid="classBoard" kindref="compound">Board</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classBoard" kindref="compound">Board</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref>(<ref refid="classBoard" kindref="compound">Board</ref>&amp;&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref>&amp;<sp/><ref refid="classBoard_1ae4ccc3271e479d7f9284b9567dc4c2a6" kindref="member">operator=</ref>(<ref refid="classBoard" kindref="compound">Board</ref><sp/>b);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classBoard_1af73f45730119a1fd8f6670f53f959e68" kindref="member">~Board</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/><ref refid="classBoard_1a1b7486c5df3db7e5a1c8ed097492527f" kindref="member">evaluateBoard</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" kindref="member">setPlayerInput</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>currentPlayer);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/><ref refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" kindref="member">at</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classBoard_1aaef819a8d1a10c35d9f802195802236e" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classBoard_1addcaa486e1293eebcb323fb936353f43" kindref="member">resetCell</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>col);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kindref="member">size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>QT_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printBoard<sp/>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>BOARD_H</highlight></codeline>
+    </programlisting>
+    <location file="include/Model/Board.h"/>
+  </compounddef>
+</doxygen>

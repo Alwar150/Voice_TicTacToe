@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structCell" kind="struct" language="C++" prot="public">
+    <compoundname>Cell</compoundname>
+    <includes refid="TTTCommonTypes_8h" local="no">TTTCommonTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Cell::cellBtn</definition>
+        <argsstring></argsstring>
+        <name>cellBtn</name>
+        <qualifiedname>Cell::cellBtn</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="51" column="17" bodyfile="include/TTTCommonTypes.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" compoundref="TicTacToeGame_8cpp" startline="97" endline="102">TicTacToeGame::updateCell</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structCell_1a85d2a7af6195f5196574790fbc1becfd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cell::row</definition>
+        <argsstring></argsstring>
+        <name>row</name>
+        <qualifiedname>Cell::row</qualifiedname>
+        <initializer>= <ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="52" column="9" bodyfile="include/TTTCommonTypes.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classTTTController_1a48889524dfe5f7215cafed10c69812c9" compoundref="TTTController_8cpp" startline="171" endline="188">TTTController::updateGame</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structCell_1a09e2f07cb87b7ae5898be20927cf28d1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cell::col</definition>
+        <argsstring></argsstring>
+        <name>col</name>
+        <qualifiedname>Cell::col</qualifiedname>
+        <initializer>= <ref refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kindref="member">defaults::INVALID_CELL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="53" column="9" bodyfile="include/TTTCommonTypes.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classTTTController_1a48889524dfe5f7215cafed10c69812c9" compoundref="TTTController_8cpp" startline="171" endline="188">TTTController::updateGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCell_1a5ad411cd7ac4344405a343573684dc14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cell::Cell</definition>
+        <argsstring>(QPushButton *cellBtn, int row, int col)</argsstring>
+        <name>Cell</name>
+        <qualifiedname>Cell::Cell</qualifiedname>
+        <param>
+          <type>QPushButton *</type>
+          <declname>cellBtn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="54" column="5" bodyfile="include/TTTCommonTypes.h" bodystart="54" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="structCell" kindref="compound">Cell</ref> struct represents a board cell and all the necessary information needed about the cell. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/TTTCommonTypes.h" line="49" column="1" bodyfile="include/TTTCommonTypes.h" bodystart="50" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structCell_1a5ad411cd7ac4344405a343573684dc14" prot="public" virt="non-virtual"><scope>Cell</scope><name>Cell</name></member>
+      <member refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" prot="public" virt="non-virtual"><scope>Cell</scope><name>cellBtn</name></member>
+      <member refid="structCell_1a09e2f07cb87b7ae5898be20927cf28d1" prot="public" virt="non-virtual"><scope>Cell</scope><name>col</name></member>
+      <member refid="structCell_1a85d2a7af6195f5196574790fbc1becfd" prot="public" virt="non-virtual"><scope>Cell</scope><name>row</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

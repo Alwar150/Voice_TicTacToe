@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="TicTacToeGame_8h" kind="file" language="C++">
+    <compoundname>TicTacToeGame.h</compoundname>
+    <includes refid="TTTCommonTypes_8h" local="yes">TTTCommonTypes.h</includes>
+    <includes local="yes">ui_TicTacToeGame.h</includes>
+    <includes refid="waitingspinnerwidget_8h" local="yes">waitingspinnerwidget.h</includes>
+    <includes local="no">QDialog</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="TTTController_8h" local="yes">include/Controller/TTTController.h</includedby>
+    <includedby refid="TTTController_8cpp" local="yes">src/Controller/TTTController.cpp</includedby>
+    <includedby refid="TicTacToeGame_8cpp" local="yes">src/View/TicTacToeGame.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>TTTCommonTypes.h</label>
+        <link refid="TTTCommonTypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/View/TicTacToeGame.h</label>
+        <link refid="TicTacToeGame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>waitingspinnerwidget.h</label>
+        <link refid="waitingspinnerwidget_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QColor</label>
+      </node>
+      <node id="11">
+        <label>QDialog</label>
+      </node>
+      <node id="9">
+        <label>QTimer</label>
+      </node>
+      <node id="8">
+        <label>QWidget</label>
+      </node>
+      <node id="3">
+        <label>cstddef</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>portaudio.h</label>
+      </node>
+      <node id="5">
+        <label>signal.h</label>
+      </node>
+      <node id="6">
+        <label>ui_TicTacToeGame.h</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/Controller/TTTController.h</label>
+        <link refid="TTTController_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/View/TicTacToeGame.h</label>
+        <link refid="TicTacToeGame_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/Controller/TTTController.cpp</label>
+        <link refid="TTTController_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/Network/NetworkManager.cpp</label>
+        <link refid="NetworkManager_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/View/TicTacToeGame.cpp</label>
+        <link refid="TicTacToeGame_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/View/TitleScreen.cpp</label>
+        <link refid="TitleScreen_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTicTacToeGame" prot="public">TicTacToeGame</innerclass>
+    <briefdescription>
+<para>Definition of the <ref refid="classTicTacToeGame" kindref="compound">TicTacToeGame</ref> class for the game GUI. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Abdelrahman Osama </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TTTCommonTypes_8h" kindref="compound">TTTCommonTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_TicTacToeGame.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="waitingspinnerwidget_8h" kindref="compound">waitingspinnerwidget.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::vector;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classTicTacToeGame" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTicTacToeGame" kindref="compound">TicTacToeGame</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QDialog</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame" kindref="compound">TicTacToeGame</ref>(QWidget<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" kindref="member">updateCell</ref>(<ref refid="structCell" kindref="compound">Cell</ref><sp/>&amp;cell,<sp/><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>currentPlayer);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" kindref="member">declareGameState</ref>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>boardState);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Cell&gt;<sp/><ref refid="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" kindref="member">buildCellButtons</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>boardSize);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a8a891d7dcf57178c79f325a92751f44c" kindref="member">reset</ref>(vector&lt;Cell&gt;<sp/>&amp;cells);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" kindref="member">updateConnectionStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a5bc188ae6a5806246edc175844725518" kindref="member">updateRecordingStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" kindref="member">updateWaitingStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77" refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;Ui::TicTacToeGame&gt;<sp/><ref refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" kindref="member">setConnections</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classTicTacToeGame_1a0b8fee976515895d15eb59c282b057d1" kindref="member">getPlayerText</ref>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>currentPlayer);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" kindref="member">getPlayerStyleSheet</ref>(<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref><sp/>currentPlayer);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classTicTacToeGame_1af4349fa57bc46d6e3030ff2482ea57c9" kindref="member">getBoardFinalStateText</ref>(<ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref><sp/>boardState);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" kindref="member">setLedStyle</ref>(QLabel*<sp/>label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>text,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>bgColor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>textColor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fontSize);</highlight></codeline>
+<codeline lineno="108" refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref>*<sp/><ref refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" kindref="member">waiter</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="116" refid="classTicTacToeGame_1ad0072c616d4d9284ca69245a635b8303" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1ad0072c616d4d9284ca69245a635b8303" kindref="member">newGame</ref>();</highlight></codeline>
+<codeline lineno="120" refid="classTicTacToeGame_1ac1bea86656497f38aa87436e5779b000" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTicTacToeGame_1ac1bea86656497f38aa87436e5779b000" kindref="member">goBack</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>MAINWINDOW_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/View/TicTacToeGame.h"/>
+  </compounddef>
+</doxygen>

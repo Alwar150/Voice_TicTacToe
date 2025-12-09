@@ -1,0 +1,687 @@
+\begin{theindex}
+
+  \item {\_centerOnParent}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{70}
+  \item {\_color}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{70}
+  \item {\_currentCounter}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{71}
+  \item {\_disableParentWhenSpinning}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{71}
+  \item {\_innerRadius}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{71}
+  \item {\_isSpinning}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{71}
+  \item {\_lineLength}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{71}
+  \item {\_lineWidth}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{71}
+  \item {\_minimumTrailOpacity}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{71}
+  \item {\_numberOfLines}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{71}
+  \item {\_revolutionsPerSecond}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{72}
+  \item {\_roundness}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{72}
+  \item {\_timer}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{72}
+  \item {\_trailFadePercentage}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{72}
+  \item {\texorpdfstring{$\sim$}{\string~}AIAgent}
+    \subitem {AIAgent}, \hyperpage{12}
+  \item {\texorpdfstring{$\sim$}{\string~}Board}
+    \subitem {Board}, \hyperpage{14}
+  \item {\texorpdfstring{$\sim$}{\string~}ConfigManager}
+    \subitem {ConfigManager}, \hyperpage{20}
+  \item {\texorpdfstring{$\sim$}{\string~}HumanPlayer}
+    \subitem {HumanPlayer}, \hyperpage{26}
+  \item {\texorpdfstring{$\sim$}{\string~}Player}
+    \subitem {Player}, \hyperpage{39}
+  \item {\texorpdfstring{$\sim$}{\string~}SpeechManager}
+    \subitem {SpeechManager}, \hyperpage{42}
+
+  \indexspace
+
+  \item {AI\_WIN\_SCORE}
+    \subitem {MiniMaxAgent}, \hyperpage{32}
+  \item {AIAgent}, \hyperpage{11}
+    \subitem {\texorpdfstring{$\sim$}{\string~}AIAgent}, \hyperpage{12}
+    \subitem {AIAgent}, \hyperpage{12}
+  \item {AIopponent}
+    \subitem {TTTOptions}, \hyperpage{63}
+  \item {AIstarts}
+    \subitem {TTTOptions}, \hyperpage{63}
+  \item {at}
+    \subitem {Board}, \hyperpage{15}
+
+  \indexspace
+
+  \item {baseDir\_}
+    \subitem {ConfigManager}, \hyperpage{23}
+  \item {Board}, \hyperpage{13}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Board}, \hyperpage{14}
+    \subitem {at}, \hyperpage{15}
+    \subitem {Board}, \hyperpage{14}
+    \subitem {board\_}, \hyperpage{17}
+    \subitem {boardSize\_}, \hyperpage{17}
+    \subitem {evaluateBoard}, \hyperpage{15}
+    \subitem {operator=}, \hyperpage{15}
+    \subitem {printBoard}, \hyperpage{16}
+    \subitem {reset}, \hyperpage{16}
+    \subitem {resetCell}, \hyperpage{16}
+    \subitem {setPlayerInput}, \hyperpage{16}
+    \subitem {size}, \hyperpage{17}
+  \item {board\_}
+    \subitem {Board}, \hyperpage{17}
+    \subitem {Player}, \hyperpage{40}
+    \subitem {TTTController}, \hyperpage{61}
+  \item {BoardMarks}
+    \subitem {TTTCommonTypes.h}, \hyperpage{85}
+  \item {boardSize}
+    \subitem {TTTOptions}, \hyperpage{63}
+  \item {boardSize\_}
+    \subitem {Board}, \hyperpage{17}
+  \item {BoardState}
+    \subitem {TTTCommonTypes.h}, \hyperpage{86}
+  \item {buildCellButtons}
+    \subitem {TicTacToeGame}, \hyperpage{48}
+
+  \indexspace
+
+  \item {Cell}, \hyperpage{18}
+    \subitem {Cell}, \hyperpage{18}
+    \subitem {cellBtn}, \hyperpage{19}
+    \subitem {col}, \hyperpage{19}
+    \subitem {row}, \hyperpage{19}
+  \item {cellBtn}
+    \subitem {Cell}, \hyperpage{19}
+  \item {cells\_}
+    \subitem {TTTController}, \hyperpage{61}
+  \item {closeEvent}
+    \subitem {TitleScreen}, \hyperpage{54}
+  \item {col}
+    \subitem {Cell}, \hyperpage{19}
+  \item {color}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{66}
+  \item {config\_}
+    \subitem {SpeechManager}, \hyperpage{45}
+  \item {ConfigManager}, \hyperpage{19}
+    \subitem {\texorpdfstring{$\sim$}{\string~}ConfigManager}, 
+		\hyperpage{20}
+    \subitem {baseDir\_}, \hyperpage{23}
+    \subitem {ConfigManager}, \hyperpage{20, 21}
+    \subitem {getBool}, \hyperpage{21}
+    \subitem {getInt}, \hyperpage{21}
+    \subitem {getValue}, \hyperpage{22}
+    \subitem {instance}, \hyperpage{22}
+    \subitem {load}, \hyperpage{22}
+    \subitem {operator=}, \hyperpage{23}
+    \subitem {resolvePath}, \hyperpage{23}
+    \subitem {settings\_}, \hyperpage{24}
+  \item {configure}
+    \subitem {SpeechManager}, \hyperpage{43}
+  \item {connected}
+    \subitem {NetworkManager}, \hyperpage{35}
+  \item {connectToServer}
+    \subitem {NetworkManager}, \hyperpage{35}
+  \item {currentLineColor}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{66}
+  \item {currentPlayer\_}
+    \subitem {TTTController}, \hyperpage{61}
+
+  \indexspace
+
+  \item {declareGameState}
+    \subitem {TicTacToeGame}, \hyperpage{48}
+  \item {decoder\_}
+    \subitem {SpeechManager}, \hyperpage{45}
+  \item {DEFAULT\_BOARD\_SIZE}
+    \subitem {defaults}, \hyperpage{9}
+  \item {DEFAULT\_COLOR}
+    \subitem {defaults}, \hyperpage{9}
+  \item {DEFAULT\_MINIMAX\_DEPTH}
+    \subitem {defaults}, \hyperpage{9}
+  \item {defaults}, \hyperpage{9}
+    \subitem {DEFAULT\_BOARD\_SIZE}, \hyperpage{9}
+    \subitem {DEFAULT\_COLOR}, \hyperpage{9}
+    \subitem {DEFAULT\_MINIMAX\_DEPTH}, \hyperpage{9}
+    \subitem {GUI\_CELL\_COLUMN\_SPAN}, \hyperpage{9}
+    \subitem {GUI\_CELL\_ROW\_SPAN}, \hyperpage{10}
+    \subitem {INVALID\_CELL}, \hyperpage{10}
+    \subitem {O\_COLOR}, \hyperpage{10}
+    \subitem {X\_COLOR}, \hyperpage{10}
+  \item {depth\_}
+    \subitem {MiniMaxAgent}, \hyperpage{32}
+  \item {disconnected}
+    \subitem {NetworkManager}, \hyperpage{35}
+  \item {docs/plantuml/AIAgent.puml}, \hyperpage{73}
+  \item {docs/plantuml/Board.puml}, \hyperpage{73}
+  \item {docs/plantuml/ConfigManager.puml}, \hyperpage{73}
+  \item {docs/plantuml/HumanPlayer.puml}, \hyperpage{73}
+  \item {docs/plantuml/MiniMaxAgent.puml}, \hyperpage{73}
+  \item {docs/plantuml/NetworkManager.puml}, \hyperpage{73}
+  \item {docs/plantuml/Player.puml}, \hyperpage{73}
+  \item {docs/plantuml/SpeechManager.puml}, \hyperpage{73}
+  \item {docs/plantuml/TicTacToeGame.puml}, \hyperpage{73}
+  \item {docs/plantuml/TitleScreen.puml}, \hyperpage{73}
+  \item {docs/plantuml/TTTCommonTypes.puml}, \hyperpage{73}
+  \item {docs/plantuml/TTTController.puml}, \hyperpage{73}
+  \item {docs/plantuml/WaitingSpinnerWidget.puml}, \hyperpage{73}
+
+  \indexspace
+
+  \item {Empty}
+    \subitem {TTTCommonTypes.h}, \hyperpage{86}
+  \item {ep\_}
+    \subitem {SpeechManager}, \hyperpage{45}
+  \item {err\_}
+    \subitem {SpeechManager}, \hyperpage{45}
+  \item {errorOccurred}
+    \subitem {NetworkManager}, \hyperpage{35}
+  \item {evaluateBoard}
+    \subitem {Board}, \hyperpage{15}
+  \item {exited}
+    \subitem {TitleScreen}, \hyperpage{54}
+
+  \indexspace
+
+  \item {frame\_}
+    \subitem {SpeechManager}, \hyperpage{46}
+  \item {frame\_size\_}
+    \subitem {SpeechManager}, \hyperpage{46}
+  \item {freeHeap}
+    \subitem {SpeechManager}, \hyperpage{43}
+
+  \indexspace
+
+  \item {getBoardFinalStateText}
+    \subitem {TicTacToeGame}, \hyperpage{49}
+  \item {getBool}
+    \subitem {ConfigManager}, \hyperpage{21}
+  \item {getInt}
+    \subitem {ConfigManager}, \hyperpage{21}
+  \item {getPlayerStyleSheet}
+    \subitem {TicTacToeGame}, \hyperpage{49}
+  \item {getPlayerText}
+    \subitem {TicTacToeGame}, \hyperpage{50}
+  \item {getValue}
+    \subitem {ConfigManager}, \hyperpage{22}
+  \item {getView}
+    \subitem {TTTController}, \hyperpage{58}
+  \item {goBack}
+    \subitem {TicTacToeGame}, \hyperpage{50}
+  \item {GUI\_CELL\_COLUMN\_SPAN}
+    \subitem {defaults}, \hyperpage{9}
+  \item {GUI\_CELL\_ROW\_SPAN}
+    \subitem {defaults}, \hyperpage{10}
+
+  \indexspace
+
+  \item {handleThreadCleanup}
+    \subitem {HumanPlayer}, \hyperpage{26}
+  \item {HumanPlayer}, \hyperpage{24}
+    \subitem {\texorpdfstring{$\sim$}{\string~}HumanPlayer}, 
+		\hyperpage{26}
+    \subitem {handleThreadCleanup}, \hyperpage{26}
+    \subitem {HumanPlayer}, \hyperpage{25}
+    \subitem {parseSpeechCommand}, \hyperpage{26}
+    \subitem {play}, \hyperpage{26}
+    \subitem {startListening}, \hyperpage{27}
+    \subitem {stopListening}, \hyperpage{27}
+    \subitem {stt\_}, \hyperpage{28}
+    \subitem {sttThread\_}, \hyperpage{28}
+    \subitem {validateCommand}, \hyperpage{27}
+  \item {hyp\_}
+    \subitem {SpeechManager}, \hyperpage{46}
+  \item {hypIsValid}
+    \subitem {SpeechManager}, \hyperpage{43}
+
+  \indexspace
+
+  \item {include/AI/AIAgent.h}, \hyperpage{73, 74}
+  \item {include/AI/HumanPlayer.h}, \hyperpage{74, 75}
+  \item {include/AI/MiniMaxAgent.h}, \hyperpage{75, 76}
+  \item {include/AI/Player.h}, \hyperpage{77}
+  \item {include/Config/ConfigManager.h}, \hyperpage{78}
+  \item {include/Controller/TTTController.h}, \hyperpage{79, 80}
+  \item {include/Model/Board.h}, \hyperpage{80, 81}
+  \item {include/Network/NetworkManager.h}, \hyperpage{82}
+  \item {include/Speech/SpeechManager.h}, \hyperpage{83, 84}
+  \item {include/TTTCommonTypes.h}, \hyperpage{84}, \hyperpage{86}
+  \item {include/View/TicTacToeGame.h}, \hyperpage{87}
+  \item {include/View/TitleScreen.h}, \hyperpage{88, 89}
+  \item {include/View/waitingspinnerwidget.h}, \hyperpage{89}
+  \item {init}
+    \subitem {SpeechManager}, \hyperpage{43}
+  \item {initialize}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{66}
+  \item {innerRadius}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{66}
+  \item {instance}
+    \subitem {ConfigManager}, \hyperpage{22}
+  \item {INVALID\_CELL}
+    \subitem {defaults}, \hyperpage{10}
+  \item {isSpinning}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{66}
+
+  \indexspace
+
+  \item {lineCountDistanceFromPrimary}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{66}
+  \item {lineLength}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{67}
+  \item {lineWidth}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{67}
+  \item {load}
+    \subitem {ConfigManager}, \hyperpage{22}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{92}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{92}
+  \item {mark\_}
+    \subitem {Player}, \hyperpage{40}
+  \item {maxMove}
+    \subitem {MiniMaxAgent}, \hyperpage{30}
+  \item {messageReceived}
+    \subitem {NetworkManager}, \hyperpage{36}
+  \item {messageSent}
+    \subitem {NetworkManager}, \hyperpage{36}
+  \item {MiniMaxAgent}, \hyperpage{28}
+    \subitem {AI\_WIN\_SCORE}, \hyperpage{32}
+    \subitem {depth\_}, \hyperpage{32}
+    \subitem {maxMove}, \hyperpage{30}
+    \subitem {MiniMaxAgent}, \hyperpage{30}
+    \subitem {minMove}, \hyperpage{31}
+    \subitem {play}, \hyperpage{31}
+    \subitem {PLAYER\_WIN\_SCORE}, \hyperpage{33}
+    \subitem {playerMark\_}, \hyperpage{31}
+    \subitem {score}, \hyperpage{32}
+    \subitem {TIE\_SCORE}, \hyperpage{33}
+  \item {miniMaxDepth}
+    \subitem {TTTOptions}, \hyperpage{63}
+  \item {minimumTrailOpacity}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{67}
+  \item {minMove}
+    \subitem {MiniMaxAgent}, \hyperpage{31}
+
+  \indexspace
+
+  \item {network\_}
+    \subitem {TTTController}, \hyperpage{61}
+  \item {NetworkManager}, \hyperpage{33}
+    \subitem {connected}, \hyperpage{35}
+    \subitem {connectToServer}, \hyperpage{35}
+    \subitem {disconnected}, \hyperpage{35}
+    \subitem {errorOccurred}, \hyperpage{35}
+    \subitem {messageReceived}, \hyperpage{36}
+    \subitem {messageSent}, \hyperpage{36}
+    \subitem {NetworkManager}, \hyperpage{34}
+    \subitem {onConnected}, \hyperpage{36}
+    \subitem {onDisconnected}, \hyperpage{36}
+    \subitem {onError}, \hyperpage{37}
+    \subitem {onSocketReadyRead}, \hyperpage{37}
+    \subitem {sendMessage}, \hyperpage{37}
+    \subitem {socket\_}, \hyperpage{38}
+  \item {newGame}
+    \subitem {TicTacToeGame}, \hyperpage{50}
+  \item {NoWinner}
+    \subitem {TTTCommonTypes.h}, \hyperpage{86}
+  \item {numberOfLines}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{67}
+
+  \indexspace
+
+  \item {O}
+    \subitem {TTTCommonTypes.h}, \hyperpage{86}
+  \item {O\_COLOR}
+    \subitem {defaults}, \hyperpage{10}
+  \item {onConnected}
+    \subitem {NetworkManager}, \hyperpage{36}
+  \item {onDisconnected}
+    \subitem {NetworkManager}, \hyperpage{36}
+  \item {onError}
+    \subitem {NetworkManager}, \hyperpage{37}
+  \item {onNetworkMessageReceived}
+    \subitem {TTTController}, \hyperpage{59}
+  \item {onSocketReadyRead}
+    \subitem {NetworkManager}, \hyperpage{37}
+  \item {operator=}
+    \subitem {Board}, \hyperpage{15}
+    \subitem {ConfigManager}, \hyperpage{23}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{67}
+  \item {options\_}
+    \subitem {TitleScreen}, \hyperpage{56}
+    \subitem {TTTController}, \hyperpage{62}
+  \item {OWins}
+    \subitem {TTTCommonTypes.h}, \hyperpage{86}
+
+  \indexspace
+
+  \item {paintEvent}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{67}
+  \item {parseSpeechCommand}
+    \subitem {HumanPlayer}, \hyperpage{26}
+  \item {play}
+    \subitem {HumanPlayer}, \hyperpage{26}
+    \subitem {MiniMaxAgent}, \hyperpage{31}
+    \subitem {Player}, \hyperpage{39}
+  \item {Player}, \hyperpage{38}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Player}, \hyperpage{39}
+    \subitem {board\_}, \hyperpage{40}
+    \subitem {mark\_}, \hyperpage{40}
+    \subitem {play}, \hyperpage{39}
+    \subitem {Player}, \hyperpage{39}
+    \subitem {playerFinished}, \hyperpage{40}
+  \item {PLAYER\_WIN\_SCORE}
+    \subitem {MiniMaxAgent}, \hyperpage{33}
+  \item {playerFinished}
+    \subitem {Player}, \hyperpage{40}
+  \item {playerMark\_}
+    \subitem {MiniMaxAgent}, \hyperpage{31}
+  \item {playerO\_}
+    \subitem {TTTController}, \hyperpage{62}
+  \item {playerX\_}
+    \subitem {TTTController}, \hyperpage{62}
+  \item {playTurn}
+    \subitem {TTTController}, \hyperpage{59}
+  \item {printBoard}
+    \subitem {Board}, \hyperpage{16}
+  \item {processRecognitionResult}
+    \subitem {SpeechManager}, \hyperpage{44}
+
+  \indexspace
+
+  \item {reset}
+    \subitem {Board}, \hyperpage{16}
+    \subitem {TicTacToeGame}, \hyperpage{50}
+    \subitem {TTTController}, \hyperpage{59}
+  \item {resetCell}
+    \subitem {Board}, \hyperpage{16}
+  \item {resolvePath}
+    \subitem {ConfigManager}, \hyperpage{23}
+  \item {revolutionsPersSecond}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{67}
+  \item {rotate}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{68}
+  \item {roundness}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{68}
+  \item {row}
+    \subitem {Cell}, \hyperpage{19}
+
+  \indexspace
+
+  \item {score}
+    \subitem {MiniMaxAgent}, \hyperpage{32}
+  \item {sendMessage}
+    \subitem {NetworkManager}, \hyperpage{37}
+    \subitem {TTTController}, \hyperpage{59}
+  \item {setColor}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{68}
+  \item {setConnections}
+    \subitem {TicTacToeGame}, \hyperpage{51}
+    \subitem {TitleScreen}, \hyperpage{54}
+    \subitem {TTTController}, \hyperpage{60}
+  \item {setInnerRadius}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{68}
+  \item {setLedStyle}
+    \subitem {TicTacToeGame}, \hyperpage{51}
+  \item {setLineLength}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{68}
+  \item {setLineWidth}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{68}
+  \item {setMinimumTrailOpacity}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{68}
+  \item {setNumberOfLines}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{69}
+  \item {setPlayerInput}
+    \subitem {Board}, \hyperpage{16}
+  \item {setRevolutionsPerSecond}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{69}
+  \item {setRoundness}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{69}
+  \item {setText}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{69}
+  \item {settings\_}
+    \subitem {ConfigManager}, \hyperpage{24}
+  \item {setTrailFadePercentage}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{69}
+  \item {size}
+    \subitem {Board}, \hyperpage{17}
+  \item {socket\_}
+    \subitem {NetworkManager}, \hyperpage{38}
+  \item {SpeechManager}, \hyperpage{41}
+    \subitem {\texorpdfstring{$\sim$}{\string~}SpeechManager}, 
+		\hyperpage{42}
+    \subitem {config\_}, \hyperpage{45}
+    \subitem {configure}, \hyperpage{43}
+    \subitem {decoder\_}, \hyperpage{45}
+    \subitem {ep\_}, \hyperpage{45}
+    \subitem {err\_}, \hyperpage{45}
+    \subitem {frame\_}, \hyperpage{46}
+    \subitem {frame\_size\_}, \hyperpage{46}
+    \subitem {freeHeap}, \hyperpage{43}
+    \subitem {hyp\_}, \hyperpage{46}
+    \subitem {hypIsValid}, \hyperpage{43}
+    \subitem {init}, \hyperpage{43}
+    \subitem {processRecognitionResult}, \hyperpage{44}
+    \subitem {SpeechManager}, \hyperpage{42}
+    \subitem {speechReadyToProcess}, \hyperpage{44}
+    \subitem {speechRecognized}, \hyperpage{44}
+    \subitem {startListening}, \hyperpage{45}
+    \subitem {stream\_}, \hyperpage{46}
+  \item {speechReadyToProcess}
+    \subitem {SpeechManager}, \hyperpage{44}
+  \item {speechRecognized}
+    \subitem {SpeechManager}, \hyperpage{44}
+  \item {src/AI/HumanPlayer.cpp}, \hyperpage{91}
+  \item {src/AI/MiniMaxAgent.cpp}, \hyperpage{91}
+  \item {src/AI/Player.cpp}, \hyperpage{91}
+  \item {src/Config/ConfigManager.cpp}, \hyperpage{91}
+  \item {src/Controller/TTTController.cpp}, \hyperpage{91}
+  \item {src/main.cpp}, \hyperpage{91}
+  \item {src/Model/Board.cpp}, \hyperpage{92}
+  \item {src/Network/NetworkManager.cpp}, \hyperpage{92}
+  \item {src/Speech/SpeechManager.cpp}, \hyperpage{92}
+  \item {src/View/TicTacToeGame.cpp}, \hyperpage{92}
+  \item {src/View/TitleScreen.cpp}, \hyperpage{92}
+  \item {src/waitingspinnerwidget.cpp}, \hyperpage{93}
+  \item {start}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{69}
+  \item {startGame}
+    \subitem {TitleScreen}, \hyperpage{55}
+    \subitem {TTTController}, \hyperpage{60}
+  \item {startListening}
+    \subitem {HumanPlayer}, \hyperpage{27}
+    \subitem {SpeechManager}, \hyperpage{45}
+  \item {stop}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{69}
+  \item {stopListening}
+    \subitem {HumanPlayer}, \hyperpage{27}
+  \item {stream\_}
+    \subitem {SpeechManager}, \hyperpage{46}
+  \item {stt\_}
+    \subitem {HumanPlayer}, \hyperpage{28}
+  \item {sttThread\_}
+    \subitem {HumanPlayer}, \hyperpage{28}
+  \item {switchPlayer}
+    \subitem {TTTController}, \hyperpage{60}
+
+  \indexspace
+
+  \item {TicTacToeGame}, \hyperpage{47}
+    \subitem {buildCellButtons}, \hyperpage{48}
+    \subitem {declareGameState}, \hyperpage{48}
+    \subitem {getBoardFinalStateText}, \hyperpage{49}
+    \subitem {getPlayerStyleSheet}, \hyperpage{49}
+    \subitem {getPlayerText}, \hyperpage{50}
+    \subitem {goBack}, \hyperpage{50}
+    \subitem {newGame}, \hyperpage{50}
+    \subitem {reset}, \hyperpage{50}
+    \subitem {setConnections}, \hyperpage{51}
+    \subitem {setLedStyle}, \hyperpage{51}
+    \subitem {TicTacToeGame}, \hyperpage{48}
+    \subitem {ui}, \hyperpage{52}
+    \subitem {updateCell}, \hyperpage{51}
+    \subitem {updateConnectionStatus}, \hyperpage{51}
+    \subitem {updateRecordingStatus}, \hyperpage{52}
+    \subitem {updateWaitingStatus}, \hyperpage{52}
+    \subitem {waiter}, \hyperpage{52}
+  \item {Tie}
+    \subitem {TTTCommonTypes.h}, \hyperpage{86}
+  \item {TIE\_SCORE}
+    \subitem {MiniMaxAgent}, \hyperpage{33}
+  \item {TitleScreen}, \hyperpage{53}
+    \subitem {closeEvent}, \hyperpage{54}
+    \subitem {exited}, \hyperpage{54}
+    \subitem {options\_}, \hyperpage{56}
+    \subitem {setConnections}, \hyperpage{54}
+    \subitem {startGame}, \hyperpage{55}
+    \subitem {TitleScreen}, \hyperpage{54}
+    \subitem {ui}, \hyperpage{56}
+    \subitem {updateAIstartsGame}, \hyperpage{55}
+    \subitem {updateMiniMaxDepth}, \hyperpage{55}
+    \subitem {updateSinglePlayer}, \hyperpage{55}
+    \subitem {updateTwoPlayers}, \hyperpage{56}
+  \item {trailFadePercentage}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{70}
+  \item {TTTCommonTypes.h}
+    \subitem {BoardMarks}, \hyperpage{85}
+    \subitem {BoardState}, \hyperpage{86}
+    \subitem {Empty}, \hyperpage{86}
+    \subitem {NoWinner}, \hyperpage{86}
+    \subitem {O}, \hyperpage{86}
+    \subitem {OWins}, \hyperpage{86}
+    \subitem {Tie}, \hyperpage{86}
+    \subitem {X}, \hyperpage{86}
+    \subitem {XWins}, \hyperpage{86}
+  \item {TTTController}, \hyperpage{57}
+    \subitem {board\_}, \hyperpage{61}
+    \subitem {cells\_}, \hyperpage{61}
+    \subitem {currentPlayer\_}, \hyperpage{61}
+    \subitem {getView}, \hyperpage{58}
+    \subitem {network\_}, \hyperpage{61}
+    \subitem {onNetworkMessageReceived}, \hyperpage{59}
+    \subitem {options\_}, \hyperpage{62}
+    \subitem {playerO\_}, \hyperpage{62}
+    \subitem {playerX\_}, \hyperpage{62}
+    \subitem {playTurn}, \hyperpage{59}
+    \subitem {reset}, \hyperpage{59}
+    \subitem {sendMessage}, \hyperpage{59}
+    \subitem {setConnections}, \hyperpage{60}
+    \subitem {startGame}, \hyperpage{60}
+    \subitem {switchPlayer}, \hyperpage{60}
+    \subitem {TTTController}, \hyperpage{58}
+    \subitem {updateGame}, \hyperpage{60}
+    \subitem {updateGameState}, \hyperpage{61}
+    \subitem {view\_}, \hyperpage{62}
+  \item {TTTOptions}, \hyperpage{62}
+    \subitem {AIopponent}, \hyperpage{63}
+    \subitem {AIstarts}, \hyperpage{63}
+    \subitem {boardSize}, \hyperpage{63}
+    \subitem {miniMaxDepth}, \hyperpage{63}
+
+  \indexspace
+
+  \item {ui}
+    \subitem {TicTacToeGame}, \hyperpage{52}
+    \subitem {TitleScreen}, \hyperpage{56}
+  \item {updateAIstartsGame}
+    \subitem {TitleScreen}, \hyperpage{55}
+  \item {updateCell}
+    \subitem {TicTacToeGame}, \hyperpage{51}
+  \item {updateConnectionStatus}
+    \subitem {TicTacToeGame}, \hyperpage{51}
+  \item {updateGame}
+    \subitem {TTTController}, \hyperpage{60}
+  \item {updateGameState}
+    \subitem {TTTController}, \hyperpage{61}
+  \item {updateMiniMaxDepth}
+    \subitem {TitleScreen}, \hyperpage{55}
+  \item {updatePosition}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{70}
+  \item {updateRecordingStatus}
+    \subitem {TicTacToeGame}, \hyperpage{52}
+  \item {updateSinglePlayer}
+    \subitem {TitleScreen}, \hyperpage{55}
+  \item {updateSize}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{70}
+  \item {updateTimer}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{70}
+  \item {updateTwoPlayers}
+    \subitem {TitleScreen}, \hyperpage{56}
+  \item {updateWaitingStatus}
+    \subitem {TicTacToeGame}, \hyperpage{52}
+
+  \indexspace
+
+  \item {validateCommand}
+    \subitem {HumanPlayer}, \hyperpage{27}
+  \item {view\_}
+    \subitem {TTTController}, \hyperpage{62}
+
+  \indexspace
+
+  \item {waiter}
+    \subitem {TicTacToeGame}, \hyperpage{52}
+  \item {WaitingSpinnerWidget}, \hyperpage{63}
+    \subitem {\_centerOnParent}, \hyperpage{70}
+    \subitem {\_color}, \hyperpage{70}
+    \subitem {\_currentCounter}, \hyperpage{71}
+    \subitem {\_disableParentWhenSpinning}, \hyperpage{71}
+    \subitem {\_innerRadius}, \hyperpage{71}
+    \subitem {\_isSpinning}, \hyperpage{71}
+    \subitem {\_lineLength}, \hyperpage{71}
+    \subitem {\_lineWidth}, \hyperpage{71}
+    \subitem {\_minimumTrailOpacity}, \hyperpage{71}
+    \subitem {\_numberOfLines}, \hyperpage{71}
+    \subitem {\_revolutionsPerSecond}, \hyperpage{72}
+    \subitem {\_roundness}, \hyperpage{72}
+    \subitem {\_timer}, \hyperpage{72}
+    \subitem {\_trailFadePercentage}, \hyperpage{72}
+    \subitem {color}, \hyperpage{66}
+    \subitem {currentLineColor}, \hyperpage{66}
+    \subitem {initialize}, \hyperpage{66}
+    \subitem {innerRadius}, \hyperpage{66}
+    \subitem {isSpinning}, \hyperpage{66}
+    \subitem {lineCountDistanceFromPrimary}, \hyperpage{66}
+    \subitem {lineLength}, \hyperpage{67}
+    \subitem {lineWidth}, \hyperpage{67}
+    \subitem {minimumTrailOpacity}, \hyperpage{67}
+    \subitem {numberOfLines}, \hyperpage{67}
+    \subitem {operator=}, \hyperpage{67}
+    \subitem {paintEvent}, \hyperpage{67}
+    \subitem {revolutionsPersSecond}, \hyperpage{67}
+    \subitem {rotate}, \hyperpage{68}
+    \subitem {roundness}, \hyperpage{68}
+    \subitem {setColor}, \hyperpage{68}
+    \subitem {setInnerRadius}, \hyperpage{68}
+    \subitem {setLineLength}, \hyperpage{68}
+    \subitem {setLineWidth}, \hyperpage{68}
+    \subitem {setMinimumTrailOpacity}, \hyperpage{68}
+    \subitem {setNumberOfLines}, \hyperpage{69}
+    \subitem {setRevolutionsPerSecond}, \hyperpage{69}
+    \subitem {setRoundness}, \hyperpage{69}
+    \subitem {setText}, \hyperpage{69}
+    \subitem {setTrailFadePercentage}, \hyperpage{69}
+    \subitem {start}, \hyperpage{69}
+    \subitem {stop}, \hyperpage{69}
+    \subitem {trailFadePercentage}, \hyperpage{70}
+    \subitem {updatePosition}, \hyperpage{70}
+    \subitem {updateSize}, \hyperpage{70}
+    \subitem {updateTimer}, \hyperpage{70}
+    \subitem {WaitingSpinnerWidget}, \hyperpage{65}
+
+  \indexspace
+
+  \item {X}
+    \subitem {TTTCommonTypes.h}, \hyperpage{86}
+  \item {X\_COLOR}
+    \subitem {defaults}, \hyperpage{10}
+  \item {XWins}
+    \subitem {TTTCommonTypes.h}, \hyperpage{86}
+
+\end{theindex}

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Board_8puml" kind="file" language="C++">
+    <compoundname>Board.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>Board.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`Board`<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Generated<sp/>from<sp/>`include/Model/Board.h`<sp/>using<sp/>the<sp/>HumanPlayer.h<sp/>format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>class<sp/>Board</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-board_:<sp/>std::vector&lt;std::vector&lt;BoardMarks&gt;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-boardSize_:<sp/>size_t</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+Board(size_t)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+Board(Board&amp;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+Board(const<sp/>Board&amp;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+Board(Board&amp;&amp;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+operator=(Board):<sp/>Board&amp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+~Board()</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+evaluateBoard():<sp/>BoardState</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+setPlayerInput(size_t,<sp/>size_t,<sp/>BoardMarks):<sp/>bool</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+at(size_t,<sp/>size_t):<sp/>BoardMarks</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+reset():<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+resetCell(size_t,<sp/>size_t):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+size():<sp/>size_t</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/Board.puml"/>
+  </compounddef>
+</doxygen>

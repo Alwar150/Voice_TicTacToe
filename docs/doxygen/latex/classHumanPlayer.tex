@@ -1,0 +1,253 @@
+\doxysection{Human\+Player Class Reference}
+\hypertarget{classHumanPlayer}{}\label{classHumanPlayer}\index{HumanPlayer@{HumanPlayer}}
+
+
+The \doxylink{classHumanPlayer}{Human\+Player} class represents the human player in the game.  
+
+
+
+
+{\ttfamily \#include $<$Human\+Player.\+h$>$}
+
+
+
+Inherits \mbox{\hyperlink{classPlayer}{Player}}.
+
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHumanPlayer_a22dec6c1020171eae458f479c6334792}{start\+Listening}} ()
+\begin{DoxyCompactList}\small\item\em Signal emitted to start microphone listening in the worker thread. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHumanPlayer_a45a91368ca76a18df8f838297810f4f6}{stop\+Listening}} ()
+\begin{DoxyCompactList}\small\item\em Signal emitted to stop microphone listening and shut down the worker thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Signals inherited from \mbox{\hyperlink{classPlayer}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPlayer_a53a95aa136684609c19494ac2faefc59}{player\+Finished}} (int const \&cell)
+\begin{DoxyCompactList}\small\item\em Signal emitted when the player has completed their move. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}{Human\+Player}} (const \mbox{\hyperlink{classBoard}{Board}} \&board\+\_\+ref, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} player\+Mark=\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Board\+Marks\+::\+Empty}}, QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the human player. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classHumanPlayer_a09eb3ec6888e29a8848a4e8459653e4a}{\texorpdfstring{$\sim$}{\string~}\+Human\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the human player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHumanPlayer_ad005d15e0c30f35fd870b25dbde208c9}{play}} () override
+\begin{DoxyCompactList}\small\item\em Starts the human player\textquotesingle{}s turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classPlayer}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer_a1e6c1c4847747f85b6cadfa11074feef}{Player}} (const \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \&player\+Mark, const \mbox{\hyperlink{classBoard}{Board}} \&board\+\_\+ref, QObject \texorpdfstring{$\ast$}{*}parent\+\_\+=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the base \doxylink{classPlayer}{Player} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPlayer_a8981c201ffb2270c0b6dbd467b627376}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d}{parse\+Speech\+Command}} (const QString \&text)
+\begin{DoxyCompactList}\small\item\em Processes the text recognized by the \doxylink{classSpeechManager}{Speech\+Manager}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHumanPlayer_ab915a74ea5785cad0294dc5502acf8cd}{validate\+Command}} (const QString \&command)
+\begin{DoxyCompactList}\small\item\em Validates whether the recognized voice command corresponds to a valid move. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHumanPlayer_a318ffcc6af2e9829f39df29892c066ee}{handle\+Thread\+Cleanup}} ()
+\begin{DoxyCompactList}\small\item\em Slot responsible for managing the worker thread lifecycle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSpeechManager}{Speech\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classHumanPlayer_a274fc9efd09115ccfa0cfac882e49dce}{stt\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to the \doxylink{classSpeechManager}{Speech\+Manager} object, the {\itshape worker} for voice recognition. \end{DoxyCompactList}\item 
+QThread \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classHumanPlayer_a75e961bdb6f8c7e0fff5f7b01cfc038b}{stt\+Thread\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to the worker thread dedicated to running the \doxylink{classSpeechManager}{Speech\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classPlayer}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classBoard}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPlayer_a088227ab53747cc4955b0a3859b69a84}{board\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Constant pointer to the game board. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \& \mbox{\hyperlink{classPlayer_a896addb43bdc7926500d04387bb84ac0}{mark\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Constant reference to the marker assigned to this player (X or O). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classHumanPlayer}{Human\+Player} class represents the human player in the game. 
+
+Inherits from the abstract base class \doxylink{classPlayer}{Player}. It is responsible for capturing user input (either through GUI clicks or, in this case, through voice recognition using \doxylink{classSpeechManager}{Speech\+Manager}) and converting it into a valid move on the board.
+
+Uses a dedicated worker thread ({\ttfamily QThread}) for voice processing ({\ttfamily \doxylink{classSpeechManager}{Speech\+Manager}}) to avoid blocking the main GUI thread.
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}\label{classHumanPlayer_a360522559dd96e77fe230b2facdb2508} 
+\index{HumanPlayer@{HumanPlayer}!HumanPlayer@{HumanPlayer}}
+\index{HumanPlayer@{HumanPlayer}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{HumanPlayer()}{HumanPlayer()}}
+{\footnotesize\ttfamily Human\+Player\+::\+Human\+Player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board\+\_\+ref,  }\item[{\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{player\+Mark = {\ttfamily \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Board\+Marks\+::\+Empty}}},  }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for the human player. 
+
+Initializes the reference to the board and the player\textquotesingle{}s marker. Also creates and initializes the \doxylink{classSpeechManager}{Speech\+Manager} object and its associated thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+\_\+ref} & Constant reference to the board model. \\
+\hline
+{\em player\+Mark} & The marker (\doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{Board\+Marks\+::X} or \doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{Board\+Marks\+::O}) assigned to the player. \\
+\hline
+{\em parent} & Pointer to the parent QObject. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classSpeechManager_a94d6a6d8b5aa00b913e751c2620a9e52}{Speech\+Manager\+::configure()}}, \mbox{\hyperlink{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d}{parse\+Speech\+Command()}}, \mbox{\hyperlink{classSpeechManager_abdde7758804b9f537d9d704583e6c8b3}{Speech\+Manager\+::speech\+Recognized()}}, \mbox{\hyperlink{classHumanPlayer_a22dec6c1020171eae458f479c6334792}{start\+Listening()}}, \mbox{\hyperlink{classSpeechManager_af62b1ec680a5e45e289d629d561c8432}{Speech\+Manager\+::start\+Listening()}}, \mbox{\hyperlink{classHumanPlayer_a274fc9efd09115ccfa0cfac882e49dce}{stt\+\_\+}}, and \mbox{\hyperlink{classHumanPlayer_a75e961bdb6f8c7e0fff5f7b01cfc038b}{stt\+Thread\+\_\+}}.
+
+\Hypertarget{classHumanPlayer_a09eb3ec6888e29a8848a4e8459653e4a}\label{classHumanPlayer_a09eb3ec6888e29a8848a4e8459653e4a} 
+\index{HumanPlayer@{HumanPlayer}!````~HumanPlayer@{\texorpdfstring{$\sim$}{\string~}HumanPlayer}}
+\index{````~HumanPlayer@{\texorpdfstring{$\sim$}{\string~}HumanPlayer}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}HumanPlayer()}{\string~HumanPlayer()}}
+{\footnotesize\ttfamily virtual Human\+Player\+::\texorpdfstring{$\sim$}{\string~}\+Human\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructor for the human player. 
+
+Handles the cleanup and safe termination of the voice recognition thread. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classHumanPlayer_a318ffcc6af2e9829f39df29892c066ee}\label{classHumanPlayer_a318ffcc6af2e9829f39df29892c066ee} 
+\index{HumanPlayer@{HumanPlayer}!handleThreadCleanup@{handleThreadCleanup}}
+\index{handleThreadCleanup@{handleThreadCleanup}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{handleThreadCleanup()}{handleThreadCleanup()}}
+{\footnotesize\ttfamily void Human\+Player\+::handle\+Thread\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot responsible for managing the worker thread lifecycle. 
+
+Executes the safe thread termination process ({\ttfamily quit()}, {\ttfamily wait()}) and resource cleanup ({\ttfamily QThread\+::delete\+Later}). \Hypertarget{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d}\label{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d} 
+\index{HumanPlayer@{HumanPlayer}!parseSpeechCommand@{parseSpeechCommand}}
+\index{parseSpeechCommand@{parseSpeechCommand}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{parseSpeechCommand()}{parseSpeechCommand()}}
+{\footnotesize\ttfamily void Human\+Player\+::parse\+Speech\+Command (\begin{DoxyParamCaption}\item[{const QString \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Processes the text recognized by the \doxylink{classSpeechManager}{Speech\+Manager}. 
+
+This method receives the text hypothesis ({\ttfamily text}) from the voice recognition system and initiates command validation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The recognized text string (voice command). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classBoard_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{Board\+::at()}}, \mbox{\hyperlink{classPlayer_a088227ab53747cc4955b0a3859b69a84}{Player\+::board\+\_\+}}, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}, \mbox{\hyperlink{classPlayer_a53a95aa136684609c19494ac2faefc59}{Player\+::player\+Finished()}}, \mbox{\hyperlink{classBoard_ad82bf1ecd8b4e65f8c5fd6133e831138}{Board\+::size()}}, \mbox{\hyperlink{classHumanPlayer_a22dec6c1020171eae458f479c6334792}{start\+Listening()}}, and \mbox{\hyperlink{classHumanPlayer_a45a91368ca76a18df8f838297810f4f6}{stop\+Listening()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}{Human\+Player()}}.
+
+\Hypertarget{classHumanPlayer_ad005d15e0c30f35fd870b25dbde208c9}\label{classHumanPlayer_ad005d15e0c30f35fd870b25dbde208c9} 
+\index{HumanPlayer@{HumanPlayer}!play@{play}}
+\index{play@{play}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Human\+Player\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Starts the human player\textquotesingle{}s turn. 
+
+This overridden method starts the voice recognition thread ({\ttfamily \doxylink{classSpeechManager}{Speech\+Manager}}) and instructs it to begin listening, waiting for a user command. 
+
+Implements \mbox{\hyperlink{classPlayer_af85db5d05b014bf19d873038c56dc7ed}{Player}}.
+
+
+
+References \mbox{\hyperlink{classHumanPlayer_a22dec6c1020171eae458f479c6334792}{start\+Listening()}}.
+
+\Hypertarget{classHumanPlayer_a22dec6c1020171eae458f479c6334792}\label{classHumanPlayer_a22dec6c1020171eae458f479c6334792} 
+\index{HumanPlayer@{HumanPlayer}!startListening@{startListening}}
+\index{startListening@{startListening}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{startListening}{startListening}}
+{\footnotesize\ttfamily void Human\+Player\+::start\+Listening (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted to start microphone listening in the worker thread. 
+
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}{Human\+Player()}}, \mbox{\hyperlink{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d}{parse\+Speech\+Command()}}, \mbox{\hyperlink{classHumanPlayer_ad005d15e0c30f35fd870b25dbde208c9}{play()}}, and \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController\+::\+TTTController()}}.
+
+\Hypertarget{classHumanPlayer_a45a91368ca76a18df8f838297810f4f6}\label{classHumanPlayer_a45a91368ca76a18df8f838297810f4f6} 
+\index{HumanPlayer@{HumanPlayer}!stopListening@{stopListening}}
+\index{stopListening@{stopListening}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{stopListening}{stopListening}}
+{\footnotesize\ttfamily void Human\+Player\+::stop\+Listening (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted to stop microphone listening and shut down the worker thread. 
+
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d}{parse\+Speech\+Command()}}, and \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController\+::\+TTTController()}}.
+
+\Hypertarget{classHumanPlayer_ab915a74ea5785cad0294dc5502acf8cd}\label{classHumanPlayer_ab915a74ea5785cad0294dc5502acf8cd} 
+\index{HumanPlayer@{HumanPlayer}!validateCommand@{validateCommand}}
+\index{validateCommand@{validateCommand}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{validateCommand()}{validateCommand()}}
+{\footnotesize\ttfamily bool Human\+Player\+::validate\+Command (\begin{DoxyParamCaption}\item[{const QString \&}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Validates whether the recognized voice command corresponds to a valid move. 
+
+Verifies that the command is understandable (e.\+g., "{}play cell 5"{}) and that the indicated cell is available on the board.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The text string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the command is valid and the cell is available. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classHumanPlayer_a274fc9efd09115ccfa0cfac882e49dce}\label{classHumanPlayer_a274fc9efd09115ccfa0cfac882e49dce} 
+\index{HumanPlayer@{HumanPlayer}!stt\_@{stt\_}}
+\index{stt\_@{stt\_}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{stt\_}{stt\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSpeechManager}{Speech\+Manager}}\texorpdfstring{$\ast$}{*} Human\+Player\+::stt\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the \doxylink{classSpeechManager}{Speech\+Manager} object, the {\itshape worker} for voice recognition. 
+
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}{Human\+Player()}}.
+
+\Hypertarget{classHumanPlayer_a75e961bdb6f8c7e0fff5f7b01cfc038b}\label{classHumanPlayer_a75e961bdb6f8c7e0fff5f7b01cfc038b} 
+\index{HumanPlayer@{HumanPlayer}!sttThread\_@{sttThread\_}}
+\index{sttThread\_@{sttThread\_}!HumanPlayer@{HumanPlayer}}
+\doxysubsubsection{\texorpdfstring{sttThread\_}{sttThread\_}}
+{\footnotesize\ttfamily QThread\texorpdfstring{$\ast$}{*} Human\+Player\+::stt\+Thread\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to the worker thread dedicated to running the \doxylink{classSpeechManager}{Speech\+Manager}. 
+
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a360522559dd96e77fe230b2facdb2508}{Human\+Player()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+AI/\mbox{\hyperlink{HumanPlayer_8h}{Human\+Player.\+h}}\item 
+src/\+AI/\mbox{\hyperlink{HumanPlayer_8cpp}{Human\+Player.\+cpp}}\end{DoxyCompactItemize}

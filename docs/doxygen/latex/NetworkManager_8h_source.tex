@@ -1,0 +1,49 @@
+\doxysection{Network\+Manager.\+h}
+\hypertarget{NetworkManager_8h_source}{}\label{NetworkManager_8h_source}\index{include/Network/NetworkManager.h@{include/Network/NetworkManager.h}}
+\mbox{\hyperlink{NetworkManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NETWORKMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NETWORKMANAGER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNetworkManager}{NetworkManager}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classNetworkManager}{NetworkManager}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_ae5e79e2a2a383d9b63169b38444152cc}{connectToServer}}(\textcolor{keyword}{const}\ QString\ \&ip,\ quint16\ port);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a1733d9420c11080527bb32edaa1bae14}{sendMessage}}(\textcolor{keyword}{const}\ QString\ \&message);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ signals:}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_aa2d7233230f2d609c31d9fd064c2f461}{connected}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a3c9d18963e77a155faf338b86927e2e5}{disconnected}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a03c54af7cc88df99a5c4dd916002554c}{errorOccurred}}(\textcolor{keyword}{const}\ QString\ \&error);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a8c9f27ead277af0afc322b551a40acb7}{messageSent}}(\textcolor{keyword}{const}\ QString\ \&message);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a603d801e6200da430707381ba39241c2}{messageReceived}}(\textcolor{keyword}{const}\ QString\ \&message);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a58117c282e533ceff2ebab1a6d459699}{onConnected}}();}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a0028518c2761defad4d923b42493463b}{onDisconnected}}();}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a102d12758db0f241cff62e14c1e12baa}{onError}}(QAbstractSocket::SocketError\ socketError);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNetworkManager_a2459cd9d2ab2defef9af5d6b902cc8f5}{onSocketReadyRead}}();}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00133\ \ \ \ \ QTcpSocket\ *\mbox{\hyperlink{classNetworkManager_abd7a5f326e9abe441fd5bd86b49b20d2}{socket\_}};\ }
+\DoxyCodeLine{00134\ \};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//NETWORKMANAGER\_H}}
+
+\end{DoxyCode}

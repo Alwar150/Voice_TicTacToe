@@ -1,0 +1,116 @@
+\doxysection{waitingspinnerwidget.\+h}
+\hypertarget{waitingspinnerwidget_8h_source}{}\label{waitingspinnerwidget_8h_source}\index{include/View/waitingspinnerwidget.h@{include/View/waitingspinnerwidget.h}}
+\mbox{\hyperlink{waitingspinnerwidget_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ Original\ Work\ Copyright\ (c)\ 2012-\/2014\ Alexander\ Turkin}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ \ \ Modified\ 2014\ by\ William\ Hallatt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ Modified\ 2015\ by\ Jacob\ Dawid}}
+\DoxyCodeLine{00004\ \textcolor{comment}{Permission\ is\ hereby\ granted,\ free\ of\ charge,\ to\ any\ person\ obtaining\ a\ copy\ of}}
+\DoxyCodeLine{00005\ \textcolor{comment}{this\ software\ and\ associated\ documentation\ files\ (the\ "{}Software"{}),\ to\ deal\ in}}
+\DoxyCodeLine{00006\ \textcolor{comment}{the\ Software\ without\ restriction,\ including\ without\ limitation\ the\ rights\ to}}
+\DoxyCodeLine{00007\ \textcolor{comment}{use,\ copy,\ modify,\ merge,\ publish,\ distribute,\ sublicense,\ and/or\ sell\ copies\ of}}
+\DoxyCodeLine{00008\ \textcolor{comment}{the\ Software,\ and\ to\ permit\ persons\ to\ whom\ the\ Software\ is\ furnished\ to\ do\ so,}}
+\DoxyCodeLine{00009\ \textcolor{comment}{subject\ to\ the\ following\ conditions:}}
+\DoxyCodeLine{00010\ \textcolor{comment}{}}
+\DoxyCodeLine{00011\ \textcolor{comment}{The\ above\ copyright\ notice\ and\ this\ permission\ notice\ shall\ be\ included\ in\ all}}
+\DoxyCodeLine{00012\ \textcolor{comment}{copies\ or\ substantial\ portions\ of\ the\ Software.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{}}
+\DoxyCodeLine{00014\ \textcolor{comment}{THE\ SOFTWARE\ IS\ PROVIDED\ "{}AS\ IS"{},\ WITHOUT\ WARRANTY\ OF\ ANY\ KIND,\ EXPRESS\ OR}}
+\DoxyCodeLine{00015\ \textcolor{comment}{IMPLIED,\ INCLUDING\ BUT\ NOT\ LIMITED\ TO\ THE\ WARRANTIES\ OF\ MERCHANTABILITY,\ FITNESS}}
+\DoxyCodeLine{00016\ \textcolor{comment}{FOR\ A\ PARTICULAR\ PURPOSE\ AND\ NONINFRINGEMENT.\ IN\ NO\ EVENT\ SHALL\ THE\ AUTHORS\ OR}}
+\DoxyCodeLine{00017\ \textcolor{comment}{COPYRIGHT\ HOLDERS\ BE\ LIABLE\ FOR\ ANY\ CLAIM,\ DAMAGES\ OR\ OTHER\ LIABILITY,\ WHETHER}}
+\DoxyCodeLine{00018\ \textcolor{comment}{IN\ AN\ ACTION\ OF\ CONTRACT,\ TORT\ OR\ OTHERWISE,\ ARISING\ FROM,\ OUT\ OF\ OR\ IN}}
+\DoxyCodeLine{00019\ \textcolor{comment}{CONNECTION\ WITH\ THE\ SOFTWARE\ OR\ THE\ USE\ OR\ OTHER\ DEALINGS\ IN\ THE\ SOFTWARE.}}
+\DoxyCodeLine{00020\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ Qt\ includes}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QColor>}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ <<<<<<<\ HEAD}
+\DoxyCodeLine{00052\ =======}
+\DoxyCodeLine{00053\ >>>>>>>\ afdadd3d46bec0902f02aec6604c627e510e4f67}
+\DoxyCodeLine{00054\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWaitingSpinnerWidget}{WaitingSpinnerWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00056\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget}{WaitingSpinnerWidget}}(QWidget\ *parent\ =\ 0,}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ centerOnParent\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ disableParentWhenSpinning\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget}{WaitingSpinnerWidget}}(Qt::WindowModality\ modality,}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ QWidget\ *parent\ =\ 0,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ centerOnParent\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ disableParentWhenSpinning\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}{start}}();}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4}{stop}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a5bc33ab179119f510d556c214fe7ac9b}{setColor}}(QColor\ \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color}});}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a894f40b4623f9e7754c48e4478c23307}{setRoundness}}(qreal\ \mbox{\hyperlink{classWaitingSpinnerWidget_a2ceb91dfdafcd41b99f04aa2b4b81786}{roundness}});}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_ad4ad8fab83b1a60cf1dff78d6ad716d7}{setMinimumTrailOpacity}}(qreal\ \mbox{\hyperlink{classWaitingSpinnerWidget_a8a9ed21ff17ead12fcbf26b163940dbe}{minimumTrailOpacity}});}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_af9ec791036d62a78b0f557346d1c0262}{setTrailFadePercentage}}(qreal\ trail);}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_addb2884587497961d78e24c50a2f1aba}{setRevolutionsPerSecond}}(qreal\ revolutionsPerSecond);}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a29945c03eaf051081ea21f22dca6e97a}{setNumberOfLines}}(\textcolor{keywordtype}{int}\ lines);}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a797995d006da2e96b72daa959ddd274e}{setLineLength}}(\textcolor{keywordtype}{int}\ length);}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a987a9c7234f83ca2665dd05f8d039e64}{setLineWidth}}(\textcolor{keywordtype}{int}\ width);}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a4adc650895478217a5f28c72a9df1e53}{setInnerRadius}}(\textcolor{keywordtype}{int}\ radius);}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a25b9639b865d15610a499aaced705afe}{setText}}(QString\ text);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ QColor\ \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color}}();}
+\DoxyCodeLine{00090\ \ \ \ \ qreal\ \mbox{\hyperlink{classWaitingSpinnerWidget_a2ceb91dfdafcd41b99f04aa2b4b81786}{roundness}}();}
+\DoxyCodeLine{00091\ \ \ \ \ qreal\ \mbox{\hyperlink{classWaitingSpinnerWidget_a8a9ed21ff17ead12fcbf26b163940dbe}{minimumTrailOpacity}}();}
+\DoxyCodeLine{00092\ \ \ \ \ qreal\ \mbox{\hyperlink{classWaitingSpinnerWidget_aa0a76a4ea0666f843b8a4cf2cb5a7491}{trailFadePercentage}}();}
+\DoxyCodeLine{00093\ \ \ \ \ qreal\ \mbox{\hyperlink{classWaitingSpinnerWidget_a54f72cfcb508e8d4bea313891d87b766}{revolutionsPersSecond}}();}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classWaitingSpinnerWidget_af6a17bce3bc7081c1e0297e6249576e0}{numberOfLines}}();}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classWaitingSpinnerWidget_aa716528e1094789337adc5d291c69747}{lineLength}}();}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a6c42700d650379cffd704199c63c4f28}{lineWidth}}();}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a9db984232c785de31390485c30d7a596}{innerRadius}}();}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWaitingSpinnerWidget_ab02d5a79b1794c55b58b3cd417075a5a}{isSpinning}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_aacb453453fd98625eb38e021de72070f}{rotate}}();}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paintEvent}}(QPaintEvent\ *\mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paintEvent}});}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a144cdce01e10daeefb91846b7d7328a5}{lineCountDistanceFromPrimary}}(\textcolor{keywordtype}{int}\ current,\ \textcolor{keywordtype}{int}\ primary,}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ totalNrOfLines);}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{static}\ QColor\ \mbox{\hyperlink{classWaitingSpinnerWidget_ab8adb44bc0a3eb32bfe9d7b5b1a83e4c}{currentLineColor}}(\textcolor{keywordtype}{int}\ distance,\ \textcolor{keywordtype}{int}\ totalNrOfLines,}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ qreal\ trailFadePerc,\ qreal\ minOpacity,}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ QColor\ \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color}});}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize}}();}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}{updateSize}}();}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}{updateTimer}}();}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWaitingSpinnerWidget_a7ac6a1feaec54bd2f54c7110a179f46f}{updatePosition}}();}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00120\ \ \ \ \ QColor\ \ \mbox{\hyperlink{classWaitingSpinnerWidget_aaea8d9dd1dfd0fec4d63a73a3b940e79}{\_color}};}
+\DoxyCodeLine{00121\ \ \ \ \ qreal\ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_a853bddeb85306ca792f3696064d911b8}{\_roundness}};\ \textcolor{comment}{//\ 0..100}}
+\DoxyCodeLine{00122\ \ \ \ \ qreal\ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_ae80928504ba4586bed5d80db45455b4a}{\_minimumTrailOpacity}};}
+\DoxyCodeLine{00123\ \ \ \ \ qreal\ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_a4162157a6d402ffa3a87f8e6fd7abf0d}{\_trailFadePercentage}};}
+\DoxyCodeLine{00124\ \ \ \ \ qreal\ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_a9398c0e6ec48a6e2f91f7c0ae9b5d924}{\_revolutionsPerSecond}};}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}{\_numberOfLines}};}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48}{\_lineLength}};}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_a7d5224bb675c63b974acf3ab9da2a0ae}{\_lineWidth}};}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da}{\_innerRadius}};}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00131\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_ac61cef28a4710c6d2a0ea3e8d0bca49b}{WaitingSpinnerWidget}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classWaitingSpinnerWidget}{WaitingSpinnerWidget}}\&);}
+\DoxyCodeLine{00132\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget}{WaitingSpinnerWidget}}\&\ \mbox{\hyperlink{classWaitingSpinnerWidget_a82a516c36d956b5cdeaca95bac6162ac}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classWaitingSpinnerWidget}{WaitingSpinnerWidget}}\&);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ QTimer\ *\mbox{\hyperlink{classWaitingSpinnerWidget_a59f0c98b8cf02a3d7f50085e856ff908}{\_timer}};}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_ae9df7d573477f907da5da0b0518d300a}{\_centerOnParent}};}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_af2e707cbf375a3b5626980854e7423f2}{\_disableParentWhenSpinning}};}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}{\_currentCounter}};}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \mbox{\hyperlink{classWaitingSpinnerWidget_a0034d3b61e3f1f41ea147039913906d4}{\_isSpinning}};}
+\DoxyCodeLine{00139\ \};}
+
+\end{DoxyCode}

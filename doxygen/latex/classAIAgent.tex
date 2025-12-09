@@ -1,0 +1,92 @@
+\doxysection{AIAgent Class Reference}
+\hypertarget{classAIAgent}{}\label{classAIAgent}\index{AIAgent@{AIAgent}}
+
+
+The \doxylink{classAIAgent}{AIAgent} interface describes the behavior of any implemented Artificial Intelligence agent.  
+
+
+
+
+{\ttfamily \#include $<$AIAgent.\+h$>$}
+
+
+
+Inheritance diagram for AIAgent\+:
+% FIG 0
+
+
+Collaboration diagram for AIAgent\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAIAgent_ab455925352ccde362887a32ee1ffd1f6}{AIAgent}} (\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} player\+Mark, const \mbox{\hyperlink{classBoard}{Board}} \&borad\+\_\+ref, QObject \texorpdfstring{$\ast$}{*}parent\+\_\+=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classAIAgent}{AIAgent} base class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classAIAgent_a5614d02341e652bd2df4f3b2fb4d44c3}{\texorpdfstring{$\sim$}{\string~}\+AIAgent}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classPlayer}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer_a1e6c1c4847747f85b6cadfa11074feef}{Player}} (const \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \&player\+Mark, const \mbox{\hyperlink{classBoard}{Board}} \&board\+\_\+ref, QObject \texorpdfstring{$\ast$}{*}parent\+\_\+=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the base \doxylink{classPlayer}{Player} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPlayer_a8981c201ffb2270c0b6dbd467b627376}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayer_af85db5d05b014bf19d873038c56dc7ed}{play}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure abstract method to start the player\textquotesingle{}s move logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Signals inherited from \mbox{\hyperlink{classPlayer}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPlayer_a53a95aa136684609c19494ac2faefc59}{player\+Finished}} (int const \&cell)
+\begin{DoxyCompactList}\small\item\em Signal emitted when the player has completed their move. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classPlayer}{Player}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classBoard}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPlayer_a088227ab53747cc4955b0a3859b69a84}{board\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Constant pointer to the game board. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \& \mbox{\hyperlink{classPlayer_a896addb43bdc7926500d04387bb84ac0}{mark\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Constant reference to the marker assigned to this player (X or O). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classAIAgent}{AIAgent} interface describes the behavior of any implemented Artificial Intelligence agent. 
+
+This abstract base class inherits from \doxylink{classPlayer}{Player} and establishes a common interface for all AI agents (such as \doxylink{classMiniMaxAgent}{Mini\+Max\+Agent}). It defines the basic functions necessary for an agent to reset its internal state before a new turn or game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAIAgent_ab455925352ccde362887a32ee1ffd1f6}\label{classAIAgent_ab455925352ccde362887a32ee1ffd1f6} 
+\index{AIAgent@{AIAgent}!AIAgent@{AIAgent}}
+\index{AIAgent@{AIAgent}!AIAgent@{AIAgent}}
+\doxysubsubsection{\texorpdfstring{AIAgent()}{AIAgent()}}
+{\footnotesize\ttfamily AIAgent\+::\+AIAgent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{player\+Mark,  }\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{borad\+\_\+ref,  }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent\+\_\+ = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the \doxylink{classAIAgent}{AIAgent} base class. 
+
+Initializes the agent with its marker and a reference to the board.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Mark} & The marker (\doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{Board\+Marks\+::X} or \doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{Board\+Marks\+::O}) assigned to the AI. \\
+\hline
+{\em borad\+\_\+ref} & Constant reference to the game \doxylink{classBoard}{Board} object (Model). \\
+\hline
+{\em parent\+\_\+} & Pointer to the parent QObject (nullptr by default). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAIAgent_a5614d02341e652bd2df4f3b2fb4d44c3}\label{classAIAgent_a5614d02341e652bd2df4f3b2fb4d44c3} 
+\index{AIAgent@{AIAgent}!````~AIAgent@{\texorpdfstring{$\sim$}{\string~}AIAgent}}
+\index{````~AIAgent@{\texorpdfstring{$\sim$}{\string~}AIAgent}!AIAgent@{AIAgent}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AIAgent()}{\string~AIAgent()}}
+{\footnotesize\ttfamily virtual AIAgent\+::\texorpdfstring{$\sim$}{\string~}\+AIAgent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual destructor. 
+
+Allows proper destruction of derived classes through a base class pointer. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+AI/\mbox{\hyperlink{AIAgent_8h}{AIAgent.\+h}}\end{DoxyCompactItemize}

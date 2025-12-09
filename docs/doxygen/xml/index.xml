@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classAIAgent" kind="class"><name>AIAgent</name>
+    <member refid="classAIAgent_1ab455925352ccde362887a32ee1ffd1f6" kind="function"><name>AIAgent</name></member>
+    <member refid="classAIAgent_1a5614d02341e652bd2df4f3b2fb4d44c3" kind="function"><name>~AIAgent</name></member>
+  </compound>
+  <compound refid="classBoard" kind="class"><name>Board</name>
+    <member refid="classBoard_1adfd225a07d805a10bf34c7592218eb70" kind="variable"><name>board_</name></member>
+    <member refid="classBoard_1a9be071bf59fbbb74c3eade9a74d8f521" kind="variable"><name>boardSize_</name></member>
+    <member refid="classBoard_1aa94a6eebfdf27a7ec5c9011db662da9a" kind="function"><name>Board</name></member>
+    <member refid="classBoard_1acba2cffa38302b3bed1f43d681eefb28" kind="function"><name>Board</name></member>
+    <member refid="classBoard_1ac77f209904bb37545295c17649a9dc17" kind="function"><name>Board</name></member>
+    <member refid="classBoard_1a644749e247a38adc51e2a42d87fd4e48" kind="function"><name>Board</name></member>
+    <member refid="classBoard_1ae4ccc3271e479d7f9284b9567dc4c2a6" kind="function"><name>operator=</name></member>
+    <member refid="classBoard_1af73f45730119a1fd8f6670f53f959e68" kind="function"><name>~Board</name></member>
+    <member refid="classBoard_1a1b7486c5df3db7e5a1c8ed097492527f" kind="function"><name>evaluateBoard</name></member>
+    <member refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" kind="function"><name>setPlayerInput</name></member>
+    <member refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" kind="function"><name>at</name></member>
+    <member refid="classBoard_1aaef819a8d1a10c35d9f802195802236e" kind="function"><name>reset</name></member>
+    <member refid="classBoard_1addcaa486e1293eebcb323fb936353f43" kind="function"><name>resetCell</name></member>
+    <member refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" kind="function"><name>size</name></member>
+    <member refid="classBoard_1a17375a18c51b86c82ea82a30ec9cbee6" kind="function"><name>printBoard</name></member>
+  </compound>
+  <compound refid="structCell" kind="struct"><name>Cell</name>
+    <member refid="structCell_1a242e6735a746bdd7b0d25311a81f0cb4" kind="variable"><name>cellBtn</name></member>
+    <member refid="structCell_1a85d2a7af6195f5196574790fbc1becfd" kind="variable"><name>row</name></member>
+    <member refid="structCell_1a09e2f07cb87b7ae5898be20927cf28d1" kind="variable"><name>col</name></member>
+    <member refid="structCell_1a5ad411cd7ac4344405a343573684dc14" kind="function"><name>Cell</name></member>
+  </compound>
+  <compound refid="classConfigManager" kind="class"><name>ConfigManager</name>
+    <member refid="classConfigManager_1a9d30f8b6a03a88758b1a27dae2c02458" kind="variable"><name>settings_</name></member>
+    <member refid="classConfigManager_1afb25aedc49f0a7f61d3ce9fe2d0d520f" kind="variable"><name>baseDir_</name></member>
+    <member refid="classConfigManager_1ab72b9c36d8c92066d54eabae525da210" kind="function"><name>instance</name></member>
+    <member refid="classConfigManager_1a61e0d30507438bdb93773586fd17dcd2" kind="function"><name>load</name></member>
+    <member refid="classConfigManager_1ab0a26220dad8b8b9c29e00ac3e06a455" kind="function"><name>getValue</name></member>
+    <member refid="classConfigManager_1a8fcb73283ae43f36e70ae09990edb315" kind="function"><name>getInt</name></member>
+    <member refid="classConfigManager_1a2fc430f2f48d29787b668e048947a5d3" kind="function"><name>getBool</name></member>
+    <member refid="classConfigManager_1a281150cbf5141f3f232b0485b23327b2" kind="function"><name>resolvePath</name></member>
+    <member refid="classConfigManager_1a41931ff9b32816a676885e4c78c3ab83" kind="function"><name>ConfigManager</name></member>
+    <member refid="classConfigManager_1af27fe922a8151eed5b1dc926ddf045b1" kind="function"><name>~ConfigManager</name></member>
+    <member refid="classConfigManager_1a106691c1efb4ec9d6f0688419e455906" kind="function"><name>ConfigManager</name></member>
+    <member refid="classConfigManager_1a0fd5bb24753934f9ec6430ab3bea7fd9" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classHumanPlayer" kind="class"><name>HumanPlayer</name>
+    <member refid="classHumanPlayer_1a274fc9efd09115ccfa0cfac882e49dce" kind="variable"><name>stt_</name></member>
+    <member refid="classHumanPlayer_1a75e961bdb6f8c7e0fff5f7b01cfc038b" kind="variable"><name>sttThread_</name></member>
+    <member refid="classHumanPlayer_1a360522559dd96e77fe230b2facdb2508" kind="function"><name>HumanPlayer</name></member>
+    <member refid="classHumanPlayer_1a09eb3ec6888e29a8848a4e8459653e4a" kind="function"><name>~HumanPlayer</name></member>
+    <member refid="classHumanPlayer_1ad005d15e0c30f35fd870b25dbde208c9" kind="function"><name>play</name></member>
+    <member refid="classHumanPlayer_1a22dec6c1020171eae458f479c6334792" kind="signal"><name>startListening</name></member>
+    <member refid="classHumanPlayer_1a45a91368ca76a18df8f838297810f4f6" kind="signal"><name>stopListening</name></member>
+    <member refid="classHumanPlayer_1a7d350dafe7524229e5e0f032d877d02d" kind="function"><name>parseSpeechCommand</name></member>
+    <member refid="classHumanPlayer_1ab915a74ea5785cad0294dc5502acf8cd" kind="function"><name>validateCommand</name></member>
+    <member refid="classHumanPlayer_1a318ffcc6af2e9829f39df29892c066ee" kind="function"><name>handleThreadCleanup</name></member>
+  </compound>
+  <compound refid="classMiniMaxAgent" kind="class"><name>MiniMaxAgent</name>
+    <member refid="classMiniMaxAgent_1aa1920de5421331a5a88dd55c727ec6fc" kind="variable"><name>depth_</name></member>
+    <member refid="classMiniMaxAgent_1a1e7fa70e257c4423ab555e04cb7eaa0a" kind="variable"><name>AI_WIN_SCORE</name></member>
+    <member refid="classMiniMaxAgent_1a2cbab0bdd892f994f7e3e13d0f4be53d" kind="variable"><name>PLAYER_WIN_SCORE</name></member>
+    <member refid="classMiniMaxAgent_1a9ae263accc262d5f9eac741125229f13" kind="variable"><name>TIE_SCORE</name></member>
+    <member refid="classMiniMaxAgent_1a86fa345e7ac1972127173ebd95d1c963" kind="function"><name>MiniMaxAgent</name></member>
+    <member refid="classMiniMaxAgent_1a9fd00e9550a3e78b6ba76c1db80bf78f" kind="function"><name>play</name></member>
+    <member refid="classMiniMaxAgent_1adde21208d43b0ff75ecd2c014c217c78" kind="function"><name>playerMark_</name></member>
+    <member refid="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" kind="function"><name>maxMove</name></member>
+    <member refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" kind="function"><name>minMove</name></member>
+    <member refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" kind="function"><name>score</name></member>
+  </compound>
+  <compound refid="classNetworkManager" kind="class"><name>NetworkManager</name>
+    <member refid="classNetworkManager_1abd7a5f326e9abe441fd5bd86b49b20d2" kind="variable"><name>socket_</name></member>
+    <member refid="classNetworkManager_1a25e5a69c0dba31cc028050c2b6eea855" kind="function"><name>NetworkManager</name></member>
+    <member refid="classNetworkManager_1ae5e79e2a2a383d9b63169b38444152cc" kind="function"><name>connectToServer</name></member>
+    <member refid="classNetworkManager_1a1733d9420c11080527bb32edaa1bae14" kind="function"><name>sendMessage</name></member>
+    <member refid="classNetworkManager_1aa2d7233230f2d609c31d9fd064c2f461" kind="signal"><name>connected</name></member>
+    <member refid="classNetworkManager_1a3c9d18963e77a155faf338b86927e2e5" kind="signal"><name>disconnected</name></member>
+    <member refid="classNetworkManager_1a03c54af7cc88df99a5c4dd916002554c" kind="signal"><name>errorOccurred</name></member>
+    <member refid="classNetworkManager_1a8c9f27ead277af0afc322b551a40acb7" kind="signal"><name>messageSent</name></member>
+    <member refid="classNetworkManager_1a603d801e6200da430707381ba39241c2" kind="signal"><name>messageReceived</name></member>
+    <member refid="classNetworkManager_1a58117c282e533ceff2ebab1a6d459699" kind="slot"><name>onConnected</name></member>
+    <member refid="classNetworkManager_1a0028518c2761defad4d923b42493463b" kind="slot"><name>onDisconnected</name></member>
+    <member refid="classNetworkManager_1a102d12758db0f241cff62e14c1e12baa" kind="slot"><name>onError</name></member>
+    <member refid="classNetworkManager_1a2459cd9d2ab2defef9af5d6b902cc8f5" kind="slot"><name>onSocketReadyRead</name></member>
+  </compound>
+  <compound refid="classPlayer" kind="class"><name>Player</name>
+    <member refid="classPlayer_1a088227ab53747cc4955b0a3859b69a84" kind="variable"><name>board_</name></member>
+    <member refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" kind="variable"><name>mark_</name></member>
+    <member refid="classPlayer_1a1e6c1c4847747f85b6cadfa11074feef" kind="function"><name>Player</name></member>
+    <member refid="classPlayer_1a8981c201ffb2270c0b6dbd467b627376" kind="function"><name>~Player</name></member>
+    <member refid="classPlayer_1af85db5d05b014bf19d873038c56dc7ed" kind="function"><name>play</name></member>
+    <member refid="classPlayer_1a53a95aa136684609c19494ac2faefc59" kind="signal"><name>playerFinished</name></member>
+  </compound>
+  <compound refid="classSpeechManager" kind="class"><name>SpeechManager</name>
+    <member refid="classSpeechManager_1a84982042bef20eb360ec44351fd84757" kind="variable"><name>stream_</name></member>
+    <member refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kind="variable"><name>err_</name></member>
+    <member refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" kind="variable"><name>decoder_</name></member>
+    <member refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" kind="variable"><name>config_</name></member>
+    <member refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kind="variable"><name>ep_</name></member>
+    <member refid="classSpeechManager_1a33dd9ba7578619b2f8bfb2be029c4c20" kind="variable"><name>frame_</name></member>
+    <member refid="classSpeechManager_1a5ae23337be3cfd612918b64b2dac7fa8" kind="variable"><name>frame_size_</name></member>
+    <member refid="classSpeechManager_1ad36d507a363bd64922e7cd8c85334bda" kind="variable"><name>hyp_</name></member>
+    <member refid="classSpeechManager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" kind="function"><name>SpeechManager</name></member>
+    <member refid="classSpeechManager_1a473b5a5d90f5486c0306278220d8138c" kind="function"><name>~SpeechManager</name></member>
+    <member refid="classSpeechManager_1a94d6a6d8b5aa00b913e751c2620a9e52" kind="function"><name>configure</name></member>
+    <member refid="classSpeechManager_1a13ab24c0b019530b8c35557091fac078" kind="function"><name>init</name></member>
+    <member refid="classSpeechManager_1af62b1ec680a5e45e289d629d561c8432" kind="function"><name>startListening</name></member>
+    <member refid="classSpeechManager_1abdde7758804b9f537d9d704583e6c8b3" kind="signal"><name>speechRecognized</name></member>
+    <member refid="classSpeechManager_1af020ff04f584cedbd3105f299c1a66b0" kind="signal"><name>speechReadyToProcess</name></member>
+    <member refid="classSpeechManager_1a9e0d24a7b396f00dbb1dee267450d3e9" kind="slot"><name>processRecognitionResult</name></member>
+    <member refid="classSpeechManager_1ad48e68cab4316e371cc56ca75150897d" kind="function"><name>hypIsValid</name></member>
+    <member refid="classSpeechManager_1a13a4749dbb01af8d5faf9e181b11c56e" kind="function"><name>freeHeap</name></member>
+  </compound>
+  <compound refid="classTicTacToeGame" kind="class"><name>TicTacToeGame</name>
+    <member refid="classTicTacToeGame_1ab64b2821a1025135891b4610b8454031" kind="variable"><name>ui</name></member>
+    <member refid="classTicTacToeGame_1a999d4a3df39eb26a65b65d88afca6f09" kind="variable"><name>waiter</name></member>
+    <member refid="classTicTacToeGame_1acab186bab68d7cf8a2c6f4ce87e6de13" kind="function"><name>TicTacToeGame</name></member>
+    <member refid="classTicTacToeGame_1a6df8896115fc708fa4dd12bc6c04e34a" kind="function"><name>updateCell</name></member>
+    <member refid="classTicTacToeGame_1a9dd5dc95d4e7edf631cdd4a8d77c4e12" kind="function"><name>declareGameState</name></member>
+    <member refid="classTicTacToeGame_1a9dd8af6820a6a994aeaf8ba6bee6fc89" kind="function"><name>buildCellButtons</name></member>
+    <member refid="classTicTacToeGame_1a8a891d7dcf57178c79f325a92751f44c" kind="function"><name>reset</name></member>
+    <member refid="classTicTacToeGame_1af32116d620dacc2f335eeb9d919bde05" kind="function"><name>updateConnectionStatus</name></member>
+    <member refid="classTicTacToeGame_1a5bc188ae6a5806246edc175844725518" kind="function"><name>updateRecordingStatus</name></member>
+    <member refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" kind="function"><name>updateWaitingStatus</name></member>
+    <member refid="classTicTacToeGame_1a1c9c0235d321bee6cbe121a14c946434" kind="function"><name>setConnections</name></member>
+    <member refid="classTicTacToeGame_1a0b8fee976515895d15eb59c282b057d1" kind="function"><name>getPlayerText</name></member>
+    <member refid="classTicTacToeGame_1ac18fe593bff035ce81a7f5e97727870a" kind="function"><name>getPlayerStyleSheet</name></member>
+    <member refid="classTicTacToeGame_1af4349fa57bc46d6e3030ff2482ea57c9" kind="function"><name>getBoardFinalStateText</name></member>
+    <member refid="classTicTacToeGame_1a472855efbebb032e29b3c5addafa6ca2" kind="function"><name>setLedStyle</name></member>
+    <member refid="classTicTacToeGame_1ad0072c616d4d9284ca69245a635b8303" kind="signal"><name>newGame</name></member>
+    <member refid="classTicTacToeGame_1ac1bea86656497f38aa87436e5779b000" kind="signal"><name>goBack</name></member>
+  </compound>
+  <compound refid="classTitleScreen" kind="class"><name>TitleScreen</name>
+    <member refid="classTitleScreen_1a7a9d7dc7526d061a36a27a287a36ce6d" kind="variable"><name>ui</name></member>
+    <member refid="classTitleScreen_1a2ed43c9eb5cbc9136fcc726b8cb31fdb" kind="variable"><name>options_</name></member>
+    <member refid="classTitleScreen_1ab2bd7b4fbf49e5fc48d02b7d32e3581f" kind="function"><name>TitleScreen</name></member>
+    <member refid="classTitleScreen_1a72a76e4ff3f03dfc11538ae0de2156b5" kind="function"><name>setConnections</name></member>
+    <member refid="classTitleScreen_1a06e835ca83c6ead23fa0f24833ec76b9" kind="function"><name>closeEvent</name></member>
+    <member refid="classTitleScreen_1af028098c1b235b3da76941c83776de20" kind="slot"><name>updateSinglePlayer</name></member>
+    <member refid="classTitleScreen_1a65a292091aba9a84cf518af2d395f2b0" kind="slot"><name>updateTwoPlayers</name></member>
+    <member refid="classTitleScreen_1a2cb34f420ea007de5bec91a91b6f2abe" kind="slot"><name>updateAIstartsGame</name></member>
+    <member refid="classTitleScreen_1a60d1e875593a02a6ee01508235680a47" kind="slot"><name>updateMiniMaxDepth</name></member>
+    <member refid="classTitleScreen_1ac55c2f2485f58d3b7b389e7414a358d6" kind="slot"><name>startGame</name></member>
+    <member refid="classTitleScreen_1a8d6e439797b80238c95602359ba029bd" kind="signal"><name>exited</name></member>
+  </compound>
+  <compound refid="classTTTController" kind="class"><name>TTTController</name>
+    <member refid="classTTTController_1adc04ff1397e03c02603972eb9674ebba" kind="variable"><name>view_</name></member>
+    <member refid="classTTTController_1aad7647092c2b5c9980bbe74aee4e4892" kind="variable"><name>board_</name></member>
+    <member refid="classTTTController_1acc38c6351607ee19a1dfc313b80da9a2" kind="variable"><name>cells_</name></member>
+    <member refid="classTTTController_1aade7f92b4b06dbf7e17dc5a3772c0aef" kind="variable"><name>options_</name></member>
+    <member refid="classTTTController_1afc92e84ff160da3b8a7f9e50a7d9e921" kind="variable"><name>currentPlayer_</name></member>
+    <member refid="classTTTController_1a7f80ad5a77e4559677703a1d6434086f" kind="variable"><name>playerX_</name></member>
+    <member refid="classTTTController_1aded0bea63f3afa2db7d6af47239ecdb7" kind="variable"><name>playerO_</name></member>
+    <member refid="classTTTController_1afe63de0c7211f352c3ccc3a8d542b42a" kind="variable"><name>network_</name></member>
+    <member refid="classTTTController_1a8375926f879380ce4fcca19e7c8a9ca4" kind="function"><name>setConnections</name></member>
+    <member refid="classTTTController_1a14db27ac7fab7fa75f993b1efb282b15" kind="function"><name>reset</name></member>
+    <member refid="classTTTController_1a2b17b7aa11412f978e257afb2aebab5b" kind="function"><name>updateGameState</name></member>
+    <member refid="classTTTController_1a0d1a0122a2ec371163fb5d9d13c928f5" kind="function"><name>switchPlayer</name></member>
+    <member refid="classTTTController_1ab8fd0d485df345aefed502a00082c828" kind="function"><name>TTTController</name></member>
+    <member refid="classTTTController_1a1926fc5ac8a6cac2a75de663157d0023" kind="function"><name>startGame</name></member>
+    <member refid="classTTTController_1a6293931772f0ec9eea531c8a1fb1e050" kind="function"><name>getView</name></member>
+    <member refid="classTTTController_1ab333753c357cea286bba659c2d4ce163" kind="signal"><name>sendMessage</name></member>
+    <member refid="classTTTController_1ad8f198950047a82a4a6d50d65c685a4f" kind="signal"><name>playTurn</name></member>
+    <member refid="classTTTController_1a48889524dfe5f7215cafed10c69812c9" kind="slot"><name>updateGame</name></member>
+    <member refid="classTTTController_1a77aced4f0f195b1516f6721a35a9b8ea" kind="slot"><name>onNetworkMessageReceived</name></member>
+  </compound>
+  <compound refid="structTTTOptions" kind="struct"><name>TTTOptions</name>
+    <member refid="structTTTOptions_1a018fe6935d21dbcf3db30a4a7b3abed0" kind="variable"><name>boardSize</name></member>
+    <member refid="structTTTOptions_1a086422e4da26dd24bc1166172a9237af" kind="variable"><name>miniMaxDepth</name></member>
+    <member refid="structTTTOptions_1a415a2038b9a5bf87d0a8aa41ce52c8aa" kind="variable"><name>AIopponent</name></member>
+    <member refid="structTTTOptions_1a1d0e61b132d2b32ab27d6e345aac0697" kind="variable"><name>AIstarts</name></member>
+  </compound>
+  <compound refid="classWaitingSpinnerWidget" kind="class"><name>WaitingSpinnerWidget</name>
+    <member refid="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" kind="variable"><name>_color</name></member>
+    <member refid="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" kind="variable"><name>_roundness</name></member>
+    <member refid="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" kind="variable"><name>_minimumTrailOpacity</name></member>
+    <member refid="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" kind="variable"><name>_trailFadePercentage</name></member>
+    <member refid="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" kind="variable"><name>_revolutionsPerSecond</name></member>
+    <member refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" kind="variable"><name>_numberOfLines</name></member>
+    <member refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" kind="variable"><name>_lineLength</name></member>
+    <member refid="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" kind="variable"><name>_lineWidth</name></member>
+    <member refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" kind="variable"><name>_innerRadius</name></member>
+    <member refid="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" kind="variable"><name>_timer</name></member>
+    <member refid="classWaitingSpinnerWidget_1ae9df7d573477f907da5da0b0518d300a" kind="variable"><name>_centerOnParent</name></member>
+    <member refid="classWaitingSpinnerWidget_1af2e707cbf375a3b5626980854e7423f2" kind="variable"><name>_disableParentWhenSpinning</name></member>
+    <member refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" kind="variable"><name>_currentCounter</name></member>
+    <member refid="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" kind="variable"><name>_isSpinning</name></member>
+    <member refid="classWaitingSpinnerWidget_1a5207a447314b9b3505177fec483f5608" kind="function"><name>WaitingSpinnerWidget</name></member>
+    <member refid="classWaitingSpinnerWidget_1a288840f2b5f8eca150fde75b0244c0ab" kind="function"><name>WaitingSpinnerWidget</name></member>
+    <member refid="classWaitingSpinnerWidget_1a5bc33ab179119f510d556c214fe7ac9b" kind="function"><name>setColor</name></member>
+    <member refid="classWaitingSpinnerWidget_1a894f40b4623f9e7754c48e4478c23307" kind="function"><name>setRoundness</name></member>
+    <member refid="classWaitingSpinnerWidget_1ad4ad8fab83b1a60cf1dff78d6ad716d7" kind="function"><name>setMinimumTrailOpacity</name></member>
+    <member refid="classWaitingSpinnerWidget_1af9ec791036d62a78b0f557346d1c0262" kind="function"><name>setTrailFadePercentage</name></member>
+    <member refid="classWaitingSpinnerWidget_1addb2884587497961d78e24c50a2f1aba" kind="function"><name>setRevolutionsPerSecond</name></member>
+    <member refid="classWaitingSpinnerWidget_1a29945c03eaf051081ea21f22dca6e97a" kind="function"><name>setNumberOfLines</name></member>
+    <member refid="classWaitingSpinnerWidget_1a797995d006da2e96b72daa959ddd274e" kind="function"><name>setLineLength</name></member>
+    <member refid="classWaitingSpinnerWidget_1a987a9c7234f83ca2665dd05f8d039e64" kind="function"><name>setLineWidth</name></member>
+    <member refid="classWaitingSpinnerWidget_1a4adc650895478217a5f28c72a9df1e53" kind="function"><name>setInnerRadius</name></member>
+    <member refid="classWaitingSpinnerWidget_1a25b9639b865d15610a499aaced705afe" kind="function"><name>setText</name></member>
+    <member refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" kind="function"><name>color</name></member>
+    <member refid="classWaitingSpinnerWidget_1a2ceb91dfdafcd41b99f04aa2b4b81786" kind="function"><name>roundness</name></member>
+    <member refid="classWaitingSpinnerWidget_1a8a9ed21ff17ead12fcbf26b163940dbe" kind="function"><name>minimumTrailOpacity</name></member>
+    <member refid="classWaitingSpinnerWidget_1aa0a76a4ea0666f843b8a4cf2cb5a7491" kind="function"><name>trailFadePercentage</name></member>
+    <member refid="classWaitingSpinnerWidget_1a54f72cfcb508e8d4bea313891d87b766" kind="function"><name>revolutionsPersSecond</name></member>
+    <member refid="classWaitingSpinnerWidget_1af6a17bce3bc7081c1e0297e6249576e0" kind="function"><name>numberOfLines</name></member>
+    <member refid="classWaitingSpinnerWidget_1aa716528e1094789337adc5d291c69747" kind="function"><name>lineLength</name></member>
+    <member refid="classWaitingSpinnerWidget_1a6c42700d650379cffd704199c63c4f28" kind="function"><name>lineWidth</name></member>
+    <member refid="classWaitingSpinnerWidget_1a9db984232c785de31390485c30d7a596" kind="function"><name>innerRadius</name></member>
+    <member refid="classWaitingSpinnerWidget_1ab02d5a79b1794c55b58b3cd417075a5a" kind="function"><name>isSpinning</name></member>
+    <member refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" kind="slot"><name>start</name></member>
+    <member refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" kind="slot"><name>stop</name></member>
+    <member refid="classWaitingSpinnerWidget_1aacb453453fd98625eb38e021de72070f" kind="slot"><name>rotate</name></member>
+    <member refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" kind="function"><name>paintEvent</name></member>
+    <member refid="classWaitingSpinnerWidget_1a144cdce01e10daeefb91846b7d7328a5" kind="function"><name>lineCountDistanceFromPrimary</name></member>
+    <member refid="classWaitingSpinnerWidget_1ab8adb44bc0a3eb32bfe9d7b5b1a83e4c" kind="function"><name>currentLineColor</name></member>
+    <member refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" kind="function"><name>initialize</name></member>
+    <member refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" kind="function"><name>updateSize</name></member>
+    <member refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" kind="function"><name>updateTimer</name></member>
+    <member refid="classWaitingSpinnerWidget_1a7ac6a1feaec54bd2f54c7110a179f46f" kind="function"><name>updatePosition</name></member>
+    <member refid="classWaitingSpinnerWidget_1ac61cef28a4710c6d2a0ea3e8d0bca49b" kind="function"><name>WaitingSpinnerWidget</name></member>
+    <member refid="classWaitingSpinnerWidget_1a82a516c36d956b5cdeaca95bac6162ac" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="namespacedefaults" kind="namespace"><name>defaults</name>
+    <member refid="namespacedefaults_1a543ba1bdceef75ed7ebc4160be54bfcb" kind="variable"><name>INVALID_CELL</name></member>
+    <member refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" kind="variable"><name>DEFAULT_BOARD_SIZE</name></member>
+    <member refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" kind="variable"><name>DEFAULT_MINIMAX_DEPTH</name></member>
+    <member refid="namespacedefaults_1a87616ad23782d44bc9f33455a6889e66" kind="variable"><name>GUI_CELL_ROW_SPAN</name></member>
+    <member refid="namespacedefaults_1aca5beb5b61bbee2b62591514da336e9a" kind="variable"><name>GUI_CELL_COLUMN_SPAN</name></member>
+    <member refid="namespacedefaults_1a2cdb92ca01789057aafbb7c70c347015" kind="variable"><name>X_COLOR</name></member>
+    <member refid="namespacedefaults_1a6dba498f47aaf9fb6f733e50193c5a41" kind="variable"><name>O_COLOR</name></member>
+    <member refid="namespacedefaults_1ad0d694b17b3da7d45ff3197fc1b822a0" kind="variable"><name>DEFAULT_COLOR</name></member>
+  </compound>
+  <compound refid="AIAgent_8puml" kind="file"><name>AIAgent.puml</name>
+  </compound>
+  <compound refid="Board_8puml" kind="file"><name>Board.puml</name>
+  </compound>
+  <compound refid="ConfigManager_8puml" kind="file"><name>ConfigManager.puml</name>
+  </compound>
+  <compound refid="HumanPlayer_8puml" kind="file"><name>HumanPlayer.puml</name>
+  </compound>
+  <compound refid="MiniMaxAgent_8puml" kind="file"><name>MiniMaxAgent.puml</name>
+  </compound>
+  <compound refid="NetworkManager_8puml" kind="file"><name>NetworkManager.puml</name>
+  </compound>
+  <compound refid="Player_8puml" kind="file"><name>Player.puml</name>
+  </compound>
+  <compound refid="SpeechManager_8puml" kind="file"><name>SpeechManager.puml</name>
+  </compound>
+  <compound refid="TicTacToeGame_8puml" kind="file"><name>TicTacToeGame.puml</name>
+  </compound>
+  <compound refid="TitleScreen_8puml" kind="file"><name>TitleScreen.puml</name>
+  </compound>
+  <compound refid="TTTCommonTypes_8puml" kind="file"><name>TTTCommonTypes.puml</name>
+  </compound>
+  <compound refid="TTTController_8puml" kind="file"><name>TTTController.puml</name>
+  </compound>
+  <compound refid="WaitingSpinnerWidget_8puml" kind="file"><name>WaitingSpinnerWidget.puml</name>
+  </compound>
+  <compound refid="AIAgent_8h" kind="file"><name>AIAgent.h</name>
+  </compound>
+  <compound refid="HumanPlayer_8h" kind="file"><name>HumanPlayer.h</name>
+  </compound>
+  <compound refid="MiniMaxAgent_8h" kind="file"><name>MiniMaxAgent.h</name>
+  </compound>
+  <compound refid="Player_8h" kind="file"><name>Player.h</name>
+  </compound>
+  <compound refid="ConfigManager_8h" kind="file"><name>ConfigManager.h</name>
+  </compound>
+  <compound refid="TTTController_8h" kind="file"><name>TTTController.h</name>
+  </compound>
+  <compound refid="Board_8h" kind="file"><name>Board.h</name>
+  </compound>
+  <compound refid="NetworkManager_8h" kind="file"><name>NetworkManager.h</name>
+  </compound>
+  <compound refid="SpeechManager_8h" kind="file"><name>SpeechManager.h</name>
+  </compound>
+  <compound refid="TTTCommonTypes_8h" kind="file"><name>TTTCommonTypes.h</name>
+    <member refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kind="enum"><name>BoardMarks</name></member>
+    <member refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kind="enumvalue"><name>Empty</name></member>
+    <member refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kind="enumvalue"><name>X</name></member>
+    <member refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kind="enumvalue"><name>O</name></member>
+    <member refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kind="enum"><name>BoardState</name></member>
+    <member refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847" kind="enumvalue"><name>NoWinner</name></member>
+    <member refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed" kind="enumvalue"><name>XWins</name></member>
+    <member refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97" kind="enumvalue"><name>OWins</name></member>
+    <member refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b" kind="enumvalue"><name>Tie</name></member>
+  </compound>
+  <compound refid="TicTacToeGame_8h" kind="file"><name>TicTacToeGame.h</name>
+  </compound>
+  <compound refid="TitleScreen_8h" kind="file"><name>TitleScreen.h</name>
+  </compound>
+  <compound refid="waitingspinnerwidget_8h" kind="file"><name>waitingspinnerwidget.h</name>
+  </compound>
+  <compound refid="HumanPlayer_8cpp" kind="file"><name>HumanPlayer.cpp</name>
+  </compound>
+  <compound refid="MiniMaxAgent_8cpp" kind="file"><name>MiniMaxAgent.cpp</name>
+  </compound>
+  <compound refid="Player_8cpp" kind="file"><name>Player.cpp</name>
+  </compound>
+  <compound refid="ConfigManager_8cpp" kind="file"><name>ConfigManager.cpp</name>
+  </compound>
+  <compound refid="TTTController_8cpp" kind="file"><name>TTTController.cpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Board_8cpp" kind="file"><name>Board.cpp</name>
+  </compound>
+  <compound refid="NetworkManager_8cpp" kind="file"><name>NetworkManager.cpp</name>
+  </compound>
+  <compound refid="SpeechManager_8cpp" kind="file"><name>SpeechManager.cpp</name>
+  </compound>
+  <compound refid="TicTacToeGame_8cpp" kind="file"><name>TicTacToeGame.cpp</name>
+  </compound>
+  <compound refid="TitleScreen_8cpp" kind="file"><name>TitleScreen.cpp</name>
+  </compound>
+  <compound refid="waitingspinnerwidget_8cpp" kind="file"><name>waitingspinnerwidget.cpp</name>
+  </compound>
+  <compound refid="dir_721ce8f54eb62e787f640d6027617add" kind="dir"><name>include/AI</name>
+  </compound>
+  <compound refid="dir_14e07faf3d815f1aca245c7d62887211" kind="dir"><name>src/AI</name>
+  </compound>
+  <compound refid="dir_4c66d8320edae8ac4eb532c864452e83" kind="dir"><name>include/Config</name>
+  </compound>
+  <compound refid="dir_55be27304aee4fac13a1eb8fc08f58b6" kind="dir"><name>src/Config</name>
+  </compound>
+  <compound refid="dir_c02aaf12f699d5e777e90918b63404c1" kind="dir"><name>include/Controller</name>
+  </compound>
+  <compound refid="dir_b3b6f0ba51cfe0acc4894d1f872bef0a" kind="dir"><name>src/Controller</name>
+  </compound>
+  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>docs</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_a66f277f0ad9d33996bc14e382b252ae" kind="dir"><name>include/Model</name>
+  </compound>
+  <compound refid="dir_32e188284d239da8bb14ec1dabb0c35f" kind="dir"><name>src/Model</name>
+  </compound>
+  <compound refid="dir_1553e7a2de22f123df73839d1e033b6d" kind="dir"><name>include/Network</name>
+  </compound>
+  <compound refid="dir_0c0333544ec44c57ec7d33d873fe36a2" kind="dir"><name>src/Network</name>
+  </compound>
+  <compound refid="dir_2e83c74e257189dd0320a59549352bfc" kind="dir"><name>docs/plantuml</name>
+  </compound>
+  <compound refid="dir_8d56964d40e6de0293ab80987f32bc82" kind="dir"><name>include/Speech</name>
+  </compound>
+  <compound refid="dir_63c0b1a8cbed33fc79c22cc2866dd601" kind="dir"><name>src/Speech</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_4bd43993f2082ffe61b96e0db9f34ef1" kind="dir"><name>include/View</name>
+  </compound>
+  <compound refid="dir_7784d12364ef0ec21cd188ca9cb3a89c" kind="dir"><name>src/View</name>
+  </compound>
+</doxygenindex>

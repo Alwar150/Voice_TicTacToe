@@ -1,0 +1,418 @@
+\doxysection{TTTController Class Reference}
+\hypertarget{classTTTController}{}\label{classTTTController}\index{TTTController@{TTTController}}
+
+
+The \doxylink{classTTTController}{TTTController} class acts as the controller (C in MVC) for a Tic-\/\+Tac-\/\+Toe game.  
+
+
+
+
+{\ttfamily \#include $<$TTTController.\+h$>$}
+
+
+
+Inheritance diagram for TTTController\+:
+% FIG 0
+
+
+Collaboration diagram for TTTController\+:
+% FIG 1
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTTTController_a48889524dfe5f7215cafed10c69812c9}{update\+Game}} (\mbox{\hyperlink{structCell}{Cell}} \&cell)
+\begin{DoxyCompactList}\small\item\em Slot invoked when a cell has been clicked by a human player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTTTController_ab333753c357cea286bba659c2d4ce163}{send\+Message}} (const QString \&msg)
+\begin{DoxyCompactList}\small\item\em Signal emitted to send a message through the network (if the mode is multiplayer). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTTTController_ad8f198950047a82a4a6d50d65c685a4f}{play\+Turn}} ()
+\begin{DoxyCompactList}\small\item\em Signal emitted to indicate to players to start their turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController}} (const \mbox{\hyperlink{structTTTOptions}{TTTOptions}} \&options, QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor of the game controller. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTTTController_a1926fc5ac8a6cac2a75de663157d0023}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Starts the graphical interface execution and the game. \end{DoxyCompactList}\item 
+QWidget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classTTTController_a6293931772f0ec9eea531c8a1fb1e050}{get\+View}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the QWidget representing the game view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State}} (\mbox{\hyperlink{structCell}{Cell}} \&cell)
+\begin{DoxyCompactList}\small\item\em Updates the game state after a valid move. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTTTController_a0d1a0122a2ec371163fb5d9d13c928f5}{switch\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Switches the current player marker (from X to O or from O to X). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTicTacToeGame}{Tic\+Tac\+Toe\+Game}} \mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The view (View) of the Tic-\/\+Tac-\/\+Toe game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoard}{Board}} \mbox{\hyperlink{classTTTController_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The model (Model) representing the underlying board state. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{structCell}{Cell}} $>$ \mbox{\hyperlink{classTTTController_acc38c6351607ee19a1dfc313b80da9a2}{cells\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Collection of references to the visual elements (cell buttons) of the view. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structTTTOptions}{TTTOptions}} \& \mbox{\hyperlink{classTTTController_aade7f92b4b06dbf7e17dc5a3772c0aef}{options\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Collection of values and flags that control the game mode and options. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \mbox{\hyperlink{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The marker (Board\+Marks) of the player whose turn it is to play. \end{DoxyCompactList}\item 
+unique\+\_\+ptr$<$ \mbox{\hyperlink{classPlayer}{Player}} $>$ \mbox{\hyperlink{classTTTController_a7f80ad5a77e4559677703a1d6434086f}{player\+X\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Unique pointer to the \doxylink{classPlayer}{Player} object using the \doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{Board\+Marks\+::X} marker. \end{DoxyCompactList}\item 
+unique\+\_\+ptr$<$ \mbox{\hyperlink{classPlayer}{Player}} $>$ \mbox{\hyperlink{classTTTController_aded0bea63f3afa2db7d6af47239ecdb7}{player\+O\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Unique pointer to the \doxylink{classPlayer}{Player} object using the \doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{Board\+Marks\+::O} marker. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNetworkManager}{Network\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classTTTController_afe63de0c7211f352c3ccc3a8d542b42a}{network\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to the \doxylink{classNetworkManager}{Network\+Manager} object for network communication purposes (multiplayer). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{on\+Network\+Message\+Received}} (const QString \&msg)
+\begin{DoxyCompactList}\small\item\em Slot invoked when receiving a message from the \doxylink{classNetworkManager}{Network\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em Configures signal and slot connections between the view (GUI) and the controller. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets all internal game components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classTTTController}{TTTController} class acts as the controller (C in MVC) for a Tic-\/\+Tac-\/\+Toe game. 
+
+\doxylink{classTTTController}{TTTController} manages the interaction between the user interface (the View, \doxylink{classTicTacToeGame}{Tic\+Tac\+Toe\+Game}), the game state (the Model, \doxylink{classBoard}{Board}) and the game logic, including turn management, AI agents (\doxylink{classMiniMaxAgent}{Mini\+Max\+Agent}), human players and network communication (\doxylink{classNetworkManager}{Network\+Manager}). It is responsible for receiving game options and orchestrating the game flow. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTTTController_ab8fd0d485df345aefed502a00082c828}\label{classTTTController_ab8fd0d485df345aefed502a00082c828} 
+\index{TTTController@{TTTController}!TTTController@{TTTController}}
+\index{TTTController@{TTTController}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{TTTController()}{TTTController()}}
+{\footnotesize\ttfamily TTTController\+::\+TTTController (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structTTTOptions}{TTTOptions}} \&}]{options,  }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of the game controller. 
+
+Initializes the model, view, players (\doxylink{classHumanPlayer}{Human\+Player}, \doxylink{classMiniMaxAgent}{Mini\+Max\+Agent}) and establishes the initial connections.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & The collection of values and flags that control the game. \\
+\hline
+{\em parent} & Pointer to the parent QObject that owns this instance. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{structTTTOptions_a415a2038b9a5bf87d0a8aa41ce52c8aa}{TTTOptions\+::\+AIopponent}}, \mbox{\hyperlink{structTTTOptions_a1d0e61b132d2b32ab27d6e345aac0697}{TTTOptions\+::\+AIstarts}}, \mbox{\hyperlink{classTTTController_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{structTTTOptions_a018fe6935d21dbcf3db30a4a7b3abed0}{TTTOptions\+::board\+Size}}, \mbox{\hyperlink{classTicTacToeGame_a9dd8af6820a6a994aeaf8ba6bee6fc89}{Tic\+Tac\+Toe\+Game\+::build\+Cell\+Buttons()}}, \mbox{\hyperlink{classTTTController_acc38c6351607ee19a1dfc313b80da9a2}{cells\+\_\+}}, \mbox{\hyperlink{structTTTOptions_a086422e4da26dd24bc1166172a9237af}{TTTOptions\+::mini\+Max\+Depth}}, \mbox{\hyperlink{classTTTController_afe63de0c7211f352c3ccc3a8d542b42a}{network\+\_\+}}, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, \mbox{\hyperlink{classTTTController_aade7f92b4b06dbf7e17dc5a3772c0aef}{options\+\_\+}}, \mbox{\hyperlink{classTTTController_aded0bea63f3afa2db7d6af47239ecdb7}{player\+O\+\_\+}}, \mbox{\hyperlink{classTTTController_a7f80ad5a77e4559677703a1d6434086f}{player\+X\+\_\+}}, \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, \mbox{\hyperlink{classHumanPlayer_a22dec6c1020171eae458f479c6334792}{Human\+Player\+::start\+Listening()}}, \mbox{\hyperlink{classHumanPlayer_a45a91368ca76a18df8f838297810f4f6}{Human\+Player\+::stop\+Listening()}}, \mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}, and \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTTTController_a6293931772f0ec9eea531c8a1fb1e050}\label{classTTTController_a6293931772f0ec9eea531c8a1fb1e050} 
+\index{TTTController@{TTTController}!getView@{getView}}
+\index{getView@{getView}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{getView()}{getView()}}
+{\footnotesize\ttfamily QWidget \texorpdfstring{$\ast$}{*} TTTController\+::get\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a pointer to the QWidget representing the game view. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the view\textquotesingle{}s QWidget object. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}\label{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea} 
+\index{TTTController@{TTTController}!onNetworkMessageReceived@{onNetworkMessageReceived}}
+\index{onNetworkMessageReceived@{onNetworkMessageReceived}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{onNetworkMessageReceived}{onNetworkMessageReceived}}
+{\footnotesize\ttfamily void TTTController\+::on\+Network\+Message\+Received (\begin{DoxyParamCaption}\item[{const QString \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Slot invoked when receiving a message from the \doxylink{classNetworkManager}{Network\+Manager}. 
+
+Processes the received message (typically a move from a remote player) and updates the game state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The text string received through the network. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classTTTController_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{classBoard_a1b7486c5df3db7e5a1c8ed097492527f}{Board\+::evaluate\+Board()}}, \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}, \mbox{\hyperlink{classTTTController_aded0bea63f3afa2db7d6af47239ecdb7}{player\+O\+\_\+}}, \mbox{\hyperlink{classTTTController_a7f80ad5a77e4559677703a1d6434086f}{player\+X\+\_\+}}, \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{classTTTController_a0d1a0122a2ec371163fb5d9d13c928f5}{switch\+Player()}}, and \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}.
+
+\Hypertarget{classTTTController_ad8f198950047a82a4a6d50d65c685a4f}\label{classTTTController_ad8f198950047a82a4a6d50d65c685a4f} 
+\index{TTTController@{TTTController}!playTurn@{playTurn}}
+\index{playTurn@{playTurn}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{playTurn}{playTurn}}
+{\footnotesize\ttfamily void TTTController\+::play\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted to indicate to players to start their turn. 
+
+This signal can be connected to the {\ttfamily play()} method of players to start the move logic (e.\+g., wait for human click or calculate AI move). \Hypertarget{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}\label{classTTTController_a14db27ac7fab7fa75f993b1efb282b15} 
+\index{TTTController@{TTTController}!reset@{reset}}
+\index{reset@{reset}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void TTTController\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resets all internal game components. 
+
+Resets the model (\doxylink{classBoard}{Board}), the view (\doxylink{classTicTacToeGame}{Tic\+Tac\+Toe\+Game}) and prepares the players for a new game. If the AI agent should start, it makes the first move. 
+
+References \mbox{\hyperlink{classTTTController_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{classTTTController_acc38c6351607ee19a1dfc313b80da9a2}{cells\+\_\+}}, \mbox{\hyperlink{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{classTTTController_a7f80ad5a77e4559677703a1d6434086f}{player\+X\+\_\+}}, \mbox{\hyperlink{classBoard_aaef819a8d1a10c35d9f802195802236e}{Board\+::reset()}}, \mbox{\hyperlink{classTicTacToeGame_a8a891d7dcf57178c79f325a92751f44c}{Tic\+Tac\+Toe\+Game\+::reset()}}, \mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}, and \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{on\+Network\+Message\+Received()}}, \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, and \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{classTTTController_ab333753c357cea286bba659c2d4ce163}\label{classTTTController_ab333753c357cea286bba659c2d4ce163} 
+\index{TTTController@{TTTController}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{sendMessage}{sendMessage}}
+{\footnotesize\ttfamily void TTTController\+::send\+Message (\begin{DoxyParamCaption}\item[{const QString \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted to send a message through the network (if the mode is multiplayer). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message to send (typically a representation of the move). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}\label{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4} 
+\index{TTTController@{TTTController}!setConnections@{setConnections}}
+\index{setConnections@{setConnections}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{setConnections()}{setConnections()}}
+{\footnotesize\ttfamily void TTTController\+::set\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Configures signal and slot connections between the view (GUI) and the controller. 
+
+This method establishes the necessary connections to handle GUI events, such as clicks on cells or menu buttons. 
+
+References \mbox{\hyperlink{classNetworkManager_aa2d7233230f2d609c31d9fd064c2f461}{Network\+Manager\+::connected()}}, \mbox{\hyperlink{classNetworkManager_ae5e79e2a2a383d9b63169b38444152cc}{Network\+Manager\+::connect\+To\+Server()}}, \mbox{\hyperlink{classNetworkManager_a3c9d18963e77a155faf338b86927e2e5}{Network\+Manager\+::disconnected()}}, \mbox{\hyperlink{classConfigManager_a8fcb73283ae43f36e70ae09990edb315}{Config\+Manager\+::get\+Int()}}, \mbox{\hyperlink{classConfigManager_ab0a26220dad8b8b9c29e00ac3e06a455}{Config\+Manager\+::get\+Value()}}, \mbox{\hyperlink{classTTTController_a6293931772f0ec9eea531c8a1fb1e050}{get\+View()}}, \mbox{\hyperlink{classConfigManager_ab72b9c36d8c92066d54eabae525da210}{Config\+Manager\+::instance()}}, \mbox{\hyperlink{classNetworkManager_a603d801e6200da430707381ba39241c2}{Network\+Manager\+::message\+Received()}}, \mbox{\hyperlink{classNetworkManager_a8c9f27ead277af0afc322b551a40acb7}{Network\+Manager\+::message\+Sent()}}, \mbox{\hyperlink{classTTTController_afe63de0c7211f352c3ccc3a8d542b42a}{network\+\_\+}}, \mbox{\hyperlink{classTicTacToeGame_ad0072c616d4d9284ca69245a635b8303}{Tic\+Tac\+Toe\+Game\+::new\+Game()}}, \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{on\+Network\+Message\+Received()}}, \mbox{\hyperlink{classPlayer_a53a95aa136684609c19494ac2faefc59}{Player\+::player\+Finished()}}, \mbox{\hyperlink{classTTTController_aded0bea63f3afa2db7d6af47239ecdb7}{player\+O\+\_\+}}, \mbox{\hyperlink{classTTTController_a7f80ad5a77e4559677703a1d6434086f}{player\+X\+\_\+}}, \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, and \mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{classTTTController_a1926fc5ac8a6cac2a75de663157d0023}\label{classTTTController_a1926fc5ac8a6cac2a75de663157d0023} 
+\index{TTTController@{TTTController}!startGame@{startGame}}
+\index{startGame@{startGame}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily void TTTController\+::start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Starts the graphical interface execution and the game. 
+
+Shows the GUI (usually by calling {\ttfamily view\+\_\+.\+exec()} or {\ttfamily view\+\_\+.\+show()}) and begins the game logic. 
+
+References \mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}.
+
+\Hypertarget{classTTTController_a0d1a0122a2ec371163fb5d9d13c928f5}\label{classTTTController_a0d1a0122a2ec371163fb5d9d13c928f5} 
+\index{TTTController@{TTTController}!switchPlayer@{switchPlayer}}
+\index{switchPlayer@{switchPlayer}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{switchPlayer()}{switchPlayer()}}
+{\footnotesize\ttfamily void TTTController\+::switch\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Switches the current player marker (from X to O or from O to X). 
+
+
+
+References \mbox{\hyperlink{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, and \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{on\+Network\+Message\+Received()}}.
+
+\Hypertarget{classTTTController_a48889524dfe5f7215cafed10c69812c9}\label{classTTTController_a48889524dfe5f7215cafed10c69812c9} 
+\index{TTTController@{TTTController}!updateGame@{updateGame}}
+\index{updateGame@{updateGame}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{updateGame}{updateGame}}
+{\footnotesize\ttfamily void TTTController\+::update\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCell}{Cell}} \&}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Slot invoked when a cell has been clicked by a human player. 
+
+Receives the clicked cell and executes the {\ttfamily update\+Game\+State} logic if the move is valid and it\textquotesingle{}s a local player\textquotesingle{}s turn.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & Reference to the clicked cell that the player chooses. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classTTTController_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{structCell_a09e2f07cb87b7ae5898be20927cf28d1}{Cell\+::col}}, \mbox{\hyperlink{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{classTTTController_afe63de0c7211f352c3ccc3a8d542b42a}{network\+\_\+}}, \mbox{\hyperlink{structCell_a85d2a7af6195f5196574790fbc1becfd}{Cell\+::row}}, \mbox{\hyperlink{classNetworkManager_a1733d9420c11080527bb32edaa1bae14}{Network\+Manager\+::send\+Message()}}, \mbox{\hyperlink{classBoard_a109cbc4dc8c6c76d05caba0345eedc17}{Board\+::set\+Player\+Input()}}, \mbox{\hyperlink{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State()}}, and \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+\Hypertarget{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}\label{classTTTController_a2b17b7aa11412f978e257afb2aebab5b} 
+\index{TTTController@{TTTController}!updateGameState@{updateGameState}}
+\index{updateGameState@{updateGameState}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{updateGameState()}{updateGameState()}}
+{\footnotesize\ttfamily void TTTController\+::update\+Game\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCell}{Cell}} \&}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Updates the game state after a valid move. 
+
+Updates the model, refreshes the view, checks victory/tie conditions and switches to the next player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & Reference to the cell that has been selected by the player. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classTTTController_aad7647092c2b5c9980bbe74aee4e4892}{board\+\_\+}}, \mbox{\hyperlink{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921}{current\+Player\+\_\+}}, \mbox{\hyperlink{classTicTacToeGame_a9dd5dc95d4e7edf631cdd4a8d77c4e12}{Tic\+Tac\+Toe\+Game\+::declare\+Game\+State()}}, \mbox{\hyperlink{classBoard_a1b7486c5df3db7e5a1c8ed097492527f}{Board\+::evaluate\+Board()}}, \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847}{No\+Winner}}, \mbox{\hyperlink{classTicTacToeGame_a6df8896115fc708fa4dd12bc6c04e34a}{Tic\+Tac\+Toe\+Game\+::update\+Cell()}}, \mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\+\_\+}}, and \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTTTController_aad7647092c2b5c9980bbe74aee4e4892}\label{classTTTController_aad7647092c2b5c9980bbe74aee4e4892} 
+\index{TTTController@{TTTController}!board\_@{board\_}}
+\index{board\_@{board\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{board\_}{board\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoard}{Board}} TTTController\+::board\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The model (Model) representing the underlying board state. 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{on\+Network\+Message\+Received()}}, \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}, \mbox{\hyperlink{classTTTController_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}, and \mbox{\hyperlink{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State()}}.
+
+\Hypertarget{classTTTController_acc38c6351607ee19a1dfc313b80da9a2}\label{classTTTController_acc38c6351607ee19a1dfc313b80da9a2} 
+\index{TTTController@{TTTController}!cells\_@{cells\_}}
+\index{cells\_@{cells\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{cells\_}{cells\_}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{structCell}{Cell}}$>$ TTTController\+::cells\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Collection of references to the visual elements (cell buttons) of the view. 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, and \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921}\label{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921} 
+\index{TTTController@{TTTController}!currentPlayer\_@{currentPlayer\_}}
+\index{currentPlayer\_@{currentPlayer\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{currentPlayer\_}{currentPlayer\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} TTTController\+::current\+Player\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The marker (Board\+Marks) of the player whose turn it is to play. 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{on\+Network\+Message\+Received()}}, \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{classTTTController_a0d1a0122a2ec371163fb5d9d13c928f5}{switch\+Player()}}, \mbox{\hyperlink{classTTTController_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}, and \mbox{\hyperlink{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State()}}.
+
+\Hypertarget{classTTTController_afe63de0c7211f352c3ccc3a8d542b42a}\label{classTTTController_afe63de0c7211f352c3ccc3a8d542b42a} 
+\index{TTTController@{TTTController}!network\_@{network\_}}
+\index{network\_@{network\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{network\_}{network\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNetworkManager}{Network\+Manager}}\texorpdfstring{$\ast$}{*} TTTController\+::network\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pointer to the \doxylink{classNetworkManager}{Network\+Manager} object for network communication purposes (multiplayer). 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}, and \mbox{\hyperlink{classTTTController_a48889524dfe5f7215cafed10c69812c9}{update\+Game()}}.
+
+\Hypertarget{classTTTController_aade7f92b4b06dbf7e17dc5a3772c0aef}\label{classTTTController_aade7f92b4b06dbf7e17dc5a3772c0aef} 
+\index{TTTController@{TTTController}!options\_@{options\_}}
+\index{options\_@{options\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{options\_}{options\_}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structTTTOptions}{TTTOptions}}\& TTTController\+::options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Collection of values and flags that control the game mode and options. 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{classTTTController_aded0bea63f3afa2db7d6af47239ecdb7}\label{classTTTController_aded0bea63f3afa2db7d6af47239ecdb7} 
+\index{TTTController@{TTTController}!playerO\_@{playerO\_}}
+\index{playerO\_@{playerO\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{playerO\_}{playerO\_}}
+{\footnotesize\ttfamily unique\+\_\+ptr$<$\mbox{\hyperlink{classPlayer}{Player}}$>$ TTTController\+::player\+O\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Unique pointer to the \doxylink{classPlayer}{Player} object using the \doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{Board\+Marks\+::O} marker. 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{on\+Network\+Message\+Received()}}, \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, and \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{classTTTController_a7f80ad5a77e4559677703a1d6434086f}\label{classTTTController_a7f80ad5a77e4559677703a1d6434086f} 
+\index{TTTController@{TTTController}!playerX\_@{playerX\_}}
+\index{playerX\_@{playerX\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{playerX\_}{playerX\_}}
+{\footnotesize\ttfamily unique\+\_\+ptr$<$\mbox{\hyperlink{classPlayer}{Player}}$>$ TTTController\+::player\+X\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Unique pointer to the \doxylink{classPlayer}{Player} object using the \doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{Board\+Marks\+::X} marker. 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{on\+Network\+Message\+Received()}}, \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, and \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}.
+
+\Hypertarget{classTTTController_adc04ff1397e03c02603972eb9674ebba}\label{classTTTController_adc04ff1397e03c02603972eb9674ebba} 
+\index{TTTController@{TTTController}!view\_@{view\_}}
+\index{view\_@{view\_}!TTTController@{TTTController}}
+\doxysubsubsection{\texorpdfstring{view\_}{view\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTicTacToeGame}{Tic\+Tac\+Toe\+Game}} TTTController\+::view\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The view (View) of the Tic-\/\+Tac-\/\+Toe game. 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a6293931772f0ec9eea531c8a1fb1e050}{get\+View()}}, \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset()}}, \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{set\+Connections()}}, \mbox{\hyperlink{classTTTController_a1926fc5ac8a6cac2a75de663157d0023}{start\+Game()}}, \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController()}}, and \mbox{\hyperlink{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}{update\+Game\+State()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Controller/\mbox{\hyperlink{TTTController_8h}{TTTController.\+h}}\item 
+src/\+Controller/\mbox{\hyperlink{TTTController_8cpp}{TTTController.\+cpp}}\end{DoxyCompactItemize}

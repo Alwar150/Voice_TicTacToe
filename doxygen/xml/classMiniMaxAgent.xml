@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMiniMaxAgent" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>MiniMaxAgent</compoundname>
+    <basecompoundref refid="classAIAgent" prot="public" virt="non-virtual">AIAgent</basecompoundref>
+    <includes refid="MiniMaxAgent_8h" local="no">MiniMaxAgent.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMiniMaxAgent_1aa1920de5421331a5a88dd55c727ec6fc" prot="private" static="no" mutable="no">
+        <type>const unsigned short</type>
+        <definition>const unsigned short MiniMaxAgent::depth_</definition>
+        <argsstring></argsstring>
+        <name>depth_</name>
+        <qualifiedname>MiniMaxAgent::depth_</qualifiedname>
+        <briefdescription>
+<para>Maximum search depth of the Minimax algorithm tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the limit of how many future moves the agent will simulate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="55" column="26" bodyfile="include/AI/MiniMaxAgent.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classMiniMaxAgent_1a9fd00e9550a3e78b6ba76c1db80bf78f" compoundref="MiniMaxAgent_8cpp" startline="92" endline="127">play</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classMiniMaxAgent_1a1e7fa70e257c4423ab555e04cb7eaa0a" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr short</type>
+        <definition>constexpr short MiniMaxAgent::AI_WIN_SCORE</definition>
+        <argsstring></argsstring>
+        <name>AI_WIN_SCORE</name>
+        <qualifiedname>MiniMaxAgent::AI_WIN_SCORE</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Score assigned to the final state when the AI wins the game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="70" column="28" bodyfile="include/AI/MiniMaxAgent.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" compoundref="MiniMaxAgent_8cpp" startline="75" endline="90">score</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMiniMaxAgent_1a2cbab0bdd892f994f7e3e13d0f4be53d" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr short</type>
+        <definition>constexpr short MiniMaxAgent::PLAYER_WIN_SCORE</definition>
+        <argsstring></argsstring>
+        <name>PLAYER_WIN_SCORE</name>
+        <qualifiedname>MiniMaxAgent::PLAYER_WIN_SCORE</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para>Score assigned to the final state when the human player wins the game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="75" column="28" bodyfile="include/AI/MiniMaxAgent.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" compoundref="MiniMaxAgent_8cpp" startline="75" endline="90">score</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMiniMaxAgent_1a9ae263accc262d5f9eac741125229f13" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr short</type>
+        <definition>constexpr short MiniMaxAgent::TIE_SCORE</definition>
+        <argsstring></argsstring>
+        <name>TIE_SCORE</name>
+        <qualifiedname>MiniMaxAgent::TIE_SCORE</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Score assigned to the final state when the game ends in a tie. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="80" column="28" bodyfile="include/AI/MiniMaxAgent.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" compoundref="MiniMaxAgent_8cpp" startline="75" endline="90">score</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMiniMaxAgent_1a86fa345e7ac1972127173ebd95d1c963" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MiniMaxAgent::MiniMaxAgent</definition>
+        <argsstring>(const Board &amp;board, BoardMarks AImark, unsigned short depth, QObject *parent=nullptr)</argsstring>
+        <name>MiniMaxAgent</name>
+        <qualifiedname>MiniMaxAgent::MiniMaxAgent</qualifiedname>
+        <param>
+          <type>const <ref refid="classBoard" kindref="compound">Board</ref> &amp;</type>
+          <declname>board</declname>
+        </param>
+        <param>
+          <type><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>AImark</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classMiniMaxAgent" kindref="compound">MiniMaxAgent</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the agent with the board, the marker assigned to the AI, and the maximum depth for the Minimax search.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>board</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constant reference to the game board. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AImark</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The marker (<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">BoardMarks::X</ref> or <ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">BoardMarks::O</ref>) assigned to the AI. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum search depth (cutoff) for the Minimax algorithm. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the parent QObject. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="39" column="14" bodyfile="src/AI/MiniMaxAgent.cpp" bodystart="5" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classMiniMaxAgent_1a9fd00e9550a3e78b6ba76c1db80bf78f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MiniMaxAgent::play</definition>
+        <argsstring>() override</argsstring>
+        <name>play</name>
+        <qualifiedname>MiniMaxAgent::play</qualifiedname>
+        <reimplements refid="classPlayer_1af85db5d05b014bf19d873038c56dc7ed">play</reimplements>
+        <briefdescription>
+<para>Starts the Minimax algorithm to determine and execute the AI&apos;s best move. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is the implementation of the abstract function from the <computeroutput><ref refid="classPlayer" kindref="compound">Player</ref></computeroutput> class. Calculates the best cell and emits the <computeroutput>playerFinished</computeroutput> signal with the index of the chosen cell. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="47" column="10" bodyfile="src/AI/MiniMaxAgent.cpp" bodystart="92" bodyend="127"/>
+        <references refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" compoundref="Board_8cpp" startline="94" endline="97">Board::at</references>
+        <references refid="classPlayer_1a088227ab53747cc4955b0a3859b69a84" compoundref="Player_8h" startline="77">Player::board_</references>
+        <references refid="classMiniMaxAgent_1aa1920de5421331a5a88dd55c727ec6fc" compoundref="MiniMaxAgent_8h" startline="55">depth_</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07">Empty</references>
+        <references refid="classBoard_1a1b7486c5df3db7e5a1c8ed097492527f" compoundref="Board_8cpp" startline="99" endline="174">Board::evaluateBoard</references>
+        <references refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" compoundref="Player_8h" startline="82">Player::mark_</references>
+        <references refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="MiniMaxAgent_8cpp" startline="42" endline="73">minMove</references>
+        <references refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847">NoWinner</references>
+        <references refid="classPlayer_1a53a95aa136684609c19494ac2faefc59">Player::playerFinished</references>
+        <references refid="classBoard_1addcaa486e1293eebcb323fb936353f43" compoundref="Board_8cpp" startline="80" endline="92">Board::resetCell</references>
+        <references refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" compoundref="Board_8cpp" startline="56" endline="78">Board::setPlayerInput</references>
+        <references refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" compoundref="Board_8cpp" startline="186" endline="189">Board::size</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMiniMaxAgent_1adde21208d43b0ff75ecd2c014c217c78" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+        <definition>BoardMarks MiniMaxAgent::playerMark_</definition>
+        <argsstring>() const</argsstring>
+        <name>playerMark_</name>
+        <qualifiedname>MiniMaxAgent::playerMark_</qualifiedname>
+        <briefdescription>
+<para>Returns the human player&apos;s marker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Automatically determines the opponent player&apos;s marker based on the AI&apos;s marker. <simplesect kind="return"><para>The marker (<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">BoardMarks::X</ref> or <ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">BoardMarks::O</ref>) of the human player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="63" column="23" bodyfile="include/AI/MiniMaxAgent.h" bodystart="63" bodyend="65"/>
+        <references refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" compoundref="Player_8h" startline="82">Player::mark_</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e">O</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383">X</references>
+        <referencedby refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="MiniMaxAgent_8cpp" startline="42" endline="73">minMove</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>short</type>
+        <definition>short MiniMaxAgent::maxMove</definition>
+        <argsstring>(Board &amp;board, unsigned short depth, short alpha, short beta) const</argsstring>
+        <name>maxMove</name>
+        <qualifiedname>MiniMaxAgent::maxMove</qualifiedname>
+        <param>
+          <type><ref refid="classBoard" kindref="compound">Board</ref> &amp;</type>
+          <declname>board</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+<para>Maximizer node function (AI&apos;s turn). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Simulates the AI&apos;s turn, choosing the move that maximizes the final score and applying Alpha-Beta pruning.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>board</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the board model (temporarily modified during simulation). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current depth of the search tree. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value guaranteed for the maximizer (AI). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value guaranteed for the minimizer (<ref refid="classPlayer" kindref="compound">Player</ref>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The maximum possible score for the current state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="94" column="11" bodyfile="src/AI/MiniMaxAgent.cpp" bodystart="8" bodyend="40"/>
+        <references refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" compoundref="Board_8cpp" startline="94" endline="97">Board::at</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07">Empty</references>
+        <references refid="classBoard_1a1b7486c5df3db7e5a1c8ed097492527f" compoundref="Board_8cpp" startline="99" endline="174">Board::evaluateBoard</references>
+        <references refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" compoundref="Player_8h" startline="82">Player::mark_</references>
+        <references refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="MiniMaxAgent_8cpp" startline="42" endline="73">minMove</references>
+        <references refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847">NoWinner</references>
+        <references refid="classBoard_1addcaa486e1293eebcb323fb936353f43" compoundref="Board_8cpp" startline="80" endline="92">Board::resetCell</references>
+        <references refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" compoundref="MiniMaxAgent_8cpp" startline="75" endline="90">score</references>
+        <references refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" compoundref="Board_8cpp" startline="56" endline="78">Board::setPlayerInput</references>
+        <references refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" compoundref="Board_8cpp" startline="186" endline="189">Board::size</references>
+        <referencedby refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="MiniMaxAgent_8cpp" startline="42" endline="73">minMove</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>short</type>
+        <definition>short MiniMaxAgent::minMove</definition>
+        <argsstring>(Board &amp;board, unsigned short depth, short alpha, short beta) const</argsstring>
+        <name>minMove</name>
+        <qualifiedname>MiniMaxAgent::minMove</qualifiedname>
+        <param>
+          <type><ref refid="classBoard" kindref="compound">Board</ref> &amp;</type>
+          <declname>board</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+<para>Minimizer node function (human player&apos;s turn). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Simulates the human player&apos;s turn, choosing the move that minimizes the AI&apos;s final score and applying Alpha-Beta pruning.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>board</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the board model (temporarily modified during simulation). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current depth of the search tree. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value guaranteed for the maximizer (AI). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value guaranteed for the minimizer (<ref refid="classPlayer" kindref="compound">Player</ref>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The minimum possible score for the current state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="108" column="11" bodyfile="src/AI/MiniMaxAgent.cpp" bodystart="42" bodyend="73"/>
+        <references refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" compoundref="Board_8cpp" startline="94" endline="97">Board::at</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07">Empty</references>
+        <references refid="classBoard_1a1b7486c5df3db7e5a1c8ed097492527f" compoundref="Board_8cpp" startline="99" endline="174">Board::evaluateBoard</references>
+        <references refid="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" compoundref="MiniMaxAgent_8cpp" startline="8" endline="40">maxMove</references>
+        <references refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a311d8d238b641d33bbf8c4289580e847">NoWinner</references>
+        <references refid="classMiniMaxAgent_1adde21208d43b0ff75ecd2c014c217c78" compoundref="MiniMaxAgent_8h" startline="63" endline="65">playerMark_</references>
+        <references refid="classBoard_1addcaa486e1293eebcb323fb936353f43" compoundref="Board_8cpp" startline="80" endline="92">Board::resetCell</references>
+        <references refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" compoundref="MiniMaxAgent_8cpp" startline="75" endline="90">score</references>
+        <references refid="classBoard_1a109cbc4dc8c6c76d05caba0345eedc17" compoundref="Board_8cpp" startline="56" endline="78">Board::setPlayerInput</references>
+        <references refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" compoundref="Board_8cpp" startline="186" endline="189">Board::size</references>
+        <referencedby refid="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" compoundref="MiniMaxAgent_8cpp" startline="8" endline="40">maxMove</referencedby>
+        <referencedby refid="classMiniMaxAgent_1a9fd00e9550a3e78b6ba76c1db80bf78f" compoundref="MiniMaxAgent_8cpp" startline="92" endline="127">play</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>short</type>
+        <definition>short MiniMaxAgent::score</definition>
+        <argsstring>(const BoardState state) const</argsstring>
+        <name>score</name>
+        <qualifiedname>MiniMaxAgent::score</qualifiedname>
+        <param>
+          <type>const <ref refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222" kindref="member">BoardState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Assigns a score to a final game state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluates the board state by determining if there is a winner, a loser, or a tie.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The final game state (BoardState). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A score based on the game state (AI_WIN_SCORE, PLAYER_WIN_SCORE, TIE_SCORE). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/MiniMaxAgent.h" line="118" column="11" bodyfile="src/AI/MiniMaxAgent.cpp" bodystart="75" bodyend="90"/>
+        <references refid="classMiniMaxAgent_1a1e7fa70e257c4423ab555e04cb7eaa0a" compoundref="MiniMaxAgent_8h" startline="70">AI_WIN_SCORE</references>
+        <references refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" compoundref="Player_8h" startline="82">Player::mark_</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e">O</references>
+        <references refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97">OWins</references>
+        <references refid="classMiniMaxAgent_1a2cbab0bdd892f994f7e3e13d0f4be53d" compoundref="MiniMaxAgent_8h" startline="75">PLAYER_WIN_SCORE</references>
+        <references refid="classMiniMaxAgent_1a9ae263accc262d5f9eac741125229f13" compoundref="MiniMaxAgent_8h" startline="80">TIE_SCORE</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383">X</references>
+        <references refid="TTTCommonTypes_8h_1a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed">XWins</references>
+        <referencedby refid="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" compoundref="MiniMaxAgent_8cpp" startline="8" endline="40">maxMove</referencedby>
+        <referencedby refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" compoundref="MiniMaxAgent_8cpp" startline="42" endline="73">minMove</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classMiniMaxAgent" kindref="compound">MiniMaxAgent</ref> class implements the logic to select the best move using the Minimax algorithm. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Inherits from <ref refid="classAIAgent" kindref="compound">AIAgent</ref> (the base class for AI agents). This agent recursively simulates all possible future moves until reaching a final state or the maximum search depth (<computeroutput>depth_</computeroutput>). Uses <bold>Alpha-Beta pruning</bold> to optimize the search. The algorithm evaluates final states by assigning scores: positive for AI victory, negative for human player victory, and zero for a tie. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AIAgent</label>
+        <link refid="classAIAgent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MiniMaxAgent</label>
+        <link refid="classMiniMaxAgent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Player</label>
+        <link refid="classPlayer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AIAgent</label>
+        <link refid="classAIAgent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Board</label>
+        <link refid="classBoard"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MiniMaxAgent</label>
+        <link refid="classMiniMaxAgent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Player</label>
+        <link refid="classPlayer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="6">
+        <label>vector&lt; vector&lt; BoardMarks &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/AI/MiniMaxAgent.h" line="23" column="1" bodyfile="include/AI/MiniMaxAgent.h" bodystart="24" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classMiniMaxAgent_1a1e7fa70e257c4423ab555e04cb7eaa0a" prot="private" virt="non-virtual"><scope>MiniMaxAgent</scope><name>AI_WIN_SCORE</name></member>
+      <member refid="classAIAgent_1ab455925352ccde362887a32ee1ffd1f6" prot="public" virt="non-virtual"><scope>MiniMaxAgent</scope><name>AIAgent</name></member>
+      <member refid="classPlayer_1a088227ab53747cc4955b0a3859b69a84" prot="protected" virt="non-virtual"><scope>MiniMaxAgent</scope><name>board_</name></member>
+      <member refid="classMiniMaxAgent_1aa1920de5421331a5a88dd55c727ec6fc" prot="private" virt="non-virtual"><scope>MiniMaxAgent</scope><name>depth_</name></member>
+      <member refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" prot="protected" virt="non-virtual"><scope>MiniMaxAgent</scope><name>mark_</name></member>
+      <member refid="classMiniMaxAgent_1a9d99e71c93f92fc3bda35809fa031fd8" prot="private" virt="non-virtual"><scope>MiniMaxAgent</scope><name>maxMove</name></member>
+      <member refid="classMiniMaxAgent_1a86fa345e7ac1972127173ebd95d1c963" prot="public" virt="non-virtual"><scope>MiniMaxAgent</scope><name>MiniMaxAgent</name></member>
+      <member refid="classMiniMaxAgent_1a0385ea9e47150171b03dbdfc5b349136" prot="private" virt="non-virtual"><scope>MiniMaxAgent</scope><name>minMove</name></member>
+      <member refid="classMiniMaxAgent_1a9fd00e9550a3e78b6ba76c1db80bf78f" prot="public" virt="virtual"><scope>MiniMaxAgent</scope><name>play</name></member>
+      <member refid="classPlayer_1a1e6c1c4847747f85b6cadfa11074feef" prot="public" virt="non-virtual"><scope>MiniMaxAgent</scope><name>Player</name></member>
+      <member refid="classMiniMaxAgent_1a2cbab0bdd892f994f7e3e13d0f4be53d" prot="private" virt="non-virtual"><scope>MiniMaxAgent</scope><name>PLAYER_WIN_SCORE</name></member>
+      <member refid="classPlayer_1a53a95aa136684609c19494ac2faefc59" prot="public" virt="non-virtual"><scope>MiniMaxAgent</scope><name>playerFinished</name></member>
+      <member refid="classMiniMaxAgent_1adde21208d43b0ff75ecd2c014c217c78" prot="private" virt="non-virtual"><scope>MiniMaxAgent</scope><name>playerMark_</name></member>
+      <member refid="classMiniMaxAgent_1a1472ae706782c168d8e1965bac90097b" prot="private" virt="non-virtual"><scope>MiniMaxAgent</scope><name>score</name></member>
+      <member refid="classMiniMaxAgent_1a9ae263accc262d5f9eac741125229f13" prot="private" virt="non-virtual"><scope>MiniMaxAgent</scope><name>TIE_SCORE</name></member>
+      <member refid="classAIAgent_1a5614d02341e652bd2df4f3b2fb4d44c3" prot="public" virt="virtual"><scope>MiniMaxAgent</scope><name>~AIAgent</name></member>
+      <member refid="classPlayer_1a8981c201ffb2270c0b6dbd467b627376" prot="public" virt="virtual"><scope>MiniMaxAgent</scope><name>~Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

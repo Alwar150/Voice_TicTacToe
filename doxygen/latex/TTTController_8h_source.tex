@@ -1,0 +1,68 @@
+\doxysection{TTTController.\+h}
+\hypertarget{TTTController_8h_source}{}\label{TTTController_8h_source}\index{include/Controller/TTTController.h@{include/Controller/TTTController.h}}
+\mbox{\hyperlink{TTTController_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TTTCONTROLLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TTTCONTROLLER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MiniMaxAgent_8h}{MiniMaxAgent.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{HumanPlayer_8h}{HumanPlayer.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Board_8h}{Board.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TTTCommonTypes_8h}{TTTCommonTypes.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TicTacToeGame_8h}{TicTacToeGame.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{NetworkManager_8h}{NetworkManager.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QTcpSocket>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <portaudio.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <pocketsphinx.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <signal.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ }std::unique\_ptr;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTTTController}{TTTController}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00039\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{classTicTacToeGame}{TicTacToeGame}}\ \mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\_}};}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classBoard}{Board}}\ \mbox{\hyperlink{classTTTController_aad7647092c2b5c9980bbe74aee4e4892}{board\_}};}
+\DoxyCodeLine{00051\ \ \ \ \ vector<Cell>\ \mbox{\hyperlink{classTTTController_acc38c6351607ee19a1dfc313b80da9a2}{cells\_}};}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structTTTOptions}{TTTOptions}}\&\ \mbox{\hyperlink{classTTTController_aade7f92b4b06dbf7e17dc5a3772c0aef}{options\_}};}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ \mbox{\hyperlink{classTTTController_afc92e84ff160da3b8a7f9e50a7d9e921}{currentPlayer\_}};}
+\DoxyCodeLine{00063\ \ \ \ \ unique\_ptr<Player>\ \mbox{\hyperlink{classTTTController_a7f80ad5a77e4559677703a1d6434086f}{playerX\_}};}
+\DoxyCodeLine{00067\ \ \ \ \ unique\_ptr<Player>\ \mbox{\hyperlink{classTTTController_aded0bea63f3afa2db7d6af47239ecdb7}{playerO\_}};}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{classNetworkManager}{NetworkManager}}*\ \mbox{\hyperlink{classTTTController_afe63de0c7211f352c3ccc3a8d542b42a}{network\_}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{private}:\ \textcolor{comment}{//\ Methods}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{setConnections}}();}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{reset}}();}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{protected}:\ \textcolor{comment}{//\ Methods}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}{updateGameState}}(\mbox{\hyperlink{structCell}{Cell}}\ \&cell);}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_a0d1a0122a2ec371163fb5d9d13c928f5}{switchPlayer}}();}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classTTTController}{TTTController}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structTTTOptions}{TTTOptions}}\ \&options,\ QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_a1926fc5ac8a6cac2a75de663157d0023}{startGame}}();}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00128\ \ \ \ \ QWidget*\ \mbox{\hyperlink{classTTTController_a6293931772f0ec9eea531c8a1fb1e050}{getView}}()\ \{\ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{classTTTController_adc04ff1397e03c02603972eb9674ebba}{view\_}};\ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ signals:}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ NET\ -\/-\/-\/}}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_ab333753c357cea286bba659c2d4ce163}{sendMessage}}(\textcolor{keyword}{const}\ QString\&\ msg);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ Players\ -\/-\/-\/}}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_ad8f198950047a82a4a6d50d65c685a4f}{playTurn}}();}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_a48889524dfe5f7215cafed10c69812c9}{updateGame}}(\mbox{\hyperlink{structCell}{Cell}}\ \&cell);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTTTController_a77aced4f0f195b1516f6721a35a9b8ea}{onNetworkMessageReceived}}(\textcolor{keyword}{const}\ QString\&\ msg);}
+\DoxyCodeLine{00168\ \};}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TTTCONTROLLER\_H}}
+
+\end{DoxyCode}

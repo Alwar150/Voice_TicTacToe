@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_14e07faf3d815f1aca245c7d62887211">src/AI</innerdir>
+    <innerdir refid="dir_55be27304aee4fac13a1eb8fc08f58b6">src/Config</innerdir>
+    <innerdir refid="dir_b3b6f0ba51cfe0acc4894d1f872bef0a">src/Controller</innerdir>
+    <innerdir refid="dir_32e188284d239da8bb14ec1dabb0c35f">src/Model</innerdir>
+    <innerdir refid="dir_0c0333544ec44c57ec7d33d873fe36a2">src/Network</innerdir>
+    <innerdir refid="dir_63c0b1a8cbed33fc79c22cc2866dd601">src/Speech</innerdir>
+    <innerdir refid="dir_7784d12364ef0ec21cd188ca9cb3a89c">src/View</innerdir>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="waitingspinnerwidget_8cpp">waitingspinnerwidget.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

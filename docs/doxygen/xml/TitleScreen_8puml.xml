@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="TitleScreen_8puml" kind="file" language="C++">
+    <compoundname>TitleScreen.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>TitleScreen.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`TitleScreen`<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Generated<sp/>from<sp/>`include/View/TitleScreen.h`<sp/>using<sp/>the<sp/>HumanPlayer.h<sp/>format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>class<sp/>TitleScreen</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-ui:<sp/>std::unique_ptr&lt;Ui::TitleScreen&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-options_:<sp/>TTTOptions</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+TitleScreen(QWidget*<sp/>parent<sp/>=<sp/>nullptr)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateSinglePlayer(bool):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateTwoPlayers(bool):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateAIstartsGame(bool):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateMiniMaxDepth(int):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+startGame():<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>TitleScreen<sp/>..|&gt;<sp/>QMainWindow</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/TitleScreen.puml"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="TTTCommonTypes_8puml" kind="file" language="C++">
+    <compoundname>TTTCommonTypes.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>TTTCommonTypes.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`TTTCommonTypes`<sp/>(structs/enums)<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Generated<sp/>from<sp/>`include/TTTCommonTypes.h`<sp/>using<sp/>the<sp/>HumanPlayer.h<sp/>format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>struct<sp/>Cell</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-cellBtn:<sp/>QPushButton*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-row:<sp/>int</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-col:<sp/>int</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>struct<sp/>TTTOptions</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-boardSize:<sp/>size_t</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-miniMaxDepth:<sp/>unsigned<sp/>short</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-AIopponent:<sp/>bool</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-AIstarts:<sp/>bool</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>enum<sp/>BoardMarks<sp/>{<sp/>Empty,<sp/>X,<sp/>O<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>enum<sp/>BoardState<sp/>{<sp/>NoWinner,<sp/>XWins,<sp/>OWins,<sp/>Tie<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/TTTCommonTypes.puml"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="SpeechManager_8cpp" kind="file" language="C++">
+    <compoundname>SpeechManager.cpp</compoundname>
+    <includes refid="SpeechManager_8h" local="yes">SpeechManager.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>ConfigManager.h</label>
+        <link refid="ConfigManager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SpeechManager.h</label>
+        <link refid="SpeechManager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/Speech/SpeechManager.cpp</label>
+        <link refid="SpeechManager_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QCoreApplication</label>
+      </node>
+      <node id="5">
+        <label>QDebug</label>
+      </node>
+      <node id="14">
+        <label>QDir</label>
+      </node>
+      <node id="7">
+        <label>QFuture</label>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="13">
+        <label>QSettings</label>
+      </node>
+      <node id="4">
+        <label>QString</label>
+      </node>
+      <node id="6">
+        <label>QtConcurrent/QtConcurrentRun</label>
+      </node>
+      <node id="8">
+        <label>cstddef</label>
+      </node>
+      <node id="10">
+        <label>pocketsphinx.h</label>
+      </node>
+      <node id="9">
+        <label>portaudio.h</label>
+      </node>
+      <node id="11">
+        <label>signal.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SpeechManager_8h" kindref="compound">SpeechManager.h</ref>&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="classSpeechManager_1a6d0d1de5b2cb96efbd23cffaefb98c5a" kindref="member">SpeechManager::SpeechManager</ref>(QObject<sp/>*parent)<sp/>:<sp/>QObject(parent),<sp/>stream_(nullptr),<sp/>decoder_(nullptr),<sp/>config_(nullptr),<sp/>ep_(nullptr),<sp/>frame_(nullptr),<sp/>frame_size_(512)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classSpeechManager_1af020ff04f584cedbd3105f299c1a66b0" kindref="member">SpeechManager::speechReadyToProcess</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classSpeechManager_1a9e0d24a7b396f00dbb1dee267450d3e9" kindref="member">SpeechManager::processRecognitionResult</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16" refid="classSpeechManager_1a473b5a5d90f5486c0306278220d8138c" refkind="member"><highlight class="normal"><ref refid="classSpeechManager_1a473b5a5d90f5486c0306278220d8138c" kindref="member">SpeechManager::~SpeechManager</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSpeechManager_1a13a4749dbb01af8d5faf9e181b11c56e" kindref="member">freeHeap</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classSpeechManager_1a94d6a6d8b5aa00b913e751c2620a9e52" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a94d6a6d8b5aa00b913e751c2620a9e52" kindref="member">SpeechManager::configure</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>config<sp/>=<sp/><ref refid="classConfigManager_1ab72b9c36d8c92066d54eabae525da210" kindref="member">ConfigManager::instance</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>basePath<sp/>=<sp/>QDir::currentPath();<sp/></highlight><highlight class="comment">//<sp/>o<sp/>QCoreApplication::applicationDirPath()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>hmmPath<sp/><sp/>=<sp/>QDir(basePath).filePath(config.getValue(</highlight><highlight class="stringliteral">&quot;Speech/hmm&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>lmPath<sp/><sp/><sp/>=<sp/>QDir(basePath).filePath(config.getValue(</highlight><highlight class="stringliteral">&quot;Speech/lm&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>dictPath<sp/>=<sp/>QDir(basePath).filePath(config.getValue(</highlight><highlight class="stringliteral">&quot;Speech/dict&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" kindref="member">config_</ref><sp/>=<sp/>ps_config_init(NULL);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ps_config_set_str(<ref refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" kindref="member">config_</ref>,<sp/></highlight><highlight class="stringliteral">&quot;hmm&quot;</highlight><highlight class="normal">,<sp/>hmmPath.toUtf8());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ps_config_set_str(<ref refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" kindref="member">config_</ref>,<sp/></highlight><highlight class="stringliteral">&quot;lm&quot;</highlight><highlight class="normal">,<sp/>lmPath.toUtf8());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>ps_config_set_str(<ref refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" kindref="member">config_</ref>,<sp/></highlight><highlight class="stringliteral">&quot;dict&quot;</highlight><highlight class="normal">,<sp/>dictPath.toUtf8());</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classSpeechManager_1a13ab24c0b019530b8c35557091fac078" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a13ab24c0b019530b8c35557091fac078" kindref="member">SpeechManager::init</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref><sp/>=<sp/>Pa_Initialize())<sp/>!=<sp/>paNoError)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>initialize<sp/>PortAudio:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pa_GetErrorText(<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" kindref="member">decoder_</ref><sp/>=<sp/>ps_init(<ref refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" kindref="member">config_</ref>))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;PocketSphinx<sp/>decoder<sp/>init<sp/>failed\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref><sp/>=<sp/>ps_endpointer_init(0,<sp/>0.0,<sp/>PS_VAD_LOOSE,<sp/>0,<sp/>0))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;PocketSphinx<sp/>endpointer<sp/>init<sp/>failed\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSpeechManager_1a5ae23337be3cfd612918b64b2dac7fa8" kindref="member">frame_size_</ref><sp/>=<sp/>ps_endpointer_frame_size(<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a33dd9ba7578619b2f8bfb2be029c4c20" kindref="member">frame_</ref><sp/>=<sp/>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)malloc(<ref refid="classSpeechManager_1a5ae23337be3cfd612918b64b2dac7fa8" kindref="member">frame_size_</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="classSpeechManager_1a33dd9ba7578619b2f8bfb2be029c4c20" kindref="member">frame_</ref>[0])))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL_SYSTEM(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>allocate<sp/>frame&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PaStreamParameters<sp/>inputParameters;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PaDeviceIndex<sp/>defaultDevice<sp/>=<sp/>Pa_GetDefaultInputDevice();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(defaultDevice<sp/>==<sp/>paNoDevice)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>case<sp/>where<sp/>no<sp/>device<sp/>is<sp/>found</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;No<sp/>default<sp/>input<sp/>device<sp/>found.<sp/>Please<sp/>check<sp/>microphone<sp/>configuration.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputParameters.device<sp/>=<sp/>defaultDevice;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputParameters.channelCount<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputParameters.sampleFormat<sp/>=<sp/>paInt16;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>the<sp/>low<sp/>latency<sp/>suggested<sp/>by<sp/>the<sp/>driver<sp/>(best<sp/>practice<sp/>for<sp/>real-time)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputParameters.suggestedLatency<sp/>=<sp/>Pa_GetDeviceInfo(defaultDevice)-&gt;defaultLowInputLatency;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inputParameters.hostApiSpecificStreamInfo<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref><sp/>=<sp/>Pa_OpenStream(&amp;<ref refid="classSpeechManager_1a84982042bef20eb360ec44351fd84757" kindref="member">stream_</ref>,<sp/>&amp;inputParameters,<sp/>NULL,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_config_int(<ref refid="classSpeechManager_1aed90e5c57c5e43394492fb748ef5dec4" kindref="member">config_</ref>,<sp/></highlight><highlight class="stringliteral">&quot;samprate&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSpeechManager_1a5ae23337be3cfd612918b64b2dac7fa8" kindref="member">frame_size_</ref>,<sp/>paClipOff,<sp/>NULL,<sp/>NULL))<sp/>!=<sp/>paNoError)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Re-introduce<sp/>the<sp/>detailed<sp/>failure<sp/>diagnostic<sp/>if<sp/>the<sp/>explicit<sp/>open<sp/>fails</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;PortAudio<sp/>Stream<sp/>Error<sp/>(Code<sp/>%d):<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>,<sp/>Pa_GetErrorText(<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PaHostErrorInfo*<sp/>hostErr<sp/>=<sp/>Pa_GetLastHostErrorInfo();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hostErr)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>open<sp/>PortAudio<sp/>stream.<sp/>Host<sp/>Error:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>hostErr-&gt;errorText);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>open<sp/>PortAudio<sp/>stream:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>Pa_GetErrorText(<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref><sp/>=<sp/>Pa_StartStream(<ref refid="classSpeechManager_1a84982042bef20eb360ec44351fd84757" kindref="member">stream_</ref>))<sp/>!=<sp/>paNoError)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>start<sp/>PortAudio<sp/>stream:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pa_GetErrorText(<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if<sp/>(signal(SIGINT,<sp/>catch_sig)<sp/>==<sp/>SIG_ERR)</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL_SYSTEM(&quot;Failed<sp/>to<sp/>set<sp/>SIGINT<sp/>handler&quot;);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classSpeechManager_1af62b1ec680a5e45e289d629d561c8432" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1af62b1ec680a5e45e289d629d561c8432" kindref="member">SpeechManager::startListening</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>listening<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classSpeechManager_1a13ab24c0b019530b8c35557091fac078" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(listening)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int16<sp/>*speech;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prev_in_speech<sp/>=<sp/>ps_endpointer_in_speech(<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref><sp/>=<sp/>Pa_ReadStream(<ref refid="classSpeechManager_1a84982042bef20eb360ec44351fd84757" kindref="member">stream_</ref>,<sp/><ref refid="classSpeechManager_1a33dd9ba7578619b2f8bfb2be029c4c20" kindref="member">frame_</ref>,<sp/><ref refid="classSpeechManager_1a5ae23337be3cfd612918b64b2dac7fa8" kindref="member">frame_size_</ref>))<sp/>!=<sp/>paNoError)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_ERROR(</highlight><highlight class="stringliteral">&quot;Error<sp/>in<sp/>PortAudio<sp/>read:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>Pa_GetErrorText(<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>));</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speech<sp/>=<sp/>ps_endpointer_process(<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref>,<sp/><ref refid="classSpeechManager_1a33dd9ba7578619b2f8bfb2be029c4c20" kindref="member">frame_</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(speech<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!prev_in_speech)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Speech<sp/>start<sp/>at<sp/>%.2f\n&quot;</highlight><highlight class="normal">,<sp/>ps_endpointer_speech_start(<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref>));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(stderr);<sp/></highlight><highlight class="comment">//<sp/>For<sp/>broken<sp/>MSYS2<sp/>terminal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_start_utt(<ref refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" kindref="member">decoder_</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ps_process_raw(<ref refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" kindref="member">decoder_</ref>,<sp/>speech,<sp/><ref refid="classSpeechManager_1a5ae23337be3cfd612918b64b2dac7fa8" kindref="member">frame_size_</ref>,<sp/>FALSE,<sp/>FALSE)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;ps_process_raw()<sp/>failed\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ps_endpointer_in_speech(<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Speech<sp/>end<sp/>at<sp/>%.2f\n&quot;</highlight><highlight class="normal">,<sp/>ps_endpointer_speech_end(<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref>));</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(stderr);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps_end_utt(<ref refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" kindref="member">decoder_</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1ad36d507a363bd64922e7cd8c85334bda" kindref="member">hyp_</ref><sp/>=<sp/>ps_get_hyp(<ref refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" kindref="member">decoder_</ref>,<sp/>NULL))<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="classSpeechManager_1ad36d507a363bd64922e7cd8c85334bda" kindref="member">hyp_</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(stdout);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listening<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Después<sp/>del<sp/>bucle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref><sp/>=<sp/>Pa_StopStream(<ref refid="classSpeechManager_1a84982042bef20eb360ec44351fd84757" kindref="member">stream_</ref>))<sp/>!=<sp/>paNoError)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>stop<sp/>PortAudio<sp/>stream:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>Pa_GetErrorText(<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref><sp/>=<sp/>Pa_Terminate())<sp/>!=<sp/>paNoError)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>E_FATAL(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>terminate<sp/>PortAudio:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>Pa_GetErrorText(<ref refid="classSpeechManager_1a12e44c03e875470507ec74a417fa0156" kindref="member">err_</ref>));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="classSpeechManager_1af020ff04f584cedbd3105f299c1a66b0" kindref="member">speechReadyToProcess</ref>(<ref refid="classSpeechManager_1ad36d507a363bd64922e7cd8c85334bda" kindref="member">hyp_</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classSpeechManager_1ad48e68cab4316e371cc56ca75150897d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1ad48e68cab4316e371cc56ca75150897d" kindref="member">SpeechManager::hypIsValid</ref>(){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classSpeechManager_1ad36d507a363bd64922e7cd8c85334bda" kindref="member">hyp_</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classSpeechManager_1a13a4749dbb01af8d5faf9e181b11c56e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a13a4749dbb01af8d5faf9e181b11c56e" kindref="member">SpeechManager::freeHeap</ref>(){</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>ps_endpointer_free(<ref refid="classSpeechManager_1a2d256afb5806a933dfd832fa49d1b148" kindref="member">ep_</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>ps_free(<ref refid="classSpeechManager_1a5457cda86b4ca0afd9d4ab9655baacf0" kindref="member">decoder_</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classSpeechManager_1a9e0d24a7b396f00dbb1dee267450d3e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSpeechManager_1a9e0d24a7b396f00dbb1dee267450d3e9" kindref="member">SpeechManager::processRecognitionResult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*hyp){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>qt_hyp<sp/>=<sp/>QString::fromUtf8(hyp);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/><ref refid="classSpeechManager_1abdde7758804b9f537d9d704583e6c8b3" kindref="member">speechRecognized</ref>(qt_hyp);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Speech/SpeechManager.cpp"/>
+  </compounddef>
+</doxygen>

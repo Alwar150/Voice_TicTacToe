@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="MiniMaxAgent_8puml" kind="file" language="C++">
+    <compoundname>MiniMaxAgent.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>MiniMaxAgent.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`MiniMaxAgent`<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Extracted<sp/>from<sp/>`include/AI/MiniMaxAgent.h`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>class<sp/>MiniMaxAgent<sp/>extends<sp/>AIAgent</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-depth_:<sp/>unsigned<sp/>short</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+MiniMaxAgent(const<sp/>Board&amp;,<sp/>BoardMarks,<sp/>unsigned<sp/>short,<sp/>QObject*)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+play():<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-maxMove(Board&amp;,<sp/>unsigned<sp/>short,<sp/>short,<sp/>short):<sp/>short</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-minMove(Board&amp;,<sp/>unsigned<sp/>short,<sp/>short,<sp/>short):<sp/>short</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-score(const<sp/>BoardState):<sp/>short</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+&lt;&lt;signal&gt;&gt;<sp/><sp/>playerFinished(int)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Player<sp/>..|&gt;<sp/>QObject</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>AIAgent<sp/>..|&gt;<sp/>Player</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>MiniMaxAgent<sp/>..|&gt;<sp/>AIAgent</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/MiniMaxAgent.puml"/>
+  </compounddef>
+</doxygen>

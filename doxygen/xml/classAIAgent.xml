@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classAIAgent" kind="class" language="C++" prot="public">
+    <compoundname>AIAgent</compoundname>
+    <basecompoundref refid="classPlayer" prot="public" virt="non-virtual">Player</basecompoundref>
+    <derivedcompoundref refid="classMiniMaxAgent" prot="public" virt="non-virtual">MiniMaxAgent</derivedcompoundref>
+    <includes refid="AIAgent_8h" local="no">AIAgent.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAIAgent_1ab455925352ccde362887a32ee1ffd1f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AIAgent::AIAgent</definition>
+        <argsstring>(BoardMarks playerMark, const Board &amp;borad_ref, QObject *parent_=nullptr)</argsstring>
+        <name>AIAgent</name>
+        <qualifiedname>AIAgent::AIAgent</qualifiedname>
+        <param>
+          <type><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>playerMark</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classBoard" kindref="compound">Board</ref> &amp;</type>
+          <declname>borad_ref</declname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent_</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classAIAgent" kindref="compound">AIAgent</ref> base class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the agent with its marker and a reference to the board.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playerMark</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The marker (<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">BoardMarks::X</ref> or <ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">BoardMarks::O</ref>) assigned to the AI. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>borad_ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constant reference to the game <ref refid="classBoard" kindref="compound">Board</ref> object (Model). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the parent QObject (nullptr by default). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/AIAgent.h" line="38" column="5" bodyfile="include/AI/AIAgent.h" bodystart="38" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classAIAgent_1a5614d02341e652bd2df4f3b2fb4d44c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual AIAgent::~AIAgent</definition>
+        <argsstring>()</argsstring>
+        <name>~AIAgent</name>
+        <qualifiedname>AIAgent::~AIAgent</qualifiedname>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows proper destruction of derived classes through a base class pointer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/AIAgent.h" line="46" column="13" bodyfile="include/AI/AIAgent.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classAIAgent" kindref="compound">AIAgent</ref> interface describes the behavior of any implemented Artificial Intelligence agent. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This abstract base class inherits from <ref refid="classPlayer" kindref="compound">Player</ref> and establishes a common interface for all AI agents (such as <ref refid="classMiniMaxAgent" kindref="compound">MiniMaxAgent</ref>). It defines the basic functions necessary for an agent to reset its internal state before a new turn or game. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AIAgent</label>
+        <link refid="classAIAgent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MiniMaxAgent</label>
+        <link refid="classMiniMaxAgent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player</label>
+        <link refid="classPlayer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AIAgent</label>
+        <link refid="classAIAgent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Board</label>
+        <link refid="classBoard"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player</label>
+        <link refid="classPlayer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>vector&lt; vector&lt; BoardMarks &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/AI/AIAgent.h" line="26" column="1" bodyfile="include/AI/AIAgent.h" bodystart="27" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classAIAgent_1ab455925352ccde362887a32ee1ffd1f6" prot="public" virt="non-virtual"><scope>AIAgent</scope><name>AIAgent</name></member>
+      <member refid="classPlayer_1a088227ab53747cc4955b0a3859b69a84" prot="protected" virt="non-virtual"><scope>AIAgent</scope><name>board_</name></member>
+      <member refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" prot="protected" virt="non-virtual"><scope>AIAgent</scope><name>mark_</name></member>
+      <member refid="classPlayer_1af85db5d05b014bf19d873038c56dc7ed" prot="public" virt="pure-virtual"><scope>AIAgent</scope><name>play</name></member>
+      <member refid="classPlayer_1a1e6c1c4847747f85b6cadfa11074feef" prot="public" virt="non-virtual"><scope>AIAgent</scope><name>Player</name></member>
+      <member refid="classPlayer_1a53a95aa136684609c19494ac2faefc59" prot="public" virt="non-virtual"><scope>AIAgent</scope><name>playerFinished</name></member>
+      <member refid="classAIAgent_1a5614d02341e652bd2df4f3b2fb4d44c3" prot="public" virt="virtual"><scope>AIAgent</scope><name>~AIAgent</name></member>
+      <member refid="classPlayer_1a8981c201ffb2270c0b6dbd467b627376" prot="public" virt="virtual"><scope>AIAgent</scope><name>~Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

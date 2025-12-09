@@ -1,0 +1,1043 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classWaitingSpinnerWidget" kind="class" language="C++" prot="public">
+    <compoundname>WaitingSpinnerWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="waitingspinnerwidget_8h" local="no">waitingspinnerwidget.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" prot="private" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor WaitingSpinnerWidget::_color</definition>
+        <argsstring></argsstring>
+        <name>_color</name>
+        <qualifiedname>WaitingSpinnerWidget::_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="120" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" compoundref="waitingspinnerwidget_8cpp" startline="162" endline="164">color</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a5bc33ab179119f510d556c214fe7ac9b" compoundref="waitingspinnerwidget_8cpp" startline="206" endline="208">setColor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" prot="private" static="no" mutable="no">
+        <type>qreal</type>
+        <definition>qreal WaitingSpinnerWidget::_roundness</definition>
+        <argsstring></argsstring>
+        <name>_roundness</name>
+        <qualifiedname>WaitingSpinnerWidget::_roundness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="121" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a2ceb91dfdafcd41b99f04aa2b4b81786" compoundref="waitingspinnerwidget_8cpp" startline="166" endline="168">roundness</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a894f40b4623f9e7754c48e4478c23307" compoundref="waitingspinnerwidget_8cpp" startline="202" endline="204">setRoundness</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" prot="private" static="no" mutable="no">
+        <type>qreal</type>
+        <definition>qreal WaitingSpinnerWidget::_minimumTrailOpacity</definition>
+        <argsstring></argsstring>
+        <name>_minimumTrailOpacity</name>
+        <qualifiedname>WaitingSpinnerWidget::_minimumTrailOpacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="122" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a8a9ed21ff17ead12fcbf26b163940dbe" compoundref="waitingspinnerwidget_8cpp" startline="170" endline="172">minimumTrailOpacity</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1ad4ad8fab83b1a60cf1dff78d6ad716d7" compoundref="waitingspinnerwidget_8cpp" startline="219" endline="221">setMinimumTrailOpacity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" prot="private" static="no" mutable="no">
+        <type>qreal</type>
+        <definition>qreal WaitingSpinnerWidget::_trailFadePercentage</definition>
+        <argsstring></argsstring>
+        <name>_trailFadePercentage</name>
+        <qualifiedname>WaitingSpinnerWidget::_trailFadePercentage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="123" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1af9ec791036d62a78b0f557346d1c0262" compoundref="waitingspinnerwidget_8cpp" startline="215" endline="217">setTrailFadePercentage</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1aa0a76a4ea0666f843b8a4cf2cb5a7491" compoundref="waitingspinnerwidget_8cpp" startline="174" endline="176">trailFadePercentage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" prot="private" static="no" mutable="no">
+        <type>qreal</type>
+        <definition>qreal WaitingSpinnerWidget::_revolutionsPerSecond</definition>
+        <argsstring></argsstring>
+        <name>_revolutionsPerSecond</name>
+        <qualifiedname>WaitingSpinnerWidget::_revolutionsPerSecond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="124" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a54f72cfcb508e8d4bea313891d87b766" compoundref="waitingspinnerwidget_8cpp" startline="178" endline="180">revolutionsPersSecond</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1addb2884587497961d78e24c50a2f1aba" compoundref="waitingspinnerwidget_8cpp" startline="210" endline="213">setRevolutionsPerSecond</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" compoundref="waitingspinnerwidget_8cpp" startline="236" endline="238">updateTimer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::_numberOfLines</definition>
+        <argsstring></argsstring>
+        <name>_numberOfLines</name>
+        <qualifiedname>WaitingSpinnerWidget::_numberOfLines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="125" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1af6a17bce3bc7081c1e0297e6249576e0" compoundref="waitingspinnerwidget_8cpp" startline="182" endline="184">numberOfLines</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1aacb453453fd98625eb38e021de72070f" compoundref="waitingspinnerwidget_8cpp" startline="223" endline="229">rotate</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a29945c03eaf051081ea21f22dca6e97a" compoundref="waitingspinnerwidget_8cpp" startline="141" endline="145">setNumberOfLines</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" compoundref="waitingspinnerwidget_8cpp" startline="236" endline="238">updateTimer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::_lineLength</definition>
+        <argsstring></argsstring>
+        <name>_lineLength</name>
+        <qualifiedname>WaitingSpinnerWidget::_lineLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="126" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1aa716528e1094789337adc5d291c69747" compoundref="waitingspinnerwidget_8cpp" startline="186" endline="188">lineLength</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a797995d006da2e96b72daa959ddd274e" compoundref="waitingspinnerwidget_8cpp" startline="147" endline="150">setLineLength</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" compoundref="waitingspinnerwidget_8cpp" startline="231" endline="234">updateSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::_lineWidth</definition>
+        <argsstring></argsstring>
+        <name>_lineWidth</name>
+        <qualifiedname>WaitingSpinnerWidget::_lineWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="127" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a6c42700d650379cffd704199c63c4f28" compoundref="waitingspinnerwidget_8cpp" startline="190" endline="192">lineWidth</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a987a9c7234f83ca2665dd05f8d039e64" compoundref="waitingspinnerwidget_8cpp" startline="152" endline="155">setLineWidth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::_innerRadius</definition>
+        <argsstring></argsstring>
+        <name>_innerRadius</name>
+        <qualifiedname>WaitingSpinnerWidget::_innerRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="128" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a9db984232c785de31390485c30d7a596" compoundref="waitingspinnerwidget_8cpp" startline="194" endline="196">innerRadius</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a4adc650895478217a5f28c72a9df1e53" compoundref="waitingspinnerwidget_8cpp" startline="157" endline="160">setInnerRadius</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" compoundref="waitingspinnerwidget_8cpp" startline="231" endline="234">updateSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* WaitingSpinnerWidget::_timer</definition>
+        <argsstring></argsstring>
+        <name>_timer</name>
+        <qualifiedname>WaitingSpinnerWidget::_timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="134" column="12" bodyfile="include/View/waitingspinnerwidget.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" compoundref="waitingspinnerwidget_8cpp" startline="112" endline="125">start</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" compoundref="waitingspinnerwidget_8cpp" startline="127" endline="139">stop</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" compoundref="waitingspinnerwidget_8cpp" startline="236" endline="238">updateTimer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1ae9df7d573477f907da5da0b0518d300a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool WaitingSpinnerWidget::_centerOnParent</definition>
+        <argsstring></argsstring>
+        <name>_centerOnParent</name>
+        <qualifiedname>WaitingSpinnerWidget::_centerOnParent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="135" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="135" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a7ac6a1feaec54bd2f54c7110a179f46f" compoundref="waitingspinnerwidget_8cpp" startline="240" endline="245">updatePosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1af2e707cbf375a3b5626980854e7423f2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool WaitingSpinnerWidget::_disableParentWhenSpinning</definition>
+        <argsstring></argsstring>
+        <name>_disableParentWhenSpinning</name>
+        <qualifiedname>WaitingSpinnerWidget::_disableParentWhenSpinning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="136" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="136" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" compoundref="waitingspinnerwidget_8cpp" startline="112" endline="125">start</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" compoundref="waitingspinnerwidget_8cpp" startline="127" endline="139">stop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::_currentCounter</definition>
+        <argsstring></argsstring>
+        <name>_currentCounter</name>
+        <qualifiedname>WaitingSpinnerWidget::_currentCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="137" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1aacb453453fd98625eb38e021de72070f" compoundref="waitingspinnerwidget_8cpp" startline="223" endline="229">rotate</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a29945c03eaf051081ea21f22dca6e97a" compoundref="waitingspinnerwidget_8cpp" startline="141" endline="145">setNumberOfLines</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" compoundref="waitingspinnerwidget_8cpp" startline="112" endline="125">start</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" compoundref="waitingspinnerwidget_8cpp" startline="127" endline="139">stop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool WaitingSpinnerWidget::_isSpinning</definition>
+        <argsstring></argsstring>
+        <name>_isSpinning</name>
+        <qualifiedname>WaitingSpinnerWidget::_isSpinning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="138" column="13" bodyfile="include/View/waitingspinnerwidget.h" bodystart="138" bodyend="-1"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1ab02d5a79b1794c55b58b3cd417075a5a" compoundref="waitingspinnerwidget_8cpp" startline="198" endline="200">isSpinning</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" compoundref="waitingspinnerwidget_8cpp" startline="112" endline="125">start</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" compoundref="waitingspinnerwidget_8cpp" startline="127" endline="139">stop</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a5207a447314b9b3505177fec483f5608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WaitingSpinnerWidget::WaitingSpinnerWidget</definition>
+        <argsstring>(QWidget *parent=0, bool centerOnParent=true, bool disableParentWhenSpinning=true)</argsstring>
+        <name>WaitingSpinnerWidget</name>
+        <qualifiedname>WaitingSpinnerWidget::WaitingSpinnerWidget</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>centerOnParent</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>disableParentWhenSpinning</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for &quot;standard&quot; widget behaviour - use this constructor if you wish to, e.g. embed your widget in another. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="59" column="5" bodyfile="src/waitingspinnerwidget.cpp" bodystart="34" bodyend="41"/>
+        <references refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a288840f2b5f8eca150fde75b0244c0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WaitingSpinnerWidget::WaitingSpinnerWidget</definition>
+        <argsstring>(Qt::WindowModality modality, QWidget *parent=0, bool centerOnParent=true, bool disableParentWhenSpinning=true)</argsstring>
+        <name>WaitingSpinnerWidget</name>
+        <qualifiedname>WaitingSpinnerWidget::WaitingSpinnerWidget</qualifiedname>
+        <param>
+          <type>Qt::WindowModality</type>
+          <declname>modality</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>centerOnParent</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>disableParentWhenSpinning</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor - use this constructor to automatically create a modal (&quot;blocking&quot;) spinner on top of the calling widget/window. If a valid parent widget is provided, &quot;centreOnParent&quot; will ensure that QtWaitingSpinner automatically centres itself on it, if not, &quot;centreOnParent&quot; is ignored. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="68" column="5" bodyfile="src/waitingspinnerwidget.cpp" bodystart="43" bodyend="57"/>
+        <references refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a5bc33ab179119f510d556c214fe7ac9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setColor</definition>
+        <argsstring>(QColor color)</argsstring>
+        <name>setColor</name>
+        <qualifiedname>WaitingSpinnerWidget::setColor</qualifiedname>
+        <param>
+          <type>QColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="78" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="206" bodyend="208"/>
+        <references refid="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" compoundref="waitingspinnerwidget_8h" startline="120">_color</references>
+        <references refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" compoundref="waitingspinnerwidget_8cpp" startline="162" endline="164">color</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a894f40b4623f9e7754c48e4478c23307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setRoundness</definition>
+        <argsstring>(qreal roundness)</argsstring>
+        <name>setRoundness</name>
+        <qualifiedname>WaitingSpinnerWidget::setRoundness</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>roundness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="79" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="202" bodyend="204"/>
+        <references refid="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" compoundref="waitingspinnerwidget_8h" startline="121">_roundness</references>
+        <references refid="classWaitingSpinnerWidget_1a2ceb91dfdafcd41b99f04aa2b4b81786" compoundref="waitingspinnerwidget_8cpp" startline="166" endline="168">roundness</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1ad4ad8fab83b1a60cf1dff78d6ad716d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setMinimumTrailOpacity</definition>
+        <argsstring>(qreal minimumTrailOpacity)</argsstring>
+        <name>setMinimumTrailOpacity</name>
+        <qualifiedname>WaitingSpinnerWidget::setMinimumTrailOpacity</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>minimumTrailOpacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="80" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="219" bodyend="221"/>
+        <references refid="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" compoundref="waitingspinnerwidget_8h" startline="122">_minimumTrailOpacity</references>
+        <references refid="classWaitingSpinnerWidget_1a8a9ed21ff17ead12fcbf26b163940dbe" compoundref="waitingspinnerwidget_8cpp" startline="170" endline="172">minimumTrailOpacity</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1af9ec791036d62a78b0f557346d1c0262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setTrailFadePercentage</definition>
+        <argsstring>(qreal trail)</argsstring>
+        <name>setTrailFadePercentage</name>
+        <qualifiedname>WaitingSpinnerWidget::setTrailFadePercentage</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>trail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="81" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="215" bodyend="217"/>
+        <references refid="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" compoundref="waitingspinnerwidget_8h" startline="123">_trailFadePercentage</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1addb2884587497961d78e24c50a2f1aba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setRevolutionsPerSecond</definition>
+        <argsstring>(qreal revolutionsPerSecond)</argsstring>
+        <name>setRevolutionsPerSecond</name>
+        <qualifiedname>WaitingSpinnerWidget::setRevolutionsPerSecond</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>revolutionsPerSecond</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="82" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="210" bodyend="213"/>
+        <references refid="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" compoundref="waitingspinnerwidget_8h" startline="124">_revolutionsPerSecond</references>
+        <references refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" compoundref="waitingspinnerwidget_8cpp" startline="236" endline="238">updateTimer</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a29945c03eaf051081ea21f22dca6e97a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setNumberOfLines</definition>
+        <argsstring>(int lines)</argsstring>
+        <name>setNumberOfLines</name>
+        <qualifiedname>WaitingSpinnerWidget::setNumberOfLines</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>lines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="83" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="141" bodyend="145"/>
+        <references refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" compoundref="waitingspinnerwidget_8h" startline="137">_currentCounter</references>
+        <references refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" compoundref="waitingspinnerwidget_8h" startline="125">_numberOfLines</references>
+        <references refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" compoundref="waitingspinnerwidget_8cpp" startline="236" endline="238">updateTimer</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a797995d006da2e96b72daa959ddd274e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setLineLength</definition>
+        <argsstring>(int length)</argsstring>
+        <name>setLineLength</name>
+        <qualifiedname>WaitingSpinnerWidget::setLineLength</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="84" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="147" bodyend="150"/>
+        <references refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" compoundref="waitingspinnerwidget_8h" startline="126">_lineLength</references>
+        <references refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" compoundref="waitingspinnerwidget_8cpp" startline="231" endline="234">updateSize</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a987a9c7234f83ca2665dd05f8d039e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setLineWidth</definition>
+        <argsstring>(int width)</argsstring>
+        <name>setLineWidth</name>
+        <qualifiedname>WaitingSpinnerWidget::setLineWidth</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="85" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="152" bodyend="155"/>
+        <references refid="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" compoundref="waitingspinnerwidget_8h" startline="127">_lineWidth</references>
+        <references refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" compoundref="waitingspinnerwidget_8cpp" startline="231" endline="234">updateSize</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a4adc650895478217a5f28c72a9df1e53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setInnerRadius</definition>
+        <argsstring>(int radius)</argsstring>
+        <name>setInnerRadius</name>
+        <qualifiedname>WaitingSpinnerWidget::setInnerRadius</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="86" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="157" bodyend="160"/>
+        <references refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" compoundref="waitingspinnerwidget_8h" startline="128">_innerRadius</references>
+        <references refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" compoundref="waitingspinnerwidget_8cpp" startline="231" endline="234">updateSize</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a25b9639b865d15610a499aaced705afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::setText</definition>
+        <argsstring>(QString text)</argsstring>
+        <name>setText</name>
+        <qualifiedname>WaitingSpinnerWidget::setText</qualifiedname>
+        <param>
+          <type>QString</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="87" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QColor</type>
+        <definition>QColor WaitingSpinnerWidget::color</definition>
+        <argsstring>()</argsstring>
+        <name>color</name>
+        <qualifiedname>WaitingSpinnerWidget::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="89" column="12" bodyfile="src/waitingspinnerwidget.cpp" bodystart="162" bodyend="164"/>
+        <references refid="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" compoundref="waitingspinnerwidget_8h" startline="120">_color</references>
+        <referencedby refid="classWaitingSpinnerWidget_1ab8adb44bc0a3eb32bfe9d7b5b1a83e4c" compoundref="waitingspinnerwidget_8cpp" startline="256" endline="277">currentLineColor</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a5bc33ab179119f510d556c214fe7ac9b" compoundref="waitingspinnerwidget_8cpp" startline="206" endline="208">setColor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a2ceb91dfdafcd41b99f04aa2b4b81786" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal WaitingSpinnerWidget::roundness</definition>
+        <argsstring>()</argsstring>
+        <name>roundness</name>
+        <qualifiedname>WaitingSpinnerWidget::roundness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="90" column="11" bodyfile="src/waitingspinnerwidget.cpp" bodystart="166" bodyend="168"/>
+        <references refid="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" compoundref="waitingspinnerwidget_8h" startline="121">_roundness</references>
+        <referencedby refid="classWaitingSpinnerWidget_1a894f40b4623f9e7754c48e4478c23307" compoundref="waitingspinnerwidget_8cpp" startline="202" endline="204">setRoundness</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a8a9ed21ff17ead12fcbf26b163940dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal WaitingSpinnerWidget::minimumTrailOpacity</definition>
+        <argsstring>()</argsstring>
+        <name>minimumTrailOpacity</name>
+        <qualifiedname>WaitingSpinnerWidget::minimumTrailOpacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="91" column="11" bodyfile="src/waitingspinnerwidget.cpp" bodystart="170" bodyend="172"/>
+        <references refid="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" compoundref="waitingspinnerwidget_8h" startline="122">_minimumTrailOpacity</references>
+        <referencedby refid="classWaitingSpinnerWidget_1ad4ad8fab83b1a60cf1dff78d6ad716d7" compoundref="waitingspinnerwidget_8cpp" startline="219" endline="221">setMinimumTrailOpacity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1aa0a76a4ea0666f843b8a4cf2cb5a7491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal WaitingSpinnerWidget::trailFadePercentage</definition>
+        <argsstring>()</argsstring>
+        <name>trailFadePercentage</name>
+        <qualifiedname>WaitingSpinnerWidget::trailFadePercentage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="92" column="11" bodyfile="src/waitingspinnerwidget.cpp" bodystart="174" bodyend="176"/>
+        <references refid="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" compoundref="waitingspinnerwidget_8h" startline="123">_trailFadePercentage</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a54f72cfcb508e8d4bea313891d87b766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal WaitingSpinnerWidget::revolutionsPersSecond</definition>
+        <argsstring>()</argsstring>
+        <name>revolutionsPersSecond</name>
+        <qualifiedname>WaitingSpinnerWidget::revolutionsPersSecond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="93" column="11" bodyfile="src/waitingspinnerwidget.cpp" bodystart="178" bodyend="180"/>
+        <references refid="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" compoundref="waitingspinnerwidget_8h" startline="124">_revolutionsPerSecond</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1af6a17bce3bc7081c1e0297e6249576e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::numberOfLines</definition>
+        <argsstring>()</argsstring>
+        <name>numberOfLines</name>
+        <qualifiedname>WaitingSpinnerWidget::numberOfLines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="94" column="9" bodyfile="src/waitingspinnerwidget.cpp" bodystart="182" bodyend="184"/>
+        <references refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" compoundref="waitingspinnerwidget_8h" startline="125">_numberOfLines</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1aa716528e1094789337adc5d291c69747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::lineLength</definition>
+        <argsstring>()</argsstring>
+        <name>lineLength</name>
+        <qualifiedname>WaitingSpinnerWidget::lineLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="95" column="9" bodyfile="src/waitingspinnerwidget.cpp" bodystart="186" bodyend="188"/>
+        <references refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" compoundref="waitingspinnerwidget_8h" startline="126">_lineLength</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a6c42700d650379cffd704199c63c4f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::lineWidth</definition>
+        <argsstring>()</argsstring>
+        <name>lineWidth</name>
+        <qualifiedname>WaitingSpinnerWidget::lineWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="96" column="9" bodyfile="src/waitingspinnerwidget.cpp" bodystart="190" bodyend="192"/>
+        <references refid="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" compoundref="waitingspinnerwidget_8h" startline="127">_lineWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a9db984232c785de31390485c30d7a596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::innerRadius</definition>
+        <argsstring>()</argsstring>
+        <name>innerRadius</name>
+        <qualifiedname>WaitingSpinnerWidget::innerRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="97" column="9" bodyfile="src/waitingspinnerwidget.cpp" bodystart="194" bodyend="196"/>
+        <references refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" compoundref="waitingspinnerwidget_8h" startline="128">_innerRadius</references>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1ab02d5a79b1794c55b58b3cd417075a5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WaitingSpinnerWidget::isSpinning</definition>
+        <argsstring>() const</argsstring>
+        <name>isSpinning</name>
+        <qualifiedname>WaitingSpinnerWidget::isSpinning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="99" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="198" bodyend="200"/>
+        <references refid="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" compoundref="waitingspinnerwidget_8h" startline="138">_isSpinning</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>WaitingSpinnerWidget::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="74" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="112" bodyend="125"/>
+        <references refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" compoundref="waitingspinnerwidget_8h" startline="137">_currentCounter</references>
+        <references refid="classWaitingSpinnerWidget_1af2e707cbf375a3b5626980854e7423f2" compoundref="waitingspinnerwidget_8h" startline="136">_disableParentWhenSpinning</references>
+        <references refid="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" compoundref="waitingspinnerwidget_8h" startline="138">_isSpinning</references>
+        <references refid="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" compoundref="waitingspinnerwidget_8h" startline="134">_timer</references>
+        <references refid="classWaitingSpinnerWidget_1a7ac6a1feaec54bd2f54c7110a179f46f" compoundref="waitingspinnerwidget_8cpp" startline="240" endline="245">updatePosition</references>
+        <referencedby refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" compoundref="TicTacToeGame_8cpp" startline="181" endline="200">TicTacToeGame::updateWaitingStatus</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>WaitingSpinnerWidget::stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="75" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="127" bodyend="139"/>
+        <references refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" compoundref="waitingspinnerwidget_8h" startline="137">_currentCounter</references>
+        <references refid="classWaitingSpinnerWidget_1af2e707cbf375a3b5626980854e7423f2" compoundref="waitingspinnerwidget_8h" startline="136">_disableParentWhenSpinning</references>
+        <references refid="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" compoundref="waitingspinnerwidget_8h" startline="138">_isSpinning</references>
+        <references refid="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" compoundref="waitingspinnerwidget_8h" startline="134">_timer</references>
+        <referencedby refid="classTicTacToeGame_1aa0bc0416eaa3777270caaa81d14d9908" compoundref="TicTacToeGame_8cpp" startline="181" endline="200">TicTacToeGame::updateWaitingStatus</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classWaitingSpinnerWidget_1aacb453453fd98625eb38e021de72070f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::rotate</definition>
+        <argsstring>()</argsstring>
+        <name>rotate</name>
+        <qualifiedname>WaitingSpinnerWidget::rotate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="102" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="223" bodyend="229"/>
+        <references refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" compoundref="waitingspinnerwidget_8h" startline="137">_currentCounter</references>
+        <references refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" compoundref="waitingspinnerwidget_8h" startline="125">_numberOfLines</references>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::paintEvent</definition>
+        <argsstring>(QPaintEvent *paintEvent)</argsstring>
+        <name>paintEvent</name>
+        <qualifiedname>WaitingSpinnerWidget::paintEvent</qualifiedname>
+        <param>
+          <type>QPaintEvent *</type>
+          <declname>paintEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="105" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="79" bodyend="110"/>
+        <references refid="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" compoundref="waitingspinnerwidget_8h" startline="120">_color</references>
+        <references refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" compoundref="waitingspinnerwidget_8h" startline="137">_currentCounter</references>
+        <references refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" compoundref="waitingspinnerwidget_8h" startline="128">_innerRadius</references>
+        <references refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" compoundref="waitingspinnerwidget_8h" startline="126">_lineLength</references>
+        <references refid="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" compoundref="waitingspinnerwidget_8h" startline="127">_lineWidth</references>
+        <references refid="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" compoundref="waitingspinnerwidget_8h" startline="122">_minimumTrailOpacity</references>
+        <references refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" compoundref="waitingspinnerwidget_8h" startline="125">_numberOfLines</references>
+        <references refid="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" compoundref="waitingspinnerwidget_8h" startline="121">_roundness</references>
+        <references refid="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" compoundref="waitingspinnerwidget_8h" startline="123">_trailFadePercentage</references>
+        <references refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" compoundref="waitingspinnerwidget_8cpp" startline="162" endline="164">color</references>
+        <references refid="classWaitingSpinnerWidget_1ab8adb44bc0a3eb32bfe9d7b5b1a83e4c" compoundref="waitingspinnerwidget_8cpp" startline="256" endline="277">currentLineColor</references>
+        <references refid="classWaitingSpinnerWidget_1a144cdce01e10daeefb91846b7d7328a5" compoundref="waitingspinnerwidget_8cpp" startline="247" endline="254">lineCountDistanceFromPrimary</references>
+        <references refid="classWaitingSpinnerWidget_1a7ac6a1feaec54bd2f54c7110a179f46f" compoundref="waitingspinnerwidget_8cpp" startline="240" endline="245">updatePosition</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a144cdce01e10daeefb91846b7d7328a5" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WaitingSpinnerWidget::lineCountDistanceFromPrimary</definition>
+        <argsstring>(int current, int primary, int totalNrOfLines)</argsstring>
+        <name>lineCountDistanceFromPrimary</name>
+        <qualifiedname>WaitingSpinnerWidget::lineCountDistanceFromPrimary</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>primary</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>totalNrOfLines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="108" column="16" bodyfile="src/waitingspinnerwidget.cpp" bodystart="247" bodyend="254"/>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1ab8adb44bc0a3eb32bfe9d7b5b1a83e4c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QColor</type>
+        <definition>QColor WaitingSpinnerWidget::currentLineColor</definition>
+        <argsstring>(int distance, int totalNrOfLines, qreal trailFadePerc, qreal minOpacity, QColor color)</argsstring>
+        <name>currentLineColor</name>
+        <qualifiedname>WaitingSpinnerWidget::currentLineColor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>totalNrOfLines</declname>
+        </param>
+        <param>
+          <type>qreal</type>
+          <declname>trailFadePerc</declname>
+        </param>
+        <param>
+          <type>qreal</type>
+          <declname>minOpacity</declname>
+        </param>
+        <param>
+          <type>QColor</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="110" column="19" bodyfile="src/waitingspinnerwidget.cpp" bodystart="256" bodyend="277"/>
+        <references refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" compoundref="waitingspinnerwidget_8cpp" startline="162" endline="164">color</references>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <qualifiedname>WaitingSpinnerWidget::initialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="114" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="59" bodyend="77"/>
+        <references refid="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" compoundref="waitingspinnerwidget_8h" startline="120">_color</references>
+        <references refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" compoundref="waitingspinnerwidget_8h" startline="137">_currentCounter</references>
+        <references refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" compoundref="waitingspinnerwidget_8h" startline="128">_innerRadius</references>
+        <references refid="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" compoundref="waitingspinnerwidget_8h" startline="138">_isSpinning</references>
+        <references refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" compoundref="waitingspinnerwidget_8h" startline="126">_lineLength</references>
+        <references refid="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" compoundref="waitingspinnerwidget_8h" startline="127">_lineWidth</references>
+        <references refid="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" compoundref="waitingspinnerwidget_8h" startline="122">_minimumTrailOpacity</references>
+        <references refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" compoundref="waitingspinnerwidget_8h" startline="125">_numberOfLines</references>
+        <references refid="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" compoundref="waitingspinnerwidget_8h" startline="124">_revolutionsPerSecond</references>
+        <references refid="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" compoundref="waitingspinnerwidget_8h" startline="121">_roundness</references>
+        <references refid="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" compoundref="waitingspinnerwidget_8h" startline="134">_timer</references>
+        <references refid="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" compoundref="waitingspinnerwidget_8h" startline="123">_trailFadePercentage</references>
+        <references refid="classWaitingSpinnerWidget_1aacb453453fd98625eb38e021de72070f" compoundref="waitingspinnerwidget_8cpp" startline="223" endline="229">rotate</references>
+        <references refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" compoundref="waitingspinnerwidget_8cpp" startline="231" endline="234">updateSize</references>
+        <references refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" compoundref="waitingspinnerwidget_8cpp" startline="236" endline="238">updateTimer</references>
+        <referencedby refid="classWaitingSpinnerWidget_1a288840f2b5f8eca150fde75b0244c0ab" compoundref="waitingspinnerwidget_8cpp" startline="43" endline="57">WaitingSpinnerWidget</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a5207a447314b9b3505177fec483f5608" compoundref="waitingspinnerwidget_8cpp" startline="34" endline="41">WaitingSpinnerWidget</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::updateSize</definition>
+        <argsstring>()</argsstring>
+        <name>updateSize</name>
+        <qualifiedname>WaitingSpinnerWidget::updateSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="115" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="231" bodyend="234"/>
+        <references refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" compoundref="waitingspinnerwidget_8h" startline="128">_innerRadius</references>
+        <references refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" compoundref="waitingspinnerwidget_8h" startline="126">_lineLength</references>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a4adc650895478217a5f28c72a9df1e53" compoundref="waitingspinnerwidget_8cpp" startline="157" endline="160">setInnerRadius</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a797995d006da2e96b72daa959ddd274e" compoundref="waitingspinnerwidget_8cpp" startline="147" endline="150">setLineLength</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a987a9c7234f83ca2665dd05f8d039e64" compoundref="waitingspinnerwidget_8cpp" startline="152" endline="155">setLineWidth</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::updateTimer</definition>
+        <argsstring>()</argsstring>
+        <name>updateTimer</name>
+        <qualifiedname>WaitingSpinnerWidget::updateTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="116" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="236" bodyend="238"/>
+        <references refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" compoundref="waitingspinnerwidget_8h" startline="125">_numberOfLines</references>
+        <references refid="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" compoundref="waitingspinnerwidget_8h" startline="124">_revolutionsPerSecond</references>
+        <references refid="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" compoundref="waitingspinnerwidget_8h" startline="134">_timer</references>
+        <referencedby refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" compoundref="waitingspinnerwidget_8cpp" startline="59" endline="77">initialize</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1a29945c03eaf051081ea21f22dca6e97a" compoundref="waitingspinnerwidget_8cpp" startline="141" endline="145">setNumberOfLines</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1addb2884587497961d78e24c50a2f1aba" compoundref="waitingspinnerwidget_8cpp" startline="210" endline="213">setRevolutionsPerSecond</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a7ac6a1feaec54bd2f54c7110a179f46f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WaitingSpinnerWidget::updatePosition</definition>
+        <argsstring>()</argsstring>
+        <name>updatePosition</name>
+        <qualifiedname>WaitingSpinnerWidget::updatePosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="117" column="10" bodyfile="src/waitingspinnerwidget.cpp" bodystart="240" bodyend="245"/>
+        <references refid="classWaitingSpinnerWidget_1ae9df7d573477f907da5da0b0518d300a" compoundref="waitingspinnerwidget_8h" startline="135">_centerOnParent</references>
+        <referencedby refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" compoundref="waitingspinnerwidget_8cpp" startline="79" endline="110">paintEvent</referencedby>
+        <referencedby refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" compoundref="waitingspinnerwidget_8cpp" startline="112" endline="125">start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1ac61cef28a4710c6d2a0ea3e8d0bca49b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WaitingSpinnerWidget::WaitingSpinnerWidget</definition>
+        <argsstring>(const WaitingSpinnerWidget &amp;)</argsstring>
+        <name>WaitingSpinnerWidget</name>
+        <qualifiedname>WaitingSpinnerWidget::WaitingSpinnerWidget</qualifiedname>
+        <param>
+          <type>const <ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="131" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classWaitingSpinnerWidget_1a82a516c36d956b5cdeaca95bac6162ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref> &amp;</type>
+        <definition>WaitingSpinnerWidget &amp; WaitingSpinnerWidget::operator=</definition>
+        <argsstring>(const WaitingSpinnerWidget &amp;)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>WaitingSpinnerWidget::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classWaitingSpinnerWidget" kindref="compound">WaitingSpinnerWidget</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/View/waitingspinnerwidget.h" line="132" column="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>WaitingSpinnerWidget</label>
+        <link refid="classWaitingSpinnerWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>WaitingSpinnerWidget</label>
+        <link refid="classWaitingSpinnerWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/View/waitingspinnerwidget.h" line="54" column="1" bodyfile="include/View/waitingspinnerwidget.h" bodystart="54" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classWaitingSpinnerWidget_1ae9df7d573477f907da5da0b0518d300a" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_centerOnParent</name></member>
+      <member refid="classWaitingSpinnerWidget_1aaea8d9dd1dfd0fec4d63a73a3b940e79" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_color</name></member>
+      <member refid="classWaitingSpinnerWidget_1ac3cbb1d3a1386bca905d7c6a91fbd0ae" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_currentCounter</name></member>
+      <member refid="classWaitingSpinnerWidget_1af2e707cbf375a3b5626980854e7423f2" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_disableParentWhenSpinning</name></member>
+      <member refid="classWaitingSpinnerWidget_1a51b04fcda4b13695fcbb8481c73699da" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_innerRadius</name></member>
+      <member refid="classWaitingSpinnerWidget_1a0034d3b61e3f1f41ea147039913906d4" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_isSpinning</name></member>
+      <member refid="classWaitingSpinnerWidget_1a33bbf199e55d0a5d58f71ba65a686d48" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_lineLength</name></member>
+      <member refid="classWaitingSpinnerWidget_1a7d5224bb675c63b974acf3ab9da2a0ae" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_lineWidth</name></member>
+      <member refid="classWaitingSpinnerWidget_1ae80928504ba4586bed5d80db45455b4a" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_minimumTrailOpacity</name></member>
+      <member refid="classWaitingSpinnerWidget_1a3be1ccd1e770ac866aed2469470c239f" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_numberOfLines</name></member>
+      <member refid="classWaitingSpinnerWidget_1a9398c0e6ec48a6e2f91f7c0ae9b5d924" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_revolutionsPerSecond</name></member>
+      <member refid="classWaitingSpinnerWidget_1a853bddeb85306ca792f3696064d911b8" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_roundness</name></member>
+      <member refid="classWaitingSpinnerWidget_1a59f0c98b8cf02a3d7f50085e856ff908" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_timer</name></member>
+      <member refid="classWaitingSpinnerWidget_1a4162157a6d402ffa3a87f8e6fd7abf0d" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>_trailFadePercentage</name></member>
+      <member refid="classWaitingSpinnerWidget_1a35164a7ac60db4b199caf7624ab3acf2" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>color</name></member>
+      <member refid="classWaitingSpinnerWidget_1ab8adb44bc0a3eb32bfe9d7b5b1a83e4c" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>currentLineColor</name></member>
+      <member refid="classWaitingSpinnerWidget_1a885516e19838042bd79042f854452a3d" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>initialize</name></member>
+      <member refid="classWaitingSpinnerWidget_1a9db984232c785de31390485c30d7a596" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>innerRadius</name></member>
+      <member refid="classWaitingSpinnerWidget_1ab02d5a79b1794c55b58b3cd417075a5a" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>isSpinning</name></member>
+      <member refid="classWaitingSpinnerWidget_1a144cdce01e10daeefb91846b7d7328a5" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>lineCountDistanceFromPrimary</name></member>
+      <member refid="classWaitingSpinnerWidget_1aa716528e1094789337adc5d291c69747" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>lineLength</name></member>
+      <member refid="classWaitingSpinnerWidget_1a6c42700d650379cffd704199c63c4f28" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>lineWidth</name></member>
+      <member refid="classWaitingSpinnerWidget_1a8a9ed21ff17ead12fcbf26b163940dbe" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>minimumTrailOpacity</name></member>
+      <member refid="classWaitingSpinnerWidget_1af6a17bce3bc7081c1e0297e6249576e0" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>numberOfLines</name></member>
+      <member refid="classWaitingSpinnerWidget_1a82a516c36d956b5cdeaca95bac6162ac" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>operator=</name></member>
+      <member refid="classWaitingSpinnerWidget_1a08163883e94d431a7c2aabf30a03c850" prot="protected" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>paintEvent</name></member>
+      <member refid="classWaitingSpinnerWidget_1a54f72cfcb508e8d4bea313891d87b766" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>revolutionsPersSecond</name></member>
+      <member refid="classWaitingSpinnerWidget_1aacb453453fd98625eb38e021de72070f" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>rotate</name></member>
+      <member refid="classWaitingSpinnerWidget_1a2ceb91dfdafcd41b99f04aa2b4b81786" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>roundness</name></member>
+      <member refid="classWaitingSpinnerWidget_1a5bc33ab179119f510d556c214fe7ac9b" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setColor</name></member>
+      <member refid="classWaitingSpinnerWidget_1a4adc650895478217a5f28c72a9df1e53" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setInnerRadius</name></member>
+      <member refid="classWaitingSpinnerWidget_1a797995d006da2e96b72daa959ddd274e" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setLineLength</name></member>
+      <member refid="classWaitingSpinnerWidget_1a987a9c7234f83ca2665dd05f8d039e64" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setLineWidth</name></member>
+      <member refid="classWaitingSpinnerWidget_1ad4ad8fab83b1a60cf1dff78d6ad716d7" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setMinimumTrailOpacity</name></member>
+      <member refid="classWaitingSpinnerWidget_1a29945c03eaf051081ea21f22dca6e97a" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setNumberOfLines</name></member>
+      <member refid="classWaitingSpinnerWidget_1addb2884587497961d78e24c50a2f1aba" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setRevolutionsPerSecond</name></member>
+      <member refid="classWaitingSpinnerWidget_1a894f40b4623f9e7754c48e4478c23307" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setRoundness</name></member>
+      <member refid="classWaitingSpinnerWidget_1a25b9639b865d15610a499aaced705afe" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setText</name></member>
+      <member refid="classWaitingSpinnerWidget_1af9ec791036d62a78b0f557346d1c0262" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>setTrailFadePercentage</name></member>
+      <member refid="classWaitingSpinnerWidget_1ad0a0f83cf6adcf03e7c86626bfdaad6d" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>start</name></member>
+      <member refid="classWaitingSpinnerWidget_1a5fece0a70d836cc01bcfdebaf7b43cc4" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>stop</name></member>
+      <member refid="classWaitingSpinnerWidget_1aa0a76a4ea0666f843b8a4cf2cb5a7491" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>trailFadePercentage</name></member>
+      <member refid="classWaitingSpinnerWidget_1a7ac6a1feaec54bd2f54c7110a179f46f" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>updatePosition</name></member>
+      <member refid="classWaitingSpinnerWidget_1a2eb71c4c6472ce81da6e875cf790809b" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>updateSize</name></member>
+      <member refid="classWaitingSpinnerWidget_1a4a72ed38feadc151679c1b3ee7df8f99" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>updateTimer</name></member>
+      <member refid="classWaitingSpinnerWidget_1a5207a447314b9b3505177fec483f5608" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>WaitingSpinnerWidget</name></member>
+      <member refid="classWaitingSpinnerWidget_1a288840f2b5f8eca150fde75b0244c0ab" prot="public" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>WaitingSpinnerWidget</name></member>
+      <member refid="classWaitingSpinnerWidget_1ac61cef28a4710c6d2a0ea3e8d0bca49b" prot="private" virt="non-virtual"><scope>WaitingSpinnerWidget</scope><name>WaitingSpinnerWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

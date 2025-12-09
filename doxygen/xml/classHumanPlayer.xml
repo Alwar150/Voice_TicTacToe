@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classHumanPlayer" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>HumanPlayer</compoundname>
+    <basecompoundref refid="classPlayer" prot="public" virt="non-virtual">Player</basecompoundref>
+    <includes refid="HumanPlayer_8h" local="no">HumanPlayer.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classHumanPlayer_1a274fc9efd09115ccfa0cfac882e49dce" prot="private" static="no" mutable="no">
+        <type><ref refid="classSpeechManager" kindref="compound">SpeechManager</ref> *</type>
+        <definition>SpeechManager* HumanPlayer::stt_</definition>
+        <argsstring></argsstring>
+        <name>stt_</name>
+        <qualifiedname>HumanPlayer::stt_</qualifiedname>
+        <briefdescription>
+<para>Pointer to the <ref refid="classSpeechManager" kindref="compound">SpeechManager</ref> object, the <emphasis>worker</emphasis> for voice recognition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="100" column="19" bodyfile="include/AI/HumanPlayer.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classHumanPlayer_1a360522559dd96e77fe230b2facdb2508" compoundref="HumanPlayer_8cpp" startline="3" endline="18">HumanPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classHumanPlayer_1a75e961bdb6f8c7e0fff5f7b01cfc038b" prot="private" static="no" mutable="no">
+        <type>QThread *</type>
+        <definition>QThread* HumanPlayer::sttThread_</definition>
+        <argsstring></argsstring>
+        <name>sttThread_</name>
+        <qualifiedname>HumanPlayer::sttThread_</qualifiedname>
+        <briefdescription>
+<para>Pointer to the worker thread dedicated to running the <ref refid="classSpeechManager" kindref="compound">SpeechManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="101" column="13" bodyfile="include/AI/HumanPlayer.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classHumanPlayer_1a360522559dd96e77fe230b2facdb2508" compoundref="HumanPlayer_8cpp" startline="3" endline="18">HumanPlayer</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHumanPlayer_1a360522559dd96e77fe230b2facdb2508" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HumanPlayer::HumanPlayer</definition>
+        <argsstring>(const Board &amp;board_ref, BoardMarks playerMark=BoardMarks::Empty, QObject *parent=nullptr)</argsstring>
+        <name>HumanPlayer</name>
+        <qualifiedname>HumanPlayer::HumanPlayer</qualifiedname>
+        <param>
+          <type>const <ref refid="classBoard" kindref="compound">Board</ref> &amp;</type>
+          <declname>board_ref</declname>
+        </param>
+        <param>
+          <type><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5" kindref="member">BoardMarks</ref></type>
+          <declname>playerMark</declname>
+          <defval><ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07" kindref="member">BoardMarks::Empty</ref></defval>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for the human player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the reference to the board and the player&apos;s marker. Also creates and initializes the <ref refid="classSpeechManager" kindref="compound">SpeechManager</ref> object and its associated thread.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>board_ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constant reference to the board model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>playerMark</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The marker (<ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383" kindref="member">BoardMarks::X</ref> or <ref refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e" kindref="member">BoardMarks::O</ref>) assigned to the player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the parent QObject. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="42" column="14" bodyfile="src/AI/HumanPlayer.cpp" bodystart="3" bodyend="18"/>
+        <references refid="classSpeechManager_1a94d6a6d8b5aa00b913e751c2620a9e52" compoundref="SpeechManager_8cpp" startline="20" endline="31">SpeechManager::configure</references>
+        <references refid="classHumanPlayer_1a7d350dafe7524229e5e0f032d877d02d" compoundref="HumanPlayer_8cpp" startline="25" endline="62">parseSpeechCommand</references>
+        <references refid="classSpeechManager_1abdde7758804b9f537d9d704583e6c8b3">SpeechManager::speechRecognized</references>
+        <references refid="classHumanPlayer_1a22dec6c1020171eae458f479c6334792">startListening</references>
+        <references refid="classSpeechManager_1af62b1ec680a5e45e289d629d561c8432" compoundref="SpeechManager_8cpp" startline="80" endline="128">SpeechManager::startListening</references>
+        <references refid="classHumanPlayer_1a274fc9efd09115ccfa0cfac882e49dce" compoundref="HumanPlayer_8h" startline="100">stt_</references>
+        <references refid="classHumanPlayer_1a75e961bdb6f8c7e0fff5f7b01cfc038b" compoundref="HumanPlayer_8h" startline="101">sttThread_</references>
+      </memberdef>
+      <memberdef kind="function" id="classHumanPlayer_1a09eb3ec6888e29a8848a4e8459653e4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual HumanPlayer::~HumanPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>~HumanPlayer</name>
+        <qualifiedname>HumanPlayer::~HumanPlayer</qualifiedname>
+        <briefdescription>
+<para>Destructor for the human player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Handles the cleanup and safe termination of the voice recognition thread. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="49" column="13" bodyfile="include/AI/HumanPlayer.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classHumanPlayer_1ad005d15e0c30f35fd870b25dbde208c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::play</definition>
+        <argsstring>() override</argsstring>
+        <name>play</name>
+        <qualifiedname>HumanPlayer::play</qualifiedname>
+        <reimplements refid="classPlayer_1af85db5d05b014bf19d873038c56dc7ed">play</reimplements>
+        <briefdescription>
+<para>Starts the human player&apos;s turn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This overridden method starts the voice recognition thread (<computeroutput><ref refid="classSpeechManager" kindref="compound">SpeechManager</ref></computeroutput>) and instructs it to begin listening, waiting for a user command. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="57" column="10" bodyfile="src/AI/HumanPlayer.cpp" bodystart="21" bodyend="23"/>
+        <references refid="classHumanPlayer_1a22dec6c1020171eae458f479c6334792">startListening</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classHumanPlayer_1a22dec6c1020171eae458f479c6334792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::startListening</definition>
+        <argsstring>()</argsstring>
+        <name>startListening</name>
+        <qualifiedname>HumanPlayer::startListening</qualifiedname>
+        <briefdescription>
+<para>Signal emitted to start microphone listening in the worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="63" column="10"/>
+        <referencedby refid="classHumanPlayer_1a360522559dd96e77fe230b2facdb2508" compoundref="HumanPlayer_8cpp" startline="3" endline="18">HumanPlayer</referencedby>
+        <referencedby refid="classHumanPlayer_1a7d350dafe7524229e5e0f032d877d02d" compoundref="HumanPlayer_8cpp" startline="25" endline="62">parseSpeechCommand</referencedby>
+        <referencedby refid="classHumanPlayer_1ad005d15e0c30f35fd870b25dbde208c9" compoundref="HumanPlayer_8cpp" startline="21" endline="23">play</referencedby>
+        <referencedby refid="classTTTController_1ab8fd0d485df345aefed502a00082c828" compoundref="TTTController_8cpp" startline="8" endline="72">TTTController::TTTController</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="classHumanPlayer_1a45a91368ca76a18df8f838297810f4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::stopListening</definition>
+        <argsstring>()</argsstring>
+        <name>stopListening</name>
+        <qualifiedname>HumanPlayer::stopListening</qualifiedname>
+        <briefdescription>
+<para>Signal emitted to stop microphone listening and shut down the worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="68" column="10"/>
+        <referencedby refid="classHumanPlayer_1a7d350dafe7524229e5e0f032d877d02d" compoundref="HumanPlayer_8cpp" startline="25" endline="62">parseSpeechCommand</referencedby>
+        <referencedby refid="classTTTController_1ab8fd0d485df345aefed502a00082c828" compoundref="TTTController_8cpp" startline="8" endline="72">TTTController::TTTController</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classHumanPlayer_1a7d350dafe7524229e5e0f032d877d02d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::parseSpeechCommand</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>parseSpeechCommand</name>
+        <qualifiedname>HumanPlayer::parseSpeechCommand</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Processes the text recognized by the <ref refid="classSpeechManager" kindref="compound">SpeechManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method receives the text hypothesis (<computeroutput>text</computeroutput>) from the voice recognition system and initiates command validation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The recognized text string (voice command). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="79" column="10" bodyfile="src/AI/HumanPlayer.cpp" bodystart="25" bodyend="62"/>
+        <references refid="classBoard_1a63a1013dcffbe5dd7d2c9e8b0a77abdf" compoundref="Board_8cpp" startline="94" endline="97">Board::at</references>
+        <references refid="classPlayer_1a088227ab53747cc4955b0a3859b69a84" compoundref="Player_8h" startline="77">Player::board_</references>
+        <references refid="TTTCommonTypes_8h_1a84632e4a1837971396b7fc66da05c2f5ace2c8aed9c2fa0cfbed56cbda4d8bf07">Empty</references>
+        <references refid="classPlayer_1a53a95aa136684609c19494ac2faefc59">Player::playerFinished</references>
+        <references refid="classBoard_1ad82bf1ecd8b4e65f8c5fd6133e831138" compoundref="Board_8cpp" startline="186" endline="189">Board::size</references>
+        <references refid="classHumanPlayer_1a22dec6c1020171eae458f479c6334792">startListening</references>
+        <references refid="classHumanPlayer_1a45a91368ca76a18df8f838297810f4f6">stopListening</references>
+        <referencedby refid="classHumanPlayer_1a360522559dd96e77fe230b2facdb2508" compoundref="HumanPlayer_8cpp" startline="3" endline="18">HumanPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classHumanPlayer_1ab915a74ea5785cad0294dc5502acf8cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HumanPlayer::validateCommand</definition>
+        <argsstring>(const QString &amp;command)</argsstring>
+        <name>validateCommand</name>
+        <qualifiedname>HumanPlayer::validateCommand</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Validates whether the recognized voice command corresponds to a valid move. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Verifies that the command is understandable (e.g., &quot;play cell 5&quot;) and that the indicated cell is available on the board.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text string to validate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the command is valid and the cell is available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classHumanPlayer_1a318ffcc6af2e9829f39df29892c066ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HumanPlayer::handleThreadCleanup</definition>
+        <argsstring>()</argsstring>
+        <name>handleThreadCleanup</name>
+        <qualifiedname>HumanPlayer::handleThreadCleanup</qualifiedname>
+        <briefdescription>
+<para>Slot responsible for managing the worker thread lifecycle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Executes the safe thread termination process (<computeroutput>quit()</computeroutput>, <computeroutput>wait()</computeroutput>) and resource cleanup (<computeroutput>QThread::deleteLater</computeroutput>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/AI/HumanPlayer.h" line="98" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classHumanPlayer" kindref="compound">HumanPlayer</ref> class represents the human player in the game. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Inherits from the abstract base class <ref refid="classPlayer" kindref="compound">Player</ref>. It is responsible for capturing user input (either through GUI clicks or, in this case, through voice recognition using <ref refid="classSpeechManager" kindref="compound">SpeechManager</ref>) and converting it into a valid move on the board.</para>
+<para>Uses a dedicated worker thread (<computeroutput>QThread</computeroutput>) for voice processing (<computeroutput><ref refid="classSpeechManager" kindref="compound">SpeechManager</ref></computeroutput>) to avoid blocking the main GUI thread. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>HumanPlayer</label>
+        <link refid="classHumanPlayer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player</label>
+        <link refid="classPlayer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Board</label>
+        <link refid="classBoard"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>HumanPlayer</label>
+        <link refid="classHumanPlayer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>stt_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player</label>
+        <link refid="classPlayer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>board_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="6">
+        <label>SpeechManager</label>
+        <link refid="classSpeechManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector&lt; vector&lt; BoardMarks &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/AI/HumanPlayer.h" line="28" column="1" bodyfile="include/AI/HumanPlayer.h" bodystart="28" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classPlayer_1a088227ab53747cc4955b0a3859b69a84" prot="protected" virt="non-virtual"><scope>HumanPlayer</scope><name>board_</name></member>
+      <member refid="classHumanPlayer_1a318ffcc6af2e9829f39df29892c066ee" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>handleThreadCleanup</name></member>
+      <member refid="classHumanPlayer_1a360522559dd96e77fe230b2facdb2508" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>HumanPlayer</name></member>
+      <member refid="classPlayer_1a896addb43bdc7926500d04387bb84ac0" prot="protected" virt="non-virtual"><scope>HumanPlayer</scope><name>mark_</name></member>
+      <member refid="classHumanPlayer_1a7d350dafe7524229e5e0f032d877d02d" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>parseSpeechCommand</name></member>
+      <member refid="classHumanPlayer_1ad005d15e0c30f35fd870b25dbde208c9" prot="public" virt="virtual"><scope>HumanPlayer</scope><name>play</name></member>
+      <member refid="classPlayer_1a1e6c1c4847747f85b6cadfa11074feef" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>Player</name></member>
+      <member refid="classPlayer_1a53a95aa136684609c19494ac2faefc59" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>playerFinished</name></member>
+      <member refid="classHumanPlayer_1a22dec6c1020171eae458f479c6334792" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>startListening</name></member>
+      <member refid="classHumanPlayer_1a45a91368ca76a18df8f838297810f4f6" prot="public" virt="non-virtual"><scope>HumanPlayer</scope><name>stopListening</name></member>
+      <member refid="classHumanPlayer_1a274fc9efd09115ccfa0cfac882e49dce" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>stt_</name></member>
+      <member refid="classHumanPlayer_1a75e961bdb6f8c7e0fff5f7b01cfc038b" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>sttThread_</name></member>
+      <member refid="classHumanPlayer_1ab915a74ea5785cad0294dc5502acf8cd" prot="private" virt="non-virtual"><scope>HumanPlayer</scope><name>validateCommand</name></member>
+      <member refid="classHumanPlayer_1a09eb3ec6888e29a8848a4e8459653e4a" prot="public" virt="virtual"><scope>HumanPlayer</scope><name>~HumanPlayer</name></member>
+      <member refid="classPlayer_1a8981c201ffb2270c0b6dbd467b627376" prot="public" virt="virtual"><scope>HumanPlayer</scope><name>~Player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

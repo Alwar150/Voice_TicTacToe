@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_721ce8f54eb62e787f640d6027617add" kind="dir">
+    <compoundname>include/AI</compoundname>
+    <innerfile refid="AIAgent_8h">AIAgent.h</innerfile>
+    <innerfile refid="HumanPlayer_8h">HumanPlayer.h</innerfile>
+    <innerfile refid="MiniMaxAgent_8h">MiniMaxAgent.h</innerfile>
+    <innerfile refid="Player_8h">Player.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/AI/"/>
+  </compounddef>
+</doxygen>

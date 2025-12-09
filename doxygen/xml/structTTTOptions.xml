@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structTTTOptions" kind="struct" language="C++" prot="public">
+    <compoundname>TTTOptions</compoundname>
+    <includes refid="TTTCommonTypes_8h" local="no">TTTCommonTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTTTOptions_1a018fe6935d21dbcf3db30a4a7b3abed0" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t TTTOptions::boardSize</definition>
+        <argsstring></argsstring>
+        <name>boardSize</name>
+        <qualifiedname>TTTOptions::boardSize</qualifiedname>
+        <initializer>= <ref refid="namespacedefaults_1a3d1c84f4b5f4d4ebe910d4093b85680e" kindref="member">defaults::DEFAULT_BOARD_SIZE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="45" column="12" bodyfile="include/TTTCommonTypes.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classTTTController_1ab8fd0d485df345aefed502a00082c828" compoundref="TTTController_8cpp" startline="8" endline="72">TTTController::TTTController</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structTTTOptions_1a086422e4da26dd24bc1166172a9237af" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short TTTOptions::miniMaxDepth</definition>
+        <argsstring></argsstring>
+        <name>miniMaxDepth</name>
+        <qualifiedname>TTTOptions::miniMaxDepth</qualifiedname>
+        <initializer>= <ref refid="namespacedefaults_1a49b1b6d9f73cc2eb7da1a6f4346132d0" kindref="member">defaults::DEFAULT_MINIMAX_DEPTH</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="46" column="20" bodyfile="include/TTTCommonTypes.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classTTTController_1ab8fd0d485df345aefed502a00082c828" compoundref="TTTController_8cpp" startline="8" endline="72">TTTController::TTTController</referencedby>
+        <referencedby refid="classTitleScreen_1a60d1e875593a02a6ee01508235680a47" compoundref="TitleScreen_8cpp" startline="47" endline="51">TitleScreen::updateMiniMaxDepth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structTTTOptions_1a415a2038b9a5bf87d0a8aa41ce52c8aa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TTTOptions::AIopponent</definition>
+        <argsstring></argsstring>
+        <name>AIopponent</name>
+        <qualifiedname>TTTOptions::AIopponent</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="47" column="10" bodyfile="include/TTTCommonTypes.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classTTTController_1ab8fd0d485df345aefed502a00082c828" compoundref="TTTController_8cpp" startline="8" endline="72">TTTController::TTTController</referencedby>
+        <referencedby refid="classTitleScreen_1af028098c1b235b3da76941c83776de20" compoundref="TitleScreen_8cpp" startline="21" endline="28">TitleScreen::updateSinglePlayer</referencedby>
+        <referencedby refid="classTitleScreen_1a65a292091aba9a84cf518af2d395f2b0" compoundref="TitleScreen_8cpp" startline="30" endline="37">TitleScreen::updateTwoPlayers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structTTTOptions_1a1d0e61b132d2b32ab27d6e345aac0697" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TTTOptions::AIstarts</definition>
+        <argsstring></argsstring>
+        <name>AIstarts</name>
+        <qualifiedname>TTTOptions::AIstarts</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/TTTCommonTypes.h" line="48" column="10" bodyfile="include/TTTCommonTypes.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classTTTController_1ab8fd0d485df345aefed502a00082c828" compoundref="TTTController_8cpp" startline="8" endline="72">TTTController::TTTController</referencedby>
+        <referencedby refid="classTitleScreen_1a2cb34f420ea007de5bec91a91b6f2abe" compoundref="TitleScreen_8cpp" startline="39" endline="45">TitleScreen::updateAIstartsGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="structTTTOptions" kindref="compound">TTTOptions</ref> struct defines a tic tac toe game options. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/TTTCommonTypes.h" line="43" column="1" bodyfile="include/TTTCommonTypes.h" bodystart="44" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structTTTOptions_1a415a2038b9a5bf87d0a8aa41ce52c8aa" prot="public" virt="non-virtual"><scope>TTTOptions</scope><name>AIopponent</name></member>
+      <member refid="structTTTOptions_1a1d0e61b132d2b32ab27d6e345aac0697" prot="public" virt="non-virtual"><scope>TTTOptions</scope><name>AIstarts</name></member>
+      <member refid="structTTTOptions_1a018fe6935d21dbcf3db30a4a7b3abed0" prot="public" virt="non-virtual"><scope>TTTOptions</scope><name>boardSize</name></member>
+      <member refid="structTTTOptions_1a086422e4da26dd24bc1166172a9237af" prot="public" virt="non-virtual"><scope>TTTOptions</scope><name>miniMaxDepth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

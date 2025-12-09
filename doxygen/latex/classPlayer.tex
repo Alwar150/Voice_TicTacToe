@@ -1,0 +1,153 @@
+\doxysection{Player Class Reference}
+\hypertarget{classPlayer}{}\label{classPlayer}\index{Player@{Player}}
+
+
+The \doxylink{classPlayer}{Player} class is an abstract base class for different types of players.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+
+
+Inheritance diagram for Player\+:
+% FIG 0
+
+
+Collaboration diagram for Player\+:
+% FIG 1
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPlayer_a53a95aa136684609c19494ac2faefc59}{player\+Finished}} (int const \&cell)
+\begin{DoxyCompactList}\small\item\em Signal emitted when the player has completed their move. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer_a1e6c1c4847747f85b6cadfa11074feef}{Player}} (const \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \&player\+Mark, const \mbox{\hyperlink{classBoard}{Board}} \&board\+\_\+ref, QObject \texorpdfstring{$\ast$}{*}parent\+\_\+=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the base \doxylink{classPlayer}{Player} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPlayer_a8981c201ffb2270c0b6dbd467b627376}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPlayer_af85db5d05b014bf19d873038c56dc7ed}{play}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure abstract method to start the player\textquotesingle{}s move logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classBoard}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPlayer_a088227ab53747cc4955b0a3859b69a84}{board\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Constant pointer to the game board. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \& \mbox{\hyperlink{classPlayer_a896addb43bdc7926500d04387bb84ac0}{mark\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Constant reference to the marker assigned to this player (X or O). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classPlayer}{Player} class is an abstract base class for different types of players. 
+
+This class defines the common interface for all participants in the Tic-\/\+Tac-\/\+Toe game, whether they are human players (\doxylink{classHumanPlayer}{Human\+Player}), AI agents (\doxylink{classMiniMaxAgent}{Mini\+Max\+Agent}), or network players. It provides the mechanism to start the turn ({\ttfamily \doxylink{classPlayer_af85db5d05b014bf19d873038c56dc7ed}{play()}}) and notify the completed move. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPlayer_a1e6c1c4847747f85b6cadfa11074feef}\label{classPlayer_a1e6c1c4847747f85b6cadfa11074feef} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} \&}]{player\+Mark,  }\item[{const \mbox{\hyperlink{classBoard}{Board}} \&}]{board\+\_\+ref,  }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent\+\_\+ = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor for the base \doxylink{classPlayer}{Player} class. 
+
+Initializes the player with their marker (X or O) and a reference to the game board so the player can query its state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Mark} & The marker (\doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{Board\+Marks\+::X} or \doxylink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{Board\+Marks\+::O}) assigned to the player. \\
+\hline
+{\em board\+\_\+ref} & Constant reference to the game \doxylink{classBoard}{Board} object (Model). \\
+\hline
+{\em parent\+\_\+} & Pointer to the parent QObject (nullptr by default). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPlayer_a8981c201ffb2270c0b6dbd467b627376}\label{classPlayer_a8981c201ffb2270c0b6dbd467b627376} 
+\index{Player@{Player}!````~Player@{\texorpdfstring{$\sim$}{\string~}Player}}
+\index{````~Player@{\texorpdfstring{$\sim$}{\string~}Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Player()}{\string~Player()}}
+{\footnotesize\ttfamily virtual Player\+::\texorpdfstring{$\sim$}{\string~}\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual destructor. 
+
+Allows proper destruction of derived classes through a base class pointer. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPlayer_af85db5d05b014bf19d873038c56dc7ed}\label{classPlayer_af85db5d05b014bf19d873038c56dc7ed} 
+\index{Player@{Player}!play@{play}}
+\index{play@{play}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual void Player\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure abstract method to start the player\textquotesingle{}s move logic. 
+
+Derived classes must implement this method to execute their turn logic (e.\+g., wait for voice/click input, calculate the best AI move). 
+
+Implemented in \mbox{\hyperlink{classHumanPlayer_ad005d15e0c30f35fd870b25dbde208c9}{Human\+Player}}, and \mbox{\hyperlink{classMiniMaxAgent_a9fd00e9550a3e78b6ba76c1db80bf78f}{Mini\+Max\+Agent}}.
+
+\Hypertarget{classPlayer_a53a95aa136684609c19494ac2faefc59}\label{classPlayer_a53a95aa136684609c19494ac2faefc59} 
+\index{Player@{Player}!playerFinished@{playerFinished}}
+\index{playerFinished@{playerFinished}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{playerFinished}{playerFinished}}
+{\footnotesize\ttfamily void Player\+::player\+Finished (\begin{DoxyParamCaption}\item[{int const \&}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when the player has completed their move. 
+
+This signal should be emitted by the player after determining their move to notify the controller which cell should be marked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & The index of the cell (0-\/8) chosen by the player. \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d}{Human\+Player\+::parse\+Speech\+Command()}}, \mbox{\hyperlink{classMiniMaxAgent_a9fd00e9550a3e78b6ba76c1db80bf78f}{Mini\+Max\+Agent\+::play()}}, and \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{TTTController\+::set\+Connections()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classPlayer_a088227ab53747cc4955b0a3859b69a84}\label{classPlayer_a088227ab53747cc4955b0a3859b69a84} 
+\index{Player@{Player}!board\_@{board\_}}
+\index{board\_@{board\_}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{board\_}{board\_}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classBoard}{Board}}\texorpdfstring{$\ast$}{*} Player\+::board\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constant pointer to the game board. 
+
+Used to query the current state of cells before making a move. 
+
+Referenced by \mbox{\hyperlink{classHumanPlayer_a7d350dafe7524229e5e0f032d877d02d}{Human\+Player\+::parse\+Speech\+Command()}}, and \mbox{\hyperlink{classMiniMaxAgent_a9fd00e9550a3e78b6ba76c1db80bf78f}{Mini\+Max\+Agent\+::play()}}.
+
+\Hypertarget{classPlayer_a896addb43bdc7926500d04387bb84ac0}\label{classPlayer_a896addb43bdc7926500d04387bb84ac0} 
+\index{Player@{Player}!mark\_@{mark\_}}
+\index{mark\_@{mark\_}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{mark\_}{mark\_}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}\& Player\+::mark\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constant reference to the marker assigned to this player (X or O). 
+
+
+
+Referenced by \mbox{\hyperlink{classMiniMaxAgent_a9d99e71c93f92fc3bda35809fa031fd8}{Mini\+Max\+Agent\+::max\+Move()}}, \mbox{\hyperlink{classMiniMaxAgent_a9fd00e9550a3e78b6ba76c1db80bf78f}{Mini\+Max\+Agent\+::play()}}, \mbox{\hyperlink{classMiniMaxAgent_adde21208d43b0ff75ecd2c014c217c78}{Mini\+Max\+Agent\+::player\+Mark\+\_\+()}}, and \mbox{\hyperlink{classMiniMaxAgent_a1472ae706782c168d8e1965bac90097b}{Mini\+Max\+Agent\+::score()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+AI/\mbox{\hyperlink{Player_8h}{Player.\+h}}\end{DoxyCompactItemize}

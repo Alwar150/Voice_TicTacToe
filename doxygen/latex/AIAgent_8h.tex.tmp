@@ -1,0 +1,31 @@
+\doxysection{include/\+AI/\+AIAgent.h File Reference}
+\hypertarget{AIAgent_8h}{}\label{AIAgent_8h}\index{include/AI/AIAgent.h@{include/AI/AIAgent.h}}
+
+
+Definition of the \doxylink{classAIAgent}{AIAgent} interface for artificial intelligence agents.  
+
+
+{\ttfamily \#include "{}Player.\+h"{}}\newline
+Include dependency graph for AIAgent.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classAIAgent}{AIAgent}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{classAIAgent}{AIAgent} interface describes the behavior of any implemented Artificial Intelligence agent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definition of the \doxylink{classAIAgent}{AIAgent} interface for artificial intelligence agents. 
+
+\begin{DoxyAuthor}{Author}
+Miguel Fernández Lorenzo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+November 2025 
+\end{DoxyDate}

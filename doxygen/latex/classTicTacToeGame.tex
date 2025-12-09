@@ -1,0 +1,399 @@
+\doxysection{Tic\+Tac\+Toe\+Game Class Reference}
+\hypertarget{classTicTacToeGame}{}\label{classTicTacToeGame}\index{TicTacToeGame@{TicTacToeGame}}
+
+
+The \doxylink{classTicTacToeGame}{Tic\+Tac\+Toe\+Game} class is responsible for the GUI of a game, it is responsible for building the cells of a board, which can be of variable size, and a navigation button to take the user back to the title screen, and a button for resetting the game and playing a new one.  
+
+
+
+
+{\ttfamily \#include $<$Tic\+Tac\+Toe\+Game.\+h$>$}
+
+
+
+Inheritance diagram for Tic\+Tac\+Toe\+Game\+:
+% FIG 0
+
+
+Collaboration diagram for Tic\+Tac\+Toe\+Game\+:
+% FIG 1
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTicTacToeGame_ad0072c616d4d9284ca69245a635b8303}{new\+Game}} ()
+\begin{DoxyCompactList}\small\item\em new\+Game is emitted when the New Game button is clicked and some reset logic must be executed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTicTacToeGame_ac1bea86656497f38aa87436e5779b000}{go\+Back}} ()
+\begin{DoxyCompactList}\small\item\em go\+Back is emitted when the Back button is clicked and the Ttitle\+Screen must reappear. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTicTacToeGame_acab186bab68d7cf8a2c6f4ce87e6de13}{Tic\+Tac\+Toe\+Game}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \doxylink{classTicTacToeGame}{Tic\+Tac\+Toe\+Game} constructs a view of a game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTicTacToeGame_a6df8896115fc708fa4dd12bc6c04e34a}{update\+Cell}} (\mbox{\hyperlink{structCell}{Cell}} \&cell, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} current\+Player)
+\begin{DoxyCompactList}\small\item\em update\+Cell sets the Text of the cell to the current player\textquotesingle{}s mark. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTicTacToeGame_a9dd5dc95d4e7edf631cdd4a8d77c4e12}{declare\+Game\+State}} (\mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}} board\+State)
+\begin{DoxyCompactList}\small\item\em declare\+Game\+State outputs the board\textquotesingle{}s state to a QMessage\+Box. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{structCell}{Cell}} $>$ \mbox{\hyperlink{classTicTacToeGame_a9dd8af6820a6a994aeaf8ba6bee6fc89}{build\+Cell\+Buttons}} (size\+\_\+t board\+Size)
+\begin{DoxyCompactList}\small\item\em build\+Cell\+Buttons builds the GUI cells as push buttons. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTicTacToeGame_a8a891d7dcf57178c79f325a92751f44c}{reset}} (vector$<$ \mbox{\hyperlink{structCell}{Cell}} $>$ \&cells)
+\begin{DoxyCompactList}\small\item\em reset clears out the text of all push button cells. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTicTacToeGame_af32116d620dacc2f335eeb9d919bde05}{update\+Connection\+Status}} (bool)
+\begin{DoxyCompactList}\small\item\em Update de visual indicator of the conection status with socket server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTicTacToeGame_a5bc188ae6a5806246edc175844725518}{update\+Recording\+Status}} (bool)
+\item 
+void \mbox{\hyperlink{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908}{update\+Waiting\+Status}} (bool)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTicTacToeGame_a1c9c0235d321bee6cbe121a14c946434}{set\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em set\+Connections handles setting the connection to emit if cells have cliked, and the navigational back button. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classTicTacToeGame_a0b8fee976515895d15eb59c282b057d1}{get\+Player\+Text}} (\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} current\+Player)
+\begin{DoxyCompactList}\small\item\em get\+Player\+Text converts a board mark to a QString. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classTicTacToeGame_ac18fe593bff035ce81a7f5e97727870a}{get\+Player\+Style\+Sheet}} (\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}} current\+Player)
+\begin{DoxyCompactList}\small\item\em get\+Player\+Style\+Sheet gets a stylesheet associated with each player. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classTicTacToeGame_af4349fa57bc46d6e3030ff2482ea57c9}{get\+Board\+Final\+State\+Text}} (\mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}} board\+State)
+\begin{DoxyCompactList}\small\item\em get\+Board\+Final\+State\+Text converts a state to a decleration text, that will be used when declaring the final state of a game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTicTacToeGame_a472855efbebb032e29b3c5addafa6ca2}{set\+Led\+Style}} (QLabel \texorpdfstring{$\ast$}{*}label, const QString \&text, const QString \&bg\+Color, const QString \&text\+Color, int font\+Size)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ Ui\+::\+Tic\+Tac\+Toe\+Game $>$ \mbox{\hyperlink{classTicTacToeGame_ab64b2821a1025135891b4610b8454031}{ui}}
+\begin{DoxyCompactList}\small\item\em Activate or deactivate the visual loading indicator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classTicTacToeGame_a999d4a3df39eb26a65b65d88afca6f09}{waiter}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}, intended to be an animated wheel when process is waiting server response. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{classTicTacToeGame}{Tic\+Tac\+Toe\+Game} class is responsible for the GUI of a game, it is responsible for building the cells of a board, which can be of variable size, and a navigation button to take the user back to the title screen, and a button for resetting the game and playing a new one. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTicTacToeGame_acab186bab68d7cf8a2c6f4ce87e6de13}\label{classTicTacToeGame_acab186bab68d7cf8a2c6f4ce87e6de13} 
+\index{TicTacToeGame@{TicTacToeGame}!TicTacToeGame@{TicTacToeGame}}
+\index{TicTacToeGame@{TicTacToeGame}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{TicTacToeGame()}{TicTacToeGame()}}
+{\footnotesize\ttfamily Tic\+Tac\+Toe\+Game\+::\+Tic\+Tac\+Toe\+Game (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxylink{classTicTacToeGame}{Tic\+Tac\+Toe\+Game} constructs a view of a game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & is a QWidget type parent that owns this instance of the controller. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classTicTacToeGame_a1c9c0235d321bee6cbe121a14c946434}{set\+Connections()}}, \mbox{\hyperlink{classTicTacToeGame_ab64b2821a1025135891b4610b8454031}{ui}}, \mbox{\hyperlink{classTicTacToeGame_af32116d620dacc2f335eeb9d919bde05}{update\+Connection\+Status()}}, \mbox{\hyperlink{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908}{update\+Waiting\+Status()}}, and \mbox{\hyperlink{classTicTacToeGame_a999d4a3df39eb26a65b65d88afca6f09}{waiter}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTicTacToeGame_a9dd8af6820a6a994aeaf8ba6bee6fc89}\label{classTicTacToeGame_a9dd8af6820a6a994aeaf8ba6bee6fc89} 
+\index{TicTacToeGame@{TicTacToeGame}!buildCellButtons@{buildCellButtons}}
+\index{buildCellButtons@{buildCellButtons}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{buildCellButtons()}{buildCellButtons()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structCell}{Cell}} $>$ Tic\+Tac\+Toe\+Game\+::build\+Cell\+Buttons (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{board\+Size }\end{DoxyParamCaption})}
+
+
+
+build\+Cell\+Buttons builds the GUI cells as push buttons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+Size} & number of rows or columns of a board. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a collection of cells containing push button references and their corresponding row and column. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespacedefaults_aca5beb5b61bbee2b62591514da336e9a}{defaults\+::\+GUI\+\_\+\+CELL\+\_\+\+COLUMN\+\_\+\+SPAN}}, \mbox{\hyperlink{namespacedefaults_a87616ad23782d44bc9f33455a6889e66}{defaults\+::\+GUI\+\_\+\+CELL\+\_\+\+ROW\+\_\+\+SPAN}}, and \mbox{\hyperlink{classTicTacToeGame_ab64b2821a1025135891b4610b8454031}{ui}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_ab8fd0d485df345aefed502a00082c828}{TTTController\+::\+TTTController()}}.
+
+\Hypertarget{classTicTacToeGame_a9dd5dc95d4e7edf631cdd4a8d77c4e12}\label{classTicTacToeGame_a9dd5dc95d4e7edf631cdd4a8d77c4e12} 
+\index{TicTacToeGame@{TicTacToeGame}!declareGameState@{declareGameState}}
+\index{declareGameState@{declareGameState}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{declareGameState()}{declareGameState()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::declare\+Game\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}}}]{board\+State }\end{DoxyParamCaption})}
+
+
+
+declare\+Game\+State outputs the board\textquotesingle{}s state to a QMessage\+Box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+State} & the current board state. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{classTicTacToeGame_af4349fa57bc46d6e3030ff2482ea57c9}{get\+Board\+Final\+State\+Text()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}{TTTController\+::update\+Game\+State()}}.
+
+\Hypertarget{classTicTacToeGame_af4349fa57bc46d6e3030ff2482ea57c9}\label{classTicTacToeGame_af4349fa57bc46d6e3030ff2482ea57c9} 
+\index{TicTacToeGame@{TicTacToeGame}!getBoardFinalStateText@{getBoardFinalStateText}}
+\index{getBoardFinalStateText@{getBoardFinalStateText}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{getBoardFinalStateText()}{getBoardFinalStateText()}}
+{\footnotesize\ttfamily QString Tic\+Tac\+Toe\+Game\+::get\+Board\+Final\+State\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}{Board\+State}}}]{board\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+get\+Board\+Final\+State\+Text converts a state to a decleration text, that will be used when declaring the final state of a game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+State} & the current board state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString decleration text, that will be used when declaring the final state of a game. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222ae225102bf12722e05d25dfa24a556e97}{OWins}}, \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a2de86fa016c5a004fb0b0e8b707ea99b}{Tie}}, and \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222a98169eec87866feb3dde5f8f50ee9bed}{XWins}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_a9dd5dc95d4e7edf631cdd4a8d77c4e12}{declare\+Game\+State()}}.
+
+\Hypertarget{classTicTacToeGame_ac18fe593bff035ce81a7f5e97727870a}\label{classTicTacToeGame_ac18fe593bff035ce81a7f5e97727870a} 
+\index{TicTacToeGame@{TicTacToeGame}!getPlayerStyleSheet@{getPlayerStyleSheet}}
+\index{getPlayerStyleSheet@{getPlayerStyleSheet}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{getPlayerStyleSheet()}{getPlayerStyleSheet()}}
+{\footnotesize\ttfamily QString Tic\+Tac\+Toe\+Game\+::get\+Player\+Style\+Sheet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{current\+Player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+get\+Player\+Style\+Sheet gets a stylesheet associated with each player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Player} & the current player\textquotesingle{}s mark (X or O). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a QString stylesheet of the player given in the input. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{namespacedefaults_ad0d694b17b3da7d45ff3197fc1b822a0}{defaults\+::\+DEFAULT\+\_\+\+COLOR}}, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, \mbox{\hyperlink{namespacedefaults_a6dba498f47aaf9fb6f733e50193c5a41}{defaults\+::\+O\+\_\+\+COLOR}}, \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}, and \mbox{\hyperlink{namespacedefaults_a2cdb92ca01789057aafbb7c70c347015}{defaults\+::\+X\+\_\+\+COLOR}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_a6df8896115fc708fa4dd12bc6c04e34a}{update\+Cell()}}.
+
+\Hypertarget{classTicTacToeGame_a0b8fee976515895d15eb59c282b057d1}\label{classTicTacToeGame_a0b8fee976515895d15eb59c282b057d1} 
+\index{TicTacToeGame@{TicTacToeGame}!getPlayerText@{getPlayerText}}
+\index{getPlayerText@{getPlayerText}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{getPlayerText()}{getPlayerText()}}
+{\footnotesize\ttfamily QString Tic\+Tac\+Toe\+Game\+::get\+Player\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{current\+Player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+get\+Player\+Text converts a board mark to a QString. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Player} & the current player\textquotesingle{}s mark (X or O). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a QString of the player\textquotesingle{}s mark. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5af186217753c37b9b9f958d906208506e}{O}}, and \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5a02129bb861061d1a052c592e2dc6b383}{X}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_a6df8896115fc708fa4dd12bc6c04e34a}{update\+Cell()}}.
+
+\Hypertarget{classTicTacToeGame_ac1bea86656497f38aa87436e5779b000}\label{classTicTacToeGame_ac1bea86656497f38aa87436e5779b000} 
+\index{TicTacToeGame@{TicTacToeGame}!goBack@{goBack}}
+\index{goBack@{goBack}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{goBack}{goBack}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::go\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+go\+Back is emitted when the Back button is clicked and the Ttitle\+Screen must reappear. 
+
+
+
+Referenced by \mbox{\hyperlink{classTitleScreen_ac55c2f2485f58d3b7b389e7414a358d6}{Title\+Screen\+::start\+Game()}}.
+
+\Hypertarget{classTicTacToeGame_ad0072c616d4d9284ca69245a635b8303}\label{classTicTacToeGame_ad0072c616d4d9284ca69245a635b8303} 
+\index{TicTacToeGame@{TicTacToeGame}!newGame@{newGame}}
+\index{newGame@{newGame}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{newGame}{newGame}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::new\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+new\+Game is emitted when the New Game button is clicked and some reset logic must be executed. 
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a8375926f879380ce4fcca19e7c8a9ca4}{TTTController\+::set\+Connections()}}.
+
+\Hypertarget{classTicTacToeGame_a8a891d7dcf57178c79f325a92751f44c}\label{classTicTacToeGame_a8a891d7dcf57178c79f325a92751f44c} 
+\index{TicTacToeGame@{TicTacToeGame}!reset@{reset}}
+\index{reset@{reset}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::reset (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structCell}{Cell}} $>$ \&}]{cells }\end{DoxyParamCaption})}
+
+
+
+reset clears out the text of all push button cells. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cells} & a collection of cells containing push button references and their corresponding row and column. \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a14db27ac7fab7fa75f993b1efb282b15}{TTTController\+::reset()}}.
+
+\Hypertarget{classTicTacToeGame_a1c9c0235d321bee6cbe121a14c946434}\label{classTicTacToeGame_a1c9c0235d321bee6cbe121a14c946434} 
+\index{TicTacToeGame@{TicTacToeGame}!setConnections@{setConnections}}
+\index{setConnections@{setConnections}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{setConnections()}{setConnections()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::set\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+set\+Connections handles setting the connection to emit if cells have cliked, and the navigational back button. 
+
+
+
+References \mbox{\hyperlink{classTicTacToeGame_ab64b2821a1025135891b4610b8454031}{ui}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_acab186bab68d7cf8a2c6f4ce87e6de13}{Tic\+Tac\+Toe\+Game()}}.
+
+\Hypertarget{classTicTacToeGame_a472855efbebb032e29b3c5addafa6ca2}\label{classTicTacToeGame_a472855efbebb032e29b3c5addafa6ca2} 
+\index{TicTacToeGame@{TicTacToeGame}!setLedStyle@{setLedStyle}}
+\index{setLedStyle@{setLedStyle}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{setLedStyle()}{setLedStyle()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::set\+Led\+Style (\begin{DoxyParamCaption}\item[{QLabel \texorpdfstring{$\ast$}{*}}]{label,  }\item[{const QString \&}]{text,  }\item[{const QString \&}]{bg\+Color,  }\item[{const QString \&}]{text\+Color,  }\item[{int}]{font\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_a5bc188ae6a5806246edc175844725518}{update\+Recording\+Status()}}, and \mbox{\hyperlink{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908}{update\+Waiting\+Status()}}.
+
+\Hypertarget{classTicTacToeGame_a6df8896115fc708fa4dd12bc6c04e34a}\label{classTicTacToeGame_a6df8896115fc708fa4dd12bc6c04e34a} 
+\index{TicTacToeGame@{TicTacToeGame}!updateCell@{updateCell}}
+\index{updateCell@{updateCell}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{updateCell()}{updateCell()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::update\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCell}{Cell}} \&}]{cell,  }\item[{\mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{Board\+Marks}}}]{current\+Player }\end{DoxyParamCaption})}
+
+
+
+update\+Cell sets the Text of the cell to the current player\textquotesingle{}s mark. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & a refernece to the clicked cell. \\
+\hline
+{\em current\+Player} & the current player\textquotesingle{}s mark (X or O). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{structCell_a242e6735a746bdd7b0d25311a81f0cb4}{Cell\+::cell\+Btn}}, \mbox{\hyperlink{classTicTacToeGame_ac18fe593bff035ce81a7f5e97727870a}{get\+Player\+Style\+Sheet()}}, and \mbox{\hyperlink{classTicTacToeGame_a0b8fee976515895d15eb59c282b057d1}{get\+Player\+Text()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTTTController_a2b17b7aa11412f978e257afb2aebab5b}{TTTController\+::update\+Game\+State()}}.
+
+\Hypertarget{classTicTacToeGame_af32116d620dacc2f335eeb9d919bde05}\label{classTicTacToeGame_af32116d620dacc2f335eeb9d919bde05} 
+\index{TicTacToeGame@{TicTacToeGame}!updateConnectionStatus@{updateConnectionStatus}}
+\index{updateConnectionStatus@{updateConnectionStatus}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{updateConnectionStatus()}{updateConnectionStatus()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::update\+Connection\+Status (\begin{DoxyParamCaption}\item[{bool}]{is\+Connected }\end{DoxyParamCaption})}
+
+
+
+Update de visual indicator of the conection status with socket server. 
+
+
+
+References \mbox{\hyperlink{classTicTacToeGame_ab64b2821a1025135891b4610b8454031}{ui}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_acab186bab68d7cf8a2c6f4ce87e6de13}{Tic\+Tac\+Toe\+Game()}}.
+
+\Hypertarget{classTicTacToeGame_a5bc188ae6a5806246edc175844725518}\label{classTicTacToeGame_a5bc188ae6a5806246edc175844725518} 
+\index{TicTacToeGame@{TicTacToeGame}!updateRecordingStatus@{updateRecordingStatus}}
+\index{updateRecordingStatus@{updateRecordingStatus}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{updateRecordingStatus()}{updateRecordingStatus()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::update\+Recording\+Status (\begin{DoxyParamCaption}\item[{bool}]{is\+Recording }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classTicTacToeGame_a472855efbebb032e29b3c5addafa6ca2}{set\+Led\+Style()}}, and \mbox{\hyperlink{classTicTacToeGame_ab64b2821a1025135891b4610b8454031}{ui}}.
+
+\Hypertarget{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908}\label{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908} 
+\index{TicTacToeGame@{TicTacToeGame}!updateWaitingStatus@{updateWaitingStatus}}
+\index{updateWaitingStatus@{updateWaitingStatus}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{updateWaitingStatus()}{updateWaitingStatus()}}
+{\footnotesize\ttfamily void Tic\+Tac\+Toe\+Game\+::update\+Waiting\+Status (\begin{DoxyParamCaption}\item[{bool}]{is\+Waiting }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classTicTacToeGame_a472855efbebb032e29b3c5addafa6ca2}{set\+Led\+Style()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}{Waiting\+Spinner\+Widget\+::start()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4}{Waiting\+Spinner\+Widget\+::stop()}}, \mbox{\hyperlink{classTicTacToeGame_ab64b2821a1025135891b4610b8454031}{ui}}, and \mbox{\hyperlink{classTicTacToeGame_a999d4a3df39eb26a65b65d88afca6f09}{waiter}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_acab186bab68d7cf8a2c6f4ce87e6de13}{Tic\+Tac\+Toe\+Game()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTicTacToeGame_ab64b2821a1025135891b4610b8454031}\label{classTicTacToeGame_ab64b2821a1025135891b4610b8454031} 
+\index{TicTacToeGame@{TicTacToeGame}!ui@{ui}}
+\index{ui@{ui}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$Ui\+::\+Tic\+Tac\+Toe\+Game$>$ Tic\+Tac\+Toe\+Game\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Activate or deactivate the visual loading indicator. 
+
+ui is a reference to the ui object of the tic tac toe game. 
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_a9dd8af6820a6a994aeaf8ba6bee6fc89}{build\+Cell\+Buttons()}}, \mbox{\hyperlink{classTicTacToeGame_a1c9c0235d321bee6cbe121a14c946434}{set\+Connections()}}, \mbox{\hyperlink{classTicTacToeGame_acab186bab68d7cf8a2c6f4ce87e6de13}{Tic\+Tac\+Toe\+Game()}}, \mbox{\hyperlink{classTicTacToeGame_af32116d620dacc2f335eeb9d919bde05}{update\+Connection\+Status()}}, \mbox{\hyperlink{classTicTacToeGame_a5bc188ae6a5806246edc175844725518}{update\+Recording\+Status()}}, and \mbox{\hyperlink{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908}{update\+Waiting\+Status()}}.
+
+\Hypertarget{classTicTacToeGame_a999d4a3df39eb26a65b65d88afca6f09}\label{classTicTacToeGame_a999d4a3df39eb26a65b65d88afca6f09} 
+\index{TicTacToeGame@{TicTacToeGame}!waiter@{waiter}}
+\index{waiter@{waiter}!TicTacToeGame@{TicTacToeGame}}
+\doxysubsubsection{\texorpdfstring{waiter}{waiter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}}\texorpdfstring{$\ast$}{*} Tic\+Tac\+Toe\+Game\+::waiter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxylink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}, intended to be an animated wheel when process is waiting server response. 
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_acab186bab68d7cf8a2c6f4ce87e6de13}{Tic\+Tac\+Toe\+Game()}}, and \mbox{\hyperlink{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908}{update\+Waiting\+Status()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+View/\mbox{\hyperlink{TicTacToeGame_8h}{Tic\+Tac\+Toe\+Game.\+h}}\item 
+src/\+View/\mbox{\hyperlink{TicTacToeGame_8cpp}{Tic\+Tac\+Toe\+Game.\+cpp}}\end{DoxyCompactItemize}

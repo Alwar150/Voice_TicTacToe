@@ -1,0 +1,39 @@
+\doxysection{Board.\+h}
+\hypertarget{Board_8h_source}{}\label{Board_8h_source}\index{include/Model/Board.h@{include/Model/Board.h}}
+\mbox{\hyperlink{Board_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BOARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BOARD\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{TTTCommonTypes_8h}{TTTCommonTypes.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtGlobal>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBoard}{Board}}}
+\DoxyCodeLine{00045\ \{}
+\DoxyCodeLine{00046\ \textcolor{keyword}{protected}:\ \textcolor{comment}{//\ Data}}
+\DoxyCodeLine{00051\ \ \ \ \ vector<vector<BoardMarks>>\ \mbox{\hyperlink{classBoard_adfd225a07d805a10bf34c7592218eb70}{board\_}};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classBoard_a9be071bf59fbbb74c3eade9a74d8f521}{boardSize\_}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{classBoard}{Board}}(\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classBoard_ad82bf1ecd8b4e65f8c5fd6133e831138}{size}});}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{classBoard}{Board}}(\mbox{\hyperlink{classBoard}{Board}}\&\ b);}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classBoard}{Board}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classBoard}{Board}}\&\ b);}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{classBoard}{Board}}(\mbox{\hyperlink{classBoard}{Board}}\&\&\ b);}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{classBoard}{Board}}\&\ \mbox{\hyperlink{classBoard_ae4ccc3271e479d7f9284b9567dc4c2a6}{operator=}}(\mbox{\hyperlink{classBoard}{Board}}\ b);}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classBoard_af73f45730119a1fd8f6670f53f959e68}{\string~Board}}();}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{TTTCommonTypes_8h_a8c50f66384175c1e9157b3c9b23cf222}{BoardState}}\ \mbox{\hyperlink{classBoard_a1b7486c5df3db7e5a1c8ed097492527f}{evaluateBoard}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classBoard_a109cbc4dc8c6c76d05caba0345eedc17}{setPlayerInput}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ col,\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ currentPlayer);}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{TTTCommonTypes_8h_a84632e4a1837971396b7fc66da05c2f5}{BoardMarks}}\ \mbox{\hyperlink{classBoard_a63a1013dcffbe5dd7d2c9e8b0a77abdf}{at}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ col)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_aaef819a8d1a10c35d9f802195802236e}{reset}}();}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_addcaa486e1293eebcb323fb936353f43}{resetCell}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ col);}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classBoard_ad82bf1ecd8b4e65f8c5fd6133e831138}{size}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#ifdef\ QT\_DEBUG}}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBoard_a17375a18c51b86c82ea82a30ec9cbee6}{printBoard}}\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00132\ \};}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BOARD\_H}}
+
+\end{DoxyCode}

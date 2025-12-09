@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="TicTacToeGame_8puml" kind="file" language="C++">
+    <compoundname>TicTacToeGame.puml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@file<sp/>TicTacToeGame.puml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@brief<sp/>PlantUML<sp/>block<sp/>for<sp/>`TicTacToeGame`<sp/>to<sp/>be<sp/>included<sp/>by<sp/>Doxygen.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Generated<sp/>from<sp/>`include/View/TicTacToeGame.h`<sp/>using<sp/>the<sp/>HumanPlayer.h<sp/>format.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@startuml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>class<sp/>TicTacToeGame</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-ui:<sp/>std::unique_ptr&lt;Ui::TicTacToeGame&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>-waiter:<sp/>WaitingSpinnerWidget*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+TicTacToeGame(QWidget*<sp/>parent<sp/>=<sp/>nullptr)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateCell(Cell&amp;,<sp/>BoardMarks):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+declareGameState(BoardState):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+buildCellButtons(size_t):<sp/>std::vector&lt;Cell&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+reset(std::vector&lt;Cell&gt;&amp;):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateConnectionStatus(bool):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateRecordingStatus(bool):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>+updateWaitingStatus(bool):<sp/>void</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>--</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>TicTacToeGame<sp/>..|&gt;<sp/>QDialog</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>TicTacToeGame<sp/>--&gt;<sp/>WaitingSpinnerWidget</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@enduml</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="docs/plantuml/TicTacToeGame.puml"/>
+  </compounddef>
+</doxygen>

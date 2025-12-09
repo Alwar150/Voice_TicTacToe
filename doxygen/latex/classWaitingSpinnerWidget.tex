@@ -1,0 +1,658 @@
+\doxysection{Waiting\+Spinner\+Widget Class Reference}
+\hypertarget{classWaitingSpinnerWidget}{}\label{classWaitingSpinnerWidget}\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+
+
+{\ttfamily \#include $<$waitingspinnerwidget.\+h$>$}
+
+
+
+Inheritance diagram for Waiting\+Spinner\+Widget\+:
+% FIG 0
+
+
+Collaboration diagram for Waiting\+Spinner\+Widget\+:
+% FIG 1
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}{start}} ()
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4}{stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWaitingSpinnerWidget_a5207a447314b9b3505177fec483f5608}{Waiting\+Spinner\+Widget}} (QWidget \texorpdfstring{$\ast$}{*}parent=0, bool center\+On\+Parent=true, bool disable\+Parent\+When\+Spinning=true)
+\item 
+\mbox{\hyperlink{classWaitingSpinnerWidget_a288840f2b5f8eca150fde75b0244c0ab}{Waiting\+Spinner\+Widget}} (Qt\+::\+Window\+Modality modality, QWidget \texorpdfstring{$\ast$}{*}parent=0, bool center\+On\+Parent=true, bool disable\+Parent\+When\+Spinning=true)
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a5bc33ab179119f510d556c214fe7ac9b}{set\+Color}} (QColor \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color}})
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a894f40b4623f9e7754c48e4478c23307}{set\+Roundness}} (qreal \mbox{\hyperlink{classWaitingSpinnerWidget_a2ceb91dfdafcd41b99f04aa2b4b81786}{roundness}})
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_ad4ad8fab83b1a60cf1dff78d6ad716d7}{set\+Minimum\+Trail\+Opacity}} (qreal \mbox{\hyperlink{classWaitingSpinnerWidget_a8a9ed21ff17ead12fcbf26b163940dbe}{minimum\+Trail\+Opacity}})
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_af9ec791036d62a78b0f557346d1c0262}{set\+Trail\+Fade\+Percentage}} (qreal trail)
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_addb2884587497961d78e24c50a2f1aba}{set\+Revolutions\+Per\+Second}} (qreal revolutions\+Per\+Second)
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a29945c03eaf051081ea21f22dca6e97a}{set\+Number\+Of\+Lines}} (int lines)
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a797995d006da2e96b72daa959ddd274e}{set\+Line\+Length}} (int length)
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a987a9c7234f83ca2665dd05f8d039e64}{set\+Line\+Width}} (int width)
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a4adc650895478217a5f28c72a9df1e53}{set\+Inner\+Radius}} (int radius)
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a25b9639b865d15610a499aaced705afe}{set\+Text}} (QString text)
+\item 
+QColor \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color}} ()
+\item 
+qreal \mbox{\hyperlink{classWaitingSpinnerWidget_a2ceb91dfdafcd41b99f04aa2b4b81786}{roundness}} ()
+\item 
+qreal \mbox{\hyperlink{classWaitingSpinnerWidget_a8a9ed21ff17ead12fcbf26b163940dbe}{minimum\+Trail\+Opacity}} ()
+\item 
+qreal \mbox{\hyperlink{classWaitingSpinnerWidget_aa0a76a4ea0666f843b8a4cf2cb5a7491}{trail\+Fade\+Percentage}} ()
+\item 
+qreal \mbox{\hyperlink{classWaitingSpinnerWidget_a54f72cfcb508e8d4bea313891d87b766}{revolutions\+Pers\+Second}} ()
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_af6a17bce3bc7081c1e0297e6249576e0}{number\+Of\+Lines}} ()
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_aa716528e1094789337adc5d291c69747}{line\+Length}} ()
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_a6c42700d650379cffd704199c63c4f28}{line\+Width}} ()
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_a9db984232c785de31390485c30d7a596}{inner\+Radius}} ()
+\item 
+bool \mbox{\hyperlink{classWaitingSpinnerWidget_ab02d5a79b1794c55b58b3cd417075a5a}{is\+Spinning}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event}} (QPaint\+Event \texorpdfstring{$\ast$}{*}paint\+Event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_aacb453453fd98625eb38e021de72070f}{rotate}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize}} ()
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}{update\+Size}} ()
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}{update\+Timer}} ()
+\item 
+void \mbox{\hyperlink{classWaitingSpinnerWidget_a7ac6a1feaec54bd2f54c7110a179f46f}{update\+Position}} ()
+\item 
+\mbox{\hyperlink{classWaitingSpinnerWidget_ac61cef28a4710c6d2a0ea3e8d0bca49b}{Waiting\+Spinner\+Widget}} (const \mbox{\hyperlink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}} \&)
+\item 
+\mbox{\hyperlink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}} \& \mbox{\hyperlink{classWaitingSpinnerWidget_a82a516c36d956b5cdeaca95bac6162ac}{operator=}} (const \mbox{\hyperlink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}} \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classWaitingSpinnerWidget_a144cdce01e10daeefb91846b7d7328a5}{line\+Count\+Distance\+From\+Primary}} (int current, int primary, int total\+Nr\+Of\+Lines)
+\item 
+static QColor \mbox{\hyperlink{classWaitingSpinnerWidget_ab8adb44bc0a3eb32bfe9d7b5b1a83e4c}{current\+Line\+Color}} (int distance, int total\+Nr\+Of\+Lines, qreal trail\+Fade\+Perc, qreal min\+Opacity, QColor \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QColor \mbox{\hyperlink{classWaitingSpinnerWidget_aaea8d9dd1dfd0fec4d63a73a3b940e79}{\+\_\+color}}
+\item 
+qreal \mbox{\hyperlink{classWaitingSpinnerWidget_a853bddeb85306ca792f3696064d911b8}{\+\_\+roundness}}
+\item 
+qreal \mbox{\hyperlink{classWaitingSpinnerWidget_ae80928504ba4586bed5d80db45455b4a}{\+\_\+minimum\+Trail\+Opacity}}
+\item 
+qreal \mbox{\hyperlink{classWaitingSpinnerWidget_a4162157a6d402ffa3a87f8e6fd7abf0d}{\+\_\+trail\+Fade\+Percentage}}
+\item 
+qreal \mbox{\hyperlink{classWaitingSpinnerWidget_a9398c0e6ec48a6e2f91f7c0ae9b5d924}{\+\_\+revolutions\+Per\+Second}}
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}{\+\_\+number\+Of\+Lines}}
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48}{\+\_\+line\+Length}}
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_a7d5224bb675c63b974acf3ab9da2a0ae}{\+\_\+line\+Width}}
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da}{\+\_\+inner\+Radius}}
+\item 
+QTimer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classWaitingSpinnerWidget_a59f0c98b8cf02a3d7f50085e856ff908}{\+\_\+timer}}
+\item 
+bool \mbox{\hyperlink{classWaitingSpinnerWidget_ae9df7d573477f907da5da0b0518d300a}{\+\_\+center\+On\+Parent}}
+\item 
+bool \mbox{\hyperlink{classWaitingSpinnerWidget_af2e707cbf375a3b5626980854e7423f2}{\+\_\+disable\+Parent\+When\+Spinning}}
+\item 
+int \mbox{\hyperlink{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}{\+\_\+current\+Counter}}
+\item 
+bool \mbox{\hyperlink{classWaitingSpinnerWidget_a0034d3b61e3f1f41ea147039913906d4}{\+\_\+is\+Spinning}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWaitingSpinnerWidget_a5207a447314b9b3505177fec483f5608}\label{classWaitingSpinnerWidget_a5207a447314b9b3505177fec483f5608} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{WaitingSpinnerWidget()}{WaitingSpinnerWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Waiting\+Spinner\+Widget\+::\+Waiting\+Spinner\+Widget (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily 0},  }\item[{bool}]{center\+On\+Parent = {\ttfamily true},  }\item[{bool}]{disable\+Parent\+When\+Spinning = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Constructor for "{}standard"{} widget behaviour -\/ use this constructor if you wish to, e.\+g. embed your widget in another. 
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a288840f2b5f8eca150fde75b0244c0ab}\label{classWaitingSpinnerWidget_a288840f2b5f8eca150fde75b0244c0ab} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{WaitingSpinnerWidget()}{WaitingSpinnerWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Waiting\+Spinner\+Widget\+::\+Waiting\+Spinner\+Widget (\begin{DoxyParamCaption}\item[{Qt\+::\+Window\+Modality}]{modality,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily 0},  }\item[{bool}]{center\+On\+Parent = {\ttfamily true},  }\item[{bool}]{disable\+Parent\+When\+Spinning = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Constructor -\/ use this constructor to automatically create a modal ("{}blocking"{}) spinner on top of the calling widget/window. If a valid parent widget is provided, "{}centre\+On\+Parent"{} will ensure that Qt\+Waiting\+Spinner automatically centres itself on it, if not, "{}centre\+On\+Parent"{} is ignored. 
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_ac61cef28a4710c6d2a0ea3e8d0bca49b}\label{classWaitingSpinnerWidget_ac61cef28a4710c6d2a0ea3e8d0bca49b} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{WaitingSpinnerWidget()}{WaitingSpinnerWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Waiting\+Spinner\+Widget\+::\+Waiting\+Spinner\+Widget (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}\label{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!color@{color}}
+\index{color@{color}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily QColor Waiting\+Spinner\+Widget\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_aaea8d9dd1dfd0fec4d63a73a3b940e79}{\+\_\+color}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_ab8adb44bc0a3eb32bfe9d7b5b1a83e4c}{current\+Line\+Color()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a5bc33ab179119f510d556c214fe7ac9b}{set\+Color()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_ab8adb44bc0a3eb32bfe9d7b5b1a83e4c}\label{classWaitingSpinnerWidget_ab8adb44bc0a3eb32bfe9d7b5b1a83e4c} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!currentLineColor@{currentLineColor}}
+\index{currentLineColor@{currentLineColor}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{currentLineColor()}{currentLineColor()}}
+{\footnotesize\ttfamily QColor Waiting\+Spinner\+Widget\+::current\+Line\+Color (\begin{DoxyParamCaption}\item[{int}]{distance,  }\item[{int}]{total\+Nr\+Of\+Lines,  }\item[{qreal}]{trail\+Fade\+Perc,  }\item[{qreal}]{min\+Opacity,  }\item[{QColor}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}\label{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!initialize@{initialize}}
+\index{initialize@{initialize}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_aaea8d9dd1dfd0fec4d63a73a3b940e79}{\+\_\+color}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}{\+\_\+current\+Counter}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da}{\+\_\+inner\+Radius}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a0034d3b61e3f1f41ea147039913906d4}{\+\_\+is\+Spinning}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48}{\+\_\+line\+Length}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a7d5224bb675c63b974acf3ab9da2a0ae}{\+\_\+line\+Width}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ae80928504ba4586bed5d80db45455b4a}{\+\_\+minimum\+Trail\+Opacity}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}{\+\_\+number\+Of\+Lines}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a9398c0e6ec48a6e2f91f7c0ae9b5d924}{\+\_\+revolutions\+Per\+Second}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a853bddeb85306ca792f3696064d911b8}{\+\_\+roundness}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a59f0c98b8cf02a3d7f50085e856ff908}{\+\_\+timer}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a4162157a6d402ffa3a87f8e6fd7abf0d}{\+\_\+trail\+Fade\+Percentage}}, \mbox{\hyperlink{classWaitingSpinnerWidget_aacb453453fd98625eb38e021de72070f}{rotate()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}{update\+Size()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}{update\+Timer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a288840f2b5f8eca150fde75b0244c0ab}{Waiting\+Spinner\+Widget()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a5207a447314b9b3505177fec483f5608}{Waiting\+Spinner\+Widget()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a9db984232c785de31390485c30d7a596}\label{classWaitingSpinnerWidget_a9db984232c785de31390485c30d7a596} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!innerRadius@{innerRadius}}
+\index{innerRadius@{innerRadius}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{innerRadius()}{innerRadius()}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::inner\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da}{\+\_\+inner\+Radius}}.
+
+\Hypertarget{classWaitingSpinnerWidget_ab02d5a79b1794c55b58b3cd417075a5a}\label{classWaitingSpinnerWidget_ab02d5a79b1794c55b58b3cd417075a5a} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!isSpinning@{isSpinning}}
+\index{isSpinning@{isSpinning}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{isSpinning()}{isSpinning()}}
+{\footnotesize\ttfamily bool Waiting\+Spinner\+Widget\+::is\+Spinning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a0034d3b61e3f1f41ea147039913906d4}{\+\_\+is\+Spinning}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a144cdce01e10daeefb91846b7d7328a5}\label{classWaitingSpinnerWidget_a144cdce01e10daeefb91846b7d7328a5} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!lineCountDistanceFromPrimary@{lineCountDistanceFromPrimary}}
+\index{lineCountDistanceFromPrimary@{lineCountDistanceFromPrimary}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{lineCountDistanceFromPrimary()}{lineCountDistanceFromPrimary()}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::line\+Count\+Distance\+From\+Primary (\begin{DoxyParamCaption}\item[{int}]{current,  }\item[{int}]{primary,  }\item[{int}]{total\+Nr\+Of\+Lines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_aa716528e1094789337adc5d291c69747}\label{classWaitingSpinnerWidget_aa716528e1094789337adc5d291c69747} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!lineLength@{lineLength}}
+\index{lineLength@{lineLength}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{lineLength()}{lineLength()}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::line\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48}{\+\_\+line\+Length}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a6c42700d650379cffd704199c63c4f28}\label{classWaitingSpinnerWidget_a6c42700d650379cffd704199c63c4f28} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!lineWidth@{lineWidth}}
+\index{lineWidth@{lineWidth}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{lineWidth()}{lineWidth()}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::line\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a7d5224bb675c63b974acf3ab9da2a0ae}{\+\_\+line\+Width}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a8a9ed21ff17ead12fcbf26b163940dbe}\label{classWaitingSpinnerWidget_a8a9ed21ff17ead12fcbf26b163940dbe} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!minimumTrailOpacity@{minimumTrailOpacity}}
+\index{minimumTrailOpacity@{minimumTrailOpacity}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{minimumTrailOpacity()}{minimumTrailOpacity()}}
+{\footnotesize\ttfamily qreal Waiting\+Spinner\+Widget\+::minimum\+Trail\+Opacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_ae80928504ba4586bed5d80db45455b4a}{\+\_\+minimum\+Trail\+Opacity}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_ad4ad8fab83b1a60cf1dff78d6ad716d7}{set\+Minimum\+Trail\+Opacity()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_af6a17bce3bc7081c1e0297e6249576e0}\label{classWaitingSpinnerWidget_af6a17bce3bc7081c1e0297e6249576e0} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!numberOfLines@{numberOfLines}}
+\index{numberOfLines@{numberOfLines}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{numberOfLines()}{numberOfLines()}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::number\+Of\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}{\+\_\+number\+Of\+Lines}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a82a516c36d956b5cdeaca95bac6162ac}\label{classWaitingSpinnerWidget_a82a516c36d956b5cdeaca95bac6162ac} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!operator=@{operator=}}
+\index{operator=@{operator=}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}} \& Waiting\+Spinner\+Widget\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWaitingSpinnerWidget}{Waiting\+Spinner\+Widget}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}\label{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event \texorpdfstring{$\ast$}{*}}]{paint\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_aaea8d9dd1dfd0fec4d63a73a3b940e79}{\+\_\+color}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}{\+\_\+current\+Counter}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da}{\+\_\+inner\+Radius}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48}{\+\_\+line\+Length}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a7d5224bb675c63b974acf3ab9da2a0ae}{\+\_\+line\+Width}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ae80928504ba4586bed5d80db45455b4a}{\+\_\+minimum\+Trail\+Opacity}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}{\+\_\+number\+Of\+Lines}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a853bddeb85306ca792f3696064d911b8}{\+\_\+roundness}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a4162157a6d402ffa3a87f8e6fd7abf0d}{\+\_\+trail\+Fade\+Percentage}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ab8adb44bc0a3eb32bfe9d7b5b1a83e4c}{current\+Line\+Color()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a144cdce01e10daeefb91846b7d7328a5}{line\+Count\+Distance\+From\+Primary()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a7ac6a1feaec54bd2f54c7110a179f46f}{update\+Position()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a54f72cfcb508e8d4bea313891d87b766}\label{classWaitingSpinnerWidget_a54f72cfcb508e8d4bea313891d87b766} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!revolutionsPersSecond@{revolutionsPersSecond}}
+\index{revolutionsPersSecond@{revolutionsPersSecond}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{revolutionsPersSecond()}{revolutionsPersSecond()}}
+{\footnotesize\ttfamily qreal Waiting\+Spinner\+Widget\+::revolutions\+Pers\+Second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a9398c0e6ec48a6e2f91f7c0ae9b5d924}{\+\_\+revolutions\+Per\+Second}}.
+
+\Hypertarget{classWaitingSpinnerWidget_aacb453453fd98625eb38e021de72070f}\label{classWaitingSpinnerWidget_aacb453453fd98625eb38e021de72070f} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!rotate@{rotate}}
+\index{rotate@{rotate}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{rotate}{rotate}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}{\+\_\+current\+Counter}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}{\+\_\+number\+Of\+Lines}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a2ceb91dfdafcd41b99f04aa2b4b81786}\label{classWaitingSpinnerWidget_a2ceb91dfdafcd41b99f04aa2b4b81786} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!roundness@{roundness}}
+\index{roundness@{roundness}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{roundness()}{roundness()}}
+{\footnotesize\ttfamily qreal Waiting\+Spinner\+Widget\+::roundness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a853bddeb85306ca792f3696064d911b8}{\+\_\+roundness}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a894f40b4623f9e7754c48e4478c23307}{set\+Roundness()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a5bc33ab179119f510d556c214fe7ac9b}\label{classWaitingSpinnerWidget_a5bc33ab179119f510d556c214fe7ac9b} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setColor@{setColor}}
+\index{setColor@{setColor}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Color (\begin{DoxyParamCaption}\item[{QColor}]{color }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_aaea8d9dd1dfd0fec4d63a73a3b940e79}{\+\_\+color}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a4adc650895478217a5f28c72a9df1e53}\label{classWaitingSpinnerWidget_a4adc650895478217a5f28c72a9df1e53} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setInnerRadius@{setInnerRadius}}
+\index{setInnerRadius@{setInnerRadius}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setInnerRadius()}{setInnerRadius()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Inner\+Radius (\begin{DoxyParamCaption}\item[{int}]{radius }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da}{\+\_\+inner\+Radius}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}{update\+Size()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a797995d006da2e96b72daa959ddd274e}\label{classWaitingSpinnerWidget_a797995d006da2e96b72daa959ddd274e} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setLineLength@{setLineLength}}
+\index{setLineLength@{setLineLength}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setLineLength()}{setLineLength()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Line\+Length (\begin{DoxyParamCaption}\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48}{\+\_\+line\+Length}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}{update\+Size()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a987a9c7234f83ca2665dd05f8d039e64}\label{classWaitingSpinnerWidget_a987a9c7234f83ca2665dd05f8d039e64} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setLineWidth@{setLineWidth}}
+\index{setLineWidth@{setLineWidth}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setLineWidth()}{setLineWidth()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Line\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a7d5224bb675c63b974acf3ab9da2a0ae}{\+\_\+line\+Width}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}{update\+Size()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_ad4ad8fab83b1a60cf1dff78d6ad716d7}\label{classWaitingSpinnerWidget_ad4ad8fab83b1a60cf1dff78d6ad716d7} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setMinimumTrailOpacity@{setMinimumTrailOpacity}}
+\index{setMinimumTrailOpacity@{setMinimumTrailOpacity}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setMinimumTrailOpacity()}{setMinimumTrailOpacity()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Minimum\+Trail\+Opacity (\begin{DoxyParamCaption}\item[{qreal}]{minimum\+Trail\+Opacity }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_ae80928504ba4586bed5d80db45455b4a}{\+\_\+minimum\+Trail\+Opacity}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a8a9ed21ff17ead12fcbf26b163940dbe}{minimum\+Trail\+Opacity()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a29945c03eaf051081ea21f22dca6e97a}\label{classWaitingSpinnerWidget_a29945c03eaf051081ea21f22dca6e97a} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setNumberOfLines@{setNumberOfLines}}
+\index{setNumberOfLines@{setNumberOfLines}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setNumberOfLines()}{setNumberOfLines()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Number\+Of\+Lines (\begin{DoxyParamCaption}\item[{int}]{lines }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}{\+\_\+current\+Counter}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}{\+\_\+number\+Of\+Lines}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}{update\+Timer()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_addb2884587497961d78e24c50a2f1aba}\label{classWaitingSpinnerWidget_addb2884587497961d78e24c50a2f1aba} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setRevolutionsPerSecond@{setRevolutionsPerSecond}}
+\index{setRevolutionsPerSecond@{setRevolutionsPerSecond}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setRevolutionsPerSecond()}{setRevolutionsPerSecond()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Revolutions\+Per\+Second (\begin{DoxyParamCaption}\item[{qreal}]{revolutions\+Per\+Second }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a9398c0e6ec48a6e2f91f7c0ae9b5d924}{\+\_\+revolutions\+Per\+Second}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}{update\+Timer()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a894f40b4623f9e7754c48e4478c23307}\label{classWaitingSpinnerWidget_a894f40b4623f9e7754c48e4478c23307} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setRoundness@{setRoundness}}
+\index{setRoundness@{setRoundness}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setRoundness()}{setRoundness()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Roundness (\begin{DoxyParamCaption}\item[{qreal}]{roundness }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a853bddeb85306ca792f3696064d911b8}{\+\_\+roundness}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a2ceb91dfdafcd41b99f04aa2b4b81786}{roundness()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a25b9639b865d15610a499aaced705afe}\label{classWaitingSpinnerWidget_a25b9639b865d15610a499aaced705afe} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setText@{setText}}
+\index{setText@{setText}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Text (\begin{DoxyParamCaption}\item[{QString}]{text }\end{DoxyParamCaption})}
+
+\Hypertarget{classWaitingSpinnerWidget_af9ec791036d62a78b0f557346d1c0262}\label{classWaitingSpinnerWidget_af9ec791036d62a78b0f557346d1c0262} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!setTrailFadePercentage@{setTrailFadePercentage}}
+\index{setTrailFadePercentage@{setTrailFadePercentage}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{setTrailFadePercentage()}{setTrailFadePercentage()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::set\+Trail\+Fade\+Percentage (\begin{DoxyParamCaption}\item[{qreal}]{trail }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a4162157a6d402ffa3a87f8e6fd7abf0d}{\+\_\+trail\+Fade\+Percentage}}.
+
+\Hypertarget{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}\label{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!start@{start}}
+\index{start@{start}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}{\+\_\+current\+Counter}}, \mbox{\hyperlink{classWaitingSpinnerWidget_af2e707cbf375a3b5626980854e7423f2}{\+\_\+disable\+Parent\+When\+Spinning}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a0034d3b61e3f1f41ea147039913906d4}{\+\_\+is\+Spinning}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a59f0c98b8cf02a3d7f50085e856ff908}{\+\_\+timer}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a7ac6a1feaec54bd2f54c7110a179f46f}{update\+Position()}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908}{Tic\+Tac\+Toe\+Game\+::update\+Waiting\+Status()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4}\label{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!stop@{stop}}
+\index{stop@{stop}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{stop}{stop}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}{\+\_\+current\+Counter}}, \mbox{\hyperlink{classWaitingSpinnerWidget_af2e707cbf375a3b5626980854e7423f2}{\+\_\+disable\+Parent\+When\+Spinning}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a0034d3b61e3f1f41ea147039913906d4}{\+\_\+is\+Spinning}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a59f0c98b8cf02a3d7f50085e856ff908}{\+\_\+timer}}.
+
+
+
+Referenced by \mbox{\hyperlink{classTicTacToeGame_aa0bc0416eaa3777270caaa81d14d9908}{Tic\+Tac\+Toe\+Game\+::update\+Waiting\+Status()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_aa0a76a4ea0666f843b8a4cf2cb5a7491}\label{classWaitingSpinnerWidget_aa0a76a4ea0666f843b8a4cf2cb5a7491} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!trailFadePercentage@{trailFadePercentage}}
+\index{trailFadePercentage@{trailFadePercentage}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{trailFadePercentage()}{trailFadePercentage()}}
+{\footnotesize\ttfamily qreal Waiting\+Spinner\+Widget\+::trail\+Fade\+Percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a4162157a6d402ffa3a87f8e6fd7abf0d}{\+\_\+trail\+Fade\+Percentage}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a7ac6a1feaec54bd2f54c7110a179f46f}\label{classWaitingSpinnerWidget_a7ac6a1feaec54bd2f54c7110a179f46f} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::update\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_ae9df7d573477f907da5da0b0518d300a}{\+\_\+center\+On\+Parent}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}{start()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}\label{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!updateSize@{updateSize}}
+\index{updateSize@{updateSize}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{updateSize()}{updateSize()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::update\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da}{\+\_\+inner\+Radius}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48}{\+\_\+line\+Length}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a4adc650895478217a5f28c72a9df1e53}{set\+Inner\+Radius()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a797995d006da2e96b72daa959ddd274e}{set\+Line\+Length()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a987a9c7234f83ca2665dd05f8d039e64}{set\+Line\+Width()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}\label{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!updateTimer@{updateTimer}}
+\index{updateTimer@{updateTimer}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{updateTimer()}{updateTimer()}}
+{\footnotesize\ttfamily void Waiting\+Spinner\+Widget\+::update\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}{\+\_\+number\+Of\+Lines}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a9398c0e6ec48a6e2f91f7c0ae9b5d924}{\+\_\+revolutions\+Per\+Second}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a59f0c98b8cf02a3d7f50085e856ff908}{\+\_\+timer}}.
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a29945c03eaf051081ea21f22dca6e97a}{set\+Number\+Of\+Lines()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_addb2884587497961d78e24c50a2f1aba}{set\+Revolutions\+Per\+Second()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classWaitingSpinnerWidget_ae9df7d573477f907da5da0b0518d300a}\label{classWaitingSpinnerWidget_ae9df7d573477f907da5da0b0518d300a} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_centerOnParent@{\_centerOnParent}}
+\index{\_centerOnParent@{\_centerOnParent}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_centerOnParent}{\_centerOnParent}}
+{\footnotesize\ttfamily bool Waiting\+Spinner\+Widget\+::\+\_\+center\+On\+Parent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a7ac6a1feaec54bd2f54c7110a179f46f}{update\+Position()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_aaea8d9dd1dfd0fec4d63a73a3b940e79}\label{classWaitingSpinnerWidget_aaea8d9dd1dfd0fec4d63a73a3b940e79} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_color@{\_color}}
+\index{\_color@{\_color}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_color}{\_color}}
+{\footnotesize\ttfamily QColor Waiting\+Spinner\+Widget\+::\+\_\+color\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a35164a7ac60db4b199caf7624ab3acf2}{color()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a5bc33ab179119f510d556c214fe7ac9b}{set\+Color()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae}\label{classWaitingSpinnerWidget_ac3cbb1d3a1386bca905d7c6a91fbd0ae} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_currentCounter@{\_currentCounter}}
+\index{\_currentCounter@{\_currentCounter}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_currentCounter}{\_currentCounter}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::\+\_\+current\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_aacb453453fd98625eb38e021de72070f}{rotate()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a29945c03eaf051081ea21f22dca6e97a}{set\+Number\+Of\+Lines()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}{start()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4}{stop()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_af2e707cbf375a3b5626980854e7423f2}\label{classWaitingSpinnerWidget_af2e707cbf375a3b5626980854e7423f2} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_disableParentWhenSpinning@{\_disableParentWhenSpinning}}
+\index{\_disableParentWhenSpinning@{\_disableParentWhenSpinning}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_disableParentWhenSpinning}{\_disableParentWhenSpinning}}
+{\footnotesize\ttfamily bool Waiting\+Spinner\+Widget\+::\+\_\+disable\+Parent\+When\+Spinning\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}{start()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4}{stop()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da}\label{classWaitingSpinnerWidget_a51b04fcda4b13695fcbb8481c73699da} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_innerRadius@{\_innerRadius}}
+\index{\_innerRadius@{\_innerRadius}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_innerRadius}{\_innerRadius}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::\+\_\+inner\+Radius\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a9db984232c785de31390485c30d7a596}{inner\+Radius()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a4adc650895478217a5f28c72a9df1e53}{set\+Inner\+Radius()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}{update\+Size()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a0034d3b61e3f1f41ea147039913906d4}\label{classWaitingSpinnerWidget_a0034d3b61e3f1f41ea147039913906d4} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_isSpinning@{\_isSpinning}}
+\index{\_isSpinning@{\_isSpinning}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_isSpinning}{\_isSpinning}}
+{\footnotesize\ttfamily bool Waiting\+Spinner\+Widget\+::\+\_\+is\+Spinning\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ab02d5a79b1794c55b58b3cd417075a5a}{is\+Spinning()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}{start()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4}{stop()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48}\label{classWaitingSpinnerWidget_a33bbf199e55d0a5d58f71ba65a686d48} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_lineLength@{\_lineLength}}
+\index{\_lineLength@{\_lineLength}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_lineLength}{\_lineLength}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::\+\_\+line\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_aa716528e1094789337adc5d291c69747}{line\+Length()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a797995d006da2e96b72daa959ddd274e}{set\+Line\+Length()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a2eb71c4c6472ce81da6e875cf790809b}{update\+Size()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a7d5224bb675c63b974acf3ab9da2a0ae}\label{classWaitingSpinnerWidget_a7d5224bb675c63b974acf3ab9da2a0ae} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_lineWidth@{\_lineWidth}}
+\index{\_lineWidth@{\_lineWidth}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_lineWidth}{\_lineWidth}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::\+\_\+line\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a6c42700d650379cffd704199c63c4f28}{line\+Width()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a987a9c7234f83ca2665dd05f8d039e64}{set\+Line\+Width()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_ae80928504ba4586bed5d80db45455b4a}\label{classWaitingSpinnerWidget_ae80928504ba4586bed5d80db45455b4a} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_minimumTrailOpacity@{\_minimumTrailOpacity}}
+\index{\_minimumTrailOpacity@{\_minimumTrailOpacity}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_minimumTrailOpacity}{\_minimumTrailOpacity}}
+{\footnotesize\ttfamily qreal Waiting\+Spinner\+Widget\+::\+\_\+minimum\+Trail\+Opacity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a8a9ed21ff17ead12fcbf26b163940dbe}{minimum\+Trail\+Opacity()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_ad4ad8fab83b1a60cf1dff78d6ad716d7}{set\+Minimum\+Trail\+Opacity()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f}\label{classWaitingSpinnerWidget_a3be1ccd1e770ac866aed2469470c239f} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_numberOfLines@{\_numberOfLines}}
+\index{\_numberOfLines@{\_numberOfLines}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_numberOfLines}{\_numberOfLines}}
+{\footnotesize\ttfamily int Waiting\+Spinner\+Widget\+::\+\_\+number\+Of\+Lines\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_af6a17bce3bc7081c1e0297e6249576e0}{number\+Of\+Lines()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_aacb453453fd98625eb38e021de72070f}{rotate()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a29945c03eaf051081ea21f22dca6e97a}{set\+Number\+Of\+Lines()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}{update\+Timer()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a9398c0e6ec48a6e2f91f7c0ae9b5d924}\label{classWaitingSpinnerWidget_a9398c0e6ec48a6e2f91f7c0ae9b5d924} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_revolutionsPerSecond@{\_revolutionsPerSecond}}
+\index{\_revolutionsPerSecond@{\_revolutionsPerSecond}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_revolutionsPerSecond}{\_revolutionsPerSecond}}
+{\footnotesize\ttfamily qreal Waiting\+Spinner\+Widget\+::\+\_\+revolutions\+Per\+Second\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a54f72cfcb508e8d4bea313891d87b766}{revolutions\+Pers\+Second()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_addb2884587497961d78e24c50a2f1aba}{set\+Revolutions\+Per\+Second()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}{update\+Timer()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a853bddeb85306ca792f3696064d911b8}\label{classWaitingSpinnerWidget_a853bddeb85306ca792f3696064d911b8} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_roundness@{\_roundness}}
+\index{\_roundness@{\_roundness}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_roundness}{\_roundness}}
+{\footnotesize\ttfamily qreal Waiting\+Spinner\+Widget\+::\+\_\+roundness\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a2ceb91dfdafcd41b99f04aa2b4b81786}{roundness()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a894f40b4623f9e7754c48e4478c23307}{set\+Roundness()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a59f0c98b8cf02a3d7f50085e856ff908}\label{classWaitingSpinnerWidget_a59f0c98b8cf02a3d7f50085e856ff908} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_timer@{\_timer}}
+\index{\_timer@{\_timer}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_timer}{\_timer}}
+{\footnotesize\ttfamily QTimer\texorpdfstring{$\ast$}{*} Waiting\+Spinner\+Widget\+::\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_ad0a0f83cf6adcf03e7c86626bfdaad6d}{start()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a5fece0a70d836cc01bcfdebaf7b43cc4}{stop()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_a4a72ed38feadc151679c1b3ee7df8f99}{update\+Timer()}}.
+
+\Hypertarget{classWaitingSpinnerWidget_a4162157a6d402ffa3a87f8e6fd7abf0d}\label{classWaitingSpinnerWidget_a4162157a6d402ffa3a87f8e6fd7abf0d} 
+\index{WaitingSpinnerWidget@{WaitingSpinnerWidget}!\_trailFadePercentage@{\_trailFadePercentage}}
+\index{\_trailFadePercentage@{\_trailFadePercentage}!WaitingSpinnerWidget@{WaitingSpinnerWidget}}
+\doxysubsubsection{\texorpdfstring{\_trailFadePercentage}{\_trailFadePercentage}}
+{\footnotesize\ttfamily qreal Waiting\+Spinner\+Widget\+::\+\_\+trail\+Fade\+Percentage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{classWaitingSpinnerWidget_a885516e19838042bd79042f854452a3d}{initialize()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_a08163883e94d431a7c2aabf30a03c850}{paint\+Event()}}, \mbox{\hyperlink{classWaitingSpinnerWidget_af9ec791036d62a78b0f557346d1c0262}{set\+Trail\+Fade\+Percentage()}}, and \mbox{\hyperlink{classWaitingSpinnerWidget_aa0a76a4ea0666f843b8a4cf2cb5a7491}{trail\+Fade\+Percentage()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+View/\mbox{\hyperlink{waitingspinnerwidget_8h}{waitingspinnerwidget.\+h}}\item 
+src/\mbox{\hyperlink{waitingspinnerwidget_8cpp}{waitingspinnerwidget.\+cpp}}\end{DoxyCompactItemize}
