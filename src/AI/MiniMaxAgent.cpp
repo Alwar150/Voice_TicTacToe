@@ -1,38 +1,49 @@
 #include "MiniMaxAgent.h"
-#include <QPair>
-#include <limits.h>
+#include <limits>
+#include <algorithm>
 
-MiniMaxAgent::MiniMaxAgent( const Board& board,BoardMarks AImark,unsigned short depth, QObject* parent)
-    : AIAgent(AImark,board,parent), depth_(depth){}
+// Definimos puntuaciones altas para que la profundidad tenga efecto.
+// Esto hace que la IA sea "más lista" que la de la referencia básica.
+static constexpr short MAX_SCORE = 1000;
+static constexpr short MIN_SCORE = -1000;
+
+MiniMaxAgent::MiniMaxAgent(const Board& board, BoardMarks AImark, unsigned short depth, QObject* parent)
+    : AIAgent(AImark, board, parent), depth_(depth)
+{
+    // A diferencia de la referencia, tú no necesitas guardar playerMark_
+    // porque lo calculas dinámicamente con tu función inline playerMark_()
+}
 
 short MiniMaxAgent::maxMove(Board &board, unsigned short depth, short alpha, short beta) const
 {
-    // if game over return score.
     BoardState state = board.evaluateBoard();
-    if ( (0 == depth) || (BoardState::NoWinner != state) )
-        return score(state);
 
-    // Choose the best score given all empty cell choices.
-    short bestScore = SHRT_MIN;
+    // Condición de parada
+    if ((0 == depth) || (BoardState::NoWinner != state)) {
+        return score(state);
+    }
+
+    short bestScore = std::numeric_limits<short>::min();
+
     for (size_t row = 0; row < board.size(); ++row) {
         for (size_t col = 0; col < board.size(); ++col) {
             if (BoardMarks::Empty == board.at(row, col)) {
-                // Try the move
+
+                // 1. Hacer movimiento
                 board.setPlayerInput(row, col, mark_);
 
-                // Compare result of this move with respect to AI.
-                short score = minMove(board, depth - 1, alpha, beta);
+                // 2. Llamada recursiva
+                short val = minMove(board, depth - 1, alpha, beta);
 
-                // Reset the move done.
+                // 3. DESHACER MOVIMIENTO (Clave de la referencia)
                 board.resetCell(row, col);
 
-                // Update the best score.
-                bestScore = std::max(bestScore, score);
-                // Update alpha
-                alpha = std::max(alpha, score);
-                // Prune the rest of cells after this one.
-                if (beta <= alpha)
-                    break;
+                // 4. Maximizar
+                bestScore = std::max(bestScore, val);
+                alpha = std::max(alpha, bestScore);
+
+                // Poda
+                if (beta <= alpha) return bestScore;
             }
         }
     }
@@ -41,87 +52,100 @@ short MiniMaxAgent::maxMove(Board &board, unsigned short depth, short alpha, sho
 
 short MiniMaxAgent::minMove(Board &board, unsigned short depth, short alpha, short beta) const
 {
-    // if game over return score
     BoardState state = board.evaluateBoard();
-    if ( (0 == depth) || (BoardState::NoWinner != state) )
-        return score(state);
 
-    short bestScore = SHRT_MAX;
+    if ((0 == depth) || (BoardState::NoWinner != state)) {
+        return score(state);
+    }
+
+    short bestScore = std::numeric_limits<short>::max();
+
     for (size_t row = 0; row < board.size(); ++row) {
         for (size_t col = 0; col < board.size(); ++col) {
             if (BoardMarks::Empty == board.at(row, col)) {
-                // Try the move
+
+                // 1. Hacer movimiento (usamos tu función helper playerMark_())
                 board.setPlayerInput(row, col, playerMark_());
 
-                // Compare result of this move with respect to player
-                short score = maxMove(board, depth - 1, alpha, beta);
+                // 2. Llamada recursiva
+                short val = maxMove(board, depth - 1, alpha, beta);
 
-                // Reset the move done
+                // 3. DESHACER MOVIMIENTO (Clave de la referencia)
                 board.resetCell(row, col);
 
-                // Update the best score.
-                bestScore = std::min(bestScore, score);
-                // Update beta
-                beta = std::min(beta, score);
-                // Prune the rest of cells after this one.
-                if (beta <= alpha)
-                    break;
+                // 4. Minimizar
+                bestScore = std::min(bestScore, val);
+                beta = std::min(beta, bestScore);
+
+                // Poda
+                if (beta <= alpha) return bestScore;
             }
         }
     }
     return bestScore;
 }
 
-short MiniMaxAgent::score(const BoardState state) const
+short MiniMaxAgent::score(const BoardState& state) const
 {
-    // AI win score.
-    if ( (BoardMarks::O == mark_) && (BoardState::OWins == state) )
+    // Evaluación simple del estado final
+    if ((BoardMarks::O == this->mark_) && (BoardState::OWins == state)){
         return AI_WIN_SCORE;
-    if ( (BoardMarks::X == mark_) && (BoardState::XWins == state) )
+    }
+    if ((BoardMarks::X == this->mark_) && (BoardState::XWins == state)){
         return AI_WIN_SCORE;
-    // Player win score.
-    if ( (BoardMarks::O == mark_) && (BoardState::XWins == state) )
-        return PLAYER_WIN_SCORE;
-    if ( (BoardMarks::X == mark_) && (BoardState::OWins == state) )
-        return PLAYER_WIN_SCORE;
+    }
 
-    // Tie or a non final state score.
+    if ((BoardMarks::O == this->mark_) && (BoardState::XWins == state)){
+        return PLAYER_WIN_SCORE;
+    }
+    if ((BoardMarks::X == this->mark_) && (BoardState::OWins == state))
+    {
+        return PLAYER_WIN_SCORE;
+    }
+
     return TIE_SCORE;
 }
 
 void MiniMaxAgent::play()
 {
-    Board copy_(*board_);
-    // No play if the board is at a final state.
-    if (BoardState::NoWinner != copy_.evaluateBoard())
-        emit playerFinished(-1);
+    // ADAPTACIÓN: La referencia recibe board por parámetro.
+    // Tú usas 'this->board_' (del padre AIAgent), por lo que debemos hacer una COPIA
+    // para no alterar el juego real durante la simulación.
+    Board copy_(*this->board_);
 
-    // Start of the minimax algorith and choose the best score of all available cells.
-    int bestScore = INT_MIN;
-    QPair<size_t, size_t> bestEntry;
+    // Verificación de seguridad
+    if (BoardState::NoWinner != copy_.evaluateBoard()) {
+        emit playerFinished(-1);
+        return;
+    }
+
+    short bestScore = std::numeric_limits<short>::min();
+    int bestIndex = -1;
+
+    // Este bucle es lógicamente IDÉNTICO al de la referencia
     for (size_t row = 0; row < copy_.size(); ++row) {
         for (size_t col = 0; col < copy_.size(); ++col) {
             if (BoardMarks::Empty == copy_.at(row, col)) {
-                // Try the move
+
+                // A. Probar movimiento en la copia
                 copy_.setPlayerInput(row, col, mark_);
 
-                // Update the best score and the best cell location.
-                int moveScore = minMove(copy_, depth_ - 1, SHRT_MIN, SHRT_MAX);
+                // B. Calcular puntuación
+                short moveScore = minMove(copy_, depth_ - 1, std::numeric_limits<short>::min(), std::numeric_limits<short>::max());
+
+                // C. IMPORTANTE: Resetear la celda en la copia
+                copy_.resetCell(row, col);
+
+                // D. Elegir mejor movimiento
                 if (moveScore > bestScore) {
                     bestScore = moveScore;
-                    bestEntry.first = row;
-                    bestEntry.second = col;
+                    bestIndex = static_cast<int>(row * copy_.size() + col);
                 }
 
-                // Reset the move done
-                copy_.resetCell(row, col);
             }
         }
     }
 
-    // Set the AI choice on the board.
-    copy_.setPlayerInput(bestEntry.first, bestEntry.second, mark_);
-    // Return the 1D index of the cell to delegate any other updates needed.
-    emit playerFinished( static_cast<int>(bestEntry.first * copy_.size() + bestEntry.second));
-    return;
+    // ADAPTACIÓN: La referencia retorna int. Tú emites una señal.
+    emit playerFinished(bestIndex);
 }

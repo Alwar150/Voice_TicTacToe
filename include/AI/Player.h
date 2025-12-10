@@ -92,7 +92,7 @@ protected:
     /**
      * @brief Constant reference to the marker assigned to this player (X or O).
      */
-    const BoardMarks& mark_;
+    const BoardMarks mark_;
 
 };
 

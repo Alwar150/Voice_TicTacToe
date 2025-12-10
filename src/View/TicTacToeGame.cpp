@@ -29,7 +29,7 @@ void TicTacToeGame::setConnections()
 {
     // New Game Connection - resetting the game
     connect(ui->reset, &QPushButton::clicked, [=] { emit newGame(); });
-    connect(ui->back, &QPushButton::clicked, [=] { emit goBack(); });
+    connect(ui->back, &QPushButton::clicked, [=] { emit close();});
 }
 
 vector<Cell> TicTacToeGame::buildCellButtons(size_t boardSize)

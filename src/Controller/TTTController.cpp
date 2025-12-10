@@ -141,10 +141,6 @@ void TTTController::updateGameState(Cell &cell)
     qDebug() << "[CORE] Current player: " << (currentPlayer_ == BoardMarks::X ? "X" : "O");
     board_.printBoard();
 #endif
-    // Update board state and declare state if its a final state.
-    BoardState boardState = board_.evaluateBoard();
-    if (BoardState::NoWinner != boardState)
-        view_.declareGameState(boardState);
 }
 
 void TTTController::reset()
@@ -174,7 +170,7 @@ void TTTController::updateGame(Cell &cell)
                                          static_cast<size_t>(cell.col),
                                          currentPlayer_);
     if (success) {
-        BoardMarks prevPlayer = currentPlayer_;
+        //BoardMarks prevPlayer = currentPlayer_;
         updateGameState(cell);
 
         // Network send move to server
@@ -189,7 +185,15 @@ void TTTController::updateGame(Cell &cell)
 
 void TTTController::onNetworkMessageReceived(const QString& msg){
     if(msg == "DONE"){
-        if(board_.evaluateBoard() == BoardState::NoWinner){
+        BoardState boardState = board_.evaluateBoard();
+
+            if(BoardState::NoWinner != boardState){
+                // 🏆 Hay un ganador o empate: se declara el estado final
+                view_.declareGameState(boardState);
+                // Opcional: reiniciar el juego aquí si la lógica de la vista no lo hace.
+                // reset(); // Si quieres que el juego se reinicie automáticamente tras la declaración.
+            }
+            if(BoardState::NoWinner == boardState){
             switchPlayer();
             if(currentPlayer_ == BoardMarks::X){
                 playerX_->play();

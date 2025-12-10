@@ -1,6 +1,8 @@
 #include "TitleScreen.h"
 #include "TTTController.h"
 
+class TicTacTocGame;
+
 TitleScreen::TitleScreen(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::TitleScreen)
 {
@@ -52,21 +54,10 @@ void TitleScreen::updateMiniMaxDepth(int depth)
 
 void TitleScreen::startGame()
 {
-    this->hide();
-
-    // Crear dinámicamente el controlador para que no se destruya al salir de la función
-    auto *ttt = new TTTController(options_, this);
+    TTTController* ttt = new TTTController(options_,this);
 
     ttt->startGame();
 
-    // Conectamos la señal semántica 'finishedGame()'
-    // Esto se dispara cuando el botón 'Atrás' es pulsado en la vista.
-    QObject::connect(static_cast<TicTacToeGame*>(ttt->getView()), &TicTacToeGame::goBack, this, [this, ttt]() {
-        this->show();
-        // La vista (TicTacToeGame) ya ha sido marcada para destrucción
-        // por close() + Qt::WA_DeleteOnClose. Solo necesitamos limpiar el controlador.
-        ttt->deleteLater();  // Limpieza segura del controlador
-    });
 }
 
 void TitleScreen::closeEvent(QCloseEvent *event)

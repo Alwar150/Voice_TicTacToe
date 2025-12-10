@@ -132,7 +132,7 @@ private:
      * @param state The final game state (BoardState).
      * @return A score based on the game state (AI_WIN_SCORE, PLAYER_WIN_SCORE, TIE_SCORE).
      */
-    short score(const BoardState state) const;
+    short score(const BoardState& state) const;
 };
 
 #endif // MINIMAXAGENT_H

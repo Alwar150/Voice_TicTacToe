@@ -63,7 +63,7 @@ public:
      *
      * Handles the cleanup and safe termination of the voice recognition thread.
      */
-    virtual ~HumanPlayer() {}
+    ~HumanPlayer();
 
     /**
      * @brief Starts the human player's turn.

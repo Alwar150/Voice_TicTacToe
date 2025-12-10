@@ -60,3 +60,7 @@ HumanPlayer::HumanPlayer(const Board& board_ref, BoardMarks playerMark,QObject* 
             emit playerFinished(row * board_->size() + col);
         }
     }
+
+    HumanPlayer::~HumanPlayer(){
+        delete stt_;
+    }
